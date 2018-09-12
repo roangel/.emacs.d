@@ -1,0 +1,63 @@
+;; Object broadcast_rx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "broadcast_rx/"
+  :tables
+  (list
+    (semanticdb-table "ant_evt_dispatch.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ant_evt_dispatch.h" include nil nil [1 30])
+            ("dummy_payload" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{0x23, 0x23, 0x23, 0x23, 0x23, 0x23, 0x23, 0x23}"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [321 433])
+            ("ant_evt_dispatch" function
+               (:arguments 
+                  ( ("p_ant_evt" variable
+                       (:pointer 1
+                        :type ("ant_evt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [457 479]))                  
+                :type "void")
+                nil [435 3514]))          
+      :file "ant_evt_dispatch.c"
+      :pointmax 3515
+      :fsize 3594
+      :lastmodtime '(22967 60770 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ant_evt_dispatch.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_ANT_EVT_DISPATCH__" variable (:constant-flag t) nil [37 56])
+            ("blinker_channel_config.h" include nil nil [58 93])
+            ("blinker_messages.h" include nil nil [94 123])
+            ("ant_evt_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p_ant_evt" variable
+                       (:pointer 1
+                        :type ("ant_evt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [269 291]))                  
+                :type "void")
+                nil [247 292]))          
+      :file "ant_evt_dispatch.h"
+      :pointmax 301
+      :fsize 314
+      :lastmodtime '(22967 60770 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ANT_EVT_DISPATCH__")
+          )
+)
+    (semanticdb-table "blinker_channel_config.h"
+      :file "blinker_channel_config.h"
+      :fsize 3746
+      :lastmodtime '(22967 60770 0 0))
+    (semanticdb-table "blinker_messages.h"
+      :file "blinker_messages.h"
+      :fsize 3764
+      :lastmodtime '(22967 60770 0 0)))
+  :file "!drive_f!work!BlinkersFirmware!SDK 10.0_broadcast!examples!ant!ant_broadcast!broadcast_rx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

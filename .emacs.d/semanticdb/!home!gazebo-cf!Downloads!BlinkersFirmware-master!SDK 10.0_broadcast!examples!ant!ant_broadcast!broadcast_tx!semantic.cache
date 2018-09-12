@@ -1,0 +1,143 @@
+;; Object broadcast_tx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "broadcast_tx/"
+  :tables
+  (list
+    (semanticdb-table "state_machine.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("state_machine.h" include nil nil [1 27])
+            ("nrf_delay.h" include nil nil [28 50])
+            ("softdevice_setup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [211 216]))                  
+                :type "void")
+                nil [182 787])
+            ("do_state_initial" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [816 838]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [791 1140])
+            ("do_state_check_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1173 1195]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [1142 1436])
+            ("do_state_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1465 1487]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [1440 3717])
+            ("substate" variable
+               (:typemodifiers ("static")
+                :default-value "SUBSTATE_NORMAL"
+                :type ("substate_t" type (:type "class") nil nil))
+                nil [3719 3764])
+            ("do_state_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3790 3812]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [3766 11094])
+            ("do_state_sleeping" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11123 11145]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [11097 11375])
+            ("state_table" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ //returns pointer to function
+    do_state_initial, do_state_check_pairing, do_state_pairing, do_state_paired, do_state_sleeping
+}"
+                :type ("state_func_t" type (:type "class") nil nil))
+                nil [11435 11616])
+            ("transition_func_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11685 11708]))                  
+                :type "void")
+                nil [11661 11709])
+            ("do_to_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11763 11785]))                  
+                :type "void")
+                nil [11744 11930])
+            ("do_to_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11950 11972]))                  
+                :type "void")
+                nil [11932 12348])
+            ("do_from_pairing_to_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12381 12403]))                  
+                :type "void")
+                nil [12350 13981])
+            ("do_to_sleeping" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14003 14025]))                  
+                :type "void")
+                nil [13983 15147])
+            ("transition_table" variable
+               (:pointer 1
+                :dereference 2
+                :default-value "{
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      NULL,            do_from_pairing_to_paired,  do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   NULL,                       do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               NULL,           },
+}"
+                :type ("transition_func_t" type (:type "class") nil nil))
+                nil [15476 16023])
+            ("run_state" function
+               (:arguments 
+                  ( ("cur_state" variable (:type ("state_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16110 16128])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16129 16152]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [16091 16452]))          
+      :file "state_machine.c"
+      :pointmax 16453
+      :fsize 16452
+      :lastmodtime '(22756 58384 834531 535000)
+      :unmatched-syntax nil)
+    (semanticdb-table "state_machine.h"
+      :file "state_machine.h"
+      :fsize 2861
+      :lastmodtime '(22755 54653 0 0)))
+  :file "!home!gazebo-cf!Downloads!BlinkersFirmware-master!SDK 10.0_broadcast!examples!ant!ant_broadcast!broadcast_tx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

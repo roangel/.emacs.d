@@ -1,0 +1,38 @@
+
+;; ----- smex-history -----
+(
+ revert-buffer
+ load-file
+ smart-tabs-mode
+ whitespace-mode
+ global-whitespace-mode
+ list-packages
+ rgrep
+)
+
+;; ----- smex-data -----
+(
+ (list-packages . 9)
+ (customize-themes . 5)
+ (rgrep . 68)
+ (help-quit . 1)
+ (eww . 2)
+ (load-file . 13)
+ (revert-buffer . 20)
+ (compile . 5)
+ (kill-compilation . 4)
+ (delete-trailing-whitespace . 4)
+ (create-tags . 2)
+ (org-version . 1)
+ (sql-sqlite . 1)
+ (magit-status . 3)
+ (magit-reset . 1)
+ (org-show-todo-tree . 7)
+ (org-todo-list . 1)
+ (c-add-style . 1)
+ (semanticdb-enable-gnu-global-databases . 1)
+ (magit-diff . 3)
+ (whitespace-mode . 19)
+ (smart-tabs-mode . 2)
+ (global-whitespace-mode . 1)
+)

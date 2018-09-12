@@ -1,0 +1,514 @@
+#include "state_machine.h"
+
+
+// ==============================================
+// Softdevice setup function
+// ==============================================
+
+static void softdevice_setup(void)
+{
+    uint32_t err_code;
+
+    err_code = softdevice_ant_evt_handler_set(ant_evt_dispatch);
+    APP_ERROR_CHECK(err_code);
+    //angel start
+    err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch); // start the interrupt sys controller
+    APP_ERROR_CHECK(err_code);
+    //angel end
+
+    err_code = softdevice_handler_init(NRF_CLOCK_LFCLKSRC, NULL, 0, NULL);
+    APP_ERROR_CHECK(err_code);
+
+    err_code = ant_stack_static_config();
+    APP_ERROR_CHECK(err_code);
+
+    //err_code = sd_power_dcdc_mode_set(NRF_POWER_DCDC_ENABLE);
+    //APP_ERROR_CHECK(err_code);
+}
+
+
+
+state_t do_state_initial(instance_data_t *data)
+{
+    state_t new_state;
+
+    softdevice_setup();
+    configure_pins_input();
+    configure_pins_output();
+
+    timer2_init();
+    new_state = STATE_CHECK_PAIRING;
+    return new_state;
+}
+
+state_t do_state_check_pairing(instance_data_t *data)
+{
+    state_t new_state = STATE_CHECK_PAIRING; // default, same state as we are now.
+    if(is_paired(&channel_0))
+    {
+        new_state = STATE_PAIRED;
+    }
+    else
+    {
+        new_state = STATE_PAIRING;
+    }
+    return new_state;
+}
+
+
+
+state_t do_state_pairing(instance_data_t *data)
+{
+    state_t new_state = STATE_PAIRING;
+
+    // First, close both channels.
+    close_channel(&channel_0);  //was it open? make new flag that indicates that channel has been opened
+
+    if(is_front_paired(&channel_0, &channel_1))
+    {
+        close_channel(&channel_1);
+    }
+
+    // Here, remove pairing bit from flash? Better not, so if something goes wrong we still have previous info
+
+
+    // ------------- Look for REAR. Open channel 0 wildcarded. Look for rear, find it and save ---------------------
+    channel_0.found_master_flag = 0x00;
+    open_wildcarded_channel_to_search(&channel_0);
+    while(channel_0.found_master_flag == 0x00)
+    {
+        if(channel_0.search_timeout_flag == 0x01)
+        {
+            channel_0.search_timeout_flag = 0x00;
+            new_state = STATE_SLEEPING;
+            return new_state;   // Be really careful here. Do not return inside a function, unexpected behaviour...
+            // TODO: EXCEPTION NOT FOUND REAR MASTER
+        }
+    }
+    // Success finding REAR
+    get_channel_id(&channel_0); //save found channel ID in its container
+    // Close the channel, we dont need it wildcarded anymore
+    close_channel(&channel_0);
+    // Now, save channel ID in flash
+    save_channel_id_in_flash(&channel_0);
+    nrf_gpio_pin_clear(LED_DOWN);
+
+    // -------------- Look for FRONT. Open channel 1 wildcarded. Look for front, find it and save ---------------------
+    channel_1.found_master_flag = 0x00;
+    open_wildcarded_channel_to_search(&channel_1);
+    while(channel_1.found_master_flag == 0x00)
+    {
+        if(channel_1.search_timeout_flag == 0x01)
+        {
+            channel_1.search_timeout_flag = 0x00;
+            // NOT FOUND FRONT MASTER, save a 0 in pairing bit in front
+            clear_pairing_bit(&channel_1);
+            new_state = STATE_PAIRED;
+            return new_state;
+        }
+    }
+
+    // Success finding FRONT
+    get_channel_id(&channel_1); //save found channel ID in its container
+
+    // Close the channel, we dont need it wildcarded anymore
+    close_channel(&channel_1);
+    // Now, save channel ID in flash
+    save_channel_id_in_flash(&channel_1);
+
+    nrf_gpio_pin_clear(LED_UP);
+    new_state = STATE_PAIRED;
+    return new_state;
+}
+
+static substate_t substate = SUBSTATE_NORMAL;
+
+state_t do_state_paired(instance_data_t *data)
+{
+    state_t new_state = STATE_PAIRED;                                //By default, we stay here
+    static unsigned long timer_pressed_start;
+    static unsigned long timer_timeout_start;
+
+    // First, detect activity of buttons pressed
+    if(any_button_pressed())
+    {
+        timer_timeout_start = get_timer_count();
+    }
+
+    // If too long without any activity in buttons: Timeout and go to sleep
+    if((get_timer_count() - timer_timeout_start) > T_TIMEOUT_PAD)
+    {
+        new_state = STATE_SLEEPING;
+    }
+
+    // UP BUTTON
+    if(buttons.up.positive_edge_flag == 0x01)
+    {
+        buttons.up.positive_edge_flag = 0x00;
+        buttons.up.pressed_not_released_flag = 0x01;
+    }
+    if(buttons.up.negative_edge_flag == 0x01)
+    {
+        buttons.up.negative_edge_flag = 0x00;
+        buttons.up.pressed_not_released_flag = 0x00;
+        if(buttons.up.ignore_next_negative_edge)
+        {
+            buttons.up.ignore_next_negative_edge = false;
+        }
+        else
+        {
+            send_message_and_get_ack(&(messages_defined.emergency), &channel_0, &channel_1);
+        }
+    }
+
+    // DOWN BUTTON
+    if(buttons.down.positive_edge_flag == 0x01)
+    {
+        buttons.down.positive_edge_flag = 0x00;
+        buttons.down.pressed_not_released_flag = 0x01;
+    }
+    if(buttons.down.negative_edge_flag == 0x01)
+    {
+        buttons.down.negative_edge_flag = 0x00;
+        buttons.down.pressed_not_released_flag = 0x00;
+        if(buttons.down.ignore_next_negative_edge)
+        {
+            buttons.down.ignore_next_negative_edge = false;
+        }
+        else
+        {
+            send_message_and_get_ack(&(messages_defined.laser), &channel_0, &channel_1);
+        }
+    }
+
+    // LEFT BUTTON
+    if(buttons.left.positive_edge_flag == 0x01)
+    {
+        buttons.left.positive_edge_flag = 0x00;
+        buttons.left.pressed_not_released_flag = 0x01;
+    }
+    if(buttons.left.negative_edge_flag == 0x01)
+    {
+        buttons.left.negative_edge_flag = 0x00;
+        buttons.left.pressed_not_released_flag = 0x00;
+        if(buttons.left.ignore_next_negative_edge)
+        {
+            buttons.left.ignore_next_negative_edge = false;
+        }
+        else
+        {
+            send_message_and_get_ack(&(messages_defined.left), &channel_0, &channel_1);
+        }
+    }
+
+    // RIGHT BUTTON
+    if(buttons.right.positive_edge_flag == 0x01)
+    {
+        buttons.right.positive_edge_flag = 0x00;
+        buttons.right.pressed_not_released_flag = 0x01;
+    }
+    if(buttons.right.negative_edge_flag == 0x01)
+    {
+        buttons.right.negative_edge_flag = 0x00;
+        buttons.right.pressed_not_released_flag = 0x00;
+
+        if(buttons.right.ignore_next_negative_edge)
+        {
+            buttons.right.ignore_next_negative_edge = false;
+        }
+        else
+        {
+            send_message_and_get_ack(&(messages_defined.right), &channel_0, &channel_1);
+        }
+    }
+
+    // Check if switch reed went OFF in both channels
+    if(channel_0.reed_off_flag == 0x01)
+    {
+        channel_0.reed_off_flag = 0x00;
+        channel_0.master_present_flag = 0x00;
+        new_state = STATE_SLEEPING;
+    }
+    if(channel_1.reed_off_flag == 0x01)
+    {
+        channel_1.reed_off_flag = 0x00;
+        channel_1.master_present_flag = 0x00;
+        close_channel(&channel_1);
+    }
+
+    // timeout without sending any reed_off_message?
+    if(channel_0.search_timeout_flag == 0x01)
+    {
+        channel_0.search_timeout_flag = 0x00;
+        channel_0.master_present_flag = 0x00;
+        new_state = STATE_SLEEPING;
+    }
+    if(channel_1.search_timeout_flag == 0x01)
+    {
+        channel_1.search_timeout_flag = 0x00;
+        channel_1.master_present_flag = 0x00;
+    }
+
+    // SMALL STATE MACHINE INSIDE PAIRED STATE
+    switch(substate)
+    {
+        case SUBSTATE_NORMAL:
+            if(buttons.up.pressed_not_released_flag == 0x01 && buttons.down.pressed_not_released_flag == 0x01) // we enter here always that the buttons are pressed. As soon as we release them, we stop entering here
+            {
+                substate = SUBSTATE_PRESSED_PAIRING;
+                timer_pressed_start = get_timer_count(); //NOW
+            }
+            else if(buttons.left.pressed_not_released_flag == 0x01 && buttons.right.pressed_not_released_flag == 0x01)
+            {
+                substate = SUBSTATE_PRESSED_EMERGENCY;
+                timer_pressed_start = get_timer_count(); //NOW
+            }
+            // TODO: check also left and right pressed at the same time
+            break;
+        case SUBSTATE_PRESSED_PAIRING:
+            if(buttons.up.pressed_not_released_flag == 0x00 || buttons.down.pressed_not_released_flag == 0x00)
+            {
+                substate = SUBSTATE_NORMAL; //if released before time, go back to normal state
+            }
+            if((get_timer_count() - timer_pressed_start) > TIME_PRESSED_PAIRING)
+            {
+                buttons.up.ignore_next_negative_edge = true;
+                buttons.down.ignore_next_negative_edge = true;
+                new_state = STATE_PAIRING;
+            }
+            break;
+        case SUBSTATE_PRESSED_EMERGENCY:
+            if(buttons.right.pressed_not_released_flag == 0x00 || buttons.left.pressed_not_released_flag == 0x00)
+            {
+                substate = SUBSTATE_NORMAL; //if released before time, go back to normal state
+            }
+            if((get_timer_count() - timer_pressed_start) > TIME_PRESSED_EMERGENCY)
+            {
+                send_message_and_get_ack(&(messages_defined.emergency), &channel_0, &channel_1);
+                buttons.right.ignore_next_negative_edge = true;
+                buttons.left.ignore_next_negative_edge = true;
+                substate = SUBSTATE_NORMAL;
+            }
+            break;
+        default:
+            break;
+    }
+
+    static bool edge_left = false;
+
+    if(messages_defined.left.current_status == PROTOCOL_STATUS_ENABLED)
+    {
+        uint8_t led_array[1] = {LED_LEFT};
+        led_blink(led_array, 1, 100 * T_1ms, 600 * T_1ms);
+        edge_left = true;
+    }
+    else if(messages_defined.left.current_status == PROTOCOL_STATUS_DISABLED)
+    {
+        if(edge_left)
+        {
+            nrf_gpio_pin_set(LED_LEFT);
+            edge_left = false;
+        }
+    }
+
+    static bool edge_right = false;
+
+    if(messages_defined.right.current_status == PROTOCOL_STATUS_ENABLED)
+    {
+        uint8_t led_array[1] = {LED_RIGHT};
+        led_blink(led_array, 1, 100 * T_1ms, 600 * T_1ms);
+        edge_right = true;
+    }
+    else if(messages_defined.right.current_status == PROTOCOL_STATUS_DISABLED)
+    {
+        if(edge_right)
+        {
+            nrf_gpio_pin_set(LED_RIGHT);
+            edge_right = false;
+        }
+    }
+
+    static bool edge_emergency = false;
+
+    if(messages_defined.emergency.current_status == PROTOCOL_STATUS_ENABLED)
+    {
+
+        uint8_t led_array[2] = {LED_RIGHT, LED_LEFT};
+        led_blink(led_array, 2, 100 * T_1ms, 600 * T_1ms);
+        edge_emergency = true;
+    }
+    else if(messages_defined.emergency.current_status == PROTOCOL_STATUS_DISABLED)
+    {
+        if(edge_emergency)
+        {
+            nrf_gpio_pin_set(LED_RIGHT);
+            nrf_gpio_pin_set(LED_LEFT);
+            edge_emergency = false;
+        }
+    }
+
+    return new_state;
+}
+
+
+state_t do_state_sleeping(instance_data_t *data)
+{
+    state_t new_state = STATE_SLEEPING;
+    if(any_button_pressed())
+    {
+        // TURN THINGS ON
+        timer2_init();
+        configure_pins_output();
+        new_state = STATE_CHECK_PAIRING;
+    }
+    return new_state;
+}
+
+
+
+// STATE TABLE. Here we define the order of the states
+
+state_func_t* const state_table[ NUM_STATES ] = { //returns pointer to function
+    do_state_initial, do_state_check_pairing, do_state_pairing, do_state_paired, do_state_sleeping
+};
+
+// Type for state-transition table
+typedef void transition_func_t( instance_data_t *data );
+
+// transition functions go here
+
+void do_to_pairing(instance_data_t *data)
+{
+    // nrf_gpio_pin_clear(LED_UP);
+    // nrf_gpio_pin_clear(LED_DOWN);
+    nrf_gpio_pin_clear(LED_LEFT);
+    nrf_gpio_pin_clear(LED_RIGHT);
+}
+
+void do_to_paired(instance_data_t *data)
+{
+    close_and_reopen_channel_with_flash_data(&channel_0);
+    if(is_front_paired(&channel_0, &channel_1))
+    {
+        close_and_reopen_channel_with_flash_data(&channel_1);
+    }
+    substate = SUBSTATE_NORMAL; // Always start in this substate
+    nrf_gpio_pin_set(LED_UP);
+    nrf_gpio_pin_set(LED_DOWN);
+    nrf_gpio_pin_set(LED_LEFT);
+    nrf_gpio_pin_set(LED_RIGHT);
+}
+
+void do_from_pairing_to_paired(instance_data_t* data)
+{
+    static unsigned long timer_paired_sequence_start;
+    static uint8_t counter_times = 0;
+    while(counter_times < TIMES_PAIRED_SEQUENCE)
+    {
+        if(is_front_paired(&channel_0, &channel_1))
+        {
+            nrf_gpio_pin_clear(LED_UP);
+        }
+        else
+        {
+            nrf_gpio_pin_set(LED_UP);
+        }
+        nrf_gpio_pin_set(LED_LEFT);
+        nrf_gpio_pin_set(LED_DOWN);
+        nrf_gpio_pin_set(LED_RIGHT);
+        timer_paired_sequence_start = get_timer_count();
+        while((get_timer_count() - timer_paired_sequence_start) < T_PAIRED_SEQUENCE); //Light UP for some time
+
+        nrf_gpio_pin_set(LED_UP);
+        nrf_gpio_pin_clear(LED_LEFT);
+        timer_paired_sequence_start = get_timer_count();
+        while((get_timer_count() - timer_paired_sequence_start) < T_PAIRED_SEQUENCE); //Light LEFT for some time
+
+        nrf_gpio_pin_set(LED_LEFT);
+        nrf_gpio_pin_clear(LED_DOWN);
+        timer_paired_sequence_start = get_timer_count();
+        while((get_timer_count() - timer_paired_sequence_start) < T_PAIRED_SEQUENCE); //Light DOWN for some time
+
+        nrf_gpio_pin_set(LED_DOWN);
+        nrf_gpio_pin_clear(LED_RIGHT);
+        timer_paired_sequence_start = get_timer_count();
+        while((get_timer_count() - timer_paired_sequence_start) <  T_PAIRED_SEQUENCE); //Light RIGHT for some time
+
+        nrf_gpio_pin_set(LED_RIGHT);
+        while((get_timer_count() - timer_paired_sequence_start) < 3 * T_PAIRED_SEQUENCE); //All OFF for some time
+
+        counter_times++;
+    }
+    counter_times = 0;
+    do_to_paired(data);
+}
+
+void do_to_sleeping(instance_data_t* data)
+{
+    close_channel(&channel_0);
+
+    messages_defined.left.current_status = PROTOCOL_STATUS_DISABLED;
+    messages_defined.right.current_status = PROTOCOL_STATUS_DISABLED;
+    messages_defined.emergency.current_status = PROTOCOL_STATUS_DISABLED;
+    messages_defined.laser.current_status = PROTOCOL_STATUS_DISABLED;
+
+    if(is_front_paired(&channel_0, &channel_1))
+    {
+        close_channel(&channel_1);
+    }
+
+    nrf_gpio_cfg_input(LED_UP, NRF_GPIO_PIN_NOPULL);
+    nrf_gpio_cfg_input(LED_DOWN, NRF_GPIO_PIN_NOPULL);
+    nrf_gpio_cfg_input(LED_LEFT, NRF_GPIO_PIN_NOPULL);
+    nrf_gpio_cfg_input(LED_RIGHT, NRF_GPIO_PIN_NOPULL);
+
+    nrf_gpio_input_disconnect(LED_UP);
+    nrf_gpio_input_disconnect(LED_DOWN);
+    nrf_gpio_input_disconnect(LED_LEFT);
+    nrf_gpio_input_disconnect(LED_RIGHT);
+    timer2_stop();
+
+    // nrf_gpio_cfg_default(LED_UP);
+    // nrf_gpio_cfg_default(LED_DOWN);
+    // nrf_gpio_cfg_default(LED_LEFT);
+    // nrf_gpio_cfg_default(LED_RIGHT);
+
+    // nrf_gpio_pin_clear(LED_UP);
+    // nrf_gpio_pin_clear(LED_DOWN);
+    // nrf_gpio_pin_clear(LED_LEFT);
+    // nrf_gpio_pin_clear(LED_RIGHT);
+}
+
+// State-transition matrix:                   TO:
+//                               INIT  CHECK_PAIRING    PAIRING      PAIRED     SLEEPING
+//           INIT
+// FROM:     CHECK_PAIRING
+//           PAIRING
+//           PAIRED
+//           SLEEPING
+
+// Rows, first argument, current state
+// Columns, second argument, new state
+
+transition_func_t * const transition_table[ NUM_STATES ][ NUM_STATES ] = {
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      NULL,            do_from_pairing_to_paired,  do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   NULL,                       do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               NULL,           },
+};
+
+
+// ---------------- MAIN RUNNING STATE FUNCTION-----------------
+state_t run_state( state_t cur_state, instance_data_t *data )
+{
+    state_t new_state = state_table[ cur_state ]( data ); // state_table redirects to a function pointer of that state
+    transition_func_t *transition =
+               transition_table[ cur_state ][ new_state ];
+
+    if ( transition ) {
+        transition( data );
+    }
+
+    return new_state;
+}

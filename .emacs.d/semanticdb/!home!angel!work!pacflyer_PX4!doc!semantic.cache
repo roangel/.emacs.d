@@ -1,0 +1,64 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables
+  (list
+    (semanticdb-table "pre-push-PX4"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [264 273])
+            ("subprocess" include nil nil [274 291])
+            ("filecmp" include nil nil [292 306])
+            ("re" include nil nil [307 316])
+            ("WINGTRA_ORANGE" variable nil nil [318 360])
+            ("NO_COLOR" variable nil nil [361 382])
+            ("cd" type
+               (:documentation "Context manager for changing the current working directory"
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [504 546]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [480 484])
+                            ("newPath" variable nil (reparse-symbol function_parameters) [486 493]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [467 547])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [566 570]))                          )
+                        (reparse-symbol indented_block_body) [552 641])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [659 663])
+                            ("etype" variable nil (reparse-symbol function_parameters) [665 670])
+                            ("value" variable nil (reparse-symbol function_parameters) [672 677])
+                            ("traceback" variable nil (reparse-symbol function_parameters) [679 688]))                          )
+                        (reparse-symbol indented_block_body) [646 724]))                  
+                :type "class")
+                nil [384 724])
+            ("wingtraDirs" variable nil nil [788 1096])
+            ("pathToGitRoot" variable nil nil [1134 1262])
+            ("uncrustifyCfg" code nil nil [1325 1374])
+            ("uncrustifyExecutable" variable nil nil [1423 1560])
+            ("if" code nil nil [1561 1747])
+            ("is_commited" variable nil nil [1913 2050])
+            ("isCPPFile" function (:arguments 
+              ( ("fileName" variable nil (reparse-symbol function_parameters) [2187 2195]))              ) nil [2173 2400])
+            ("checkFormat" function (:arguments 
+              ( ("fileName" variable nil (reparse-symbol function_parameters) [2564 2572]))              ) nil [2548 3222])
+            ("checkLint" function (:arguments 
+              ( ("fileName" variable nil (reparse-symbol function_parameters) [3431 3439]))              ) nil [3417 4029])
+            ("getChangedFiles" function nil nil [4155 5082])
+            ("checkAstylePX4" function nil nil [5167 5815])
+            ("if" code nil nil [5826 6943]))          
+      :file "pre-push-PX4"
+      :pointmax 6943
+      :fsize 6942
+      :lastmodtime '(23437 18825 524964 700000)
+      :unmatched-syntax '((INDENT_BLOCK 5471 . 5790) (NEWLINE 5470 . 5471) (COLON 5469 . 5470) (TRY 5311 . 5314) (AS 5465 . 5467))))
+  :file "!home!angel!work!pacflyer_PX4!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

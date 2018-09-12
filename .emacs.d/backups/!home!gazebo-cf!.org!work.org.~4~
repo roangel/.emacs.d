@@ -1,0 +1,50 @@
+* Tasks
+** DONE Start using org-mode to keep track of what we need to do.
+   CLOSED: [2017-08-15 Die 16:16]
+** DONE Make a map between name of crazyFlies and radio addresses.
+   CLOSED: [2017-08-15 Die 16:18]
+** DONE Look for information about the link between addresses and names of CFs, and fill it here: [[file:~/work/D-FaLL-System/pps_ws/src/d_fall_pps/GUI_Qt/CrazyFlyGUI/src/addressLUT.cpp::std::map<std::string,%20std::string>%20address_LUT][LUT location]]
+   CLOSED: [2017-08-16 Mit 17:22]
+** DONE Test for robustness downstairs
+   CLOSED: [2017-08-16 Mit 17:22] SCHEDULED: <2017-08-16 Mit>
+** DONE Solve problem with connection in Vicon
+   CLOSED: [2017-08-16 Mit 17:22]
+** DONE Learn how to properly set up from scratch Student and Teacher computer
+   CLOSED: [2017-08-16 Mit 17:22]
+** DONE List also occluded CFs in the list of available ones in GUI
+   CLOSED: [2017-08-17 Don 09:36]
+*** problem is in viconDataPublisher
+*** DONE Need to change it also in the controller part, so the behaviour is the same as before.
+    CLOSED: [2017-08-17 Don 16:23]
+** DONE Scale factor, increase by 1.2
+   CLOSED: [2017-08-17 Don 11:50]
+** DONE change Z origin to zero instead of middle of safe boundary box.
+   CLOSED: [2017-08-17 Don 11:50]
+*** Safe controller looks a bit weird behaviour?
+*** TODO Maybe check if safe controller can be improved?
+**** Right now some oscillations in some CFs, due to model mismatch
+** TODO Need to find out if we want the boundary box to be updated in student's computer when they change in teacher's computer
+*** Update the information from DB each time we run an script? Or each time we change that information?
+** TODO Start with the student GUI. Need to include:
+*** When GUI starts, launches Student.launch script.
+*** Need to make sure that this node does not need to be killed at all in any moment, we can recover without restarting the GUI
+**** Student.launch creates the student node with student ID, and prepares everything so that we can start controlling the drone.
+**** After that, need to display:
+***** RF status: connected or disconnected?
+****** Button to connect via RF and to retry in case we couldn't. Once we connect, everything else becomes available
+***** CF enabled or disabled?
+****** Button to enable/disable
+***** Battery level
+***** Current position (from vicon)
+***** Current controller (custom or safe)
+****** Button to go to safe controller
+***** Current SetPoint (only for safe controller?)
+****** Way of setting the setpoint
+
+
+* Interesting locations:
+[[file:~/.emacs.d/init.el::(require%20'package)][emacs init file]]
+
+* Computer passwd: gazebo-cf
+
+

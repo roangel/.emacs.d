@@ -1,0 +1,39 @@
+#include "myGraphicsScene.h"
+
+#include <QGraphicsSceneMouseEvent>
+#include <QRect>
+
+myGraphicsScene::myGraphicsScene(QObject *parent)
+    : QGraphicsScene(parent)
+{
+    pen = new QPen(Qt::black);
+    brush = new QBrush(Qt::blue);
+    rect = NULL;
+}
+
+
+void myGraphicsScene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+    if (mouseEvent->button() != Qt::LeftButton)
+        return;
+
+    rect = new QRect((mouseEvent->scenePos()).toPoint(), (mouseEvent->scenePos()).toPoint());
+    addRect(*rect, *pen, *brush);
+    QGraphicsScene::mousePressEvent(mouseEvent);
+}
+
+void myGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+    if(rect != NULL)
+    {
+        rect->setBottomRight((mouseEvent->scenePos()).toPoint());
+        QGraphicsScene::mouseMoveEvent(mouseEvent);
+    }
+
+}
+
+void myGraphicsScene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+    rect = NULL;
+    QGraphicsScene::mouseReleaseEvent(mouseEvent);
+}

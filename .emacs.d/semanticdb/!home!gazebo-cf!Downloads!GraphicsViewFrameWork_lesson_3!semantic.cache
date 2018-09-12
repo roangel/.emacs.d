@@ -1,0 +1,749 @@
+;; Object GraphicsViewFrameWork_lesson_3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GraphicsViewFrameWork_lesson_3/"
+  :tables
+  (list
+    (semanticdb-table "cornergrabber.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CORNERGRABBER_H" variable (:constant-flag t) nil [33 48])
+            ("QObject" include (:system-flag t) nil [50 68])
+            ("QGraphicsItem" include (:system-flag t) nil [69 93])
+            ("QGraphicsRectItem" include (:system-flag t) nil [94 122])
+            ("QGraphicsTextItem" include (:system-flag t) nil [123 151])
+            ("QGraphicsSceneHoverEvent" include (:system-flag t) nil [152 187])
+            ("QGraphicsSceneMouseEvent" include (:system-flag t) nil [188 223])
+            ("QColor" include (:system-flag t) nil [224 241])
+            ("QPainter" include (:system-flag t) nil [242 261])
+            ("QPen" include (:system-flag t) nil [262 277])
+            ("QPointF" include (:system-flag t) nil [278 296])
+            ("CornerGrabber" type
+               (:superclasses 
+                  ( ("QGraphicsItem" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [346 353])
+                    ("CornerGrabber" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("QGraphicsItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [381 406])
+                            ("corner" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [409 421]))                          
+                        :type ("CornerGrabber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [367 423])
+                    ("getCorner" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [429 446])
+                    ("setMouseState" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [524 528]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [505 529])
+                    ("getMouseState" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [590 611])
+                    ("mouseDownX" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [670 687])
+                    ("mouseDownY" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [692 709])
+                    ("" type
+                       (:members 
+                          ( ("kMouseReleased" variable
+                               (:constant-flag t
+                                :default-value (737 738)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [722 738])
+                            ("kMouseDown" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [740 751])
+                            ("kMouseMoving" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [752 765]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [716 766])
+                    ("private" label nil (reparse-symbol classsubparts) [799 807])
+                    ("boundingRect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [813 849])
+                    ("paint" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("painter" variable
+                               (:pointer 1
+                                :type ("QPainter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [974 992])
+                            ("option" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("QStyleOptionGraphicsItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [993 1032])
+                            ("widget" variable
+                               (:pointer 1
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1033 1049]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [954 1050])
+                    ("hoverEnterEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1154 1188]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1123 1189])
+                    ("hoverLeaveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1288 1322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1257 1323])
+                    ("mouseMoveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1720 1754]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1690 1755])
+                    ("mouseMoveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1788 1823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1760 1824])
+                    ("mousePressEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1859 1893]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1829 1894])
+                    ("mousePressEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1928 1963]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1899 1964])
+                    ("mouseReleaseEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2001 2035]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1969 2036])
+                    ("_outterborderColor" variable (:type ("QColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2042 2068])
+                    ("_outterborderPen" variable (:type ("QPen" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2142 2164])
+                    ("_width" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2221 2236])
+                    ("_height" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2241 2257])
+                    ("_corner" variable (:type "int") (reparse-symbol classsubparts) [2263 2275])
+                    ("_mouseButtonState" variable (:type "int") (reparse-symbol classsubparts) [2351 2373]))                  
+                :type "class")
+                nil [300 2378]))          
+      :file "cornergrabber.h"
+      :pointmax 2406
+      :fsize 2471
+      :lastmodtime '(19614 1876 0 0)
+      :unmatched-syntax '((EXPLICIT 358 . 366))
+      :lexical-table 
+        '(("CORNERGRABBER_H")
+          )
+)
+    (semanticdb-table "cornergrabber.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cornergrabber.h" include nil nil [1 27])
+            ("CornerGrabber" function
+               (:constructor-flag t
+                :parent "CornerGrabber"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58 80])
+                    ("corner" variable (:type "int") (reparse-symbol arg-sub-list) [82 93]))                  
+                :type ("CornerGrabber" type (:type "class") nil nil))
+                nil [29 464])
+            ("setMouseState" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [500 506]))                  
+                :type "void")
+                nil [466 537])
+            ("getMouseState" function
+               (:parent "CornerGrabber"
+                :type "int")
+                nil [539 607])
+            ("getCorner" function
+               (:parent "CornerGrabber"
+                :type "int")
+                nil [609 663])
+            ("mouseMoveEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [840 875]))                  
+                :type "void")
+                nil [805 910])
+            ("mousePressEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [948 983]))                  
+                :type "void")
+                nil [912 1018])
+            ("mouseReleaseEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1060 1094]))                  
+                :type "void")
+                nil [1020 1128])
+            ("mousePressEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1168 1202]))                  
+                :type "void")
+                nil [1130 1237])
+            ("mouseMoveEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1276 1310]))                  
+                :type "void")
+                nil [1239 1345])
+            ("hoverLeaveEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1491 1519]))                  
+                :type "void")
+                nil [1453 1597])
+            ("hoverEnterEvent" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1637 1665]))                  
+                :type "void")
+                nil [1599 1741])
+            ("boundingRect" function
+               (:parent "CornerGrabber"
+                :type ("QRectF" type (:type "class") nil nil))
+                nil [1743 1828])
+            ("paint" function
+               (:parent "CornerGrabber"
+                :arguments 
+                  ( ("painter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1858 1876])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QStyleOptionGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1877 1910])
+                    ("" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1911 1921]))                  
+                :type "void")
+                nil [1831 2346]))          
+      :file "cornergrabber.cpp"
+      :pointmax 2347
+      :fsize 2452
+      :lastmodtime '(19614 1922 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mainwindow.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mainwindow.h" include nil nil [110 133])
+            ("ui_mainwindow.h" include nil nil [134 160])
+            ("QDebug" include (:system-flag t) nil [161 178])
+            ("QSizePolicy" include (:system-flag t) nil [179 201])
+            ("QGraphicsLineItem" include (:system-flag t) nil [202 230])
+            ("MainWindow" function
+               (:constructor-flag t
+                :parent "MainWindow"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [255 271]))                  
+                :type ("MainWindow" type (:type "class") nil nil))
+                nil [232 2207])
+            ("resizeEvent" function
+               (:parent "MainWindow"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QResizeEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2238 2254]))                  
+                :type "void")
+                nil [2209 2481])
+            ("MainWindow" function
+               (:destructor-flag t
+                :parent "MainWindow"
+                :type "void")
+                nil [2484 2585]))          
+      :file "mainwindow.cpp"
+      :pointmax 2587
+      :fsize 2685
+      :lastmodtime '(19614 3464 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mainwindow.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MAINWINDOW_H" variable (:constant-flag t) nil [140 152])
+            ("QMainWindow" include (:system-flag t) nil [153 175])
+            ("QGraphicsItem" include (:system-flag t) nil [176 200])
+            ("QGraphicsScene" include (:system-flag t) nil [201 226])
+            ("QGraphicsView" include (:system-flag t) nil [227 251])
+            ("QGraphicsEllipseItem" include (:system-flag t) nil [252 283])
+            ("QBrush" include (:system-flag t) nil [284 301])
+            ("QScrollBar" include (:system-flag t) nil [302 323])
+            ("QResizeEvent" include (:system-flag t) nil [324 347])
+            ("statebox.h" include nil nil [348 369])
+            ("gridlines.h" include nil nil [370 392])
+            ("Ui" type
+               (:members 
+                  ( ("MainWindow" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1773 1790]))                  
+                :type "namespace")
+                nil [1754 1792])
+            ("MainWindow" type
+               (:superclasses 
+                  ( ("QMainWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1848 1855])
+                    ("MainWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1880 1899]))                          
+                        :type ("MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1869 1901])
+                    ("MainWindow" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1906 1920])
+                    ("private" label nil (reparse-symbol classsubparts) [1922 1930])
+                    ("ui" variable
+                       (:pointer 1
+                        :type ("Ui::MainWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1935 1954])
+                    ("scene" variable
+                       (:pointer 1
+                        :type ("QGraphicsScene" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1995 2019])
+                    ("gview" variable
+                       (:pointer 1
+                        :type ("QGraphicsView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2082 2104])
+                    ("stateBox" variable
+                       (:pointer 1
+                        :type ("StateBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2169 2189])
+                    ("gridLines" variable
+                       (:pointer 1
+                        :type ("GridLines" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2231 2253])
+                    ("resizeEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("QResizeEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2322 2337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2297 2338]))                  
+                :type "class")
+                nil [1794 2475]))          
+      :file "mainwindow.h"
+      :pointmax 2500
+      :fsize 2579
+      :lastmodtime '(19576 60616 0 0)
+      :unmatched-syntax '((EXPLICIT 1860 . 1868) (symbol 1838 . 1846))
+      :lexical-table 
+        '(("MAINWINDOW_H")
+          )
+)
+    (semanticdb-table "statebox.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("STATEBOX_H" variable (:constant-flag t) nil [138 148])
+            ("QGraphicsItem" include (:system-flag t) nil [150 174])
+            ("QGraphicsRectItem" include (:system-flag t) nil [175 203])
+            ("QGraphicsTextItem" include (:system-flag t) nil [204 232])
+            ("QGraphicsSceneHoverEvent" include (:system-flag t) nil [233 268])
+            ("QGraphicsSceneMouseEvent" include (:system-flag t) nil [269 304])
+            ("QColor" include (:system-flag t) nil [305 322])
+            ("QPainter" include (:system-flag t) nil [323 342])
+            ("QPen" include (:system-flag t) nil [343 358])
+            ("QPointF" include (:system-flag t) nil [359 377])
+            ("cornergrabber.h" include nil nil [378 404])
+            ("StateBox" type
+               (:superclasses 
+                  ( ("QGraphicsItem" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1103 1110])
+                    ("StateBox" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("StateBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1115 1126])
+                    ("_text" variable (:type ("QGraphicsTextItem" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1131 1155])
+                    ("setGridSpace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("space" variable (:type "int") (reparse-symbol arg-sub-list) [1224 1234]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1206 1235])
+                    ("private" label nil (reparse-symbol classsubparts) [1241 1249])
+                    ("boundingRect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1256 1292])
+                    ("paint" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("painter" variable
+                               (:pointer 1
+                                :type ("QPainter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1417 1435])
+                            ("option" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("QStyleOptionGraphicsItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1436 1475])
+                            ("widget" variable
+                               (:pointer 1
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1476 1492]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1397 1493])
+                    ("hoverEnterEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1597 1631]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1566 1632])
+                    ("hoverLeaveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1731 1765]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1700 1766])
+                    ("mouseMoveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1865 1899]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1835 1900])
+                    ("mousePressEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2022 2056]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1992 2057])
+                    ("mouseReleaseEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2094 2128]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2062 2129])
+                    ("mouseMoveEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2163 2198]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2135 2199])
+                    ("mousePressEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2233 2268]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2204 2269])
+                    ("sceneEventFilter" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("watched" variable
+                               (:pointer 1
+                                :type ("QGraphicsItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2306 2330])
+                            ("event" variable
+                               (:pointer 1
+                                :type ("QEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2331 2347]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2274 2349])
+                    ("setCornerPositions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2355 2381])
+                    ("adjustSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2402 2408])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2409 2415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2386 2416])
+                    ("_outterborderColor" variable (:type ("QColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2423 2449])
+                    ("_outterborderPen" variable (:type ("QPen" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2523 2545])
+                    ("_location" variable (:type ("QPointF" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2601 2619])
+                    ("_dragStart" variable (:type ("QPointF" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2624 2643])
+                    ("_gridSpace" variable (:type "int") (reparse-symbol classsubparts) [2648 2667])
+                    ("_width" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2672 2687])
+                    ("_height" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2692 2708])
+                    ("_cornerDragStart" variable (:type ("QPointF" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2714 2739])
+                    ("_XcornerGrabBuffer" variable (:type "int") (reparse-symbol classsubparts) [2745 2768])
+                    ("_YcornerGrabBuffer" variable (:type "int") (reparse-symbol classsubparts) [2773 2796])
+                    ("_drawingWidth" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2801 2823])
+                    ("_drawingHeight" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2828 2851])
+                    ("_drawingOrigenX" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2856 2880])
+                    ("_drawingOrigenY" variable (:type ("qreal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2885 2909])
+                    ("_corners" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("CornerGrabber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2915 2943]))                  
+                :type "class")
+                nil [1063 3017]))          
+      :file "statebox.h"
+      :pointmax 3040
+      :fsize 3128
+      :lastmodtime '(19614 2810 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STATEBOX_H")
+          )
+)
+    (semanticdb-table "gridlines.h"
+      :file "gridlines.h"
+      :fsize 1043
+      :lastmodtime '(19578 2730 0 0))
+    (semanticdb-table "statebox.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("statebox.h" include nil nil [1 22])
+            ("QBrush" include (:system-flag t) nil [24 41])
+            ("QLinearGradient" include (:system-flag t) nil [42 68])
+            ("QDebug" include (:system-flag t) nil [69 86])
+            ("math.h" include nil nil [88 105])
+            ("StateBox" function
+               (:constructor-flag t
+                :parent "StateBox"
+                :type ("StateBox" type (:type "class") nil nil))
+                nil [988 1736])
+            ("adjustSize" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2364 2370])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2371 2377]))                  
+                :type "void")
+                nil [2338 2518])
+            ("sceneEventFilter" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("watched" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2841 2865])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("QEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2866 2882]))                  
+                :type "bool")
+                nil [2807 6568])
+            ("mouseReleaseEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6657 6691]))                  
+                :type "void")
+                nil [6622 6922])
+            ("mousePressEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7008 7042]))                  
+                :type "void")
+                nil [6975 7107])
+            ("mouseMoveEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7192 7226]))                  
+                :type "void")
+                nil [7160 7335])
+            ("hoverLeaveEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7401 7429]))                  
+                :type "void")
+                nil [7368 7719])
+            ("hoverEnterEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneHoverEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7786 7814]))                  
+                :type "void")
+                nil [7753 8253])
+            ("setCornerPositions" function
+               (:parent "StateBox"
+                :type "void")
+                nil [8255 8526])
+            ("boundingRect" function
+               (:parent "StateBox"
+                :type ("QRectF" type (:type "class") nil nil))
+                nil [8528 8608])
+            ("paint" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("painter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8715 8733])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QStyleOptionGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8734 8767])
+                    ("" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8768 8778]))                  
+                :type "void")
+                nil [8693 10952])
+            ("mouseMoveEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10985 11020]))                  
+                :type "void")
+                nil [10955 11055])
+            ("mousePressEvent" function
+               (:parent "StateBox"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneDragDropEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11088 11123]))                  
+                :type "void")
+                nil [11057 11158]))          
+      :file "statebox.cpp"
+      :pointmax 11159
+      :fsize 11525
+      :lastmodtime '(22749 3535 795851 310000)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!Downloads!GraphicsViewFrameWork_lesson_3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

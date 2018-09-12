@@ -1,0 +1,288 @@
+;; Object build-CrazyFlyGUI-Desktop_Qt_5_7_0_GCC_64bit-Debug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "build-CrazyFlyGUI-Desktop_Qt_5_7_0_GCC_64bit-Debug/"
+  :tables
+  (list
+    (semanticdb-table "ui_mainguiwindow.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UI_MAINGUIWINDOW_H" variable (:constant-flag t) nil [402 420])
+            ("QtCore/QVariant" include (:system-flag t) nil [422 448])
+            ("QtWidgets/QAction" include (:system-flag t) nil [449 477])
+            ("QtWidgets/QApplication" include (:system-flag t) nil [478 511])
+            ("QtWidgets/QButtonGroup" include (:system-flag t) nil [512 545])
+            ("QtWidgets/QCheckBox" include (:system-flag t) nil [546 576])
+            ("QtWidgets/QComboBox" include (:system-flag t) nil [577 607])
+            ("QtWidgets/QDoubleSpinBox" include (:system-flag t) nil [608 643])
+            ("QtWidgets/QFrame" include (:system-flag t) nil [644 671])
+            ("QtWidgets/QGridLayout" include (:system-flag t) nil [672 704])
+            ("QtWidgets/QGroupBox" include (:system-flag t) nil [705 735])
+            ("QtWidgets/QHeaderView" include (:system-flag t) nil [736 768])
+            ("QtWidgets/QLabel" include (:system-flag t) nil [769 796])
+            ("QtWidgets/QLineEdit" include (:system-flag t) nil [797 827])
+            ("QtWidgets/QListWidget" include (:system-flag t) nil [828 860])
+            ("QtWidgets/QMainWindow" include (:system-flag t) nil [861 893])
+            ("QtWidgets/QMenuBar" include (:system-flag t) nil [894 923])
+            ("QtWidgets/QPushButton" include (:system-flag t) nil [924 956])
+            ("QtWidgets/QRadioButton" include (:system-flag t) nil [957 990])
+            ("QtWidgets/QSpinBox" include (:system-flag t) nil [991 1020])
+            ("QtWidgets/QStatusBar" include (:system-flag t) nil [1021 1052])
+            ("QtWidgets/QTabWidget" include (:system-flag t) nil [1053 1084])
+            ("QtWidgets/QTableWidget" include (:system-flag t) nil [1085 1118])
+            ("QtWidgets/QToolBar" include (:system-flag t) nil [1119 1148])
+            ("QtWidgets/QVBoxLayout" include (:system-flag t) nil [1149 1181])
+            ("QtWidgets/QWidget" include (:system-flag t) nil [1182 1210])
+            ("myGraphicsView.h" include nil nil [1211 1238])
+            ("Ui_MainGUIWindow" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1285 1292])
+                    ("centralWidget" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1297 1320])
+                    ("gridLayout_3" variable
+                       (:pointer 1
+                        :type ("QGridLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1325 1351])
+                    ("frame_drawing" variable
+                       (:pointer 1
+                        :type ("QFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1356 1378])
+                    ("gridLayout_4" variable
+                       (:pointer 1
+                        :type ("QGridLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1383 1409])
+                    ("pushButton_fitAll" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1414 1445])
+                    ("removeTable" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1450 1475])
+                    ("groupBox" variable
+                       (:pointer 1
+                        :type ("QGroupBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1480 1500])
+                    ("verticalLayout" variable
+                       (:pointer 1
+                        :type ("QVBoxLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1505 1533])
+                    ("radioButton_table_mode" variable
+                       (:pointer 1
+                        :type ("QRadioButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1538 1575])
+                    ("radioButton_crazyfly_zones_mode" variable
+                       (:pointer 1
+                        :type ("QRadioButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1580 1626])
+                    ("radioButton_lock_mode" variable
+                       (:pointer 1
+                        :type ("QRadioButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1631 1667])
+                    ("groupBox_2" variable
+                       (:pointer 1
+                        :type ("QGroupBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1672 1694])
+                    ("gridLayout_5" variable
+                       (:pointer 1
+                        :type ("QGridLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1699 1725])
+                    ("checkBox_grid" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1730 1755])
+                    ("checkBox_table" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1760 1786])
+                    ("checkBox_vicon_crazyflies" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1791 1828])
+                    ("checkBox_crazyfly_zones" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1833 1868])
+                    ("checkBox_vicon_markers" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1873 1907])
+                    ("scaleSpinBox" variable
+                       (:pointer 1
+                        :type ("QDoubleSpinBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1912 1941])
+                    ("checkBox_vicon_highlight_markers" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1946 1990])
+                    ("graphicsView" variable
+                       (:pointer 1
+                        :type ("myGraphicsView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1995 2024])
+                    ("frame_3" variable
+                       (:pointer 1
+                        :type ("QFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2029 2045])
+                    ("verticalLayout_2" variable
+                       (:pointer 1
+                        :type ("QVBoxLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2050 2080])
+                    ("tabWidget_2" variable
+                       (:pointer 1
+                        :type ("QTabWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2085 2109])
+                    ("links_tab" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2114 2133])
+                    ("gridLayout" variable
+                       (:pointer 1
+                        :type ("QGridLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2138 2162])
+                    ("err_message_student_id" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2167 2198])
+                    ("err_message_cf_zone" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2203 2231])
+                    ("err_message_cf" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2236 2259])
+                    ("spinBox_student_ids" variable
+                       (:pointer 1
+                        :type ("QSpinBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2264 2294])
+                    ("list_discovered_student_ids" variable
+                       (:pointer 1
+                        :type ("QListWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2299 2340])
+                    ("comboBoxCFZones" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2345 2372])
+                    ("comboBoxCFs" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2377 2400])
+                    ("label_4" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2405 2421])
+                    ("label_2" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2426 2442])
+                    ("label_3" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2447 2463])
+                    ("refresh_cfs_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2468 2500])
+                    ("refresh_student_ids_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2505 2545])
+                    ("table_links" variable
+                       (:pointer 1
+                        :type ("QTableWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2550 2576])
+                    ("link_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2581 2606])
+                    ("unlink_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2611 2638])
+                    ("save_in_DB_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2643 2674])
+                    ("load_from_DB_button" variable
+                       (:pointer 1
+                        :type ("QPushButton" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2679 2712])
+                    ("label" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2717 2731])
+                    ("radioAddress_text" variable
+                       (:pointer 1
+                        :type ("QLineEdit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2736 2765])
+                    ("err_message_radio_address" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2770 2804])
+                    ("frame" variable
+                       (:pointer 1
+                        :type ("QFrame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2809 2823])
+                    ("verticalLayout_3" variable
+                       (:pointer 1
+                        :type ("QVBoxLayout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2828 2858])
+                    ("tabWidget" variable
+                       (:pointer 1
+                        :type ("QTabWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2863 2885])
+                    ("menuBar" variable
+                       (:pointer 1
+                        :type ("QMenuBar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2890 2908])
+                    ("mainToolBar" variable
+                       (:pointer 1
+                        :type ("QToolBar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2913 2935])
+                    ("statusBar" variable
+                       (:pointer 1
+                        :type ("QStatusBar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2940 2962])
+                    ("setupUi" function
+                       (:arguments 
+                          ( ("MainGUIWindow" variable
+                               (:pointer 1
+                                :type ("QMainWindow" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2981 3008]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2968 17737])
+                    ("retranslateUi" function
+                       (:arguments 
+                          ( ("MainGUIWindow" variable
+                               (:pointer 1
+                                :type ("QMainWindow" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17773 17800]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17754 20633]))                  
+                :type "class")
+                nil [1260 20654])
+            ("Ui" type
+               (:members 
+                  ( ("MainGUIWindow" type
+                       (:superclasses 
+                          ( ("Ui_MainGUIWindow" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [20675 20723]))                  
+                :type "namespace")
+                nil [20656 20725]))          
+      :file "ui_mainguiwindow.h"
+      :pointmax 20790
+      :fsize 20789
+      :lastmodtime '(22930 63334 420431 85000)
+      :unmatched-syntax '((symbol 20743 . 20759) (symbol 1240 . 1258))
+      :lexical-table 
+        '(("UI_MAINGUIWINDOW_H")
+          )
+))
+  :file "!home!gazebo-cf!work!D-FaLL-System!pps_ws!src!d_fall_pps!GUI_Qt!build-CrazyFlyGUI-Desktop_Qt_5_7_0_GCC_64bit-Debug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

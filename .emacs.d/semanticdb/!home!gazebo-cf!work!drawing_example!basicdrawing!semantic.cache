@@ -1,0 +1,87 @@
+;; Object basicdrawing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "basicdrawing/"
+  :tables
+  (list
+    (semanticdb-table "renderarea.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("renderarea.h" include nil nil [2456 2479])
+            ("QPainter" include (:system-flag t) nil [2481 2500])
+            ("RenderArea" function
+               (:constructor-flag t
+                :parent "RenderArea"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2525 2541]))                  
+                :type ("RenderArea" type (:type "class") nil nil))
+                nil [2502 2752])
+            ("minimumSizeHint" function
+               (:parent "RenderArea"
+                :type ("QSize" type (:type "class") nil nil))
+                nil [2754 2827])
+            ("sizeHint" function
+               (:parent "RenderArea"
+                :type ("QSize" type (:type "class") nil nil))
+                nil [2829 2895])
+            ("setShape" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("shape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2923 2935]))                  
+                :type "void")
+                nil [2897 2978])
+            ("setPen" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("pen" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3004 3020]))                  
+                :type "void")
+                nil [2980 3059])
+            ("setBrush" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("brush" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QBrush" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3087 3107]))                  
+                :type "void")
+                nil [3061 3150])
+            ("setAntialiased" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("antialiased" variable (:type "bool") (reparse-symbol arg-sub-list) [3184 3201]))                  
+                :type "void")
+                nil [3152 3256])
+            ("setTransformed" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("transformed" variable (:type "bool") (reparse-symbol arg-sub-list) [3290 3307]))                  
+                :type "void")
+                nil [3258 3362])
+            ("paintEvent" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QPaintEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3392 3418]))                  
+                :type "void")
+                nil [3364 5999]))          
+      :file "renderarea.cpp"
+      :pointmax 6000
+      :fsize 5999
+      :lastmodtime '(22738 37019 506086 482000)
+      :unmatched-syntax nil)
+    (semanticdb-table "renderarea.h"
+      :file "renderarea.h"
+      :fsize 3302
+      :lastmodtime '(22738 37053 98062 567000)))
+  :file "!home!gazebo-cf!work!drawing_example!basicdrawing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

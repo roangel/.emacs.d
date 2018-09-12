@@ -1,0 +1,399 @@
+;; Object drawing_example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "drawing_example/"
+  :tables
+  (list
+    (semanticdb-table "renderarea.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("renderarea.h" include nil nil [2456 2479])
+            ("QPainter" include (:system-flag t) nil [2481 2500])
+            ("RenderArea" function
+               (:constructor-flag t
+                :parent "RenderArea"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2525 2541]))                  
+                :type ("RenderArea" type (:type "class") nil nil))
+                nil [2502 2752])
+            ("minimumSizeHint" function
+               (:parent "RenderArea"
+                :type ("QSize" type (:type "class") nil nil))
+                nil [2754 2827])
+            ("sizeHint" function
+               (:parent "RenderArea"
+                :type ("QSize" type (:type "class") nil nil))
+                nil [2829 2895])
+            ("setShape" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("shape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2923 2935]))                  
+                :type "void")
+                nil [2897 2978])
+            ("setPen" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("pen" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QPen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3004 3020]))                  
+                :type "void")
+                nil [2980 3059])
+            ("setBrush" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("brush" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QBrush" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3087 3107]))                  
+                :type "void")
+                nil [3061 3150])
+            ("setAntialiased" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("antialiased" variable (:type "bool") (reparse-symbol arg-sub-list) [3184 3201]))                  
+                :type "void")
+                nil [3152 3256])
+            ("setTransformed" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("transformed" variable (:type "bool") (reparse-symbol arg-sub-list) [3290 3307]))                  
+                :type "void")
+                nil [3258 3362])
+            ("paintEvent" function
+               (:parent "RenderArea"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QPaintEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3392 3418]))                  
+                :type "void")
+                nil [3364 5999]))          
+      :file "renderarea.cpp"
+      :pointmax 6000
+      :unmatched-syntax nil)
+    (semanticdb-table "renderarea.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RENDERAREA_H" variable (:constant-flag t) nil [2485 2497])
+            ("QBrush" include (:system-flag t) nil [2499 2516])
+            ("QPen" include (:system-flag t) nil [2517 2532])
+            ("QPixmap" include (:system-flag t) nil [2533 2551])
+            ("QWidget" include (:system-flag t) nil [2552 2570])
+            ("RenderArea" type
+               (:superclasses 
+                  ( ("QWidget" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2622 2629])
+                    ("Shape" type
+                       (:members 
+                          ( ("Line" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2647 2652])
+                            ("Points" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2653 2660])
+                            ("Polyline" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2661 2670])
+                            ("Polygon" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2671 2679])
+                            ("Rect" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2680 2685])
+                            ("RoundedRect" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2686 2698])
+                            ("Ellipse" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2699 2707])
+                            ("Arc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2708 2712])
+                            ("Chord" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2730 2736])
+                            ("Pie" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2737 2741])
+                            ("Path" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2742 2747])
+                            ("Text" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2748 2753])
+                            ("Pixmap" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2754 2762]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2634 2763])
+                    ("RenderArea" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2780 2799]))                          
+                        :type ("RenderArea" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2769 2801])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2831 2846])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2868 2883])
+                    ("public" label nil (reparse-symbol classsubparts) [2885 2898])
+                    ("setShape" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("shape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2929]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2903 2930])
+                    ("setPen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pen" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QPen" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2947 2963]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2935 2964])
+                    ("setBrush" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("brush" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QBrush" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2983 3003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2969 3004])
+                    ("setAntialiased" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("antialiased" variable (:type "bool") (reparse-symbol arg-sub-list) [3029 3046]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3009 3047])
+                    ("setTransformed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("transformed" variable (:type "bool") (reparse-symbol arg-sub-list) [3072 3089]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3052 3090])
+                    ("protected" label nil (reparse-symbol classsubparts) [3092 3102])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3143 3152])
+                    ("private" label nil (reparse-symbol classsubparts) [3154 3162])
+                    ("shape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3167 3179])
+                    ("pen" variable (:type ("QPen" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3184 3193])
+                    ("brush" variable (:type ("QBrush" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3198 3211])
+                    ("antialiased" variable (:type "bool") (reparse-symbol classsubparts) [3216 3233])
+                    ("transformed" variable (:type "bool") (reparse-symbol classsubparts) [3238 3255])
+                    ("pixmap" variable (:type ("QPixmap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3260 3275]))                  
+                :type "class")
+                nil [2572 3278]))          
+      :file "renderarea.h"
+      :pointmax 3303
+      :unmatched-syntax '((semantic-list 3122 . 3142) (symbol 3112 . 3122) (VOID 3107 . 3111) (semantic-list 2865 . 2867) (symbol 2857 . 2865) (symbol 2851 . 2856) (semantic-list 2828 . 2830) (symbol 2813 . 2828) (symbol 2807 . 2812) (symbol 2612 . 2620))
+      :lexical-table 
+        '(("RENDERAREA_H")
+          )
+)
+    (semanticdb-table "window.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("renderarea.h" include nil nil [2456 2479])
+            ("window.h" include nil nil [2480 2499])
+            ("QtWidgets" include (:system-flag t) nil [2501 2521])
+            ("Qt::UserRole" variable (:type "int") nil [2542 2555])
+            ("Window" function
+               (:constructor-flag t
+                :parent "Window"
+                :type ("Window" type (:type "class") nil nil))
+                nil [2557 9065])
+            ("shapeChanged" function
+               (:parent "Window"
+                :type "void")
+                nil [9067 9265])
+            ("penChanged" function
+               (:parent "Window"
+                :type "void")
+                nil [9267 9799])
+            ("brushChanged" function
+               (:parent "Window"
+                :type "void")
+                nil [9801 11086]))          
+      :file "window.cpp"
+      :pointmax 11087
+      :unmatched-syntax '((punctuation 2540 . 2541) (symbol 2533 . 2539) (INT 2529 . 2532) (CONST 2523 . 2528)))
+    (semanticdb-table "window.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("WINDOW_H" variable (:constant-flag t) nil [2481 2489])
+            ("QWidget" include (:system-flag t) nil [2491 2509])
+            ("QCheckBox" type
+               (:prototype t
+                :type "class")
+                nil [2511 2527])
+            ("QComboBox" type
+               (:prototype t
+                :type "class")
+                nil [2528 2544])
+            ("QLabel" type
+               (:prototype t
+                :type "class")
+                nil [2545 2558])
+            ("QSpinBox" type
+               (:prototype t
+                :type "class")
+                nil [2559 2574])
+            ("RenderArea" type
+               (:prototype t
+                :type "class")
+                nil [2576 2593])
+            ("Window" type
+               (:superclasses 
+                  ( ("QWidget" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2641 2648])
+                    ("Window" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Window" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2653 2662])
+                    ("private" label nil (reparse-symbol classsubparts) [2664 2678])
+                    ("shapeChanged" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2683 2703])
+                    ("penChanged" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2708 2726])
+                    ("brushChanged" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2731 2751])
+                    ("private" label nil (reparse-symbol classsubparts) [2753 2761])
+                    ("renderArea" variable
+                       (:pointer 1
+                        :type ("RenderArea" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2766 2789])
+                    ("shapeLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2794 2813])
+                    ("penWidthLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2818 2840])
+                    ("penStyleLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2845 2867])
+                    ("penCapLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2872 2892])
+                    ("penJoinLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2897 2918])
+                    ("brushStyleLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2923 2947])
+                    ("otherOptionsLabel" variable
+                       (:pointer 1
+                        :type ("QLabel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2952 2978])
+                    ("shapeComboBox" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2983 3008])
+                    ("penWidthSpinBox" variable
+                       (:pointer 1
+                        :type ("QSpinBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3013 3039])
+                    ("penStyleComboBox" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3044 3072])
+                    ("penCapComboBox" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3077 3103])
+                    ("penJoinComboBox" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3108 3135])
+                    ("brushStyleComboBox" variable
+                       (:pointer 1
+                        :type ("QComboBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3140 3170])
+                    ("antialiasingCheckBox" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3175 3207])
+                    ("transformationsCheckBox" variable
+                       (:pointer 1
+                        :type ("QCheckBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3212 3247]))                  
+                :type "class")
+                nil [2595 3250]))          
+      :file "window.h"
+      :pointmax 3271
+      :unmatched-syntax '((symbol 2631 . 2639))
+      :lexical-table 
+        '(("WINDOW_H")
+          )
+)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("window.h" include nil nil [2456 2475])
+            ("QApplication" include (:system-flag t) nil [2477 2500])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2511 2520])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2521 2534]))                  
+                :type "int")
+                nil [2502 2669]))          
+      :file "main.cpp"
+      :pointmax 2670
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!work!drawing_example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

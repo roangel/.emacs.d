@@ -1,0 +1,41 @@
+#ifndef CRAZYFLY_H
+#define CRAZYFLY_H
+
+#include "globalDefinitions.h"
+
+class structureLinkedCF : public QGraphicsSvgItem
+{
+public:
+    explicit structureLinkedCF(const CrazyflieData* p_crazyfly_msg, QGraphicsItem * parent = 0);
+    ~structureLinkedCF();
+    QRectF boundingRect() const;
+
+    void paint(QPainter * painter,
+               const QStyleOptionGraphicsItem * option,
+               QWidget * widget);
+
+    void updateCF(const CrazyflieData* p_crazyfly_msg);
+
+    std::string getName();
+
+    void setScaleCFs(double scale);
+
+private:
+
+    // info to fill by message
+    std::string m_name;
+    qreal m_x;
+    qreal m_y;
+    qreal m_z;
+
+    qreal m_roll;
+    qreal m_pitch;
+    qreal m_yaw;
+
+    // info for plotting CF
+    qreal m_width;
+    qreal m_height;
+};
+
+
+#endif

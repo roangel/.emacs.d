@@ -1,0 +1,595 @@
+;; Object mavlink/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mavlink/"
+  :tables
+  (list
+    (semanticdb-table "mavlink_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1879 1902])
+            ("px4_defines.h" include (:system-flag t) nil [1903 1927])
+            ("px4_getopt.h" include (:system-flag t) nil [1928 1951])
+            ("px4_module.h" include (:system-flag t) nil [1952 1975])
+            ("stdio.h" include (:system-flag t) nil [1976 1994])
+            ("stdlib.h" include (:system-flag t) nil [1995 2014])
+            ("string.h" include (:system-flag t) nil [2015 2034])
+            ("stdbool.h" include (:system-flag t) nil [2035 2055])
+            ("unistd.h" include (:system-flag t) nil [2056 2075])
+            ("fcntl.h" include (:system-flag t) nil [2076 2094])
+            ("errno.h" include (:system-flag t) nil [2095 2113])
+            ("assert.h" include (:system-flag t) nil [2114 2133])
+            ("math.h" include (:system-flag t) nil [2134 2151])
+            ("poll.h" include (:system-flag t) nil [2152 2169])
+            ("termios.h" include (:system-flag t) nil [2170 2190])
+            ("time.h" include (:system-flag t) nil [2191 2208])
+            ("sys/ioctl.h" include (:system-flag t) nil [2257 2279])
+            ("sys/types.h" include (:system-flag t) nil [2280 2302])
+            ("sys/stat.h" include (:system-flag t) nil [2303 2324])
+            ("drivers/device/device.h" include (:system-flag t) nil [2326 2360])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2361 2389])
+            ("arch/board/board.h" include (:system-flag t) nil [2390 2419])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2421 2455])
+            ("systemlib/err.h" include (:system-flag t) nil [2456 2482])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2483 2518])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2519 2551])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [2552 2586])
+            ("geo/geo.h" include (:system-flag t) nil [2587 2607])
+            ("dataman/dataman.h" include (:system-flag t) nil [2608 2636])
+            ("version/version.h" include (:system-flag t) nil [2637 2665])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2667 2708])
+            ("uORB/topics/vehicle_command_ack.h" include (:system-flag t) nil [2709 2753])
+            ("uORB/topics/mavlink_log.h" include (:system-flag t) nil [2754 2790])
+            ("mavlink_bridge_header.h" include nil nil [2792 2826])
+            ("mavlink_main.h" include nil nil [2827 2852])
+            ("mavlink_messages.h" include nil nil [2853 2882])
+            ("mavlink_receiver.h" include nil nil [2883 2912])
+            ("mavlink_rate_limiter.h" include nil nil [2913 2946])
+            ("mavlink_command_sender.h" include nil nil [2947 2982])
+            ("DEFAULT_REMOTE_PORT_UDP" variable (:constant-flag t) nil [3384 3407])
+            ("DEFAULT_DEVICE_NAME" variable (:constant-flag t) nil [3455 3474])
+            ("MAX_DATA_RATE" variable (:constant-flag t) nil [3498 3511])
+            ("MAIN_LOOP_DELAY" variable (:constant-flag t) nil [3562 3577])
+            ("FLOW_CONTROL_DISABLE_THRESHOLD" variable (:constant-flag t) nil [3632 3662])
+            ("_mavlink_instances" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "nullptr"
+                :type ("Mavlink" type (:type "class") nil nil))
+                nil [3754 3799])
+            ("mavlink_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3912 3921])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3922 3935]))                  
+                :type "int")
+                nil [3895 3936])
+            ("mavlink_system" variable
+               (:typemodifiers ("extern")
+                :type ("mavlink_system_t" type (:type "class") nil nil))
+                nil [3938 3977])
+            ("mavlink_send_uart_bytes" function
+               (:arguments 
+                  ( ("chan" variable (:type ("mavlink_channel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4008 4031])
+                    ("ch" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4032 4050])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [4051 4062]))                  
+                :type "void")
+                nil [3979 4298])
+            ("mavlink_start_uart_send" function
+               (:arguments 
+                  ( ("chan" variable (:type ("mavlink_channel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4329 4352])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [4353 4364]))                  
+                :type "void")
+                nil [4300 4556])
+            ("mavlink_end_uart_send" function
+               (:arguments 
+                  ( ("chan" variable (:type ("mavlink_channel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4585 4608])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [4609 4620]))                  
+                :type "void")
+                nil [4558 4780])
+            ("mavlink_get_channel_status" function
+               (:pointer 1
+                :arguments 
+                  ( ("channel" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4909 4925]))                  
+                :type ("mavlink_status_t" type (:type "class") nil nil))
+                nil [4864 5065])
+            ("mavlink_get_channel_buffer" function
+               (:pointer 1
+                :arguments 
+                  ( ("channel" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5195 5211]))                  
+                :type ("mavlink_message_t" type (:type "class") nil nil))
+                nil [5149 5351])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [5353 5373])
+            ("Mavlink::_boot_complete" variable
+               (:default-value "false"
+                :type "bool")
+                nil [5375 5412])
+            ("Mavlink::_config_link_on" variable
+               (:default-value "false"
+                :type "bool")
+                nil [5413 5451])
+            ("Mavlink" function
+               (:constructor-flag t
+                :parent "Mavlink"
+                :type ("Mavlink" type (:type "class") nil nil))
+                nil [5453 8382])
+            ("Mavlink" function
+               (:destructor-flag t
+                :parent "Mavlink"
+                :type "void")
+                nil [8384 8901])
+            ("set_proto_version" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("version" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8935 8952]))                  
+                :type "void")
+                nil [8903 9352])
+            ("count_txerr" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [9354 9411])
+            ("set_mode" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("mode" variable (:type ("MAVLINK_MODE" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [9436 9459]))                  
+                :type "void")
+                nil [9413 9478])
+            ("instance_count" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [9480 9638])
+            ("get_instance" function
+               (:pointer 1
+                :parent "Mavlink"
+                :arguments 
+                  ( ("instance" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9672 9690]))                  
+                :type ("Mavlink" type (:type "class") nil nil))
+                nil [9640 9838])
+            ("get_instance_for_device" function
+               (:pointer 1
+                :parent "Mavlink"
+                :arguments 
+                  ( ("device_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9883 9907]))                  
+                :type ("Mavlink" type (:type "class") nil nil))
+                nil [9840 10065])
+            ("get_instance_for_network_port" function
+               (:pointer 1
+                :parent "Mavlink"
+                :arguments 
+                  ( ("port" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [10116 10135]))                  
+                :type ("Mavlink" type (:type "class") nil nil))
+                nil [10067 10276])
+            ("destroy_all_instances" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [10278 11232])
+            ("get_status_all_instances" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [11234 11575])
+            ("set_verbose" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("v" variable (:type "bool") (reparse-symbol arg-sub-list) [11603 11610]))                  
+                :type "void")
+                nil [11577 11629])
+            ("set_verbose_all_instances" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [11670 11683]))                  
+                :type "int")
+                nil [11631 11946])
+            ("instance_exists" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("device_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11978 12002])
+                    ("self" variable
+                       (:pointer 1
+                        :type ("Mavlink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12003 12017]))                  
+                :type "bool")
+                nil [11948 12250])
+            ("forward_message" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12282 12311])
+                    ("self" variable
+                       (:pointer 1
+                        :type ("Mavlink" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12312 12326]))                  
+                :type "void")
+                nil [12252 13481])
+            ("get_uart_fd" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13509 13524]))                  
+                :type "int")
+                nil [13484 13626])
+            ("get_uart_fd" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [13628 13676])
+            ("get_instance_id" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [13678 13734])
+            ("get_channel" function
+               (:parent "Mavlink"
+                :type ("mavlink_channel_t" type (:type "class") nil nil))
+                nil [13736 13798])
+            ("mavlink_update_system" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [13800 15544])
+            ("get_system_id" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [15546 15608])
+            ("get_component_id" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [15610 15676])
+            ("mavlink_open_uart" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("baud" variable (:type "int") (reparse-symbol arg-sub-list) [15709 15718])
+                    ("uart_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15719 15741]))                  
+                :type "int")
+                nil [15678 20108])
+            ("enable_flow_control" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [20143 20156]))                  
+                :type "int")
+                nil [20110 20561])
+            ("set_hil_enabled" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("hil_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [20592 20609]))                  
+                :type "int")
+                nil [20563 20942])
+            ("get_free_tx_buf" function
+               (:parent "Mavlink"
+                :type "unsigned int")
+                nil [20944 22014])
+            ("begin_send" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [22016 22183])
+            ("send_packet" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [22185 23597])
+            ("send_bytes" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23624 23643])
+                    ("packet_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23644 23664]))                  
+                :type "void")
+                nil [23599 24812])
+            ("find_broadcast_address" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [24814 28882])
+            ("init_udp" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [28884 29701])
+            ("handle_message" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29732 29761]))                  
+                :type "void")
+                nil [29703 29996])
+            ("send_statustext_info" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30033 30052]))                  
+                :type "void")
+                nil [29998 30102])
+            ("send_statustext_critical" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30143 30162]))                  
+                :type "void")
+                nil [30104 30216])
+            ("send_statustext_emergency" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30258 30277]))                  
+                :type "void")
+                nil [30218 30332])
+            ("send_autopilot_capabilites" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [30334 32298])
+            ("send_protocol_version" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [32300 33069])
+            ("add_orb_subscription" function
+               (:pointer 1
+                :parent "Mavlink"
+                :arguments 
+                  ( ("topic" variable
+                       (:constant-flag t
+                        :type ("orb_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33125 33146])
+                    ("instance" variable (:type "int") (reparse-symbol arg-sub-list) [33147 33160]))                  
+                :type ("MavlinkOrbSubscription" type (:type "class") nil nil))
+                nil [33071 33564])
+            ("interval_from_rate" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("rate" variable (:type "float") (reparse-symbol arg-sub-list) [33598 33609]))                  
+                :type "int")
+                nil [33566 33735])
+            ("configure_stream" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("stream_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33767 33791])
+                    ("rate" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [33792 33809]))                  
+                :type "int")
+                nil [33737 34891])
+            ("adjust_stream_rates" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("multiplier" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [34927 34950]))                  
+                :type "void")
+                nil [34893 35527])
+            ("configure_stream_threadsafe" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("stream_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35571 35595])
+                    ("rate" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35596 35613]))                  
+                :type "void")
+                nil [35529 36282])
+            ("message_buffer_init" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [36317 36326]))                  
+                :type "int")
+                nil [36284 36625])
+            ("message_buffer_destroy" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [36627 36788])
+            ("message_buffer_count" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [36790 36951])
+            ("message_buffer_is_empty" function
+               (:parent "Mavlink"
+                :type "int")
+                nil [36953 37058])
+            ("message_buffer_write" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [37096 37112])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [37113 37122]))                  
+                :type "bool")
+                nil [37061 37912])
+            ("message_buffer_get_ptr" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [37950 37961])
+                    ("is_part" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [37962 37976]))                  
+                :type "int")
+                nil [37914 38557])
+            ("message_buffer_mark_read" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [38598 38604]))                  
+                :type "void")
+                nil [38559 38691])
+            ("pass_message" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38720 38749]))                  
+                :type "void")
+                nil [38693 39009])
+            ("get_rate_mult" function
+               (:parent "Mavlink"
+                :type "float")
+                nil [39011 39065])
+            ("get_shell" function
+               (:pointer 1
+                :parent "Mavlink"
+                :type ("MavlinkShell" type (:type "class") nil nil))
+                nil [39067 39449])
+            ("close_shell" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [39451 39561])
+            ("update_rate_mult" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [39563 42123])
+            ("task_main" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [42148 42157])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42158 42171]))                  
+                :type "int")
+                nil [42125 63254])
+            ("check_radio_config" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [63256 64383])
+            ("start_helper" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [64411 64420])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64421 64434]))                  
+                :type "int")
+                nil [64385 64775])
+            ("start" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [64796 64805])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64806 64819]))                  
+                :type "int")
+                nil [64777 66100])
+            ("display_status" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [66102 67979])
+            ("stream_command" function
+               (:parent "Mavlink"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [68009 68018])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68019 68032]))                  
+                :type "int")
+                nil [67981 70259])
+            ("set_boot_complete" function
+               (:parent "Mavlink"
+                :type "void")
+                nil [70261 70669])
+            ("usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [70671 74556])
+            ("mavlink_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [74575 74584])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74585 74598]))                  
+                :type "int")
+                nil [74558 75431]))          
+      :file "mavlink_main.cpp"
+      :pointmax 75432
+      :fsize 75431
+      :lastmodtime '(23437 18825 480963 586000)
+      :unmatched-syntax '((symbol 3886 . 3894) (symbol 3102 . 3109) (symbol 3098 . 3101) (symbol 3095 . 3097) (symbol 3087 . 3094) (symbol 3084 . 3086) (symbol 3081 . 3083) (symbol 3077 . 3080) (symbol 3059 . 3076) (symbol 3053 . 3058) (punctuation 3052 . 3053))
+      :lexical-table 
+        '(("MAX_DATA_RATE" . ((number "10000000" 3515 . 3523)))
+          ("MAIN_LOOP_DELAY" . ((number "10000" 3581 . 3586)))
+          ("FLOW_CONTROL_DISABLE_THRESHOLD" . ((number "40" 3664 . 3666)))
+          ("DEFAULT_DEVICE_NAME" . ((string "\"/dev/ttyS1\"" 3477 . 3489)))
+          ("DEFAULT_REMOTE_PORT_UDP" . ((number "14550" 3410 . 3415)))
+          )
+)
+    (semanticdb-table "mavlink_bridge_header.h"
+      :file "mavlink_bridge_header.h"
+      :fsize 3525
+      :lastmodtime '(23437 18825 476963 484000))
+    (semanticdb-table "mavlink_main.h"
+      :file "mavlink_main.h"
+      :fsize 19261
+      :lastmodtime '(23437 18825 480963 586000))
+    (semanticdb-table "mavlink_messages.h"
+      :file "mavlink_messages.h"
+      :fsize 2361
+      :lastmodtime '(23437 18825 480963 586000))
+    (semanticdb-table "mavlink_receiver.h"
+      :file "mavlink_receiver.h"
+      :fsize 10800
+      :lastmodtime '(23437 18825 480963 586000))
+    (semanticdb-table "mavlink_rate_limiter.h"
+      :file "mavlink_rate_limiter.h"
+      :fsize 2259
+      :lastmodtime '(23400 32097 900832 620000))
+    (semanticdb-table "mavlink_command_sender.h"
+      :file "mavlink_command_sender.h"
+      :fsize 3860
+      :lastmodtime '(23437 18825 476963 484000)))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!mavlink!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

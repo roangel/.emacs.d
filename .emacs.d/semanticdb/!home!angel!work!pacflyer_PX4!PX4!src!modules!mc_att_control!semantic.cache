@@ -1,0 +1,244 @@
+;; Object mc_att_control/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mc_att_control/"
+  :tables
+  (list
+    (semanticdb-table "mc_att_control_params.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLL_TC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2172 2183]))                  
+                :type "int")
+                nil [2153 2190])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCH_TC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2448 2460]))                  
+                :type "int")
+                nil [2429 2467])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLL_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2703 2713]))                  
+                :type "int")
+                nil [2684 2720])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLLRATE_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2956 2970]))                  
+                :type "int")
+                nil [2937 2978])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLLRATE_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3221 3235]))                  
+                :type "int")
+                nil [3202 3243])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_RR_INT_LIM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3582 3596]))                  
+                :type "int")
+                nil [3563 3604])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLLRATE_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3886 3900]))                  
+                :type "int")
+                nil [3867 3909])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLLRATE_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4068 4083]))                  
+                :type "int")
+                nil [4049 4090])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCH_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4329 4340]))                  
+                :type "int")
+                nil [4310 4347])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCHRATE_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4585 4600]))                  
+                :type "int")
+                nil [4566 4608])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCHRATE_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4853 4868]))                  
+                :type "int")
+                nil [4834 4876])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PR_INT_LIM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5218 5232]))                  
+                :type "int")
+                nil [5199 5240])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCHRATE_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5511 5526]))                  
+                :type "int")
+                nil [5492 5535])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCHRATE_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5695 5711]))                  
+                :type "int")
+                nil [5676 5718])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAW_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5952 5961]))                  
+                :type "int")
+                nil [5933 5968])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRATE_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6202 6215]))                  
+                :type "int")
+                nil [6183 6222])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRATE_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6463 6476]))                  
+                :type "int")
+                nil [6444 6483])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YR_INT_LIM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6819 6833]))                  
+                :type "int")
+                nil [6800 6841])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRATE_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7106 7119]))                  
+                :type "int")
+                nil [7087 7126])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRATE_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7303 7317]))                  
+                :type "int")
+                nil [7284 7324])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAW_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7601 7611]))                  
+                :type "int")
+                nil [7582 7618])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ROLLRATE_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8070 8086]))                  
+                :type "int")
+                nil [8051 8095])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_PITCHRATE_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8549 8566]))                  
+                :type "int")
+                nil [8530 8575])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRATE_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8734 8749]))                  
+                :type "int")
+                nil [8715 8758])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_YAWRAUTO_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9061 9077]))                  
+                :type "int")
+                nil [9042 9085])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ACRO_R_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9281 9295]))                  
+                :type "int")
+                nil [9262 9304])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ACRO_P_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9501 9515]))                  
+                :type "int")
+                nil [9482 9524])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ACRO_Y_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9720 9734]))                  
+                :type "int")
+                nil [9701 9743])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ACRO_EXPO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9982 9995]))                  
+                :type "int")
+                nil [9963 10003])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_ACRO_SUPEXPO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10339 10355]))                  
+                :type "int")
+                nil [10320 10362])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_RATT_TH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10659 10670]))                  
+                :type "int")
+                nil [10640 10677])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_BAT_SCALE_EN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11159 11175]))                  
+                :type "int")
+                nil [11140 11179])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_BREAK_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11445 11460]))                  
+                :type "int")
+                nil [11426 11467])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_BREAK_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11733 11748]))                  
+                :type "int")
+                nil [11714 11755])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_BREAK_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12021 12036]))                  
+                :type "int")
+                nil [12002 12043])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_RATE_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12452 12466]))                  
+                :type "int")
+                nil [12433 12473])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_RATE_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12882 12896]))                  
+                :type "int")
+                nil [12863 12903])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MC_TPA_RATE_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13312 13326]))                  
+                :type "int")
+                nil [13293 13333]))          
+      :file "mc_att_control_params.c"
+      :pointmax 13334
+      :fsize 13333
+      :lastmodtime '(23437 18825 480963 586000)
+      :unmatched-syntax '((number 13327 . 13331) (number 12897 . 12901) (number 12467 . 12471) (number 12037 . 12041) (number 11749 . 11753) (number 11461 . 11465) (number 11176 . 11177) (number 10671 . 10675) (number 10356 . 10360) (number 9996 . 10001) (number 9735 . 9741) (number 9516 . 9522) (number 9296 . 9302) (number 9078 . 9083) (number 8750 . 8756) (number 8567 . 8573) (number 8087 . 8093) (number 7612 . 7616) (number 7318 . 7322) (number 7120 . 7124) (number 6834 . 6839) (number 6477 . 6481) (number 6216 . 6220) (number 5962 . 5966) (number 5712 . 5716) (number 5527 . 5533) (number 5233 . 5238) (number 4869 . 4874) (number 4601 . 4606) (number 4341 . 4345) (number 4084 . 4088) (number 3901 . 3907) (number 3597 . 3602) (number 3236 . 3241) (number 2971 . 2976) (number 2714 . 2718) (number 2461 . 2465) (number 2184 . 2188))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!mc_att_control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

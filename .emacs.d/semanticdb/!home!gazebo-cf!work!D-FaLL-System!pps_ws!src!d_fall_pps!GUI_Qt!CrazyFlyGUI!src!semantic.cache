@@ -1,0 +1,1126 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "mainguiwindow.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mainguiwindow.h" include nil nil [1 27])
+            ("ui_mainguiwindow.h" include nil nil [28 57])
+            ("crazyFlyZoneTab.h" include nil nil [58 86])
+            ("myGraphicsScene.h" include nil nil [87 115])
+            ("myGraphicsView.h" include nil nil [116 143])
+            ("channelLUT.h" include nil nil [144 167])
+            ("QObject" include (:system-flag t) nil [169 187])
+            ("QDoubleSpinBox" include (:system-flag t) nil [188 213])
+            ("QTextEdit" include (:system-flag t) nil [214 234])
+            ("QString" include (:system-flag t) nil [235 253])
+            ("QMetaType" include (:system-flag t) nil [254 274])
+            ("QDir" include (:system-flag t) nil [275 290])
+            ("regex" include (:system-flag t) nil [291 307])
+            ("string" include (:system-flag t) nil [548 565])
+            ("N_MAX_CRAZYFLIES" variable (:constant-flag t) nil [575 591])
+            ("MainGUIWindow" function
+               (:constructor-flag t
+                :parent "MainGUIWindow"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [711 720])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [721 733])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [734 750]))                  
+                :type ("MainGUIWindow" type (:type "class") nil nil))
+                nil [682 966])
+            ("MainGUIWindow" function
+               (:destructor-flag t
+                :parent "MainGUIWindow"
+                :type "void")
+                nil [969 1019])
+            ("getTabIndexFromName" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1073]))                  
+                :type "int")
+                nil [1021 1419])
+            ("doNumCrazyFlyZonesChanged" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1467 1473]))                  
+                :type "void")
+                nil [1421 3038])
+            ("_init" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [3040 6619])
+            ("doTabClosed" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("tab_index" variable (:type "int") (reparse-symbol arg-sub-list) [6653 6667]))                  
+                :type "void")
+                nil [6621 6870])
+            ("setTabIndex" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6904 6914]))                  
+                :type "void")
+                nil [6872 7058])
+            ("updateComboBoxes" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [7060 7160])
+            ("updateComboBoxesCFs" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [7161 7552])
+            ("updateComboBoxesCFZones" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [7554 8061])
+            ("on_removeTable_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [12678 12824])
+            ("transitionToMode" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [12863 12872]))                  
+                :type "void")
+                nil [12826 13173])
+            ("on_radioButton_table_mode_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [13229 13242]))                  
+                :type "void")
+                nil [13175 13710])
+            ("on_radioButton_crazyfly_zones_mode_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [13776 13789]))                  
+                :type "void")
+                nil [13713 14274])
+            ("handleTablePiecesNumChanged" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("newNum" variable (:type "int") (reparse-symbol arg-sub-list) [14324 14335]))                  
+                :type "void")
+                nil [14276 14340])
+            ("on_radioButton_lock_mode_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [14395 14408]))                  
+                :type "void")
+                nil [14342 14822])
+            ("on_checkBox_grid_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [14869 14882]))                  
+                :type "void")
+                nil [14824 14915])
+            ("on_checkBox_table_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [14963 14976]))                  
+                :type "void")
+                nil [14917 15085])
+            ("on_checkBox_crazyfly_zones_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [15142 15155]))                  
+                :type "void")
+                nil [15087 15280])
+            ("on_tabWidget_currentChanged" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15330 15340]))                  
+                :type "void")
+                nil [15282 15607])
+            ("centerViewIndex" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [15645 15655]))                  
+                :type "void")
+                nil [15609 15842])
+            ("on_pushButton_fitAll_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [15845 16074])
+            ("on_checkBox_vicon_markers_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [16130 16143]))                  
+                :type "void")
+                nil [16076 16854])
+            ("on_checkBox_vicon_highlight_markers_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [16920 16933]))                  
+                :type "void")
+                nil [16856 17320])
+            ("on_checkBox_vicon_crazyflies_toggled" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("checked" variable (:type "bool") (reparse-symbol arg-sub-list) [17379 17392]))                  
+                :type "void")
+                nil [17322 18175])
+            ("on_scaleSpinBox_valueChanged" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("arg1" variable (:type "double") (reparse-symbol arg-sub-list) [18226 18238]))                  
+                :type "void")
+                nil [18177 18391])
+            ("on_refresh_cfs_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [18393 18475])
+            ("on_refresh_student_ids_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [18477 19571])
+            ("on_link_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [19575 21089])
+            ("on_unlink_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [21091 21210])
+            ("on_save_in_DB_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [21212 23034])
+            ("clear_database_file" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [23036 23832])
+            ("fill_database_file" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [23834 24216])
+            ("save_database_file" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [24218 24511])
+            ("insert_or_update_entry_database" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("entry" variable (:type ("CrazyflieEntry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24565 24586]))                  
+                :type "void")
+                nil [24513 24773])
+            ("read_database_from_file" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("read_db" variable
+                       (:reference 1
+                        :type ("CrazyflieDB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24818 24839]))                  
+                :type "int")
+                nil [24775 25116])
+            ("on_load_from_DB_button_clicked" function
+               (:parent "MainGUIWindow"
+                :type "void")
+                nil [25118 27048])
+            ("on_comboBoxCFs_currentTextChanged" function
+               (:parent "MainGUIWindow"
+                :arguments 
+                  ( ("arg1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27104 27124]))                  
+                :type "void")
+                nil [27050 27467]))          
+      :file "mainguiwindow.cpp"
+      :pointmax 27468
+      :fsize 27467
+      :lastmodtime '(22932 25508 932394 635000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("N_MAX_CRAZYFLIES" . ((number "20" 602 . 604)))
+          )
+)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mainguiwindow.h" include nil nil [1 27])
+            ("ui_mainguiwindow.h" include nil nil [28 57])
+            ("QApplication" include (:system-flag t) nil [58 81])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [92 101])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102 115]))                  
+                :type "int")
+                nil [83 257]))          
+      :file "main.cpp"
+      :pointmax 258
+      :fsize 257
+      :lastmodtime '(22831 52097 35578 290000)
+      :unmatched-syntax nil)
+    (semanticdb-table "myGraphicsScene.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("myGraphicsScene.h" include nil nil [1 29])
+            ("globalDefinitions.h" include nil nil [30 60])
+            ("QGraphicsSceneMouseEvent" include (:system-flag t) nil [62 97])
+            ("QRect" include (:system-flag t) nil [98 114])
+            ("QApplication" include (:system-flag t) nil [115 138])
+            ("QKeyEvent" include (:system-flag t) nil [139 159])
+            ("myGraphicsScene" function
+               (:constructor-flag t
+                :parent "myGraphicsScene"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [194 210]))                  
+                :type ("myGraphicsScene" type (:type "class") nil nil))
+                nil [161 395])
+            ("keyPressEvent" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("keyEvent" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [434 455]))                  
+                :type "void")
+                nil [398 1697])
+            ("setSelectedCrazyFlyZone" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1745 1755]))                  
+                :type "void")
+                nil [1699 2126])
+            ("checkSelectedCrazyFlyZone" function
+               (:parent "myGraphicsScene"
+                :type "int")
+                nil [2128 2465])
+            ("addCFZone" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("rect" variable (:type ("QRectF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2499 2511])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2512 2522]))                  
+                :type "void")
+                nil [2467 2978])
+            ("mousePressEvent" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3018 3055]))                  
+                :type "void")
+                nil [2980 5815])
+            ("mouseMoveEvent" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5854 5891]))                  
+                :type "void")
+                nil [5817 6652])
+            ("addCrazyFlyZoneToVector" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("rect" variable
+                       (:pointer 1
+                        :type ("crazyFlyZone" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6700 6719]))                  
+                :type "void")
+                nil [6654 6892])
+            ("addTablePieceToVector" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("rect" variable
+                       (:pointer 1
+                        :type ("tablePiece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6938 6955]))                  
+                :type "void")
+                nil [6894 7046])
+            ("changeModeTo" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("next_mode" variable (:type "int") (reparse-symbol arg-sub-list) [7083 7097]))                  
+                :type "void")
+                nil [7048 7123])
+            ("getMode" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7154 7159]))                  
+                :type "int")
+                nil [7125 7180])
+            ("lockTablePieces" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7220 7225]))                  
+                :type "void")
+                nil [7182 7364])
+            ("unlockTablePieces" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7406 7411]))                  
+                :type "void")
+                nil [7366 7553])
+            ("lockCrazyFlyZones" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7595 7600]))                  
+                :type "void")
+                nil [7555 7702])
+            ("unlockCrazyFlyZones" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7746 7751]))                  
+                :type "void")
+                nil [7704 7855])
+            ("setMode" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("new_mode" variable (:type "int") (reparse-symbol arg-sub-list) [7887 7900]))                  
+                :type "void")
+                nil [7857 8527])
+            ("setGrid" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [8559 8571]))                  
+                :type "void")
+                nil [8529 8615])
+            ("hideTable" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [8617 8758])
+            ("showTable" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [8760 8898])
+            ("hideCrazyFlyZones" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [8900 9053])
+            ("showCrazyFlyZones" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [9055 9205])
+            ("getRectFCrazyFlyZone" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [9252 9262]))                  
+                :type ("QRectF" type (:type "class") nil nil))
+                nil [9207 9344])
+            ("removeCrazyFlyZone" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [9387 9405]))                  
+                :type "void")
+                nil [9346 9814])
+            ("removeAllCFZones" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [9816 10033])
+            ("removeTable" function
+               (:parent "myGraphicsScene"
+                :type "void")
+                nil [10035 10257])
+            ("drawBackground" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("painter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10296 10314])
+                    ("rect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10315 10334]))                  
+                :type "void")
+                nil [10259 11389])
+            ("removeTablePiece" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [11430 11440]))                  
+                :type "void")
+                nil [11391 11639])
+            ("mouseReleaseEvent" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11681 11718]))                  
+                :type "void")
+                nil [11641 13329])
+            ("mapFromWorldToScene" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("point" variable (:type ("QPointF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13377 13391]))                  
+                :type ("QPointF" type (:type "class") nil nil))
+                nil [13332 13467])
+            ("mapFromSceneToWorld" function
+               (:parent "myGraphicsScene"
+                :arguments 
+                  ( ("point" variable (:type ("QPointF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13514 13528]))                  
+                :type ("QPointF" type (:type "class") nil nil))
+                nil [13469 13604]))          
+      :file "myGraphicsScene.cpp"
+      :pointmax 13605
+      :fsize 13604
+      :lastmodtime '(22930 47466 902640 319000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rosNodeThread.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("rosNodeThread.h" include nil nil [1 27])
+            ("d_fall_pps/CMRead.h" include nil nil [29 59])
+            ("d_fall_pps/CMUpdate.h" include nil nil [60 92])
+            ("d_fall_pps/CMCommand.h" include nil nil [93 126])
+            ("rosNodeThread" function
+               (:constructor-flag t
+                :parent "rosNodeThread"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [158 167])
+                    ("pArgv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168 181])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [182 201])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202 218]))                  
+                :type ("rosNodeThread" type (:type "class") nil nil))
+                nil [129 371])
+            ("rosNodeThread" function
+               (:destructor-flag t
+                :parent "rosNodeThread"
+                :type "void")
+                nil [373 537])
+            ("init" function
+               (:parent "rosNodeThread"
+                :type "bool")
+                nil [557 1429])
+            ("messageCallback" function
+               (:parent "rosNodeThread"
+                :arguments 
+                  ( ("p_msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ptrToMessage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1488 1514]))                  
+                :type "void")
+                nil [1452 1651])
+            ("run" function
+               (:parent "rosNodeThread"
+                :type "void")
+                nil [2390 2842]))          
+      :file "rosNodeThread.cpp"
+      :pointmax 2843
+      :fsize 2842
+      :lastmodtime '(22930 47466 902640 319000)
+      :unmatched-syntax nil)
+    (semanticdb-table "crazyFlyZone.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("crazyFlyZone.h" include nil nil [1 26])
+            ("globalDefinitions.h" include nil nil [27 57])
+            ("crazyFlyZone" function
+               (:constructor-flag t
+                :parent "crazyFlyZone"
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86 106])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [107 117])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119 142]))                  
+                :type ("crazyFlyZone" type (:type "class") nil nil))
+                nil [59 266])
+            ("crazyFlyZone" function
+               (:destructor-flag t
+                :parent "crazyFlyZone"
+                :type "void")
+                nil [268 301])
+            ("updateLabel" function
+               (:parent "crazyFlyZone"
+                :arguments 
+                  ( ("string" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 349]))                  
+                :type "void")
+                nil [303 405])
+            ("setLabel" function
+               (:parent "crazyFlyZone"
+                :arguments 
+                  ( ("string" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [435 450]))                  
+                :type "void")
+                nil [407 655])
+            ("setLabelPosition" function
+               (:parent "crazyFlyZone"
+                :type "void")
+                nil [657 893])
+            ("getIndex" function
+               (:parent "crazyFlyZone"
+                :type "int")
+                nil [895 946])
+            ("setIndex" function
+               (:parent "crazyFlyZone"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [976 986]))                  
+                :type "void")
+                nil [948 1163])
+            ("rectSizeChanged" function
+               (:parent "crazyFlyZone"
+                :type "void")
+                nil [1165 1264])
+            ("linkCF" function
+               (:parent "crazyFlyZone"
+                :arguments 
+                  ( ("cf_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1292 1312]))                  
+                :type "void")
+                nil [1266 1375])
+            ("isLinked" function
+               (:parent "crazyFlyZone"
+                :type "bool")
+                nil [1377 1431])
+            ("removeLink" function
+               (:parent "crazyFlyZone"
+                :type "void")
+                nil [1433 1560]))          
+      :file "crazyFlyZone.cpp"
+      :pointmax 1561
+      :fsize 1560
+      :lastmodtime '(22930 46722 378020 546000)
+      :unmatched-syntax nil)
+    (semanticdb-table "marker.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("marker.h" include nil nil [1 20])
+            ("QPen" include (:system-flag t) nil [22 37])
+            ("QBrush" include (:system-flag t) nil [38 55])
+            ("Marker" function
+               (:constructor-flag t
+                :parent "Marker"
+                :arguments 
+                  ( ("p_marker_msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("UnlabeledMarker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73 109])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110 133]))                  
+                :type ("Marker" type (:type "class") nil nil))
+                nil [58 717])
+            ("updateMarker" function
+               (:parent "Marker"
+                :arguments 
+                  ( ("p_marker_msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("UnlabeledMarker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [745 781]))                  
+                :type "void")
+                nil [719 974])
+            ("setHighlighted" function
+               (:parent "Marker"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1005 1010]))                  
+                :type "void")
+                nil [977 1465])
+            ("clearHighlighted" function
+               (:parent "Marker"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1497 1502]))                  
+                :type "void")
+                nil [1467 1684])
+            ("getHighlighted" function
+               (:parent "Marker"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1715 1720]))                  
+                :type "bool")
+                nil [1687 1749])
+            ("Marker" function
+               (:destructor-flag t
+                :parent "Marker"
+                :type "void")
+                nil [1751 1796]))          
+      :file "marker.cpp"
+      :pointmax 1797
+      :fsize 1796
+      :lastmodtime '(22831 52097 43578 285000)
+      :unmatched-syntax nil)
+    (semanticdb-table "myGraphicsView.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("myGraphicsView.h" include nil nil [1 28])
+            ("QApplication" include (:system-flag t) nil [30 53])
+            ("QMouseEvent" include (:system-flag t) nil [54 76])
+            ("myGraphicsView" function
+               (:constructor-flag t
+                :parent "myGraphicsView"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109 125]))                  
+                :type ("myGraphicsView" type (:type "class") nil nil))
+                nil [78 187])
+            ("wheelEvent" function
+               (:parent "myGraphicsView"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QWheelEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222 241]))                  
+                :type "void")
+                nil [190 832])
+            ("mousePressEvent" function
+               (:parent "myGraphicsView"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [871 895]))                  
+                :type "void")
+                nil [834 1098])
+            ("mouseMoveEvent" function
+               (:parent "myGraphicsView"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1136 1160]))                  
+                :type "void")
+                nil [1100 1437])
+            ("mouseReleaseEvent" function
+               (:parent "myGraphicsView"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1479 1503]))                  
+                :type "void")
+                nil [1440 1587]))          
+      :file "myGraphicsView.cpp"
+      :pointmax 1588
+      :fsize 1587
+      :lastmodtime '(22831 52097 67578 271000)
+      :unmatched-syntax nil)
+    (semanticdb-table "crazyFly.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("crazyFly.h" include nil nil [1 22])
+            ("QPen" include (:system-flag t) nil [24 39])
+            ("QBrush" include (:system-flag t) nil [40 57])
+            ("crazyFly" function
+               (:constructor-flag t
+                :parent "crazyFly"
+                :arguments 
+                  ( ("p_crazyfly_msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CrazyflieData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79 115])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116 139]))                  
+                :type ("crazyFly" type (:type "class") nil nil))
+                nil [60 335])
+            ("crazyFly" function
+               (:destructor-flag t
+                :parent "crazyFly"
+                :type "void")
+                nil [337 362])
+            ("isAddedToScene" function
+               (:parent "crazyFly"
+                :type "bool")
+                nil [364 428])
+            ("setAddedToScene" function
+               (:parent "crazyFly"
+                :arguments 
+                  ( ("added" variable (:type "bool") (reparse-symbol arg-sub-list) [461 472]))                  
+                :type "void")
+                nil [430 506])
+            ("setScaleCFs" function
+               (:parent "crazyFly"
+                :arguments 
+                  ( ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [535 548]))                  
+                :type "void")
+                nil [508 579])
+            ("getName" function
+               (:parent "crazyFly"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [581 635])
+            ("updateCF" function
+               (:parent "crazyFly"
+                :arguments 
+                  ( ("p_crazyfly_msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CrazyflieData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [662 698]))                  
+                :type "void")
+                nil [638 1330])
+            ("isOccluded" function
+               (:parent "crazyFly"
+                :type "bool")
+                nil [1332 1386])
+            ("boundingRect" function
+               (:parent "crazyFly"
+                :type ("QRectF" type (:type "class") nil nil))
+                nil [1391 1589])
+            ("paint" function
+               (:parent "crazyFly"
+                :arguments 
+                  ( ("painter" variable
+                       (:pointer 1
+                        :type ("QPainter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1612 1630])
+                    ("option" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QStyleOptionGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1631 1670])
+                    ("widget" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1671 1687]))                  
+                :type "void")
+                nil [1591 1751])
+            ("assignCFZone" function
+               (:parent "crazyFly"
+                :arguments 
+                  ( ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [1781 1799]))                  
+                :type "void")
+                nil [1753 1872])
+            ("removeAssigned" function
+               (:parent "crazyFly"
+                :type "void")
+                nil [1874 2007])
+            ("isAssigned" function
+               (:parent "crazyFly"
+                :type "bool")
+                nil [2009 2063]))          
+      :file "crazyFly.cpp"
+      :pointmax 2064
+      :fsize 2063
+      :lastmodtime '(22930 46722 374020 541000)
+      :unmatched-syntax nil)
+    (semanticdb-table "CFLinker.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CFLinker.h" include nil nil [1 22])
+            ("QHeaderView" include (:system-flag t) nil [24 46])
+            ("CFLinker" function
+               (:constructor-flag t
+                :parent "CFLinker"
+                :arguments 
+                  ( ("ui" variable
+                       (:pointer 1
+                        :type ("Ui::MainGUIWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67 89])
+                    ("crazyflies_vector" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("crazyFly" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [90 132])
+                    ("crazyfly_zones" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("crazyFlyZone" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [133 176]))                  
+                :type ("CFLinker" type (:type "class") nil nil))
+                nil [48 296])
+            ("CFLinker" function
+               (:destructor-flag t
+                :parent "CFLinker"
+                :type "void")
+                nil [298 323])
+            ("getCFZoneIndexFromName" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("name" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [362 375]))                  
+                :type "int")
+                nil [325 422])
+            ("getCFIndexFromName" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [457 474]))                  
+                :type "int")
+                nil [424 644])
+            ("isStudentIDLinked" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("student_id" variable (:type "int") (reparse-symbol arg-sub-list) [679 694]))                  
+                :type "bool")
+                nil [646 899])
+            ("isRadioAddressLinked" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("radio_address" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [937 963]))                  
+                :type "bool")
+                nil [901 1173])
+            ("isCFZoneLinked" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [1205 1223]))                  
+                :type "bool")
+                nil [1175 1434])
+            ("isCFLinked" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("cf_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1462 1482]))                  
+                :type "bool")
+                nil [1436 1680])
+            ("addNewRow" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("student_id" variable (:type "int") (reparse-symbol arg-sub-list) [1708 1723])
+                    ("crazyfly_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1724 1750])
+                    ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [1751 1769])
+                    ("radio_address" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1770 1796]))                  
+                :type "void")
+                nil [1683 3051])
+            ("link" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("student_id" variable (:type "int") (reparse-symbol arg-sub-list) [3073 3088])
+                    ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [3089 3107])
+                    ("cf_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3108 3128])
+                    ("radio_address" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3129 3155]))                  
+                :type "void")
+                nil [3053 4464])
+            ("clear_all_links" function
+               (:parent "CFLinker"
+                :type "void")
+                nil [4466 4589])
+            ("unlink_cf_zone" function
+               (:parent "CFLinker"
+                :arguments 
+                  ( ("cf_zone_index" variable (:type "int") (reparse-symbol arg-sub-list) [4621 4639]))                  
+                :type "void")
+                nil [4591 5213])
+            ("unlink_selection" function
+               (:parent "CFLinker"
+                :type "void")
+                nil [5215 6652]))          
+      :file "CFLinker.cpp"
+      :pointmax 6653
+      :fsize 6652
+      :lastmodtime '(22930 47466 902640 319000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tablePiece.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("tablePiece.h" include nil nil [1 24])
+            ("tablePiece" function
+               (:constructor-flag t
+                :parent "tablePiece"
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49 69])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71 94]))                  
+                :type ("tablePiece" type (:type "class") nil nil))
+                nil [26 213])
+            ("rectSizeChanged" function
+               (:parent "tablePiece"
+                :type "void")
+                nil [215 288])
+            ("setLightColor" function
+               (:parent "tablePiece"
+                :type "void")
+                nil [290 397])
+            ("setDarkColor" function
+               (:parent "tablePiece"
+                :type "void")
+                nil [399 504]))          
+      :file "tablePiece.cpp"
+      :pointmax 505
+      :fsize 504
+      :lastmodtime '(22831 52097 83578 261000)
+      :unmatched-syntax nil)
+    (semanticdb-table "crazyFlyZoneTab.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("crazyFlyZoneTab.h" include nil nil [1 29])
+            ("QLayout" include (:system-flag t) nil [31 49])
+            ("crazyFlyZoneTab" function
+               (:constructor-flag t
+                :parent "crazyFlyZoneTab"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [84 94])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95 111]))                  
+                :type ("crazyFlyZoneTab" type (:type "class") nil nil))
+                nil [51 908])
+            ("centerButtonClicked" function
+               (:parent "crazyFlyZoneTab"
+                :type "void")
+                nil [910 1042]))          
+      :file "crazyFlyZoneTab.cpp"
+      :pointmax 1043
+      :fsize 1042
+      :lastmodtime '(22831 52097 19578 300000)
+      :unmatched-syntax nil)
+    (semanticdb-table "myGraphicsRectItem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("myGraphicsRectItem.h" include nil nil [1 32])
+            ("QGraphicsSceneMouseEvent" include (:system-flag t) nil [34 69])
+            ("QGraphicsRectItem" include (:system-flag t) nil [70 98])
+            ("QPen" include (:system-flag t) nil [99 114])
+            ("QBrush" include (:system-flag t) nil [115 132])
+            ("QApplication" include (:system-flag t) nil [133 156])
+            ("QVariant" include (:system-flag t) nil [157 176])
+            ("string.h" include (:system-flag t) nil [177 196])
+            ("myGraphicsRectItem" function
+               (:constructor-flag t
+                :parent "myGraphicsRectItem"
+                :arguments 
+                  ( ("rect" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QRectF" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [237 257])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QGraphicsItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [259 282]))                  
+                :type ("myGraphicsRectItem" type (:type "class") nil nil))
+                nil [198 540])
+            ("lock" function
+               (:parent "myGraphicsRectItem"
+                :type "void")
+                nil [542 711])
+            ("unlock" function
+               (:parent "myGraphicsRectItem"
+                :type "void")
+                nil [713 883])
+            ("deleteGrabbers" function
+               (:parent "myGraphicsRectItem"
+                :type "void")
+                nil [885 1258])
+            ("itemChange" function
+               (:parent "myGraphicsRectItem"
+                :arguments 
+                  ( ("change" variable (:type ("GraphicsItemChange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1300 1326])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QVariant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1327 1349]))                  
+                :type ("QVariant" type (:type "class") nil nil))
+                nil [1260 2147])
+            ("grabbersAreCreated" function
+               (:parent "myGraphicsRectItem"
+                :type "bool")
+                nil [2149 2228])
+            ("setCornerPositions" function
+               (:parent "myGraphicsRectItem"
+                :type "void")
+                nil [2230 2684])
+            ("createGrabbers" function
+               (:parent "myGraphicsRectItem"
+                :type "void")
+                nil [2686 3388])
+            ("checkCornerGrabbers" function
+               (:parent "myGraphicsRectItem"
+                :type "int")
+                nil [3390 3935])
+            ("anyGrabber" function
+               (:parent "myGraphicsRectItem"
+                :type "bool")
+                nil [3937 4087])
+            ("mousePressEvent" function
+               (:parent "myGraphicsRectItem"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4130 4167]))                  
+                :type "void")
+                nil [4089 4542])
+            ("mouseMoveEvent" function
+               (:parent "myGraphicsRectItem"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4584 4621]))                  
+                :type "void")
+                nil [4544 6206])
+            ("mouseReleaseEvent" function
+               (:parent "myGraphicsRectItem"
+                :arguments 
+                  ( ("mouseEvent" variable
+                       (:pointer 1
+                        :type ("QGraphicsSceneMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6251 6288]))                  
+                :type "void")
+                nil [6208 6502]))          
+      :file "myGraphicsRectItem.cpp"
+      :pointmax 6503
+      :fsize 6502
+      :lastmodtime '(22831 52097 43578 285000)
+      :unmatched-syntax nil)
+    (semanticdb-table "addressLUT.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("addressLUT.h" include nil nil [1 24])
+            ("address_LUT" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("std::string" type nil nil nil)
+                      ("std::string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [27 144]))          
+      :file "addressLUT.cpp"
+      :pointmax 145
+      :unmatched-syntax nil)
+    (semanticdb-table "channelLUT.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("channelLUT.h" include nil nil [1 24])
+            ("channel_LUT" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("std::string" type nil nil nil)
+                      ("std::string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [27 260]))          
+      :file "channelLUT.cpp"
+      :pointmax 261
+      :fsize 260
+      :lastmodtime '(22932 25508 932394 635000)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!work!D-FaLL-System!pps_ws!src!d_fall_pps!GUI_Qt!CrazyFlyGUI!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,27 @@
+;; Object nodes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nodes/"
+  :tables
+  (list
+    (semanticdb-table "FlightControl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CrazyFlieInclude.h" include nil nil [1 30])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [295 304])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [305 319]))                  
+                :type "int")
+                nil [285 731]))          
+      :file "FlightControl.cpp"
+      :pointmax 732
+      :fsize 731
+      :lastmodtime '(22727 48330 357663 697000)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!work!D-FaLL-System!crazyflie_ws!sandbox!crazypkg!nodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,86 @@
+;; Object px4iofirmware/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "px4iofirmware/"
+  :tables
+  (list
+    (semanticdb-table "adc.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1802 1825])
+            ("stdint.h" include (:system-flag t) nil [1826 1845])
+            ("nuttx/arch.h" include (:system-flag t) nil [1847 1870])
+            ("arch/stm32/chip.h" include (:system-flag t) nil [1871 1899])
+            ("stm32.h" include (:system-flag t) nil [1900 1918])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1920 1948])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [1949 1984])
+            ("DEBUG" variable (:constant-flag t) nil [1994 1999])
+            ("px4io.h" include nil nil [2000 2018])
+            ("REG" variable (:constant-flag t) nil [2102 2105])
+            ("rSR" variable (:constant-flag t) nil [2170 2173])
+            ("rCR1" variable (:constant-flag t) nil [2208 2212])
+            ("rCR2" variable (:constant-flag t) nil [2248 2252])
+            ("rSMPR1" variable (:constant-flag t) nil [2288 2294])
+            ("rSMPR2" variable (:constant-flag t) nil [2332 2338])
+            ("rJOFR1" variable (:constant-flag t) nil [2376 2382])
+            ("rJOFR2" variable (:constant-flag t) nil [2420 2426])
+            ("rJOFR3" variable (:constant-flag t) nil [2464 2470])
+            ("rJOFR4" variable (:constant-flag t) nil [2508 2514])
+            ("rHTR" variable (:constant-flag t) nil [2552 2556])
+            ("rLTR" variable (:constant-flag t) nil [2592 2596])
+            ("rSQR1" variable (:constant-flag t) nil [2632 2637])
+            ("rSQR2" variable (:constant-flag t) nil [2674 2679])
+            ("rSQR3" variable (:constant-flag t) nil [2716 2721])
+            ("rJSQR" variable (:constant-flag t) nil [2758 2763])
+            ("rJDR1" variable (:constant-flag t) nil [2800 2805])
+            ("rJDR2" variable (:constant-flag t) nil [2842 2847])
+            ("rJDR3" variable (:constant-flag t) nil [2884 2889])
+            ("rJDR4" variable (:constant-flag t) nil [2926 2931])
+            ("rDR" variable (:constant-flag t) nil [2968 2971])
+            ("adc_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) nil [2999 3024])
+            ("adc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3039 3044]))                  
+                :type "int")
+                nil [3026 4081])
+            ("adc_measure" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4156 4173]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4135 4771]))          
+      :file "adc.c"
+      :pointmax 4772
+      :fsize 4771
+      :lastmodtime '(23437 18825 492963 889000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("rJDR4" . ((symbol "REG" 2933 . 2936) (semantic-list "(STM32_ADC_JDR4_OFFSET)" 2936 . 2959)))
+          ("rSMPR1" . ((symbol "REG" 2296 . 2299) (semantic-list "(STM32_ADC_SMPR1_OFFSET)" 2299 . 2323)))
+          ("rLTR" . ((symbol "REG" 2598 . 2601) (semantic-list "(STM32_ADC_LTR_OFFSET)" 2601 . 2623)))
+          ("REG" (spp-arg-list ("_reg") 2105 . 2111) . ((semantic-list "(*(volatile uint32_t *)(STM32_ADC1_BASE + _reg))" 2112 . 2160)))
+          ("rSMPR2" . ((symbol "REG" 2340 . 2343) (semantic-list "(STM32_ADC_SMPR2_OFFSET)" 2343 . 2367)))
+          ("rJOFR1" . ((symbol "REG" 2384 . 2387) (semantic-list "(STM32_ADC_JOFR1_OFFSET)" 2387 . 2411)))
+          ("rJOFR2" . ((symbol "REG" 2428 . 2431) (semantic-list "(STM32_ADC_JOFR2_OFFSET)" 2431 . 2455)))
+          ("rHTR" . ((symbol "REG" 2558 . 2561) (semantic-list "(STM32_ADC_HTR_OFFSET)" 2561 . 2583)))
+          ("rSR" . ((symbol "REG" 2175 . 2178) (semantic-list "(STM32_ADC_SR_OFFSET)" 2178 . 2199)))
+          ("rJOFR3" . ((symbol "REG" 2472 . 2475) (semantic-list "(STM32_ADC_JOFR3_OFFSET)" 2475 . 2499)))
+          ("rJOFR4" . ((symbol "REG" 2516 . 2519) (semantic-list "(STM32_ADC_JOFR4_OFFSET)" 2519 . 2543)))
+          ("rSQR1" . ((symbol "REG" 2639 . 2642) (semantic-list "(STM32_ADC_SQR1_OFFSET)" 2642 . 2665)))
+          ("rJSQR" . ((symbol "REG" 2765 . 2768) (semantic-list "(STM32_ADC_JSQR_OFFSET)" 2768 . 2791)))
+          ("rSQR2" . ((symbol "REG" 2681 . 2684) (semantic-list "(STM32_ADC_SQR2_OFFSET)" 2684 . 2707)))
+          ("rSQR3" . ((symbol "REG" 2723 . 2726) (semantic-list "(STM32_ADC_SQR3_OFFSET)" 2726 . 2749)))
+          ("DEBUG")
+          ("rJDR1" . ((symbol "REG" 2807 . 2810) (semantic-list "(STM32_ADC_JDR1_OFFSET)" 2810 . 2833)))
+          ("rCR1" . ((symbol "REG" 2214 . 2217) (semantic-list "(STM32_ADC_CR1_OFFSET)" 2217 . 2239)))
+          ("rJDR2" . ((symbol "REG" 2849 . 2852) (semantic-list "(STM32_ADC_JDR2_OFFSET)" 2852 . 2875)))
+          ("rCR2" . ((symbol "REG" 2254 . 2257) (semantic-list "(STM32_ADC_CR2_OFFSET)" 2257 . 2279)))
+          ("rJDR3" . ((symbol "REG" 2891 . 2894) (semantic-list "(STM32_ADC_JDR3_OFFSET)" 2894 . 2917)))
+          ("rDR" . ((symbol "REG" 2973 . 2976) (semantic-list "(STM32_ADC_DR_OFFSET)" 2976 . 2997)))
+          )
+)
+    (semanticdb-table "px4io.h"
+      :file "px4io.h"
+      :fsize 8408
+      :lastmodtime '(23437 18825 492963 889000)))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!px4iofirmware!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

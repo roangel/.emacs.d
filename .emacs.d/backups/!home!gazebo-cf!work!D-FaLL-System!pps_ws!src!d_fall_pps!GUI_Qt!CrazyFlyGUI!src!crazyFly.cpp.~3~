@@ -1,0 +1,27 @@
+#include "crazyFly.h"
+
+#include <QPen>
+#include <QBrush>
+
+
+crazyFly::crazyFly(QPointF position, qreal width, qreal height, QGraphicsItem * parent)
+    : QGraphicsSvgItem(":/images/drone.svg")
+{
+    QRectF original_b_rect = this->boundingRect();
+    this->setPos(100, 100);
+}
+
+crazyFly::~crazyFly()
+{
+}
+
+QRectF crazyFly::boundingRect() const
+{
+    // return QRectF(-original_width/2, -original_height/2, original_width, original_height);
+    return QRectF(-100, -100, 200, 200);
+}
+
+void crazyFly::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+{
+    this->renderer()->render(painter,this->boundingRect());
+}

@@ -1,0 +1,49 @@
+#!/usr/bin/env sh
+
+# This script will take all necessary sources from repository, put them in
+# the home folder, compile them and run the system.
+
+# Please, make change in the repository, and test them running this script.
+
+# WARNING! A folder called crazyflie_ws in your home directory will be removed!
+
+# rm -rf ~/crazyflie_ws           # removes folder
+
+# source /opt/ros/kinetic/setup.bash
+
+# rosws init ~/crazyflie_ws /opt/ros/kinetic # creates folder with config inside
+
+# mkdir ~/crazyflie_ws/sandbox    # create sandbox directory
+
+# source ~/crazyflie_ws/setup.bash
+
+# rosws set ~/crazyflie_ws/sandbox
+
+# cd ~/crazyflie_ws/sandbox       # move to sandbox directory
+
+# roscreate-pkg crazypkg std_msgs rospy roscpp
+
+script="$0"
+basename="$(dirname $script)"
+
+echo "Script name $script resides in $basename directory."
+
+# # Copy files from repository to local folder
+# cp ${DIR}/crazyflie_ws/sandbox/crazypkg/gui ~/crazyflie_ws/sandbox/crazypkg
+# cp ${DIR}/crazyflie_ws/sandbox/crazypkg/include ~/crazyflie_ws/sandbox/crazypkg
+# cp ${DIR}/crazyflie_ws/sandbox/crazypkg/launch ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/lib ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/log ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/msg ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/nodes ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/scripts ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/src ~/crazyflie_ws/sandbox/crazypkg
+# cp $DIR/crazyflie_ws/sandbox/crazypkg/CMakeLists.txt ~/crazyflie_ws/sandbox/crazypkg
+
+# source ~/crazyflie_ws/setup.bash
+# rospack profile
+# rosmake crazypkg                # compile sources
+
+# gnome-terminal -x sh -c "roscore; bash" # opens new terminal with roscore command
+# source ~/crazyflie_ws/setup.bash
+# roslaunch crazypkg crazyLaunch.launch # runs the system

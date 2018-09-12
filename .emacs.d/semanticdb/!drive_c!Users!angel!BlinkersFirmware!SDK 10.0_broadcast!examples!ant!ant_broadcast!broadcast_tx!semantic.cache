@@ -1,0 +1,237 @@
+;; Object broadcast_tx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "broadcast_tx/"
+  :tables
+  (list
+    (semanticdb-table "ant_evt_dispatch.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ant_evt_dispatch.h" include nil nil [1 30])
+            ("ant_evt_dispatch" function
+               (:arguments 
+                  ( ("p_ant_evt" variable
+                       (:pointer 1
+                        :type ("ant_evt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [176 198]))                  
+                :type "void")
+                nil [154 6414]))          
+      :file "ant_evt_dispatch.c"
+      :pointmax 6415
+      :fsize 6566
+      :lastmodtime '(22921 41843 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "buttons_config.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("buttons_config.h" include nil nil [1 28])
+            ("buttons" variable
+               (:default-value "{
+    .up =
+    {
+        .input_pin = PIN_IN_UP,
+        .positive_edge_flag = 0x00,
+        .negative_edge_flag = 0x00,
+        .ignore_next_negative_edge = false,
+    },
+    .down =
+    {
+        .input_pin = PIN_IN_DOWN,
+        .positive_edge_flag = 0x00,
+        .negative_edge_flag = 0x00,
+        .ignore_next_negative_edge = false,
+    },
+    .left =
+    {
+        .input_pin = PIN_IN_LEFT,
+        .positive_edge_flag = 0x00,
+        .negative_edge_flag = 0x00,
+        .ignore_next_negative_edge = false,
+    },
+    .right =
+    {
+        .input_pin = PIN_IN_RIGHT,
+        .positive_edge_flag = 0x00,
+        .negative_edge_flag = 0x00,
+        .ignore_next_negative_edge = false,
+    },
+}"
+                :type ("buttons_t" type (:type "class") nil nil))
+                nil [30 752])
+            ("in_up_pin_handler" function
+               (:arguments 
+                  ( ("pin" variable (:type ("nrf_drv_gpiote_pin_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [918 943])
+                    ("action" variable (:type ("nrf_gpiote_polarity_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [944 973]))                  
+                :type "void")
+                nil [895 1455])
+            ("in_left_pin_handler" function
+               (:arguments 
+                  ( ("pin" variable (:type ("nrf_drv_gpiote_pin_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1507])
+                    ("action" variable (:type ("nrf_gpiote_polarity_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1508 1537]))                  
+                :type "void")
+                nil [1457 1987])
+            ("in_right_pin_handler" function
+               (:arguments 
+                  ( ("pin" variable (:type ("nrf_drv_gpiote_pin_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2015 2040])
+                    ("action" variable (:type ("nrf_gpiote_polarity_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2041 2070]))                  
+                :type "void")
+                nil [1989 2523])
+            ("in_down_pin_handler" function
+               (:arguments 
+                  ( ("pin" variable (:type ("nrf_drv_gpiote_pin_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2550 2575])
+                    ("action" variable (:type ("nrf_gpiote_polarity_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2576 2605]))                  
+                :type "void")
+                nil [2525 3054])
+            ("configure_pins_input" function (:type "void") nil [3056 4222])
+            ("any_button_pressed" function (:type "bool") nil [4382 4773])
+            ("buttons_not_released" function (:type "bool") nil [4775 5168])
+            ("any_button_hold" function (:type "bool") nil [5170 5586]))          
+      :file "buttons_config.c"
+      :pointmax 5588
+      :fsize 5819
+      :lastmodtime '(22782 5034 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ant_evt_dispatch.h"
+      :file "ant_evt_dispatch.h"
+      :fsize 339
+      :lastmodtime '(22921 41843 0 0))
+    (semanticdb-table "buttons_config.h"
+      :file "buttons_config.h"
+      :fsize 2135
+      :lastmodtime '(22963 63464 0 0))
+    (semanticdb-table "state_machine.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("state_machine.h" include nil nil [1 27])
+            ("softdevice_setup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [189 194]))                  
+                :type "void")
+                nil [160 1529])
+            ("do_state_initial" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1558 1580]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [1533 1830])
+            ("do_state_check_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1863 1885]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [1832 2142])
+            ("do_state_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2171 2193]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [2146 5165])
+            ("substate" variable
+               (:typemodifiers ("static")
+                :default-value "SUBSTATE_NORMAL"
+                :type ("substate_t" type (:type "class") nil nil))
+                nil [5167 5212])
+            ("do_state_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5238 5260]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [5214 17327])
+            ("do_state_sleeping" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17356 17378]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [17330 17611])
+            ("state_table" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ //returns pointer to function
+    do_state_initial, do_state_check_pairing, do_state_pairing, do_state_paired, do_state_sleeping
+}"
+                :type ("state_func_t" type (:type "class") nil nil))
+                nil [17671 17852])
+            ("transition_func_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17921 17944]))                  
+                :type "void")
+                nil [17897 17945])
+            ("do_to_pairing" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17999 18021]))                  
+                :type "void")
+                nil [17980 18114])
+            ("do_to_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18134 18156]))                  
+                :type "void")
+                nil [18116 18517])
+            ("do_from_pairing_to_paired" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18550 18572]))                  
+                :type "void")
+                nil [18519 20092])
+            ("do_to_sleeping" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20114 20136]))                  
+                :type "void")
+                nil [20094 20626])
+            ("transition_table" variable
+               (:pointer 1
+                :dereference 2
+                :default-value "{
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               do_to_sleeping, },
+    { NULL,        NULL,      NULL,            do_from_pairing_to_paired,  do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   NULL,                       do_to_sleeping, },
+    { NULL,        NULL,      do_to_pairing,   do_to_paired,               NULL,           },
+}"
+                :type ("transition_func_t" type (:type "class") nil nil))
+                nil [20955 21502])
+            ("run_state" function
+               (:arguments 
+                  ( ("cur_state" variable (:type ("state_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21589 21607])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("instance_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21608 21631]))                  
+                :type ("state_t" type (:type "class") nil nil))
+                nil [21570 21931]))          
+      :file "state_machine.c"
+      :pointmax 21932
+      :fsize 22588
+      :lastmodtime '(22968 58881 0 0)
+      :unmatched-syntax '((TYPEDEF 17889 . 17896)))
+    (semanticdb-table "state_machine.h"
+      :file "state_machine.h"
+      :fsize 3458
+      :lastmodtime '(22967 64177 0 0)))
+  :file "!drive_c!Users!angel!BlinkersFirmware!SDK 10.0_broadcast!examples!ant!ant_broadcast!broadcast_tx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

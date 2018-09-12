@@ -1,0 +1,12 @@
+DiagramScene::DiagramScene(QMenu *itemMenu, QObject *parent)
+    : QGraphicsScene(parent)
+{
+    myItemMenu = itemMenu;
+    myMode = MoveItem;
+    myItemType = DiagramItem::Step;
+    line = 0;
+    textItem = 0;
+    myItemColor = Qt::white;
+    myTextColor = Qt::black;
+    myLineColor = Qt::black;
+}

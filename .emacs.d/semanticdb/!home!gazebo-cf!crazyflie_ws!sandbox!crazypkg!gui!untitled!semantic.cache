@@ -1,0 +1,143 @@
+;; Object untitled/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "untitled/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CrazyFlieInclude.h" include nil nil [1 30])
+            ("mainguiwindow.h" include nil nil [31 57])
+            ("ui_mainguiwindow.h" include nil nil [58 87])
+            ("QApplication" include (:system-flag t) nil [88 111])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [124 133])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134 147]))                  
+                :type "int")
+                nil [115 635]))          
+      :file "main.cpp"
+      :pointmax 636
+      :fsize 635
+      :lastmodtime '(22730 36128 450932 545000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mainguiwindow.h"
+      :file "mainguiwindow.h"
+      :fsize 5190
+      :lastmodtime '(22730 36128 450932 545000))
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("gcc")) nil [415 435])
+            ("CXX" variable (:default-value ("g++")) nil [435 455])
+            ("DEFINES" variable (:default-value ("-DQT_NO_DEBUG" "-DQT_GUI_LIB" "-DQT_CORE_LIB" "-DQT_SHARED")) nil [455 524])
+            ("CFLAGS" variable (:default-value ("-m64" "-pipe" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [524 588])
+            ("CXXFLAGS" variable (:default-value ("-m64" "-pipe" "-O2" "-Wall" "-W" "-D_REENTRANT" "$(DEFINES)")) nil [588 652])
+            ("INCPATH" variable (:default-value ("-I/home/gazebo-cf/crazyflie_ws/sandbox/crazypkg/include" "-I/usr/share/qt4/mkspecs/linux-g++-64" "-I." "-I/usr/include/qt4/QtCore" "-I/usr/include/qt4/QtGui" "-I/usr/include/qt4" "-I." "-I.")) nil [652 844])
+            ("LINK" variable (:default-value ("g++")) nil [844 864])
+            ("LFLAGS" variable (:default-value ("-m64" "-Wl,-O1")) nil [864 893])
+            ("LIBS" variable (:default-value ("$(SUBLIBS)" "-L/usr/lib/x86_64-linux-gnu" "-lQtGui" "-lQtCore" "-lpthread")) nil [893 977])
+            ("AR" variable (:default-value ("ar" "cqs")) nil [977 1000])
+            ("RANLIB" variable nil nil [1000 1017])
+            ("QMAKE" variable (:default-value ("/usr/lib/x86_64-linux-gnu/qt4/bin/qmake")) nil [1017 1073])
+            ("TAR" variable (:default-value ("tar" "-cf")) nil [1073 1097])
+            ("COMPRESS" variable (:default-value ("gzip" "-9f")) nil [1097 1122])
+            ("COPY" variable (:default-value ("cp" "-f")) nil [1122 1144])
+            ("SED" variable (:default-value ("sed")) nil [1144 1164])
+            ("COPY_FILE" variable (:default-value ("$(COPY)")) nil [1164 1188])
+            ("COPY_DIR" variable (:default-value ("$(COPY)" "-r")) nil [1188 1215])
+            ("STRIP" variable (:default-value ("strip")) nil [1215 1237])
+            ("INSTALL_FILE" variable (:default-value ("install" "-m" "644" "-p")) nil [1237 1271])
+            ("INSTALL_DIR" variable (:default-value ("$(COPY_DIR)")) nil [1271 1299])
+            ("INSTALL_PROGRAM" variable (:default-value ("install" "-m" "755" "-p")) nil [1299 1335])
+            ("DEL_FILE" variable (:default-value ("rm" "-f")) nil [1335 1357])
+            ("SYMLINK" variable (:default-value ("ln" "-f" "-s")) nil [1357 1382])
+            ("DEL_DIR" variable (:default-value ("rmdir")) nil [1382 1404])
+            ("MOVE" variable (:default-value ("mv" "-f")) nil [1404 1426])
+            ("CHK_DIR_EXISTS" variable (:default-value ("test" "-d")) nil [1426 1450])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [1450 1475])
+            ("OBJECTS_DIR" variable (:default-value ("./")) nil [1502 1521])
+            ("SOURCES" variable (:default-value ("main.cpp" "mainguiwindow.cpp" "moc_mainguiwindow.cpp")) nil [1537 1606])
+            ("OBJECTS" variable (:default-value ("main.o" "mainguiwindow.o" "moc_mainguiwindow.o")) nil [1606 1673])
+            ("DIST" variable (:default-value ("/usr/share/qt4/mkspecs/common/unix.conf" "/usr/share/qt4/mkspecs/common/linux.conf" "/usr/share/qt4/mkspecs/common/gcc-base.conf" "/usr/share/qt4/mkspecs/common/gcc-base-unix.conf" "/usr/share/qt4/mkspecs/common/g++-base.conf" "/usr/share/qt4/mkspecs/common/g++-unix.conf" "/usr/share/qt4/mkspecs/qconfig.pri" "/usr/share/qt4/mkspecs/features/qt_functions.prf" "/usr/share/qt4/mkspecs/features/qt_config.prf" "/usr/share/qt4/mkspecs/features/exclusive_builds.prf" "/usr/share/qt4/mkspecs/features/default_pre.prf" "/usr/share/qt4/mkspecs/features/release.prf" "/usr/share/qt4/mkspecs/features/default_post.prf" "/usr/share/qt4/mkspecs/features/shared.prf" "/usr/share/qt4/mkspecs/features/unix/gdb_dwarf_index.prf" "/usr/share/qt4/mkspecs/features/warn_on.prf" "/usr/share/qt4/mkspecs/features/qt.prf" "/usr/share/qt4/mkspecs/features/unix/thread.prf" "/usr/share/qt4/mkspecs/features/moc.prf" "/usr/share/qt4/mkspecs/features/resources.prf" "/usr/share/qt4/mkspecs/features/uic.prf" "/usr/share/qt4/mkspecs/features/yacc.prf" "/usr/share/qt4/mkspecs/features/lex.prf" "/usr/share/qt4/mkspecs/features/include_source_dir.prf" "untitled.pro")) nil [1673 2877])
+            ("QMAKE_TARGET" variable (:default-value ("untitled")) nil [2877 2902])
+            ("DESTDIR" variable nil nil [2902 2919])
+            ("TARGET" variable (:default-value ("untitled")) nil [2919 2944])
+            ("first" function (:arguments ("all")) nil [2945 2956])
+            (".SUFFIXES" function (:arguments (".o" ".c" ".cpp" ".cc" ".cxx" ".C")) nil [2980 3014])
+            (".cpp.o" function nil nil [3015 3070])
+            (".cc.o" function nil nil [3071 3125])
+            (".cxx.o" function nil nil [3126 3181])
+            (".C.o" function nil nil [3182 3235])
+            (".c.o" function nil nil [3236 3286])
+            ("all" function (:arguments ("Makefile" "$(TARGET)")) nil [3308 3332])
+            ("$(TARGET)" function (:arguments ("ui_mainguiwindow.h" "$(OBJECTS)")) nil [3333 3438])
+            ("Makefile" function (:arguments ("untitled.pro" "/usr/share/qt4/mkspecs/linux-g++-64/qmake.conf" "/usr/share/qt4/mkspecs/common/unix.conf" "/usr/share/qt4/mkspecs/common/linux.conf" "/usr/share/qt4/mkspecs/common/gcc-base.conf" "/usr/share/qt4/mkspecs/common/gcc-base-unix.conf" "/usr/share/qt4/mkspecs/common/g++-base.conf" "/usr/share/qt4/mkspecs/common/g++-unix.conf" "/usr/share/qt4/mkspecs/qconfig.pri" "/usr/share/qt4/mkspecs/features/qt_functions.prf" "/usr/share/qt4/mkspecs/features/qt_config.prf" "/usr/share/qt4/mkspecs/features/exclusive_builds.prf" "/usr/share/qt4/mkspecs/features/default_pre.prf" "/usr/share/qt4/mkspecs/features/release.prf" "/usr/share/qt4/mkspecs/features/default_post.prf" "/usr/share/qt4/mkspecs/features/shared.prf" "/usr/share/qt4/mkspecs/features/unix/gdb_dwarf_index.prf" "/usr/share/qt4/mkspecs/features/warn_on.prf" "/usr/share/qt4/mkspecs/features/qt.prf" "/usr/share/qt4/mkspecs/features/unix/thread.prf" "/usr/share/qt4/mkspecs/features/moc.prf" "/usr/share/qt4/mkspecs/features/resources.prf" "/usr/share/qt4/mkspecs/features/uic.prf" "/usr/share/qt4/mkspecs/features/yacc.prf" "/usr/share/qt4/mkspecs/features/lex.prf" "/usr/share/qt4/mkspecs/features/include_source_dir.prf" "/usr/lib/x86_64-linux-gnu/libQtGui.prl" "/usr/lib/x86_64-linux-gnu/libQtCore.prl")) nil [3439 4803])
+            ("/usr/share/qt4/mkspecs/common/unix.conf" function nil nil [4803 4844])
+            ("/usr/share/qt4/mkspecs/common/linux.conf" function nil nil [4844 4886])
+            ("/usr/share/qt4/mkspecs/common/gcc-base.conf" function nil nil [4886 4931])
+            ("/usr/share/qt4/mkspecs/common/gcc-base-unix.conf" function nil nil [4931 4981])
+            ("/usr/share/qt4/mkspecs/qconfig.pri" function nil nil [5071 5107])
+            ("/usr/share/qt4/mkspecs/features/qt_functions.prf" function nil nil [5107 5157])
+            ("/usr/share/qt4/mkspecs/features/qt_config.prf" function nil nil [5157 5204])
+            ("/usr/share/qt4/mkspecs/features/exclusive_builds.prf" function nil nil [5204 5258])
+            ("/usr/share/qt4/mkspecs/features/default_pre.prf" function nil nil [5258 5307])
+            ("/usr/share/qt4/mkspecs/features/release.prf" function nil nil [5307 5352])
+            ("/usr/share/qt4/mkspecs/features/default_post.prf" function nil nil [5352 5402])
+            ("/usr/share/qt4/mkspecs/features/shared.prf" function nil nil [5402 5446])
+            ("/usr/share/qt4/mkspecs/features/unix/gdb_dwarf_index.prf" function nil nil [5446 5504])
+            ("/usr/share/qt4/mkspecs/features/warn_on.prf" function nil nil [5504 5549])
+            ("/usr/share/qt4/mkspecs/features/qt.prf" function nil nil [5549 5589])
+            ("/usr/share/qt4/mkspecs/features/unix/thread.prf" function nil nil [5589 5638])
+            ("/usr/share/qt4/mkspecs/features/moc.prf" function nil nil [5638 5679])
+            ("/usr/share/qt4/mkspecs/features/resources.prf" function nil nil [5679 5726])
+            ("/usr/share/qt4/mkspecs/features/uic.prf" function nil nil [5726 5767])
+            ("/usr/share/qt4/mkspecs/features/yacc.prf" function nil nil [5767 5809])
+            ("/usr/share/qt4/mkspecs/features/lex.prf" function nil nil [5809 5850])
+            ("/usr/share/qt4/mkspecs/features/include_source_dir.prf" function nil nil [5850 5906])
+            ("/usr/lib/x86_64-linux-gnu/libQtGui.prl" function nil nil [5906 5946])
+            ("/usr/lib/x86_64-linux-gnu/libQtCore.prl" function nil nil [5946 5987])
+            ("qmake" function (:arguments ("FORCE")) nil [5987 6037])
+            ("dist" function nil nil [6038 6589])
+            ("clean" function (:arguments ("compiler_clean")) nil [6591 6667])
+            ("distclean" function (:arguments ("clean")) nil [6692 6757])
+            ("check" function (:arguments ("first")) nil [6759 6772])
+            ("mocclean" function (:arguments ("compiler_moc_header_clean" "compiler_moc_source_clean")) nil [6773 6835])
+            ("mocables" function (:arguments ("compiler_moc_header_make_all" "compiler_moc_source_make_all")) nil [6836 6904])
+            ("compiler_moc_header_make_all" function (:arguments ("moc_mainguiwindow.cpp")) nil [6905 6957])
+            ("compiler_moc_header_clean" function nil nil [6957 7020])
+            ("moc_mainguiwindow.cpp" function (:arguments ("ui_mainguiwindow.h" "mainguiwindow.h")) nil [7020 7184])
+            ("compiler_rcc_make_all" function nil nil [7185 7208])
+            ("compiler_rcc_clean" function nil nil [7208 7228])
+            ("compiler_image_collection_make_all" function (:arguments ("qmake_image_collection.cpp")) nil [7228 7291])
+            ("compiler_image_collection_clean" function nil nil [7291 7365])
+            ("compiler_moc_source_make_all" function nil nil [7365 7395])
+            ("compiler_moc_source_clean" function nil nil [7395 7422])
+            ("compiler_uic_make_all" function (:arguments ("ui_mainguiwindow.h")) nil [7422 7464])
+            ("compiler_uic_clean" function nil nil [7464 7517])
+            ("ui_mainguiwindow.h" function (:arguments ("mainguiwindow.ui")) nil [7517 7632])
+            ("compiler_yacc_decl_make_all" function nil nil [7633 7662])
+            ("compiler_yacc_decl_clean" function nil nil [7662 7688])
+            ("compiler_yacc_impl_make_all" function nil nil [7688 7717])
+            ("compiler_yacc_impl_clean" function nil nil [7717 7743])
+            ("compiler_lex_make_all" function nil nil [7743 7766])
+            ("compiler_lex_clean" function nil nil [7766 7786])
+            ("compiler_clean" function (:arguments ("compiler_moc_header_clean" "compiler_uic_clean")) nil [7786 7848])
+            ("main.o" function (:arguments ("main.cpp" "mainguiwindow.h" "ui_mainguiwindow.h")) nil [7866 7975])
+            ("mainguiwindow.o" function (:arguments ("mainguiwindow.cpp" "mainguiwindow.h" "ui_mainguiwindow.h")) nil [7976 8121])
+            ("moc_mainguiwindow.o" function (:arguments ("moc_mainguiwindow.cpp")) nil [8122 8245])
+            ("install" function (:arguments ("FORCE")) nil [8263 8280])
+            ("uninstall" function (:arguments ("FORCE")) nil [8281 8300])
+            ("FORCE" function nil nil [8301 8308]))          
+      :file "Makefile"
+      :pointmax 8309
+      :fsize 8308
+      :lastmodtime '(22730 36750 326460 545000)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!crazyflie_ws!sandbox!crazypkg!gui!untitled!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

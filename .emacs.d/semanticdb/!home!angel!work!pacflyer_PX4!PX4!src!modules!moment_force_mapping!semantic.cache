@@ -1,0 +1,1268 @@
+;; Object moment_force_mapping/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "moment_force_mapping/"
+  :tables
+  (list
+    (semanticdb-table "moment_force_mapping_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [357 380])
+            ("px4_defines.h" include (:system-flag t) nil [381 405])
+            ("px4_tasks.h" include (:system-flag t) nil [406 428])
+            ("px4_posix.h" include (:system-flag t) nil [429 451])
+            ("stdio.h" include (:system-flag t) nil [452 470])
+            ("stdlib.h" include (:system-flag t) nil [471 490])
+            ("string.h" include (:system-flag t) nil [491 510])
+            ("unistd.h" include (:system-flag t) nil [511 530])
+            ("errno.h" include (:system-flag t) nil [531 549])
+            ("math.h" include (:system-flag t) nil [550 567])
+            ("poll.h" include (:system-flag t) nil [568 585])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [586 614])
+            ("arch/board/board.h" include (:system-flag t) nil [615 644])
+            ("uORB/uORB.h" include (:system-flag t) nil [645 667])
+            ("systemlib/param/param.h" include (:system-flag t) nil [668 702])
+            ("systemlib/err.h" include (:system-flag t) nil [703 729])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [730 765])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [766 798])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [799 831])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [832 868])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [869 903])
+            ("uORB/topics/force_moments.h" include (:system-flag t) nil [921 959])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [960 1008])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [1009 1050])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [1051 1089])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [1090 1135])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [1136 1175])
+            ("uORB/topics/battery_status.h" include (:system-flag t) nil [1176 1215])
+            ("uORB/topics/motor_check_trig.h" include (:system-flag t) nil [1216 1257])
+            ("uORB/topics/motor_check_res.h" include (:system-flag t) nil [1258 1298])
+            ("uORB/topics/mavlink_log.h" include (:system-flag t) nil [1299 1335])
+            ("uORB/topics/actuator_ref.h" include (:system-flag t) nil [1351 1388])
+            ("uORB/topics/actuator_pwm.h" include (:system-flag t) nil [1389 1426])
+            ("moment_force_mapping_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1573 1582])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1583 1596]))                  
+                :type "int")
+                nil [1543 1597])
+            ("MomentForceMapping" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1626 1633])
+                    ("MomentForceMapping" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MomentForceMapping" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1661 1682])
+                    ("MomentForceMapping" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1736 1758])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1844 1857])
+                    ("private" label nil (reparse-symbol classsubparts) [1859 1867])
+                    ("_task_should_exit" variable (:type "bool") (reparse-symbol classsubparts) [1869 1892])
+                    ("_control_task" variable (:type "int") (reparse-symbol classsubparts) [1936 1955])
+                    ("_params_sub" variable (:type "int") (reparse-symbol classsubparts) [1980 1997])
+                    ("_force_moments_sub" variable (:type "int") (reparse-symbol classsubparts) [2040 2064])
+                    ("_manual_sp_sub" variable (:type "int") (reparse-symbol classsubparts) [2101 2121])
+                    ("_ctrl_state_sub" variable (:type "int") (reparse-symbol classsubparts) [2162 2183])
+                    ("_v_control_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [2218 2243])
+                    ("_v_status_sub" variable (:type "int") (reparse-symbol classsubparts) [2287 2306])
+                    ("_b_status_sub" variable (:type "int") (reparse-symbol classsubparts) [2346 2365])
+                    ("_motor_check_trig_sub" variable (:type "int") (reparse-symbol classsubparts) [2405 2432])
+                    ("_actuator_ref_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2478 2509])
+                    ("_actuator_pwm_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2545 2576])
+                    ("_motor_check_res_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2646])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2701 2731])
+                    ("_force_moments" variable (:type ("force_moments_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2734 2772])
+                    ("_manual_sp" variable (:type ("manual_control_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2774 2818])
+                    ("_ctrl_state" variable (:type ("control_state_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2820 2855])
+                    ("_v_control_mode" variable (:type ("vehicle_control_mode_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2857 2903])
+                    ("_v_status" variable (:type ("vehicle_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2905 2939])
+                    ("_b_status" variable (:type ("battery_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2941 2975])
+                    ("_actuator_ref" variable (:type ("actuator_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2977 3013])
+                    ("_actuator_pwm" variable (:type ("actuator_pwm_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3015 3051])
+                    ("_motor_check_trig" variable (:type ("motor_check_trig_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3053 3097])
+                    ("_motor_check_res" variable (:type ("motor_check_res_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3099 3141])
+                    ("_mavlink_log" variable (:type ("mavlink_log_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3143 3177])
+                    ("_loop_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3180 3206])
+                    ("_old_timestamp" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3244 3271])
+                    ("_now" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3273 3290])
+                    ("_dt" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3292 3305])
+                    ("_pwm_fx" variable (:type "float") (reparse-symbol classsubparts) [3307 3321])
+                    ("_rpm_estimated" variable (:type "float") (reparse-symbol classsubparts) [3367 3388])
+                    ("_prev_pwm_fx" variable (:type "float") (reparse-symbol classsubparts) [3445 3464])
+                    ("_prev_rpm_estimated" variable (:type "float") (reparse-symbol classsubparts) [3466 3492])
+                    ("_prev_fd" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3494 3512])
+                    ("_prev_is_rotary_wing" variable (:type "bool") (reparse-symbol classsubparts) [3565 3591])
+                    ("_v_inf" variable (:type "float") (reparse-symbol classsubparts) [3628 3641])
+                    ("_v_inf_squared" variable (:type "float") (reparse-symbol classsubparts) [3681 3702])
+                    ("_coeff_fx_2" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3705 3740])
+                    ("_coeff_fz_0" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("5"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3838 3872])
+                    ("_coeff_fz_1" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("4"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3928 3962])
+                    ("_coeff_my_0" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4016 4050])
+                    ("_coeff_my_1" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("4"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4108 4142])
+                    ("_rpm_to_pwm" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4198 4232])
+                    ("_coeff_pwm_volt_to_rpm" variable (:type ("math::Vector" type
+                         (:template-specifier (("5"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4289 4328])
+                    ("_y_pos_actuators" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4374 4406])
+                    ("_motor_scale_yaw" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4495 4527])
+                    ("_motor_scale_thrust" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4529 4561])
+                    ("_motor_offset" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4563 4587])
+                    ("_flap_scale_pitch" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4589 4622])
+                    ("_flap_scale_roll" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4624 4656])
+                    ("_motor_spin_pwm_min" variable
+                       (:constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4709 4744])
+                    ("_force_x_min" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4821 4846])
+                    ("_trans_time" variable (:type "float") (reparse-symbol classsubparts) [4849 4867])
+                    ("_delta_rpm_0" variable (:type "float") (reparse-symbol classsubparts) [4915 4934])
+                    ("_transition_time_started" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4990 5027])
+                    ("tau_lp_accel" variable (:type "float") (reparse-symbol classsubparts) [5152 5171])
+                    ("tau_lp_decel" variable (:type "float") (reparse-symbol classsubparts) [5173 5192])
+                    ("_first_run_pulses" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5247 5277])
+                    ("_motor_0_checked" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5279 5309])
+                    ("_motor_1_checked" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5311 5341])
+                    ("motor_status_t" type
+                       (:members 
+                          ( ("motor_blocked" variable (:type "bool") (reparse-symbol classsubparts) [5369 5388])
+                            ("init_failed" variable (:type "bool") (reparse-symbol classsubparts) [5391 5408]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5343 5412])
+                    ("_motors_status" variable
+                       (:dereference 1
+                        :default-value "{
+		{false, false},
+		{false, false},
+	}"
+                        :type ("motor_status_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5414 5490])
+                    ("_mfd_enabled" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5492 5518])
+                    ("_prev_motor_check_trig_enable" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5520 5563])
+                    ("_sequence_start_time" variable
+                       (:default-value "hrt_absolute_time()"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5565 5620])
+                    ("_pulse_start_time" variable
+                       (:default-value "hrt_absolute_time()"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5622 5674])
+                    ("_max_current_batt" variable
+                       (:dereference 1
+                        :default-value "{0.0f, 0.0f}"
+                        :type "float")
+                        (reparse-symbol classsubparts) [5676 5718])
+                    ("_pulse_counter" variable
+                       (:default-value "0"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5720 5747])
+                    ("_motor_check_res_status_prev" variable
+                       (:default-value "_motor_check_res.CHECK_NOT_FINISHED;"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5749 5824])
+                    ("_was_armed" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5826 5850])
+                    ("_params_handles" variable (:type ("" type
+                         (:members 
+                            ( ("rc_scale_manelev" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5864 5889])
+                              ("rc_scale_manail" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5892 5916])
+                              ("rc_scale_manrud" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5919 5943])
+                              ("pac_man_off_rol" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5946 5970])
+                              ("pac_man_off_pit" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5973 5997])
+                              ("pac_man_off_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6000 6024])
+                              ("pac_rc_off_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6027 6049])
+                              ("pac_flap_lim_lo" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6052 6076])
+                              ("pac_flap_lim_hi" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6079 6103])
+                              ("pac_d_flap_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6106 6129])
+                              ("pac_flap_rpm_en" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6132 6156])
+                              ("pac_thr_spin_low" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6159 6184])
+                              ("pac_man_thr_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6187 6211])
+                              ("flap_to_pwm_2_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6214 6238])
+                              ("flap_to_pwm_1_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6241 6265])
+                              ("flap_to_pwm_0_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6268 6292])
+                              ("flap_to_pwm_2_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6295 6319])
+                              ("flap_to_pwm_1_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6322 6346])
+                              ("flap_to_pwm_0_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6349 6373])
+                              ("flap_limit_upper" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6376 6401])
+                              ("flap_limit_lower" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6404 6429])
+                              ("flap_pwm_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6432 6453])
+                              ("flap_pwm_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6456 6477])
+                              ("aircraft_id" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6480 6500])
+                              ("flap_nlin_scale" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6503 6527])
+                              ("rpm_trans_slope" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6530 6554])
+                              ("vinf_thresh" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6557 6577])
+                              ("hw_ver" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6580 6595])
+                              ("pac_bat_scale_en" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6598 6623])
+                              ("mfd_pulse_dur" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6626 6648])
+                              ("mfd_pulse_height" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6651 6676])
+                              ("mfd_pulse_qty" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6679 6701])
+                              ("mfd_normal_current_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6704 6735])
+                              ("mfd_blk_current_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6738 6766]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5853 6786])
+                    ("_params" variable (:type ("" type
+                         (:members 
+                            ( ("rc_scale_manelev" variable (:type "float") (reparse-symbol classsubparts) [6800 6823])
+                              ("rc_scale_manail" variable (:type "float") (reparse-symbol classsubparts) [6826 6848])
+                              ("rc_scale_manrud" variable (:type "float") (reparse-symbol classsubparts) [6851 6873])
+                              ("pac_man_off_rol" variable (:type "float") (reparse-symbol classsubparts) [6876 6898])
+                              ("pac_man_off_pit" variable (:type "float") (reparse-symbol classsubparts) [6901 6923])
+                              ("pac_man_off_yaw" variable (:type "float") (reparse-symbol classsubparts) [6926 6948])
+                              ("pac_rc_off_sw" variable (:type "int") (reparse-symbol classsubparts) [6951 6969])
+                              ("pac_flap_lim_lo" variable (:type "float") (reparse-symbol classsubparts) [6972 6994])
+                              ("pac_flap_lim_hi" variable (:type "float") (reparse-symbol classsubparts) [6997 7019])
+                              ("pac_d_flap_max" variable (:type "float") (reparse-symbol classsubparts) [7022 7043])
+                              ("pac_flap_rpm_en" variable (:type "int") (reparse-symbol classsubparts) [7046 7066])
+                              ("pac_thr_spin_low" variable (:type "float") (reparse-symbol classsubparts) [7069 7092])
+                              ("pac_man_thr_max" variable (:type "float") (reparse-symbol classsubparts) [7095 7117])
+                              ("flap_to_pwm_2_0" variable (:type "float") (reparse-symbol classsubparts) [7120 7142])
+                              ("flap_to_pwm_1_0" variable (:type "float") (reparse-symbol classsubparts) [7145 7167])
+                              ("flap_to_pwm_0_0" variable (:type "int") (reparse-symbol classsubparts) [7170 7190])
+                              ("flap_to_pwm_2_1" variable (:type "float") (reparse-symbol classsubparts) [7193 7215])
+                              ("flap_to_pwm_1_1" variable (:type "float") (reparse-symbol classsubparts) [7218 7240])
+                              ("flap_to_pwm_0_1" variable (:type "int") (reparse-symbol classsubparts) [7243 7263])
+                              ("flap_limit_upper" variable (:type "float") (reparse-symbol classsubparts) [7266 7289])
+                              ("flap_limit_lower" variable (:type "float") (reparse-symbol classsubparts) [7292 7315])
+                              ("flap_pwm_max" variable (:type "int") (reparse-symbol classsubparts) [7318 7335])
+                              ("flap_pwm_min" variable (:type "int") (reparse-symbol classsubparts) [7338 7355])
+                              ("aircraft_id" variable (:type "int") (reparse-symbol classsubparts) [7358 7374])
+                              ("flap_nlin_scale" variable (:type "float") (reparse-symbol classsubparts) [7377 7399])
+                              ("rpm_trans_slope" variable (:type "float") (reparse-symbol classsubparts) [7402 7424])
+                              ("vinf_thresh" variable (:type "float") (reparse-symbol classsubparts) [7427 7445])
+                              ("hw_ver" variable (:type "int") (reparse-symbol classsubparts) [7448 7459])
+                              ("pac_bat_scale_en" variable (:type "int") (reparse-symbol classsubparts) [7462 7483])
+                              ("mfd_pulse_dur" variable (:type "int") (reparse-symbol classsubparts) [7486 7504])
+                              ("mfd_pulse_height" variable (:type "int") (reparse-symbol classsubparts) [7507 7528])
+                              ("mfd_pulse_qty" variable (:type "int") (reparse-symbol classsubparts) [7531 7549])
+                              ("mfd_normal_current_thr" variable (:type "float") (reparse-symbol classsubparts) [7552 7581])
+                              ("mfd_blk_current_thr" variable (:type "float") (reparse-symbol classsubparts) [7584 7610]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6789 7622])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7696 7714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7673 7716])
+                    ("poll_subscriptions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7775 7801])
+                    ("manual_mixer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7804 7824])
+                    ("check_rc_offset_switch" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7826 7856])
+                    ("moment_force_to_flap_rpm" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7858 7890])
+                    ("flap_to_pwm" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7892 7911])
+                    ("delta_thrust_to_rpm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thrust" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [7939 7958])
+                            ("rpm_ff" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [7959 7978]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [7913 7979])
+                    ("motor_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7981 8002])
+                    ("flap_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8004 8024])
+                    ("flap_slew_rate_limiting" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8026 8057])
+                    ("rpm_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8059 8078])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8173 8182])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8183 8196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8140 8197])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8246 8264])
+                    ("check_motor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("motor_idx" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8310 8334]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8293 8335]))                  
+                :type "class")
+                nil [1599 8338])
+            ("moment_force_mapping" type
+               (:members 
+                  ( ("g_control" variable
+                       (:pointer 1
+                        :type ("MomentForceMapping" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8374 8404]))                  
+                :type "namespace")
+                nil [8340 8406])
+            ("MomentForceMapping" function
+               (:constructor-flag t
+                :parent "MomentForceMapping"
+                :type ("MomentForceMapping" type (:type "class") nil nil))
+                nil [8408 15183])
+            ("MomentForceMapping" function
+               (:destructor-flag t
+                :parent "MomentForceMapping"
+                :type "void")
+                nil [15185 15658])
+            ("parameters_update" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [15703 15714]))                  
+                :type "void")
+                nil [15660 18315])
+            ("poll_subscriptions" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [18317 19309])
+            ("check_rc_offset_switch" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [19311 20672])
+            ("manual_mixer" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [20674 21728])
+            ("flap_to_pwm" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [21730 22331])
+            ("motor_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [22333 27464])
+            ("check_motor" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("motor_idx" variable
+                       (:constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27503 27527]))                  
+                :type "bool")
+                nil [27466 29354])
+            ("rpm_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [29356 30297])
+            ("flap_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [30299 36548])
+            ("flap_slew_rate_limiting" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [36550 37425])
+            ("delta_thrust_to_rpm" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("thrust" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37473 37492])
+                    ("rpm_ff" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37493 37512]))                  
+                :type "float")
+                nil [37427 38272])
+            ("task_main_trampoline" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38320 38329])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38330 38343]))                  
+                :type "void")
+                nil [38274 38394])
+            ("task_main" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [38396 43217])
+            ("start" function
+               (:parent "MomentForceMapping"
+                :type "int")
+                nil [43219 43614])
+            ("moment_force_mapping_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [43646 43655])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43656 43669]))                  
+                :type "int")
+                nil [43616 44727]))          
+      :file "moment_force_mapping_main.cpp"
+      :pointmax 44728
+      :fsize 44727
+      :lastmodtime '(23449 7225 0 0)
+      :unmatched-syntax '((symbol 1534 . 1542)))
+    (semanticdb-table "moment_force_mapping_params.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("RC_SCALE_MANELEV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2011 2028]))                  
+                :type "int")
+                nil [1992 2036])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("RC_SCALE_MANAIL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2192 2208]))                  
+                :type "int")
+                nil [2173 2215])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("RC_SCALE_MANRUD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2359 2375]))                  
+                :type "int")
+                nil [2340 2382])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_MAN_OFF_ROL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2528]))                  
+                :type "int")
+                nil [2493 2535])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_MAN_OFF_PIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2666 2682]))                  
+                :type "int")
+                nil [2647 2691])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_MAN_OFF_YAW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2820 2836]))                  
+                :type "int")
+                nil [2801 2843])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_RC_OFF_SW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3090 3104]))                  
+                :type "int")
+                nil [3071 3108])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_FLAP_LIM_LO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3356 3372]))                  
+                :type "int")
+                nil [3337 3381])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_FLAP_LIM_HI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3626 3642]))                  
+                :type "int")
+                nil [3607 3650])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_FLAP_RPM_EN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4147 4163]))                  
+                :type "int")
+                nil [4128 4167])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_THR_SPIN_LOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4336 4353]))                  
+                :type "int")
+                nil [4317 4360])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("FLAP_LIMIT_UPPER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7035 7052]))                  
+                :type "int")
+                nil [7016 7060])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("FLAP_LIMIT_LOWER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7211 7228]))                  
+                :type "int")
+                nil [7192 7237])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("FLAP_PWM_MIN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7581 7594]))                  
+                :type "int")
+                nil [7562 7600])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AIRCRAFT_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7716 7728]))                  
+                :type "int")
+                nil [7697 7735])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("FLAP_NLIN_SCALE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7928 7944]))                  
+                :type "int")
+                nil [7909 7951])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("RPM_TRANS_SLOPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8155 8171]))                  
+                :type "int")
+                nil [8136 8180])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("PAC_BAT_SCALE_EN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8975 8992]))                  
+                :type "int")
+                nil [8956 8996])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MFD_PULSE_DUR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9182 9196]))                  
+                :type "int")
+                nil [9163 9202])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MFD_PULSE_HEIGHT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9402 9419]))                  
+                :type "int")
+                nil [9383 9426])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MFD_PULSE_QTY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9616 9630]))                  
+                :type "int")
+                nil [9597 9634])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MFD_NORMAL_C_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9811 9828]))                  
+                :type "int")
+                nil [9792 9835])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MFD_BLK_C_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10003 10017]))                  
+                :type "int")
+                nil [9984 10024]))          
+      :file "moment_force_mapping_params.c"
+      :pointmax 10025
+      :fsize 10030
+      :lastmodtime '(23447 47873 349449 630000)
+      :unmatched-syntax nil)
+    (semanticdb-table "moment_force_mapping_main.cpp~"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [357 380])
+            ("px4_defines.h" include (:system-flag t) nil [381 405])
+            ("px4_tasks.h" include (:system-flag t) nil [406 428])
+            ("px4_posix.h" include (:system-flag t) nil [429 451])
+            ("stdio.h" include (:system-flag t) nil [452 470])
+            ("stdlib.h" include (:system-flag t) nil [471 490])
+            ("string.h" include (:system-flag t) nil [491 510])
+            ("unistd.h" include (:system-flag t) nil [511 530])
+            ("errno.h" include (:system-flag t) nil [531 549])
+            ("math.h" include (:system-flag t) nil [550 567])
+            ("poll.h" include (:system-flag t) nil [568 585])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [586 614])
+            ("arch/board/board.h" include (:system-flag t) nil [615 644])
+            ("uORB/uORB.h" include (:system-flag t) nil [645 667])
+            ("systemlib/param/param.h" include (:system-flag t) nil [668 702])
+            ("systemlib/err.h" include (:system-flag t) nil [703 729])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [730 765])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [766 798])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [799 831])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [832 868])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [869 903])
+            ("uORB/topics/force_moments.h" include (:system-flag t) nil [921 959])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [960 1008])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [1009 1050])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [1051 1089])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [1090 1135])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [1136 1175])
+            ("uORB/topics/battery_status.h" include (:system-flag t) nil [1176 1215])
+            ("uORB/topics/motor_check_trig.h" include (:system-flag t) nil [1216 1257])
+            ("uORB/topics/motor_check_res.h" include (:system-flag t) nil [1258 1298])
+            ("uORB/topics/mavlink_log.h" include (:system-flag t) nil [1299 1335])
+            ("uORB/topics/actuator_ref.h" include (:system-flag t) nil [1351 1388])
+            ("uORB/topics/actuator_pwm.h" include (:system-flag t) nil [1389 1426])
+            ("moment_force_mapping_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1573 1582])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1583 1596]))                  
+                :type "int")
+                nil [1543 1597])
+            ("MomentForceMapping" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1626 1633])
+                    ("MomentForceMapping" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MomentForceMapping" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1661 1682])
+                    ("MomentForceMapping" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1736 1758])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1844 1857])
+                    ("private" label nil (reparse-symbol classsubparts) [1859 1867])
+                    ("_task_should_exit" variable (:type "bool") (reparse-symbol classsubparts) [1869 1892])
+                    ("_control_task" variable (:type "int") (reparse-symbol classsubparts) [1936 1955])
+                    ("_params_sub" variable (:type "int") (reparse-symbol classsubparts) [1980 1997])
+                    ("_force_moments_sub" variable (:type "int") (reparse-symbol classsubparts) [2040 2064])
+                    ("_manual_sp_sub" variable (:type "int") (reparse-symbol classsubparts) [2101 2121])
+                    ("_ctrl_state_sub" variable (:type "int") (reparse-symbol classsubparts) [2162 2183])
+                    ("_v_control_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [2218 2243])
+                    ("_v_status_sub" variable (:type "int") (reparse-symbol classsubparts) [2287 2306])
+                    ("_b_status_sub" variable (:type "int") (reparse-symbol classsubparts) [2346 2365])
+                    ("_motor_check_trig_sub" variable (:type "int") (reparse-symbol classsubparts) [2405 2432])
+                    ("_actuator_ref_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2478 2509])
+                    ("_actuator_pwm_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2545 2576])
+                    ("_motor_check_res_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2646])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2701 2731])
+                    ("_force_moments" variable (:type ("force_moments_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2734 2772])
+                    ("_manual_sp" variable (:type ("manual_control_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2774 2818])
+                    ("_ctrl_state" variable (:type ("control_state_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2820 2855])
+                    ("_v_control_mode" variable (:type ("vehicle_control_mode_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2857 2903])
+                    ("_v_status" variable (:type ("vehicle_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2905 2939])
+                    ("_b_status" variable (:type ("battery_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2941 2975])
+                    ("_actuator_ref" variable (:type ("actuator_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2977 3013])
+                    ("_actuator_pwm" variable (:type ("actuator_pwm_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3015 3051])
+                    ("_motor_check_trig" variable (:type ("motor_check_trig_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3053 3097])
+                    ("_motor_check_res" variable (:type ("motor_check_res_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3099 3141])
+                    ("_mavlink_log" variable (:type ("mavlink_log_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3143 3177])
+                    ("_loop_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3180 3206])
+                    ("_old_timestamp" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3244 3271])
+                    ("_now" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3273 3290])
+                    ("_dt" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3292 3305])
+                    ("_pwm_fx" variable (:type "float") (reparse-symbol classsubparts) [3307 3321])
+                    ("_rpm_estimated" variable (:type "float") (reparse-symbol classsubparts) [3367 3388])
+                    ("_prev_pwm_fx" variable (:type "float") (reparse-symbol classsubparts) [3445 3464])
+                    ("_prev_rpm_estimated" variable (:type "float") (reparse-symbol classsubparts) [3466 3492])
+                    ("_prev_fd" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3494 3512])
+                    ("_prev_is_rotary_wing" variable (:type "bool") (reparse-symbol classsubparts) [3565 3591])
+                    ("_v_inf" variable (:type "float") (reparse-symbol classsubparts) [3628 3641])
+                    ("_v_inf_squared" variable (:type "float") (reparse-symbol classsubparts) [3681 3702])
+                    ("_coeff_fx_2" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3705 3740])
+                    ("_coeff_fz_0" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("5"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3838 3872])
+                    ("_coeff_fz_1" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("4"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3928 3962])
+                    ("_coeff_my_0" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4016 4050])
+                    ("_coeff_my_1" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("4"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4108 4142])
+                    ("_rpm_to_pwm" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4198 4232])
+                    ("_coeff_pwm_volt_to_rpm" variable (:type ("math::Vector" type
+                         (:template-specifier (("5"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4289 4328])
+                    ("_y_pos_actuators" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4374 4406])
+                    ("_motor_scale_yaw" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4495 4527])
+                    ("_motor_scale_thrust" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4529 4561])
+                    ("_motor_offset" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4563 4587])
+                    ("_flap_scale_pitch" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4589 4622])
+                    ("_flap_scale_roll" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4624 4656])
+                    ("_motor_spin_pwm_min" variable
+                       (:constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4709 4744])
+                    ("_force_x_min" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [4821 4846])
+                    ("_trans_time" variable (:type "float") (reparse-symbol classsubparts) [4849 4867])
+                    ("_delta_rpm_0" variable (:type "float") (reparse-symbol classsubparts) [4915 4934])
+                    ("_transition_time_started" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4990 5027])
+                    ("tau_lp_accel" variable (:type "float") (reparse-symbol classsubparts) [5152 5171])
+                    ("tau_lp_decel" variable (:type "float") (reparse-symbol classsubparts) [5173 5192])
+                    ("_first_run_pulses" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5247 5277])
+                    ("_motor_0_checked" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5279 5309])
+                    ("_motor_1_checked" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5311 5341])
+                    ("motor_status_t" type
+                       (:members 
+                          ( ("motor_blocked" variable (:type "bool") (reparse-symbol classsubparts) [5369 5388])
+                            ("init_failed" variable (:type "bool") (reparse-symbol classsubparts) [5391 5408]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5343 5412])
+                    ("_motors_status" variable
+                       (:dereference 1
+                        :default-value "{
+		{false, false},
+		{false, false},
+	}"
+                        :type ("motor_status_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5414 5490])
+                    ("_mfd_enabled" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5492 5518])
+                    ("_prev_motor_check_trig_enable" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5520 5563])
+                    ("_sequence_start_time" variable
+                       (:default-value "hrt_absolute_time()"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5565 5620])
+                    ("_pulse_start_time" variable
+                       (:default-value "hrt_absolute_time()"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5622 5674])
+                    ("_max_current_batt" variable
+                       (:dereference 1
+                        :default-value "{0.0f, 0.0f}"
+                        :type "float")
+                        (reparse-symbol classsubparts) [5676 5718])
+                    ("_pulse_counter" variable
+                       (:default-value "0"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5720 5747])
+                    ("_motor_check_res_status_prev" variable
+                       (:default-value "_motor_check_res.CHECK_NOT_FINISHED;"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5749 5824])
+                    ("_was_armed" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5826 5850])
+                    ("_params_handles" variable (:type ("" type
+                         (:members 
+                            ( ("rc_scale_manelev" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5864 5889])
+                              ("rc_scale_manail" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5892 5916])
+                              ("rc_scale_manrud" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5919 5943])
+                              ("pac_man_off_rol" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5946 5970])
+                              ("pac_man_off_pit" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5973 5997])
+                              ("pac_man_off_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6000 6024])
+                              ("pac_rc_off_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6027 6049])
+                              ("pac_flap_lim_lo" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6052 6076])
+                              ("pac_flap_lim_hi" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6079 6103])
+                              ("pac_d_flap_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6106 6129])
+                              ("pac_flap_rpm_en" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6132 6156])
+                              ("pac_thr_spin_low" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6159 6184])
+                              ("pac_man_thr_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6187 6211])
+                              ("flap_to_pwm_2_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6214 6238])
+                              ("flap_to_pwm_1_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6241 6265])
+                              ("flap_to_pwm_0_0" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6268 6292])
+                              ("flap_to_pwm_2_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6295 6319])
+                              ("flap_to_pwm_1_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6322 6346])
+                              ("flap_to_pwm_0_1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6349 6373])
+                              ("flap_limit_upper" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6376 6401])
+                              ("flap_limit_lower" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6404 6429])
+                              ("flap_pwm_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6432 6453])
+                              ("flap_pwm_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6456 6477])
+                              ("aircraft_id" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6480 6500])
+                              ("flap_nlin_scale" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6503 6527])
+                              ("rpm_trans_slope" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6530 6554])
+                              ("vinf_thresh" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6557 6577])
+                              ("hw_ver" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6580 6595])
+                              ("pac_bat_scale_en" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6598 6623])
+                              ("mfd_pulse_dur" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6626 6648])
+                              ("mfd_pulse_height" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6651 6676])
+                              ("mfd_pulse_qty" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6679 6701])
+                              ("mfd_normal_current_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6704 6735])
+                              ("mfd_blk_current_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6738 6766]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5853 6786])
+                    ("_params" variable (:type ("" type
+                         (:members 
+                            ( ("rc_scale_manelev" variable (:type "float") (reparse-symbol classsubparts) [6800 6823])
+                              ("rc_scale_manail" variable (:type "float") (reparse-symbol classsubparts) [6826 6848])
+                              ("rc_scale_manrud" variable (:type "float") (reparse-symbol classsubparts) [6851 6873])
+                              ("pac_man_off_rol" variable (:type "float") (reparse-symbol classsubparts) [6876 6898])
+                              ("pac_man_off_pit" variable (:type "float") (reparse-symbol classsubparts) [6901 6923])
+                              ("pac_man_off_yaw" variable (:type "float") (reparse-symbol classsubparts) [6926 6948])
+                              ("pac_rc_off_sw" variable (:type "int") (reparse-symbol classsubparts) [6951 6969])
+                              ("pac_flap_lim_lo" variable (:type "float") (reparse-symbol classsubparts) [6972 6994])
+                              ("pac_flap_lim_hi" variable (:type "float") (reparse-symbol classsubparts) [6997 7019])
+                              ("pac_d_flap_max" variable (:type "float") (reparse-symbol classsubparts) [7022 7043])
+                              ("pac_flap_rpm_en" variable (:type "int") (reparse-symbol classsubparts) [7046 7066])
+                              ("pac_thr_spin_low" variable (:type "float") (reparse-symbol classsubparts) [7069 7092])
+                              ("pac_man_thr_max" variable (:type "float") (reparse-symbol classsubparts) [7095 7117])
+                              ("flap_to_pwm_2_0" variable (:type "float") (reparse-symbol classsubparts) [7120 7142])
+                              ("flap_to_pwm_1_0" variable (:type "float") (reparse-symbol classsubparts) [7145 7167])
+                              ("flap_to_pwm_0_0" variable (:type "int") (reparse-symbol classsubparts) [7170 7190])
+                              ("flap_to_pwm_2_1" variable (:type "float") (reparse-symbol classsubparts) [7193 7215])
+                              ("flap_to_pwm_1_1" variable (:type "float") (reparse-symbol classsubparts) [7218 7240])
+                              ("flap_to_pwm_0_1" variable (:type "int") (reparse-symbol classsubparts) [7243 7263])
+                              ("flap_limit_upper" variable (:type "float") (reparse-symbol classsubparts) [7266 7289])
+                              ("flap_limit_lower" variable (:type "float") (reparse-symbol classsubparts) [7292 7315])
+                              ("flap_pwm_max" variable (:type "int") (reparse-symbol classsubparts) [7318 7335])
+                              ("flap_pwm_min" variable (:type "int") (reparse-symbol classsubparts) [7338 7355])
+                              ("aircraft_id" variable (:type "int") (reparse-symbol classsubparts) [7358 7374])
+                              ("flap_nlin_scale" variable (:type "float") (reparse-symbol classsubparts) [7377 7399])
+                              ("rpm_trans_slope" variable (:type "float") (reparse-symbol classsubparts) [7402 7424])
+                              ("vinf_thresh" variable (:type "float") (reparse-symbol classsubparts) [7427 7445])
+                              ("hw_ver" variable (:type "int") (reparse-symbol classsubparts) [7448 7459])
+                              ("pac_bat_scale_en" variable (:type "int") (reparse-symbol classsubparts) [7462 7483])
+                              ("mfd_pulse_dur" variable (:type "int") (reparse-symbol classsubparts) [7486 7504])
+                              ("mfd_pulse_height" variable (:type "int") (reparse-symbol classsubparts) [7507 7528])
+                              ("mfd_pulse_qty" variable (:type "int") (reparse-symbol classsubparts) [7531 7549])
+                              ("mfd_normal_current_thr" variable (:type "float") (reparse-symbol classsubparts) [7552 7581])
+                              ("mfd_blk_current_thr" variable (:type "float") (reparse-symbol classsubparts) [7584 7610]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6789 7622])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7696 7714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7673 7716])
+                    ("poll_subscriptions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7775 7801])
+                    ("manual_mixer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7804 7824])
+                    ("check_rc_offset_switch" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7826 7856])
+                    ("moment_force_to_flap_rpm" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7858 7890])
+                    ("flap_to_pwm" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7892 7911])
+                    ("delta_thrust_to_rpm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thrust" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [7939 7958])
+                            ("rpm_ff" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [7959 7978]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [7913 7979])
+                    ("motor_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7981 8002])
+                    ("flap_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8004 8024])
+                    ("flap_slew_rate_limiting" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8026 8057])
+                    ("rpm_mapping" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8059 8078])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8173 8182])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8183 8196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8140 8197])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8246 8264])
+                    ("check_motor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("motor_idx" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8310 8334]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8293 8335]))                  
+                :type "class")
+                nil [1599 8338])
+            ("moment_force_mapping" type
+               (:members 
+                  ( ("g_control" variable
+                       (:pointer 1
+                        :type ("MomentForceMapping" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8374 8404]))                  
+                :type "namespace")
+                nil [8340 8406])
+            ("MomentForceMapping" function
+               (:constructor-flag t
+                :parent "MomentForceMapping"
+                :type ("MomentForceMapping" type (:type "class") nil nil))
+                nil [8408 15183])
+            ("MomentForceMapping" function
+               (:destructor-flag t
+                :parent "MomentForceMapping"
+                :type "void")
+                nil [15185 15658])
+            ("parameters_update" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [15703 15714]))                  
+                :type "void")
+                nil [15660 18315])
+            ("poll_subscriptions" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [18317 19309])
+            ("check_rc_offset_switch" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [19311 20672])
+            ("manual_mixer" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [20674 21728])
+            ("flap_to_pwm" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [21730 22331])
+            ("motor_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [22333 27464])
+            ("check_motor" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("motor_idx" variable
+                       (:constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27503 27527]))                  
+                :type "bool")
+                nil [27466 29354])
+            ("rpm_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [29356 30297])
+            ("flap_mapping" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [30299 36548])
+            ("flap_slew_rate_limiting" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [36550 37425])
+            ("delta_thrust_to_rpm" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("thrust" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37473 37492])
+                    ("rpm_ff" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37493 37512]))                  
+                :type "float")
+                nil [37427 38272])
+            ("task_main_trampoline" function
+               (:parent "MomentForceMapping"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38320 38329])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38330 38343]))                  
+                :type "void")
+                nil [38274 38394])
+            ("task_main" function
+               (:parent "MomentForceMapping"
+                :type "void")
+                nil [38396 43138])
+            ("start" function
+               (:parent "MomentForceMapping"
+                :type "int")
+                nil [43140 43535])
+            ("moment_force_mapping_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [43567 43576])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43577 43590]))                  
+                :type "int")
+                nil [43537 44648]))          
+      :file "moment_force_mapping_main.cpp~"
+      :pointmax 44649
+      :fsize 44648
+      :lastmodtime '(23449 2676 0 0)
+      :unmatched-syntax '((symbol 1534 . 1542))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!moment_force_mapping!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

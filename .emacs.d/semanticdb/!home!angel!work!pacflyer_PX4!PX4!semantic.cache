@@ -1,0 +1,16 @@
+;; Object PX4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PX4/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 17919
+      :fsize 17918
+      :lastmodtime '(23437 18825 392961 355000)
+      :unmatched-syntax nil))
+  :file "!home!angel!work!pacflyer_PX4!PX4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

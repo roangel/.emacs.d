@@ -1,0 +1,42 @@
+#ifndef MYGRAPHICSRECTITEM_H
+#define MYGRAPHICSRECTITEM_H
+#include <vector>
+
+#include <QGraphicsRectItem>
+
+class QGraphicsSceneMouseEvent;
+class QPointF;
+class QColor;
+
+
+class myGraphicsRectItem : public QGraphicsRectItem
+{
+    Q_OBJECT
+
+public:
+    explicit myGraphicsRectItem(QObject *parent = 0);
+    std::vector<QGraphicsRectItem*> rectangles;
+
+public slots:
+
+signals:
+
+protected:
+    void mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent) override;
+
+private:
+    QPen* pen;
+    QBrush* brush;
+    QRectF* tmp_rect;
+    QGraphicsRectItem* tmp_rect_item;
+    QPointF* p1;
+    QPointF* p2;
+
+    // bool firstClick;
+
+    bool startedRect;
+};
+
+#endif

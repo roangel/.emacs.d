@@ -1,0 +1,588 @@
+;; Object geometric_controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "geometric_controller/"
+  :tables
+  (list
+    (semanticdb-table "geometric_controller_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [289 312])
+            ("px4_defines.h" include (:system-flag t) nil [313 337])
+            ("px4_tasks.h" include (:system-flag t) nil [338 360])
+            ("px4_posix.h" include (:system-flag t) nil [361 383])
+            ("stdio.h" include (:system-flag t) nil [384 402])
+            ("stdlib.h" include (:system-flag t) nil [403 422])
+            ("string.h" include (:system-flag t) nil [423 442])
+            ("unistd.h" include (:system-flag t) nil [443 462])
+            ("errno.h" include (:system-flag t) nil [463 481])
+            ("math.h" include (:system-flag t) nil [482 499])
+            ("poll.h" include (:system-flag t) nil [500 517])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [518 546])
+            ("arch/board/board.h" include (:system-flag t) nil [547 576])
+            ("uORB/uORB.h" include (:system-flag t) nil [577 599])
+            ("geo/geo.h" include (:system-flag t) nil [600 620])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [638 679])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [680 718])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [719 767])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [768 809])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [810 849])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [850 895])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [896 943])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [944 990])
+            ("uORB/topics/wind_estimate.h" include (:system-flag t) nil [991 1029])
+            ("uORB/topics/actuator_ref.h" include (:system-flag t) nil [1030 1067])
+            ("uORB/topics/ctrl_parameters.h" include (:system-flag t) nil [1083 1123])
+            ("uORB/topics/ctrl_data.h" include (:system-flag t) nil [1124 1158])
+            ("uORB/topics/vehicle_rates_setpoint.h" include (:system-flag t) nil [1159 1206])
+            ("uORB/topics/force_moments.h" include (:system-flag t) nil [1207 1245])
+            ("uORB/topics/vtol_vehicle_status.h" include (:system-flag t) nil [1246 1290])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [1291 1341])
+            ("uORB/topics/ctrl_pitch_ref.h" include (:system-flag t) nil [1342 1381])
+            ("systemlib/param/param.h" include (:system-flag t) nil [1383 1417])
+            ("systemlib/err.h" include (:system-flag t) nil [1418 1444])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [1445 1480])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [1481 1513])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [1514 1546])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [1547 1583])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [1584 1618])
+            ("cfloat" include (:system-flag t) nil [1619 1636])
+            ("geometric_controller_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1771 1780])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1781 1794]))                  
+                :type "int")
+                nil [1741 1795])
+            ("GeometricController" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1825 1832])
+                    ("GeometricController" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("GeometricController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1860 1882])
+                    ("GeometricController" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1936 1959])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2045 2058])
+                    ("private" label nil (reparse-symbol classsubparts) [2060 2068])
+                    ("_task_should_exit" variable (:type "bool") (reparse-symbol classsubparts) [2070 2093])
+                    ("_control_task" variable (:type "int") (reparse-symbol classsubparts) [2137 2156])
+                    ("_vehicle_attitude_sub" variable (:type "int") (reparse-symbol classsubparts) [2181 2207])
+                    ("_control_state_sub" variable (:type "int") (reparse-symbol classsubparts) [2209 2232])
+                    ("_vehicle_attitude_setpoint_sub" variable (:type "int") (reparse-symbol classsubparts) [2234 2269])
+                    ("_manual_control_setpoint_sub" variable (:type "int") (reparse-symbol classsubparts) [2271 2304])
+                    ("_parameter_update_sub" variable (:type "int") (reparse-symbol classsubparts) [2306 2332])
+                    ("_vehicle_status_sub" variable (:type "int") (reparse-symbol classsubparts) [2334 2358])
+                    ("_vehicle_control_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [2360 2390])
+                    ("_vehicle_local_position_sub" variable (:type "int") (reparse-symbol classsubparts) [2392 2424])
+                    ("_mc_virtual_attitude_setpoint_sub" variable (:type "int") (reparse-symbol classsubparts) [2426 2464])
+                    ("_fw_virtual_attitude_setpoint_sub" variable (:type "int") (reparse-symbol classsubparts) [2466 2504])
+                    ("_vehicle_land_detected_sub" variable (:type "int") (reparse-symbol classsubparts) [2506 2537])
+                    ("_wind_estimate_sub" variable (:type "int") (reparse-symbol classsubparts) [2539 2562])
+                    ("_actuator_ref_sub" variable (:type "int") (reparse-symbol classsubparts) [2564 2586])
+                    ("_ctrl_parameters_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2589 2623])
+                    ("_ctrl_data_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2625 2653])
+                    ("_vehicle_rates_setpoint_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2655 2696])
+                    ("_force_moments_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2698 2730])
+                    ("_vtol_vehicle_status_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2732 2770])
+                    ("_vehicle_attitude_setpoint_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2772 2816])
+                    ("_ctrl_pitch_ref_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2818 2851])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2853 2883])
+                    ("_vehicle_attitude" variable (:type ("vehicle_attitude_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2887 2931])
+                    ("_control_state" variable (:type ("control_state_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2933 2971])
+                    ("_vehicle_attitude_setpoint" variable (:type ("vehicle_attitude_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2973 3035])
+                    ("_manual_control_setpoint" variable (:type ("manual_control_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3037 3095])
+                    ("_parameter_update" variable (:type ("parameter_update_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3097 3141])
+                    ("_vehicle_status" variable (:type ("vehicle_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3143 3183])
+                    ("_vehicle_control_mode" variable (:type ("vehicle_control_mode_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3185 3237])
+                    ("_vehicle_local_position" variable (:type ("vehicle_local_position_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3239 3295])
+                    ("_mc_virtual_attitude_setpoint" variable (:type ("vehicle_attitude_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3297 3362])
+                    ("_fw_virtual_attitude_setpoint" variable (:type ("vehicle_attitude_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3364 3429])
+                    ("_vehicle_land_detected" variable (:type ("vehicle_land_detected_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3431 3485])
+                    ("_wind_estimate" variable (:type ("wind_estimate_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3487 3525])
+                    ("_actuator_ref" variable (:type ("actuator_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3527 3563])
+                    ("_ctrl_parameters" variable (:type ("ctrl_parameters_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3566 3608])
+                    ("_ctrl_data" variable (:type ("ctrl_data_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3610 3640])
+                    ("_vehicle_rates_setpoint" variable (:type ("vehicle_rates_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3642 3698])
+                    ("_force_moments" variable (:type ("force_moments_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3700 3738])
+                    ("_vtol_vehicle_status" variable (:type ("vtol_vehicle_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3740 3790])
+                    ("_ctrl_pitch_ref" variable (:type ("ctrl_pitch_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3792 3832])
+                    ("_geometric_ctrl_loop_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3835 3876])
+                    ("_current_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3879 3902])
+                    ("_old_time_stamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3904 3929])
+                    ("_v_inf" variable (:type "float") (reparse-symbol classsubparts) [3932 3945])
+                    ("_roll_sp" variable (:type "float") (reparse-symbol classsubparts) [4091 4106])
+                    ("_pitch_sp" variable (:type "float") (reparse-symbol classsubparts) [4108 4124])
+                    ("_throttle_sp" variable (:type "float") (reparse-symbol classsubparts) [4126 4145])
+                    ("_p_sp" variable (:type "float") (reparse-symbol classsubparts) [4147 4159])
+                    ("_q_sp" variable (:type "float") (reparse-symbol classsubparts) [4161 4173])
+                    ("_last_roll_sp_hov" variable (:type "float") (reparse-symbol classsubparts) [4175 4199])
+                    ("_roll_cruise" variable (:type "float") (reparse-symbol classsubparts) [4294 4313])
+                    ("_R" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4357 4379])
+                    ("_R_ref" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4425 4451])
+                    ("_k_R" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4486 4507])
+                    ("_k_orient" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4559 4585])
+                    ("_k_rates" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4635 4660])
+                    ("_orientation_scaling" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4708 4745])
+                    ("_e_R" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4783 4804])
+                    ("_e_rates" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4827 4852])
+                    ("_rates" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4886 4909])
+                    ("_e_orientation" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4932 4963])
+                    ("_current_moment_offset" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4988 5027])
+                    ("_m_int_cru" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5092 5119])
+                    ("_m_int_hov" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5200 5227])
+                    ("_previous_vtol_in_rw_mode" variable (:type "bool") (reparse-symbol classsubparts) [5344 5375])
+                    ("_reached_trans_target" variable (:type "bool") (reparse-symbol classsubparts) [5471 5498])
+                    ("_roll_stabilized" variable (:type "bool") (reparse-symbol classsubparts) [5500 5522])
+                    ("_trans_pitch_error" variable (:type "float") (reparse-symbol classsubparts) [5624 5649])
+                    ("_trans_pitch_start" variable (:type "float") (reparse-symbol classsubparts) [5721 5746])
+                    ("_trans_pitch_target" variable (:type "float") (reparse-symbol classsubparts) [5862 5888])
+                    ("_last_pitch_sp_cru" variable (:type "float") (reparse-symbol classsubparts) [5990 6015])
+                    ("_trans_time_min" variable (:type "float") (reparse-symbol classsubparts) [6098 6120])
+                    ("_trans_time_max" variable (:type "float") (reparse-symbol classsubparts) [6163 6185])
+                    ("_trans_time_opt" variable (:type "float") (reparse-symbol classsubparts) [6265 6287])
+                    ("_roll_stab_started" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6316 6344])
+                    ("_transition_time_started" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6408 6442])
+                    ("_transition_time_ended" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6529 6561])
+                    ("_final_orientation" variable (:type "float") (reparse-symbol classsubparts) [6671 6696])
+                    ("_orientation_threshold_up" variable (:type "float") (reparse-symbol classsubparts) [6698 6730])
+                    ("_do_orientation_ctrl" variable (:type "bool") (reparse-symbol classsubparts) [6812 6838])
+                    ("_prev_offset_sw_pos" variable (:type "int") (reparse-symbol classsubparts) [6883 6907])
+                    ("_error_displayed_gc" variable (:type "bool") (reparse-symbol classsubparts) [6969 6994])
+                    ("_moment_y_ff" variable (:type "float") (reparse-symbol classsubparts) [7112 7131])
+                    ("_hdg" variable (:type "float") (reparse-symbol classsubparts) [7203 7214])
+                    ("_airspeed_vector" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7282 7315])
+                    ("_lp_pitch" variable (:type "float") (reparse-symbol classsubparts) [7378 7394])
+                    ("_Inertia" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7440 7468])
+                    ("_thrust_sp_prev" variable (:type "float") (reparse-symbol classsubparts) [7508 7530])
+                    ("_vinf_gain_scale_point1" variable (:type "float") (reparse-symbol classsubparts) [7787 7817])
+                    ("_vinf_gain_scale_point2" variable (:type "float") (reparse-symbol classsubparts) [7819 7849])
+                    ("_hov_pitch_ref" variable (:type "float") (reparse-symbol classsubparts) [7907 7928])
+                    ("_vinf_to_mom_0" variable (:type "float") (reparse-symbol classsubparts) [7999 8020])
+                    ("_vinf_to_mom_p2" variable (:type "float") (reparse-symbol classsubparts) [8022 8044])
+                    ("_vinf_to_mom_n4" variable (:type "float") (reparse-symbol classsubparts) [8046 8068])
+                    ("_vinf_to_mom_p4" variable (:type "float") (reparse-symbol classsubparts) [8070 8092])
+                    ("_pitch_to_mom_0" variable (:type "float") (reparse-symbol classsubparts) [8094 8116])
+                    ("_pitch_to_mom_n4" variable (:type "float") (reparse-symbol classsubparts) [8118 8141])
+                    ("_pitch_to_mom_p4" variable (:type "float") (reparse-symbol classsubparts) [8143 8166])
+                    ("_moment_int_lp" variable (:type ("math::Vector" type
+                         (:template-specifier (("2"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8169 8200])
+                    ("_prev_armed" variable (:type "bool") (reparse-symbol classsubparts) [8202 8219])
+                    ("_wrote_offset" variable (:type "bool") (reparse-symbol classsubparts) [8222 8241])
+                    ("_params_handles" variable (:type ("" type
+                         (:members 
+                            ( ("k_hov_roll" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8255 8274])
+                              ("k_cru_roll" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8277 8296])
+                              ("k_hov_pitch" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8299 8319])
+                              ("k_cru_pitch" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8322 8342])
+                              ("k_hov_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8345 8363])
+                              ("k_cru_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8366 8384])
+                              ("k_or_roll" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8387 8405])
+                              ("k_or_pitch" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8408 8427])
+                              ("k_or_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8430 8447])
+                              ("k_hov_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8450 8466])
+                              ("k_cru_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8469 8485])
+                              ("k_hov_q" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8488 8504])
+                              ("k_cru_q" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8507 8523])
+                              ("k_hov_r" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8526 8542])
+                              ("k_cru_r" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8545 8561])
+                              ("k_rll2pi_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8564 8584])
+                              ("k_cru_roll_int" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8587 8610])
+                              ("k_cru_pitch_int" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8613 8637])
+                              ("k_hov_pitch_int" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8640 8664])
+                              ("k_hov_yaw_int" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8667 8689])
+                              ("int_mom_max_cru" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8692 8716])
+                              ("int_mom_max_hov" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8719 8743])
+                              ("k_my_ff_hov" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8746 8766])
+                              ("pac_my_ff_mode" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8769 8792])
+                              ("pac_thr_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8795 8816])
+                              ("rc_scale_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8819 8838])
+                              ("rc_scale_q" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8841 8860])
+                              ("rc_scale_r" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8863 8882])
+                              ("rc_scale_roll" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8885 8907])
+                              ("rc_scale_pitch" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8910 8933])
+                              ("rc_scale_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8936 8957])
+                              ("rc_scale_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8960 8981])
+                              ("rc_scl_yaw_cr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8984 9006])
+                              ("off_roll_mom_ho" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9009 9033])
+                              ("off_pitch_mom_ho" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9036 9061])
+                              ("off_yaw_mom_ho" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9064 9087])
+                              ("off_roll_mom_cr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9090 9114])
+                              ("off_pitch_mom_cr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9117 9142])
+                              ("off_yaw_mom_cr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9145 9168])
+                              ("pac_cru_pi_ref_d" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9171 9196])
+                              ("or_th_up" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9199 9216])
+                              ("pac_trans_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9219 9242])
+                              ("trans_time_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9245 9268])
+                              ("trans_time_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9271 9294])
+                              ("trans_time" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9297 9316])
+                              ("pac_btrans_vz" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9319 9341])
+                              ("pac_ft_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9344 9363])
+                              ("pac_or_err_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9366 9389])
+                              ("pac_man_thr_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9392 9416])
+                              ("obt_enable" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9419 9438])
+                              ("obt_thr_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9441 9460])
+                              ("obt_thr_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9463 9481])
+                              ("obt_vz_sp" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9484 9502])
+                              ("obt_vz_sp_wind" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9505 9528])
+                              ("pac_rc_off_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9531 9553])
+                              ("k_rll2rllr_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9556 9578]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8244 9598])
+                    ("_params" variable (:type ("" type
+                         (:members 
+                            ( ("k_hov_roll" variable (:type "float") (reparse-symbol classsubparts) [9612 9629])
+                              ("k_cru_roll" variable (:type "float") (reparse-symbol classsubparts) [9632 9649])
+                              ("k_hov_pitch" variable (:type "float") (reparse-symbol classsubparts) [9652 9670])
+                              ("k_cru_pitch" variable (:type "float") (reparse-symbol classsubparts) [9673 9691])
+                              ("k_hov_yaw" variable (:type "float") (reparse-symbol classsubparts) [9694 9710])
+                              ("k_cru_yaw" variable (:type "float") (reparse-symbol classsubparts) [9713 9729])
+                              ("k_or_roll" variable (:type "float") (reparse-symbol classsubparts) [9732 9748])
+                              ("k_or_pitch" variable (:type "float") (reparse-symbol classsubparts) [9751 9768])
+                              ("k_or_yaw" variable (:type "float") (reparse-symbol classsubparts) [9771 9786])
+                              ("k_hov_p" variable (:type "float") (reparse-symbol classsubparts) [9789 9803])
+                              ("k_cru_p" variable (:type "float") (reparse-symbol classsubparts) [9806 9820])
+                              ("k_hov_q" variable (:type "float") (reparse-symbol classsubparts) [9823 9837])
+                              ("k_cru_q" variable (:type "float") (reparse-symbol classsubparts) [9840 9854])
+                              ("k_hov_r" variable (:type "float") (reparse-symbol classsubparts) [9857 9871])
+                              ("k_cru_r" variable (:type "float") (reparse-symbol classsubparts) [9874 9888])
+                              ("k_rll2pi_ff" variable (:type "float") (reparse-symbol classsubparts) [9891 9909])
+                              ("k_cru_roll_int" variable (:type "float") (reparse-symbol classsubparts) [9912 9933])
+                              ("k_cru_pitch_int" variable (:type "float") (reparse-symbol classsubparts) [9936 9958])
+                              ("k_hov_pitch_int" variable (:type "float") (reparse-symbol classsubparts) [9961 9983])
+                              ("k_hov_yaw_int" variable (:type "float") (reparse-symbol classsubparts) [9986 10006])
+                              ("int_mom_max_cru" variable (:type "float") (reparse-symbol classsubparts) [10009 10031])
+                              ("int_mom_max_hov" variable (:type "float") (reparse-symbol classsubparts) [10034 10056])
+                              ("k_my_ff_hov" variable (:type "float") (reparse-symbol classsubparts) [10059 10077])
+                              ("pac_my_ff_mode" variable (:type "int") (reparse-symbol classsubparts) [10080 10099])
+                              ("pac_thr_rate" variable (:type "float") (reparse-symbol classsubparts) [10102 10121])
+                              ("rc_scale_p" variable (:type "float") (reparse-symbol classsubparts) [10124 10141])
+                              ("rc_scale_q" variable (:type "float") (reparse-symbol classsubparts) [10144 10161])
+                              ("rc_scale_r" variable (:type "float") (reparse-symbol classsubparts) [10164 10181])
+                              ("rc_scale_roll" variable (:type "float") (reparse-symbol classsubparts) [10184 10204])
+                              ("rc_scale_pitch" variable (:type "float") (reparse-symbol classsubparts) [10207 10228])
+                              ("rc_scale_yaw" variable (:type "float") (reparse-symbol classsubparts) [10231 10250])
+                              ("rc_scale_thr" variable (:type "float") (reparse-symbol classsubparts) [10253 10272])
+                              ("rc_scl_yaw_cr" variable (:type "float") (reparse-symbol classsubparts) [10275 10295])
+                              ("off_roll_mom_ho" variable (:type "float") (reparse-symbol classsubparts) [10298 10320])
+                              ("off_pitch_mom_ho" variable (:type "float") (reparse-symbol classsubparts) [10323 10346])
+                              ("off_yaw_mom_ho" variable (:type "float") (reparse-symbol classsubparts) [10349 10370])
+                              ("off_roll_mom_cr" variable (:type "float") (reparse-symbol classsubparts) [10373 10395])
+                              ("off_pitch_mom_cr" variable (:type "float") (reparse-symbol classsubparts) [10398 10421])
+                              ("off_yaw_mom_cr" variable (:type "float") (reparse-symbol classsubparts) [10424 10445])
+                              ("pac_cru_pi_ref_d" variable (:type "float") (reparse-symbol classsubparts) [10448 10471])
+                              ("or_th_up" variable (:type "float") (reparse-symbol classsubparts) [10474 10489])
+                              ("pac_trans_rate" variable (:type "float") (reparse-symbol classsubparts) [10492 10513])
+                              ("trans_time_min" variable (:type "float") (reparse-symbol classsubparts) [10516 10537])
+                              ("trans_time_max" variable (:type "float") (reparse-symbol classsubparts) [10540 10561])
+                              ("trans_time" variable (:type "float") (reparse-symbol classsubparts) [10564 10581])
+                              ("pac_btrans_vz" variable (:type "float") (reparse-symbol classsubparts) [10584 10604])
+                              ("pac_ft_thr" variable (:type "float") (reparse-symbol classsubparts) [10607 10624])
+                              ("pac_or_err_max" variable (:type "float") (reparse-symbol classsubparts) [10627 10648])
+                              ("pac_man_thr_max" variable (:type "float") (reparse-symbol classsubparts) [10651 10673])
+                              ("obt_enable" variable (:type "int") (reparse-symbol classsubparts) [10676 10691])
+                              ("obt_thr_ff" variable (:type "float") (reparse-symbol classsubparts) [10694 10711])
+                              ("obt_thr_p" variable (:type "float") (reparse-symbol classsubparts) [10714 10730])
+                              ("obt_vz_sp" variable (:type "float") (reparse-symbol classsubparts) [10733 10749])
+                              ("obt_vz_sp_wind" variable (:type "float") (reparse-symbol classsubparts) [10752 10773])
+                              ("pac_rc_off_sw" variable (:type "int") (reparse-symbol classsubparts) [10776 10794])
+                              ("k_rll2rllr_ff" variable (:type "float") (reparse-symbol classsubparts) [10797 10817]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9601 10829])
+                    ("publish_att_sp_mc" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10832 10856])
+                    ("publish_att_sp_fw" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10858 10882])
+                    ("is_null" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("R" variable
+                               (:constant-flag t
+                                :type ("math::Matrix" type
+                                     (:template-specifier (("3") ("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10898 10925]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10885 10926])
+                    ("geometric_attitude_controller" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10929 10966])
+                    ("check_transition" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10968 10992])
+                    ("calculate_gains" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11069 11092])
+                    ("optimal_back_transition_thrust" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [11170 11179]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [11133 11180])
+                    ("optimal_back_transition_pitch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [11219 11228]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [11183 11229])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [11304 11315]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11281 11316])
+                    ("poll_subscriptions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11375 11401])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [11497 11506])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11507 11520]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11464 11521])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11570 11588]))                  
+                :type "class")
+                nil [1797 11591])
+            ("geometric_controller" type
+               (:members 
+                  ( ("g_control" variable
+                       (:pointer 1
+                        :type ("GeometricController" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11627 11658]))                  
+                :type "namespace")
+                nil [11593 11660])
+            ("GeometricController" function
+               (:constructor-flag t
+                :parent "GeometricController"
+                :type ("GeometricController" type (:type "class") nil nil))
+                nil [11662 19616])
+            ("GeometricController" function
+               (:destructor-flag t
+                :parent "GeometricController"
+                :type "void")
+                nil [19618 20093])
+            ("parameters_update" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [20139 20150]))                  
+                :type "void")
+                nil [20095 24063])
+            ("poll_subscriptions" function
+               (:parent "GeometricController"
+                :type "void")
+                nil [24065 26066])
+            ("publish_att_sp_mc" function
+               (:parent "GeometricController"
+                :type "int")
+                nil [26068 26469])
+            ("publish_att_sp_fw" function
+               (:parent "GeometricController"
+                :type "int")
+                nil [26471 26872])
+            ("is_null" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("R" variable
+                       (:constant-flag t
+                        :type ("math::Matrix" type
+                             (:template-specifier (("3") ("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26908 26935]))                  
+                :type "bool")
+                nil [26874 27230])
+            ("geometric_attitude_controller" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27288 27293]))                  
+                :type "void")
+                nil [27232 44624])
+            ("check_transition" function
+               (:parent "GeometricController"
+                :type "void")
+                nil [44626 53039])
+            ("calculate_gains" function
+               (:parent "GeometricController"
+                :type "void")
+                nil [53041 56194])
+            ("optimal_back_transition_pitch" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [58764 58773]))                  
+                :type "float")
+                nil [58707 59974])
+            ("optimal_back_transition_thrust" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [60034 60043]))                  
+                :type "float")
+                nil [59976 61532])
+            ("task_main_trampoline" function
+               (:parent "GeometricController"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [61581 61590])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [61591 61604]))                  
+                :type "void")
+                nil [61534 61655])
+            ("task_main" function
+               (:parent "GeometricController"
+                :type "void")
+                nil [61657 73421])
+            ("start" function
+               (:parent "GeometricController"
+                :type "int")
+                nil [73423 73812])
+            ("geometric_controller_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [73844 73853])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73854 73867]))                  
+                :type "int")
+                nil [73814 74902]))          
+      :file "geometric_controller_main.cpp"
+      :pointmax 74903
+      :fsize 74904
+      :lastmodtime '(23437 18825 472963 383000)
+      :unmatched-syntax '((symbol 1732 . 1740))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!geometric_controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

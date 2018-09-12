@@ -1,0 +1,44 @@
+;; Object nodes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nodes/"
+  :tables
+  (list
+    (semanticdb-table "ViconDataStreamSDK.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DataStreamClient.h" include (:system-flag t) nil [534 563])
+            ("iostream" include (:system-flag t) nil [565 584])
+            ("sstream" include (:system-flag t) nil [585 603])
+            ("string.h" include (:system-flag t) nil [604 623])
+            ("math.h" include (:system-flag t) nil [624 641])
+            ("ros/ros.h" include nil nil [642 662])
+            ("crazypkg/ViconData.h" include nil nil [663 694])
+            ("time.h" include (:system-flag t) nil [695 712])
+            ("ViconDataStreamSDK::CPP" using (:type ("ViconDataStreamSDK::CPP" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [715 755])
+            ("output_stream" variable (:constant-flag t) nil [765 778])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [802 811])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [812 826]))                  
+                :type "int")
+                nil [792 11765]))          
+      :file "ViconDataStreamSDK.cpp"
+      :pointmax 11766
+      :fsize 12050
+      :lastmodtime '(22727 48330 361663 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("output_stream" . 
+              ((symbol "std" 780 . 783) (punctuation ":" 783 . 784) (punctuation ":" 784 . 785) (symbol "cout" 785 . 789)))
+          )
+))
+  :file "!home!gazebo-cf!crazyflie_ws!sandbox!crazypkg!nodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object Vehicle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Vehicle/"
+  :tables
+  (list
+    (semanticdb-table "StringReplacement.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "StringReplacement.json"
+      :pointmax 4288
+      :fsize 4287
+      :lastmodtime '(23448 50952 415524 115000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 4287))))
+  :file "!home!angel!work!WingtraPilot!src!Vehicle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

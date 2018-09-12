@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+
+# This script will take all necessary sources from repository, put them in
+# the home folder, compile them and run the system.
+
+# Please, make change in the repository, and test them running this script.
+
+# WARNING! A folder called crazyflie_ws in your home directory will be removed!
+
+rm -rf ~/crazyflie_ws           # removes folder
+
+source /opt/ros/kinetic/setup.bash
+
+rosws init ~/crazyflie_ws /opt/ros/kinetic
+
+mkdir ~/crazyflie_ws/sandbox
+
+source ~/crazyflie_ws/setup.bash
+
+rosws set ~/crazyflie_ws /sandbox

@@ -1,0 +1,13 @@
+#include "myGraphicsView.h"
+
+
+myGraphicsScene::myGraphicsScene(QObject *parent)
+    : QGraphicsScene(parent)
+{
+    pen = new QPen(Qt::black);
+    brush = new QBrush(Qt::blue);
+
+    tmp_rect = 0;
+    startedRect = false;
+    // firstClick = true;
+}

@@ -1,0 +1,1359 @@
+;; Object mc_pc_wingtra/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mc_pc_wingtra/"
+  :tables
+  (list
+    (semanticdb-table "mc_pc_wingtra_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [2579 2602])
+            ("px4_defines.h" include (:system-flag t) nil [2603 2627])
+            ("px4_tasks.h" include (:system-flag t) nil [2628 2650])
+            ("px4_posix.h" include (:system-flag t) nil [2651 2673])
+            ("stdio.h" include (:system-flag t) nil [2674 2692])
+            ("stdlib.h" include (:system-flag t) nil [2693 2712])
+            ("string.h" include (:system-flag t) nil [2713 2732])
+            ("unistd.h" include (:system-flag t) nil [2733 2752])
+            ("fcntl.h" include (:system-flag t) nil [2753 2771])
+            ("errno.h" include (:system-flag t) nil [2772 2790])
+            ("math.h" include (:system-flag t) nil [2791 2808])
+            ("poll.h" include (:system-flag t) nil [2809 2826])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2827 2855])
+            ("arch/board/board.h" include (:system-flag t) nil [2856 2885])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [2887 2935])
+            ("uORB/topics/vehicle_rates_setpoint.h" include (:system-flag t) nil [2936 2983])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [2984 3022])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [3023 3073])
+            ("uORB/topics/mpc_parameters.h" include (:system-flag t) nil [3074 3113])
+            ("uORB/topics/mpc_debug.h" include (:system-flag t) nil [3114 3148])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [3149 3194])
+            ("uORB/topics/actuator_armed.h" include (:system-flag t) nil [3195 3234])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [3235 3276])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [3277 3324])
+            ("uORB/topics/position_setpoint_triplet.h" include (:system-flag t) nil [3325 3375])
+            ("uORB/topics/vehicle_local_position_setpoint.h" include (:system-flag t) nil [3464 3520])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [3521 3567])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [3568 3607])
+            ("uORB/topics/wind_estimate.h" include (:system-flag t) nil [3620 3658])
+            ("uORB/topics/wingtra_landed.h" include (:system-flag t) nil [3671 3710])
+            ("uORB/topics/ctrl_pitch_ref.h" include (:system-flag t) nil [3723 3762])
+            ("uORB/topics/actuator_ref.h" include (:system-flag t) nil [3775 3812])
+            ("uORB/topics/motor_check_trig.h" include (:system-flag t) nil [3825 3866])
+            ("uORB/topics/motor_check_res.h" include (:system-flag t) nil [3879 3919])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [3934 3966])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [3967 4001])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [4002 4030])
+            ("lib/geo/geo.h" include (:system-flag t) nil [4031 4055])
+            ("platforms/px4_defines.h" include (:system-flag t) nil [4056 4090])
+            ("controllib/blocks.hpp" include (:system-flag t) nil [4092 4124])
+            ("controllib/block/BlockParam.hpp" include (:system-flag t) nil [4125 4167])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [4169 4205])
+            ("SIGMA" variable (:constant-flag t) nil [4283 4288])
+            ("MIN_DIST" variable (:constant-flag t) nil [4309 4317])
+            ("MANUAL_THROTTLE_MAX_MULTICOPTER" variable (:constant-flag t) nil [4333 4364])
+            ("ONE_G" variable (:constant-flag t) nil [4378 4383])
+            ("COS_15_DEG" variable (:constant-flag t) nil [4400 4410])
+            ("LEASH_DELAY" variable (:constant-flag t) nil [4449 4460])
+            ("mc_pc_wingtra_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4618 4627])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4628 4641]))                  
+                :type "int")
+                nil [4595 4642])
+            ("MulticopterPositionControl" type
+               (:superclasses 
+                  ( ("control::SuperBlock" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4708 4715])
+                    ("MulticopterPositionControl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MulticopterPositionControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4743 4772])
+                    ("MulticopterPositionControl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4818 4848])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4909 4922])
+                    ("cross_sphere_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sphere_c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4949 4981])
+                            ("sphere_r" variable (:type "float") (reparse-symbol arg-sub-list) [4982 4997])
+                            ("line_a" variable
+                               (:constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5005 5034])
+                            ("line_b" variable
+                               (:constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5035 5064])
+                            ("res" variable
+                               (:reference 1
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5065 5086]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4925 5087])
+                    ("private" label nil (reparse-symbol classsubparts) [5089 5097])
+                    ("xyr_ctl_dz" variable
+                       (:constant-flag t
+                        :default-value "0.05f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [5099 5130])
+                    ("_task_should_exit" variable (:type "bool") (reparse-symbol classsubparts) [5169 5193])
+                    ("_control_task" variable (:type "int") (reparse-symbol classsubparts) [5230 5249])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5282 5312])
+                    ("_vehicle_status_sub" variable (:type "int") (reparse-symbol classsubparts) [5343 5368])
+                    ("_vehicle_land_detected_sub" variable (:type "int") (reparse-symbol classsubparts) [5407 5439])
+                    ("_ctrl_state_sub" variable (:type "int") (reparse-symbol classsubparts) [5484 5505])
+                    ("_att_sp_sub" variable (:type "int") (reparse-symbol classsubparts) [5543 5560])
+                    ("_control_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [5598 5621])
+                    ("_params_sub" variable (:type "int") (reparse-symbol classsubparts) [5666 5683])
+                    ("_manual_sub" variable (:type "int") (reparse-symbol classsubparts) [5729 5746])
+                    ("_arming_sub" variable (:type "int") (reparse-symbol classsubparts) [5797 5814])
+                    ("_local_pos_sub" variable (:type "int") (reparse-symbol classsubparts) [5851 5871])
+                    ("_pos_sp_triplet_sub" variable (:type "int") (reparse-symbol classsubparts) [5906 5931])
+                    ("_local_pos_sp_sub" variable (:type "int") (reparse-symbol classsubparts) [5968 5991])
+                    ("_motor_check_res_sub" variable (:type "int") (reparse-symbol classsubparts) [6035 6061])
+                    ("_wind_sub" variable (:type "int") (reparse-symbol classsubparts) [6211 6226])
+                    ("_ctrl_pitch_ref_sub" variable (:type "int") (reparse-symbol classsubparts) [6261 6287])
+                    ("_actuator_ref_sub" variable (:type "int") (reparse-symbol classsubparts) [6322 6346])
+                    ("_att_sp_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6380 6405])
+                    ("_local_pos_sp_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6447 6478])
+                    ("_mpc_params_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6648 6677])
+                    ("_mpc_debug_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6737 6765])
+                    ("_wingtra_landed_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6826 6859])
+                    ("_motor_check_trig_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6911 6947])
+                    ("_attitude_setpoint_id" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7014 7045])
+                    ("_vehicle_status" variable (:type ("vehicle_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7048 7091])
+                    ("_vehicle_land_detected" variable (:type ("vehicle_land_detected_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7117 7174])
+                    ("_ctrl_state" variable (:type ("control_state_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7206 7244])
+                    ("_att_sp" variable (:type ("vehicle_attitude_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7272 7316])
+                    ("_manual" variable (:type ("manual_control_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7353 7395])
+                    ("_control_mode" variable (:type ("vehicle_control_mode_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7423 7469])
+                    ("_arming" variable (:type ("actuator_armed_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7501 7536])
+                    ("_local_pos" variable (:type ("vehicle_local_position_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7570 7615])
+                    ("_pos_sp_triplet" variable (:type ("position_setpoint_triplet_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7649 7701])
+                    ("_local_pos_sp" variable (:type ("vehicle_local_position_setpoint_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7752 7807])
+                    ("_mpc_params" variable (:type ("mpc_parameters_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7978 8017])
+                    ("_mpc_debug" variable (:type ("mpc_debug_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8060 8093])
+                    ("_wind" variable (:type ("wind_estimate_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8136 8168])
+                    ("_wingtra_landed" variable (:type ("wingtra_landed_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8203 8246])
+                    ("_ctrl_pitch_ref" variable (:type ("ctrl_pitch_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8280 8323])
+                    ("_actuator_ref" variable (:type ("actuator_ref_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8357 8396])
+                    ("_motor_check_trig" variable (:type ("motor_check_trig_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8429 8475])
+                    ("_motor_check_res" variable (:type ("motor_check_res_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8518 8562])
+                    ("_manual_thr_min" variable (:type ("control::BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8606 8647])
+                    ("_manual_thr_max" variable (:type ("control::BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8649 8690])
+                    ("_vel_x_deriv" variable (:type ("control::BlockDerivative" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8693 8731])
+                    ("_vel_y_deriv" variable (:type ("control::BlockDerivative" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8733 8771])
+                    ("_vel_z_deriv" variable (:type ("control::BlockDerivative" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8773 8811])
+                    ("_params_handles" variable (:type ("" type
+                         (:members 
+                            ( ("thr_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8825 8841])
+                              ("thr_min_z" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8844 8862])
+                              ("thr_min_z_bt" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8877 8898])
+                              ("thr_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8913 8929])
+                              ("thr_hover" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8932 8950])
+                              ("alt_ctl_dz" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8953 8972])
+                              ("alt_ctl_dy" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8975 8994])
+                              ("z_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8997 9009])
+                              ("z_vel_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9012 9028])
+                              ("z_vel_i" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9031 9047])
+                              ("z_vel_d" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9050 9066])
+                              ("z_vel_max_up" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9069 9090])
+                              ("z_vel_max_down" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9105 9128])
+                              ("z_vel_dn_cruise" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9143 9167])
+                              ("z_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9182 9195])
+                              ("x_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9198 9210])
+                              ("y_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9225 9237])
+                              ("x_vel_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9252 9268])
+                              ("y_vel_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9283 9299])
+                              ("x_vel_i" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9314 9330])
+                              ("y_vel_i" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9345 9361])
+                              ("x_vel_d" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9376 9392])
+                              ("y_vel_d" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9407 9423])
+                              ("xy_vel_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9438 9457])
+                              ("x_vel_cruise" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9460 9481])
+                              ("y_vel_cruise" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9496 9517])
+                              ("xy_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9532 9546])
+                              ("tilt_pitch_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9549 9572])
+                              ("tilt_roll_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9587 9609])
+                              ("land_speed" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9624 9643])
+                              ("tko_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9646 9662])
+                              ("tko_thr_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9677 9698])
+                              ("tko_idle_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9713 9734])
+                              ("tko_speed" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9749 9767])
+                              ("tilt_max_land" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9770 9792])
+                              ("man_roll_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9795 9816])
+                              ("man_pitch_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9819 9841])
+                              ("man_yaw_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9844 9864])
+                              ("mis_yaw_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9867 9887])
+                              ("global_yaw_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9902 9925])
+                              ("mc_att_yaw_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9928 9949])
+                              ("hold_xy_dz" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9952 9971])
+                              ("hold_max_xy" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9974 9994])
+                              ("hold_max_z" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9997 10016])
+                              ("acc_hor_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10019 10039])
+                              ("acc_hor_max_bt" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10042 10065])
+                              ("acc_ver_max_up" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10080 10103])
+                              ("acc_ver_max_down" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10118 10143])
+                              ("alt_mode" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10158 10175])
+                              ("opt_recover" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10178 10198])
+                              ("gs_center" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10201 10219])
+                              ("gs_slope" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10234 10251])
+                              ("gs_thresh" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10266 10284])
+                              ("thr_comp_y" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10299 10318])
+                              ("thr_comp_x" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10333 10352])
+                              ("thdn_alt" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10367 10384])
+                              ("thdn_speed" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10399 10418])
+                              ("thresh_Vz_land" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10433 10456])
+                              ("acc_peak_x" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10471 10490])
+                              ("wind_align_offset" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10505 10531])
+                              ("wind_align_timeout" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10546 10573])
+                              ("wind_align_rise_time" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10588 10617])
+                              ("wind_align_yaw_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10632 10659])
+                              ("pos_jump_tko_alt" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10674 10699])
+                              ("dist_bottom_land" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10714 10739])
+                              ("rng_to_cog" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10754 10773])
+                              ("stand_length" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10788 10809])
+                              ("wind_align_wind_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10824 10852])
+                              ("tko_jump_vel_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10867 10892])
+                              ("alt_leash_decel" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10907 10931])
+                              ("alt_leash_accel" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10945 10969])
+                              ("yaw_ctrl_arsp_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10984 11010])
+                              ("max_hor_vel_lnd" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11025 11049]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8814 11083])
+                    ("_params" variable (:type ("" type
+                         (:members 
+                            ( ("thr_min" variable (:type "float") (reparse-symbol classsubparts) [11141 11155])
+                              ("thr_min_z" variable (:type "float") (reparse-symbol classsubparts) [11158 11174])
+                              ("thr_min_z_bt" variable (:type "float") (reparse-symbol classsubparts) [11189 11208])
+                              ("thr_max" variable (:type "float") (reparse-symbol classsubparts) [11223 11237])
+                              ("thr_hover" variable (:type "float") (reparse-symbol classsubparts) [11240 11256])
+                              ("alt_ctl_dz" variable (:type "float") (reparse-symbol classsubparts) [11259 11276])
+                              ("alt_ctl_dy" variable (:type "float") (reparse-symbol classsubparts) [11279 11296])
+                              ("tilt_pitch_max" variable (:type "float") (reparse-symbol classsubparts) [11299 11320])
+                              ("tilt_roll_max" variable (:type "float") (reparse-symbol classsubparts) [11335 11355])
+                              ("land_speed" variable (:type "float") (reparse-symbol classsubparts) [11370 11387])
+                              ("tko_thr" variable (:type "float") (reparse-symbol classsubparts) [11390 11404])
+                              ("tko_thr_rate" variable (:type "float") (reparse-symbol classsubparts) [11419 11438])
+                              ("tko_idle_thr" variable (:type "float") (reparse-symbol classsubparts) [11453 11472])
+                              ("tko_speed" variable (:type "float") (reparse-symbol classsubparts) [11487 11503])
+                              ("tilt_max_land" variable (:type "float") (reparse-symbol classsubparts) [11506 11526])
+                              ("man_roll_max" variable (:type "float") (reparse-symbol classsubparts) [11529 11548])
+                              ("man_pitch_max" variable (:type "float") (reparse-symbol classsubparts) [11551 11571])
+                              ("man_yaw_max" variable (:type "float") (reparse-symbol classsubparts) [11574 11592])
+                              ("mis_yaw_max" variable (:type "float") (reparse-symbol classsubparts) [11595 11613])
+                              ("global_yaw_max" variable (:type "float") (reparse-symbol classsubparts) [11628 11649])
+                              ("mc_att_yaw_p" variable (:type "float") (reparse-symbol classsubparts) [11652 11671])
+                              ("hold_xy_dz" variable (:type "float") (reparse-symbol classsubparts) [11674 11691])
+                              ("hold_max_xy" variable (:type "float") (reparse-symbol classsubparts) [11694 11712])
+                              ("hold_max_z" variable (:type "float") (reparse-symbol classsubparts) [11715 11732])
+                              ("acc_hor_max" variable (:type "float") (reparse-symbol classsubparts) [11735 11753])
+                              ("acc_hor_max_bt" variable (:type "float") (reparse-symbol classsubparts) [11756 11777])
+                              ("acc_ver_max_up" variable (:type "float") (reparse-symbol classsubparts) [11792 11813])
+                              ("acc_ver_max_down" variable (:type "float") (reparse-symbol classsubparts) [11828 11851])
+                              ("vel_max_up" variable (:type "float") (reparse-symbol classsubparts) [11866 11883])
+                              ("vel_max_down" variable (:type "float") (reparse-symbol classsubparts) [11898 11917])
+                              ("vel_down_cruise" variable (:type "float") (reparse-symbol classsubparts) [11932 11954])
+                              ("alt_mode" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11969 11986])
+                              ("opt_recover" variable (:type "int") (reparse-symbol classsubparts) [12011 12027])
+                              ("gs_center" variable (:type "float") (reparse-symbol classsubparts) [12030 12046])
+                              ("gs_slope" variable (:type "float") (reparse-symbol classsubparts) [12061 12076])
+                              ("gs_thresh" variable (:type "float") (reparse-symbol classsubparts) [12091 12107])
+                              ("thr_comp_y" variable (:type "float") (reparse-symbol classsubparts) [12122 12139])
+                              ("thr_comp_x" variable (:type "float") (reparse-symbol classsubparts) [12154 12171])
+                              ("thdn_alt" variable (:type "float") (reparse-symbol classsubparts) [12186 12201])
+                              ("thdn_speed" variable (:type "float") (reparse-symbol classsubparts) [12216 12233])
+                              ("thresh_Vz_land" variable (:type "float") (reparse-symbol classsubparts) [12248 12269])
+                              ("acc_peak_x" variable (:type "float") (reparse-symbol classsubparts) [12284 12301])
+                              ("wind_align_offset" variable (:type "float") (reparse-symbol classsubparts) [12316 12340])
+                              ("wind_align_timeout" variable (:type "float") (reparse-symbol classsubparts) [12355 12380])
+                              ("wind_align_rise_time" variable (:type "float") (reparse-symbol classsubparts) [12395 12422])
+                              ("wind_align_yaw_thr" variable (:type "float") (reparse-symbol classsubparts) [12437 12462])
+                              ("pos_jump_tko_alt" variable (:type "float") (reparse-symbol classsubparts) [12477 12500])
+                              ("dist_bottom_land" variable (:type "float") (reparse-symbol classsubparts) [12515 12538])
+                              ("rng_to_cog" variable (:type "float") (reparse-symbol classsubparts) [12553 12570])
+                              ("stand_length" variable (:type "float") (reparse-symbol classsubparts) [12585 12604])
+                              ("wind_align_wind_thr" variable (:type "float") (reparse-symbol classsubparts) [12619 12645])
+                              ("tko_jump_vel_thr" variable (:type "float") (reparse-symbol classsubparts) [12660 12683])
+                              ("alt_leash_decel" variable (:type "float") (reparse-symbol classsubparts) [12698 12720])
+                              ("alt_leash_accel" variable (:type "float") (reparse-symbol classsubparts) [12735 12757])
+                              ("yaw_ctrl_arsp_thr" variable (:type "float") (reparse-symbol classsubparts) [12772 12796])
+                              ("max_hor_vel_lnd" variable (:type "float") (reparse-symbol classsubparts) [12811 12833])
+                              ("pos_p" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12849 12871])
+                              ("vel_p" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12874 12896])
+                              ("vel_i" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12899 12921])
+                              ("vel_d" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12924 12946])
+                              ("vel_ff" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12949 12972])
+                              ("vel_max" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [12975 12999])
+                              ("vel_cruise" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [13002 13029])
+                              ("sp_offs_max" variable (:type ("math::Vector" type
+                                   (:template-specifier (("3"))
+                                    :type "class")
+                                    nil nil)) (reparse-symbol classsubparts) [13032 13060]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11130 13073])
+                    ("_ref_pos" variable (:type ("map_projection_reference_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13076 13119])
+                    ("_ref_alt" variable (:type "float") (reparse-symbol classsubparts) [13121 13136])
+                    ("_ref_timestamp" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13138 13165])
+                    ("_reset_pos_sp" variable (:type "bool") (reparse-symbol classsubparts) [13168 13187])
+                    ("_reset_alt_sp" variable (:type "bool") (reparse-symbol classsubparts) [13189 13208])
+                    ("_do_reset_alt_pos_flag" variable (:type "bool") (reparse-symbol classsubparts) [13210 13238])
+                    ("_mode_auto" variable (:type "bool") (reparse-symbol classsubparts) [13240 13256])
+                    ("_pos_hold_engaged" variable (:type "bool") (reparse-symbol classsubparts) [13258 13281])
+                    ("_alt_hold_engaged" variable (:type "bool") (reparse-symbol classsubparts) [13283 13306])
+                    ("_run_pos_control" variable (:type "bool") (reparse-symbol classsubparts) [13308 13330])
+                    ("_run_alt_control" variable (:type "bool") (reparse-symbol classsubparts) [13332 13354])
+                    ("_reset_thrust_int_bt" variable (:type "bool") (reparse-symbol classsubparts) [13356 13382])
+                    ("_reset_pitch_sp" variable (:type "bool") (reparse-symbol classsubparts) [13396 13417])
+                    ("_takeoff_initialized" variable (:type "bool") (reparse-symbol classsubparts) [13432 13458])
+                    ("_takeoff_start_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13472 13501])
+                    ("_flap_sat_max_up" variable (:type "bool") (reparse-symbol classsubparts) [13516 13538])
+                    ("_flap_sat_max_down" variable (:type "bool") (reparse-symbol classsubparts) [13606 13630])
+                    ("_flap_sat_max_up_rate" variable (:type "bool") (reparse-symbol classsubparts) [13698 13725])
+                    ("_flap_sat_max_down_rate" variable (:type "bool") (reparse-symbol classsubparts) [13803 13832])
+                    ("_pos" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13911 13932])
+                    ("_pos_sp" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13934 13958])
+                    ("_vel" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13960 13981])
+                    ("_vel_sp" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13983 14007])
+                    ("_vel_prev" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14009 14035])
+                    ("_vel_ff" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14073 14097])
+                    ("_vel_sp_prev" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14099 14128])
+                    ("_vel_err_d" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14130 14157])
+                    ("_scaled_xy_vel_p" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14199 14232])
+                    ("_scaled_xy_vel_d" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14273 14306])
+                    ("_scaled_xy_vel_i" variable (:type ("math::Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14347 14380])
+                    ("_R_wb_hov" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14580 14609])
+                    ("_R_wb_cru" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14773 14802])
+                    ("_yaw" variable (:type "float") (reparse-symbol classsubparts) [14805 14816])
+                    ("_R_yaw" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14847 14873])
+                    ("_pitch_cos_cru" variable (:type "float") (reparse-symbol classsubparts) [14932 14953])
+                    ("_pitch_sin_hov" variable (:type "float") (reparse-symbol classsubparts) [15030 15051])
+                    ("_pitch_cos_hov" variable (:type "float") (reparse-symbol classsubparts) [15099 15120])
+                    ("_in_landing" variable (:type "bool") (reparse-symbol classsubparts) [15200 15217])
+                    ("_lnd_reached_ground" variable (:type "bool") (reparse-symbol classsubparts) [15267 15292])
+                    ("_pos_landing" variable (:type "bool") (reparse-symbol classsubparts) [15372 15390])
+                    ("_takeoff_jumped" variable (:type "bool") (reparse-symbol classsubparts) [15449 15470])
+                    ("_takeoff_wingtra" variable (:type "bool") (reparse-symbol classsubparts) [15472 15494])
+                    ("_vel_z_lp" variable (:type "float") (reparse-symbol classsubparts) [15553 15569])
+                    ("_acc_z_lp" variable (:type "float") (reparse-symbol classsubparts) [15571 15587])
+                    ("_dist_cut_sp" variable (:type "float") (reparse-symbol classsubparts) [15589 15608])
+                    ("_takeoff_thrust_sp" variable (:type "float") (reparse-symbol classsubparts) [15680 15705])
+                    ("_takeoff_thrust_sp_prev" variable (:type "float") (reparse-symbol classsubparts) [15707 15737])
+                    ("control_vel_enabled_prev" variable (:type "bool") (reparse-symbol classsubparts) [15756 15786])
+                    ("_z_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15995 16020])
+                    ("_xy_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16022 16048])
+                    ("_vz_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16050 16076])
+                    ("_vxy_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16078 16105])
+                    ("_heading_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16107 16138])
+                    ("_we_scaled_gains" variable (:type "bool") (reparse-symbol classsubparts) [16142 16164])
+                    ("_vel_thresh_landing_z" variable (:type "float") (reparse-symbol classsubparts) [16280 16308])
+                    ("_acc_max_z" variable (:type "float") (reparse-symbol classsubparts) [16408 16425])
+                    ("_lpos_offset" variable (:type "float") (reparse-symbol classsubparts) [16484 16503])
+                    ("_descent_int" variable (:type "float") (reparse-symbol classsubparts) [16607 16626])
+                    ("_thdn_alt_reached" variable (:type "bool") (reparse-symbol classsubparts) [16718 16741])
+                    ("_prev_thdn_alt_reached" variable (:type "bool") (reparse-symbol classsubparts) [16843 16871])
+                    ("_shut_off_motors" variable (:type "bool") (reparse-symbol classsubparts) [16984 17006])
+                    ("_wind_dir" variable (:type "float") (reparse-symbol classsubparts) [17048 17064])
+                    ("_wind_mag" variable (:type "float") (reparse-symbol classsubparts) [17097 17113])
+                    ("_wind_alignment_finished" variable (:type "bool") (reparse-symbol classsubparts) [17142 17172])
+                    ("_wind_alignment_in_progress" variable (:type "bool") (reparse-symbol classsubparts) [17221 17254])
+                    ("_wind_yaw_sp_moved_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17310 17343])
+                    ("_pos_jump_tko_start_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17407 17441])
+                    ("_pos_jump_tko_end_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17458 17490])
+                    ("_pos_jump_tko" variable (:type "bool") (reparse-symbol classsubparts) [17507 17526])
+                    ("_pos_jump_tko_running" variable (:type "bool") (reparse-symbol classsubparts) [17545 17572])
+                    ("_wingtra_landed_previous" variable (:type "bool") (reparse-symbol classsubparts) [17589 17619])
+                    ("_wingtra_takeoff_previous" variable (:type "bool") (reparse-symbol classsubparts) [17636 17667])
+                    ("_in_trans_previous" variable (:type "bool") (reparse-symbol classsubparts) [17684 17708])
+                    ("_rise_and_align" variable (:type "bool") (reparse-symbol classsubparts) [17725 17746])
+                    ("_rise_and_align_climbout" variable (:type "bool") (reparse-symbol classsubparts) [17763 17793])
+                    ("_rise_align_start" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17810 17840])
+                    ("_lp_pitch" variable (:type "float") (reparse-symbol classsubparts) [17858 17874])
+                    ("_pitch" variable (:type "float") (reparse-symbol classsubparts) [17919 17932])
+                    ("_lp_hagl" variable (:type "float") (reparse-symbol classsubparts) [17977 17992])
+                    ("_global_alt_err" variable (:type "float") (reparse-symbol classsubparts) [18034 18056])
+                    ("_alt_err_prev" variable (:type "float") (reparse-symbol classsubparts) [18121 18141])
+                    ("_acc_hor_max" variable (:type "float") (reparse-symbol classsubparts) [18203 18222])
+                    ("_velsp_leash_is_on" variable (:type "bool") (reparse-symbol classsubparts) [18290 18314])
+                    ("_velsp_leash_was_on" variable (:type "bool") (reparse-symbol classsubparts) [18365 18390])
+                    ("_leash_time_start" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18443 18473])
+                    ("_leash_time_end" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18536 18564])
+                    ("_wind_rock_start" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18627 18656])
+                    ("_leash_time_exceeded" variable (:type "bool") (reparse-symbol classsubparts) [18719 18745])
+                    ("_is_near_ground" variable (:type "bool") (reparse-symbol classsubparts) [18825 18846])
+                    ("_total_dist" variable (:type "float") (reparse-symbol classsubparts) [18974 18992])
+                    ("_max_wind" variable (:type "float") (reparse-symbol classsubparts) [18994 19010])
+                    ("_vel_wait_time_start" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19013 19047])
+                    ("_altitude_to_hold" variable (:type "float") (reparse-symbol classsubparts) [19145 19169])
+                    ("_hor_vel_too_high" variable (:type "bool") (reparse-symbol classsubparts) [19171 19194])
+                    ("_waiting_for_stable_hv" variable (:type "bool") (reparse-symbol classsubparts) [19306 19334])
+                    ("_motor_check_trig_enable_previous" variable (:type "bool") (reparse-symbol classsubparts) [19432 19471])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [19557 19568]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19534 19569])
+                    ("control_update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19609 19632])
+                    ("poll_subscriptions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19689 19716])
+                    ("scale_control" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ctl" variable (:type "float") (reparse-symbol arg-sub-list) [19746 19756])
+                            ("end" variable (:type "float") (reparse-symbol arg-sub-list) [19757 19767])
+                            ("dz" variable (:type "float") (reparse-symbol arg-sub-list) [19768 19777])
+                            ("dy" variable (:type "float") (reparse-symbol arg-sub-list) [19778 19787]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [19719 19788])
+                    ("throttle_curve" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ctl" variable (:type "float") (reparse-symbol arg-sub-list) [19821 19831])
+                            ("ctr" variable (:type "float") (reparse-symbol arg-sub-list) [19832 19842]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [19790 19843])
+                    ("update_ref" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19907 19926])
+                    ("in_landing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thr_min" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [20022 20037])
+                            ("thr_max" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [20038 20053]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20004 20054])
+                    ("jump_takeoff" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [20146 20155])
+                            ("thrust_int" variable
+                               (:reference 1
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20156 20184])
+                            ("reset_int_z" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20185 20203]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20126 20204])
+                    ("reset_pos_sp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [20582 20603])
+                    ("reset_alt_sp" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [20803 20824])
+                    ("limit_pos_sp_offset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [20926 20954])
+                    ("set_ramp_yaw_sp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("yaw_target" variable (:type "float") (reparse-symbol arg-sub-list) [21072 21089])
+                            ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [21090 21099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21049 21100])
+                    ("align_yaw_with_wind" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [21193 21223])
+                    ("control_manual" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [21304 21313]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21283 21314])
+                    ("control_offboard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [21399 21408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21376 21409])
+                    ("control_auto" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [21476 21485]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21457 21486])
+                    ("select_alt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("global" variable (:type "bool") (reparse-symbol arg-sub-list) [21574 21586]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21557 21587])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [21682 21691])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [21692 21705]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [21649 21706])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21752 21770])
+                    ("sigmoid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [21882 21892]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [21866 21893])
+                    ("scale_gain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gain" variable (:type "float") (reparse-symbol arg-sub-list) [21914 21925])
+                            ("vel" variable (:type "float") (reparse-symbol arg-sub-list) [21926 21936]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [21895 21937])
+                    ("separate_gains" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("setpoint" variable
+                               (:reference 1
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22072 22098])
+                            ("errors" variable
+                               (:constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22099 22128])
+                            ("gains" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22129 22158])
+                            ("set_z" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [22170 22187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22050 22188]))                  
+                :type "class")
+                nil [4644 22191])
+            ("pos_control" type
+               (:members 
+                  ( ("g_control" variable
+                       (:pointer 1
+                        :type ("MulticopterPositionControl" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22218 22256]))                  
+                :type "namespace")
+                nil [22193 22258])
+            ("MulticopterPositionControl" function
+               (:constructor-flag t
+                :parent "MulticopterPositionControl"
+                :type ("MulticopterPositionControl" type (:type "class") nil nil))
+                nil [22260 32650])
+            ("MulticopterPositionControl" function
+               (:destructor-flag t
+                :parent "MulticopterPositionControl"
+                :type "void")
+                nil [32652 33132])
+            ("parameters_update" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [33184 33195]))                  
+                :type "int")
+                nil [33134 41011])
+            ("sigmoid" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [41083 41093]))                  
+                :type "float")
+                nil [41041 41145])
+            ("scale_gain" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("gain" variable (:type "float") (reparse-symbol arg-sub-list) [41217 41228])
+                    ("vel" variable (:type "float") (reparse-symbol arg-sub-list) [41229 41239]))                  
+                :type "float")
+                nil [41172 41382])
+            ("separate_gains" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("setpoint" variable
+                       (:reference 1
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41459 41485])
+                    ("errors" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41486 41515])
+                    ("gains" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41518 41547])
+                    ("set_z" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [41548 41565]))                  
+                :type "void")
+                nil [41411 41986])
+            ("poll_subscriptions" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [41988 50400])
+            ("scale_control" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("ctl" variable (:type "float") (reparse-symbol arg-sub-list) [50450 50460])
+                    ("end" variable (:type "float") (reparse-symbol arg-sub-list) [50461 50471])
+                    ("dz" variable (:type "float") (reparse-symbol arg-sub-list) [50472 50481])
+                    ("dy" variable (:type "float") (reparse-symbol arg-sub-list) [50482 50491]))                  
+                :type "float")
+                nil [50402 50685])
+            ("throttle_curve" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("ctl" variable (:type "float") (reparse-symbol arg-sub-list) [50736 50746])
+                    ("ctr" variable (:type "float") (reparse-symbol arg-sub-list) [50747 50757]))                  
+                :type "float")
+                nil [50687 50937])
+            ("task_main_trampoline" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50993 51002])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51003 51016]))                  
+                :type "void")
+                nil [50939 51058])
+            ("update_ref" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [51060 51835])
+            ("in_landing" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("thr_min" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [51892 51907])
+                    ("thr_max" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [51908 51923]))                  
+                :type "void")
+                nil [51848 57295])
+            ("jump_takeoff" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [57389 57398])
+                    ("thrust_int" variable
+                       (:reference 1
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [57399 57427])
+                    ("reset_int_z" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [57428 57446]))                  
+                :type "void")
+                nil [57343 59474])
+            ("reset_pos_sp" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [59476 59978])
+            ("reset_alt_sp" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [59980 60361])
+            ("limit_pos_sp_offset" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [60363 60986])
+            ("set_ramp_yaw_sp" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("yaw_target" variable (:type "float") (reparse-symbol arg-sub-list) [61061 61078])
+                    ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [61079 61088]))                  
+                :type "void")
+                nil [61012 62211])
+            ("align_yaw_with_wind" function
+               (:parent "MulticopterPositionControl"
+                :type "float")
+                nil [62245 64653])
+            ("control_manual" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [64703 64712]))                  
+                :type "void")
+                nil [64655 68891])
+            ("control_offboard" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [68943 68952]))                  
+                :type "void")
+                nil [68893 70651])
+            ("cross_sphere_line" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("sphere_c" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70704 70736])
+                    ("sphere_r" variable (:type "float") (reparse-symbol arg-sub-list) [70737 70752])
+                    ("line_a" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70755 70784])
+                    ("line_b" variable
+                       (:constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70785 70814])
+                    ("res" variable
+                       (:reference 1
+                        :type ("math::Vector" type
+                             (:template-specifier (("3"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [70815 70836]))                  
+                :type "bool")
+                nil [70653 71858])
+            ("control_auto" function
+               (:parent "MulticopterPositionControl"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [71906 71915]))                  
+                :type "void")
+                nil [71860 81784])
+            ("task_main" function
+               (:parent "MulticopterPositionControl"
+                :type "void")
+                nil [81786 152050])
+            ("start" function
+               (:parent "MulticopterPositionControl"
+                :type "int")
+                nil [152052 152448])
+            ("mc_pc_wingtra_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [152473 152482])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152483 152496]))                  
+                :type "int")
+                nil [152450 153442]))          
+      :file "mc_pc_wingtra_main.cpp"
+      :pointmax 153443
+      :fsize 153442
+      :lastmodtime '(23449 13414 372161 648000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COS_15_DEG" . ((number "0.96592582628f" 4413 . 4427)))
+          ("ONE_G" . ((number "9.8066f" 4384 . 4391)))
+          ("MANUAL_THROTTLE_MAX_MULTICOPTER" . ((number "0.9f" 4365 . 4369)))
+          ("SIGMA" . ((number "0.000001f" 4291 . 4300)))
+          ("MIN_DIST" . ((number "0.01f" 4319 . 4324)))
+          ("LEASH_DELAY" . ((number "10e6" 4463 . 4467)))
+          )
+)
+    (semanticdb-table "mc_pc_wingtra_params.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_THR_MIN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2133 2145]))                  
+                :type "int")
+                nil [2114 2153])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_THR_MIN_Z" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2805 2819]))                  
+                :type "int")
+                nil [2786 2826])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ALTCTL_DZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3868 3882]))                  
+                :type "int")
+                nil [3849 3889])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ALTCTL_DY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4183 4197]))                  
+                :type "int")
+                nil [4164 4204])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MANTHR_MIN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5015 5030]))                  
+                :type "int")
+                nil [4996 5037])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5729 5737]))                  
+                :type "int")
+                nil [5710 5744])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5902 5914]))                  
+                :type "int")
+                nil [5883 5921])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6168 6180]))                  
+                :type "int")
+                nil [6149 6188])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6346 6358]))                  
+                :type "int")
+                nil [6327 6367])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_MAX_UP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6662 6679]))                  
+                :type "int")
+                nil [6643 6686])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_MAX_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6982 6998]))                  
+                :type "int")
+                nil [6963 7005])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_DN_CRUISE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7382 7398]))                  
+                :type "int")
+                nil [7363 7405])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_VEL_MAX_DN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7558 7575]))                  
+                :type "int")
+                nil [7539 7582])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Z_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7891 7900]))                  
+                :type "int")
+                nil [7872 7907])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_X_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8091 8099]))                  
+                :type "int")
+                nil [8072 8107])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Y_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8291 8299]))                  
+                :type "int")
+                nil [8272 8307])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_X_VEL_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8483 8495]))                  
+                :type "int")
+                nil [8464 8503])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Y_VEL_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8689 8701]))                  
+                :type "int")
+                nil [8670 8709])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_X_VEL_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8924 8936]))                  
+                :type "int")
+                nil [8905 8944])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Y_VEL_I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9168 9180]))                  
+                :type "int")
+                nil [9149 9188])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_X_VEL_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9471 9483]))                  
+                :type "int")
+                nil [9452 9491])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Y_VEL_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9774 9786]))                  
+                :type "int")
+                nil [9755 9794])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_X_CRUISE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10123 10136]))                  
+                :type "int")
+                nil [10104 10143])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_Y_CRUISE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10472 10485]))                  
+                :type "int")
+                nil [10453 10492])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_XY_VEL_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10795 10810]))                  
+                :type "int")
+                nil [10776 10817])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_XY_FF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11124 11134]))                  
+                :type "int")
+                nil [11105 11141])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TILTMAX_PIT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11381 11397]))                  
+                :type "int")
+                nil [11362 11405])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TILTMAX_ROLL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11643 11660]))                  
+                :type "int")
+                nil [11624 11668])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TILTMAX_LND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11868 11884]))                  
+                :type "int")
+                nil [11849 11892])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_LAND_SPEED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12026 12041]))                  
+                :type "int")
+                nil [12007 12048])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TKO_IDLE_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12896 12913]))                  
+                :type "int")
+                nil [12877 12920])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TKO_SPEED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13060 13074]))                  
+                :type "int")
+                nil [13041 13081])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MAN_R_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13223 13237]))                  
+                :type "int")
+                nil [13204 13245])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MAN_P_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13388 13402]))                  
+                :type "int")
+                nil [13369 13410])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MAN_Y_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13557 13571]))                  
+                :type "int")
+                nil [13538 13579])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MIS_Y_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13736 13750]))                  
+                :type "int")
+                nil [13717 13759])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_HOLD_XY_DZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13925 13940]))                  
+                :type "int")
+                nil [13906 13948])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_HOLD_MAX_XY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14161 14177]))                  
+                :type "int")
+                nil [14142 14184])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_HOLD_MAX_Z" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14395 14410]))                  
+                :type "int")
+                nil [14376 14417])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_VELD_LP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14600 14612]))                  
+                :type "int")
+                nil [14581 14619])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ACC_HOR_MAX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14823 14839]))                  
+                :type "int")
+                nil [14804 14846])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ALT_MODE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15057 15070]))                  
+                :type "int")
+                nil [15038 15074])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_GS_CENTER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15237 15251]))                  
+                :type "int")
+                nil [15218 15259])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_GS_SLOPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15422 15435]))                  
+                :type "int")
+                nil [15403 15442])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_GS_THRESH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15660 15674]))                  
+                :type "int")
+                nil [15641 15681])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_THR_COMP_Y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15953 15968]))                  
+                :type "int")
+                nil [15934 15975])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_THR_COMP_X" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16249 16264]))                  
+                :type "int")
+                nil [16230 16271])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TDN_ALT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16454 16466]))                  
+                :type "int")
+                nil [16435 16473])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TDN_SPEED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16659 16673]))                  
+                :type "int")
+                nil [16640 16680])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_THRSH_VZ_LND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16907 16924]))                  
+                :type "int")
+                nil [16888 16931])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MAX_ACC_Z" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17154 17168]))                  
+                :type "int")
+                nil [17135 17176])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ACC_V_MAX_U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17392 17408]))                  
+                :type "int")
+                nil [17373 17415])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ACC_V_MAX_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17637 17653]))                  
+                :type "int")
+                nil [17618 17660])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_WND_WIND_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17985 18002]))                  
+                :type "int")
+                nil [17966 18009])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_WND_AL_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18216 18231]))                  
+                :type "int")
+                nil [18197 18238])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_WND_AL_TMT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18413 18428]))                  
+                :type "int")
+                nil [18394 18435])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_WND_YAW_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18908 18924]))                  
+                :type "int")
+                nil [18889 18932])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_POS_TKO_ALT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19101 19117]))                  
+                :type "int")
+                nil [19082 19124])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_LND_GND_DIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19417 19434]))                  
+                :type "int")
+                nil [19398 19441])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_STAND_LENGTH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19607 19624]))                  
+                :type "int")
+                nil [19588 19632])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_TKO_VEL_THR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19835 19851]))                  
+                :type "int")
+                nil [19816 19858])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_DECEL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20043 20053]))                  
+                :type "int")
+                nil [20024 20060])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ACCEL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20245 20255]))                  
+                :type "int")
+                nil [20226 20262])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_ACC_HOR_BT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20486 20501]))                  
+                :type "int")
+                nil [20467 20508])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MPC_MAX_VXY_LND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20710 20726]))                  
+                :type "int")
+                nil [20691 20733]))          
+      :file "mc_pc_wingtra_params.c"
+      :pointmax 20734
+      :fsize 20733
+      :lastmodtime '(23437 18825 484963 686000)
+      :unmatched-syntax '((number 20727 . 20731) (number 20502 . 20506) (number 20256 . 20260) (number 20054 . 20058) (number 19852 . 19856) (number 19625 . 19630) (number 19435 . 19439) (number 19118 . 19122) (number 18925 . 18930) (number 18429 . 18433) (number 18232 . 18236) (number 18003 . 18007) (number 17654 . 17658) (number 17409 . 17413) (number 17169 . 17174) (number 16925 . 16929) (number 16674 . 16678) (number 16467 . 16471) (number 16265 . 16269) (number 15969 . 15973) (number 15675 . 15679) (number 15436 . 15440) (number 15252 . 15257) (number 15071 . 15072) (number 14840 . 14844) (number 14613 . 14617) (number 14411 . 14415) (number 14178 . 14182) (number 13941 . 13946) (number 13751 . 13757) (number 13572 . 13577) (number 13403 . 13408) (number 13238 . 13243) (number 13075 . 13079) (number 12914 . 12918) (number 12042 . 12046) (number 11885 . 11890) (number 11661 . 11666) (number 11398 . 11403) (number 11135 . 11139) (number 10811 . 10815) (number 10486 . 10490) (number 10137 . 10141) (number 9787 . 9792) (number 9484 . 9489) (number 9181 . 9186) (number 8937 . 8942) (number 8702 . 8707) (number 8496 . 8501) (number 8300 . 8305) (number 8100 . 8105) (number 7901 . 7905) (number 7576 . 7580) (number 7399 . 7403) (number 6999 . 7003) (number 6680 . 6684) (number 6359 . 6365) (number 6181 . 6186) (number 5915 . 5919) (number 5738 . 5742) (number 5031 . 5035) (number 4198 . 4202) (number 3883 . 3887) (number 2820 . 2824) (number 2146 . 2151))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!mc_pc_wingtra!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

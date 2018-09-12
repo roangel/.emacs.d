@@ -1,0 +1,40 @@
+#include "myGraphicsRectItem.h"
+
+#include <QGraphicsSceneMouseEvent>
+#include <QGraphicsRectItem>
+#include <QPen>
+#include <QBrush>
+
+myGraphicsRectItem::myGraphicsRectItem(const QRectF & rect, QGraphicsItem * parent = 0)
+    : QGraphicsRectItem(rect, parent)
+{
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
+    pen = new QPen(Qt::red);
+    brush = new QBrush(Qt::red);
+
+    tmp_rect = 0;
+    // firstClick = true;
+}
+
+
+void myGraphicsRectItem::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+    if (mouseEvent->button() != Qt::LeftButton)
+        return;
+    this->setSelected(true);
+    QGraphicsRectItem::mousePressEvent(mouseEvent);
+}
+
+void myGraphicsRectItem::mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+    QGraphicsRectItem::mouseMoveEvent(mouseEvent);
+}
+
+void myGraphicsRectItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
+{
+
+    if (mouseEvent->button() != Qt::LeftButton)
+        return;
+
+    QGraphicsRectItem::mouseReleaseEvent(mouseEvent);
+}

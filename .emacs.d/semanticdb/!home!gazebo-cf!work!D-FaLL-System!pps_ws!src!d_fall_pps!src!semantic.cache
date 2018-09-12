@@ -1,0 +1,176 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "PPSClient.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ros/ros.h" include nil nil [1239 1259])
+            ("stdlib.h" include (:system-flag t) nil [1260 1279])
+            ("d_fall_pps/RateController.h" include nil nil [1328 1366])
+            ("d_fall_pps/AngleController.h" include nil nil [1367 1406])
+            ("d_fall_pps/MotorController.h" include nil nil [1407 1446])
+            ("d_fall_pps/CentralManager.h" include nil nil [1447 1485])
+            ("d_fall_pps/ViconData.h" include nil nil [1534 1567])
+            ("d_fall_pps/AngleCommand.h" include nil nil [1568 1604])
+            ("d_fall_pps/RateCommand.h" include nil nil [1605 1640])
+            ("d_fall_pps/MotorCommand.h" include nil nil [1641 1677])
+            ("d_fall_pps/CrazyflieContext.h" include nil nil [1678 1718])
+            ("d_fall_pps" using (:type ("d_fall_pps" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1721 1748])
+            ("team" variable (:type ("std::string" type (:type "class") nil nil)) nil [1835 1852])
+            ("cflie" variable (:type ("std::string" type (:type "class") nil nil)) nil [1931 1949])
+            ("safeController" variable (:type ("ros::ServiceClient" type (:type "class") nil nil)) nil [1968 2002])
+            ("centralClient" variable (:type ("ros::ServiceClient" type (:type "class") nil nil)) nil [2003 2036])
+            ("angleCommandPublisher" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [2038 2075])
+            ("rateCommandPublisher" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [2076 2112])
+            ("motorCommandPublisher" variable (:type ("ros::Publisher" type (:type "class") nil nil)) nil [2113 2150])
+            ("localArea" variable (:type ("AreaBounds" type (:type "class") nil nil)) nil [2152 2173])
+            ("ppsClientToController" function
+               (:arguments 
+                  ( ("data" variable (:type ("ViconData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2202 2217])
+                    ("autocontrolOn" variable (:type "bool") (reparse-symbol arg-sub-list) [2218 2237]))                  
+                :type "void")
+                nil [2175 3245])
+            ("safetyCheck" function
+               (:arguments 
+                  ( ("data" variable (:type ("ViconData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3319 3334]))                  
+                :type "bool")
+                nil [3302 3800])
+            ("viconCallback" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ViconData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3872 3894]))                  
+                :type "void")
+                nil [3853 4352])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4363 4372])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4373 4386]))                  
+                :type "int")
+                nil [4354 6592]))          
+      :file "PPSClient.cpp"
+      :pointmax 6593
+      :fsize 6592
+      :lastmodtime '(22782 64738 438349 797000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ViconDataPublisher.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [1254 1273])
+            ("DataStreamClient.h" include nil nil [1274 1303])
+            ("ros/ros.h" include nil nil [1304 1324])
+            ("d_fall_pps/ViconData.h" include nil nil [1325 1358])
+            ("ViconDataStreamSDK::CPP" using (:type ("ViconDataStreamSDK::CPP" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1360 1400])
+            ("d_fall_pps" using (:type ("d_fall_pps" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1401 1428])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1439 1448])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1449 1462]))                  
+                :type "int")
+                nil [1430 6063]))          
+      :file "ViconDataPublisher.cpp"
+      :pointmax 6064
+      :fsize 6063
+      :lastmodtime '(22776 53629 49490 821000)
+      :unmatched-syntax nil)
+    (semanticdb-table "CentralManagerService.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ros/ros.h" include nil nil [821 841])
+            ("d_fall_pps/CrazyflieContext.h" include nil nil [842 882])
+            ("d_fall_pps/CentralManager.h" include nil nil [883 921])
+            ("d_fall_pps" using (:type ("d_fall_pps" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [923 950])
+            ("returnCrazyflieContext" function
+               (:arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("CentralManager::Request" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1161 1194])
+                    ("response" variable
+                       (:reference 1
+                        :type ("CentralManager::Response" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1195 1230]))                  
+                :type "bool")
+                nil [1133 1687])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1702 1711])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1712 1725]))                  
+                :type "int")
+                nil [1693 2001]))          
+      :file "CentralManagerService.cpp"
+      :pointmax 2002
+      :fsize 2001
+      :lastmodtime '(22776 53629 49490 821000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SafeControllerService.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ros/ros.h" include nil nil [808 828])
+            ("d_fall_pps/ViconData.h" include nil nil [829 862])
+            ("d_fall_pps/Setpoint.h" include nil nil [863 895])
+            ("d_fall_pps/RateCommand.h" include nil nil [896 931])
+            ("d_fall_pps/RateController.h" include nil nil [932 970])
+            ("d_fall_pps" using (:type ("d_fall_pps" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [972 999])
+            ("previousLocation" variable (:type ("ViconData" type (:type "class") nil nil)) nil [1002 1029])
+            ("calculateControlOutput" function
+               (:arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("RateController::Request" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1059 1092])
+                    ("response" variable
+                       (:reference 1
+                        :type ("RateController::Response" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1093 1128]))                  
+                :type "bool")
+                nil [1031 4468])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4479 4488])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4489 4502]))                  
+                :type "int")
+                nil [4470 4786]))          
+      :file "SafeControllerService.cpp"
+      :pointmax 4787
+      :fsize 4786
+      :lastmodtime '(22782 64738 438349 797000)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!work!D-FaLL-System!pps_ws!src!d_fall_pps!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

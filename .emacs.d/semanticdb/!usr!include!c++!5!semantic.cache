@@ -1,0 +1,1295 @@
+;; Object 5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "5/"
+  :tables
+  (list
+    (semanticdb-table "vector"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_VECTOR" variable (:constant-flag t) nil [2271 2286])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [2317 2347])
+            ("bits/allocator.h" include (:system-flag t) nil [2348 2375])
+            ("bits/stl_construct.h" include (:system-flag t) nil [2376 2407])
+            ("bits/stl_uninitialized.h" include (:system-flag t) nil [2408 2443])
+            ("bits/stl_vector.h" include (:system-flag t) nil [2444 2472])
+            ("bits/stl_bvector.h" include (:system-flag t) nil [2473 2502])
+            ("bits/range_access.h" include (:system-flag t) nil [2504 2534])
+            ("bits/vector.tcc" include (:system-flag t) nil [2569 2596]))          
+      :file "vector"
+      :pointmax 2749
+      :fsize 2748
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 2302 . 2315) (symbol 2298 . 2301) (symbol 2291 . 2297) (punctuation 2290 . 2291))
+      :lexical-table 
+        '(("_GLIBCXX_VECTOR" . ((number "1" 2287 . 2288)))
+          )
+)
+    (semanticdb-table "new"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_NEW" variable (:constant-flag t) nil [1347 1351])
+            ("bits/c++config.h" include (:system-flag t) nil [1380 1407])
+            ("exception" include (:system-flag t) nil [1408 1428])
+            ("std" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("bad_alloc" type
+                       (:superclasses 
+                          ( ("exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1762 1769])
+                            ("bad_alloc" function
+                               (:constructor-flag t
+                                :type ("bad_alloc" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1774 1797])
+                            ("bad_alloc" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1908 1937])
+                            ("what" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1982 2023]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1720 2028])
+                    ("nothrow_t" type (:type "struct") (reparse-symbol namespacesubparts) [2411 2432])
+                    ("nothrow" variable
+                       (:typemodifiers ("extern")
+                        :constant-flag t
+                        :type ("nothrow_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2436 2467])
+                    ("new_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2580 2602])
+                    ("set_new_handler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("new_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2733]))                          
+                        :type ("new_handler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2693 2742]))                  )
+                (reparse-symbol extern-c-contents) [1484 2859]))          
+      :file "new"
+      :pointmax 4679
+      :fsize 4678
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 4667 . 4670) (symbol 4656 . 4666) (symbol 4652 . 4655) (symbol 4645 . 4651) (punctuation 4644 . 4645) (semantic-list 4616 . 4619) (semantic-list "()" 4594 . 4615) (THROW "throw" 4594 . 4615) (semantic-list 4579 . 4593) (semantic-list 4577 . 4579) (DELETE 4571 . 4577) (OPERATOR 4562 . 4570) (VOID 4557 . 4561) (INLINE 4550 . 4556) (semantic-list 4546 . 4549) (semantic-list "()" 4524 . 4545) (THROW "throw" 4524 . 4545) (semantic-list 4509 . 4523) (DELETE 4501 . 4507) (OPERATOR 4492 . 4500) (VOID 4487 . 4491) (INLINE 4480 . 4486) (semantic-list 4413 . 4428) (semantic-list "()" 4391 . 4412) (THROW "throw" 4391 . 4412) (semantic-list 4366 . 4390) (semantic-list 4364 . 4366) (NEW 4361 . 4364) (OPERATOR 4352 . 4360) (punctuation 4350 . 4351) (VOID 4346 . 4350) (INLINE 4339 . 4345) (semantic-list 4323 . 4338) (semantic-list "()" 4301 . 4322) (THROW "throw" 4301 . 4322) (semantic-list 4276 . 4300) (NEW 4273 . 4276) (OPERATOR 4264 . 4272) (punctuation 4262 . 4263) (VOID 4258 . 4262) (INLINE 4251 . 4257) (punctuation 4201 . 4202) (semantic-list "()" 4138 . 4159) (THROW "throw" 4138 . 4159) (semantic-list 4107 . 4137) (semantic-list 4105 . 4107) (DELETE 4099 . 4105) (OPERATOR 4090 . 4098) (VOID 4085 . 4089) (punctuation 4083 . 4084) (semantic-list "()" 4020 . 4041) (THROW "throw" 4020 . 4041) (semantic-list 3989 . 4019) (DELETE 3983 . 3989) (OPERATOR 3974 . 3982) (VOID 3969 . 3973) (punctuation 3967 . 3968) (semantic-list "()" 3904 . 3925) (THROW "throw" 3904 . 3925) (semantic-list 3867 . 3903) (semantic-list 3865 . 3867) (NEW 3862 . 3865) (OPERATOR 3853 . 3861) (punctuation 3851 . 3852) (VOID 3847 . 3851) (punctuation 3845 . 3846) (semantic-list "()" 3782 . 3803) (THROW "throw" 3782 . 3803) (semantic-list 3745 . 3781) (NEW 3742 . 3745) (OPERATOR 3733 . 3741) (punctuation 3731 . 3732) (VOID 3727 . 3731) (punctuation 3725 . 3726) (semantic-list "()" 3662 . 3683) (THROW "throw" 3662 . 3683) (semantic-list 3654 . 3661) (semantic-list 3652 . 3654) (DELETE 3646 . 3652) (OPERATOR 3637 . 3645) (VOID 3632 . 3636) (punctuation 3630 . 3631) (semantic-list "()" 3567 . 3588) (THROW "throw" 3567 . 3588) (semantic-list 3559 . 3566) (DELETE 3553 . 3559) (OPERATOR 3544 . 3552) (VOID 3539 . 3543) (punctuation 3537 . 3538) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 3480 . 3483)))) 3464 . 3495) (THROW "throw" 3464 . 3495) (semantic-list 3450 . 3463) (semantic-list 3448 . 3450) (NEW 3445 . 3448) (OPERATOR 3436 . 3444) (punctuation 3434 . 3435) (VOID 3430 . 3434) (punctuation 3428 . 3429) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 3371 . 3374)))) 3355 . 3386) (THROW "throw" 3355 . 3386) (semantic-list 3341 . 3354) (NEW 3338 . 3341) (OPERATOR 3329 . 3337) (punctuation 3327 . 3328) (VOID 3323 . 3327) (TYPEDEF 2572 . 2579) (semantic-list 1457 . 1466) (symbol 1453 . 1457) (DEFAULT 1458 . 1465) (symbol 1442 . 1452) (DEFAULT 1458 . 1465) (symbol 1438 . 1441) (symbol 1431 . 1437) (punctuation 1430 . 1431) (symbol 1365 . 1378) (symbol 1361 . 1364) (symbol 1354 . 1360) (punctuation 1353 . 1354))
+      :lexical-table 
+        '(("_NEW")
+          )
+)
+    (semanticdb-table "exception"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__EXCEPTION__" variable (:constant-flag t) nil [1161 1174])
+            ("bits/c++config.h" include (:system-flag t) nil [1241 1268])
+            ("bits/atomic_lockfree_defines.h" include (:system-flag t) nil [1269 1310])
+            ("__gnu_cxx" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("__verbose_terminate_handler" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5051 5086]))                  )
+                (reparse-symbol extern-c-contents) [4521 5120])
+            ("std" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("exception" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1869 1876]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1847 2138])
+                    ("bad_exception" type
+                       (:superclasses 
+                          ( ("exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2320 2327]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2275 2636])
+                    ("terminate_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2726 2755])
+                    ("unexpected_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2846 2876])
+                    ("unexpected" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3798 3847]))                  )
+                (reparse-symbol extern-c-contents) [1328 4502]))          
+      :file "exception"
+      :pointmax 5323
+      :fsize 5322
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 5177 . 5180) (symbol 5166 . 5176) (symbol 5162 . 5165) (symbol 5155 . 5161) (punctuation 5154 . 5155) (symbol 5110 . 5118) (punctuation 4473 . 4474) (semantic-list "()" 4425 . 4446) (THROW "throw" 4425 . 4446) (semantic-list 4422 . 4424) (symbol 4404 . 4422) (BOOL 4399 . 4403) (punctuation 3530 . 3531) (semantic-list "()" 3509 . 3530) (THROW "throw" 3509 . 3530) (semantic-list 3488 . 3508) (symbol 3474 . 3488) (symbol 3455 . 3473) (punctuation 3373 . 3374) (semantic-list "()" 3321 . 3342) (THROW "throw" 3321 . 3342) (semantic-list 3318 . 3320) (symbol 3309 . 3318) (VOID 3304 . 3308) (punctuation 3029 . 3030) (semantic-list "()" 3008 . 3029) (THROW "throw" 3008 . 3029) (semantic-list 2988 . 3007) (symbol 2975 . 2988) (symbol 2957 . 2974) (TYPEDEF 2838 . 2845) (TYPEDEF 2718 . 2725) (punctuation 2630 . 2631) (semantic-list "()" 2609 . 2630) (THROW "throw" 2609 . 2630) (CONST 2603 . 2608) (semantic-list 2600 . 2602) (symbol 2596 . 2600) (punctuation 2594 . 2595) (CHAR 2590 . 2594) (CONST 2584 . 2589) (VIRTUAL 2576 . 2583) (punctuation 2530 . 2531) (semantic-list "()" 2509 . 2530) (THROW "throw" 2509 . 2530) (semantic-list 2506 . 2508) (symbol 2493 . 2506) (punctuation 2492 . 2493) (VIRTUAL 2484 . 2491) (semantic-list 2370 . 2373) (semantic-list "()" 2348 . 2369) (THROW "throw" 2348 . 2369) (semantic-list 2345 . 2347) (symbol 2332 . 2345) (punctuation 2132 . 2133) (semantic-list "()" 2111 . 2132) (THROW "throw" 2111 . 2132) (CONST 2105 . 2110) (semantic-list 2102 . 2104) (symbol 2098 . 2102) (punctuation 2096 . 2097) (CHAR 2092 . 2096) (CONST 2086 . 2091) (VIRTUAL 2078 . 2085) (punctuation 1965 . 1966) (semantic-list "()" 1944 . 1965) (THROW "throw" 1944 . 1965) (semantic-list 1941 . 1943) (symbol 1932 . 1941) (punctuation 1931 . 1932) (VIRTUAL 1923 . 1930) (semantic-list 1915 . 1918) (semantic-list "()" 1893 . 1914) (THROW "throw" 1893 . 1914) (semantic-list 1890 . 1892) (symbol 1881 . 1890) (semantic-list 1230 . 1239) (symbol 1226 . 1230) (DEFAULT 1231 . 1238) (symbol 1215 . 1225) (DEFAULT 1231 . 1238) (symbol 1211 . 1214) (symbol 1204 . 1210) (punctuation 1203 . 1204) (symbol 1188 . 1201) (symbol 1184 . 1187) (symbol 1177 . 1183) (punctuation 1176 . 1177))
+      :lexical-table 
+        '(("__EXCEPTION__")
+          )
+)
+    (semanticdb-table "string"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_STRING" variable (:constant-flag t) nil [1259 1274])
+            ("bits/c++config.h" include (:system-flag t) nil [1305 1332])
+            ("bits/stringfwd.h" include (:system-flag t) nil [1333 1360])
+            ("bits/char_traits.h" include (:system-flag t) nil [1361 1390])
+            ("bits/allocator.h" include (:system-flag t) nil [1431 1458])
+            ("bits/cpp_type_traits.h" include (:system-flag t) nil [1459 1492])
+            ("bits/localefwd.h" include (:system-flag t) nil [1493 1520])
+            ("bits/ostream_insert.h" include (:system-flag t) nil [1562 1594])
+            ("bits/stl_iterator_base_types.h" include (:system-flag t) nil [1595 1636])
+            ("bits/stl_iterator_base_funcs.h" include (:system-flag t) nil [1637 1678])
+            ("bits/stl_iterator.h" include (:system-flag t) nil [1679 1709])
+            ("bits/stl_function.h" include (:system-flag t) nil [1710 1740])
+            ("ext/numeric_traits.h" include (:system-flag t) nil [1753 1784])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [1786 1816])
+            ("bits/range_access.h" include (:system-flag t) nil [1818 1848])
+            ("bits/basic_string.h" include (:system-flag t) nil [1849 1879])
+            ("bits/basic_string.tcc" include (:system-flag t) nil [1880 1912]))          
+      :file "string"
+      :pointmax 1944
+      :fsize 1943
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 1290 . 1303) (symbol 1286 . 1289) (symbol 1279 . 1285) (punctuation 1278 . 1279))
+      :lexical-table 
+        '(("_GLIBCXX_STRING" . ((number "1" 1275 . 1276)))
+          )
+)
+    (semanticdb-table "sstream"
+      :file "sstream"
+      :fsize 26369
+      :lastmodtime '(23340 10828 0 0))
+    (semanticdb-table "cwchar"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1555 1582])
+            ("wchar.h" include (:system-flag t) nil [1610 1628])
+            ("_GLIBCXX_CWCHAR" variable (:constant-flag t) nil [1669 1684])
+            ("std" type
+               (:members 
+                  ( ("mbstate_t" variable (:type "int") (reparse-symbol namespacesubparts) [1959 1969]))                  
+                :type "namespace")
+                nil [1933 1971])
+            ("std" type
+               (:members 
+                  ( ("wint_t" variable (:type "int") (reparse-symbol namespacesubparts) [3148 3155])
+                    ("btowc" variable (:type "int") (reparse-symbol namespacesubparts) [3167 3173])
+                    ("fgetwc" variable (:type "int") (reparse-symbol namespacesubparts) [3184 3191])
+                    ("fgetws" variable (:type "int") (reparse-symbol namespacesubparts) [3202 3209])
+                    ("fputwc" variable (:type "int") (reparse-symbol namespacesubparts) [3220 3227])
+                    ("fputws" variable (:type "int") (reparse-symbol namespacesubparts) [3238 3245])
+                    ("fwide" variable (:type "int") (reparse-symbol namespacesubparts) [3256 3262])
+                    ("fwprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3273 3282])
+                    ("fwscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3293 3301])
+                    ("getwc" variable (:type "int") (reparse-symbol namespacesubparts) [3312 3318])
+                    ("getwchar" variable (:type "int") (reparse-symbol namespacesubparts) [3329 3338])
+                    ("mbrlen" variable (:type "int") (reparse-symbol namespacesubparts) [3349 3356])
+                    ("mbrtowc" variable (:type "int") (reparse-symbol namespacesubparts) [3367 3375])
+                    ("mbsinit" variable (:type "int") (reparse-symbol namespacesubparts) [3386 3394])
+                    ("mbsrtowcs" variable (:type "int") (reparse-symbol namespacesubparts) [3405 3415])
+                    ("putwc" variable (:type "int") (reparse-symbol namespacesubparts) [3426 3432])
+                    ("putwchar" variable (:type "int") (reparse-symbol namespacesubparts) [3443 3452])
+                    ("swprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3502 3511])
+                    ("swscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3529 3537])
+                    ("ungetwc" variable (:type "int") (reparse-symbol namespacesubparts) [3548 3556])
+                    ("vfwprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3567 3577])
+                    ("vfwscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3615 3624])
+                    ("vswprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3681 3691])
+                    ("vswscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3736 3745])
+                    ("vwprintf" variable (:type "int") (reparse-symbol namespacesubparts) [3763 3772])
+                    ("vwscanf" variable (:type "int") (reparse-symbol namespacesubparts) [3809 3817])
+                    ("wcrtomb" variable (:type "int") (reparse-symbol namespacesubparts) [3835 3843])
+                    ("wcscat" variable (:type "int") (reparse-symbol namespacesubparts) [3854 3861])
+                    ("wcscmp" variable (:type "int") (reparse-symbol namespacesubparts) [3872 3879])
+                    ("wcscoll" variable (:type "int") (reparse-symbol namespacesubparts) [3890 3898])
+                    ("wcscpy" variable (:type "int") (reparse-symbol namespacesubparts) [3909 3916])
+                    ("wcscspn" variable (:type "int") (reparse-symbol namespacesubparts) [3927 3935])
+                    ("wcsftime" variable (:type "int") (reparse-symbol namespacesubparts) [3946 3955])
+                    ("wcslen" variable (:type "int") (reparse-symbol namespacesubparts) [3966 3973])
+                    ("wcsncat" variable (:type "int") (reparse-symbol namespacesubparts) [3984 3992])
+                    ("wcsncmp" variable (:type "int") (reparse-symbol namespacesubparts) [4003 4011])
+                    ("wcsncpy" variable (:type "int") (reparse-symbol namespacesubparts) [4022 4030])
+                    ("wcsrtombs" variable (:type "int") (reparse-symbol namespacesubparts) [4041 4051])
+                    ("wcsspn" variable (:type "int") (reparse-symbol namespacesubparts) [4062 4069])
+                    ("wcstod" variable (:type "int") (reparse-symbol namespacesubparts) [4080 4087])
+                    ("wcstof" variable (:type "int") (reparse-symbol namespacesubparts) [4123 4130])
+                    ("wcstok" variable (:type "int") (reparse-symbol namespacesubparts) [4148 4155])
+                    ("wcstol" variable (:type "int") (reparse-symbol namespacesubparts) [4166 4173])
+                    ("wcstoul" variable (:type "int") (reparse-symbol namespacesubparts) [4184 4192])
+                    ("wcsxfrm" variable (:type "int") (reparse-symbol namespacesubparts) [4203 4211])
+                    ("wctob" variable (:type "int") (reparse-symbol namespacesubparts) [4222 4228])
+                    ("wmemcmp" variable (:type "int") (reparse-symbol namespacesubparts) [4239 4247])
+                    ("wmemcpy" variable (:type "int") (reparse-symbol namespacesubparts) [4258 4266])
+                    ("wmemmove" variable (:type "int") (reparse-symbol namespacesubparts) [4277 4286])
+                    ("wmemset" variable (:type "int") (reparse-symbol namespacesubparts) [4297 4305])
+                    ("wprintf" variable (:type "int") (reparse-symbol namespacesubparts) [4316 4324])
+                    ("wscanf" variable (:type "int") (reparse-symbol namespacesubparts) [4335 4342])
+                    ("wcschr" variable (:type "int") (reparse-symbol namespacesubparts) [4353 4360])
+                    ("wcspbrk" variable (:type "int") (reparse-symbol namespacesubparts) [4371 4379])
+                    ("wcsrchr" variable (:type "int") (reparse-symbol namespacesubparts) [4390 4398])
+                    ("wcsstr" variable (:type "int") (reparse-symbol namespacesubparts) [4409 4416])
+                    ("wmemchr" variable (:type "int") (reparse-symbol namespacesubparts) [4427 4435])
+                    ("wcschr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__p" variable
+                               (:pointer 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4504 4517])
+                            ("__c" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [4518 4530]))                          
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [4479 4589])
+                    ("wcspbrk" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s1" variable
+                               (:pointer 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4619 4633])
+                            ("__s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4634 4654]))                          
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [4593 4716])
+                    ("wcsrchr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__p" variable
+                               (:pointer 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4746 4759])
+                            ("__c" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [4760 4772]))                          
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [4720 4832])
+                    ("wcsstr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s1" variable
+                               (:pointer 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4861 4875])
+                            ("__s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4876 4896]))                          
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [4836 4957])
+                    ("wmemchr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__p" variable
+                               (:pointer 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [4987 5000])
+                            ("__c" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [5001 5013])
+                            ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5014 5025]))                          
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [4961 5090]))                  
+                :type "namespace")
+                nil [3059 5131])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("wcstold" variable (:type "int") (reparse-symbol namespacesubparts) [5439 5447])
+                    ("wcstoll" variable (:type "int") (reparse-symbol namespacesubparts) [5811 5819])
+                    ("wcstoull" variable (:type "int") (reparse-symbol namespacesubparts) [5830 5839]))                  
+                :type "namespace")
+                nil [5215 5848])
+            ("std" type
+               (:members 
+                  ( ("__gnu_cxx::wcstold" variable (:type "int") (reparse-symbol namespacesubparts) [5899 5918])
+                    ("__gnu_cxx::wcstoll" variable (:type "int") (reparse-symbol namespacesubparts) [5929 5948])
+                    ("__gnu_cxx::wcstoull" variable (:type "int") (reparse-symbol namespacesubparts) [5959 5979]))                  
+                :type "namespace")
+                nil [5873 5981]))          
+      :file "cwchar"
+      :pointmax 6498
+      :fsize 6497
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((punctuation 5958 . 5959) (punctuation 5957 . 5958) (USING 5951 . 5956) (punctuation 5928 . 5929) (punctuation 5927 . 5928) (USING 5921 . 5926) (punctuation 5898 . 5899) (punctuation 5897 . 5898) (USING 5891 . 5896) (punctuation 5829 . 5830) (punctuation 5828 . 5829) (USING 5822 . 5827) (punctuation 5810 . 5811) (punctuation 5809 . 5810) (USING 5803 . 5808) (punctuation 5438 . 5439) (punctuation 5437 . 5438) (USING 5431 . 5436) (symbol 5121 . 5129) (punctuation 4426 . 4427) (punctuation 4425 . 4426) (USING 4419 . 4424) (punctuation 4408 . 4409) (punctuation 4407 . 4408) (USING 4401 . 4406) (punctuation 4389 . 4390) (punctuation 4388 . 4389) (USING 4382 . 4387) (punctuation 4370 . 4371) (punctuation 4369 . 4370) (USING 4363 . 4368) (punctuation 4352 . 4353) (punctuation 4351 . 4352) (USING 4345 . 4350) (punctuation 4334 . 4335) (punctuation 4333 . 4334) (USING 4327 . 4332) (punctuation 4315 . 4316) (punctuation 4314 . 4315) (USING 4308 . 4313) (punctuation 4296 . 4297) (punctuation 4295 . 4296) (USING 4289 . 4294) (punctuation 4276 . 4277) (punctuation 4275 . 4276) (USING 4269 . 4274) (punctuation 4257 . 4258) (punctuation 4256 . 4257) (USING 4250 . 4255) (punctuation 4238 . 4239) (punctuation 4237 . 4238) (USING 4231 . 4236) (punctuation 4221 . 4222) (punctuation 4220 . 4221) (USING 4214 . 4219) (punctuation 4202 . 4203) (punctuation 4201 . 4202) (USING 4195 . 4200) (punctuation 4183 . 4184) (punctuation 4182 . 4183) (USING 4176 . 4181) (punctuation 4165 . 4166) (punctuation 4164 . 4165) (USING 4158 . 4163) (punctuation 4147 . 4148) (punctuation 4146 . 4147) (USING 4140 . 4145) (punctuation 4122 . 4123) (punctuation 4121 . 4122) (USING 4115 . 4120) (punctuation 4079 . 4080) (punctuation 4078 . 4079) (USING 4072 . 4077) (punctuation 4061 . 4062) (punctuation 4060 . 4061) (USING 4054 . 4059) (punctuation 4040 . 4041) (punctuation 4039 . 4040) (USING 4033 . 4038) (punctuation 4021 . 4022) (punctuation 4020 . 4021) (USING 4014 . 4019) (punctuation 4002 . 4003) (punctuation 4001 . 4002) (USING 3995 . 4000) (punctuation 3983 . 3984) (punctuation 3982 . 3983) (USING 3976 . 3981) (punctuation 3965 . 3966) (punctuation 3964 . 3965) (USING 3958 . 3963) (punctuation 3945 . 3946) (punctuation 3944 . 3945) (USING 3938 . 3943) (punctuation 3926 . 3927) (punctuation 3925 . 3926) (USING 3919 . 3924) (punctuation 3908 . 3909) (punctuation 3907 . 3908) (USING 3901 . 3906) (punctuation 3889 . 3890) (punctuation 3888 . 3889) (USING 3882 . 3887) (punctuation 3871 . 3872) (punctuation 3870 . 3871) (USING 3864 . 3869) (punctuation 3853 . 3854) (punctuation 3852 . 3853) (USING 3846 . 3851) (punctuation 3834 . 3835) (punctuation 3833 . 3834) (USING 3827 . 3832) (punctuation 3808 . 3809) (punctuation 3807 . 3808) (USING 3801 . 3806) (punctuation 3762 . 3763) (punctuation 3761 . 3762) (USING 3755 . 3760) (punctuation 3735 . 3736) (punctuation 3734 . 3735) (USING 3728 . 3733) (punctuation 3680 . 3681) (punctuation 3679 . 3680) (USING 3673 . 3678) (punctuation 3614 . 3615) (punctuation 3613 . 3614) (USING 3607 . 3612) (punctuation 3566 . 3567) (punctuation 3565 . 3566) (USING 3559 . 3564) (punctuation 3547 . 3548) (punctuation 3546 . 3547) (USING 3540 . 3545) (punctuation 3528 . 3529) (punctuation 3527 . 3528) (USING 3521 . 3526) (punctuation 3501 . 3502) (punctuation 3500 . 3501) (USING 3494 . 3499) (punctuation 3442 . 3443) (punctuation 3441 . 3442) (USING 3435 . 3440) (punctuation 3425 . 3426) (punctuation 3424 . 3425) (USING 3418 . 3423) (punctuation 3404 . 3405) (punctuation 3403 . 3404) (USING 3397 . 3402) (punctuation 3385 . 3386) (punctuation 3384 . 3385) (USING 3378 . 3383) (punctuation 3366 . 3367) (punctuation 3365 . 3366) (USING 3359 . 3364) (punctuation 3348 . 3349) (punctuation 3347 . 3348) (USING 3341 . 3346) (punctuation 3328 . 3329) (punctuation 3327 . 3328) (USING 3321 . 3326) (punctuation 3311 . 3312) (punctuation 3310 . 3311) (USING 3304 . 3309) (punctuation 3292 . 3293) (punctuation 3291 . 3292) (USING 3285 . 3290) (punctuation 3272 . 3273) (punctuation 3271 . 3272) (USING 3265 . 3270) (punctuation 3255 . 3256) (punctuation 3254 . 3255) (USING 3248 . 3253) (punctuation 3237 . 3238) (punctuation 3236 . 3237) (USING 3230 . 3235) (punctuation 3219 . 3220) (punctuation 3218 . 3219) (USING 3212 . 3217) (punctuation 3201 . 3202) (punctuation 3200 . 3201) (USING 3194 . 3199) (punctuation 3183 . 3184) (punctuation 3182 . 3183) (USING 3176 . 3181) (punctuation 3166 . 3167) (punctuation 3165 . 3166) (USING 3159 . 3164) (punctuation 3147 . 3148) (punctuation 3146 . 3147) (USING 3140 . 3145) (punctuation 1958 . 1959) (punctuation 1957 . 1958) (USING 1951 . 1956) (symbol 1540 . 1553) (symbol 1536 . 1539) (symbol 1529 . 1535) (punctuation 1528 . 1529))
+      :lexical-table 
+        '(("_GLIBCXX_CWCHAR" . ((number "1" 1685 . 1686)))
+          )
+)
+    (semanticdb-table "iosfwd"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_IOSFWD" variable (:constant-flag t) nil [1244 1259])
+            ("bits/c++config.h" include (:system-flag t) nil [1290 1317])
+            ("bits/stringfwd.h" include (:system-flag t) nil [1318 1345])
+            ("bits/postypes.h" include (:system-flag t) nil [1383 1409])
+            ("std" type
+               (:members 
+                  ( ("ios_base" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2626 2641])
+                    ("basic_ios" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2645 2732])
+                    ("basic_streambuf" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2736 2829])
+                    ("basic_istream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2833 2924])
+                    ("basic_ostream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2928 3019])
+                    ("basic_iostream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3023 3115])
+                    ("__cxx11" type
+                       (:members 
+                          ( ("basic_stringbuf" type
+                               (:template 
+                                  ( ("_CharT" type (:type "class") nil nil)
+                                    ("_Traits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3152 3287])
+                            ("basic_istringstream" type
+                               (:template 
+                                  ( ("_CharT" type (:type "class") nil nil)
+                                    ("_Traits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3291 3429])
+                            ("basic_ostringstream" type
+                               (:template 
+                                  ( ("_CharT" type (:type "class") nil nil)
+                                    ("_Traits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3433 3571])
+                            ("basic_stringstream" type
+                               (:template 
+                                  ( ("_CharT" type (:type "class") nil nil)
+                                    ("_Traits" type (:type "class") nil nil)
+                                    ("_Alloc" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3575 3712]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3118 3743])
+                    ("basic_filebuf" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3746 3837])
+                    ("basic_ifstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3841 3933])
+                    ("basic_ofstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3937 4029])
+                    ("basic_fstream" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [4033 4124])
+                    ("istreambuf_iterator" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [4128 4225])
+                    ("ostreambuf_iterator" type
+                       (:template 
+                          ( ("_CharT" type (:type "class") nil nil)
+                            ("_Traits" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [4229 4326])
+                    ("ios" type
+                       (:typedef ("basic_ios" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4369 4399])
+                    ("streambuf" type
+                       (:typedef ("basic_streambuf" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4442 4483])
+                    ("istream" type
+                       (:typedef ("basic_istream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4531 4569])
+                    ("ostream" type
+                       (:typedef ("basic_ostream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4618 4656])
+                    ("iostream" type
+                       (:typedef ("basic_iostream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4721 4761])
+                    ("stringbuf" type
+                       (:typedef ("basic_stringbuf" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4805 4846])
+                    ("istringstream" type
+                       (:typedef ("basic_istringstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4896 4945])
+                    ("ostringstream" type
+                       (:typedef ("basic_ostringstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4996 5045])
+                    ("stringstream" type
+                       (:typedef ("basic_stringstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5112 5159])
+                    ("filebuf" type
+                       (:typedef ("basic_filebuf" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5201 5239])
+                    ("ifstream" type
+                       (:typedef ("basic_ifstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5287 5327])
+                    ("ofstream" type
+                       (:typedef ("basic_ofstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5376 5416])
+                    ("fstream" type
+                       (:typedef ("basic_fstream" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5481 5519])
+                    ("wios" type
+                       (:typedef ("basic_ios" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5592 5626])
+                    ("wstreambuf" type
+                       (:typedef ("basic_streambuf" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5671 5716])
+                    ("wistream" type
+                       (:typedef ("basic_istream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5767 5808])
+                    ("wostream" type
+                       (:typedef ("basic_ostream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5860 5901])
+                    ("wiostream" type
+                       (:typedef ("basic_iostream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [5969 6012])
+                    ("wstringbuf" type
+                       (:typedef ("basic_stringbuf" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6059 6104])
+                    ("wistringstream" type
+                       (:typedef ("basic_istringstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6157 6210])
+                    ("wostringstream" type
+                       (:typedef ("basic_ostringstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6264 6317])
+                    ("wstringstream" type
+                       (:typedef ("basic_stringstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6387 6438])
+                    ("wfilebuf" type
+                       (:typedef ("basic_filebuf" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6483 6524])
+                    ("wifstream" type
+                       (:typedef ("basic_ifstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6575 6618])
+                    ("wofstream" type
+                       (:typedef ("basic_ofstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6670 6713])
+                    ("wfstream" type
+                       (:typedef ("basic_fstream" type
+                             (:template-specifier 
+                                ( ("wchar_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6781 6822]))                  
+                :type "namespace")
+                nil [1411 6876]))          
+      :file "iosfwd"
+      :pointmax 6920
+      :fsize 6919
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 6866 . 6874) (symbol 3736 . 3742) (symbol 1275 . 1288) (symbol 1271 . 1274) (symbol 1264 . 1270) (punctuation 1263 . 1264))
+      :lexical-table 
+        '(("_GLIBCXX_IOSFWD" . ((number "1" 1260 . 1261)))
+          )
+)
+    (semanticdb-table "cctype"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1559 1586])
+            ("ctype.h" include (:system-flag t) nil [1587 1605])
+            ("_GLIBCXX_CCTYPE" variable (:constant-flag t) nil [1639 1654])
+            ("std" type
+               (:members 
+                  ( ("isalnum" variable (:type "int") (reparse-symbol namespacesubparts) [1956 1964])
+                    ("isalpha" variable (:type "int") (reparse-symbol namespacesubparts) [1975 1983])
+                    ("iscntrl" variable (:type "int") (reparse-symbol namespacesubparts) [1994 2002])
+                    ("isdigit" variable (:type "int") (reparse-symbol namespacesubparts) [2013 2021])
+                    ("isgraph" variable (:type "int") (reparse-symbol namespacesubparts) [2032 2040])
+                    ("islower" variable (:type "int") (reparse-symbol namespacesubparts) [2051 2059])
+                    ("isprint" variable (:type "int") (reparse-symbol namespacesubparts) [2070 2078])
+                    ("ispunct" variable (:type "int") (reparse-symbol namespacesubparts) [2089 2097])
+                    ("isspace" variable (:type "int") (reparse-symbol namespacesubparts) [2108 2116])
+                    ("isupper" variable (:type "int") (reparse-symbol namespacesubparts) [2127 2135])
+                    ("isxdigit" variable (:type "int") (reparse-symbol namespacesubparts) [2146 2155])
+                    ("tolower" variable (:type "int") (reparse-symbol namespacesubparts) [2166 2174])
+                    ("toupper" variable (:type "int") (reparse-symbol namespacesubparts) [2185 2193]))                  
+                :type "namespace")
+                nil [1930 2195]))          
+      :file "cctype"
+      :pointmax 2410
+      :fsize 2409
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((punctuation 2184 . 2185) (punctuation 2183 . 2184) (USING 2177 . 2182) (punctuation 2165 . 2166) (punctuation 2164 . 2165) (USING 2158 . 2163) (punctuation 2145 . 2146) (punctuation 2144 . 2145) (USING 2138 . 2143) (punctuation 2126 . 2127) (punctuation 2125 . 2126) (USING 2119 . 2124) (punctuation 2107 . 2108) (punctuation 2106 . 2107) (USING 2100 . 2105) (punctuation 2088 . 2089) (punctuation 2087 . 2088) (USING 2081 . 2086) (punctuation 2069 . 2070) (punctuation 2068 . 2069) (USING 2062 . 2067) (punctuation 2050 . 2051) (punctuation 2049 . 2050) (USING 2043 . 2048) (punctuation 2031 . 2032) (punctuation 2030 . 2031) (USING 2024 . 2029) (punctuation 2012 . 2013) (punctuation 2011 . 2012) (USING 2005 . 2010) (punctuation 1993 . 1994) (punctuation 1992 . 1993) (USING 1986 . 1991) (punctuation 1974 . 1975) (punctuation 1973 . 1974) (USING 1967 . 1972) (punctuation 1955 . 1956) (punctuation 1954 . 1955) (USING 1948 . 1953) (symbol 1544 . 1557) (symbol 1540 . 1543) (symbol 1533 . 1539) (punctuation 1532 . 1533))
+      :lexical-table 
+        '(("_GLIBCXX_CCTYPE" . ((number "1" 1655 . 1656)))
+          )
+)
+    (semanticdb-table "clocale"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1589 1616])
+            ("locale.h" include (:system-flag t) nil [1617 1636])
+            ("_GLIBCXX_CLOCALE" variable (:constant-flag t) nil [1671 1687])
+            ("std" type
+               (:members 
+                  ( ("lconv" variable (:type "int") (reparse-symbol namespacesubparts) [1829 1835])
+                    ("setlocale" variable (:type "int") (reparse-symbol namespacesubparts) [1846 1856])
+                    ("localeconv" variable (:type "int") (reparse-symbol namespacesubparts) [1867 1878]))                  
+                :type "namespace")
+                nil [1803 1880]))          
+      :file "clocale"
+      :pointmax 1906
+      :fsize 1905
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((punctuation 1866 . 1867) (punctuation 1865 . 1866) (USING 1859 . 1864) (punctuation 1845 . 1846) (punctuation 1844 . 1845) (USING 1838 . 1843) (punctuation 1828 . 1829) (punctuation 1827 . 1828) (USING 1821 . 1826) (symbol 1574 . 1587) (symbol 1570 . 1573) (symbol 1563 . 1569) (punctuation 1562 . 1563))
+      :lexical-table 
+        '(("_GLIBCXX_CLOCALE" . ((number "1" 1688 . 1689)))
+          )
+)
+    (semanticdb-table "cfloat"
+      :file "cfloat"
+      :fsize 1861
+      :lastmodtime '(23340 10828 0 0))
+    (semanticdb-table "cmath"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1566 1593])
+            ("bits/cpp_type_traits.h" include (:system-flag t) nil [1594 1627])
+            ("ext/type_traits.h" include (:system-flag t) nil [1628 1656])
+            ("math.h" include (:system-flag t) nil [1657 1674])
+            ("_GLIBCXX_CMATH" variable (:constant-flag t) nil [1707 1721])
+            ("std" type
+               (:members 
+                  ( ("abs" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "double") (reparse-symbol arg-sub-list) [2244 2255]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [2205 2289])
+                    ("abs" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [2377 2387]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [2339 2422])
+                    ("abs" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [2470 2486]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [2426 2521])
+                    ("abs" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2709 2717]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2694 2753])
+                    ("acos" variable (:type "int") (reparse-symbol namespacesubparts) [2765 2770])
+                    ("acos" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [2852 2862]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [2813 2897])
+                    ("acos" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [2946 2962]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [2901 2997])
+                    ("acos" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3187 3195]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3171 3231])
+                    ("asin" variable (:type "int") (reparse-symbol namespacesubparts) [3243 3248])
+                    ("asin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [3330 3340]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [3291 3375])
+                    ("asin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [3424 3440]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [3379 3475])
+                    ("asin" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3664 3672]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3648 3708])
+                    ("atan" variable (:type "int") (reparse-symbol namespacesubparts) [3720 3725])
+                    ("atan" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [3807 3817]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [3768 3852])
+                    ("atan" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [3901 3917]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [3856 3952])
+                    ("atan" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4141 4149]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4125 4185])
+                    ("atan2" variable (:type "int") (reparse-symbol namespacesubparts) [4197 4203])
+                    ("atan2" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__y" variable (:type "float") (reparse-symbol arg-sub-list) [4286 4296])
+                            ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [4297 4307]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [4246 4348])
+                    ("atan2" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__y" variable (:type "long double") (reparse-symbol arg-sub-list) [4398 4414])
+                            ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [4415 4431]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [4352 4472])
+                    ("atan2" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("_Up" type (:type "class") nil nil))                          
+                        :type ("__gnu_cxx::__promote_2::__type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("__y" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4614 4622])
+                            ("__x" variable (:type ("_Up" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4623 4631]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [4483 4761])
+                    ("ceil" variable (:type "int") (reparse-symbol namespacesubparts) [4773 4778])
+                    ("ceil" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [4860 4870]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [4821 4905])
+                    ("ceil" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [4954 4970]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [4909 5005])
+                    ("ceil" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5195 5203]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5179 5239])
+                    ("cos" variable (:type "int") (reparse-symbol namespacesubparts) [5251 5255])
+                    ("cos" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [5336 5346]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [5298 5380])
+                    ("cos" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [5428 5444]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [5384 5478])
+                    ("cos" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5666 5674]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5651 5709])
+                    ("cosh" variable (:type "int") (reparse-symbol namespacesubparts) [5721 5726])
+                    ("cosh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [5808 5818]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [5769 5853])
+                    ("cosh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [5902 5918]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [5857 5953])
+                    ("cosh" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6142 6150]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6126 6186])
+                    ("exp" variable (:type "int") (reparse-symbol namespacesubparts) [6198 6202])
+                    ("exp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [6283 6293]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [6245 6327])
+                    ("exp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [6375 6391]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [6331 6425])
+                    ("exp" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6613 6621]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6598 6656])
+                    ("fabs" variable (:type "int") (reparse-symbol namespacesubparts) [6668 6673])
+                    ("fabs" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [6755 6765]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [6716 6800])
+                    ("fabs" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [6849 6865]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [6804 6900])
+                    ("fabs" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7089 7097]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7073 7133])
+                    ("floor" variable (:type "int") (reparse-symbol namespacesubparts) [7145 7151])
+                    ("floor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [7234 7244]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [7194 7280])
+                    ("floor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [7330 7346]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [7284 7382])
+                    ("floor" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7572 7580]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7555 7617])
+                    ("fmod" variable (:type "int") (reparse-symbol namespacesubparts) [7629 7634])
+                    ("fmod" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [7716 7726])
+                            ("__y" variable (:type "float") (reparse-symbol arg-sub-list) [7727 7737]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [7677 7777])
+                    ("fmod" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [7826 7842])
+                            ("__y" variable (:type "long double") (reparse-symbol arg-sub-list) [7843 7859]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [7781 7899])
+                    ("fmod" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("_Up" type (:type "class") nil nil))                          
+                        :type ("__gnu_cxx::__promote_2::__type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8040 8048])
+                            ("__y" variable (:type ("_Up" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8049 8057]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [7910 8186])
+                    ("frexp" variable (:type "int") (reparse-symbol namespacesubparts) [8198 8204])
+                    ("frexp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [8268 8278])
+                            ("__exp" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8279 8290]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [8247 8333])
+                    ("frexp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [8364 8380])
+                            ("__exp" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8381 8392]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [8337 8435])
+                    ("frexp" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8626 8634])
+                            ("__exp" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8635 8646]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8609 8690])
+                    ("ldexp" variable (:type "int") (reparse-symbol namespacesubparts) [8702 8708])
+                    ("ldexp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [8791 8801])
+                            ("__exp" variable (:type "int") (reparse-symbol arg-sub-list) [8802 8812]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [8751 8855])
+                    ("ldexp" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [8905 8921])
+                            ("__exp" variable (:type "int") (reparse-symbol arg-sub-list) [8922 8932]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [8859 8975])
+                    ("ldexp" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9166 9174])
+                            ("__exp" variable (:type "int") (reparse-symbol arg-sub-list) [9175 9185]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9149 9229])
+                    ("log" variable (:type "int") (reparse-symbol namespacesubparts) [9241 9245])
+                    ("log" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [9326 9336]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [9288 9370])
+                    ("log" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [9418 9434]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [9374 9468])
+                    ("log" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9657 9665]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9642 9700])
+                    ("log10" variable (:type "int") (reparse-symbol namespacesubparts) [9712 9718])
+                    ("log10" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [9801 9811]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [9761 9847])
+                    ("log10" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [9897 9913]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [9851 9949])
+                    ("log10" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10139 10147]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10122 10184])
+                    ("modf" variable (:type "int") (reparse-symbol namespacesubparts) [10196 10201])
+                    ("modf" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [10264 10274])
+                            ("__iptr" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [10275 10289]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [10244 10332])
+                    ("modf" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [10362 10378])
+                            ("__iptr" variable
+                               (:pointer 1
+                                :type "long double")
+                                (reparse-symbol arg-sub-list) [10379 10399]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [10336 10442])
+                    ("pow" variable (:type "int") (reparse-symbol namespacesubparts) [10461 10465])
+                    ("pow" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [10546 10556])
+                            ("__y" variable (:type "float") (reparse-symbol arg-sub-list) [10557 10567]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [10508 10606])
+                    ("pow" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [10654 10670])
+                            ("__y" variable (:type "long double") (reparse-symbol arg-sub-list) [10671 10687]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [10610 10726])
+                    ("pow" function
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("_Up" type (:type "class") nil nil))                          
+                        :type ("__gnu_cxx::__promote_2::__type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11255 11263])
+                            ("__y" variable (:type ("_Up" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11264 11272]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [11126 11400])
+                    ("sin" variable (:type "int") (reparse-symbol namespacesubparts) [11412 11416])
+                    ("sin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [11497 11507]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [11459 11541])
+                    ("sin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [11589 11605]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [11545 11639])
+                    ("sin" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11828 11836]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11813 11871])
+                    ("sinh" variable (:type "int") (reparse-symbol namespacesubparts) [11883 11888])
+                    ("sinh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [11970 11980]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [11931 12015])
+                    ("sinh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [12064 12080]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [12019 12115])
+                    ("sinh" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12305 12313]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12289 12349])
+                    ("sqrt" variable (:type "int") (reparse-symbol namespacesubparts) [12361 12366])
+                    ("sqrt" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [12448 12458]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [12409 12493])
+                    ("sqrt" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [12542 12558]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [12497 12593])
+                    ("sqrt" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12783 12791]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12767 12827])
+                    ("tan" variable (:type "int") (reparse-symbol namespacesubparts) [12839 12843])
+                    ("tan" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [12924 12934]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [12886 12968])
+                    ("tan" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [13016 13032]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [12972 13066])
+                    ("tan" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13255 13263]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13240 13298])
+                    ("tanh" variable (:type "int") (reparse-symbol namespacesubparts) [13310 13315])
+                    ("tanh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "float") (reparse-symbol arg-sub-list) [13397 13407]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [13358 13442])
+                    ("tanh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("__x" variable (:type "long double") (reparse-symbol arg-sub-list) [13491 13507]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [13446 13542])
+                    ("tanh" function
+                       (:arguments 
+                          ( ("__x" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13732 13740]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13716 13776]))                  
+                :type "namespace")
+                nil [2085 13810])
+            ("std" type
+               (:members 
+                  ( ("fpclassify" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21930 21938]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21908 22124])
+                    ("isfinite" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22259 22267]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22239 22390])
+                    ("isinf" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22522 22530]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22505 22650])
+                    ("isnan" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22782 22790]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22765 22910])
+                    ("isnormal" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23045 23053]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23025 23176])
+                    ("signbit" function
+                       (:arguments 
+                          ( ("__f" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23310 23318]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23291 23581])
+                    ("isgreater" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23717 23726])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23727 23736]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23696 23875])
+                    ("isgreaterequal" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24016 24025])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24026 24035]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23990 24179])
+                    ("isless" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24312 24321])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24322 24331]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24294 24467])
+                    ("islessequal" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24605 24614])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24615 24624]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24582 24765])
+                    ("islessgreater" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24905 24914])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24915 24924]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24880 25067])
+                    ("isunordered" function
+                       (:arguments 
+                          ( ("__f1" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25205 25214])
+                            ("__f2" variable (:type ("_Tp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25215 25224]))                          
+                        :type ("__type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25182 25365]))                  
+                :type "namespace")
+                nil [14149 25407]))          
+      :file "cmath"
+      :pointmax 44875
+      :fsize 44874
+      :lastmodtime '(23340 10828 0 0)
+      :unmatched-syntax '((symbol 25397 . 25405) (punctuation 25181 . 25182) (punctuation 25180 . 25181) (punctuation 25179 . 25180) (INT 25176 . 25179) (punctuation 25166 . 25167) (symbol 25159 . 25166) (punctuation 25158 . 25159) (punctuation 25157 . 25158) (punctuation 25156 . 25157) (symbol 25153 . 25156) (punctuation 25152 . 25153) (symbol 25137 . 25152) (punctuation 25136 . 25137) (symbol 25125 . 25136) (punctuation 25124 . 25125) (punctuation 25123 . 25124) (symbol 25114 . 25123) (TYPENAME 25105 . 25113) (INLINE 25098 . 25104) (punctuation 25092 . 25093) (symbol 25089 . 25092) (TYPENAME 25080 . 25088) (punctuation 25079 . 25080) (TEMPLATE 25071 . 25079) (punctuation 24879 . 24880) (punctuation 24878 . 24879) (punctuation 24877 . 24878) (INT 24874 . 24877) (punctuation 24864 . 24865) (symbol 24857 . 24864) (punctuation 24856 . 24857) (punctuation 24855 . 24856) (punctuation 24854 . 24855) (symbol 24851 . 24854) (punctuation 24850 . 24851) (symbol 24835 . 24850) (punctuation 24834 . 24835) (symbol 24823 . 24834) (punctuation 24822 . 24823) (punctuation 24821 . 24822) (symbol 24812 . 24821) (TYPENAME 24803 . 24811) (INLINE 24796 . 24802) (punctuation 24790 . 24791) (symbol 24787 . 24790) (TYPENAME 24778 . 24786) (punctuation 24777 . 24778) (TEMPLATE 24769 . 24777) (punctuation 24581 . 24582) (punctuation 24580 . 24581) (punctuation 24579 . 24580) (INT 24576 . 24579) (punctuation 24566 . 24567) (symbol 24559 . 24566) (punctuation 24558 . 24559) (punctuation 24557 . 24558) (punctuation 24556 . 24557) (symbol 24553 . 24556) (punctuation 24552 . 24553) (symbol 24537 . 24552) (punctuation 24536 . 24537) (symbol 24525 . 24536) (punctuation 24524 . 24525) (punctuation 24523 . 24524) (symbol 24514 . 24523) (TYPENAME 24505 . 24513) (INLINE 24498 . 24504) (punctuation 24492 . 24493) (symbol 24489 . 24492) (TYPENAME 24480 . 24488) (punctuation 24479 . 24480) (TEMPLATE 24471 . 24479) (punctuation 24293 . 24294) (punctuation 24292 . 24293) (punctuation 24291 . 24292) (INT 24288 . 24291) (punctuation 24278 . 24279) (symbol 24271 . 24278) (punctuation 24270 . 24271) (punctuation 24269 . 24270) (punctuation 24268 . 24269) (symbol 24265 . 24268) (punctuation 24264 . 24265) (symbol 24249 . 24264) (punctuation 24248 . 24249) (symbol 24237 . 24248) (punctuation 24236 . 24237) (punctuation 24235 . 24236) (symbol 24226 . 24235) (TYPENAME 24217 . 24225) (INLINE 24210 . 24216) (punctuation 24204 . 24205) (symbol 24201 . 24204) (TYPENAME 24192 . 24200) (punctuation 24191 . 24192) (TEMPLATE 24183 . 24191) (punctuation 23989 . 23990) (punctuation 23988 . 23989) (punctuation 23987 . 23988) (INT 23984 . 23987) (punctuation 23974 . 23975) (symbol 23967 . 23974) (punctuation 23966 . 23967) (punctuation 23965 . 23966) (punctuation 23964 . 23965) (symbol 23961 . 23964) (punctuation 23960 . 23961) (symbol 23945 . 23960) (punctuation 23944 . 23945) (symbol 23933 . 23944) (punctuation 23932 . 23933) (punctuation 23931 . 23932) (symbol 23922 . 23931) (TYPENAME 23913 . 23921) (INLINE 23906 . 23912) (punctuation 23900 . 23901) (symbol 23897 . 23900) (TYPENAME 23888 . 23896) (punctuation 23887 . 23888) (TEMPLATE 23879 . 23887) (punctuation 23695 . 23696) (punctuation 23694 . 23695) (punctuation 23693 . 23694) (INT 23690 . 23693) (punctuation 23680 . 23681) (symbol 23673 . 23680) (punctuation 23672 . 23673) (punctuation 23671 . 23672) (punctuation 23670 . 23671) (symbol 23667 . 23670) (punctuation 23666 . 23667) (symbol 23651 . 23666) (punctuation 23650 . 23651) (symbol 23639 . 23650) (punctuation 23638 . 23639) (punctuation 23637 . 23638) (symbol 23628 . 23637) (TYPENAME 23619 . 23627) (INLINE 23612 . 23618) (punctuation 23606 . 23607) (symbol 23603 . 23606) (TYPENAME 23594 . 23602) (punctuation 23593 . 23594) (TEMPLATE 23585 . 23593) (punctuation 23290 . 23291) (punctuation 23289 . 23290) (punctuation 23288 . 23289) (INT 23285 . 23288) (punctuation 23275 . 23276) (symbol 23268 . 23275) (punctuation 23267 . 23268) (punctuation 23266 . 23267) (punctuation 23265 . 23266) (symbol 23262 . 23265) (punctuation 23261 . 23262) (symbol 23246 . 23261) (punctuation 23245 . 23246) (symbol 23234 . 23245) (punctuation 23233 . 23234) (punctuation 23232 . 23233) (symbol 23223 . 23232) (TYPENAME 23214 . 23222) (INLINE 23207 . 23213) (punctuation 23201 . 23202) (symbol 23198 . 23201) (TYPENAME 23189 . 23197) (punctuation 23188 . 23189) (TEMPLATE 23180 . 23188) (punctuation 23024 . 23025) (punctuation 23023 . 23024) (punctuation 23022 . 23023) (INT 23019 . 23022) (punctuation 23009 . 23010) (symbol 23002 . 23009) (punctuation 23001 . 23002) (punctuation 23000 . 23001) (punctuation 22999 . 23000) (symbol 22996 . 22999) (punctuation 22995 . 22996) (symbol 22980 . 22995) (punctuation 22979 . 22980) (symbol 22968 . 22979) (punctuation 22967 . 22968) (punctuation 22966 . 22967) (symbol 22957 . 22966) (TYPENAME 22948 . 22956) (INLINE 22941 . 22947) (punctuation 22935 . 22936) (symbol 22932 . 22935) (TYPENAME 22923 . 22931) (punctuation 22922 . 22923) (TEMPLATE 22914 . 22922) (punctuation 22764 . 22765) (punctuation 22763 . 22764) (punctuation 22762 . 22763) (INT 22759 . 22762) (punctuation 22749 . 22750) (symbol 22742 . 22749) (punctuation 22741 . 22742) (punctuation 22740 . 22741) (punctuation 22739 . 22740) (symbol 22736 . 22739) (punctuation 22735 . 22736) (symbol 22720 . 22735) (punctuation 22719 . 22720) (symbol 22708 . 22719) (punctuation 22707 . 22708) (punctuation 22706 . 22707) (symbol 22697 . 22706) (TYPENAME 22688 . 22696) (INLINE 22681 . 22687) (punctuation 22675 . 22676) (symbol 22672 . 22675) (TYPENAME 22663 . 22671) (punctuation 22662 . 22663) (TEMPLATE 22654 . 22662) (punctuation 22504 . 22505) (punctuation 22503 . 22504) (punctuation 22502 . 22503) (INT 22499 . 22502) (punctuation 22489 . 22490) (symbol 22482 . 22489) (punctuation 22481 . 22482) (punctuation 22480 . 22481) (punctuation 22479 . 22480) (symbol 22476 . 22479) (punctuation 22475 . 22476) (symbol 22460 . 22475) (punctuation 22459 . 22460) (symbol 22448 . 22459) (punctuation 22447 . 22448) (punctuation 22446 . 22447) (symbol 22437 . 22446) (TYPENAME 22428 . 22436) (INLINE 22421 . 22427) (punctuation 22415 . 22416) (symbol 22412 . 22415) (TYPENAME 22403 . 22411) (punctuation 22402 . 22403) (TEMPLATE 22394 . 22402) (punctuation 22238 . 22239) (punctuation 22237 . 22238) (punctuation 22236 . 22237) (INT 22233 . 22236) (punctuation 22223 . 22224) (symbol 22216 . 22223) (punctuation 22215 . 22216) (punctuation 22214 . 22215) (punctuation 22213 . 22214) (symbol 22210 . 22213) (punctuation 22209 . 22210) (symbol 22194 . 22209) (punctuation 22193 . 22194) (symbol 22182 . 22193) (punctuation 22181 . 22182) (punctuation 22180 . 22181) (symbol 22171 . 22180) (TYPENAME 22162 . 22170) (INLINE 22155 . 22161) (punctuation 22149 . 22150) (symbol 22146 . 22149) (TYPENAME 22137 . 22145) (punctuation 22136 . 22137) (TEMPLATE 22128 . 22136) (punctuation 21907 . 21908) (punctuation 21906 . 21907) (punctuation 21905 . 21906) (INT 21902 . 21905) (punctuation 21892 . 21893) (symbol 21885 . 21892) (punctuation 21884 . 21885) (punctuation 21883 . 21884) (punctuation 21882 . 21883) (symbol 21879 . 21882) (punctuation 21878 . 21879) (symbol 21863 . 21878) (punctuation 21862 . 21863) (symbol 21851 . 21862) (punctuation 21850 . 21851) (punctuation 21849 . 21850) (symbol 21840 . 21849) (TYPENAME 21831 . 21839) (INLINE 21824 . 21830) (punctuation 21818 . 21819) (symbol 21815 . 21818) (TYPENAME 21806 . 21814) (punctuation 21805 . 21806) (TEMPLATE 21797 . 21805) (symbol 13800 . 13808) (punctuation 13715 . 13716) (punctuation 13714 . 13715) (punctuation 13713 . 13714) (DOUBLE 13707 . 13713) (punctuation 13668 . 13669) (symbol 13661 . 13668) (punctuation 13660 . 13661) (punctuation 13659 . 13660) (punctuation 13658 . 13659) (symbol 13655 . 13658) (punctuation 13654 . 13655) (symbol 13642 . 13654) (punctuation 13641 . 13642) (symbol 13630 . 13641) (punctuation 13629 . 13630) (punctuation 13628 . 13629) (symbol 13619 . 13628) (TYPENAME 13610 . 13618) (INLINE 13580 . 13586) (punctuation 13574 . 13575) (symbol 13571 . 13574) (TYPENAME 13562 . 13570) (punctuation 13561 . 13562) (TEMPLATE 13553 . 13561) (punctuation 13309 . 13310) (punctuation 13308 . 13309) (USING 13302 . 13307) (punctuation 13239 . 13240) (punctuation 13238 . 13239) (punctuation 13237 . 13238) (DOUBLE 13231 . 13237) (punctuation 13192 . 13193) (symbol 13185 . 13192) (punctuation 13184 . 13185) (punctuation 13183 . 13184) (punctuation 13182 . 13183) (symbol 13179 . 13182) (punctuation 13178 . 13179) (symbol 13166 . 13178) (punctuation 13165 . 13166) (symbol 13154 . 13165) (punctuation 13153 . 13154) (punctuation 13152 . 13153) (symbol 13143 . 13152) (TYPENAME 13134 . 13142) (INLINE 13104 . 13110) (punctuation 13098 . 13099) (symbol 13095 . 13098) (TYPENAME 13086 . 13094) (punctuation 13085 . 13086) (TEMPLATE 13077 . 13085) (punctuation 12838 . 12839) (punctuation 12837 . 12838) (USING 12831 . 12836) (punctuation 12766 . 12767) (punctuation 12765 . 12766) (punctuation 12764 . 12765) (DOUBLE 12758 . 12764) (punctuation 12719 . 12720) (symbol 12712 . 12719) (punctuation 12711 . 12712) (punctuation 12710 . 12711) (punctuation 12709 . 12710) (symbol 12706 . 12709) (punctuation 12705 . 12706) (symbol 12693 . 12705) (punctuation 12692 . 12693) (symbol 12681 . 12692) (punctuation 12680 . 12681) (punctuation 12679 . 12680) (symbol 12670 . 12679) (TYPENAME 12661 . 12669) (INLINE 12631 . 12637) (punctuation 12625 . 12626) (symbol 12622 . 12625) (TYPENAME 12613 . 12621) (punctuation 12612 . 12613) (TEMPLATE 12604 . 12612) (punctuation 12360 . 12361) (punctuation 12359 . 12360) (USING 12353 . 12358) (punctuation 12288 . 12289) (punctuation 12287 . 12288) (punctuation 12286 . 12287) (DOUBLE 12280 . 12286) (punctuation 12241 . 12242) (symbol 12234 . 12241) (punctuation 12233 . 12234) (punctuation 12232 . 12233) (punctuation 12231 . 12232) (symbol 12228 . 12231) (punctuation 12227 . 12228) (symbol 12215 . 12227) (punctuation 12214 . 12215) (symbol 12203 . 12214) (punctuation 12202 . 12203) (punctuation 12201 . 12202) (symbol 12192 . 12201) (TYPENAME 12183 . 12191) (INLINE 12153 . 12159) (punctuation 12147 . 12148) (symbol 12144 . 12147) (TYPENAME 12135 . 12143) (punctuation 12134 . 12135) (TEMPLATE 12126 . 12134) (punctuation 11882 . 11883) (punctuation 11881 . 11882) (USING 11875 . 11880) (punctuation 11812 . 11813) (punctuation 11811 . 11812) (punctuation 11810 . 11811) (DOUBLE 11804 . 11810) (punctuation 11765 . 11766) (symbol 11758 . 11765) (punctuation 11757 . 11758) (punctuation 11756 . 11757) (punctuation 11755 . 11756) (symbol 11752 . 11755) (punctuation 11751 . 11752) (symbol 11739 . 11751) (punctuation 11738 . 11739) (symbol 11727 . 11738) (punctuation 11726 . 11727) (punctuation 11725 . 11726) (symbol 11716 . 11725) (TYPENAME 11707 . 11715) (INLINE 11677 . 11683) (punctuation 11671 . 11672) (symbol 11668 . 11671) (TYPENAME 11659 . 11667) (punctuation 11658 . 11659) (TEMPLATE 11650 . 11658) (punctuation 11411 . 11412) (punctuation 11410 . 11411) (USING 11404 . 11409) (punctuation 10460 . 10461) (punctuation 10459 . 10460) (USING 10453 . 10458) (punctuation 10195 . 10196) (punctuation 10194 . 10195) (USING 10188 . 10193) (punctuation 10121 . 10122) (punctuation 10120 . 10121) (punctuation 10119 . 10120) (DOUBLE 10113 . 10119) (punctuation 10075 . 10076) (symbol 10068 . 10075) (punctuation 10067 . 10068) (punctuation 10066 . 10067) (punctuation 10065 . 10066) (symbol 10062 . 10065) (punctuation 10061 . 10062) (symbol 10049 . 10061) (punctuation 10048 . 10049) (symbol 10037 . 10048) (punctuation 10036 . 10037) (punctuation 10035 . 10036) (symbol 10026 . 10035) (TYPENAME 10017 . 10025) (INLINE 9987 . 9993) (punctuation 9981 . 9982) (symbol 9978 . 9981) (TYPENAME 9969 . 9977) (punctuation 9968 . 9969) (TEMPLATE 9960 . 9968) (punctuation 9711 . 9712) (punctuation 9710 . 9711) (USING 9704 . 9709) (punctuation 9641 . 9642) (punctuation 9640 . 9641) (punctuation 9639 . 9640) (DOUBLE 9633 . 9639) (punctuation 9594 . 9595) (symbol 9587 . 9594) (punctuation 9586 . 9587) (punctuation 9585 . 9586) (punctuation 9584 . 9585) (symbol 9581 . 9584) (punctuation 9580 . 9581) (symbol 9568 . 9580) (punctuation 9567 . 9568) (symbol 9556 . 9567) (punctuation 9555 . 9556) (punctuation 9554 . 9555) (symbol 9545 . 9554) (TYPENAME 9536 . 9544) (INLINE 9506 . 9512) (punctuation 9500 . 9501) (symbol 9497 . 9500) (TYPENAME 9488 . 9496) (punctuation 9487 . 9488) (TEMPLATE 9479 . 9487) (punctuation 9240 . 9241) (punctuation 9239 . 9240) (USING 9233 . 9238) (punctuation 9148 . 9149) (punctuation 9147 . 9148) (punctuation 9146 . 9147) (DOUBLE 9140 . 9146) (punctuation 9101 . 9102) (symbol 9094 . 9101) (punctuation 9093 . 9094) (punctuation 9092 . 9093) (punctuation 9091 . 9092) (symbol 9088 . 9091) (punctuation 9087 . 9088) (symbol 9075 . 9087) (punctuation 9074 . 9075) (symbol 9063 . 9074) (punctuation 9062 . 9063) (punctuation 9061 . 9062) (symbol 9052 . 9061) (TYPENAME 9043 . 9051) (INLINE 9013 . 9019) (punctuation 9007 . 9008) (symbol 9004 . 9007) (TYPENAME 8995 . 9003) (punctuation 8994 . 8995) (TEMPLATE 8986 . 8994) (punctuation 8701 . 8702) (punctuation 8700 . 8701) (USING 8694 . 8699) (punctuation 8608 . 8609) (punctuation 8607 . 8608) (punctuation 8606 . 8607) (DOUBLE 8600 . 8606) (punctuation 8561 . 8562) (symbol 8554 . 8561) (punctuation 8553 . 8554) (punctuation 8552 . 8553) (punctuation 8551 . 8552) (symbol 8548 . 8551) (punctuation 8547 . 8548) (symbol 8535 . 8547) (punctuation 8534 . 8535) (symbol 8523 . 8534) (punctuation 8522 . 8523) (punctuation 8521 . 8522) (symbol 8512 . 8521) (TYPENAME 8503 . 8511) (INLINE 8473 . 8479) (punctuation 8467 . 8468) (symbol 8464 . 8467) (TYPENAME 8455 . 8463) (punctuation 8454 . 8455) (TEMPLATE 8446 . 8454) (punctuation 8197 . 8198) (punctuation 8196 . 8197) (USING 8190 . 8195) (punctuation 7628 . 7629) (punctuation 7627 . 7628) (USING 7621 . 7626) (punctuation 7554 . 7555) (punctuation 7553 . 7554) (punctuation 7552 . 7553) (DOUBLE 7546 . 7552) (punctuation 7508 . 7509) (symbol 7501 . 7508) (punctuation 7500 . 7501) (punctuation 7499 . 7500) (punctuation 7498 . 7499) (symbol 7495 . 7498) (punctuation 7494 . 7495) (symbol 7482 . 7494) (punctuation 7481 . 7482) (symbol 7470 . 7481) (punctuation 7469 . 7470) (punctuation 7468 . 7469) (symbol 7459 . 7468) (TYPENAME 7450 . 7458) (INLINE 7420 . 7426) (punctuation 7414 . 7415) (symbol 7411 . 7414) (TYPENAME 7402 . 7410) (punctuation 7401 . 7402) (TEMPLATE 7393 . 7401) (punctuation 7144 . 7145) (punctuation 7143 . 7144) (USING 7137 . 7142) (punctuation 7072 . 7073) (punctuation 7071 . 7072) (punctuation 7070 . 7071) (DOUBLE 7064 . 7070) (punctuation 7026 . 7027) (symbol 7019 . 7026) (punctuation 7018 . 7019) (punctuation 7017 . 7018) (punctuation 7016 . 7017) (symbol 7013 . 7016) (punctuation 7012 . 7013) (symbol 7000 . 7012) (punctuation 6999 . 7000) (symbol 6988 . 6999) (punctuation 6987 . 6988) (punctuation 6986 . 6987) (symbol 6977 . 6986) (TYPENAME 6968 . 6976) (INLINE 6938 . 6944) (punctuation 6932 . 6933) (symbol 6929 . 6932) (TYPENAME 6920 . 6928) (punctuation 6919 . 6920) (TEMPLATE 6911 . 6919) (punctuation 6667 . 6668) (punctuation 6666 . 6667) (USING 6660 . 6665) (punctuation 6597 . 6598) (punctuation 6596 . 6597) (punctuation 6595 . 6596) (DOUBLE 6589 . 6595) (punctuation 6551 . 6552) (symbol 6544 . 6551) (punctuation 6543 . 6544) (punctuation 6542 . 6543) (punctuation 6541 . 6542) (symbol 6538 . 6541) (punctuation 6537 . 6538) (symbol 6525 . 6537) (punctuation 6524 . 6525) (symbol 6513 . 6524) (punctuation 6512 . 6513) (punctuation 6511 . 6512) (symbol 6502 . 6511) (TYPENAME 6493 . 6501) (INLINE 6463 . 6469) (punctuation 6457 . 6458) (symbol 6454 . 6457) (TYPENAME 6445 . 6453) (punctuation 6444 . 6445) (TEMPLATE 6436 . 6444) (punctuation 6197 . 6198) (punctuation 6196 . 6197) (USING 6190 . 6195) (punctuation 6125 . 6126) (punctuation 6124 . 6125) (punctuation 6123 . 6124) (DOUBLE 6117 . 6123) (punctuation 6079 . 6080) (symbol 6072 . 6079) (punctuation 6071 . 6072) (punctuation 6070 . 6071) (punctuation 6069 . 6070) (symbol 6066 . 6069) (punctuation 6065 . 6066) (symbol 6053 . 6065) (punctuation 6052 . 6053) (symbol 6041 . 6052) (punctuation 6040 . 6041) (punctuation 6039 . 6040) (symbol 6030 . 6039) (TYPENAME 6021 . 6029) (INLINE 5991 . 5997) (punctuation 5985 . 5986) (symbol 5982 . 5985) (TYPENAME 5973 . 5981) (punctuation 5972 . 5973) (TEMPLATE 5964 . 5972) (punctuation 5720 . 5721) (punctuation 5719 . 5720) (USING 5713 . 5718) (punctuation 5650 . 5651) (punctuation 5649 . 5650) (punctuation 5648 . 5649) (DOUBLE 5642 . 5648) (punctuation 5604 . 5605) (symbol 5597 . 5604) (punctuation 5596 . 5597) (punctuation 5595 . 5596) (punctuation 5594 . 5595) (symbol 5591 . 5594) (punctuation 5590 . 5591) (symbol 5578 . 5590) (punctuation 5577 . 5578) (symbol 5566 . 5577) (punctuation 5565 . 5566) (punctuation 5564 . 5565) (symbol 5555 . 5564) (TYPENAME 5546 . 5554) (INLINE 5516 . 5522) (punctuation 5510 . 5511) (symbol 5507 . 5510) (TYPENAME 5498 . 5506) (punctuation 5497 . 5498) (TEMPLATE 5489 . 5497) (punctuation 5250 . 5251) (punctuation 5249 . 5250) (USING 5243 . 5248) (punctuation 5178 . 5179) (punctuation 5177 . 5178) (punctuation 5176 . 5177) (DOUBLE 5170 . 5176) (punctuation 5131 . 5132) (symbol 5124 . 5131) (punctuation 5123 . 5124) (punctuation 5122 . 5123) (punctuation 5121 . 5122) (symbol 5118 . 5121) (punctuation 5117 . 5118) (symbol 5105 . 5117) (punctuation 5104 . 5105) (symbol 5093 . 5104) (punctuation 5092 . 5093) (punctuation 5091 . 5092) (symbol 5082 . 5091) (TYPENAME 5073 . 5081) (INLINE 5043 . 5049) (punctuation 5037 . 5038) (symbol 5034 . 5037) (TYPENAME 5025 . 5033) (punctuation 5024 . 5025) (TEMPLATE 5016 . 5024) (punctuation 4772 . 4773) (punctuation 4771 . 4772) (USING 4765 . 4770) (punctuation 4196 . 4197) (punctuation 4195 . 4196) (USING 4189 . 4194) (punctuation 4124 . 4125) (punctuation 4123 . 4124) (punctuation 4122 . 4123) (DOUBLE 4116 . 4122) (punctuation 4078 . 4079) (symbol 4071 . 4078) (punctuation 4070 . 4071) (punctuation 4069 . 4070) (punctuation 4068 . 4069) (symbol 4065 . 4068) (punctuation 4064 . 4065) (symbol 4052 . 4064) (punctuation 4051 . 4052) (symbol 4040 . 4051) (punctuation 4039 . 4040) (punctuation 4038 . 4039) (symbol 4029 . 4038) (TYPENAME 4020 . 4028) (INLINE 3990 . 3996) (punctuation 3984 . 3985) (symbol 3981 . 3984) (TYPENAME 3972 . 3980) (punctuation 3971 . 3972) (TEMPLATE 3963 . 3971) (punctuation 3719 . 3720) (punctuation 3718 . 3719) (USING 3712 . 3717) (punctuation 3647 . 3648) (punctuation 3646 . 3647) (punctuation 3645 . 3646) (DOUBLE 3639 . 3645) (punctuation 3601 . 3602) (symbol 3594 . 3601) (punctuation 3593 . 3594) (punctuation 3592 . 3593) (punctuation 3591 . 3592) (symbol 3588 . 3591) (punctuation 3587 . 3588) (symbol 3575 . 3587) (punctuation 3574 . 3575) (symbol 3563 . 3574) (punctuation 3562 . 3563) (punctuation 3561 . 3562) (symbol 3552 . 3561) (TYPENAME 3543 . 3551) (INLINE 3513 . 3519) (punctuation 3507 . 3508) (symbol 3504 . 3507) (TYPENAME 3495 . 3503) (punctuation 3494 . 3495) (TEMPLATE 3486 . 3494) (punctuation 3242 . 3243) (punctuation 3241 . 3242) (USING 3235 . 3240) (punctuation 3170 . 3171) (punctuation 3169 . 3170) (punctuation 3168 . 3169) (DOUBLE 3162 . 3168) (punctuation 3123 . 3124) (symbol 3116 . 3123) (punctuation 3115 . 3116) (punctuation 3114 . 3115) (punctuation 3113 . 3114) (symbol 3110 . 3113) (punctuation 3109 . 3110) (symbol 3097 . 3109) (punctuation 3096 . 3097) (symbol 3085 . 3096) (punctuation 3084 . 3085) (punctuation 3083 . 3084) (symbol 3074 . 3083) (TYPENAME 3065 . 3073) (INLINE 3035 . 3041) (punctuation 3029 . 3030) (symbol 3026 . 3029) (TYPENAME 3017 . 3025) (punctuation 3016 . 3017) (TEMPLATE 3008 . 3016) (punctuation 2764 . 2765) (punctuation 2763 . 2764) (USING 2757 . 2762) (punctuation 2693 . 2694) (punctuation 2692 . 2693) (punctuation 2691 . 2692) (DOUBLE 2685 . 2691) (punctuation 2647 . 2648) (symbol 2640 . 2647) (punctuation 2639 . 2640) (punctuation 2638 . 2639) (punctuation 2637 . 2638) (symbol 2634 . 2637) (punctuation 2633 . 2634) (symbol 2621 . 2633) (punctuation 2620 . 2621) (symbol 2609 . 2620) (punctuation 2608 . 2609) (punctuation 2607 . 2608) (symbol 2598 . 2607) (TYPENAME 2589 . 2597) (INLINE 2559 . 2565) (punctuation 2553 . 2554) (symbol 2550 . 2553) (TYPENAME 2541 . 2549) (punctuation 2540 . 2541) (TEMPLATE 2532 . 2540) (symbol 1551 . 1564) (symbol 1547 . 1550) (symbol 1540 . 1546) (punctuation 1539 . 1540))
+      :lexical-table 
+        '(("_GLIBCXX_CMATH" . ((number "1" 1722 . 1723)))
+          )
+))
+  :file "!usr!include!c++!5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

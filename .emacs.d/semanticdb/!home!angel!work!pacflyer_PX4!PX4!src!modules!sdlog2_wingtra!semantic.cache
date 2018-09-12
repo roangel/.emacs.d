@@ -1,0 +1,1876 @@
+;; Object sdlog2_wingtra/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sdlog2_wingtra/"
+  :tables
+  (list
+    (semanticdb-table "sdlog2.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [2193 2216])
+            ("px4_defines.h" include (:system-flag t) nil [2217 2241])
+            ("px4_getopt.h" include (:system-flag t) nil [2242 2265])
+            ("px4_tasks.h" include (:system-flag t) nil [2266 2288])
+            ("px4_time.h" include (:system-flag t) nil [2289 2310])
+            ("px4_posix.h" include (:system-flag t) nil [2311 2333])
+            ("sys/types.h" include (:system-flag t) nil [2334 2356])
+            ("sys/stat.h" include (:system-flag t) nil [2357 2378])
+            ("sys/statfs.h" include (:system-flag t) nil [2451 2474])
+            ("fcntl.h" include (:system-flag t) nil [2482 2500])
+            ("errno.h" include (:system-flag t) nil [2501 2519])
+            ("unistd.h" include (:system-flag t) nil [2520 2539])
+            ("stdio.h" include (:system-flag t) nil [2540 2558])
+            ("stdlib.h" include (:system-flag t) nil [2559 2578])
+            ("string.h" include (:system-flag t) nil [2579 2598])
+            ("ctype.h" include (:system-flag t) nil [2599 2617])
+            ("systemlib/err.h" include (:system-flag t) nil [2618 2644])
+            ("unistd.h" include (:system-flag t) nil [2645 2664])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2665 2693])
+            ("drivers/drv_gps.h" include (:system-flag t) nil [2694 2722])
+            ("math.h" include (:system-flag t) nil [2735 2752])
+            ("time.h" include (:system-flag t) nil [2753 2770])
+            ("dirent.h" include (:system-flag t) nil [2771 2790])
+            ("uORB/uORB.h" include (:system-flag t) nil [2824 2846])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [2847 2886])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2887 2927])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [2928 2969])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [2970 3008])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [3009 3059])
+            ("uORB/topics/vehicle_rates_setpoint.h" include (:system-flag t) nil [3060 3107])
+            ("uORB/topics/vehicle_command.h" include (:system-flag t) nil [3223 3263])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [3264 3311])
+            ("uORB/topics/vehicle_local_position_setpoint.h" include (:system-flag t) nil [3312 3368])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [3369 3417])
+            ("uORB/topics/position_setpoint_triplet.h" include (:system-flag t) nil [3418 3468])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [3469 3514])
+            ("uORB/topics/satellite_info.h" include (:system-flag t) nil [3515 3554])
+            ("uORB/topics/battery_status.h" include (:system-flag t) nil [3800 3839])
+            ("uORB/topics/differential_pressure.h" include (:system-flag t) nil [3840 3886])
+            ("uORB/topics/airspeed.h" include (:system-flag t) nil [3887 3920])
+            ("uORB/topics/rc_channels.h" include (:system-flag t) nil [3921 3957])
+            ("uORB/topics/telemetry_status.h" include (:system-flag t) nil [4009 4050])
+            ("uORB/topics/distance_sensor.h" include (:system-flag t) nil [4063 4103])
+            ("uORB/topics/estimator_status.h" include (:system-flag t) nil [4104 4145])
+            ("uORB/topics/tecs_status.h" include (:system-flag t) nil [4146 4182])
+            ("uORB/topics/system_power.h" include (:system-flag t) nil [4183 4220])
+            ("uORB/topics/servorail_status.h" include (:system-flag t) nil [4221 4262])
+            ("uORB/topics/wind_estimate.h" include (:system-flag t) nil [4263 4301])
+            ("uORB/topics/ekf2_innovations.h" include (:system-flag t) nil [4473 4514])
+            ("uORB/topics/camera_trigger.h" include (:system-flag t) nil [4515 4554])
+            ("uORB/topics/trigger_pwm.h" include (:system-flag t) nil [4555 4591])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [4655 4701])
+            ("uORB/topics/commander_state.h" include (:system-flag t) nil [4702 4742])
+            ("uORB/topics/cpuload.h" include (:system-flag t) nil [4743 4775])
+            ("uORB/topics/actuator_ref.h" include (:system-flag t) nil [4819 4856])
+            ("uORB/topics/actuator_pwm.h" include (:system-flag t) nil [4857 4894])
+            ("uORB/topics/ctrl_data.h" include (:system-flag t) nil [4939 4973])
+            ("uORB/topics/force_moments.h" include (:system-flag t) nil [4974 5012])
+            ("uORB/topics/mpc_debug.h" include (:system-flag t) nil [5056 5090])
+            ("uORB/topics/sbs_da_status1.h" include (:system-flag t) nil [5131 5170])
+            ("uORB/topics/sbs_da_status2.h" include (:system-flag t) nil [5183 5222])
+            ("uORB/topics/sbs_filtered_capacity.h" include (:system-flag t) nil [5235 5281])
+            ("uORB/topics/pf_check.h" include (:system-flag t) nil [5344 5377])
+            ("uORB/topics/wingtra_landed.h" include (:system-flag t) nil [5378 5417])
+            ("uORB/topics/fw_pos_ctrl_status.h" include (:system-flag t) nil [5418 5461])
+            ("uORB/topics/sensor_baro.h" include (:system-flag t) nil [5462 5498])
+            ("uORB/topics/ekf2_preflight.h" include (:system-flag t) nil [5499 5538])
+            ("uORB/topics/sensor_mag.h" include (:system-flag t) nil [5539 5574])
+            ("uORB/topics/adaptive_rth.h" include (:system-flag t) nil [5575 5612])
+            ("uORB/topics/motor_check_res.h" include (:system-flag t) nil [5613 5653])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [5674 5706])
+            ("systemlib/param/param.h" include (:system-flag t) nil [5707 5741])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [5742 5777])
+            ("lib/version/version.h" include (:system-flag t) nil [5778 5810])
+            ("systemlib/printload.h" include (:system-flag t) nil [5811 5843])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [5844 5878])
+            ("version/version.h" include (:system-flag t) nil [5879 5907])
+            ("termios.h" include (:system-flag t) nil [5908 5928])
+            ("logbuffer.h" include nil nil [5974 5996])
+            ("sdlog2_format.h" include nil nil [5997 6023])
+            ("sdlog2_messages.h" include nil nil [6024 6052])
+            ("PX4_EPOCH_SECS" variable (:constant-flag t) nil [6062 6076])
+            ("LOG_DIR_LEN" variable (:constant-flag t) nil [6168 6179])
+            ("LOGBUFFER_WRITE_AND_COUNT" variable (:constant-flag t) nil [6216 6241])
+            ("SDLOG_MIN" variable (:constant-flag t) nil [6897 6906])
+            ("main_thread_should_exit" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [6937 6981])
+            ("thread_running" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [7008 7043])
+            ("deamon_task" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7073 7096])
+            ("logwriter_should_exit" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [7141 7183])
+            ("MAX_NO_LOGFILE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "999"
+                :type "unsigned int")
+                nil [7326 7369])
+            ("LOG_BUFFER_SIZE_DEFAULT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "8192"
+                :type "int")
+                nil [7407 7455])
+            ("MAX_WRITE_CHUNK" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "512"
+                :type "int")
+                nil [7571 7610])
+            ("MIN_BYTES_TO_WRITE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "512"
+                :type "int")
+                nil [7611 7653])
+            ("_extended_logging" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [7662 7700])
+            ("_gpstime_only" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [7701 7735])
+            ("_utc_offset" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [7736 7767])
+            ("MOUNTPOINT" variable (:constant-flag t) nil [7803 7813])
+            ("mavlink_log_pub" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("orb_advert_t" type (:type "class") nil nil))
+                nil [7974 8017])
+            ("lb" variable (:type ("logbuffer_s" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [8018 8040])
+            ("logbuffer_mutex" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [8089 8128])
+            ("logbuffer_cond" variable
+               (:typemodifiers ("static")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [8129 8166])
+            ("LOG_BASE_PATH_LEN" variable (:constant-flag t) nil [8230 8247])
+            ("log_dir" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [8260 8299])
+            ("log_writer_ret" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [8341 8371])
+            ("start_time" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [8399 8430])
+            ("log_bytes_written" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned long")
+                nil [8431 8474])
+            ("last_checked_bytes_written" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned long")
+                nil [8475 8527])
+            ("log_msgs_written" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned long")
+                nil [8528 8570])
+            ("log_msgs_skipped" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned long")
+                nil [8571 8613])
+            ("gps_time_sec" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [8657 8690])
+            ("has_gps_3d_fix" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [8691 8726])
+            ("logging_enabled" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [8759 8795])
+            ("log_name_timestamp" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [8861 8900])
+            ("flag_system_armed" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [8950 8988])
+            ("skipped_last_trig" variable
+               (:typemodifiers ("static")
+                :default-value "true"
+                :type "bool")
+                nil [8989 9026])
+            ("skipped_last_check" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [9076 9115])
+            ("skipped_last_landed" variable
+               (:typemodifiers ("static")
+                :default-value "true"
+                :type "bool")
+                nil [9193 9232])
+            ("skipped_last_gpsp" variable
+               (:typemodifiers ("static")
+                :default-value "true"
+                :type "bool")
+                nil [9245 9282])
+            ("skipped_last_wlnd" variable
+               (:typemodifiers ("static")
+                :default-value "true"
+                :type "bool")
+                nil [9295 9332])
+            ("space_warning_sent" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [9427 9466])
+            ("logwriter_pthread" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [9468 9507])
+            ("logwriter_attr" variable
+               (:typemodifiers ("static")
+                :type ("pthread_attr_t" type (:type "class") nil nil))
+                nil [9508 9545])
+            ("perf_write" variable
+               (:typemodifiers ("static")
+                :type ("perf_counter_t" type (:type "class") nil nil))
+                nil [9547 9580])
+            ("log_all" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [9609 9637])
+            ("log_rate_disarmed" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [9638 9675])
+            ("_sess_dir_idx_flight" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [9698 9734])
+            ("_sess_dir_idx_preflight" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [9735 9774])
+            ("_sess_dir_idx" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "int")
+                nil [9775 9804])
+            ("command_updated" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [9846 9882])
+            ("prev_health_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9919 9956])
+            ("prev_gps_check_fail_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [9957 10003])
+            ("prev_control_mode_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [10004 10048])
+            ("prev_filter_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [10049 10087])
+            ("prev_innov_test_flags" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [10088 10130])
+            ("wingtra_hw_ver" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [10167 10201])
+            ("logwriter_thread" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10497 10507]))                  
+                :type "void")
+                nil [10467 10508])
+            ("sdlog2_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10574 10583])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10584 10597]))                  
+                :type "int")
+                nil [10558 10598])
+            ("copy_if_updated" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("topic" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10628 10643])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10644 10656])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10657 10670])
+                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10671 10689]))                  
+                :type "bool")
+                nil [10600 10690])
+            ("copy_if_updated_multi" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("topic" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10783 10798])
+                    ("multi_instance" variable (:type "int") (reparse-symbol arg-sub-list) [10799 10818])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10819 10831])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10832 10845])
+                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10846 10864]))                  
+                :type "bool")
+                nil [10749 10865])
+            ("sdlog2_thread_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10940 10949])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10950 10963]))                  
+                :type "int")
+                nil [10917 10964])
+            ("sdlog2_usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11027 11046]))                  
+                :type "void")
+                nil [11002 11047])
+            ("sdlog2_status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11112 11117]))                  
+                :type "void")
+                nil [11086 11118])
+            ("sdlog2_start_log" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11220 11225]))                  
+                :type "void")
+                nil [11191 11226])
+            ("sdlog2_stop_log" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11324 11329]))                  
+                :type "void")
+                nil [11296 11330])
+            ("write_formats" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11421 11428])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11443 11458]))                  
+                :type "int")
+                nil [11396 11459])
+            ("write_version" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11532 11539])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11554 11569]))                  
+                :type "int")
+                nil [11507 11570])
+            ("write_parameters" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11641 11648])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11663 11678]))                  
+                :type "int")
+                nil [11613 11679])
+            ("file_exist" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11704 11725]))                  
+                :type "bool")
+                nil [11681 11726])
+            ("check_free_space" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11812 11817]))                  
+                :type "int")
+                nil [11784 11818])
+            ("remove_directory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11930 11946]))                  
+                :type "int")
+                nil [11909 11947])
+            ("handle_command" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("vehicle_command_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11976 12006]))                  
+                :type "void")
+                nil [11949 12007])
+            ("handle_status" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("vehicle_status_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12035 12064])
+                    ("poll_to_logging_factor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12065 12093])
+                    ("r" variable
+                       (:constant-flag t
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [12094 12116]))                  
+                :type "void")
+                nil [12009 12117])
+            ("create_log_dir" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12299 12304]))                  
+                :type "int")
+                nil [12273 12305])
+            ("get_log_time_tt" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tt" variable
+                       (:pointer 1
+                        :type ("tm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12407 12421])
+                    ("boot_time" variable (:type "bool") (reparse-symbol arg-sub-list) [12422 12437]))                  
+                :type "bool")
+                nil [12379 12438])
+            ("open_log_file" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12521 12526]))                  
+                :type "int")
+                nil [12496 12527])
+            ("open_perf_file" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12555 12571]))                  
+                :type "int")
+                nil [12529 12572])
+            ("open_uart" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("uart_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12679 12701])
+                    ("uart_config" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12702 12730])
+                    ("uart_config_original" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12731 12768]))                  
+                :type "int")
+                nil [12658 12769])
+            ("open_uart" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("uart_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12792 12814])
+                    ("uart_config" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12815 12843])
+                    ("uart_config_original" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12844 12881]))                  
+                :type "int")
+                nil [12771 13886])
+            ("sdlog2_usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13932 13951]))                  
+                :type "void")
+                nil [13907 14451])
+            ("sdlog2_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [14712 14721])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14722 14735]))                  
+                :type "int")
+                nil [14696 17038])
+            ("get_log_time_tt" function
+               (:arguments 
+                  ( ("tt" variable
+                       (:pointer 1
+                        :type ("tm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17061 17075])
+                    ("boot_time" variable (:type "bool") (reparse-symbol arg-sub-list) [17076 17091]))                  
+                :type "bool")
+                nil [17040 17730])
+            ("create_log_dir" function (:type "int") nil [17732 19873])
+            ("open_log_file" function (:type "int") nil [19875 21890])
+            ("open_perf_file" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21911 21927]))                  
+                :type "int")
+                nil [21892 23668])
+            ("logwriter_thread" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23700 23710]))                  
+                :type "void")
+                nil [23670 26650])
+            ("sdlog2_start_log" function (:type "void") nil [26652 28789])
+            ("sdlog2_stop_log" function (:type "void") nil [28791 30218])
+            ("write_formats" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [30238 30245])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30260 30275]))                  
+                :type "int")
+                nil [30220 30704])
+            ("write_version" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [30724 30731])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30746 30761]))                  
+                :type "int")
+                nil [30706 31464])
+            ("write_parameters" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [31487 31494])
+                    ("uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31509 31524]))                  
+                :type "int")
+                nil [31466 32473])
+            ("copy_if_updated" function
+               (:arguments 
+                  ( ("topic" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32496 32511])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32512 32524])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32525 32538])
+                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32553 32571]))                  
+                :type "bool")
+                nil [32475 32656])
+            ("copy_if_updated_multi" function
+               (:arguments 
+                  ( ("topic" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32685 32700])
+                    ("multi_instance" variable (:type "int") (reparse-symbol arg-sub-list) [32701 32720])
+                    ("handle" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32721 32733])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32734 32747])
+                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32762 32780]))                  
+                :type "bool")
+                nil [32658 33687])
+            ("sdlog2_thread_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33712 33721])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33722 33735]))                  
+                :type "int")
+                nil [33689 125968])
+            ("sdlog2_status" function (:type "void") nil [125970 126641])
+            ("file_exist" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126698 126719]))                  
+                :type "bool")
+                nil [126682 126782])
+            ("check_free_space" function (:type "int") nil [126825 132616])
+            ("remove_directory" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132650 132666]))                  
+                :type "int")
+                nil [132629 133402])
+            ("handle_command" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("vehicle_command_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [133424 133454]))                  
+                :type "void")
+                nil [133404 133861])
+            ("handle_status" function
+               (:arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :type ("vehicle_status_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [133882 133914])
+                    ("poll_to_logging_factor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [133915 133943])
+                    ("r" variable
+                       (:constant-flag t
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [133944 133966]))                  
+                :type "void")
+                nil [133863 134811]))          
+      :file "sdlog2.c"
+      :pointmax 134812
+      :fsize 134811
+      :lastmodtime '(23449 8659 687835 100000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PX4_EPOCH_SECS" . ((number "1234567890L" 6077 . 6088)))
+          ("LOGBUFFER_WRITE_AND_COUNT" (spp-arg-list ("_msg") 6241 . 6247) . 
+              ((symbol "pthread_mutex_lock" 6248 . 6266) (semantic-list "(&logbuffer_mutex)" 6266 . 6284) (punctuation ";" 6284 . 6285) (symbol "log_writer_ret" 6289 . 6303) (punctuation "=" 6304 . 6305) (symbol "logbuffer_write" 6306 . 6321) (semantic-list "(&lb, &log_msg, LOG_PACKET_SIZE(_msg))" 6321 . 6359) (punctuation ";" 6359 . 6360) (IF "if" 6364 . 6366) (semantic-list "(log_writer_ret == 0)" 6367 . 6388) (semantic-list "{ \\
+		log_msgs_written++; \\
+	}" 6389 . 6419) (ELSE "else" 6420 . 6424) (IF "if" 6425 . 6427) (semantic-list "(log_writer_ret == -1)" 6428 . 6450) (semantic-list "{ \\
+		log_msgs_skipped++; \\
+		if (log_msgs_skipped < 4) { \\
+			mavlink_and_console_log_info(&mavlink_log_pub, \"[dbg] SDLOG2: Allocation Failed. Reducce Buffer.\"); \\
+		} \\
+	}" 6451 . 6624) (ELSE "else" 6625 . 6629) (IF "if" 6630 . 6632) (semantic-list "(log_writer_ret == -2)" 6633 . 6655) (semantic-list "{ \\
+		log_msgs_skipped++; \\
+		if (log_msgs_skipped < 4) { \\
+			mavlink_and_console_log_info(&mavlink_log_pub, \"[dbg] SDLOG2: Buffer Overflow. Increase Buffer.\"); \\
+		} \\
+	}" 6656 . 6828) (symbol "pthread_mutex_unlock" 6832 . 6852) (semantic-list "(&logbuffer_mutex)" 6852 . 6870) (punctuation ";" 6870 . 6871)))
+          ("LOG_DIR_LEN" . ((number "256" 6180 . 6183)))
+          ("SDLOG_MIN" (spp-arg-list ("X" "Y") 6906 . 6911) . ((semantic-list "((X) < (Y) ? (X) : (Y))" 6912 . 6935)))
+          ("LOG_BASE_PATH_LEN" . ((number "256" 8248 . 8251)))
+          ("MOUNTPOINT" . ((symbol "PX4_ROOTFSDIR" 7814 . 7827) (string "\"/fs/microsd\"" 7827 . 7840)))
+          )
+)
+    (semanticdb-table "logbuffer.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SDLOG2_RINGBUFFER_H_" variable (:constant-flag t) nil [1954 1974])
+            ("stdbool.h" include (:system-flag t) nil [1976 1996])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [1997 2032])
+            ("logbuffer_s" type
+               (:members 
+                  ( ("write_ptr" variable (:type "int") (reparse-symbol classsubparts) [2091 2105])
+                    ("read_ptr" variable (:type "int") (reparse-symbol classsubparts) [2107 2120])
+                    ("size" variable (:type "int") (reparse-symbol classsubparts) [2122 2131])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2133 2144])
+                    ("perf_dropped" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2146 2174]))                  
+                :type "struct")
+                nil [2034 2177])
+            ("logbuffer_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2198 2221])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2222 2231]))                  
+                :type "int")
+                nil [2179 2232])
+            ("logbuffer_count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2254 2277]))                  
+                :type "int")
+                nil [2234 2278])
+            ("logbuffer_is_empty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2303 2326]))                  
+                :type "int")
+                nil [2280 2327])
+            ("logbuffer_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2349 2372])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2373 2383])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2384 2393]))                  
+                :type "int")
+                nil [2329 2394])
+            ("logbuffer_get_ptr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2430 2453])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2454 2465])
+                    ("is_part" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2466 2480]))                  
+                :type "int")
+                nil [2408 2481])
+            ("logbuffer_mark_read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2508 2531])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2532 2538]))                  
+                :type "void")
+                nil [2483 2539])
+            ("logbuffer_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2561 2584]))                  
+                :type "void")
+                nil [2541 2585])
+            ("logbuffer_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lb" variable
+                       (:pointer 1
+                        :type ("logbuffer_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2608 2631]))                  
+                :type "void")
+                nil [2587 2632]))          
+      :file "logbuffer.h"
+      :pointmax 2641
+      :fsize 2640
+      :lastmodtime '(23437 18825 492963 889000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDLOG2_RINGBUFFER_H_")
+          )
+)
+    (semanticdb-table "sdlog2_format.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SDLOG2_FORMAT_H_" variable (:constant-flag t) nil [2376 2392])
+            ("LOG_PACKET_HEADER_LEN" variable (:constant-flag t) nil [2402 2423])
+            ("LOG_PACKET_HEADER" variable (:constant-flag t) nil [2437 2454])
+            ("LOG_PACKET_HEADER_INIT" variable (:constant-flag t) nil [2502 2524])
+            ("HEAD_BYTE1" variable (:constant-flag t) nil [2678 2688])
+            ("HEAD_BYTE2" variable (:constant-flag t) nil [2721 2731])
+            ("log_format_s" type
+               (:members 
+                  ( ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2780 2793])
+                    ("length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2795 2810])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2852 2865])
+                    ("format" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2867 2883])
+                    ("labels" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2885 2901]))                  
+                :type "struct")
+                nil [2757 2904])
+            ("LOG_FORMAT" variable (:constant-flag t) nil [2914 2924])
+            ("LOG_FORMAT_S" variable (:constant-flag t) nil [3150 3162])
+            ("LOG_FORMAT_MSG" variable (:constant-flag t) nil [3409 3423])
+            ("LOG_PACKET_SIZE" variable (:constant-flag t) nil [3440 3455]))          
+      :file "sdlog2_format.h"
+      :pointmax 3549
+      :fsize 3548
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LOG_FORMAT" (spp-arg-list ("_name" "_format" "_labels") 2924 . 2949) . ((semantic-list "{ \\
+		.type = LOG_##_name##_MSG, \\
+			.length = sizeof(struct log_##_name##_s) + LOG_PACKET_HEADER_LEN, \\
+				  .name = #_name, \\
+					  .format = _format, \\
+						    .labels = _labels \\
+	}" 2950 . 3140)))
+          ("LOG_PACKET_HEADER" . 
+              ((symbol "uint8_t" 2462 . 2469) (symbol "head1" 2470 . 2475) (punctuation "," 2475 . 2476) (symbol "head2" 2477 . 2482) (punctuation "," 2482 . 2483) (symbol "msg_type" 2484 . 2492) (punctuation ";" 2492 . 2493)))
+          ("HEAD_BYTE1" . ((number "0xA3" 2690 . 2694)))
+          ("LOG_FORMAT_MSG" . ((number "0x80" 3426 . 3430)))
+          ("HEAD_BYTE2" . ((number "0x95" 2733 . 2737)))
+          ("LOG_FORMAT_S" (spp-arg-list ("_name" "_struct_name" "_format" "_labels") 3162 . 3201) . ((semantic-list "{ \\
+		.type = LOG_##_name##_MSG, \\
+			.length = sizeof(struct log_##_struct_name##_s) + LOG_PACKET_HEADER_LEN, \\
+				  .name = #_name, \\
+					  .format = _format, \\
+						    .labels = _labels \\
+	}" 3202 . 3399)))
+          ("LOG_PACKET_HEADER_LEN" . ((number "3" 2427 . 2428)))
+          ("LOG_PACKET_SIZE" (spp-arg-list ("_name") 3455 . 3462) . 
+              ((symbol "LOG_PACKET_HEADER_LEN" 3463 . 3484) (punctuation "+" 3485 . 3486) (SIZEOF "sizeof" 3487 . 3493) (semantic-list "(struct log_##_name##_s)" 3493 . 3517)))
+          ("LOG_PACKET_HEADER_INIT" (spp-arg-list ("id") 2524 . 2528) . 
+              ((punctuation "." 2529 . 2530) (symbol "head1" 2530 . 2535) (punctuation "=" 2536 . 2537) (symbol "HEAD_BYTE1" 2538 . 2548) (punctuation "," 2548 . 2549) (punctuation "." 2550 . 2551) (symbol "head2" 2551 . 2556) (punctuation "=" 2557 . 2558) (symbol "HEAD_BYTE2" 2559 . 2569) (punctuation "," 2569 . 2570) (punctuation "." 2571 . 2572) (symbol "msg_type" 2572 . 2580) (punctuation "=" 2581 . 2582) (symbol "id" 2583 . 2585)))
+          ("SDLOG2_FORMAT_H_")
+          )
+)
+    (semanticdb-table "sdlog2_messages.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SDLOG2_MESSAGES_H_" variable (:constant-flag t) nil [2072 2090])
+            ("sdlog2_format.h" include nil nil [2092 2118])
+            ("LOG_ATT_MSG" variable (:constant-flag t) nil [2209 2220])
+            ("log_ATT_s" type
+               (:members 
+                  ( ("q_w" variable (:type "float") (reparse-symbol classsubparts) [2243 2253])
+                    ("q_x" variable (:type "float") (reparse-symbol classsubparts) [2255 2265])
+                    ("q_y" variable (:type "float") (reparse-symbol classsubparts) [2267 2277])
+                    ("q_z" variable (:type "float") (reparse-symbol classsubparts) [2279 2289]))                  
+                :type "struct")
+                nil [2223 2391])
+            ("LOG_ATSP_MSG" variable (:constant-flag t) nil [2441 2453])
+            ("log_ATSP_s" type
+               (:members 
+                  ( ("roll_sp" variable (:type "float") (reparse-symbol classsubparts) [2477 2491])
+                    ("pitch_sp" variable (:type "float") (reparse-symbol classsubparts) [2493 2508])
+                    ("yaw_sp" variable (:type "float") (reparse-symbol classsubparts) [2510 2523])
+                    ("yaw_rate_sp" variable (:type "float") (reparse-symbol classsubparts) [2525 2543])
+                    ("thrust_sp" variable (:type "float") (reparse-symbol classsubparts) [2557 2573]))                  
+                :type "struct")
+                nil [2456 2717])
+            ("LOG_IMU_MSG" variable (:constant-flag t) nil [2759 2770])
+            ("log_IMU_s" type
+               (:members 
+                  ( ("acc_x" variable (:type "float") (reparse-symbol classsubparts) [2871 2883])
+                    ("acc_y" variable (:type "float") (reparse-symbol classsubparts) [2885 2897])
+                    ("acc_z" variable (:type "float") (reparse-symbol classsubparts) [2899 2911])
+                    ("gyro_x" variable (:type "float") (reparse-symbol classsubparts) [2913 2926])
+                    ("gyro_y" variable (:type "float") (reparse-symbol classsubparts) [2928 2941])
+                    ("gyro_z" variable (:type "float") (reparse-symbol classsubparts) [2943 2956])
+                    ("mag_x" variable (:type "float") (reparse-symbol classsubparts) [2958 2970])
+                    ("mag_y" variable (:type "float") (reparse-symbol classsubparts) [2972 2984])
+                    ("mag_z" variable (:type "float") (reparse-symbol classsubparts) [2986 2998])
+                    ("times_published" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3000 3025]))                  
+                :type "struct")
+                nil [2851 3122])
+            ("LOG_SENS_MSG" variable (:constant-flag t) nil [3167 3179])
+            ("log_SENS_s" type
+               (:members 
+                  ( ("baro_alt" variable (:type "float") (reparse-symbol classsubparts) [3203 3218])
+                    ("baro_temp" variable (:type "float") (reparse-symbol classsubparts) [3220 3236]))                  
+                :type "struct")
+                nil [3182 3239])
+            ("LOG_BARO_MSG" variable (:constant-flag t) nil [3281 3293])
+            ("log_BARO_s" type
+               (:members 
+                  ( ("pressure" variable (:type "float") (reparse-symbol classsubparts) [3318 3333]))                  
+                :type "struct")
+                nil [3297 3336])
+            ("LOG_LPOS_MSG" variable (:constant-flag t) nil [3381 3393])
+            ("log_LPOS_s" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [3417 3425])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [3427 3435])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [3437 3445])
+                    ("ground_dist" variable (:type "float") (reparse-symbol classsubparts) [3447 3465])
+                    ("ground_dist_rate" variable (:type "float") (reparse-symbol classsubparts) [3467 3490])
+                    ("vx" variable (:type "float") (reparse-symbol classsubparts) [3492 3501])
+                    ("vy" variable (:type "float") (reparse-symbol classsubparts) [3503 3512])
+                    ("vz" variable (:type "float") (reparse-symbol classsubparts) [3514 3523])
+                    ("pos_flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3622 3640])
+                    ("ground_dist_flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3642 3668])
+                    ("dist_sensor_valid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3724 3750]))                  
+                :type "struct")
+                nil [3396 3764])
+            ("LOG_LPSP_MSG" variable (:constant-flag t) nil [3819 3831])
+            ("log_LPSP_s" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [3855 3863])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [3865 3873])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [3875 3883])
+                    ("yaw" variable (:type "float") (reparse-symbol classsubparts) [3885 3895])
+                    ("vx" variable (:type "float") (reparse-symbol classsubparts) [3897 3906])
+                    ("vy" variable (:type "float") (reparse-symbol classsubparts) [3908 3917])
+                    ("vz" variable (:type "float") (reparse-symbol classsubparts) [3919 3928]))                  
+                :type "struct")
+                nil [3834 4018])
+            ("LOG_GPS_MSG" variable (:constant-flag t) nil [4061 4072])
+            ("LOG_DGPS_MSG" variable (:constant-flag t) nil [4083 4095])
+            ("log_GPS_s" type
+               (:members 
+                  ( ("gps_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4119 4137])
+                    ("fix_type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4139 4156])
+                    ("eph" variable (:type "float") (reparse-symbol classsubparts) [4158 4168])
+                    ("epv" variable (:type "float") (reparse-symbol classsubparts) [4170 4180])
+                    ("lat" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4182 4194])
+                    ("lon" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4196 4208])
+                    ("alt" variable (:type "float") (reparse-symbol classsubparts) [4210 4220])
+                    ("vel_n" variable (:type "float") (reparse-symbol classsubparts) [4222 4234])
+                    ("vel_e" variable (:type "float") (reparse-symbol classsubparts) [4236 4248])
+                    ("vel_d" variable (:type "float") (reparse-symbol classsubparts) [4250 4262])
+                    ("cog" variable (:type "float") (reparse-symbol classsubparts) [4264 4274])
+                    ("sats" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4276 4289])
+                    ("snr_mean" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4291 4309])
+                    ("noise_per_ms" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4311 4333])
+                    ("jamming_indicator" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4335 4362]))                  
+                :type "struct")
+                nil [4099 4365])
+            ("LOG_STAT_MSG" variable (:constant-flag t) nil [4628 4640])
+            ("log_STAT_s" type
+               (:members 
+                  ( ("main_state" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4665 4684])
+                    ("nav_state" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4686 4704])
+                    ("arming_state" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4706 4727])
+                    ("failsafe" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4729 4746])
+                    ("is_rot_wing" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4748 4768])
+                    ("no_pwm" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4770 4785]))                  
+                :type "struct")
+                nil [4644 4837])
+            ("LOG_RC_MSG" variable (:constant-flag t) nil [4884 4894])
+            ("log_RC_s" type
+               (:members 
+                  ( ("channel" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [4917 4935])
+                    ("signal_lost" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5006 5026]))                  
+                :type "struct")
+                nil [4898 5066])
+            ("LOG_AIRS_MSG" variable (:constant-flag t) nil [5228 5240])
+            ("log_AIRS_s" type
+               (:members 
+                  ( ("indicated_airspeed_m_s" variable (:type "float") (reparse-symbol classsubparts) [5265 5294])
+                    ("true_airspeed_m_s" variable (:type "float") (reparse-symbol classsubparts) [5296 5320])
+                    ("true_airspeed_unfiltered_m_s" variable (:type "float") (reparse-symbol classsubparts) [5322 5357])
+                    ("indicated_airspeed_lpf_m_s" variable (:type "float") (reparse-symbol classsubparts) [5359 5392])
+                    ("air_temperature_celsius" variable (:type "float") (reparse-symbol classsubparts) [5406 5436])
+                    ("confidence" variable (:type "float") (reparse-symbol classsubparts) [5438 5455]))                  
+                :type "struct")
+                nil [5244 5458])
+            ("LOG_ARSP_MSG" variable (:constant-flag t) nil [5513 5525])
+            ("log_ARSP_s" type
+               (:members 
+                  ( ("roll_rate_sp" variable (:type "float") (reparse-symbol classsubparts) [5550 5569])
+                    ("pitch_rate_sp" variable (:type "float") (reparse-symbol classsubparts) [5571 5591])
+                    ("yaw_rate_sp" variable (:type "float") (reparse-symbol classsubparts) [5593 5611]))                  
+                :type "struct")
+                nil [5529 5614])
+            ("LOG_GPOS_MSG" variable (:constant-flag t) nil [6158 6170])
+            ("log_GPOS_s" type
+               (:members 
+                  ( ("lat" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6195 6207])
+                    ("lon" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6209 6221])
+                    ("alt" variable (:type "float") (reparse-symbol classsubparts) [6223 6233])
+                    ("vel_n" variable (:type "float") (reparse-symbol classsubparts) [6235 6247])
+                    ("vel_e" variable (:type "float") (reparse-symbol classsubparts) [6249 6261])
+                    ("vel_d" variable (:type "float") (reparse-symbol classsubparts) [6263 6275])
+                    ("eph" variable (:type "float") (reparse-symbol classsubparts) [6277 6287])
+                    ("epv" variable (:type "float") (reparse-symbol classsubparts) [6289 6299]))                  
+                :type "struct")
+                nil [6174 6337])
+            ("LOG_GPSP_MSG" variable (:constant-flag t) nil [6393 6405])
+            ("log_GPSP_s" type
+               (:members 
+                  ( ("lat" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6430 6442])
+                    ("lon" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6444 6456])
+                    ("alt" variable (:type "float") (reparse-symbol classsubparts) [6458 6468])
+                    ("yaw" variable (:type "float") (reparse-symbol classsubparts) [6470 6480])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6482 6495])
+                    ("loiter_radius" variable (:type "float") (reparse-symbol classsubparts) [6497 6517])
+                    ("loiter_direction" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6519 6543]))                  
+                :type "struct")
+                nil [6409 6579])
+            ("LOG_BATT_MSG" variable (:constant-flag t) nil [7181 7193])
+            ("log_BATT_s" type
+               (:members 
+                  ( ("voltage" variable (:type "float") (reparse-symbol classsubparts) [7218 7232])
+                    ("voltage_filtered" variable (:type "float") (reparse-symbol classsubparts) [7234 7257])
+                    ("current" variable (:type "float") (reparse-symbol classsubparts) [7259 7273])
+                    ("current_filtered" variable (:type "float") (reparse-symbol classsubparts) [7275 7298])
+                    ("discharged" variable (:type "float") (reparse-symbol classsubparts) [7300 7317])
+                    ("remaining" variable (:type "float") (reparse-symbol classsubparts) [7319 7335])
+                    ("scale" variable (:type "float") (reparse-symbol classsubparts) [7337 7349])
+                    ("remaining_voltagebased" variable (:type "float") (reparse-symbol classsubparts) [7351 7380])
+                    ("remaining_currentbased" variable (:type "float") (reparse-symbol classsubparts) [7394 7423])
+                    ("warning" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7437 7453]))                  
+                :type "struct")
+                nil [7197 7456])
+            ("LOG_DIST_MSG" variable (:constant-flag t) nil [7509 7521])
+            ("log_DIST_s" type
+               (:members 
+                  ( ("current_distance" variable (:type "float") (reparse-symbol classsubparts) [7641 7664])
+                    ("covariance" variable (:type "float") (reparse-symbol classsubparts) [7666 7683]))                  
+                :type "struct")
+                nil [7525 7686])
+            ("LOG_PWR_MSG" variable (:constant-flag t) nil [7799 7810])
+            ("log_PWR_s" type
+               (:members 
+                  ( ("peripherals_5v" variable (:type "float") (reparse-symbol classsubparts) [7834 7855])
+                    ("servo_rail_5v" variable (:type "float") (reparse-symbol classsubparts) [7857 7877])
+                    ("servo_rssi" variable (:type "float") (reparse-symbol classsubparts) [7879 7896])
+                    ("usb_ok" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7898 7913])
+                    ("brick_ok" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7915 7932])
+                    ("servo_ok" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7934 7951])
+                    ("low_power_rail_overcurrent" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7953 7988])
+                    ("high_power_rail_overcurrent" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7990 8026]))                  
+                :type "struct")
+                nil [7814 8029])
+            ("LOG_TECS_MSG" variable (:constant-flag t) nil [9138 9150])
+            ("log_TECS_s" type
+               (:members 
+                  ( ("altitudeSp" variable (:type "float") (reparse-symbol classsubparts) [9175 9192])
+                    ("altitudeFiltered" variable (:type "float") (reparse-symbol classsubparts) [9194 9217])
+                    ("flightPathAngleSp" variable (:type "float") (reparse-symbol classsubparts) [9219 9243])
+                    ("flightPathAngle" variable (:type "float") (reparse-symbol classsubparts) [9245 9267])
+                    ("airspeedSp" variable (:type "float") (reparse-symbol classsubparts) [9269 9286])
+                    ("airspeedFiltered" variable (:type "float") (reparse-symbol classsubparts) [9288 9311])
+                    ("airspeedDerivativeSp" variable (:type "float") (reparse-symbol classsubparts) [9313 9340])
+                    ("airspeedDerivative" variable (:type "float") (reparse-symbol classsubparts) [9342 9367])
+                    ("totalEnergyError" variable (:type "float") (reparse-symbol classsubparts) [9369 9392])
+                    ("totalEnergyRateError" variable (:type "float") (reparse-symbol classsubparts) [9394 9421])
+                    ("energyDistributionError" variable (:type "float") (reparse-symbol classsubparts) [9423 9453])
+                    ("energyDistributionRateError" variable (:type "float") (reparse-symbol classsubparts) [9455 9489])
+                    ("pitch_integ" variable (:type "float") (reparse-symbol classsubparts) [9491 9509])
+                    ("throttle_integ" variable (:type "float") (reparse-symbol classsubparts) [9511 9532])
+                    ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9535 9548]))                  
+                :type "struct")
+                nil [9154 9551])
+            ("LOG_WIND_MSG" variable (:constant-flag t) nil [9596 9608])
+            ("log_WIND_s" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [9633 9641])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [9643 9651])
+                    ("cov_x" variable (:type "float") (reparse-symbol classsubparts) [9653 9665])
+                    ("cov_y" variable (:type "float") (reparse-symbol classsubparts) [9667 9679]))                  
+                :type "struct")
+                nil [9612 9682])
+            ("LOG_EST0_MSG" variable (:constant-flag t) nil [9730 9742])
+            ("log_EST0_s" type
+               (:members 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [9767 9779])
+                    ("fault_flags" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9850 9871]))                  
+                :type "struct")
+                nil [9746 9925])
+            ("LOG_EST1_MSG" variable (:constant-flag t) nil [9973 9985])
+            ("log_EST1_s" type
+               (:members 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [10010 10022]))                  
+                :type "struct")
+                nil [9989 10025])
+            ("LOG_EST2_MSG" variable (:constant-flag t) nil [10073 10085])
+            ("log_EST2_s" type
+               (:members 
+                  ( ("cov" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [10110 10124])
+                    ("gps_check_fail_flags" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10126 10156])
+                    ("control_mode_flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10158 10186])
+                    ("health_flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10188 10209])
+                    ("innov_test_flags" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10211 10237]))                  
+                :type "struct")
+                nil [10089 10240])
+            ("LOG_EST3_MSG" variable (:constant-flag t) nil [10288 10300])
+            ("log_EST3_s" type
+               (:members 
+                  ( ("cov" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [10328 10342]))                  
+                :type "struct")
+                nil [10304 10345])
+            ("LOG_EST7_MSG" variable (:constant-flag t) nil [10402 10414])
+            ("log_EST7_s" type
+               (:members 
+                  ( ("time_slip" variable (:type "float") (reparse-symbol classsubparts) [10443 10459])
+                    ("terrain_vpos" variable (:type "float") (reparse-symbol classsubparts) [10476 10495])
+                    ("terrain_var" variable (:type "float") (reparse-symbol classsubparts) [10500 10518])
+                    ("vibe" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [10523 10537]))                  
+                :type "struct")
+                nil [10419 10540])
+            ("LOG_TEL0_MSG" variable (:constant-flag t) nil [10600 10612])
+            ("log_TEL_s" type
+               (:members 
+                  ( ("heartbeat_time" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10867 10891]))                  
+                :type "struct")
+                nil [10697 10894])
+            ("LOG_CTS_MSG" variable (:constant-flag t) nil [12032 12043])
+            ("log_CTS_s" type
+               (:members 
+                  ( ("vx_body" variable (:type "float") (reparse-symbol classsubparts) [12067 12081])
+                    ("vy_body" variable (:type "float") (reparse-symbol classsubparts) [12083 12097])
+                    ("vz_body" variable (:type "float") (reparse-symbol classsubparts) [12099 12113])
+                    ("airspeed" variable (:type "float") (reparse-symbol classsubparts) [12115 12130])
+                    ("roll_rate" variable (:type "float") (reparse-symbol classsubparts) [12132 12148])
+                    ("pitch_rate" variable (:type "float") (reparse-symbol classsubparts) [12150 12167])
+                    ("yaw_rate" variable (:type "float") (reparse-symbol classsubparts) [12169 12184])
+                    ("true_mc_yaw" variable (:type "float") (reparse-symbol classsubparts) [12186 12204])
+                    ("use_hover_gps" variable (:type "bool") (reparse-symbol classsubparts) [12218 12237])
+                    ("meas_hagl" variable (:type "float") (reparse-symbol classsubparts) [12251 12267]))                  
+                :type "struct")
+                nil [12047 12282])
+            ("LOG_EST4_MSG" variable (:constant-flag t) nil [12335 12347])
+            ("log_EST4_s" type
+               (:members 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [12375 12387]))                  
+                :type "struct")
+                nil [12351 12390])
+            ("LOG_EST5_MSG" variable (:constant-flag t) nil [12443 12455])
+            ("log_EST5_s" type
+               (:members 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [12483 12495]))                  
+                :type "struct")
+                nil [12459 12498])
+            ("LOG_RPL1_MSG" variable (:constant-flag t) nil [12581 12593])
+            ("log_RPL1_s" type
+               (:members 
+                  ( ("time_ref" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12618 12636])
+                    ("gyro_integral_dt" variable (:type "float") (reparse-symbol classsubparts) [12638 12661])
+                    ("accelerometer_integral_dt" variable (:type "float") (reparse-symbol classsubparts) [12663 12695])
+                    ("magnetometer_timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12697 12729])
+                    ("baro_timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12731 12755])
+                    ("gyro_x_rad" variable (:type "float") (reparse-symbol classsubparts) [12757 12774])
+                    ("gyro_y_rad" variable (:type "float") (reparse-symbol classsubparts) [12776 12793])
+                    ("gyro_z_rad" variable (:type "float") (reparse-symbol classsubparts) [12795 12812])
+                    ("accelerometer_x_m_s2" variable (:type "float") (reparse-symbol classsubparts) [12814 12841])
+                    ("accelerometer_y_m_s2" variable (:type "float") (reparse-symbol classsubparts) [12843 12870])
+                    ("accelerometer_z_m_s2" variable (:type "float") (reparse-symbol classsubparts) [12872 12899])
+                    ("magnetometer_x_ga" variable (:type "float") (reparse-symbol classsubparts) [12901 12925])
+                    ("magnetometer_y_ga" variable (:type "float") (reparse-symbol classsubparts) [12927 12951])
+                    ("magnetometer_z_ga" variable (:type "float") (reparse-symbol classsubparts) [12953 12977])
+                    ("baro_alt_meter" variable (:type "float") (reparse-symbol classsubparts) [12979 13000]))                  
+                :type "struct")
+                nil [12597 13003])
+            ("LOG_RPL2_MSG" variable (:constant-flag t) nil [13045 13057])
+            ("log_RPL2_s" type
+               (:members 
+                  ( ("time_pos_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13082 13105])
+                    ("time_vel_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13107 13130])
+                    ("lat" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13132 13144])
+                    ("lon" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13146 13158])
+                    ("alt" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13160 13172])
+                    ("fix_type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13174 13191])
+                    ("nsats" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13193 13207])
+                    ("eph" variable (:type "float") (reparse-symbol classsubparts) [13209 13219])
+                    ("epv" variable (:type "float") (reparse-symbol classsubparts) [13221 13231])
+                    ("sacc" variable (:type "float") (reparse-symbol classsubparts) [13233 13244])
+                    ("vel_m_s" variable (:type "float") (reparse-symbol classsubparts) [13246 13260])
+                    ("vel_n_m_s" variable (:type "float") (reparse-symbol classsubparts) [13262 13278])
+                    ("vel_e_m_s" variable (:type "float") (reparse-symbol classsubparts) [13280 13296])
+                    ("vel_d_m_s" variable (:type "float") (reparse-symbol classsubparts) [13298 13314])
+                    ("vel_ned_valid" variable (:type "bool") (reparse-symbol classsubparts) [13316 13335]))                  
+                :type "struct")
+                nil [13061 13338])
+            ("LOG_EST6_MSG" variable (:constant-flag t) nil [13391 13403])
+            ("log_EST6_s" type
+               (:members 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [13431 13442]))                  
+                :type "struct")
+                nil [13407 13457])
+            ("LOG_RPL3_MSG" variable (:constant-flag t) nil [13500 13512])
+            ("log_RPL3_s" type
+               (:members 
+                  ( ("time_flow_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13537 13561])
+                    ("flow_integral_x" variable (:type "float") (reparse-symbol classsubparts) [13563 13585])
+                    ("flow_integral_y" variable (:type "float") (reparse-symbol classsubparts) [13587 13609])
+                    ("gyro_integral_x" variable (:type "float") (reparse-symbol classsubparts) [13611 13633])
+                    ("gyro_integral_y" variable (:type "float") (reparse-symbol classsubparts) [13635 13657])
+                    ("flow_time_integral" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13659 13687])
+                    ("flow_quality" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13689 13710]))                  
+                :type "struct")
+                nil [13516 13713])
+            ("LOG_CAMT_MSG" variable (:constant-flag t) nil [13752 13764])
+            ("log_CAMT_s" type
+               (:members 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13789 13808])
+                    ("seq" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13810 13823]))                  
+                :type "struct")
+                nil [13768 13826])
+            ("LOG_RPL4_MSG" variable (:constant-flag t) nil [13869 13881])
+            ("log_RPL4_s" type
+               (:members 
+                  ( ("time_rng_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13906 13929])
+                    ("range_to_ground" variable (:type "float") (reparse-symbol classsubparts) [13931 13953]))                  
+                :type "struct")
+                nil [13885 13956])
+            ("LOG_LAND_MSG" variable (:constant-flag t) nil [13994 14006])
+            ("log_LAND_s" type
+               (:members 
+                  ( ("landed" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14031 14046]))                  
+                :type "struct")
+                nil [14010 14049])
+            ("LOG_RPL6_MSG" variable (:constant-flag t) nil [14153 14165])
+            ("log_RPL6_s" type
+               (:members 
+                  ( ("time_airs_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14190 14214])
+                    ("indicated_airspeed_m_s" variable (:type "float") (reparse-symbol classsubparts) [14216 14245])
+                    ("true_airspeed_m_s" variable (:type "float") (reparse-symbol classsubparts) [14247 14271]))                  
+                :type "struct")
+                nil [14169 14274])
+            ("LOG_RPL5_MSG" variable (:constant-flag t) nil [14317 14329])
+            ("log_RPL5_s" type
+               (:members 
+                  ( ("time_ev_usec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14354 14376])
+                    ("x" variable (:type "float") (reparse-symbol classsubparts) [14378 14386])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [14388 14396])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [14398 14406])
+                    ("q0" variable (:type "float") (reparse-symbol classsubparts) [14408 14417])
+                    ("q1" variable (:type "float") (reparse-symbol classsubparts) [14419 14428])
+                    ("q2" variable (:type "float") (reparse-symbol classsubparts) [14430 14439])
+                    ("q3" variable (:type "float") (reparse-symbol classsubparts) [14441 14450])
+                    ("pos_err" variable (:type "float") (reparse-symbol classsubparts) [14452 14466])
+                    ("ang_err" variable (:type "float") (reparse-symbol classsubparts) [14468 14482]))                  
+                :type "struct")
+                nil [14333 14485])
+            ("LOG_LOAD_MSG" variable (:constant-flag t) nil [14521 14533])
+            ("log_LOAD_s" type
+               (:members 
+                  ( ("cpu_load" variable (:type "float") (reparse-symbol classsubparts) [14558 14573]))                  
+                :type "struct")
+                nil [14537 14576])
+            ("LOG_DPRS_MSG" variable (:constant-flag t) nil [14629 14641])
+            ("log_DPRS_s" type
+               (:members 
+                  ( ("error_count" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14666 14687])
+                    ("differential_pressure_raw_pa" variable (:type "float") (reparse-symbol classsubparts) [14689 14724])
+                    ("differential_pressure_filtered_pa" variable (:type "float") (reparse-symbol classsubparts) [14726 14766])
+                    ("temperature" variable (:type "float") (reparse-symbol classsubparts) [14768 14786]))                  
+                :type "struct")
+                nil [14645 14789])
+            ("LOG_ACTR_MSG" variable (:constant-flag t) nil [14941 14953])
+            ("log_ACTR_s" type
+               (:members 
+                  ( ("dt" variable (:type "float") (reparse-symbol classsubparts) [14978 14987])
+                    ("flap_deflection" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [14989 15014])
+                    ("flap_0_saturated" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15054 15079])
+                    ("flap_1_saturated" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15081 15106])
+                    ("flap_rate_saturated" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15108 15139])
+                    ("moment_z_saturated" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15141 15168])
+                    ("rpm_estimated" variable (:type "float") (reparse-symbol classsubparts) [15170 15190]))                  
+                :type "struct")
+                nil [14957 15193])
+            ("LOG_ACTP_MSG" variable (:constant-flag t) nil [15238 15250])
+            ("log_ACTP_s" type
+               (:members 
+                  ( ("motor_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15275 15297])
+                    ("flap_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15330 15351]))                  
+                :type "struct")
+                nil [15254 15392])
+            ("LOG_CTD1_MSG" variable (:constant-flag t) nil [16681 16693])
+            ("log_CTD1_s" type
+               (:members 
+                  ( ("e_R" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [16759 16772])
+                    ("e_rates" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [16774 16791])
+                    ("regime" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16825 16840]))                  
+                :type "struct")
+                nil [16697 16843])
+            ("LOG_CTD4_MSG" variable (:constant-flag t) nil [17061 17073])
+            ("log_CTD4_s" type
+               (:members 
+                  ( ("e_orientation" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [17098 17121]))                  
+                :type "struct")
+                nil [17077 17124])
+            ("LOG_CTD5_MSG" variable (:constant-flag t) nil [17134 17146])
+            ("log_CTD5_s" type
+               (:members 
+                  ( ("rollsp" variable (:type "float") (reparse-symbol classsubparts) [17171 17184])
+                    ("pitchsp" variable (:type "float") (reparse-symbol classsubparts) [17186 17200]))                  
+                :type "struct")
+                nil [17150 17203])
+            ("LOG_FOMO_MSG" variable (:constant-flag t) nil [17241 17253])
+            ("log_FOMO_s" type
+               (:members 
+                  ( ("force_x" variable (:type "float") (reparse-symbol classsubparts) [17278 17292])
+                    ("moment_x" variable (:type "float") (reparse-symbol classsubparts) [17294 17309])
+                    ("moment_y" variable (:type "float") (reparse-symbol classsubparts) [17311 17326])
+                    ("moment_z" variable (:type "float") (reparse-symbol classsubparts) [17328 17343])
+                    ("moment_int" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [17373 17393])
+                    ("moment_int_roll_lp" variable (:type "float") (reparse-symbol classsubparts) [17395 17420])
+                    ("moment_int_pitch_lp" variable (:type "float") (reparse-symbol classsubparts) [17422 17448]))                  
+                :type "struct")
+                nil [17257 17451])
+            ("LOG_MPCD_MSG" variable (:constant-flag t) nil [17957 17969])
+            ("log_MPCD_s" type
+               (:members 
+                  ( ("reset_int_z" variable (:type "bool") (reparse-symbol classsubparts) [17994 18011])
+                    ("reset_int_xy" variable (:type "bool") (reparse-symbol classsubparts) [18013 18031])
+                    ("saturation_x" variable (:type "bool") (reparse-symbol classsubparts) [18033 18051])
+                    ("saturation_y" variable (:type "bool") (reparse-symbol classsubparts) [18053 18071])
+                    ("saturation_z" variable (:type "bool") (reparse-symbol classsubparts) [18073 18091])
+                    ("thrust_sp" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [18093 18112])
+                    ("thrust_int" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [18114 18134])
+                    ("roll_comp" variable (:type "float") (reparse-symbol classsubparts) [18136 18152])
+                    ("pitch_comp" variable (:type "float") (reparse-symbol classsubparts) [18154 18171])
+                    ("lift_comp" variable (:type "float") (reparse-symbol classsubparts) [18173 18189]))                  
+                :type "struct")
+                nil [17973 18192])
+            ("LOG_WINT_MSG" variable (:constant-flag t) nil [18240 18252])
+            ("log_WINT_s" type
+               (:members 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18277 18296])
+                    ("pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18298 18314])
+                    ("flap_deflection" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [18316 18341])
+                    ("v_inf" variable (:type "int") (reparse-symbol classsubparts) [18343 18353])
+                    ("aoa" variable (:type "int") (reparse-symbol classsubparts) [18355 18363])
+                    ("tick" variable (:type "int") (reparse-symbol classsubparts) [18365 18374])
+                    ("propeller_id" variable (:type "int") (reparse-symbol classsubparts) [18376 18393]))                  
+                :type "struct")
+                nil [18256 18396])
+            ("LOG_EGPS_MSG" variable (:constant-flag t) nil [18863 18875])
+            ("log_EGPS_s" type
+               (:members 
+                  ( ("sacc" variable (:type "float") (reparse-symbol classsubparts) [18903 18914])
+                    ("cacc" variable (:type "float") (reparse-symbol classsubparts) [18919 18930])
+                    ("hdop" variable (:type "float") (reparse-symbol classsubparts) [18935 18946])
+                    ("vdop" variable (:type "float") (reparse-symbol classsubparts) [18951 18962]))                  
+                :type "struct")
+                nil [18879 18965])
+            ("LOG_EDGP_MSG" variable (:constant-flag t) nil [19018 19030])
+            ("log_EDGP_s" type
+               (:members 
+                  ( ("sacc" variable (:type "float") (reparse-symbol classsubparts) [19058 19069])
+                    ("cacc" variable (:type "float") (reparse-symbol classsubparts) [19074 19085])
+                    ("hdop" variable (:type "float") (reparse-symbol classsubparts) [19090 19101])
+                    ("vdop" variable (:type "float") (reparse-symbol classsubparts) [19106 19117]))                  
+                :type "struct")
+                nil [19034 19120])
+            ("LOG_WLND_MSG" variable (:constant-flag t) nil [19173 19185])
+            ("log_WLND_s" type
+               (:members 
+                  ( ("landed" variable (:type "bool") (reparse-symbol classsubparts) [19213 19225])
+                    ("takeoff" variable (:type "bool") (reparse-symbol classsubparts) [19230 19243]))                  
+                :type "struct")
+                nil [19189 19246])
+            ("LOG_MPCE_MSG" variable (:constant-flag t) nil [19281 19293])
+            ("log_MPCE_s" type
+               (:members 
+                  ( ("lp_pitch" variable (:type "float") (reparse-symbol classsubparts) [19318 19333])
+                    ("lp_hagl" variable (:type "float") (reparse-symbol classsubparts) [19335 19349])
+                    ("lp_z_accel" variable (:type "float") (reparse-symbol classsubparts) [19351 19368])
+                    ("vel_err" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [19370 19387])
+                    ("vel_d_err" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [19389 19408])
+                    ("descent_int" variable (:type "float") (reparse-symbol classsubparts) [19410 19428])
+                    ("dist_cut_sp" variable (:type "float") (reparse-symbol classsubparts) [19430 19448])
+                    ("hor_vel_too_high" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19450 19475])
+                    ("is_near_ground" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19477 19500]))                  
+                :type "struct")
+                nil [19297 19503])
+            ("LOG_FWCS_MSG" variable (:constant-flag t) nil [19577 19589])
+            ("log_FWCS_s" type
+               (:members 
+                  ( ("nav_roll" variable (:type "float") (reparse-symbol classsubparts) [19614 19629])
+                    ("nav_pitch" variable (:type "float") (reparse-symbol classsubparts) [19631 19647])
+                    ("nav_bearing" variable (:type "float") (reparse-symbol classsubparts) [19649 19667])
+                    ("target_bearing" variable (:type "float") (reparse-symbol classsubparts) [19669 19690])
+                    ("wp_dist" variable (:type "float") (reparse-symbol classsubparts) [19692 19706])
+                    ("xtrack_error" variable (:type "float") (reparse-symbol classsubparts) [19708 19727])
+                    ("turn_distance" variable (:type "float") (reparse-symbol classsubparts) [19729 19749]))                  
+                :type "struct")
+                nil [19593 19752])
+            ("LOG_EPF_MSG" variable (:constant-flag t) nil [19896 19907])
+            ("log_EPF_s" type
+               (:members 
+                  ( ("vel_innov_lpf_ned" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [19931 19958])
+                    ("pos_innov_lpf_ned" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [19960 19987])
+                    ("hdg_innov_lpf" variable (:type "float") (reparse-symbol classsubparts) [19989 20009]))                  
+                :type "struct")
+                nil [19911 20012])
+            ("LOG_DSTR_MSG" variable (:constant-flag t) nil [20069 20081])
+            ("log_DSTR_s" type
+               (:members 
+                  ( ("current_distance" variable (:type "float") (reparse-symbol classsubparts) [20106 20129])
+                    ("covariance" variable (:type "float") (reparse-symbol classsubparts) [20131 20148])
+                    ("resets" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20150 20166]))                  
+                :type "struct")
+                nil [20085 20169])
+            ("LOG_VCMD_MSG" variable (:constant-flag t) nil [20216 20228])
+            ("log_VCMD_s" type
+               (:members 
+                  ( ("command" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20253 20270]))                  
+                :type "struct")
+                nil [20232 20273])
+            ("LOG_SBD1_MSG" variable (:constant-flag t) nil [20308 20320])
+            ("log_SBD1_s" type
+               (:members 
+                  ( ("cell1_V" variable (:type "float") (reparse-symbol classsubparts) [20345 20359])
+                    ("cell2_V" variable (:type "float") (reparse-symbol classsubparts) [20361 20375])
+                    ("cell3_V" variable (:type "float") (reparse-symbol classsubparts) [20377 20391])
+                    ("cell4_V" variable (:type "float") (reparse-symbol classsubparts) [20393 20407])
+                    ("bat_V" variable (:type "float") (reparse-symbol classsubparts) [20409 20421])
+                    ("pack_V" variable (:type "float") (reparse-symbol classsubparts) [20423 20436])
+                    ("cell1_curr_A" variable (:type "float") (reparse-symbol classsubparts) [20438 20457])
+                    ("cell2_curr_A" variable (:type "float") (reparse-symbol classsubparts) [20459 20478])
+                    ("cell3_curr_A" variable (:type "float") (reparse-symbol classsubparts) [20480 20499])
+                    ("cell4_curr_A" variable (:type "float") (reparse-symbol classsubparts) [20501 20520])
+                    ("power_W" variable (:type "float") (reparse-symbol classsubparts) [20522 20536])
+                    ("power_avg_W" variable (:type "float") (reparse-symbol classsubparts) [20538 20556]))                  
+                :type "struct")
+                nil [20324 20559])
+            ("LOG_SBD2_MSG" variable (:constant-flag t) nil [20594 20606])
+            ("log_SBD2_s" type
+               (:members 
+                  ( ("int_temperature" variable (:type "float") (reparse-symbol classsubparts) [20631 20653])
+                    ("ts1_temperature" variable (:type "float") (reparse-symbol classsubparts) [20655 20677])
+                    ("ts2_temperature" variable (:type "float") (reparse-symbol classsubparts) [20679 20701])
+                    ("ts3_temperature" variable (:type "float") (reparse-symbol classsubparts) [20703 20725])
+                    ("ts4_temperature" variable (:type "float") (reparse-symbol classsubparts) [20727 20749])
+                    ("cell_temperature" variable (:type "float") (reparse-symbol classsubparts) [20751 20774])
+                    ("fet_temperature" variable (:type "float") (reparse-symbol classsubparts) [20776 20798]))                  
+                :type "struct")
+                nil [20610 20801])
+            ("LOG_SBFC_MSG" variable (:constant-flag t) nil [20836 20848])
+            ("log_SBFC_s" type
+               (:members 
+                  ( ("remaining_capacity_filt" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20873 20905])
+                    ("remaining_energy_filt" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20907 20937])
+                    ("full_charge_capacity_filt" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20939 20973])
+                    ("full_charge_energy_filt" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20975 21007]))                  
+                :type "struct")
+                nil [20852 21010])
+            ("LOG_MAG1_MSG" variable (:constant-flag t) nil [21020 21032])
+            ("LOG_MAG2_MSG" variable (:constant-flag t) nil [21044 21056])
+            ("LOG_MAG3_MSG" variable (:constant-flag t) nil [21068 21080])
+            ("log_MAG_s" type
+               (:members 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21105 21124])
+                    ("e_count" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21126 21143])
+                    ("x" variable (:type "float") (reparse-symbol classsubparts) [21145 21153])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [21155 21163])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [21165 21173])
+                    ("range_ga" variable (:type "float") (reparse-symbol classsubparts) [21175 21190])
+                    ("scaling" variable (:type "float") (reparse-symbol classsubparts) [21192 21206])
+                    ("temp" variable (:type "float") (reparse-symbol classsubparts) [21208 21219])
+                    ("x_r" variable (:type "int") (reparse-symbol classsubparts) [21222 21230])
+                    ("y_r" variable (:type "int") (reparse-symbol classsubparts) [21232 21240])
+                    ("z_r" variable (:type "int") (reparse-symbol classsubparts) [21242 21250])
+                    ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21253 21265]))                  
+                :type "struct")
+                nil [21085 21268])
+            ("LOG_ARTH_MSG" variable (:constant-flag t) nil [21310 21322])
+            ("log_ARTH_s" type
+               (:members 
+                  ( ("delta_v_alt" variable (:type "float") (reparse-symbol classsubparts) [21348 21366])
+                    ("delta_v_fly_back" variable (:type "float") (reparse-symbol classsubparts) [21368 21391])
+                    ("delta_v_regime_change" variable (:type "float") (reparse-symbol classsubparts) [21393 21421])
+                    ("delta_v_loiter_down" variable (:type "float") (reparse-symbol classsubparts) [21423 21449])
+                    ("delta_v_transition_land_energy" variable (:type "float") (reparse-symbol classsubparts) [21451 21488])
+                    ("delta_v_hover_land" variable (:type "float") (reparse-symbol classsubparts) [21490 21515])
+                    ("delta_v_tot" variable (:type "float") (reparse-symbol classsubparts) [21517 21535]))                  
+                :type "struct")
+                nil [21327 21538])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("LOG_MTCK_MSG" variable (:constant-flag t) nil [21580 21592])
+            ("log_MTCK_s" type
+               (:members 
+                  ( ("check_status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21621 21642])
+                    ("motor_0_init_failed" variable (:type "bool") (reparse-symbol classsubparts) [21647 21672])
+                    ("motor_1_init_failed" variable (:type "bool") (reparse-symbol classsubparts) [21677 21702])
+                    ("motor_0_blocked" variable (:type "bool") (reparse-symbol classsubparts) [21707 21728])
+                    ("motor_1_blocked" variable (:type "bool") (reparse-symbol classsubparts) [21733 21754]))                  
+                :type "struct")
+                nil [21597 21757])
+            ("LOG_TIME_MSG" variable (:constant-flag t) nil [21871 21883])
+            ("log_TIME_s" type
+               (:members 
+                  ( ("t" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21909 21920]))                  
+                :type "struct")
+                nil [21888 21923])
+            ("LOG_VER_MSG" variable (:constant-flag t) nil [21961 21972])
+            ("log_VER_s" type
+               (:members 
+                  ( ("arch" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [21997 22011])
+                    ("fw_git" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [22013 22029])
+                    ("tag" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [22031 22044]))                  
+                :type "struct")
+                nil [21977 22059])
+            ("LOG_PARM_MSG" variable (:constant-flag t) nil [22100 22112])
+            ("log_PARM_s" type
+               (:members 
+                  ( ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [22138 22152])
+                    ("value" variable (:type "float") (reparse-symbol classsubparts) [22154 22166]))                  
+                :type "struct")
+                nil [22117 22169])
+            ("LOG_TPW1_MSG" variable (:constant-flag t) nil [22214 22226])
+            ("LOG_TPW2_MSG" variable (:constant-flag t) nil [22239 22251])
+            ("log_TPWM_s" type
+               (:members 
+                  ( ("pwm" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22277 22290]))                  
+                :type "struct")
+                nil [22256 22293])
+            ("LOG_PFC_MSG" variable (:constant-flag t) nil [22359 22370])
+            ("log_PFC_s" type
+               (:members 
+                  ( ("checker" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [22395 22412])
+                    ("check" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [22414 22429])
+                    ("val" variable (:type "bool") (reparse-symbol classsubparts) [22431 22440]))                  
+                :type "struct")
+                nil [22375 22443]))          
+      :file "sdlog2_messages.h"
+      :pointmax 31013
+      :fsize 31012
+      :lastmodtime '(23448 56412 15750 487000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDLOG2_MESSAGES_H_")
+          ("LOG_DGPS_MSG" . ((number "58" 4096 . 4098)))
+          ("LOG_EST5_MSG" . ((number "49" 12456 . 12458)))
+          ("LOG_RPL4_MSG" . ((number "56" 13882 . 13884)))
+          ("LOG_MAG3_MSG" . ((number "100" 21081 . 21084)))
+          ("LOG_PFC_MSG" . ((number "136" 22339 . 22342)))
+          ("LOG_BATT_MSG" . ((number "20" 7194 . 7196)))
+          ("LOG_EST1_MSG" . ((number "33" 9986 . 9988)))
+          ("LOG_DPRS_MSG" . ((number "62" 14642 . 14644)))
+          ("LOG_ACTP_MSG" . ((number "67" 15251 . 15253)))
+          ("LOG_FOMO_MSG" . ((number "78" 17254 . 17256)))
+          ("LOG_EDGP_MSG" . ((number "86" 19031 . 19033)))
+          ("LOG_SBD2_MSG" . ((number "96" 20607 . 20609)))
+          ("LOG_PWR_MSG" . ((number "24" 7811 . 7813)))
+          ("LOG_EST6_MSG" . ((number "53" 13404 . 13406)))
+          ("LOG_RPL5_MSG" . ((number "60" 14330 . 14332)))
+          ("LOG_EGPS_MSG" . ((number "85" 18876 . 18878)))
+          ("LOG_MTCK_MSG" . ((number "19" 21593 . 21595)))
+          ("LOG_VER_MSG" . ((number "130" 21941 . 21944)))
+          ("LOG_STAT_MSG" . ((number "10" 4641 . 4643)))
+          ("LOG_EST2_MSG" . ((number "34" 10086 . 10088)))
+          ("LOG_RPL1_MSG" . ((number "51" 12594 . 12596)))
+          ("LOG_CTD4_MSG" . ((number "76" 17074 . 17076)))
+          ("LOG_MPCD_MSG" . ((number "81" 17970 . 17972)))
+          ("LOG_VCMD_MSG" . ((number "94" 20229 . 20231)))
+          ("LOG_PARM_MSG" . ((number "131" 22081 . 22084)))
+          ("LOG_CTS_MSG" . ((number "47" 12044 . 12046)))
+          ("LOG_WINT_MSG" . ((number "82" 18253 . 18255)))
+          ("LOG_ARTH_MSG" . ((number "101" 21323 . 21326)))
+          ("LOG_TPW1_MSG" . ((number "132" 22195 . 22198)))
+          ("LOG_ATT_MSG" . ((number "2" 2221 . 2222)))
+          ("LOG_IMU_MSG" . ((number "4" 2771 . 2772)))
+          ("LOG_DIST_MSG" . ((number "21" 7522 . 7524)))
+          ("LOG_EST7_MSG" . ((number "127" 10415 . 10418)))
+          ("LOG_CAMT_MSG" . ((number "55" 13765 . 13767)))
+          ("LOG_RPL6_MSG" . ((number "59" 14166 . 14168)))
+          ("LOG_DSTR_MSG" . ((number "93" 20082 . 20084)))
+          ("LOG_SBFC_MSG" . ((number "97" 20849 . 20851)))
+          ("LOG_BARO_MSG" . ((number "91" 3294 . 3296)))
+          ("LOG_ARSP_MSG" . ((number "14" 5526 . 5528)))
+          ("LOG_TECS_MSG" . ((number "30" 9151 . 9153)))
+          ("LOG_EST3_MSG" . ((number "35" 10301 . 10303)))
+          ("LOG_RPL2_MSG" . ((number "52" 13058 . 13060)))
+          ("LOG_LAND_MSG" . ((number "57" 14007 . 14009)))
+          ("LOG_ACTR_MSG" . ((number "66" 14954 . 14956)))
+          ("LOG_CTD5_MSG" . ((number "77" 17147 . 17149)))
+          ("LOG_MPCE_MSG" . ((number "88" 19294 . 19296)))
+          ("LOG_MAG1_MSG" . ((number "98" 21033 . 21035)))
+          ("LOG_TIME_MSG" . ((number "129" 21852 . 21855)))
+          ("LOG_LOAD_MSG" . ((number "61" 14534 . 14536)))
+          ("LOG_CTD1_MSG" . ((number "73" 16694 . 16696)))
+          ("LOG_TPW2_MSG" . ((number "133" 22220 . 22223)))
+          ("LOG_ATSP_MSG" . ((number "3" 2454 . 2455)))
+          ("LOG_RC_MSG" . ((number "11" 4895 . 4897)))
+          ("LOG_GPOS_MSG" . ((number "16" 6171 . 6173)))
+          ("LOG_WIND_MSG" . ((number "31" 9609 . 9611)))
+          ("LOG_TEL0_MSG" . ((number "36" 10613 . 10615)))
+          ("LOG_FWCS_MSG" . ((number "89" 19590 . 19592)))
+          ("LOG_GPSP_MSG" . ((number "17" 6406 . 6408)))
+          ("LOG_EST4_MSG" . ((number "48" 12348 . 12350)))
+          ("LOG_RPL3_MSG" . ((number "54" 13513 . 13515)))
+          ("LOG_EPF_MSG" . ((number "92" 19908 . 19910)))
+          ("LOG_MAG2_MSG" . ((number "99" 21057 . 21059)))
+          ("LOG_LPOS_MSG" . ((number "6" 3394 . 3395)))
+          ("LOG_AIRS_MSG" . ((number "13" 5241 . 5243)))
+          ("LOG_EST0_MSG" . ((number "32" 9743 . 9745)))
+          ("LOG_SENS_MSG" . ((number "5" 3180 . 3181)))
+          ("LOG_LPSP_MSG" . ((number "7" 3832 . 3833)))
+          ("LOG_GPS_MSG" . ((number "8" 4073 . 4074)))
+          ("LOG_WLND_MSG" . ((number "87" 19186 . 19188)))
+          ("LOG_SBD1_MSG" . ((number "95" 20321 . 20323)))
+          )
+))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!sdlog2_wingtra!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

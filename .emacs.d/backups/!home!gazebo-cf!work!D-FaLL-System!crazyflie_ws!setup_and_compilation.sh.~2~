@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+
+# This script will take all necessary sources from repository, put them in
+# the home folder, compile them and run the system.
+
+# Please, make change in the repository, and test them running this script

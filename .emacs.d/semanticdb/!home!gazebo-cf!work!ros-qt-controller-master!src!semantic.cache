@@ -1,0 +1,481 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "RobotThread.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("___ROBOTTHREAD_H___" variable (:constant-flag t) nil [37 56])
+            ("QtCore" include (:system-flag t) nil [58 75])
+            ("QThread" include (:system-flag t) nil [76 94])
+            ("QStringList" include (:system-flag t) nil [95 117])
+            ("stdlib.h" include (:system-flag t) nil [118 137])
+            ("QMutex" include (:system-flag t) nil [138 155])
+            ("iostream" include (:system-flag t) nil [156 175])
+            ("assert.h" include nil nil [176 195])
+            ("ros/ros.h" include (:system-flag t) nil [197 217])
+            ("ros/network.h" include (:system-flag t) nil [218 242])
+            ("geometry_msgs/Twist.h" include (:system-flag t) nil [243 275])
+            ("nav_msgs/Odometry.h" include (:system-flag t) nil [276 306])
+            ("RobotThread" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [355 362])
+                    ("RobotThread" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [379 388])
+                            ("pArgv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [389 402])
+                            ("topic" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"/odom\""
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [403 432]))                          
+                        :type ("RobotThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [367 434])
+                    ("RobotThread" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [439 462])
+                    ("getXPos" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [468 485])
+                    ("getXSpeed" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [490 509])
+                    ("getASpeed" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [514 533])
+                    ("getYPos" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [538 555])
+                    ("getAPos" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [560 577])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [583 595])
+                    ("poseCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [619 650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [601 651])
+                    ("SetSpeed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("speed" variable (:type "double") (reparse-symbol arg-sub-list) [668 681])
+                            ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [682 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [654 696])
+                    ("setPose" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("to_set" variable (:type ("QList" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [714 735]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [701 736])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [749 760])
+                    ("newPose" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [788 795])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [795 802])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [802 809]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [775 810])
+                    ("private" label nil (reparse-symbol classsubparts) [812 820])
+                    ("m_Init_argc" variable (:type "int") (reparse-symbol classsubparts) [825 841])
+                    ("m_pInit_argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [846 866])
+                    ("m_topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [871 892])
+                    ("m_pThread" variable
+                       (:pointer 1
+                        :type ("QThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [898 918])
+                    ("pose_listener" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [924 954])
+                    ("sim_velocity" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [959 988]))                  
+                :type "class")
+                nil [308 991]))          
+      :file "RobotThread.h"
+      :pointmax 1000
+      :fsize 999
+      :lastmodtime '(22792 15407 685099 904000)
+      :unmatched-syntax '((symbol 766 . 774) (symbol 742 . 748) (symbol 346 . 354))
+      :lexical-table 
+        '(("___ROBOTTHREAD_H___")
+          )
+)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("QApplication" include (:system-flag t) nil [1 24])
+            ("ControlWindow.h" include nil nil [25 51])
+            ("server" using (:type ("server" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [53 76])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [87 96])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [97 109]))                  
+                :type "int")
+                nil [78 202]))          
+      :file "main.cpp"
+      :pointmax 204
+      :fsize 203
+      :lastmodtime '(21959 52809 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ControlWindow.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CONTROL_WINDOW_H" variable (:constant-flag t) nil [34 50])
+            ("QtWidgets" include (:system-flag t) nil [51 71])
+            ("QPushButton" include (:system-flag t) nil [72 94])
+            ("QString" include (:system-flag t) nil [95 113])
+            ("QVBoxLayout" include (:system-flag t) nil [114 136])
+            ("QHBoxLayout" include (:system-flag t) nil [137 159])
+            ("QLabel" include (:system-flag t) nil [160 177])
+            ("QTextStream" include (:system-flag t) nil [178 200])
+            ("QLineEdit" include (:system-flag t) nil [201 221])
+            ("QPalette" include (:system-flag t) nil [222 241])
+            ("QIcon" include (:system-flag t) nil [242 258])
+            ("RobotThread.h" include nil nil [259 283])
+            ("server" type
+               (:members 
+                  ( ("PI" variable (:constant-flag t) (reparse-symbol namespacesubparts) [311 313])
+                    ("ControlWindow" type
+                       (:superclasses 
+                          ( ("QWidget" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [382 389])
+                            ("ControlWindow" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [408 417])
+                                    ("argv" variable
+                                       (:pointer 2
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [418 430])
+                                    ("parent" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("QWidget" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [431 451]))                                  
+                                :type ("ControlWindow" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [394 453])
+                            ("updatePoseDisplay" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [489 498])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [499 508])
+                                    ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [509 522]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [466 523])
+                            ("private" label nil (reparse-symbol classsubparts) [524 532])
+                            ("goForward" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [544 561])
+                            ("goBackward" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [573 591])
+                            ("goLeft" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [603 617])
+                            ("goRight" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [629 644])
+                            ("halt" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [656 668])
+                            ("p_upButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [674 698])
+                            ("p_downButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [703 729])
+                            ("p_leftButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [734 760])
+                            ("p_rightButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [765 792])
+                            ("p_stopButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [797 823])
+                            ("p_quitButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [828 854])
+                            ("rightLayout" variable
+                               (:pointer 1
+                                :type ("QVBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [860 885])
+                            ("layout" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [890 910])
+                            ("layout2" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [915 936])
+                            ("layout3" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [941 962])
+                            ("layout4" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [967 988])
+                            ("leftLayout" variable
+                               (:pointer 1
+                                :type ("QVBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [994 1018])
+                            ("p_xLayout" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1023 1046])
+                            ("p_yLayout" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1051 1074])
+                            ("p_aLayout" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1079 1102])
+                            ("p_xLabel" variable
+                               (:pointer 1
+                                :type ("QLabel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1108 1125])
+                            ("p_yLabel" variable
+                               (:pointer 1
+                                :type ("QLabel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1130 1147])
+                            ("p_aLabel" variable
+                               (:pointer 1
+                                :type ("QLabel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1152 1169])
+                            ("p_scanLabel" variable
+                               (:pointer 1
+                                :type ("QLabel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1174 1194])
+                            ("p_xDisplay" variable
+                               (:pointer 1
+                                :type ("QLineEdit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1200 1222])
+                            ("p_yDisplay" variable
+                               (:pointer 1
+                                :type ("QLineEdit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1227 1249])
+                            ("p_aDisplay" variable
+                               (:pointer 1
+                                :type ("QLineEdit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1254 1276])
+                            ("mainLayout" variable
+                               (:pointer 1
+                                :type ("QHBoxLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1282 1306])
+                            ("closeButton" variable
+                               (:pointer 1
+                                :type ("QPushButton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1311 1336])
+                            ("m_RobotThread" variable (:type ("RobotThread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1342 1368]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [329 1371]))                  
+                :type "namespace")
+                nil [285 1398]))          
+      :file "ControlWindow.h"
+      :pointmax 1422
+      :fsize 1421
+      :lastmodtime '(21959 52809 0 0)
+      :unmatched-syntax '((symbol 649 . 655) (symbol 622 . 628) (symbol 596 . 602) (symbol 566 . 572) (symbol 537 . 543) (symbol 459 . 465) (symbol 372 . 380))
+      :lexical-table 
+        '(("PI" . ((number "3.14159265359" 314 . 327)))
+          ("CONTROL_WINDOW_H")
+          )
+)
+    (semanticdb-table "RobotThread.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RobotThread.h" include nil nil [1 25])
+            ("RobotThread" function
+               (:constructor-flag t
+                :parent "RobotThread"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [52 61])
+                    ("pArgv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [62 75])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76 95]))                  
+                :type ("RobotThread" type (:type "class") nil nil))
+                nil [27 215])
+            ("RobotThread" function
+               (:destructor-flag t
+                :parent "RobotThread"
+                :type "void")
+                nil [217 375])
+            ("init" function
+               (:parent "RobotThread"
+                :type "bool")
+                nil [393 956])
+            ("poseCallback" function
+               (:parent "RobotThread"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("nav_msgs::Odometry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1008 1039]))                  
+                :type "void")
+                nil [977 1306])
+            ("run" function
+               (:parent "RobotThread"
+                :type "void")
+                nil [1357 1793])
+            ("SetSpeed" function
+               (:parent "RobotThread"
+                :arguments 
+                  ( ("speed" variable (:type "double") (reparse-symbol arg-sub-list) [1822 1835])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [1836 1849]))                  
+                :type "void")
+                nil [1795 1993])
+            ("getXSpeed" function
+               (:parent "RobotThread"
+                :type "double")
+                nil [2024 2074])
+            ("getASpeed" function
+               (:parent "RobotThread"
+                :type "double")
+                nil [2075 2125])
+            ("getXPos" function
+               (:parent "RobotThread"
+                :type "double")
+                nil [2127 2174])
+            ("getYPos" function
+               (:parent "RobotThread"
+                :type "double")
+                nil [2175 2222])
+            ("getAPos" function
+               (:parent "RobotThread"
+                :type "double")
+                nil [2223 2270]))          
+      :file "RobotThread.cpp"
+      :pointmax 2272
+      :fsize 2271
+      :lastmodtime '(21959 52809 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ControlWindow.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ControlWindow.h" include nil nil [1 27])
+            ("server" type
+               (:members 
+                  ( ("ControlWindow" function
+                       (:constructor-flag t
+                        :parent "ControlWindow"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76 85])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [86 98])
+                            ("parent" variable
+                               (:pointer 1
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [99 115]))                          
+                        :type ("ControlWindow" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [47 4055])
+                    ("goForward" function
+                       (:parent "ControlWindow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4074 4139])
+                    ("goBackward" function
+                       (:parent "ControlWindow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4140 4207])
+                    ("goRight" function
+                       (:parent "ControlWindow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4208 4276])
+                    ("goLeft" function
+                       (:parent "ControlWindow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4277 4343])
+                    ("halt" function
+                       (:parent "ControlWindow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4344 4403])
+                    ("updatePoseDisplay" function
+                       (:parent "ControlWindow"
+                        :arguments 
+                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [4443 4452])
+                            ("y" variable (:type "double") (reparse-symbol arg-sub-list) [4453 4462])
+                            ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [4463 4476]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4405 4677]))                  
+                :type "namespace")
+                nil [29 4700]))          
+      :file "ControlWindow.cpp"
+      :pointmax 4717
+      :fsize 4716
+      :lastmodtime '(21959 52809 0 0)
+      :unmatched-syntax nil))
+  :file "!home!gazebo-cf!work!ros-qt-controller-master!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
