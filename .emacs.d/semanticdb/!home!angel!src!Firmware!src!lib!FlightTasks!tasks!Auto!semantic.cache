@@ -1,0 +1,269 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTask.hpp" include nil nil [1835 1860])
+            ("uORB/topics/position_setpoint_triplet.h" include (:system-flag t) nil [1861 1911])
+            ("uORB/topics/position_setpoint.h" include (:system-flag t) nil [1912 1954])
+            ("uORB/topics/home_position.h" include (:system-flag t) nil [1955 1993])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [1994 2033])
+            ("lib/ecl/geo/geo.h" include (:system-flag t) nil [2034 2062])
+            ("ObstacleAvoidance.hpp" include (:system-flag t) nil [2063 2095])
+            ("State" type (:type "class") nil [2841 3133])
+            ("FlightTaskAuto" type
+               (:superclasses 
+                  ( ("FlightTask" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3178 3185])
+                    ("FlightTaskAuto" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FlightTaskAuto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3187 3204])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3313 3322])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3340 3349])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3375 3384])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3408 3417])
+                    ("protected" label nil (reparse-symbol classsubparts) [3625 3635])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3667 3676])
+                    ("_getTargetVelocityXY" function
+                       (:prototype-flag t
+                        :type ("matrix::Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3678 3718])
+                    ("_updateInternalWaypoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3791 3823])
+                    ("_compute_heading_from_2D_vector" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("heading" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3977 3992])
+                            ("v" variable (:type ("matrix::Vector2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3993 4012]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3940 4013])
+                    ("_prev_prev_wp" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4062 4095])
+                    ("_prev_wp" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4204 4232])
+                    ("_target" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4353 4380])
+                    ("_next_wp" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4421 4449])
+                    ("_mc_cruise_speed" variable (:type "float") (reparse-symbol classsubparts) [4562 4591])
+                    ("_type" variable (:type ("WaypointType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4669 4708])
+                    ("_sub_home_position" variable
+                       (:pointer 1
+                        :type ("uORB::SubscriptionPollable" type
+                             (:template-specifier 
+                                ( ("home_position_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4750 4823])
+                    ("_current_state" variable (:type ("State" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4826 4860])
+                    ("_target_acceptance_radius" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [4862 4901])
+                    ("landing_gear_s::GEAR_KEEP" variable (:type "int") (reparse-symbol classsubparts) [4964 4990])
+                    ("_yaw_sp_prev" variable
+                       (:default-value "NAN"
+                        :type "float")
+                        (reparse-symbol classsubparts) [4993 5018])
+                    ("_obstacle_avoidance" variable (:type ("ObstacleAvoidance" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5021 5059])
+                    ("DEFINE_PARAMETERS_CUSTOM_PARENT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("FlightTask" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5175 5186])
+                            ("" variable (:type ("_param_mpc_xy_cruise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5254])
+                            ("" variable (:type ("_param_mpc_cruise_90" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5301 5322])
+                            ("" variable (:type ("_param_nav_mc_alt_rad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5432 5454])
+                            ("" variable (:type ("_param_mpc_yaw_mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5558 5578])
+                            ("" variable (:type ("_param_com_obs_avoid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5659 5680])
+                            ("" variable (:type ("_param_mpc_yawrauto_max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5759 5795]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5143 5796])
+                    ("private" label nil (reparse-symbol classsubparts) [5798 5806])
+                    ("_lock_position_xy" variable (:type ("matrix::Vector2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5808 5853])
+                    ("_yaw_lock" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5932 5955])
+                    ("_sub_triplet_setpoint" variable
+                       (:pointer 1
+                        :type ("uORB::SubscriptionPollable" type
+                             (:template-specifier 
+                                ( ("position_setpoint_triplet_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6018 6106])
+                    ("_sub_vehicle_status" variable
+                       (:pointer 1
+                        :type ("uORB::SubscriptionPollable" type
+                             (:template-specifier 
+                                ( ("vehicle_status_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6108 6183])
+                    ("_triplet_target" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6186 6220])
+                    ("_triplet_prev_wp" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6341 6376])
+                    ("_triplet_next_wp" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6498 6533])
+                    ("_closest_pt" variable (:type ("matrix::Vector2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6651 6680])
+                    ("_reference_position" variable (:type ("map_projection_reference_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6759 6808])
+                    ("_reference_altitude" variable
+                       (:default-value "NAN"
+                        :type "float")
+                        (reparse-symbol classsubparts) [6879 6911])
+                    ("_time_stamp_reference" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6951 6989])
+                    ("_ext_yaw_handler" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("WeatherVane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7047 7089])
+                    ("_limitYawRate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7209 7230])
+                    ("_evaluateTriplets" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7287 7312])
+                    ("_isFinite" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7363 7393]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7348 7394])
+                    ("_evaluateGlobalReference" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7448 7480])
+                    ("_getCurrentState" function
+                       (:prototype-flag t
+                        :type ("State" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7530 7555])
+                    ("_set_heading_from_mode" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7654 7684]))                  
+                :type "class")
+                nil [3135 7714]))          
+      :file "FlightTaskAuto.hpp"
+      :pointmax 7715
+      :fsize 8102
+      :lastmodtime '(23901 2075 315521 249000)
+      :unmatched-syntax '((semantic-list 5715 . 5758) (semantic-list 5620 . 5658) (semantic-list 5520 . 5557) (semantic-list 5385 . 5426) (semantic-list 5260 . 5300) (semantic-list 5192 . 5232) (punctuation 4962 . 4963) (symbol 4948 . 4961) (INT 4944 . 4947) (semantic-list 3664 . 3666) (symbol 3642 . 3664) (VOID 3637 . 3641) (semantic-list 3586 . 3623) (symbol 3577 . 3585) (semantic-list 3546 . 3576) (symbol 3533 . 3546) (VOID 3528 . 3532) (semantic-list 3405 . 3407) (symbol 3391 . 3405) (BOOL 3386 . 3390) (semantic-list 3372 . 3374) (symbol 3356 . 3372) (BOOL 3351 . 3355) (semantic-list 3337 . 3339) (symbol 3329 . 3337) (BOOL 3324 . 3328) (semantic-list 3273 . 3312) (symbol 3250 . 3273) (BOOL 3245 . 3249) (punctuation 3242 . 3243) (DEFAULT 3235 . 3242) (punctuation 3233 . 3234) (semantic-list 3230 . 3232) (symbol 3216 . 3230) (punctuation 3215 . 3216) (VIRTUAL 3207 . 3214) (symbol 3043 . 3047) (punctuation 2996 . 2997) (symbol 2980 . 2996) (punctuation 2938 . 2939) (symbol 2925 . 2938) (punctuation 2864 . 2865) (symbol 2856 . 2864) (ENUM 2836 . 2840) (punctuation 2833 . 2834) (semantic-list 2290 . 2833) (INT 2286 . 2289) (punctuation 2284 . 2285) (symbol 2271 . 2283) (CLASS 2265 . 2270) (ENUM 2260 . 2264) (symbol 1829 . 1833) (symbol 1822 . 1828) (punctuation 1821 . 1822)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAuto.hpp" include nil nil [1770 1799])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1800 1828])
+            ("float.h" include (:system-flag t) nil [1829 1847])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1849 1872])
+            ("SIGMA_NORM" variable
+               (:default-value "0.001f"
+                :type "float")
+                nil [1891 1917])
+            ("FlightTaskAuto" function
+               (:constructor-flag t
+                :parent "FlightTaskAuto"
+                :type ("FlightTaskAuto" type (:type "class") nil nil))
+                nil [1919 1985])
+            ("initializeSubscriptions" function
+               (:parent "FlightTaskAuto"
+                :arguments 
+                  ( ("subscription_array" variable
+                       (:reference 1
+                        :type ("SubscriptionArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2032 2070]))                  
+                :type "bool")
+                nil [1987 2683])
+            ("activate" function
+               (:parent "FlightTaskAuto"
+                :arguments 
+                  ( ("last_setpoint" variable (:type ("vehicle_local_position_setpoint_s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2715 2763]))                  
+                :type "bool")
+                nil [2685 2988])
+            ("updateInitialize" function
+               (:parent "FlightTaskAuto"
+                :type "bool")
+                nil [2990 3455])
+            ("updateFinalize" function
+               (:parent "FlightTaskAuto"
+                :type "bool")
+                nil [3457 3780])
+            ("_limitYawRate" function
+               (:parent "FlightTaskAuto"
+                :type "void")
+                nil [3782 4837])
+            ("_evaluateTriplets" function
+               (:parent "FlightTaskAuto"
+                :type "bool")
+                nil [4839 11704])
+            ("_set_heading_from_mode" function
+               (:parent "FlightTaskAuto"
+                :type "void")
+                nil [11706 13051])
+            ("_isFinite" function
+               (:parent "FlightTaskAuto"
+                :arguments 
+                  ( ("sp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13084 13114]))                  
+                :type "bool")
+                nil [13053 13198])
+            ("_evaluateGlobalReference" function
+               (:parent "FlightTaskAuto"
+                :type "bool")
+                nil [13200 14563])
+            ("_setDefaultConstraints" function
+               (:parent "FlightTaskAuto"
+                :type "void")
+                nil [14565 14820])
+            ("_getTargetVelocityXY" function
+               (:parent "FlightTaskAuto"
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [14822 15272])
+            ("_getCurrentState" function
+               (:parent "FlightTaskAuto"
+                :type ("State" type (:type "class") nil nil))
+                nil [15274 16359])
+            ("_updateInternalWaypoints" function
+               (:parent "FlightTaskAuto"
+                :type "void")
+                nil [16361 17409])
+            ("_compute_heading_from_2D_vector" function
+               (:parent "FlightTaskAuto"
+                :arguments 
+                  ( ("heading" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [17464 17479])
+                    ("v" variable (:type ("Vector2f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17480 17491]))                  
+                :type "bool")
+                nil [17411 17932]))          
+      :file "FlightTaskAuto.cpp"
+      :pointmax 17933
+      :fsize 17932
+      :lastmodtime '(23901 16266 975098 227000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!Auto!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

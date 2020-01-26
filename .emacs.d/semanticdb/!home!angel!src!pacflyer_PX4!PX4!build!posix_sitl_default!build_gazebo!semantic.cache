@@ -1,0 +1,272 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [97 141])
+            ("OutputPwm.pb.h" include nil nil [142 167])
+            ("algorithm" include (:system-flag t) nil [169 189])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [191 232])
+            ("google/protobuf/stubs/port.h" include (:system-flag t) nil [233 272])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [273 312])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [313 357])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [358 407])
+            ("google/protobuf/descriptor.h" include (:system-flag t) nil [408 447])
+            ("google/protobuf/generated_message_reflection.h" include (:system-flag t) nil [448 505])
+            ("google/protobuf/reflection_ops.h" include (:system-flag t) nil [506 549])
+            ("google/protobuf/wire_format.h" include (:system-flag t) nil [550 590])
+            ("mav_msgs" type
+               (:members 
+                  ( ("msgs" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("OutputPwm_descriptor_" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("google::protobuf::Descriptor" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [690 749])
+                                    ("OutputPwm_reflection_" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("google::protobuf::internal::GeneratedMessageReflection" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [758 845]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [669 848])
+                            ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [910 932])
+                            ("protobuf_AssignDesc_OutputPwm_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [933 1882])
+                            ("unnamed" type
+                               (:members 
+                                  ( ("GOOGLE_PROTOBUF_DECLARE_ONCE" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("protobuf_AssignDescriptors_once_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1926 1959]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1897 1960])
+                                    ("protobuf_AssignDescriptorsOnce" function
+                                       (:typemodifiers ("inline")
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1961 2139])
+                                    ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [2191 2213])
+                                    ("protobuf_RegisterTypes" function
+                                       (:arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2250 2263]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2214 2437]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1884 2440])
+                            ("protobuf_ShutdownFile_OutputPwm_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [2456 2577])
+                            ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [2621 2643])
+                            ("protobuf_AddDesc_OutputPwm_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [2644 3374])
+                            ("static_descriptor_initializer_OutputPwm_2eproto_" variable (:type ("StaticDescriptorInitializer_OutputPwm_2eproto" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3446 3650])
+                            ("StaticDescriptorInitializer_OutputPwm_2eproto" type
+                               (:members 
+                                  ( ("StaticDescriptorInitializer_OutputPwm_2eproto" function
+                                       (:constructor-flag t
+                                        :type ("StaticDescriptorInitializer_OutputPwm_2eproto" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3503 3598]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3446 3650])
+                            ("OutputPwm::kMotorPwmFieldNumber" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3767 3809])
+                            ("OutputPwm::kFlapPwmFieldNumber" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3810 3851])
+                            ("Message" function
+                               (:constructor-flag t
+                                :parent "google::protobuf"
+                                :type ("protobuf" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3932 4073])
+                            ("InitAsDefaultInstance" function
+                               (:parent "OutputPwm"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4075 4118])
+                            ("Message" function
+                               (:constructor-flag t
+                                :parent "google::protobuf"
+                                :type ("protobuf" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4170 4339])
+                            ("SharedCtor" function
+                               (:parent "OutputPwm"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4341 4441])
+                            ("OutputPwm" function
+                               (:destructor-flag t
+                                :parent "OutputPwm"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4443 4552])
+                            ("SharedDtor" function
+                               (:parent "OutputPwm"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4554 4625])
+                            ("SetCachedSize" function
+                               (:methodconst-flag t
+                                :parent "OutputPwm"
+                                :arguments 
+                                  ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [4657 4666]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4627 4780])
+                            ("descriptor" function
+                               (:pointer 1
+                                :parent "OutputPwm"
+                                :type ("google::protobuf::Descriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4789 4914])
+                            ("default_instance" function
+                               (:parent "OutputPwm"
+                                :constant-flag t
+                                :type ("OutputPwm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4916 5066])
+                            ("OutputPwm::default_instance_" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("OutputPwm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5068 5115])
+                            ("New" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :parent "OutputPwm"
+                                :arguments 
+                                  ( ("arena" variable
+                                       (:pointer 1
+                                        :type ("google::protobuf::Arena" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5145 5176]))                                  
+                                :type ("OutputPwm" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5117 5276])
+                            ("Clear" function
+                               (:parent "OutputPwm"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5278 5562])
+                            ("MergePartialFromCodedStream" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("input" variable
+                                       (:pointer 1
+                                        :type ("google::protobuf::io::CodedInputStream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5615 5661]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [5564 8154])
+                            ("SerializeWithCachedSizes" function
+                               (:methodconst-flag t
+                                :parent "OutputPwm"
+                                :arguments 
+                                  ( ("output" variable
+                                       (:pointer 1
+                                        :type ("google::protobuf::io::CodedOutputStream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8204 8252]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8156 9461])
+                            ("InternalSerializeWithCachedSizesToArray" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :parent "OutputPwm"
+                                :arguments 
+                                  ( ("deterministic" variable (:type "bool") (reparse-symbol arg-sub-list) [9546 9565])
+                                    ("target" variable
+                                       (:pointer 1
+                                        :type ("google::protobuf::uint8" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9568 9600]))                                  
+                                :type ("google::protobuf::uint8" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9465 11094])
+                            ("ByteSize" function
+                               (:methodconst-flag t
+                                :parent "OutputPwm"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11096 12367])
+                            ("MergeFrom" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :type ("google::protobuf::Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12403 12435]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [12369 13073])
+                            ("MergeFrom" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OutputPwm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13101 13123]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13075 13534])
+                            ("CopyFrom" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :type ("google::protobuf::Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13569 13601]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13536 13745])
+                            ("CopyFrom" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OutputPwm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13772 13794]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13747 13941])
+                            ("IsInitialized" function
+                               (:methodconst-flag t
+                                :parent "OutputPwm"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [13943 14000])
+                            ("Swap" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("other" variable
+                                       (:pointer 1
+                                        :type ("OutputPwm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14023 14040]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14002 14096])
+                            ("InternalSwap" function
+                               (:parent "OutputPwm"
+                                :arguments 
+                                  ( ("other" variable
+                                       (:pointer 1
+                                        :type ("OutputPwm" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14126 14143]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14097 14402])
+                            ("GetMetadata" function
+                               (:methodconst-flag t
+                                :parent "OutputPwm"
+                                :type ("google::protobuf::Metadata" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14406 14657]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [651 16812]))                  
+                :type "namespace")
+                nil [630 16833]))          
+      :file "OutputPwm.pb.cc"
+      :pointmax 16900
+      :fsize 16899
+      :lastmodtime '(23688 53903 166732 526000)
+      :unmatched-syntax '((punctuation 14405 . 14406) (punctuation 14404 . 14405) (punctuation 13568 . 13569) (punctuation 13567 . 13568) (CONST 13561 . 13566) (punctuation 12402 . 12403) (punctuation 12401 . 12402) (CONST 12395 . 12400) (punctuation 9567 . 9568) (punctuation 9566 . 9567) (punctuation 9464 . 9465) (punctuation 9463 . 9464) (punctuation 8203 . 8204) (punctuation 8202 . 8203) (punctuation 5614 . 5615) (punctuation 5613 . 5614) (punctuation 5144 . 5145) (punctuation 5143 . 5144) (punctuation 4788 . 4789) (punctuation 4787 . 4788) (CONST 4781 . 4786) (punctuation 4169 . 4170) (punctuation 4168 . 4169) (punctuation 4166 . 4167) (semantic-list 4140 . 4163) (symbol 4131 . 4140) (punctuation 4130 . 4131) (punctuation 4129 . 4130) (symbol 4120 . 4129) (punctuation 3931 . 3932) (punctuation 3930 . 3931) (punctuation 3928 . 3929) (semantic-list 3923 . 3925) (symbol 3914 . 3923) (punctuation 3913 . 3914) (punctuation 3912 . 3913) (symbol 3903 . 3912) (semantic-list 2618 . 2620) (symbol 2584 . 2618) (VOID 2579 . 2583) (punctuation 2249 . 2250) (punctuation 2248 . 2249) (CONST 2242 . 2247) (semantic-list 2168 . 2190) (symbol 2146 . 2168) (punctuation 2176 . 2177) (punctuation 2175 . 2176) (CONST 2169 . 2174) (VOID 2141 . 2145) (punctuation 2176 . 2177) (punctuation 2175 . 2176) (CONST 2169 . 2174) (semantic-list 907 . 909) (symbol 870 . 907) (VOID 865 . 869) (punctuation 757 . 758) (punctuation 756 . 757) (CONST 750 . 755) (punctuation 689 . 690) (punctuation 688 . 689) (CONST 682 . 687))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "OutputPwm.pb.h"
+      :fsize 7697
+      :lastmodtime '(23688 53903 166732 526000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default!build_gazebo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

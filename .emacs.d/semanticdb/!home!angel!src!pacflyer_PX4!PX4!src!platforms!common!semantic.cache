@@ -1,0 +1,115 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("board_config.h" include (:system-flag t) nil [1820 1845])
+            ("px4_log.h" include (:system-flag t) nil [1846 1866])
+            ("px4_workqueue.h" include (:system-flag t) nil [1867 1893])
+            ("px4_shutdown.h" include (:system-flag t) nil [1894 1919])
+            ("px4_tasks.h" include (:system-flag t) nil [1920 1942])
+            ("stdint.h" include (:system-flag t) nil [1943 1962])
+            ("errno.h" include (:system-flag t) nil [1963 1981])
+            ("pthread.h" include (:system-flag t) nil [1982 2002])
+            ("shutdown_mutex" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [2004 2071])
+            ("shutdown_lock_counter" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2133 2174])
+            ("px4_shutdown_lock" function (:type "int") nil [2176 2361])
+            ("px4_shutdown_unlock" function (:type "int") nil [2363 2666])
+            ("shutdown_work" variable
+               (:typemodifiers ("static")
+                :default-value "{}"
+                :type ("work_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3321 3361])
+            ("shutdown_counter" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3362 3399])
+            ("SHUTDOWN_ARG_IN_PROGRESS" variable (:constant-flag t) nil [3468 3492])
+            ("SHUTDOWN_ARG_REBOOT" variable (:constant-flag t) nil [3508 3527])
+            ("SHUTDOWN_ARG_TO_BOOTLOADER" variable (:constant-flag t) nil [3543 3569])
+            ("shutdown_args" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3577 3610])
+            ("max_shutdown_hooks" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [3613 3653])
+            ("shutdown_hooks" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{}"
+                :type ("shutdown_hook_t" type (:type "class") nil nil))
+                nil [3654 3717])
+            ("shutdown_timeout_ms" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "5000"
+                :type "int")
+                nil [3720 3764])
+            ("shutdown_worker" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3937 3947]))                  
+                :type "void")
+                nil [3909 3948])
+            ("px4_register_shutdown_hook" function
+               (:arguments 
+                  ( ("hook" variable (:type ("shutdown_hook_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3982 4003]))                  
+                :type "int")
+                nil [3951 4271])
+            ("px4_unregister_shutdown_hook" function
+               (:arguments 
+                  ( ("hook" variable (:type ("shutdown_hook_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4306 4327]))                  
+                :type "int")
+                nil [4273 4605])
+            ("shutdown_worker" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4630 4640]))                  
+                :type "void")
+                nil [4609 5775])
+            ("px4_shutdown_request" function
+               (:arguments 
+                  ( ("reboot" variable (:type "bool") (reparse-symbol arg-sub-list) [5802 5814])
+                    ("to_bootloader" variable (:type "bool") (reparse-symbol arg-sub-list) [5815 5834]))                  
+                :type "int")
+                nil [5777 6424]))          
+      :file "shutdown.cpp"
+      :pointmax 6513
+      :fsize 6512
+      :lastmodtime '(23898 29476 647733 251000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SHUTDOWN_ARG_IN_PROGRESS" . ((semantic-list "(1<<0)" 3493 . 3499)))
+          ("SHUTDOWN_ARG_TO_BOOTLOADER" . ((semantic-list "(1<<2)" 3570 . 3576)))
+          ("SHUTDOWN_ARG_REBOOT" . ((semantic-list "(1<<1)" 3528 . 3534)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!platforms!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

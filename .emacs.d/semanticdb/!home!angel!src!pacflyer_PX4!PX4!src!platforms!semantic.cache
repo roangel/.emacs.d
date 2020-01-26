@@ -1,0 +1,908 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_PX4_LOG_LEVEL_ALWAYS" variable (:constant-flag t) nil [1841 1862])
+            ("_PX4_LOG_LEVEL_DEBUG" variable (:constant-flag t) nil [1874 1894])
+            ("_PX4_LOG_LEVEL_INFO" variable (:constant-flag t) nil [1906 1925])
+            ("_PX4_LOG_LEVEL_WARN" variable (:constant-flag t) nil [1963 1982])
+            ("_PX4_LOG_LEVEL_ERROR" variable (:constant-flag t) nil [1994 2014])
+            ("_PX4_LOG_LEVEL_PANIC" variable (:constant-flag t) nil [2026 2046])
+            ("do_nothing" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [2124 2134])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2135 2139]))                  
+                :type "void")
+                nil [2094 2157])
+            ("px4_log_initialize" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2316 2321]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2285 2322])
+            ("__px4_log_omit" variable (:constant-flag t) nil [2548 2562])
+            ("inttypes.h" include (:system-flag t) nil [6150 6171])
+            ("stdint.h" include (:system-flag t) nil [6172 6191])
+            ("sys/cdefs.h" include (:system-flag t) nil [6192 6214])
+            ("stdio.h" include (:system-flag t) nil [6215 6233])
+            ("stdarg.h" include (:system-flag t) nil [6234 6253])
+            ("px4_defines.h" include (:system-flag t) nil [6255 6279])
+            ("px4_log_modulename" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [6523 6533])
+                    ("moduleName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6534 6557])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6558 6574])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [6575 6579]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6499 6580])
+            ("px4_backtrace" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6483 6488]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6457 6489])
+            ("__px4_log_level_color" variable
+               (:type "char"
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [6380 6447])
+            ("__px4_log_level_str" variable
+               (:type "char"
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [6305 6370])
+            ("PX4_BACKTRACE" variable (:constant-flag t) nil [6603 6616])
+            ("__px4__log_printcond" variable (:constant-flag t) nil [7171 7191])
+            ("__px4__log_printline" variable (:constant-flag t) nil [7245 7265])
+            ("MODULE_NAME" variable (:constant-flag t) nil [7331 7342])
+            ("__px4__log_timestamp_fmt" variable (:constant-flag t) nil [7369 7393])
+            ("__px4__log_timestamp_arg" variable (:constant-flag t) nil [7420 7444])
+            ("__px4__log_level_fmt" variable (:constant-flag t) nil [7475 7495])
+            ("__px4__log_level_arg" variable (:constant-flag t) nil [7513 7533])
+            ("__px4__log_thread_fmt" variable (:constant-flag t) nil [7577 7598])
+            ("__px4__log_thread_arg" variable (:constant-flag t) nil [7615 7636])
+            ("__px4__log_modulename_fmt" variable (:constant-flag t) nil [7676 7701])
+            ("__px4__log_modulename_pfmt" variable (:constant-flag t) nil [7719 7745])
+            ("__px4__log_gpstime_pfmt" variable (:constant-flag t) nil [7762 7785])
+            ("__px4__log_modulename_arg" variable (:constant-flag t) nil [7814 7839])
+            ("__px4__log_file_and_line_fmt" variable (:constant-flag t) nil [7870 7898])
+            ("__px4__log_file_and_line_arg" variable (:constant-flag t) nil [7929 7957])
+            ("__px4__log_end_fmt" variable (:constant-flag t) nil [7988 8006])
+            ("PX4_ANSI_COLOR_RED" variable (:constant-flag t) nil [8023 8041])
+            ("PX4_ANSI_COLOR_GREEN" variable (:constant-flag t) nil [8065 8085])
+            ("PX4_ANSI_COLOR_YELLOW" variable (:constant-flag t) nil [8107 8128])
+            ("PX4_ANSI_COLOR_BLUE" variable (:constant-flag t) nil [8149 8168])
+            ("PX4_ANSI_COLOR_MAGENTA" variable (:constant-flag t) nil [8191 8213])
+            ("PX4_ANSI_COLOR_CYAN" variable (:constant-flag t) nil [8233 8252])
+            ("PX4_ANSI_COLOR_GRAY" variable (:constant-flag t) nil [8275 8294])
+            ("PX4_ANSI_COLOR_RESET" variable (:constant-flag t) nil [8317 8337])
+            ("PX4_LOG_COLOR_START" variable (:constant-flag t) nil [8951 8970])
+            ("PX4_LOG_COLOR_MODULE" variable (:constant-flag t) nil [8979 8999])
+            ("PX4_LOG_COLOR_MESSAGE" variable (:constant-flag t) nil [9008 9029])
+            ("PX4_LOG_COLOR_END" variable (:constant-flag t) nil [9038 9055])
+            ("__px4_log_named_cond" variable (:constant-flag t) nil [9696 9716])
+            ("__px4_log" variable (:constant-flag t) nil [10180 10189])
+            ("__px4_log_modulename" variable (:constant-flag t) nil [10719 10739])
+            ("__px4_log_timestamp" variable (:constant-flag t) nil [11196 11215])
+            ("__px4_log_timestamp_thread" variable (:constant-flag t) nil [11856 11882])
+            ("__px4_log_file_and_line" variable (:constant-flag t) nil [12573 12596])
+            ("__px4_log_timestamp_file_and_line" variable (:constant-flag t) nil [13343 13376])
+            ("__px4_log_thread_file_and_line" variable (:constant-flag t) nil [14112 14142])
+            ("__px4_log_timestamp_thread_file_and_line" variable (:constant-flag t) nil [14910 14950])
+            ("PX4_LOG" variable (:constant-flag t) nil [15810 15817])
+            ("PX4_INFO" variable (:constant-flag t) nil [15890 15898])
+            ("PX4_WINGTRA_INFO" variable (:constant-flag t) nil [16030 16046])
+            ("PX4_PANIC" variable (:constant-flag t) nil [18234 18243])
+            ("PX4_ERR" variable (:constant-flag t) nil [18325 18332])
+            ("PX4_WARN" variable (:constant-flag t) nil [18414 18422])
+            ("PX4_DEBUG" variable (:constant-flag t) nil [18505 18514])
+            ("PX4_LOG_NAMED" variable (:constant-flag t) nil [18599 18612])
+            ("PX4_LOG_NAMED_COND" variable (:constant-flag t) nil [18691 18709]))          
+      :file "px4_log.h"
+      :pointmax 18792
+      :fsize 18791
+      :lastmodtime '(23798 26597 907347 253000)
+      :unmatched-syntax '((symbol 6490 . 6498) (symbol 6448 . 6456) (symbol 6371 . 6379) (symbol 6296 . 6304) (symbol 2276 . 2284) (symbol 1826 . 1830) (symbol 1819 . 1825) (punctuation 1818 . 1819))
+      :lexical-table 
+        '(("__px4__log_printcond" (spp-arg-list ("cond" "...") 7191 . 7202) . 
+              ((IF "if" 7207 . 7209) (semantic-list "(cond)" 7210 . 7216) (symbol "printf" 7217 . 7223) (semantic-list "(__VA_ARGS__)" 7223 . 7236)))
+          ("__px4_log" (spp-arg-list ("level" "FMT" "...") 10189 . 10206) . ((symbol "__px4__log_printline" 10210 . 10230) (semantic-list "(level,\\
+			     __px4__log_level_fmt \\
+			     FMT\\
+			     __px4__log_end_fmt \\
+			     __px4__log_level_arg(level), ##__VA_ARGS__\\
+			    )" 10230 . 10372)))
+          ("PX4_INFO" (spp-arg-list ("FMT" "...") 15898 . 15908) . ((symbol "__px4_log_modulename" 15910 . 15930) (semantic-list "(_PX4_LOG_LEVEL_ALWAYS, FMT, ##__VA_ARGS__)" 15930 . 15973)))
+          ("__px4_log_omit" (spp-arg-list ("level" "FMT" "...") 2562 . 2579) . ((symbol "do_nothing" 2582 . 2592) (semantic-list "(level, ##__VA_ARGS__)" 2592 . 2614)))
+          ("__px4_log_modulename" (spp-arg-list ("level" "fmt" "...") 10739 . 10756) . 
+              ((DO "do" 10760 . 10762) (semantic-list "{ \\
+		px4_log_modulename(level, MODULE_NAME, fmt, ##__VA_ARGS__); \\
+	}" 10763 . 10833) (WHILE "while" 10834 . 10839) (semantic-list "(0)" 10839 . 10842)))
+          ("_PX4_LOG_LEVEL_DEBUG" . ((number "1" 1896 . 1897)))
+          ("_PX4_LOG_LEVEL_INFO" . ((number "2" 1927 . 1928)))
+          ("MODULE_NAME" . ((string "\"Unknown\"" 7343 . 7352)))
+          ("__px4__log_modulename_arg" . 
+              ((punctuation "," 7840 . 7841) (string "\"[\"" 7841 . 7844) (symbol "MODULE_NAME" 7845 . 7856) (string "\"]\"" 7857 . 7860)))
+          ("PX4_ANSI_COLOR_GREEN" . ((string "\"\\x1b[32m\"" 8088 . 8098)))
+          ("PX4_ANSI_COLOR_GRAY" . ((string "\"\\x1B[37m\"" 8298 . 8308)))
+          ("__px4_log_timestamp_thread_file_and_line" (spp-arg-list ("level" "FMT" "...") 14950 . 14967) . ((symbol "__px4__log_printline" 14971 . 14991) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_timestamp_fmt\\
+			     __px4__log_thread_fmt\\
+			     FMT\\
+			     __px4__log_file_and_line_fmt\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_timestamp_arg\\
+			     __px4__log_thread_arg\\
+			     , ##__VA_ARGS__\\
+			     __px4__log_file_and_line_arg\\
+			    )" 14991 . 15347)))
+          ("__px4__log_thread_arg" . 
+              ((punctuation "," 7638 . 7639) (semantic-list "(unsigned int)" 7639 . 7653) (symbol "pthread_self" 7653 . 7665) (semantic-list "()" 7665 . 7667)))
+          ("__px4_log_file_and_line" (spp-arg-list ("level" "FMT" "...") 12596 . 12613) . ((symbol "__px4__log_printline" 12617 . 12637) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_timestamp_fmt\\
+			     FMT\\
+			     __px4__log_file_and_line_fmt\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_timestamp_arg\\
+			     , ##__VA_ARGS__\\
+			     __px4__log_file_and_line_arg\\
+			    )" 12637 . 12931)))
+          ("PX4_DEBUG" (spp-arg-list ("FMT" "...") 18514 . 18524) . ((symbol "__px4_log_omit" 18526 . 18540) (semantic-list "(_PX4_LOG_LEVEL_DEBUG, FMT, ##__VA_ARGS__)" 18540 . 18582)))
+          ("__px4__log_level_arg" (spp-arg-list ("level") 7533 . 7540) . 
+              ((punctuation "," 7541 . 7542) (symbol "__px4_log_level_str" 7542 . 7561) (semantic-list "[level]" 7561 . 7568)))
+          ("PX4_ANSI_COLOR_YELLOW" . ((string "\"\\x1b[33m\"" 8130 . 8140)))
+          ("__px4_log_timestamp_thread" (spp-arg-list ("level" "FMT" "...") 11882 . 11899) . ((symbol "__px4__log_printline" 11903 . 11923) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_timestamp_fmt\\
+			     __px4__log_thread_fmt\\
+			     FMT\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_timestamp_arg\\
+			     __px4__log_thread_arg\\
+			     , ##__VA_ARGS__\\
+			    )" 11923 . 12203)))
+          ("PX4_WINGTRA_INFO" (spp-arg-list ("FMT" "...") 16046 . 16056) . ((symbol "__px4_log_modulename" 16058 . 16078) (semantic-list "(_PX4_LOG_LEVEL_INFO, FMT, ##__VA_ARGS__)" 16078 . 16119)))
+          ("__px4_log_named_cond" (spp-arg-list ("name" "cond" "FMT" "...") 9716 . 9738) . ((symbol "__px4__log_printcond" 9742 . 9762) (semantic-list "(cond,\\
+			     \"%s \" \\
+			     FMT\\
+			     __px4__log_end_fmt \\
+			     ,name, ##__VA_ARGS__\\
+			    )" 9762 . 9866)))
+          ("PX4_ERR" (spp-arg-list ("FMT" "...") 18332 . 18342) . ((symbol "__px4_log_modulename" 18343 . 18363) (semantic-list "(_PX4_LOG_LEVEL_ERROR, FMT, ##__VA_ARGS__)" 18363 . 18405)))
+          ("PX4_LOG_NAMED_COND" (spp-arg-list ("name" "cond" "FMT" "...") 18709 . 18731) . ((symbol "__px4_log_named_cond" 18732 . 18752) (semantic-list "(name, cond, FMT, ##__VA_ARGS__)" 18752 . 18784)))
+          ("__px4__log_modulename_fmt" . ((string "\"%-10s \"" 7702 . 7710)))
+          ("PX4_ANSI_COLOR_RED" . ((string "\"\\x1b[31m\"" 8046 . 8056)))
+          ("PX4_LOG_COLOR_MESSAGE")
+          ("__px4__log_timestamp_arg" . 
+              ((punctuation "," 7446 . 7447) (symbol "hrt_absolute_time" 7447 . 7464) (semantic-list "()" 7464 . 7466)))
+          ("__px4__log_thread_fmt" . ((string "\"%#X \"" 7600 . 7606)))
+          ("__px4__log_file_and_line_arg" . 
+              ((punctuation "," 7959 . 7960) (symbol "__FILE__" 7961 . 7969) (punctuation "," 7969 . 7970) (symbol "__LINE__" 7971 . 7979)))
+          ("PX4_BACKTRACE" (spp-arg-list nil 6616 . 6618) . ((symbol "px4_backtrace" 6619 . 6632) (semantic-list "()" 6632 . 6634)))
+          ("__px4__log_printline" (spp-arg-list ("level" "...") 7265 . 7277) . ((symbol "printf" 7281 . 7287) (semantic-list "(__VA_ARGS__)" 7287 . 7300)))
+          ("__px4__log_level_fmt" . ((string "\"%-5s \"" 7497 . 7504)))
+          ("__px4__log_modulename_pfmt" . ((string "\"[%s] \"" 7746 . 7753)))
+          ("__px4__log_gpstime_pfmt" . ((string "\"%s: \"" 7787 . 7793)))
+          ("__px4__log_end_fmt" . ((string "\"\\n\"" 8009 . 8013)))
+          ("PX4_LOG_COLOR_START")
+          ("_PX4_LOG_LEVEL_ALWAYS" . ((number "0" 1864 . 1865)))
+          ("PX4_ANSI_COLOR_BLUE" . ((string "\"\\x1b[34m\"" 8172 . 8182)))
+          ("PX4_ANSI_COLOR_MAGENTA" . ((string "\"\\x1b[35m\"" 8214 . 8224)))
+          ("PX4_LOG_COLOR_MODULE")
+          ("PX4_LOG_COLOR_END")
+          ("__px4_log_timestamp_file_and_line" (spp-arg-list ("level" "FMT" "...") 13376 . 13393) . ((symbol "__px4__log_printline" 13397 . 13417) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_timestamp_fmt\\
+			     FMT\\
+			     __px4__log_file_and_line_fmt\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_timestamp_arg\\
+			     , ##__VA_ARGS__\\
+			     __px4__log_file_and_line_arg\\
+			    )" 13417 . 13711)))
+          ("PX4_LOG" (spp-arg-list ("FMT" "...") 15817 . 15827) . ((symbol "__px4_log" 15829 . 15838) (semantic-list "(_PX4_LOG_LEVEL_ALWAYS, FMT, ##__VA_ARGS__)" 15838 . 15881)))
+          ("__px4_log_thread_file_and_line" (spp-arg-list ("level" "FMT" "...") 14142 . 14159) . ((symbol "__px4__log_printline" 14163 . 14183) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_thread_fmt\\
+			     FMT\\
+			     __px4__log_file_and_line_fmt\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_thread_arg\\
+			     , ##__VA_ARGS__\\
+			     __px4__log_file_and_line_arg\\
+			    )" 14183 . 14471)))
+          ("PX4_WARN" (spp-arg-list ("FMT" "...") 18422 . 18432) . ((symbol "__px4_log_modulename" 18434 . 18454) (semantic-list "(_PX4_LOG_LEVEL_WARN,  FMT, ##__VA_ARGS__)" 18454 . 18496)))
+          ("_PX4_LOG_LEVEL_PANIC" . ((number "5" 2048 . 2049)))
+          ("__px4__log_timestamp_fmt" . 
+              ((string "\"%-10\"" 7394 . 7400) (symbol "PRIu64" 7401 . 7407) (string "\" \"" 7408 . 7411)))
+          ("__px4__log_file_and_line_fmt" . ((string "\" (file %s line %u)\"" 7900 . 7920)))
+          ("PX4_ANSI_COLOR_CYAN" . ((string "\"\\x1b[36m\"" 8256 . 8266)))
+          ("PX4_ANSI_COLOR_RESET" . ((string "\"\\x1b[0m\"" 8340 . 8349)))
+          ("__px4_log_timestamp" (spp-arg-list ("level" "FMT" "...") 11215 . 11232) . ((symbol "__px4__log_printline" 11236 . 11256) (semantic-list "(level,\\
+			     __px4__log_level_fmt\\
+			     __px4__log_timestamp_fmt\\
+			     FMT\\
+			     __px4__log_end_fmt\\
+			     __px4__log_level_arg(level)\\
+			     __px4__log_timestamp_arg\\
+			     , ##__VA_ARGS__\\
+			    )" 11256 . 11474)))
+          ("_PX4_LOG_LEVEL_WARN" . ((number "3" 1984 . 1985)))
+          ("_PX4_LOG_LEVEL_ERROR" . ((number "4" 2016 . 2017)))
+          ("PX4_PANIC" (spp-arg-list ("FMT" "...") 18243 . 18253) . ((symbol "__px4_log_modulename" 18254 . 18274) (semantic-list "(_PX4_LOG_LEVEL_PANIC, FMT, ##__VA_ARGS__)" 18274 . 18316)))
+          ("PX4_LOG_NAMED" (spp-arg-list ("name" "FMT" "...") 18612 . 18628) . ((symbol "__px4_log_named_cond" 18630 . 18650) (semantic-list "(name, true, FMT, ##__VA_ARGS__)" 18650 . 18682)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "px4_defines.h"
+      :fsize 8270
+      :lastmodtime '(23798 26597 907347 253000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [1839 1863])
+            ("px4_tasks.h" include (:system-flag t) nil [1864 1886])
+            ("stdint.h" include (:system-flag t) nil [1887 1906])
+            ("unistd.h" include (:system-flag t) nil [1907 1926])
+            ("fcntl.h" include (:system-flag t) nil [1927 1945])
+            ("poll.h" include (:system-flag t) nil [1946 1963])
+            ("stdint.h" include (:system-flag t) nil [1964 1983])
+            ("sys/types.h" include (:system-flag t) nil [2040 2062])
+            ("px4_sem.h" include nil nil [2071 2091])
+            ("PX4_STACK_ADJUSTED" variable (:constant-flag t) nil [4216 4234])
+            ("px4_exit_requested" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4737 4742]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4712 4743])
+            ("hrt_system_time" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint64_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4695 4700]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4670 4701])
+            ("px4_get_topic_names" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4554 4575]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4521 4576])
+            ("px4_show_topics" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4505 4510]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4483 4511])
+            ("px4_get_device_names" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4450 4471]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4416 4472])
+            ("px4_show_files" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4400 4405]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4379 4406])
+            ("px4_show_devices" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4363 4368]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4340 4369])
+            ("px4_errno" variable
+               (:type "int"
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [4308 4329]))          
+      :file "px4_posix.h"
+      :pointmax 4766
+      :fsize 4765
+      :lastmodtime '(23770 52090 863808 181000)
+      :unmatched-syntax '((symbol 4703 . 4711) (symbol 4661 . 4669) (symbol 4512 . 4520) (symbol 4474 . 4482) (symbol 4407 . 4415) (symbol 4370 . 4378) (symbol 4331 . 4339) (string 3897 . 3920) (symbol 3891 . 3896) (punctuation 3890 . 3891) (symbol 1833 . 1837) (symbol 1826 . 1832) (punctuation 1825 . 1826))
+      :lexical-table 
+        '(("PX4_STACK_ADJUSTED" (spp-arg-list ("_s") 4234 . 4238) . ((semantic-list "(_s * (__SIZEOF_POINTER__ >> 2) + PX4_STACK_OVERHEAD)" 4239 . 4292)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdbool.h" include (:system-flag t) nil [1949 1969])
+            ("SCHED_PRIORITY_FAST_DRIVER" variable (:constant-flag t) nil [3284 3310])
+            ("SCHED_PRIORITY_ATTITUDE_CONTROL" variable (:constant-flag t) nil [3608 3639])
+            ("SCHED_PRIORITY_ACTUATOR_OUTPUTS" variable (:constant-flag t) nil [3760 3791])
+            ("SCHED_PRIORITY_POSITION_CONTROL" variable (:constant-flag t) nil [4078 4109])
+            ("SCHED_PRIORITY_ESTIMATOR" variable (:constant-flag t) nil [4491 4515])
+            ("SCHED_PRIORITY_SENSOR_HUB" variable (:constant-flag t) nil [4727 4752])
+            ("SCHED_PRIORITY_LOG_CAPTURE" variable (:constant-flag t) nil [4931 4957])
+            ("SCHED_PRIORITY_SLOW_DRIVER" variable (:constant-flag t) nil [5088 5114])
+            ("SCHED_PRIORITY_NAVIGATION" variable (:constant-flag t) nil [5229 5254])
+            ("SCHED_PRIORITY_LOG_WRITER" variable (:constant-flag t) nil [5324 5349])
+            ("SCHED_PRIORITY_PARAMS" variable (:constant-flag t) nil [5389 5410])
+            ("px4_main_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5498 5507])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5508 5521]))                  
+                :type "int")
+                nil [5480 5522])
+            ("px4_get_taskname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6661 6666]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6632 6667])
+            ("px4_task_is_running" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("taskname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6419 6440]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6394 6441])
+            ("px4_show_tasks" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6344 6349]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6324 6350])
+            ("px4_task_exit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ret" variable (:type "int") (reparse-symbol arg-sub-list) [6267 6275]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6248 6276])
+            ("px4_task_kill" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pid" variable (:type ("px4_task_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6168 6183])
+                    ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [6184 6192]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6150 6193])
+            ("px4_task_delete" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pid" variable (:type ("px4_task_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6091 6106]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6071 6107])
+            ("px4_task_spawn_cmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("px4_task_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5850 5867])
+                    ("scheduler" variable (:type "int") (reparse-symbol arg-sub-list) [5879 5893])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [5905 5918])
+                    ("stack_size" variable (:type "int") (reparse-symbol arg-sub-list) [5930 5945])
+                    ("entry" variable (:type ("px4_main_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5957 5974])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5986 6005]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5820 6006])
+            ("noreturn_function" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int")
+                (reparse-symbol extern-c-contents) [5710 5728]))          
+      :file "px4_tasks.h"
+      :pointmax 6682
+      :fsize 6681
+      :lastmodtime '(23770 52090 867808 203000)
+      :unmatched-syntax '((symbol 6623 . 6631) (symbol 6385 . 6393) (symbol 6315 . 6323) (symbol 6239 . 6247) (symbol 6141 . 6149) (symbol 6062 . 6070) (symbol 5811 . 5819) (semantic-list 5689 . 5709) (symbol 5674 . 5689) (VOID 5669 . 5673) (symbol 5660 . 5668) (TYPEDEF 5472 . 5479) (string 3155 . 3177) (symbol 3149 . 3154) (punctuation 3148 . 3149) (symbol 1943 . 1947) (symbol 1936 . 1942) (punctuation 1935 . 1936))
+      :lexical-table 
+        '(("SCHED_PRIORITY_SENSOR_HUB" . ((semantic-list "(SCHED_PRIORITY_MAX - 6)" 4754 . 4778)))
+          ("SCHED_PRIORITY_SLOW_DRIVER" . ((semantic-list "(SCHED_PRIORITY_MAX - 35)" 5116 . 5141)))
+          ("SCHED_PRIORITY_FAST_DRIVER" . ((semantic-list "(SCHED_PRIORITY_MAX - 0)" 3312 . 3336)))
+          ("SCHED_PRIORITY_ACTUATOR_OUTPUTS" . ((semantic-list "(SCHED_PRIORITY_MAX - 4)" 3793 . 3817)))
+          ("SCHED_PRIORITY_POSITION_CONTROL" . ((semantic-list "(SCHED_PRIORITY_MAX - 5)" 4111 . 4135)))
+          ("SCHED_PRIORITY_ESTIMATOR" . ((semantic-list "(SCHED_PRIORITY_MAX - 5)" 4517 . 4541)))
+          ("SCHED_PRIORITY_LOG_CAPTURE" . ((semantic-list "(SCHED_PRIORITY_MAX - 10)" 4959 . 4984)))
+          ("SCHED_PRIORITY_LOG_WRITER" . ((semantic-list "(SCHED_PRIORITY_DEFAULT - 10)" 5351 . 5380)))
+          ("SCHED_PRIORITY_PARAMS" . ((semantic-list "(SCHED_PRIORITY_DEFAULT - 15)" 5413 . 5442)))
+          ("SCHED_PRIORITY_ATTITUDE_CONTROL" . ((semantic-list "(SCHED_PRIORITY_MAX - 4)" 3641 . 3665)))
+          ("SCHED_PRIORITY_NAVIGATION" . ((semantic-list "(SCHED_PRIORITY_DEFAULT + 5)" 5256 . 5284)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "px4_sem.h"
+      :fsize 3138
+      :lastmodtime '(23770 52090 867808 203000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdbool.h" include (:system-flag t) nil [1802 1822])
+            ("px4_shutdown_unlock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3533 3538]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3509 3539])
+            ("px4_shutdown_lock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3417 3422]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3395 3423])
+            ("px4_shutdown_request" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("reboot" variable (:type "bool") (reparse-symbol arg-sub-list) [3164 3176])
+                    ("to_bootloader" variable (:type "bool") (reparse-symbol arg-sub-list) [3177 3196]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3139 3197])
+            ("px4_unregister_shutdown_hook" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("hook" variable (:type ("shutdown_hook_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2669]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2615 2670])
+            ("px4_register_shutdown_hook" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("hook" variable (:type ("shutdown_hook_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2461 2482]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2430 2483])
+            ("shutdown_hook_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2027 2032]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2003 2033]))          
+      :file "px4_shutdown.h"
+      :pointmax 3554
+      :fsize 3553
+      :lastmodtime '(23770 52090 867808 203000)
+      :unmatched-syntax '((symbol 3500 . 3508) (symbol 3386 . 3394) (symbol 3130 . 3138) (symbol 2606 . 2614) (symbol 2421 . 2429) (TYPEDEF 1995 . 2002) (symbol 1796 . 1800) (symbol 1789 . 1795) (punctuation 1788 . 1789)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [1779 1799])
+            ("unistd.h" include (:system-flag t) nil [1800 1819])
+            ("stdbool.h" include (:system-flag t) nil [1820 1840])
+            ("px4_log.h" include (:system-flag t) nil [1842 1862])
+            ("px4_tasks.h" include (:system-flag t) nil [1863 1885])
+            ("systemlib/px4_macros.h" include (:system-flag t) nil [1886 1919])
+            ("cstring" include (:system-flag t) nil [1941 1959])
+            ("px4_modules_mutex" variable
+               (:typemodifiers ("extern")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [2282 2323])
+            ("ModuleBase" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4173 4180])
+                    ("ModuleBase" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4207 4231])
+                    ("main" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4339 4348])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4349 4362]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4323 4980])
+                    ("run_trampoline" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5290 5299])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5300 5313]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5263 5626])
+                    ("start_command_base" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5759 5768])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5769 5782]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5729 6046])
+                    ("stop_command" function
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [6173 7085])
+                    ("status_command" function
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [7225 7465])
+                    ("print_status" function
+                       (:typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [7629 7696])
+                    ("run" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7861 7882])
+                    ("is_running" function
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7937 7988])
+                    ("protected" label nil (reparse-symbol classsubparts) [7990 8000])
+                    ("request_stop" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8083 8140])
+                    ("should_exit" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8215 8269])
+                    ("exit_and_cleanup" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8498 8977])
+                    ("wait_until_running" function
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [9131 9374])
+                    ("get_instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9453 9506])
+                    ("_object" variable
+                       (:pointer 1
+                        :typemodifiers ("static" "volatile")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9563 9590])
+                    ("_task_id" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [9631 9651])
+                    ("task_id_is_work_queue" variable
+                       (:constant-flag t
+                        :default-value "-2"
+                        :type "int")
+                        (reparse-symbol classsubparts) [9750 9787])
+                    ("private" label nil (reparse-symbol classsubparts) [9839 9847])
+                    ("_task_should_exit" variable
+                       (:typemodifiers ("volatile")
+                        :default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9850 9890])
+                    ("lock_module" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9893 9962])
+                    ("unlock_module" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9964 10037]))                  )
+                nil [4136 10040])
+            ("ModuleBase::_object" variable
+               (:pointer 1
+                :typemodifiers ("volatile")
+                :default-value "nullptr"
+                :type ("T" type (:type "class") nil nil))
+                nil [10042 10105])
+            ("ModuleBase::_task_id" variable
+               (:default-value "-1"
+                :type "int")
+                nil [10107 10158])
+            ("PRINT_MODULE_USAGE_ARG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14498 14517])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14518 14542])
+                    ("is_optional" variable (:type "bool") (reparse-symbol arg-sub-list) [14543 14560]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14470 14561])
+            ("PRINT_MODULE_USAGE_PARAM_COMMENT" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("comment" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14145 14165]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14107 14166])
+            ("PRINT_MODULE_USAGE_PARAM_STRING" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("option_char" variable (:type "char") (reparse-symbol arg-sub-list) [13812 13829])
+                    ("default_val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13830 13854])
+                    ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13855 13874])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13877 13901])
+                    ("is_optional" variable (:type "bool") (reparse-symbol arg-sub-list) [13902 13919]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13775 13920])
+            ("PRINT_MODULE_USAGE_PARAM_FLAG" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("option_char" variable (:type "char") (reparse-symbol arg-sub-list) [13069 13086])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13087 13111])
+                    ("is_optional" variable (:type "bool") (reparse-symbol arg-sub-list) [13112 13129]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13034 13130])
+            ("PRINT_MODULE_USAGE_PARAM_FLOAT" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("option_char" variable (:type "char") (reparse-symbol arg-sub-list) [12819 12836])
+                    ("default_val" variable (:type "float") (reparse-symbol arg-sub-list) [12837 12855])
+                    ("min_val" variable (:type "float") (reparse-symbol arg-sub-list) [12856 12870])
+                    ("max_val" variable (:type "float") (reparse-symbol arg-sub-list) [12871 12885])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12888 12912])
+                    ("is_optional" variable (:type "bool") (reparse-symbol arg-sub-list) [12913 12930]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12783 12931])
+            ("PRINT_MODULE_USAGE_PARAM_INT" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("option_char" variable (:type "char") (reparse-symbol arg-sub-list) [12592 12609])
+                    ("default_val" variable (:type "int") (reparse-symbol arg-sub-list) [12610 12626])
+                    ("min_val" variable (:type "int") (reparse-symbol arg-sub-list) [12627 12639])
+                    ("max_val" variable (:type "int") (reparse-symbol arg-sub-list) [12640 12652])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12655 12679])
+                    ("is_optional" variable (:type "bool") (reparse-symbol arg-sub-list) [12680 12697]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12558 12698])
+            ("PRINT_MODULE_USAGE_DEFAULT_COMMANDS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12081 12116])
+            ("PRINT_MODULE_USAGE_COMMAND" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11937 11963])
+            ("PRINT_MODULE_USAGE_COMMAND_DESCR" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11884 11901])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11902 11926]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11846 11927])
+            ("PRINT_MODULE_USAGE_NAME_SIMPLE" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("executable_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11718 11746])
+                    ("category" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11747 11768]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11682 11769])
+            ("PRINT_MODULE_USAGE_NAME" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("executable_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11522 11550])
+                    ("category" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11551 11572]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11493 11573])
+            ("PRINT_MODULE_DESCRIPTION" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11265 11289]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11235 11290]))          
+      :file "px4_module.h"
+      :pointmax 14577
+      :fsize 14576
+      :lastmodtime '(23770 52090 863808 181000)
+      :unmatched-syntax '((symbol 14461 . 14469) (symbol 14098 . 14106) (symbol 13766 . 13774) (symbol 13025 . 13033) (symbol 12774 . 12782) (symbol 12549 . 12557) (symbol 11837 . 11845) (symbol 11673 . 11681) (symbol 11484 . 11492) (symbol 11226 . 11234) (symbol 9740 . 9749) (STATIC 9733 . 9739) (punctuation 4204 . 4205) (DEFAULT 4197 . 4204) (punctuation 4195 . 4196) (semantic-list 4192 . 4194) (symbol 4182 . 4192) (symbol 1773 . 1777) (symbol 1766 . 1772) (punctuation 1765 . 1766))
+      :lexical-table 
+        '(("PRINT_MODULE_USAGE_DEFAULT_COMMANDS" (spp-arg-list nil 12116 . 12118) . 
+              ((symbol "PRINT_MODULE_USAGE_COMMAND" 12122 . 12148) (semantic-list "(\"stop\")" 12148 . 12156) (punctuation ";" 12156 . 12157) (symbol "PRINT_MODULE_USAGE_COMMAND_DESCR" 12161 . 12193) (semantic-list "(\"status\", \"print status info\")" 12193 . 12224) (punctuation ";" 12224 . 12225)))
+          ("PRINT_MODULE_USAGE_COMMAND" (spp-arg-list ("name") 11963 . 11969) . 
+              ((symbol "PRINT_MODULE_USAGE_COMMAND_DESCR" 11973 . 12005) (semantic-list "(name, NULL)" 12005 . 12017) (punctuation ";" 12017 . 12018)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4" type
+               (:members 
+                  ( ("AppState" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1909 1916])
+                            ("AppState" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1918 1932])
+                            ("AppState" function
+                               (:constructor-flag t
+                                :type ("AppState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2066 2122])
+                            ("exitRequested" function (:type "bool") (reparse-symbol classsubparts) [2125 2172])
+                            ("requestExit" function (:type "void") (reparse-symbol classsubparts) [2174 2219])
+                            ("isRunning" function (:type "bool") (reparse-symbol classsubparts) [2222 2261])
+                            ("setRunning" function
+                               (:arguments 
+                                  ( ("running" variable (:type "bool") (reparse-symbol arg-sub-list) [2279 2292]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2263 2318])
+                            ("protected" label nil (reparse-symbol classsubparts) [2320 2330])
+                            ("_exitRequested" variable (:type "bool") (reparse-symbol classsubparts) [2332 2352])
+                            ("_isRunning" variable (:type "bool") (reparse-symbol classsubparts) [2354 2370])
+                            ("private" label nil (reparse-symbol classsubparts) [2378 2386])
+                            ("AppState" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AppState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2397 2414]))                                  
+                                :type ("AppState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2388 2415])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AppState" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2443 2460]))                                  
+                                :type ("AppState" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2417 2461]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1892 2464]))                  
+                :type "namespace")
+                nil [1875 2466]))          
+      :file "px4_app.h"
+      :pointmax 2650
+      :fsize 2649
+      :lastmodtime '(23549 3302 103906 524000)
+      :unmatched-syntax '((symbol 1869 . 1873) (symbol 1862 . 1868) (punctuation 1861 . 1862)))
+
+
+)
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!platforms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

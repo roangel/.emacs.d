@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskManualAltitudeSmooth.hpp" include nil nil [1777 1822])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1824 1847])
+            ("FlightTaskManualAltitudeSmooth" function
+               (:constructor-flag t
+                :parent "FlightTaskManualAltitudeSmooth"
+                :type ("FlightTaskManualAltitudeSmooth" type (:type "class") nil nil))
+                nil [1849 1967])
+            ("_updateSetpoints" function
+               (:parent "FlightTaskManualAltitudeSmooth"
+                :type "void")
+                nil [1969 2249]))          
+      :file "FlightTaskManualAltitudeSmooth.cpp"
+      :pointmax 2250
+      :fsize 2249
+      :lastmodtime '(23898 37283 686236 605000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("lib/FlightTasks/tasks/ManualAltitude/FlightTaskManualAltitude.hpp" include (:system-flag t) nil [1841 1917])
+            ("lib/FlightTasks/tasks/Utility/ManualSmoothingZ.hpp" include (:system-flag t) nil [1918 1979])
+            ("FlightTaskManualAltitudeSmooth" type
+               (:superclasses 
+                  ( ("FlightTaskManualAltitude" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2054 2061])
+                    ("FlightTaskManualAltitudeSmooth" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FlightTaskManualAltitudeSmooth" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2063 2096])
+                    ("protected" label nil (reparse-symbol classsubparts) [2152 2162])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2196 2205])
+                    ("private" label nil (reparse-symbol classsubparts) [2207 2215])
+                    ("_smoothing" variable (:type ("ManualSmoothingZ" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2217 2245]))                  
+                :type "class")
+                nil [1981 2289]))          
+      :file "FlightTaskManualAltitudeSmooth.hpp"
+      :pointmax 2290
+      :fsize 2289
+      :lastmodtime '(23898 37283 686236 605000)
+      :unmatched-syntax '((semantic-list 2193 . 2195) (symbol 2177 . 2193) (VOID 2172 . 2176) (VIRTUAL 2164 . 2171) (punctuation 2149 . 2150) (DEFAULT 2142 . 2149) (punctuation 2140 . 2141) (semantic-list 2137 . 2139) (symbol 2107 . 2137) (punctuation 2106 . 2107) (VIRTUAL 2098 . 2105) (symbol 1835 . 1839) (symbol 1828 . 1834) (punctuation 1827 . 1828) (punctuation 1827 . 1828))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!FlightTasks!tasks!ManualAltitudeSmooth!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

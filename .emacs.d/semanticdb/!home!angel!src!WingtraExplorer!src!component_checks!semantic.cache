@@ -1,0 +1,382 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+
+
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Script that provides additional metadata regarding the flight\"\"\"" code nil nil [1 68])
+            ("__author__" variable nil nil [70 108])
+            ("__maintainer__" variable nil nil [109 152])
+            ("__license__" variable nil nil [153 172])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [185 197]))              ) nil [175 566])
+            ("get_payload" function (:arguments 
+              ( ("initial_parameters" variable nil (reparse-symbol function_parameters) [584 602]))              ) nil [568 773]))          
+      :file "flight_metadata.py"
+      :pointmax 773
+      :fsize 1868
+      :lastmodtime '(23901 25717 392593 336000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Script that checks GPS quality\"\"\"" code nil nil [1 37])
+            ("__author__" variable nil nil [39 66])
+            ("__maintainer__" variable nil nil [67 110])
+            ("__license__" variable nil nil [111 130])
+            ("math" include nil nil [133 155])
+            ("collections" include nil nil [156 190])
+            ("src.utilities" include nil nil [192 235])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [248 260]))              ) nil [238 1713])
+            ("get_gps_satellites_count" function (:arguments 
+              ( ("satellite_data" variable nil (reparse-symbol function_parameters) [1744 1758])
+                ("filter_window" variable nil (reparse-symbol function_parameters) [1760 1773]))              ) nil [1715 1930])
+            ("get_gps_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [1949 1961])
+                ("topic" variable nil (reparse-symbol function_parameters) [1963 1968]))              ) nil [1932 2494]))          
+      :file "gps.py"
+      :pointmax 2494
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Provides access to component checks used during various types batch processing\"\"\"" code nil nil [1 85])
+            ("__author__" variable nil nil [87 114])
+            ("__license__" variable nil nil [115 134])
+            ("os" include nil nil [137 146])
+            ("sys" include nil nil [147 157])
+            ("attitude_controller" include nil nil [166 192])
+            ("cruise_controller" include nil nil [200 224])
+            ("ekf" include nil nil [232 242])
+            ("flight_conditions" include nil nil [250 274])
+            ("flight_metadata" include nil nil [282 304])
+            ("hover_controller" include nil nil [312 335])
+            ("imu" include nil nil [343 353])
+            ("moment_offsets" include nil nil [361 382])
+            ("obc_disconnections" include nil nil [390 415])
+            ("obc_hw_event" include nil nil [423 442])
+            ("obc_init_event" include nil nil [450 471])
+            ("obc_mavlink_event" include nil nil [479 503])
+            ("obc_metadata" include nil nil [511 530])
+            ("obc_ppk_event" include nil nil [538 558])
+            ("obc_process_health" include nil nil [566 591])
+            ("obc_user_data_handling" include nil nil [599 628])
+            ("obc_user_data_quality" include nil nil [636 664])
+            ("power_supply" include nil nil [672 691])
+            ("ppk" include nil nil [699 709])
+            ("raw_sensors" include nil nil [717 735])
+            ("rc" include nil nil [743 752])
+            ("return_to_home" include nil nil [760 781])
+            ("servo" include nil nil [789 801])
+            ("system_information" include nil nil [809 834])
+            ("system_performance" include nil nil [842 867])
+            ("telemetry" include nil nil [875 891])
+            ("touchdown" include nil nil [899 915])
+            ("sys" code nil nil [917 996]))          
+      :file "__init__.py"
+      :pointmax 997
+      :fsize 996
+      :lastmodtime '(23901 25717 392593 336000)
+      :unmatched-syntax '((FROM 892 . 896) (PERIOD 897 . 898) (FROM 868 . 872) (PERIOD 873 . 874) (FROM 835 . 839) (PERIOD 840 . 841) (FROM 802 . 806) (PERIOD 807 . 808) (FROM 782 . 786) (PERIOD 787 . 788) (FROM 753 . 757) (PERIOD 758 . 759) (FROM 736 . 740) (PERIOD 741 . 742) (FROM 710 . 714) (PERIOD 715 . 716) (FROM 692 . 696) (PERIOD 697 . 698) (FROM 665 . 669) (PERIOD 670 . 671) (FROM 629 . 633) (PERIOD 634 . 635) (FROM 592 . 596) (PERIOD 597 . 598) (FROM 559 . 563) (PERIOD 564 . 565) (FROM 531 . 535) (PERIOD 536 . 537) (FROM 504 . 508) (PERIOD 509 . 510) (FROM 472 . 476) (PERIOD 477 . 478) (FROM 443 . 447) (PERIOD 448 . 449) (FROM 416 . 420) (PERIOD 421 . 422) (FROM 383 . 387) (PERIOD 388 . 389) (FROM 354 . 358) (PERIOD 359 . 360) (FROM 336 . 340) (PERIOD 341 . 342) (FROM 305 . 309) (PERIOD 310 . 311) (FROM 275 . 279) (PERIOD 280 . 281) (FROM 243 . 247) (PERIOD 248 . 249) (FROM 225 . 229) (PERIOD 230 . 231) (FROM 193 . 197) (PERIOD 198 . 199) (FROM 159 . 163) (PERIOD 164 . 165)))
+
+    (semanticdb-table "semanticdb-table"
+      :file "imu.py"
+      :fsize 803
+      :lastmodtime '(23901 25717 392593 336000))
+
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Wind rocking checks\"\"\"" code nil nil [1 26])
+            ("__author__" variable nil nil [28 55])
+            ("__maintainer__" variable nil nil [56 104])
+            ("__license__" variable nil nil [105 124])
+            ("collections" include nil nil [127 161])
+            ("src.utilities" include nil nil [163 206])
+            ("AUTO_MODES" variable nil nil [208 236])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [249 261]))              ) nil [239 1350])
+            ("wind_rocking_err_and_std" function (:arguments 
+              ( ("data_sp" variable nil (reparse-symbol function_parameters) [1381 1388])
+                ("data" variable nil (reparse-symbol function_parameters) [1390 1394])
+                ("wind_rocking_indices" variable nil (reparse-symbol function_parameters) [1396 1416]))              ) nil [1352 1623])
+            ("wind_rocking_std" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [1646 1650])
+                ("wind_rocking_indices" variable nil (reparse-symbol function_parameters) [1652 1672]))              ) nil [1625 2166])
+            ("get_wind_rocking_indices" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [2197 2209]))              ) nil [2168 3219]))          
+      :file "wind_rocking.py"
+      :pointmax 3219
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Landing related checks\"\"\"" code nil nil [1 29])
+            ("__author__" variable nil nil [31 57])
+            ("__maintainer__" variable nil nil [58 106])
+            ("__license__" variable nil nil [107 126])
+            ("src.utilities" include nil nil [129 172])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [185 197]))              ) nil [175 796])
+            ("crash_detected" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [817 821]))              ) nil [798 968])
+            ("freefall_detected" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [992 996]))              ) nil [970 1143])
+            ("tipping_detected" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [1166 1170]))              ) nil [1145 1303])
+            ("horizontal_velocity_at_cutoff_checks" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [1346 1358]))              ) nil [1305 1401]))          
+      :file "landing.py"
+      :pointmax 1401
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Script that checks descent speed consistency\"\"\"" code nil nil [1 51])
+            ("__author__" variable nil nil [53 83])
+            ("__maintainer__" variable nil nil [84 132])
+            ("__license__" variable nil nil [133 152])
+            ("numpy" include nil nil [155 173])
+            ("src.utilities" include nil nil [175 218])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [253 265]))              ) nil [243 755])
+            ("get_descent_speed_consistency" function
+               (:documentation "
+    The strategy here is to compare descent speed estimates driven by different sensors.
+    If anything indicates that z_deriv is wrong the test fails, since
+    this is the variable we use to control descent speed since v1.9.4.
+
+    z_deriv --> (driven by baro altitude)
+    vz --> (driven by GPS velocity)
+    dist_bottom --> (driven by distance sensor)
+    "
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [791 795]))                  )
+                nil [757 3115]))          
+      :file "descent_speed.py"
+      :pointmax 3115
+      :unmatched-syntax nil)
+
+
+    (semanticdb-table "semanticdb-table"
+      :file "ekf.py"
+      :fsize 10896
+      :lastmodtime '(23901 29133 617221 974000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Attitude controller checks\"\"\"" code nil nil [1 33])
+            ("__author__" variable nil nil [35 61])
+            ("__maintainer__" variable nil nil [62 110])
+            ("__license__" variable nil nil [111 130])
+            ("pandas" include nil nil [133 152])
+            ("numpy" include nil nil [153 171])
+            ("collections" include nil nil [172 206])
+            ("src.utilities" include nil nil [208 251])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [264 276]))              ) nil [254 5286])
+            ("flap_saturation_count" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [5314 5318]))              ) nil [5288 5561])
+            ("true_airspeed_after_ft" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [5590 5594]))              ) nil [5563 5695])
+            ("get_control_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [5718 5730]))              ) nil [5697 6304])
+            ("get_hover_indi_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [6330 6342])
+                ("topic_name" variable nil (reparse-symbol function_parameters) [6344 6354])
+                ("field_name" variable nil (reparse-symbol function_parameters) [6356 6366])
+                ("hover_offset" variable nil (reparse-symbol function_parameters) [6368 6380])
+                ("indi_offset" variable nil (reparse-symbol function_parameters) [6387 6398])
+                ("option" variable nil (reparse-symbol function_parameters) [6405 6411]))              ) nil [6306 6845])
+            ("get_hover_e_rates_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [6874 6886]))              ) nil [6847 7357])
+            ("get_cruise_e_rates_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [7387 7399]))              ) nil [7359 7873])
+            ("e_rates_fft_from_indices" function (:arguments 
+              ( ("e_rates" variable nil (reparse-symbol function_parameters) [7904 7911])
+                ("indices" variable nil (reparse-symbol function_parameters) [7913 7920])
+                ("low_lim" variable nil (reparse-symbol function_parameters) [7922 7929])
+                ("high_lim" variable nil (reparse-symbol function_parameters) [7931 7939]))              ) nil [7875 8160])
+            ("e_rates_fft_from_data" function (:arguments 
+              ( ("e_rates_data" variable nil (reparse-symbol function_parameters) [8188 8200])
+                ("low_lim" variable nil (reparse-symbol function_parameters) [8202 8209])
+                ("high_lim" variable nil (reparse-symbol function_parameters) [8211 8219]))              ) nil [8162 8733])
+            ("pitch_error_fft" function (:arguments 
+              ( ("data_sp" variable nil (reparse-symbol function_parameters) [8755 8762])
+                ("data" variable nil (reparse-symbol function_parameters) [8764 8768])
+                ("oscillations_indices" variable nil (reparse-symbol function_parameters) [8770 8790]))              ) nil [8735 9491])
+            ("get_oscillations_indices" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [9522 9534]))              ) nil [9493 10413])
+            ("resample" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [10428 10432])
+                ("fs" variable nil (reparse-symbol function_parameters) [10434 10436]))              ) nil [10415 10623])
+            ("get_data_from_indices" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [10651 10655])
+                ("indices" variable nil (reparse-symbol function_parameters) [10657 10664]))              ) nil [10625 10911]))          
+      :file "attitude_controller.py"
+      :pointmax 10911
+      :fsize 10910
+      :lastmodtime '(23901 29133 621221 998000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Cruise controller checks\"\"\"" code nil nil [1 31])
+            ("__author__" variable nil nil [33 59])
+            ("__maintainer__" variable nil nil [60 108])
+            ("__license__" variable nil nil [109 128])
+            ("collections" include nil nil [131 165])
+            ("src.utilities" include nil nil [167 210])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [223 235]))              ) nil [213 1280])
+            ("get_trimmed_cruise_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [1310 1322])
+                ("topic_name" variable nil (reparse-symbol function_parameters) [1324 1334])
+                ("field_name" variable nil (reparse-symbol function_parameters) [1336 1346]))              ) nil [1282 1524])
+            ("get_airspeed_tracking_error" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [1558 1570]))              ) nil [1526 1852])
+            ("get_altitude_tracking_error" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [1886 1898]))              ) nil [1854 2180]))          
+      :file "cruise_controller.py"
+      :pointmax 2180
+      :fsize 2179
+      :lastmodtime '(23901 25717 392593 336000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "hover_controller.py"
+      :fsize 5698
+      :lastmodtime '(23901 25717 392593 336000))
+
+    (semanticdb-table "semanticdb-table"
+      :file "ppk.py"
+      :fsize 3367
+      :lastmodtime '(23901 25717 392593 336000))
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Oscillations checks\"\"\"" code nil nil [1 26])
+            ("__author__" variable nil nil [28 55])
+            ("__maintainer__" variable nil nil [56 104])
+            ("__license__" variable nil nil [105 124])
+            ("pandas" include nil nil [127 146])
+            ("numpy" include nil nil [147 165])
+            ("collections" include nil nil [166 200])
+            ("src.utilities" include nil nil [202 245])
+            ("check" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [258 270]))              ) nil [248 1404])
+            ("get_data_from_indices" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [1432 1436])
+                ("indices" variable nil (reparse-symbol function_parameters) [1438 1445]))              ) nil [1406 1692])
+            ("resample" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [1707 1711])
+                ("fs" variable nil (reparse-symbol function_parameters) [1713 1715]))              ) nil [1694 1898])
+            ("e_rates_fft" function (:arguments 
+              ( ("e_rates" variable nil (reparse-symbol function_parameters) [1915 1922])
+                ("indices" variable nil (reparse-symbol function_parameters) [1924 1931]))              ) nil [1899 2598])
+            ("pitch_error_fft" function (:arguments 
+              ( ("data_sp" variable nil (reparse-symbol function_parameters) [2619 2626])
+                ("data" variable nil (reparse-symbol function_parameters) [2628 2632])
+                ("oscillations_indices" variable nil (reparse-symbol function_parameters) [2634 2654]))              ) nil [2599 3355])
+            ("get_oscillations_indices" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [3386 3398]))              ) nil [3357 4277]))          
+      :file "oscillations_landing.py"
+      :pointmax 4277
+      :unmatched-syntax nil)
+
+
+    (semanticdb-table "semanticdb-table"
+      :file "servo.py"
+      :fsize 861
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "flight_conditions.py"
+      :fsize 1482
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "moment_offsets.py"
+      :fsize 2236
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_disconnections.py"
+      :fsize 623
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_hw_event.py"
+      :fsize 632
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_init_event.py"
+      :fsize 630
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_mavlink_event.py"
+      :fsize 728
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_metadata.py"
+      :fsize 625
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_ppk_event.py"
+      :fsize 619
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_process_health.py"
+      :fsize 623
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_user_data_handling.py"
+      :fsize 627
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "obc_user_data_quality.py"
+      :fsize 626
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "power_supply.py"
+      :fsize 8043
+      :lastmodtime '(23901 29133 617221 974000))
+    (semanticdb-table "semanticdb-table"
+      :file "raw_sensors.py"
+      :fsize 8269
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "rc.py"
+      :fsize 2103
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "return_to_home.py"
+      :fsize 1962
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "system_information.py"
+      :fsize 1299
+      :lastmodtime '(23901 25717 392593 336000))
+    (semanticdb-table "semanticdb-table"
+      :file "system_performance.py"
+      :fsize 4409
+      :lastmodtime '(23901 25717 396593 373000))
+    (semanticdb-table "semanticdb-table"
+      :file "telemetry.py"
+      :fsize 3699
+      :lastmodtime '(23901 25717 396593 373000))
+    (semanticdb-table "semanticdb-table"
+      :file "touchdown.py"
+      :fsize 6284
+      :lastmodtime '(23901 29133 617221 974000)))
+  :file "!home!angel!src!WingtraExplorer!src!component_checks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

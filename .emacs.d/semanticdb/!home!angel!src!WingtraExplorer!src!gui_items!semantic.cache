@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Provides PlotTabView that's the main view for all the plots\"\"\"" code nil nil [1 66])
+            ("__author__" variable nil nil [68 109])
+            ("__license__" variable nil nil [110 129])
+            ("pyqtgraph" include nil nil [132 154])
+            ("numpy" include nil nil [155 173])
+            ("PyQt5" include nil nil [174 216])
+            ("src" include nil nil [218 254])
+            ("PlotTabView" type
+               (:superclasses ("QtWidgets.QWidget")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [327 345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [355 408])
+                            ("self" variable nil (reparse-symbol indented_block_body) [418 474])
+                            ("self" code nil (reparse-symbol indented_block_body) [484 498])
+                            ("self" variable nil (reparse-symbol indented_block_body) [508 533])
+                            ("self" variable nil (reparse-symbol indented_block_body) [542 602]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [312 316]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [299 640])
+                    ("init_ui" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [657 661]))                          )
+                        (reparse-symbol indented_block_body) [645 6440])
+                    ("init_actions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6462 6466])
+                            ("tab_name" variable nil (reparse-symbol function_parameters) [6468 6476])
+                            ("shared_actions" variable nil (reparse-symbol function_parameters) [6478 6492]))                          )
+                        (reparse-symbol indented_block_body) [6445 13750])
+                    ("load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13769 13773])
+                            ("title" variable nil (reparse-symbol function_parameters) [13775 13780])
+                            ("logging_data" variable nil (reparse-symbol function_parameters) [13782 13794])
+                            ("plot_type" variable nil (reparse-symbol function_parameters) [13796 13805]))                          )
+                        (reparse-symbol indented_block_body) [13755 19405])
+                    ("setup_connections" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19432 19436]))                          )
+                        (reparse-symbol indented_block_body) [19410 20320])
+                    ("toggle_split_screen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20349 20353]))                          
+                        :documentation "Opens/Hides a second plot at the bottom, used to display data from secondary log")
+                        (reparse-symbol indented_block_body) [20325 21182])
+                    ("toggle_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21204 21208]))                          
+                        :documentation "Shows/Hides the title")
+                        (reparse-symbol indented_block_body) [21187 21298])
+                    ("toggle_trajectory_plot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21330 21334]))                          
+                        :documentation "Toggles the display of corresponding trajectory plot")
+                        (reparse-symbol indented_block_body) [21303 22293])
+                    ("toggle_visible_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22323 22327])
+                            ("selected_topic" variable nil (reparse-symbol function_parameters) [22329 22343])
+                            ("selected_field" variable nil (reparse-symbol function_parameters) [22345 22359]))                          
+                        :documentation "Adds/removes variables from the plot")
+                        (reparse-symbol indented_block_body) [22298 22681])
+                    ("selected_variables_list_clicked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22722 22726])
+                            ("item" variable nil (reparse-symbol function_parameters) [22728 22732]))                          
+                        :documentation "Removes the selected item from the plot(s)")
+                        (reparse-symbol indented_block_body) [22686 22851])
+                    ("add_variable_to_plot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22881 22885])
+                            ("name" variable nil (reparse-symbol function_parameters) [22887 22891])
+                            ("color" variable nil (reparse-symbol function_parameters) [22893 22898])
+                            ("plot_type" variable nil (reparse-symbol function_parameters) [22905 22914]))                          )
+                        (reparse-symbol indented_block_body) [22856 23977])
+                    ("add_variable_to_selected_variables_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24026 24030])
+                            ("variable_name" variable nil (reparse-symbol function_parameters) [24032 24045])
+                            ("variable_color" variable nil (reparse-symbol function_parameters) [24047 24061]))                          )
+                        (reparse-symbol indented_block_body) [23982 25093])
+                    ("remove_variable_from_selected_variables_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25147 25151])
+                            ("variable_name" variable nil (reparse-symbol function_parameters) [25153 25166]))                          )
+                        (reparse-symbol indented_block_body) [25098 25440])
+                    ("toggle_link_plot_range" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25472 25476]))                          
+                        :documentation "If a secondary log file is open, links axes via marker to make comparison possible")
+                        (reparse-symbol indented_block_body) [25445 26409])
+                    ("fit_to_view" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26430 26434]))                          )
+                        (reparse-symbol indented_block_body) [26414 26580]))                  
+                :type "class")
+                nil [257 26580]))          
+      :file "plot_tab_view.py"
+      :pointmax 26722
+      :unmatched-syntax '((INDENT_BLOCK 23931 . 23977) (NEWLINE 23930 . 23931) (COLON 23929 . 23930) (TRY 23053 . 23056) (AS 23924 . 23926) (INDENT_BLOCK 17473 . 17516) (NEWLINE 17472 . 17473) (COLON 17471 . 17472) (AS 17466 . 17468) (EXCEPT 17449 . 17455) (INDENT_BLOCK 17406 . 17441) (NEWLINE 17405 . 17406) (COLON 17404 . 17405) (TRY 17041 . 17044) (AS 17399 . 17401) (INDENT_BLOCK 16683 . 16726) (NEWLINE 16682 . 16683) (COLON 16681 . 16682) (AS 16676 . 16678) (EXCEPT 16659 . 16665) (INDENT_BLOCK 16616 . 16651) (NEWLINE 16615 . 16616) (COLON 16614 . 16615) (TRY 16188 . 16191) (AS 16609 . 16611) (INDENT_BLOCK 15815 . 15858) (NEWLINE 15814 . 15815) (COLON 15813 . 15814) (AS 15808 . 15810) (EXCEPT 15791 . 15797) (INDENT_BLOCK 15748 . 15783) (NEWLINE 15747 . 15748) (COLON 15746 . 15747) (TRY 15191 . 15194) (AS 15741 . 15743) (INDENT_BLOCK 14880 . 14923) (NEWLINE 14879 . 14880) (COLON 14878 . 14879) (AS 14873 . 14875) (EXCEPT 14856 . 14862) (INDENT_BLOCK 14813 . 14848) (NEWLINE 14812 . 14813) (COLON 14811 . 14812) (TRY 14516 . 14519) (AS 14806 . 14808))))
+  :file "!home!angel!src!WingtraExplorer!src!gui_items!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

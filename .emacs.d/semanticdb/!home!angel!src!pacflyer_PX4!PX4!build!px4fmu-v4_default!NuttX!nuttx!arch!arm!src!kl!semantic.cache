@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [2038 2063])
+            ("stdint.h" include (:system-flag t) nil [2065 2084])
+            ("stdio.h" include (:system-flag t) nil [2085 2103])
+            ("assert.h" include (:system-flag t) nil [2104 2123])
+            ("errno.h" include (:system-flag t) nil [2124 2142])
+            ("debug.h" include (:system-flag t) nil [2143 2161])
+            ("nuttx/irq.h" include (:system-flag t) nil [2163 2185])
+            ("nuttx/arch.h" include (:system-flag t) nil [2186 2209])
+            ("nuttx/drivers/pwm.h" include (:system-flag t) nil [2210 2240])
+            ("arch/board/board.h" include (:system-flag t) nil [2241 2270])
+            ("up_internal.h" include nil nil [2272 2296])
+            ("up_arch.h" include nil nil [2297 2317])
+            ("chip.h" include nil nil [2319 2336])
+            ("kl_pwm.h" include nil nil [2337 2356])
+            ("kl_gpio.h" include nil nil [2357 2377])
+            ("chip/kl_tpm.h" include nil nil [2378 2402])
+            ("chip/kl_sim.h" include nil nil [2403 2427]))          
+      :file "kl_pwm.c"
+      :pointmax 21689
+      :fsize 21688
+      :lastmodtime '(23549 3465 901086 769000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "chip.h"
+      :fsize 3260
+      :lastmodtime '(23549 3465 897086 741000))
+    (semanticdb-table "semanticdb-table"
+      :file "kl_pwm.h"
+      :fsize 7052
+      :lastmodtime '(23549 3465 901086 769000))
+    (semanticdb-table "semanticdb-table"
+      :file "kl_gpio.h"
+      :fsize 18556
+      :lastmodtime '(23549 3465 897086 741000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!px4fmu-v4_default!NuttX!nuttx!arch!arm!src!kl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

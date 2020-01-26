@@ -1,0 +1,114 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("../BlockLocalPositionEstimator.hpp" include nil nil [1 46])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [47 81])
+            ("matrix/math.hpp" include (:system-flag t) nil [82 108])
+            ("mavlink_log_pub" variable
+               (:typemodifiers ("extern")
+                :type ("orb_advert_t" type (:type "class") nil nil))
+                nil [110 146])
+            ("REQ_MOCAP_INIT_COUNT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "20"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [206 255])
+            ("MOCAP_TIMEOUT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "200000"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [256 302])
+            ("mocapInit" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [313 1141])
+            ("mocapMeasure" function
+               (:parent "BlockLocalPositionEstimator"
+                :arguments 
+                  ( ("y" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("n_y_mocap" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1189 1217]))                  
+                :type "int")
+                nil [1143 1427])
+            ("mocapCorrect" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [1429 3125])
+            ("mocapCheckTimeout" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [3127 3421]))          
+      :file "mocap.cpp"
+      :pointmax 3422
+      :fsize 3421
+      :lastmodtime '(23770 52090 811807 874000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("../BlockLocalPositionEstimator.hpp" include nil nil [1 46])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [47 81])
+            ("matrix/math.hpp" include (:system-flag t) nil [82 108])
+            ("mavlink_log_pub" variable
+               (:typemodifiers ("extern")
+                :type ("orb_advert_t" type (:type "class") nil nil))
+                nil [110 146])
+            ("REQ_GPS_INIT_COUNT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [206 253])
+            ("GPS_TIMEOUT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1000000"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [254 299])
+            ("gpsInit" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [310 2502])
+            ("gpsMeasure" function
+               (:parent "BlockLocalPositionEstimator"
+                :arguments 
+                  ( ("y" variable
+                       (:reference 1
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil)
+                                  ("n_y_gps" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2548 2575]))                  
+                :type "int")
+                nil [2504 2914])
+            ("gpsCorrect" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [2916 6129])
+            ("gpsCheckTimeout" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [6131 6403]))          
+      :file "gps.cpp"
+      :pointmax 6404
+      :fsize 6403
+      :lastmodtime '(23770 52090 811807 874000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!local_position_estimator!sensors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

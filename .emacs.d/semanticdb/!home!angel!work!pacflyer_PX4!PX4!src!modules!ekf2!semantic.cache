@@ -1,0 +1,156 @@
+;; Object ekf2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ekf2/"
+  :tables
+  (list
+    (semanticdb-table "ekf2_main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfloat" include (:system-flag t) nil [1855 1872])
+            ("controllib/block/BlockParam.hpp" include (:system-flag t) nil [1874 1916])
+            ("controllib/blocks.hpp" include (:system-flag t) nil [1917 1949])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1950 1978])
+            ("ecl/EKF/ekf.h" include (:system-flag t) nil [1979 2003])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2004 2032])
+            ("px4_defines.h" include (:system-flag t) nil [2033 2057])
+            ("px4_module.h" include (:system-flag t) nil [2058 2081])
+            ("px4_posix.h" include (:system-flag t) nil [2082 2104])
+            ("px4_tasks.h" include (:system-flag t) nil [2105 2127])
+            ("px4_time.h" include (:system-flag t) nil [2128 2149])
+            ("uORB/topics/airspeed.h" include (:system-flag t) nil [2150 2183])
+            ("uORB/topics/distance_sensor.h" include (:system-flag t) nil [2184 2224])
+            ("uORB/topics/ekf2_innovations.h" include (:system-flag t) nil [2225 2266])
+            ("uORB/topics/ekf2_timestamps.h" include (:system-flag t) nil [2267 2307])
+            ("uORB/topics/estimator_status.h" include (:system-flag t) nil [2308 2349])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2403 2444])
+            ("uORB/topics/sensor_baro.h" include (:system-flag t) nil [2445 2481])
+            ("uORB/topics/sensor_bias.h" include (:system-flag t) nil [2482 2518])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2519 2559])
+            ("uORB/topics/sensor_selection.h" include (:system-flag t) nil [2560 2601])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [2602 2643])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [2644 2692])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [2693 2738])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [2739 2785])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [2786 2833])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [2834 2873])
+            ("uORB/topics/wind_estimate.h" include (:system-flag t) nil [2874 2912])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [2913 2951])
+            ("uORB/topics/ekf2_preflight.h" include (:system-flag t) nil [2963 3002])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [3016 3050])
+            ("control::BlockParamFloat" using (:type ("control::BlockParamFloat" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3063 3094])
+            ("control::BlockParamExtFloat" using (:type ("control::BlockParamExtFloat" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3095 3129])
+            ("control::BlockParamInt" using (:type ("control::BlockParamInt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3130 3159])
+            ("control::BlockParamExtInt" using (:type ("control::BlockParamExtInt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3160 3192])
+            ("math::constrain" using (:type ("math::constrain" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3194 3216])
+            ("ekf2_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3252 3261])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3262 3275]))                  
+                :type "int")
+                nil [3238 3276])
+            ("ModuleBase" variable (:type "int") nil [3332 24476])
+            ("Ekf2" function
+               (:constructor-flag t
+                :parent "Ekf2"
+                :type ("Ekf2" type (:type "class") nil nil))
+                nil [24478 32289])
+            ("print_status" function
+               (:parent "Ekf2"
+                :type "int")
+                nil [32291 32560])
+            ("run" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [32562 97550])
+            ("getRangeSubIndex" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("subs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [97579 97595]))                  
+                :type "int")
+                nil [97552 98055])
+            ("instantiate" function
+               (:pointer 1
+                :parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [98081 98090])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [98091 98104]))                  
+                :type ("Ekf2" type (:type "class") nil nil))
+                nil [98057 98263])
+            ("custom_command" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [98290 98299])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [98300 98313]))                  
+                :type "int")
+                nil [98265 98357])
+            ("print_usage" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [98381 98400]))                  
+                :type "int")
+                nil [98359 99104])
+            ("task_spawn" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [99127 99136])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99137 99150]))                  
+                :type "int")
+                nil [99106 99412])
+            ("ekf2_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [99428 99437])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99438 99451]))                  
+                :type "int")
+                nil [99414 99487]))          
+      :file "ekf2_main.cpp"
+      :pointmax 99488
+      :fsize 99487
+      :lastmodtime '(23541 32830 761591 468000)
+      :unmatched-syntax '((PUBLIC 3325 . 3331) (punctuation 3323 . 3324) (symbol 3313 . 3323) (punctuation 3312 . 3313) (punctuation 3311 . 3312) (symbol 3304 . 3311) (PUBLIC 3297 . 3303) (punctuation 3295 . 3296) (symbol 3289 . 3294) (symbol 3284 . 3288) (CLASS 3278 . 3283) (symbol 3229 . 3237))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!ekf2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

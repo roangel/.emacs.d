@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskManualAltitude.hpp" include nil nil [1886 1925])
+            ("VelocitySmoothing.hpp" include nil nil [1926 1958])
+            ("FlightTaskManualAltitudeSmoothVel" type
+               (:superclasses 
+                  ( ("FlightTaskManualAltitude" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2036 2043])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2167 2176])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2196 2205])
+                    ("protected" label nil (reparse-symbol classsubparts) [2207 2217])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2252 2261])
+                    ("private" label nil (reparse-symbol classsubparts) [2487 2495])
+                    ("_reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force_vz_zero" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2649 2675]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2637 2677])
+                    ("_checkEkfResetCounters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2679 2709])
+                    ("_smoothing" variable (:type ("VelocitySmoothing" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2784 2813])
+                    ("_vel_sp_smooth" variable (:type "float") (reparse-symbol classsubparts) [2845 2866])
+                    ("_position_lock_z_active" variable (:type "bool") (reparse-symbol classsubparts) [2868 2904])
+                    ("_position_setpoint_z_locked" variable (:type "float") (reparse-symbol classsubparts) [2906 2945])
+                    ("_reset_counters" variable (:type ("" type
+                         (:members 
+                            ( ("z" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3011 3021])
+                              ("vz" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3024 3035]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3000 3061]))                  
+                :type "class")
+                nil [1960 3064]))          
+      :file "FlightTaskManualAltitudeSmoothVel.hpp"
+      :pointmax 3065
+      :fsize 3064
+      :lastmodtime '(23818 21208 150773 870000)
+      :unmatched-syntax '((semantic-list 2281 . 2485) (symbol 2264 . 2281) (semantic-list 2415 . 2458) (semantic-list 2348 . 2389) (semantic-list 2285 . 2324) (semantic-list 2249 . 2251) (symbol 2233 . 2249) (VOID 2228 . 2232) (VIRTUAL 2220 . 2227) (semantic-list 2193 . 2195) (symbol 2183 . 2193) (VOID 2178 . 2182) (semantic-list 2164 . 2166) (symbol 2156 . 2164) (BOOL 2151 . 2155) (punctuation 2147 . 2148) (DEFAULT 2140 . 2147) (punctuation 2138 . 2139) (semantic-list 2135 . 2137) (symbol 2102 . 2135) (punctuation 2101 . 2102) (VIRTUAL 2093 . 2100) (punctuation 2090 . 2091) (DEFAULT 2083 . 2090) (punctuation 2081 . 2082) (semantic-list 2078 . 2080) (symbol 2045 . 2078) (symbol 1880 . 1884) (symbol 1873 . 1879) (punctuation 1872 . 1873))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!FlightTasks!tasks!ManualAltitudeSmoothVel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

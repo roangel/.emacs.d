@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "vehicle_local_position_setpoint.h"
+      :pointmax 2549
+      :fsize 2548
+      :lastmodtime '(23817 555 479477 469000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!build!px4_sitl_default!uORB!topics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

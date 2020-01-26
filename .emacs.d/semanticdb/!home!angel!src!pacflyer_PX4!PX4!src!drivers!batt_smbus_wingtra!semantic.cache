@@ -1,0 +1,190 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("batt_smbus.h" include nil nil [1985 2008])
+            ("px4_getopt.h" include (:system-flag t) nil [2009 2032])
+            ("stdlib.h" include (:system-flag t) nil [2034 2053])
+            ("batt_smbus_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2095 2104])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2105 2118]))                  
+                :type "int")
+                nil [2075 2119])
+            ("parse_uint_seq" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2260 2274])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2275 2289])
+                    ("n" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2290 2300]))                  
+                :type "void")
+                nil [2226 2401])
+            ("parse_int_seq" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2541 2555])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2556 2569])
+                    ("n" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2570 2580]))                  
+                :type "void")
+                nil [2508 2680])
+            ("BATT_SMBUS" function
+               (:constructor-flag t
+                :parent "BATT_SMBUS"
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("SMBus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2705 2722])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2723 2740]))                  
+                :type ("BATT_SMBUS" type (:type "class") nil nil))
+                nil [2682 2980])
+            ("BATT_SMBUS" function
+               (:destructor-flag t
+                :parent "BATT_SMBUS"
+                :type "void")
+                nil [2982 3145])
+            ("task_spawn" function
+               (:parent "BATT_SMBUS"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3174 3183])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3184 3197]))                  
+                :type "int")
+                nil [3147 3848])
+            ("start" function
+               (:parent "BATT_SMBUS"
+                :type "void")
+                nil [3850 3957])
+            ("cycle_trampoline" function
+               (:parent "BATT_SMBUS"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3993 4003]))                  
+                :type "void")
+                nil [3959 4060])
+            ("cycle" function
+               (:parent "BATT_SMBUS"
+                :type "void")
+                nil [4062 7044])
+            ("suspend" function
+               (:parent "BATT_SMBUS"
+                :type "void")
+                nil [7046 7101])
+            ("resume" function
+               (:parent "BATT_SMBUS"
+                :type "void")
+                nil [7103 7158])
+            ("get_cell_voltages" function
+               (:parent "BATT_SMBUS"
+                :type "int")
+                nil [7160 8434])
+            ("device_name" function
+               (:parent "BATT_SMBUS"
+                :arguments 
+                  ( ("dev_name" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8464 8482])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8483 8504]))                  
+                :type "int")
+                nil [8436 8783])
+            ("get_startup_info" function
+               (:parent "BATT_SMBUS"
+                :type "int")
+                nil [8785 9786])
+            ("print_report" function
+               (:parent "BATT_SMBUS"
+                :type "void")
+                nil [9789 9893])
+            ("manufacturer_read" function
+               (:parent "BATT_SMBUS"
+                :arguments 
+                  ( ("cmd_code" variable
+                       (:constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9929 9953])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9954 9965])
+                    ("length" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [9966 9988]))                  
+                :type "int")
+                nil [9895 10435])
+            ("da_status_block_two" function
+               (:parent "BATT_SMBUS"
+                :type "int")
+                nil [10437 11612])
+            ("custom_command" function
+               (:parent "BATT_SMBUS"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [11645 11654])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11655 11668]))                  
+                :type "int")
+                nil [11614 11981])
+            ("print_usage" function
+               (:parent "BATT_SMBUS"
+                :type "int")
+                nil [11983 12716])
+            ("batt_smbus_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12738 12747])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12748 12761]))                  
+                :type "int")
+                nil [12718 12803]))          
+      :file "batt_smbus.cpp"
+      :pointmax 12804
+      :fsize 12803
+      :lastmodtime '(23799 36300 328903 315000)
+      :unmatched-syntax '((symbol 2066 . 2074)))
+    (semanticdb-table "semanticdb-table"
+      :file "batt_smbus.h"
+      :fsize 8216
+      :lastmodtime '(23799 36300 328903 315000))
+)
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!batt_smbus_wingtra!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,401 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1739 1758])
+            ("px4_tasks.h" include (:system-flag t) nil [1760 1782])
+            ("px4_getopt.h" include (:system-flag t) nil [1783 1806])
+            ("px4_posix.h" include (:system-flag t) nil [1807 1829])
+            ("errno.h" include (:system-flag t) nil [1830 1848])
+            ("cmath" include (:system-flag t) nil [1849 1865])
+            ("uORB/uORB.h" include (:system-flag t) nil [1874 1896])
+            ("uORB/topics/actuator_controls.h" include (:system-flag t) nil [1897 1939])
+            ("uORB/topics/actuator_outputs.h" include (:system-flag t) nil [1940 1981])
+            ("uORB/topics/actuator_armed.h" include (:system-flag t) nil [1982 2021])
+            ("uORB/topics/rc_channels.h" include (:system-flag t) nil [2022 2058])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2060 2088])
+            ("drivers/drv_mixer.h" include (:system-flag t) nil [2089 2119])
+            ("lib/mixer/mixer.h" include (:system-flag t) nil [2120 2148])
+            ("lib/mixer/mixer_load.h" include (:system-flag t) nil [2149 2182])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2183 2217])
+            ("systemlib/pwm_limit/pwm_limit.h" include (:system-flag t) nil [2218 2260])
+            ("common.h" include nil nil [2262 2281])
+            ("navio_sysfs.h" include nil nil [2282 2306])
+            ("PCA9685.h" include nil nil [2307 2327])
+            ("ocpoc_mmap.h" include nil nil [2328 2351])
+            ("linux_pwm_out" type
+               (:members 
+                  ( ("_task_handle" variable
+                       (:typemodifiers ("static")
+                        :default-value "-1"
+                        :type ("px4_task_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2379 2415])
+                    ("_task_should_exit" variable
+                       (:typemodifiers ("volatile")
+                        :default-value "false"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2416 2456])
+                    ("_is_running" variable
+                       (:typemodifiers ("static")
+                        :default-value "false"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2457 2489])
+                    ("_device" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :default-value "\"/sys/class/pwm/pwmchip0\""
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2491 2543])
+                    ("_protocol" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :default-value "\"navio\""
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2544 2580])
+                    ("_max_num_outputs" variable
+                       (:typemodifiers ("static")
+                        :default-value "8"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2581 2613])
+                    ("_mixer_filename" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :default-value "\"ROMFS/px4fmu_common/mixers/quad_x.main.mix\""
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2667 2746])
+                    ("_controls_subs" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2765 2838])
+                    ("_armed_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2839 2863])
+                    ("_outputs_pub" variable
+                       (:default-value "nullptr"
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2881 2920])
+                    ("_rc_pub" variable
+                       (:default-value "nullptr"
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2921 2955])
+                    ("_controls" variable
+                       (:dereference 1
+                        :type ("actuator_controls_s" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2977 3057])
+                    ("_controls_topics" variable
+                       (:dereference 1
+                        :type ("orb_id_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3058 3137])
+                    ("_outputs" variable (:type ("actuator_outputs_s" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3138 3167])
+                    ("_armed" variable (:type ("actuator_armed_s" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3168 3195])
+                    ("_poll_fds_num" variable
+                       (:default-value "0"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3208 3234])
+                    ("_poll_fds" variable
+                       (:dereference 1
+                        :type ("px4_pollfd_struct_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3235 3315])
+                    ("_groups_required" variable
+                       (:default-value "0"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3343 3373])
+                    ("_groups_subscribed" variable
+                       (:default-value "0"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3374 3406])
+                    ("_pwm_limit" variable (:type ("pwm_limit_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3408 3435])
+                    ("_pwm_disarmed" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3455 3477])
+                    ("_pwm_min" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3478 3495])
+                    ("_pwm_max" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3496 3513])
+                    ("_mixer_group" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("MixerGroup" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3515 3550])
+                    ("usage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3552 3565])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3567 3580])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3582 3594])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3622 3631])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3632 3645]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3596 3646])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3648 3665])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3682 3691])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3692 3705]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3667 3706])
+                    ("initialize_mixer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mixer_filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3756 3783]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3735 3784])
+                    ("mixer_control_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("handle" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3812 3829])
+                            ("control_group" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3830 3852])
+                            ("control_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3853 3875])
+                            ("input" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3876 3889]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3785 3890])
+                    ("mixer_control_callback" function
+                       (:arguments 
+                          ( ("handle" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3920 3937])
+                            ("control_group" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3944 3966])
+                            ("control_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3973 3995])
+                            ("input" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4002 4015]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3893 4158])
+                    ("initialize_mixer" function
+                       (:arguments 
+                          ( ("mixer_filename" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4182 4209]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4161 4906])
+                    ("subscribe" function (:type "void") (reparse-symbol namespacesubparts) [4909 5770])
+                    ("task_main" function
+                       (:arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5787 5796])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5797 5810]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5772 10802])
+                    ("task_main_trampoline" function
+                       (:arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10830 10839])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10840 10853]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10804 10881])
+                    ("start" function (:type "void") (reparse-symbol namespacesubparts) [10883 11221])
+                    ("stop" function (:type "void") (reparse-symbol namespacesubparts) [11223 11348])
+                    ("usage" function (:type "void") (reparse-symbol namespacesubparts) [11350 12094]))                  
+                :type "namespace")
+                nil [2353 12097])
+            ("linux_pwm_out_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12197 12206])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12207 12220]))                  
+                :type "int")
+                nil [12174 12221])
+            ("linux_pwm_out_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12246 12255])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12256 12269]))                  
+                :type "int")
+                nil [12223 13950]))          
+      :file "linux_pwm_out.cpp"
+      :pointmax 13951
+      :fsize 13950
+      :lastmodtime '(23770 52090 759807 569000)
+      :unmatched-syntax '((symbol 12165 . 12173)))
+    (semanticdb-table "semanticdb-table"
+      :file "common.h"
+      :fsize 2053
+      :lastmodtime '(23770 52090 759807 569000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("common.h" include nil nil [1748 1767])
+            ("linux_pwm_out" type
+               (:members 
+                  ( ("NavioSysfsPWMOut" type
+                       (:superclasses 
+                          ( ("PWMOutBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1912 1919])
+                            ("NavioSysfsPWMOut" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("device" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1938 1957])
+                                    ("max_num_outputs" variable (:type "int") (reparse-symbol arg-sub-list) [1958 1978]))                                  
+                                :type ("NavioSysfsPWMOut" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1921 1979])
+                            ("NavioSysfsPWMOut" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1981 2009])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2023 2032])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2093 2102])
+                            ("private" label nil (reparse-symbol classsubparts) [2104 2112])
+                            ("pwm_write_sysfs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("path" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2134 2145])
+                                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2146 2156]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2114 2157])
+                            ("MAX_NUM_PWM" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "14"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2160 2194])
+                            ("FREQUENCY_PWM" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "400"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2196 2233])
+                            ("_pwm_fd" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol classsubparts) [2236 2261])
+                            ("_pwm_num" variable (:type "int") (reparse-symbol classsubparts) [2263 2276])
+                            ("_device" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2279 2299]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1867 2302]))                  
+                :type "namespace")
+                nil [1769 2305]))          
+      :file "navio_sysfs.h"
+      :pointmax 2306
+      :fsize 2305
+      :lastmodtime '(23770 52090 759807 569000)
+      :unmatched-syntax '((semantic-list 2054 . 2092) (symbol 2039 . 2054) (INT 2035 . 2038) (semantic-list 2020 . 2022) (symbol 2016 . 2020) (INT 2012 . 2015) (symbol 1742 . 1746) (symbol 1735 . 1741) (punctuation 1734 . 1735)))
+    (semanticdb-table "semanticdb-table"
+      :file "PCA9685.h"
+      :fsize 5156
+      :lastmodtime '(23770 52090 759807 569000))
+    (semanticdb-table "semanticdb-table"
+      :file "ocpoc_mmap.h"
+      :fsize 2521
+      :lastmodtime '(23770 52090 759807 569000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("navio_sysfs.h" include nil nil [1734 1758])
+            ("fcntl.h" include (:system-flag t) nil [1760 1778])
+            ("errno.h" include (:system-flag t) nil [1779 1797])
+            ("px4_log.h" include (:system-flag t) nil [1798 1818])
+            ("linux_pwm_out" using (:type ("linux_pwm_out" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1820 1850])
+            ("NavioSysfsPWMOut" function
+               (:constructor-flag t
+                :parent "NavioSysfsPWMOut"
+                :arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1887 1906])
+                    ("max_num_outputs" variable (:type "int") (reparse-symbol arg-sub-list) [1907 1927]))                  
+                :type ("NavioSysfsPWMOut" type (:type "class") nil nil))
+                nil [1852 2189])
+            ("NavioSysfsPWMOut" function
+               (:destructor-flag t
+                :parent "NavioSysfsPWMOut"
+                :type "void")
+                nil [2191 2330])
+            ("init" function
+               (:parent "NavioSysfsPWMOut"
+                :type "int")
+                nil [2332 3202])
+            ("send_output_pwm" function
+               (:parent "NavioSysfsPWMOut"
+                :arguments 
+                  ( ("pwm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3242 3262])
+                    ("num_outputs" variable (:type "int") (reparse-symbol arg-sub-list) [3263 3279]))                  
+                :type "int")
+                nil [3204 3623])
+            ("pwm_write_sysfs" function
+               (:parent "NavioSysfsPWMOut"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3663 3674])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [3675 3685]))                  
+                :type "int")
+                nil [3625 3975]))          
+      :file "navio_sysfs.cpp"
+      :pointmax 3977
+      :fsize 3976
+      :lastmodtime '(23770 52090 759807 569000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!linux_pwm_out!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

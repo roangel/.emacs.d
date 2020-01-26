@@ -1,0 +1,166 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("uORB/topics/sensor_gyro.h" include (:system-flag t) nil [1867 1903])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1904 1932])
+            ("px4_log.h" include (:system-flag t) nil [1933 1953])
+            ("px4_posix.h" include (:system-flag t) nil [1954 1976])
+            ("px4_tasks.h" include (:system-flag t) nil [1977 1999])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2000 2028])
+            ("drivers/drv_led.h" include (:system-flag t) nil [2029 2057])
+            ("unistd.h" include (:system-flag t) nil [2059 2078])
+            ("common.h" include nil nil [2080 2099])
+            ("temperature_calibration.h" include nil nil [2100 2136])
+            ("accel.h" include nil nil [2137 2155])
+            ("baro.h" include nil nil [2156 2173])
+            ("gyro.h" include nil nil [2174 2191])
+            ("TemperatureCalibration" type
+               (:prototype t
+                :type "class")
+                nil [2193 2222])
+            ("temperature_calibration" type
+               (:members 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("TemperatureCalibration" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2260 2303]))                  
+                :type "namespace")
+                nil [2224 2305])
+            ("TemperatureCalibration" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2339 2346])
+                    ("TemperatureCalibration" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("accel" variable (:type "bool") (reparse-symbol arg-sub-list) [2397 2408])
+                            ("baro" variable (:type "bool") (reparse-symbol arg-sub-list) [2409 2419])
+                            ("gyro" variable (:type "bool") (reparse-symbol arg-sub-list) [2420 2430]))                          
+                        :type ("TemperatureCalibration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2374 2431])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2556 2569])
+                    ("do_temperature_calibration" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2611 2620])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2621 2634]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2572 2635])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2638 2656])
+                    ("exit" function (:type "void") (reparse-symbol classsubparts) [2659 2699])
+                    ("private" label nil (reparse-symbol classsubparts) [2701 2709])
+                    ("publish_led_control" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("led_control" variable
+                               (:reference 1
+                                :type ("led_control_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2736 2763]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2711 2764])
+                    ("_led_control_pub" variable
+                       (:default-value "nullptr"
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2767 2807])
+                    ("_force_task_exit" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2810 2840])
+                    ("_control_task" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [2842 2865])
+                    ("_accel" variable (:type "bool") (reparse-symbol classsubparts) [2893 2905])
+                    ("_baro" variable (:type "bool") (reparse-symbol classsubparts) [2938 2949])
+                    ("_gyro" variable (:type "bool") (reparse-symbol classsubparts) [2981 2992]))                  
+                :type "class")
+                nil [2308 3025])
+            ("TemperatureCalibration" function
+               (:constructor-flag t
+                :parent "TemperatureCalibration"
+                :arguments 
+                  ( ("accel" variable (:type "bool") (reparse-symbol arg-sub-list) [3074 3085])
+                    ("baro" variable (:type "bool") (reparse-symbol arg-sub-list) [3086 3096])
+                    ("gyro" variable (:type "bool") (reparse-symbol arg-sub-list) [3097 3107]))                  
+                :type ("TemperatureCalibration" type (:type "class") nil nil))
+                nil [3027 3154])
+            ("task_main" function
+               (:parent "TemperatureCalibration"
+                :type "void")
+                nil [3156 8778])
+            ("do_temperature_calibration" function
+               (:parent "TemperatureCalibration"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8836 8845])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8846 8859]))                  
+                :type "void")
+                nil [8780 8912])
+            ("start" function
+               (:parent "TemperatureCalibration"
+                :type "int")
+                nil [8914 9378])
+            ("publish_led_control" function
+               (:parent "TemperatureCalibration"
+                :arguments 
+                  ( ("led_control" variable
+                       (:reference 1
+                        :type ("led_control_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9429 9456]))                  
+                :type "void")
+                nil [9380 9725])
+            ("run_temperature_calibration" function
+               (:arguments 
+                  ( ("accel" variable (:type "bool") (reparse-symbol arg-sub-list) [9759 9770])
+                    ("baro" variable (:type "bool") (reparse-symbol arg-sub-list) [9771 9781])
+                    ("gyro" variable (:type "bool") (reparse-symbol arg-sub-list) [9782 9792]))                  
+                :type "int")
+                nil [9727 10144]))          
+      :file "task.cpp"
+      :pointmax 10145
+      :fsize 10145
+      :lastmodtime '(23770 52090 803807 828000)
+      :unmatched-syntax '((punctuation 2494 . 2495) (DEFAULT 2487 . 2494) (punctuation 2485 . 2486) (semantic-list 2482 . 2484) (symbol 2460 . 2482) (punctuation 2459 . 2460)))
+    (semanticdb-table "semanticdb-table"
+      :file "common.h"
+      :fsize 6863
+      :lastmodtime '(23770 52090 803807 828000))
+    (semanticdb-table "semanticdb-table"
+      :file "temperature_calibration.h"
+      :fsize 1940
+      :lastmodtime '(23770 52090 803807 828000))
+    (semanticdb-table "semanticdb-table"
+      :file "accel.h"
+      :fsize 2374
+      :lastmodtime '(23770 52090 803807 828000))
+    (semanticdb-table "semanticdb-table"
+      :file "baro.h"
+      :fsize 2404
+      :lastmodtime '(23770 52090 803807 828000))
+    (semanticdb-table "semanticdb-table"
+      :file "gyro.h"
+      :fsize 2405
+      :lastmodtime '(23770 52090 803807 828000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!events!temperature_calibration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

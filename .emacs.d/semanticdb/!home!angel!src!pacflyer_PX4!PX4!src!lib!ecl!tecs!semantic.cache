@@ -1,0 +1,505 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("tecs.h" include nil nil [1750 1767])
+            ("ecl.h" include (:system-flag t) nil [1769 1785])
+            ("geo/geo.h" include (:system-flag t) nil [1786 1806])
+            ("math::constrain" using (:type ("math::constrain" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1808 1830])
+            ("math::max" using (:type ("math::max" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1831 1847])
+            ("math::min" using (:type ("math::min" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1848 1864])
+            ("DT_MIN" variable
+               (:default-value "0.001f"
+                :type "float")
+                nil [1883 1905])
+            ("DT_MAX" variable
+               (:default-value "1.0f"
+                :type "float")
+                nil [1963 1983])
+            ("update_vehicle_state_estimates" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [2392 2407])
+                    ("rotMat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("matrix::Dcmf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2408 2435])
+                    ("accel_body" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("matrix::Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2438 2473])
+                    ("altitude_lock" variable (:type "bool") (reparse-symbol arg-sub-list) [2474 2493])
+                    ("in_air" variable (:type "bool") (reparse-symbol arg-sub-list) [2494 2506])
+                    ("altitude" variable (:type "float") (reparse-symbol arg-sub-list) [2509 2524])
+                    ("vz_valid" variable (:type "bool") (reparse-symbol arg-sub-list) [2525 2539])
+                    ("vz" variable (:type "float") (reparse-symbol arg-sub-list) [2540 2549])
+                    ("az" variable (:type "float") (reparse-symbol arg-sub-list) [2550 2559]))                  
+                :type "void")
+                nil [2350 5126])
+            ("_update_speed_states" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("airspeed_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [5160 5184])
+                    ("indicated_airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [5185 5210])
+                    ("EAS2TAS" variable (:type "float") (reparse-symbol arg-sub-list) [5211 5225]))                  
+                :type "void")
+                nil [5128 6913])
+            ("_update_speed_setpoint" function
+               (:parent "TECS"
+                :type "void")
+                nil [6915 7839])
+            ("_update_height_setpoint" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("desired" variable (:type "float") (reparse-symbol arg-sub-list) [7876 7890])
+                    ("state" variable (:type "float") (reparse-symbol arg-sub-list) [7891 7903]))                  
+                :type "void")
+                nil [7841 9491])
+            ("_detect_underspeed" function
+               (:parent "TECS"
+                :type "void")
+                nil [9493 9846])
+            ("_update_energy_estimates" function
+               (:parent "TECS"
+                :type "void")
+                nil [9848 10782])
+            ("_update_throttle_setpoint" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("throttle_cruise" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [10821 10849])
+                    ("rotMat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("matrix::Dcmf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10850 10877]))                  
+                :type "void")
+                nil [10784 15325])
+            ("_detect_uncommanded_descent" function
+               (:parent "TECS"
+                :type "void")
+                nil [15327 16407])
+            ("_update_pitch_setpoint" function
+               (:parent "TECS"
+                :type "void")
+                nil [16409 21071])
+            ("_initialize_states" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("pitch" variable (:type "float") (reparse-symbol arg-sub-list) [21103 21115])
+                    ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [21116 21138])
+                    ("baro_altitude" variable (:type "float") (reparse-symbol arg-sub-list) [21139 21159])
+                    ("pitch_min_climbout" variable (:type "float") (reparse-symbol arg-sub-list) [21160 21185])
+                    ("EAS2TAS" variable (:type "float") (reparse-symbol arg-sub-list) [21195 21209]))                  
+                :type "void")
+                nil [21073 23141])
+            ("_update_STE_rate_lim" function
+               (:parent "TECS"
+                :type "void")
+                nil [23143 23467])
+            ("update_pitch_throttle" function
+               (:parent "TECS"
+                :arguments 
+                  ( ("rotMat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("matrix::Dcmf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23502 23529])
+                    ("pitch" variable (:type "float") (reparse-symbol arg-sub-list) [23530 23542])
+                    ("baro_altitude" variable (:type "float") (reparse-symbol arg-sub-list) [23543 23563])
+                    ("hgt_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [23564 23583])
+                    ("EAS_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [23589 23608])
+                    ("indicated_airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [23609 23634])
+                    ("eas_to_tas" variable (:type "float") (reparse-symbol arg-sub-list) [23635 23652])
+                    ("climb_out_setpoint" variable (:type "bool") (reparse-symbol arg-sub-list) [23653 23677])
+                    ("pitch_min_climbout" variable (:type "float") (reparse-symbol arg-sub-list) [23678 23703])
+                    ("throttle_min" variable (:type "float") (reparse-symbol arg-sub-list) [23709 23728])
+                    ("throttle_max" variable (:type "float") (reparse-symbol arg-sub-list) [23729 23748])
+                    ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [23749 23771])
+                    ("pitch_limit_min" variable (:type "float") (reparse-symbol arg-sub-list) [23772 23794])
+                    ("pitch_limit_max" variable (:type "float") (reparse-symbol arg-sub-list) [23795 23817]))                  
+                :type "void")
+                nil [23469 25647]))          
+      :file "tecs.cpp"
+      :pointmax 25648
+      :fsize 25647
+      :lastmodtime '(23799 36318 556996 722000)
+      :unmatched-syntax '((symbol 1953 . 1962) (STATIC 1946 . 1952) (symbol 1873 . 1882) (STATIC 1866 . 1872)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("mathlib/mathlib.h" include (:system-flag t) nil [1822 1850])
+            ("matrix/math.hpp" include (:system-flag t) nil [1851 1877])
+            ("TECS" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1892 1899])
+                    ("airspeed_sensor_enabled" function (:type "bool") (reparse-symbol classsubparts) [2223 2283])
+                    ("enable_airspeed" function
+                       (:arguments 
+                          ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [2351 2364]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2330 2397])
+                    ("update_vehicle_state_estimates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [2671 2686])
+                            ("rotMat" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Dcmf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2687 2714])
+                            ("accel_body" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2724 2759])
+                            ("altitude_lock" variable (:type "bool") (reparse-symbol arg-sub-list) [2760 2779])
+                            ("in_air" variable (:type "bool") (reparse-symbol arg-sub-list) [2780 2792])
+                            ("altitude" variable (:type "float") (reparse-symbol arg-sub-list) [2802 2817])
+                            ("vz_valid" variable (:type "bool") (reparse-symbol arg-sub-list) [2818 2832])
+                            ("vz" variable (:type "float") (reparse-symbol arg-sub-list) [2833 2842])
+                            ("az" variable (:type "float") (reparse-symbol arg-sub-list) [2843 2852]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2635 2853])
+                    ("update_pitch_throttle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rotMat" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Dcmf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2934 2961])
+                            ("pitch" variable (:type "float") (reparse-symbol arg-sub-list) [2962 2974])
+                            ("baro_altitude" variable (:type "float") (reparse-symbol arg-sub-list) [2975 2995])
+                            ("hgt_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [2996 3015])
+                            ("EAS_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [3023 3042])
+                            ("indicated_airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [3043 3068])
+                            ("eas_to_tas" variable (:type "float") (reparse-symbol arg-sub-list) [3069 3086])
+                            ("climb_out_setpoint" variable (:type "bool") (reparse-symbol arg-sub-list) [3087 3111])
+                            ("pitch_min_climbout" variable (:type "float") (reparse-symbol arg-sub-list) [3112 3137])
+                            ("throttle_min" variable (:type "float") (reparse-symbol arg-sub-list) [3145 3164])
+                            ("throttle_setpoint_max" variable (:type "float") (reparse-symbol arg-sub-list) [3165 3193])
+                            ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [3194 3216])
+                            ("pitch_limit_min" variable (:type "float") (reparse-symbol arg-sub-list) [3224 3246])
+                            ("pitch_limit_max" variable (:type "float") (reparse-symbol arg-sub-list) [3247 3269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2907 3270])
+                    ("get_throttle_setpoint" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3301 3306]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [3273 3337])
+                    ("get_pitch_setpoint" function (:type "float") (reparse-symbol classsubparts) [3339 3393])
+                    ("get_speed_weight" function (:type "float") (reparse-symbol classsubparts) [3395 3451])
+                    ("reset_state" function (:type "void") (reparse-symbol classsubparts) [3454 3504])
+                    ("ECL_TECS_MODE" type
+                       (:members 
+                          ( ("ECL_TECS_MODE_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (3553 3554)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3530 3554])
+                            ("ECL_TECS_MODE_UNDERSPEED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3558 3583])
+                            ("ECL_TECS_MODE_BAD_DESCENT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3586 3612])
+                            ("ECL_TECS_MODE_CLIMBOUT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3615 3640]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3507 3641])
+                    ("set_detect_underspeed_enabled" function
+                       (:arguments 
+                          ( ("enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [3679 3692]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3644 3734])
+                    ("set_time_const" function
+                       (:arguments 
+                          ( ("time_const" variable (:type "float") (reparse-symbol arg-sub-list) [3795 3812]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3775 3851])
+                    ("set_integrator_gain" function
+                       (:arguments 
+                          ( ("gain" variable (:type "float") (reparse-symbol arg-sub-list) [3878 3889]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3853 3918])
+                    ("set_min_sink_rate" function
+                       (:arguments 
+                          ( ("rate" variable (:type "float") (reparse-symbol arg-sub-list) [3944 3955]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3921 3982])
+                    ("set_max_sink_rate" function
+                       (:arguments 
+                          ( ("sink_rate" variable (:type "float") (reparse-symbol arg-sub-list) [4007 4023]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3984 4055])
+                    ("set_max_climb_rate" function
+                       (:arguments 
+                          ( ("climb_rate" variable (:type "float") (reparse-symbol arg-sub-list) [4081 4098]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4057 4132])
+                    ("set_height_comp_filter_omega" function
+                       (:arguments 
+                          ( ("omega" variable (:type "float") (reparse-symbol arg-sub-list) [4169 4181]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4135 4213])
+                    ("set_heightrate_ff" function
+                       (:arguments 
+                          ( ("heightrate_ff" variable (:type "float") (reparse-symbol arg-sub-list) [4238 4258]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4215 4304])
+                    ("set_heightrate_p" function
+                       (:arguments 
+                          ( ("heightrate_p" variable (:type "float") (reparse-symbol arg-sub-list) [4328 4347]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4306 4386])
+                    ("set_indicated_airspeed_max" function
+                       (:arguments 
+                          ( ("airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [4421 4436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4389 4476])
+                    ("set_indicated_airspeed_min" function
+                       (:arguments 
+                          ( ("airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [4510 4525]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4478 4565])
+                    ("set_pitch_damping" function
+                       (:arguments 
+                          ( ("damping" variable (:type "float") (reparse-symbol arg-sub-list) [4591 4605]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4568 4640])
+                    ("set_vertical_accel_limit" function
+                       (:arguments 
+                          ( ("limit" variable (:type "float") (reparse-symbol arg-sub-list) [4672 4684]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4642 4715])
+                    ("set_speed_comp_filter_omega" function
+                       (:arguments 
+                          ( ("omega" variable (:type "float") (reparse-symbol arg-sub-list) [4751 4763]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4718 4795])
+                    ("set_speed_weight" function
+                       (:arguments 
+                          ( ("weight" variable (:type "float") (reparse-symbol arg-sub-list) [4819 4832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4797 4866])
+                    ("set_speedrate_p" function
+                       (:arguments 
+                          ( ("speedrate_p" variable (:type "float") (reparse-symbol arg-sub-list) [4889 4907]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4868 4944])
+                    ("set_time_const_throt" function
+                       (:arguments 
+                          ( ("time_const_throt" variable (:type "float") (reparse-symbol arg-sub-list) [4973 4996]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4947 5044])
+                    ("set_throttle_damp" function
+                       (:arguments 
+                          ( ("throttle_damp" variable (:type "float") (reparse-symbol arg-sub-list) [5069 5089]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5046 5133])
+                    ("set_throttle_slewrate" function
+                       (:arguments 
+                          ( ("slewrate" variable (:type "float") (reparse-symbol arg-sub-list) [5162 5177]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5135 5212])
+                    ("set_roll_throttle_compensation" function
+                       (:arguments 
+                          ( ("compensation" variable (:type "float") (reparse-symbol arg-sub-list) [5251 5270]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5215 5314])
+                    ("timestamp" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5333 5389])
+                    ("tecs_mode" function (:type ("ECL_TECS_MODE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5391 5439])
+                    ("hgt_setpoint_adj" function (:type "float") (reparse-symbol classsubparts) [5442 5496])
+                    ("vert_pos_state" function (:type "float") (reparse-symbol classsubparts) [5498 5548])
+                    ("TAS_setpoint_adj" function (:type "float") (reparse-symbol classsubparts) [5551 5605])
+                    ("tas_state" function (:type "float") (reparse-symbol classsubparts) [5607 5647])
+                    ("hgt_rate_setpoint" function (:type "float") (reparse-symbol classsubparts) [5650 5706])
+                    ("vert_vel_state" function (:type "float") (reparse-symbol classsubparts) [5708 5758])
+                    ("TAS_rate_setpoint" function (:type "float") (reparse-symbol classsubparts) [5761 5817])
+                    ("speed_derivative" function (:type "float") (reparse-symbol classsubparts) [5819 5873])
+                    ("STE_error" function (:type "float") (reparse-symbol classsubparts) [5876 5916])
+                    ("STE_rate_error" function (:type "float") (reparse-symbol classsubparts) [5918 5968])
+                    ("SEB_error" function (:type "float") (reparse-symbol classsubparts) [5971 6011])
+                    ("SEB_rate_error" function (:type "float") (reparse-symbol classsubparts) [6013 6063])
+                    ("throttle_integ_state" function (:type "float") (reparse-symbol classsubparts) [6066 6128])
+                    ("pitch_integ_state" function (:type "float") (reparse-symbol classsubparts) [6130 6186])
+                    ("handle_alt_step" function
+                       (:arguments 
+                          ( ("delta_alt" variable (:type "float") (reparse-symbol arg-sub-list) [6377 6393])
+                            ("altitude" variable (:type "float") (reparse-symbol arg-sub-list) [6394 6409]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6356 6729])
+                    ("private" label nil (reparse-symbol classsubparts) [6731 6739])
+                    ("_tecs_mode" variable (:type ("ECL_TECS_MODE" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [6742 6795])
+                    ("_state_update_timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6813 6849])
+                    ("_speed_update_timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6901 6937])
+                    ("_pitch_update_timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6989 7025])
+                    ("_hgt_estimate_freq" variable (:type "float") (reparse-symbol classsubparts) [7104 7135])
+                    ("_tas_estimate_freq" variable (:type "float") (reparse-symbol classsubparts) [7217 7248])
+                    ("_max_climb_rate" variable (:type "float") (reparse-symbol classsubparts) [7332 7360])
+                    ("_min_sink_rate" variable (:type "float") (reparse-symbol classsubparts) [7423 7450])
+                    ("_max_sink_rate" variable (:type "float") (reparse-symbol classsubparts) [7512 7539])
+                    ("_pitch_time_constant" variable (:type "float") (reparse-symbol classsubparts) [7581 7614])
+                    ("_throttle_time_constant" variable (:type "float") (reparse-symbol classsubparts) [7689 7725])
+                    ("_pitch_damping_gain" variable (:type "float") (reparse-symbol classsubparts) [7803 7835])
+                    ("_throttle_damping_gain" variable (:type "float") (reparse-symbol classsubparts) [7896 7931])
+                    ("_integrator_gain" variable (:type "float") (reparse-symbol classsubparts) [7995 8024])
+                    ("_vert_accel_limit" variable (:type "float") (reparse-symbol classsubparts) [8101 8131])
+                    ("_load_factor_correction" variable (:type "float") (reparse-symbol classsubparts) [8208 8244])
+                    ("_pitch_speed_weight" variable (:type "float") (reparse-symbol classsubparts) [8334 8366])
+                    ("_height_error_gain" variable (:type "float") (reparse-symbol classsubparts) [8433 8464])
+                    ("_height_setpoint_gain_ff" variable (:type "float") (reparse-symbol classsubparts) [8529 8566])
+                    ("_speed_error_gain" variable (:type "float") (reparse-symbol classsubparts) [8634 8664])
+                    ("_indicated_airspeed_min" variable (:type "float") (reparse-symbol classsubparts) [8728 8764])
+                    ("_indicated_airspeed_max" variable (:type "float") (reparse-symbol classsubparts) [8821 8858])
+                    ("_throttle_slewrate" variable (:type "float") (reparse-symbol classsubparts) [8915 8946])
+                    ("_throttle_setpoint" variable (:type "float") (reparse-symbol classsubparts) [9021 9052])
+                    ("_pitch_setpoint" variable (:type "float") (reparse-symbol classsubparts) [9097 9125])
+                    ("_vert_accel_state" variable (:type "float") (reparse-symbol classsubparts) [9198 9228])
+                    ("_vert_vel_state" variable (:type "float") (reparse-symbol classsubparts) [9304 9332])
+                    ("_vert_pos_state" variable (:type "float") (reparse-symbol classsubparts) [9392 9420])
+                    ("_tas_rate_state" variable (:type "float") (reparse-symbol classsubparts) [9471 9499])
+                    ("_tas_state" variable (:type "float") (reparse-symbol classsubparts) [9581 9604])
+                    ("_throttle_integ_state" variable (:type "float") (reparse-symbol classsubparts) [9690 9724])
+                    ("_pitch_integ_state" variable (:type "float") (reparse-symbol classsubparts) [9760 9791])
+                    ("_last_throttle_setpoint" variable (:type "float") (reparse-symbol classsubparts) [9831 9867])
+                    ("_last_pitch_setpoint" variable (:type "float") (reparse-symbol classsubparts) [9920 9953])
+                    ("_speed_derivative" variable (:type "float") (reparse-symbol classsubparts) [10005 10035])
+                    ("_EAS" variable (:type "float") (reparse-symbol classsubparts) [10125 10142])
+                    ("_TAS_max" variable (:type "float") (reparse-symbol classsubparts) [10182 10204])
+                    ("_TAS_min" variable (:type "float") (reparse-symbol classsubparts) [10256 10277])
+                    ("_TAS_setpoint" variable (:type "float") (reparse-symbol classsubparts) [10329 10355])
+                    ("_TAS_setpoint_last" variable (:type "float") (reparse-symbol classsubparts) [10397 10428])
+                    ("_EAS_setpoint" variable (:type "float") (reparse-symbol classsubparts) [10476 10502])
+                    ("_TAS_setpoint_adj" variable (:type "float") (reparse-symbol classsubparts) [10548 10578])
+                    ("_TAS_rate_setpoint" variable (:type "float") (reparse-symbol classsubparts) [10648 10679])
+                    ("_hgt_setpoint" variable (:type "float") (reparse-symbol classsubparts) [10789 10815])
+                    ("_hgt_setpoint_in_prev" variable (:type "float") (reparse-symbol classsubparts) [10876 10910])
+                    ("_hgt_setpoint_prev" variable (:type "float") (reparse-symbol classsubparts) [10978 11009])
+                    ("_hgt_setpoint_adj" variable (:type "float") (reparse-symbol classsubparts) [11096 11126])
+                    ("_hgt_setpoint_adj_prev" variable (:type "float") (reparse-symbol classsubparts) [11220 11255])
+                    ("_hgt_rate_setpoint" variable (:type "float") (reparse-symbol classsubparts) [11316 11347])
+                    ("_pitch_setpoint_unc" variable (:type "float") (reparse-symbol classsubparts) [11437 11469])
+                    ("_STE_rate_max" variable (:type "float") (reparse-symbol classsubparts) [11514 11540])
+                    ("_STE_rate_min" variable (:type "float") (reparse-symbol classsubparts) [11656 11682])
+                    ("_throttle_setpoint_max" variable (:type "float") (reparse-symbol classsubparts) [11798 11833])
+                    ("_throttle_setpoint_min" variable (:type "float") (reparse-symbol classsubparts) [11875 11910])
+                    ("_pitch_setpoint_max" variable (:type "float") (reparse-symbol classsubparts) [11952 11984])
+                    ("_pitch_setpoint_min" variable (:type "float") (reparse-symbol classsubparts) [12025 12058])
+                    ("_SPE_setpoint" variable (:type "float") (reparse-symbol classsubparts) [12131 12157])
+                    ("_SKE_setpoint" variable (:type "float") (reparse-symbol classsubparts) [12215 12241])
+                    ("_SPE_rate_setpoint" variable (:type "float") (reparse-symbol classsubparts) [12297 12328])
+                    ("_SKE_rate_setpoint" variable (:type "float") (reparse-symbol classsubparts) [12391 12422])
+                    ("_SPE_estimate" variable (:type "float") (reparse-symbol classsubparts) [12483 12509])
+                    ("_SKE_estimate" variable (:type "float") (reparse-symbol classsubparts) [12569 12595])
+                    ("_SPE_rate" variable (:type "float") (reparse-symbol classsubparts) [12653 12675])
+                    ("_SKE_rate" variable (:type "float") (reparse-symbol classsubparts) [12741 12763])
+                    ("_STE_error" variable (:type "float") (reparse-symbol classsubparts) [12865 12888])
+                    ("_STE_rate_error" variable (:type "float") (reparse-symbol classsubparts) [12942 12970])
+                    ("_SEB_error" variable (:type "float") (reparse-symbol classsubparts) [13028 13051])
+                    ("_SEB_rate_error" variable (:type "float") (reparse-symbol classsubparts) [13107 13135])
+                    ("_dt" variable (:type "float") (reparse-symbol classsubparts) [13223 13245])
+                    ("DT_DEFAULT" variable
+                       (:default-value "0.02f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [13321 13346])
+                    ("_underspeed_detected" variable (:type "bool") (reparse-symbol classsubparts) [13410 13443])
+                    ("_detect_underspeed_enabled" variable (:type "bool") (reparse-symbol classsubparts) [13505 13543])
+                    ("_uncommanded_descent_recovery" variable (:type "bool") (reparse-symbol classsubparts) [13595 13637])
+                    ("_climbout_mode_active" variable (:type "bool") (reparse-symbol classsubparts) [13737 13771])
+                    ("_airspeed_enabled" variable (:type "bool") (reparse-symbol classsubparts) [13808 13838])
+                    ("_states_initalized" variable (:type "bool") (reparse-symbol classsubparts) [13889 13920])
+                    ("_in_air" variable (:type "bool") (reparse-symbol classsubparts) [13975 13995])
+                    ("_update_speed_states" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("airspeed_setpoint" variable (:type "float") (reparse-symbol arg-sub-list) [14157 14181])
+                            ("indicated_airspeed" variable (:type "float") (reparse-symbol arg-sub-list) [14182 14207])
+                            ("eas_to_tas" variable (:type "float") (reparse-symbol arg-sub-list) [14208 14225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14131 14226])
+                    ("_update_speed_setpoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14271 14301])
+                    ("_update_height_setpoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("desired" variable (:type "float") (reparse-symbol arg-sub-list) [14373 14387])
+                            ("state" variable (:type "float") (reparse-symbol arg-sub-list) [14388 14400]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14344 14401])
+                    ("_detect_underspeed" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14478 14504])
+                    ("_update_energy_estimates" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14544 14576])
+                    ("_update_throttle_setpoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [14649 14671])
+                            ("rotMat" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Dcmf" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14672 14699]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14618 14700])
+                    ("_detect_uncommanded_descent" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14747 14782])
+                    ("_update_pitch_setpoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [14825 14855])
+                    ("_initialize_states" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pitch" variable (:type "float") (reparse-symbol arg-sub-list) [14922 14934])
+                            ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [14935 14957])
+                            ("baro_altitude" variable (:type "float") (reparse-symbol arg-sub-list) [14958 14978])
+                            ("pitch_min_climbout" variable (:type "float") (reparse-symbol arg-sub-list) [14979 15004])
+                            ("eas_to_tas" variable (:type "float") (reparse-symbol arg-sub-list) [15009 15026]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14898 15027])
+                    ("_update_STE_rate_lim" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15088 15116]))                  
+                :type "class")
+                nil [1879 15120]))          
+      :file "tecs.h"
+      :pointmax 15121
+      :fsize 15120
+      :lastmodtime '(23798 26604 851394 257000)
+      :unmatched-syntax '((symbol 13311 . 13320) (STATIC 13304 . 13310) (punctuation 2117 . 2118) (DELETE 2111 . 2117) (punctuation 2109 . 2110) (semantic-list 2099 . 2108) (punctuation 2098 . 2099) (OPERATOR 2090 . 2098) (punctuation 2106 . 2107) (punctuation 2089 . 2090) (symbol 2084 . 2088) (punctuation 2106 . 2107) (punctuation 2081 . 2082) (DELETE 2075 . 2081) (punctuation 2073 . 2074) (semantic-list 2063 . 2072) (symbol 2059 . 2063) (punctuation 2070 . 2071) (punctuation 2056 . 2057) (DELETE 2050 . 2056) (punctuation 2048 . 2049) (semantic-list 2033 . 2047) (punctuation 2032 . 2033) (OPERATOR 2024 . 2032) (punctuation 2023 . 2024) (symbol 2018 . 2022) (punctuation 2015 . 2016) (DELETE 2009 . 2015) (punctuation 2007 . 2008) (semantic-list 1992 . 2006) (symbol 1988 . 1992) (punctuation 1937 . 1938) (DEFAULT 1930 . 1937) (punctuation 1928 . 1929) (semantic-list 1925 . 1927) (symbol 1921 . 1925) (punctuation 1920 . 1921) (punctuation 1917 . 1918) (DEFAULT 1910 . 1917) (punctuation 1908 . 1909) (semantic-list 1905 . 1907) (symbol 1901 . 1905) (symbol 1816 . 1820) (symbol 1809 . 1815) (punctuation 1808 . 1809))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!ecl!tecs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

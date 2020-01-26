@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "default_checks.json"
+      :pointmax 1617
+      :fsize 1616
+      :lastmodtime '(23901 29133 613221 950000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "production_checks.json"
+      :pointmax 1306
+      :fsize 1628
+      :lastmodtime '(23901 29133 613221 950000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "sitl_checks.json"
+      :pointmax 1520
+      :fsize 1519
+      :lastmodtime '(23901 29133 617221 974000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!WingtraExplorer!configs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

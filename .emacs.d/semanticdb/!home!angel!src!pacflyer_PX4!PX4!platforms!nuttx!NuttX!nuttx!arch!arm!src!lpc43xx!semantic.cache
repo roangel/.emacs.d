@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [2286 2311])
+            ("errno.h" include (:system-flag t) nil [2313 2331])
+            ("time.h" include (:system-flag t) nil [2332 2349])
+            ("nuttx/irq.h" include (:system-flag t) nil [2351 2373])
+            ("nuttx/arch.h" include (:system-flag t) nil [2374 2397])
+            ("nuttx/clock.h" include (:system-flag t) nil [2398 2422])
+            ("arch/board/board.h" include (:system-flag t) nil [2423 2452])
+            ("up_arch.h" include nil nil [2454 2474])
+            ("chip.h" include nil nil [2475 2492])
+            ("chip/lpc43_rit.h" include nil nil [2493 2520]))          
+      :file "lpc43_tickless_rit.c"
+      :pointmax 18300
+      :fsize 18299
+      :lastmodtime '(23770 54121 527239 675000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "chip.h"
+      :fsize 7634
+      :lastmodtime '(23770 54121 515239 607000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_LPC43XX_LP43_GPDMA_H" variable (:constant-flag t) nil [1862 1897])
+            ("nuttx/config.h" include (:system-flag t) nil [2075 2100])
+            ("chip/lpc43_gpdma.h" include nil nil [2101 2130]))          
+      :file "lpc43_gpdma.h"
+      :pointmax 8069
+      :fsize 8068
+      :lastmodtime '(23770 54121 523239 652000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ARCH_ARM_SRC_LPC43XX_LP43_GPDMA_H")
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!lpc43xx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

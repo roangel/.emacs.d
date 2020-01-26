@@ -1,0 +1,901 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_posix.h" include nil nil [82 104])
+            ("px4_log.h" include nil nil [105 125])
+            ("apps.h" include nil nil [127 144])
+            ("cstdio" include (:system-flag t) nil [146 163])
+            ("map" include (:system-flag t) nil [164 178])
+            ("string" include (:system-flag t) nil [179 196])
+            ("cstdlib" include (:system-flag t) nil [198 216])
+            ("wait_for_topic" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3110 3119])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3120 3133]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3091 3134])
+            ("sleep_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3066 3075])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3076 3089]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3051 3090])
+            ("list_topics_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3026 3035])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3036 3049]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3005 3050])
+            ("list_devices_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2980 2989])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2990 3003]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2958 3004])
+            ("list_files_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2933 2942])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2943 2956]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2913 2957])
+            ("list_tasks_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2888 2897])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2898 2911]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2868 2912])
+            ("shutdown_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2843 2852])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2853 2866]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2825 2867])
+            ("sdlog2_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2799 2808])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2809 2822]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2783 2823])
+            ("moment_force_mapping_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2758 2767])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2768 2781]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2728 2782])
+            ("geometric_controller_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2703 2712])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2713 2726]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2673 2727])
+            ("ex_fixedwing_control_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2648 2657])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2658 2671]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2618 2672])
+            ("px4_mavlink_debug_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2593 2602])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2603 2616]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2566 2617])
+            ("px4_daemon_app_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2541 2550])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2551 2564]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2517 2565])
+            ("px4_simple_app_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2492 2501])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2502 2515]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2468 2516])
+            ("segway_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2443 2452])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2453 2466]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2427 2467])
+            ("uuv_example_app_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2402 2411])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2412 2425]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2377 2426])
+            ("rover_steering_control_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2352 2361])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2362 2375]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2320 2376])
+            ("bottle_drop_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2295 2304])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2305 2318]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2274 2319])
+            ("uorb_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2249 2258])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2259 2272]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2235 2273])
+            ("dataman_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2210 2219])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2220 2233]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2193 2234])
+            ("logger_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2168 2177])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2178 2191]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2152 2192])
+            ("mc_pc_wingtra_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2127 2136])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2137 2150]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2104 2151])
+            ("fw_pos_control_l1_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2079 2088])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2089 2102]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2052 2103])
+            ("ekf2_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2027 2036])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2037 2050]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2013 2051])
+            ("simulator_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1988 1997])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1998 2011]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1969 2012])
+            ("replay_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1944 1953])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1954 1967]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1928 1968])
+            ("navigator_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1903 1912])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1913 1926]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1884 1927])
+            ("mavlink_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1859 1868])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1869 1882]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1842 1883])
+            ("load_mon_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1817 1826])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1827 1840]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1799 1841])
+            ("land_detector_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1774 1783])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1784 1797]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1751 1798])
+            ("send_event_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1726 1735])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1736 1749]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1706 1750])
+            ("commander_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1681 1690])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1691 1704]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1662 1705])
+            ("wqueue_test_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1637 1646])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1647 1660]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1616 1661])
+            ("vcdev_test_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1591 1600])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1601 1614]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1571 1615])
+            ("muorb_test_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1546 1555])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1556 1569]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1526 1570])
+            ("hrt_test_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1501 1510])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1511 1524]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1483 1525])
+            ("hello_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1458 1467])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1468 1481]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1443 1482])
+            ("ver_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1418 1427])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1428 1441]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1405 1442])
+            ("listener_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1380 1389])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1390 1403]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1362 1404])
+            ("top_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1337 1346])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1347 1360]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1324 1361])
+            ("sd_bench_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1299 1308])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1309 1322]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1281 1323])
+            ("reboot_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1256 1265])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1266 1279]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1240 1280])
+            ("pwm_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1215 1224])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1225 1238]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1202 1239])
+            ("perf_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1177 1186])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1187 1200]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1163 1201])
+            ("param_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1138 1147])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1148 1161]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1123 1162])
+            ("motor_ramp_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1098 1107])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1108 1121]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1078 1122])
+            ("mixer_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1053 1062])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1063 1076]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1038 1077])
+            ("led_control_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1013 1022])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1023 1036]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [992 1037])
+            ("esc_calib_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [967 976])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [977 990]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [948 991])
+            ("tone_alarm_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [923 932])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [933 946]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [903 947])
+            ("gyrosim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [878 887])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [888 901]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [861 902])
+            ("gpssim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [836 845])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [846 859]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [820 860])
+            ("barosim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [795 804])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [805 818]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [778 819])
+            ("measairspeedsim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [753 762])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [763 776]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [728 777])
+            ("adcsim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [703 712])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [713 726]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [687 727])
+            ("accelsim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [662 671])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [672 685]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [644 686])
+            ("sensors_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [619 628])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [629 642]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [602 643])
+            ("sdp3x_airspeed_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [577 586])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [587 600]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [553 601])
+            ("ms5525_airspeed_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [528 537])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [538 551]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [503 552])
+            ("ms4525_airspeed_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [478 487])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [488 501]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [453 502])
+            ("ets_airspeed_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [428 437])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [438 451]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [406 452])
+            ("vmount_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [381 390])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [391 404]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [365 405])
+            ("pwm_out_sim_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [340 349])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [350 363]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [319 364])
+            ("gps_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [294 303])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [304 317]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [281 318])
+            ("camera_trigger_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [256 265])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [266 279]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [232 280])
+            ("px4_show_devices" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3168 3173]))                  
+                :type "void")
+                nil [3139 3174])
+            ("init_app_map" function
+               (:arguments 
+                  ( ("apps" variable
+                       (:reference 1
+                        :type ("apps_map_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3194 3214]))                  
+                :type "void")
+                nil [3176 5713])
+            ("list_builtins" function
+               (:arguments 
+                  ( ("apps" variable
+                       (:reference 1
+                        :type ("apps_map_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5734 5754]))                  
+                :type "void")
+                nil [5715 5907])
+            ("shutdown_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5927 5936])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5937 5950]))                  
+                :type "int")
+                nil [5909 5992])
+            ("list_tasks_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6014 6023])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6024 6037]))                  
+                :type "int")
+                nil [5994 6071])
+            ("list_devices_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6095 6104])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6105 6118]))                  
+                :type "int")
+                nil [6073 6154])
+            ("list_topics_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6177 6186])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6187 6200]))                  
+                :type "int")
+                nil [6156 6235])
+            ("list_files_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6257 6266])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6267 6280]))                  
+                :type "int")
+                nil [6237 6314])
+            ("sleep_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6331 6340])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6341 6354]))                  
+                :type "int")
+                nil [6316 6628])
+            ("uORB/uORB.h" include nil nil [6630 6652])
+            ("wait_for_topic" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6673 6682])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6683 6696]))                  
+                :type "int")
+                nil [6654 7222]))          
+      :file "apps.cpp"
+      :pointmax 7224
+      :fsize 7223
+      :lastmodtime '(23614 1024 604581 188000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "apps.h"
+      :fsize 394
+      :lastmodtime '(23614 1024 604581 188000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default!platforms!posix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

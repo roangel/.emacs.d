@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_LPC17XX_LPC17_GPDMA_H" variable (:constant-flag t) nil [1869 1905])
+            ("nuttx/config.h" include (:system-flag t) nil [2083 2108])
+            ("chip/lpc17_gpdma.h" include nil nil [2109 2138]))          
+      :file "lpc17_gpdma.h"
+      :pointmax 9667
+      :fsize 9666
+      :lastmodtime '(23770 54121 503239 538000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ARCH_ARM_SRC_LPC17XX_LPC17_GPDMA_H")
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!lpc17xx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

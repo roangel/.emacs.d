@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BOARD_OVERRIDE_UUID" variable (:constant-flag t) nil [1822 1841])
+            ("PX4_SOC_ARCH_ID" variable (:constant-flag t) nil [1893 1908])
+            ("BOARD_BATTERY1_V_DIV" variable (:constant-flag t) nil [1944 1964])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [1991 2009])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [1991 2009])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [1991 2009])
+            ("BOARD_HAS_NO_BOOTLOADER" variable (:constant-flag t) nil [2018 2041])
+            ("BOARD_NUMBER_I2C_BUSES" variable (:constant-flag t) nil [2051 2073])
+            ("BOARD_MAX_LEDS" variable (:constant-flag t) nil [2084 2098])
+            ("PX4_I2C_BUS_LED" variable (:constant-flag t) nil [2152 2167])
+            ("PX4_I2C_BUS_EXPANSION" variable (:constant-flag t) nil [2178 2199])
+            ("ADC_BATTERY_VOLTAGE_CHANNEL" variable (:constant-flag t) nil [2235 2262])
+            ("ADC_BATTERY_CURRENT_CHANNEL" variable (:constant-flag t) nil [2278 2305])
+            ("ADC_AIRSPEED_VOLTAGE_CHANNEL" variable (:constant-flag t) nil [2334 2362])
+            ("system_config.h" include (:system-flag t) nil [2370 2396])
+            ("drivers/boards/common/board_common.h" include (:system-flag t) nil [2397 2444]))          
+      :file "board_config.h"
+      :pointmax 2445
+      :fsize 2444
+      :lastmodtime '(23801 12013 432192 112000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOARD_BATTERY1_V_DIV" . ((semantic-list "(10.177939394f)" 1967 . 1982)))
+          ("ADC_BATTERY_VOLTAGE_CHANNEL" . ((number "10" 2267 . 2269)))
+          ("BOARD_NUMBER_I2C_BUSES" . ((number "4" 2074 . 2075)))
+          ("PX4_I2C_BUS_EXPANSION" . ((number "1" 2200 . 2201)))
+          ("ADC_BATTERY_CURRENT_CHANNEL" . ((semantic-list "((uint8_t)(-1))" 2310 . 2325)))
+          ("BOARD_OVERRIDE_UUID" . ((string "\"OCPOC00000000000\"" 1842 . 1860)))
+          ("ADC_AIRSPEED_VOLTAGE_CHANNEL" . ((number "11" 2366 . 2368)))
+          ("BOARD_HAS_NO_RESET")
+          ("BOARD_MAX_LEDS" . ((number "1" 2099 . 2100)))
+          ("PX4_SOC_ARCH_ID" . ((symbol "PX4_SOC_ARCH_ID_OCPOC" 1913 . 1934)))
+          ("BOARD_HAS_NO_BOOTLOADER")
+          ("PX4_I2C_BUS_LED" . ((number "1" 2168 . 2169)))
+          )
+))
+  :file "!home!angel!src!Firmware!boards!aerotenna!ocpoc!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

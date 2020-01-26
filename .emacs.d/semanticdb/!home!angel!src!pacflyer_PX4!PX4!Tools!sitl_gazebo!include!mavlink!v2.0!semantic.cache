@@ -1,0 +1,600 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include nil nil [15 34])
+            ("mavlink_types.h" include nil nil [35 61])
+            ("MAVLINK_NEED_BYTE_SWAP" variable (:constant-flag t) nil [286 308])
+            ("MAVLINK_STACK_BUFFER" variable (:constant-flag t) nil [396 416])
+            ("MAVLINK_AVOID_GCC_STACK_BUG" variable (:constant-flag t) nil [472 499])
+            ("MAVLINK_ASSERT" variable (:constant-flag t) nil [557 571])
+            ("MAVLINK_START_UART_SEND" variable (:constant-flag t) nil [623 646])
+            ("MAVLINK_END_UART_SEND" variable (:constant-flag t) nil [707 728])
+            ("MAVLINK_HELPER" variable (:constant-flag t) nil [3212 3226])
+            ("mavlink_helpers.h" include nil nil [3241 3273])
+            ("mavlink_msg_get_send_buffer_length" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3434 3463]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3376 3745])
+            ("byte_copy_2" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4276 4286])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4287 4303]))                  
+                :type "void")
+                nil [4245 4343])
+            ("byte_copy_4" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4375 4385])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4386 4402]))                  
+                :type "void")
+                nil [4344 4478])
+            ("byte_copy_8" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4510 4520])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4521 4537]))                  
+                :type "void")
+                nil [4479 4563])
+            ("_mav_put_uint8_t" variable (:constant-flag t) nil [4580 4596])
+            ("_mav_put_int8_t" variable (:constant-flag t) nil [4656 4671])
+            ("_mav_put_char" variable (:constant-flag t) nil [4731 4744])
+            ("_mav_put_uint16_t" variable (:constant-flag t) nil [5624 5641])
+            ("_mav_put_int16_t" variable (:constant-flag t) nil [5720 5736])
+            ("_mav_put_uint32_t" variable (:constant-flag t) nil [5816 5833])
+            ("_mav_put_int32_t" variable (:constant-flag t) nil [5912 5928])
+            ("_mav_put_uint64_t" variable (:constant-flag t) nil [6008 6025])
+            ("_mav_put_int64_t" variable (:constant-flag t) nil [6104 6120])
+            ("_mav_put_float" variable (:constant-flag t) nil [6200 6214])
+            ("_mav_put_double" variable (:constant-flag t) nil [6296 6311])
+            ("mav_array_memcpy" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7145 7156])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7157 7173])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7174 7183]))                  
+                :type "void")
+                nil [7109 7266])
+            ("_mav_put_char_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7350 7360])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7361 7381])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7382 7396])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7397 7418]))                  
+                :type "void")
+                nil [7311 7478])
+            ("_mav_put_uint8_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7568 7578])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7579 7599])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7600 7617])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7618 7639]))                  
+                :type "void")
+                nil [7526 7699])
+            ("_mav_put_int8_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7787 7797])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7798 7818])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7819 7835])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7836 7857]))                  
+                :type "void")
+                nil [7746 7917])
+            ("_MAV_PUT_ARRAY" variable (:constant-flag t) nil [8339 8353])
+            ("_mav_put_uint16_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8570 8599])
+            ("_mav_put_uint32_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8600 8629])
+            ("_mav_put_uint64_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8630 8659])
+            ("_mav_put_int16_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8660 8689])
+            ("_mav_put_int32_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8690 8719])
+            ("_mav_put_int64_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8720 8749])
+            ("_mav_put_float_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8750 8777])
+            ("_mav_put_double_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [8778 8805])
+            ("_MAV_RETURN_char" variable (:constant-flag t) nil [8815 8831])
+            ("_MAV_RETURN_int8_t" variable (:constant-flag t) nil [8907 8925])
+            ("_MAV_RETURN_uint8_t" variable (:constant-flag t) nil [8993 9012])
+            ("_MAV_MSG_RETURN_TYPE" variable (:constant-flag t) nil [9615 9635])
+            ("_MAV_RETURN_uint16_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [9812 9845])
+            ("_MAV_RETURN_int16_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [9846 9879])
+            ("_MAV_RETURN_uint32_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9880 9913])
+            ("_MAV_RETURN_int32_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [9914 9947])
+            ("_MAV_RETURN_uint64_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [9948 9981])
+            ("_MAV_RETURN_int64_t" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [9982 10015])
+            ("_MAV_RETURN_float" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "float")
+                nil [10016 10049])
+            ("_MAV_RETURN_double" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("ofs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "double")
+                nil [10050 10083])
+            ("_MAV_RETURN_char_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10611 10640])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10641 10653])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10666 10687])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10688 10708]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [10565 10797])
+            ("_MAV_RETURN_uint8_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10848 10877])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10878 10893])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10902 10923])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10924 10944]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [10799 11033])
+            ("_MAV_RETURN_int8_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11083 11112])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("int8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11113 11127])
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11142 11163])
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11164 11184]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [11035 11273])
+            ("_MAV_RETURN_ARRAY" variable (:constant-flag t) nil [11682 11699])
+            ("_MAV_RETURN_uint16_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [11994 12026])
+            ("_MAV_RETURN_uint32_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12027 12059])
+            ("_MAV_RETURN_uint64_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12060 12092])
+            ("_MAV_RETURN_int16_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12093 12125])
+            ("_MAV_RETURN_int32_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12126 12158])
+            ("_MAV_RETURN_int64_t_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12159 12191])
+            ("_MAV_RETURN_float_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12192 12222])
+            ("_MAV_RETURN_double_array" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("value" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("array_length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("wire_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [12223 12253]))          
+      :file "protocol.h"
+      :pointmax 12256
+      :fsize 12255
+      :lastmodtime '(23690 26385 969609 500000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("_MAV_RETURN_uint8_t" (spp-arg-list ("msg" "wire_offset") 9012 . 9030) . 
+              ((semantic-list "(uint8_t)" 9031 . 9040) (symbol "_MAV_PAYLOAD" 9040 . 9052) (semantic-list "(msg)" 9052 . 9057) (semantic-list "[wire_offset]" 9057 . 9070)))
+          ("_mav_put_double" (spp-arg-list ("buf" "wire_offset" "b") 6311 . 6332) . ((symbol "byte_copy_8" 6335 . 6346) (semantic-list "(&buf[wire_offset], (const char *)&b)" 6346 . 6383)))
+          ("_MAV_RETURN_char" (spp-arg-list ("msg" "wire_offset") 8831 . 8849) . 
+              ((semantic-list "(char)" 8862 . 8868) (symbol "_MAV_PAYLOAD" 8868 . 8880) (semantic-list "(msg)" 8880 . 8885) (semantic-list "[wire_offset]" 8885 . 8898)))
+          ("_mav_put_int16_t" (spp-arg-list ("buf" "wire_offset" "b") 5736 . 5757) . ((symbol "byte_copy_2" 5759 . 5770) (semantic-list "(&buf[wire_offset], (const char *)&b)" 5770 . 5807)))
+          ("_mav_put_int64_t" (spp-arg-list ("buf" "wire_offset" "b") 6120 . 6141) . ((symbol "byte_copy_8" 6143 . 6154) (semantic-list "(&buf[wire_offset], (const char *)&b)" 6154 . 6191)))
+          ("_MAV_PUT_ARRAY" (spp-arg-list ("TYPE" "V") 8353 . 8362) . 
+              ((STATIC "static" 8369 . 8375) (INLINE "inline" 8376 . 8382) (VOID "void" 8383 . 8387) (spp-symbol-merge ((spp-symbol-merge ((symbol "_mav_put_" 8388 . 8397) (symbol "TYPE" 8401 . 8405)) 8388 . 8405) (symbol "_array" 8408 . 8414)) 8388 . 8414) (semantic-list "(char *buf, uint8_t wire_offset, const TYPE *b, uint8_t array_length)" 8414 . 8483) (semantic-list "{ \\
+	mav_array_memcpy(&buf[wire_offset], b, array_length*sizeof(TYPE)); \\
+}" 8486 . 8561)))
+          ("MAVLINK_AVOID_GCC_STACK_BUG" . ((symbol "defined" 500 . 507) (semantic-list "(__GNUC__)" 507 . 517)))
+          ("MAVLINK_START_UART_SEND" (spp-arg-list ("chan" "length") 646 . 660))
+          ("_mav_put_float" (spp-arg-list ("buf" "wire_offset" "b") 6214 . 6235) . ((symbol "byte_copy_4" 6239 . 6250) (semantic-list "(&buf[wire_offset], (const char *)&b)" 6250 . 6287)))
+          ("_MAV_RETURN_ARRAY" (spp-arg-list ("TYPE" "V") 11699 . 11708) . 
+              ((STATIC "static" 11715 . 11721) (INLINE "inline" 11722 . 11728) (symbol "uint16_t" 11729 . 11737) (spp-symbol-merge ((spp-symbol-merge ((symbol "_MAV_RETURN_" 11738 . 11750) (symbol "TYPE" 11753 . 11757)) 11738 . 11757) (symbol "_array" 11760 . 11766)) 11738 . 11766) (semantic-list "(const mavlink_message_t *msg, TYPE *value, \\
+							 uint8_t array_length, uint8_t wire_offset)" 11766 . 11862) (semantic-list "{ \\
+	memcpy(value, &_MAV_PAYLOAD(msg)[wire_offset], array_length*sizeof(TYPE)); \\
+	return array_length*sizeof(TYPE); \\
+}" 11865 . 11985)))
+          ("MAVLINK_HELPER" . ((STATIC "static" 3227 . 3233) (INLINE "inline" 3234 . 3240)))
+          ("_mav_put_int8_t" (spp-arg-list ("buf" "wire_offset" "b") 4671 . 4692) . 
+              ((symbol "buf" 4694 . 4697) (semantic-list "[wire_offset]" 4697 . 4710) (punctuation "=" 4711 . 4712) (semantic-list "(int8_t)" 4713 . 4721) (symbol "b" 4721 . 4722)))
+          ("MAVLINK_NEED_BYTE_SWAP" . ((semantic-list "(MAVLINK_ENDIAN != MAVLINK_LITTLE_ENDIAN)" 309 . 350)))
+          ("_MAV_RETURN_int8_t" (spp-arg-list ("msg" "wire_offset") 8925 . 8943) . 
+              ((semantic-list "(int8_t)" 8946 . 8954) (symbol "_MAV_PAYLOAD" 8954 . 8966) (semantic-list "(msg)" 8966 . 8971) (semantic-list "[wire_offset]" 8971 . 8984)))
+          ("_MAV_MSG_RETURN_TYPE" (spp-arg-list ("TYPE" "SIZE") 9635 . 9647) . 
+              ((STATIC "static" 9650 . 9656) (INLINE "inline" 9657 . 9663) (symbol "TYPE" 9664 . 9668) (spp-symbol-merge ((symbol "_MAV_RETURN_" 9669 . 9681) (symbol "TYPE" 9684 . 9688)) 9669 . 9688) (semantic-list "(const mavlink_message_t *msg, uint8_t ofs)" 9688 . 9731) (semantic-list "{ TYPE r; byte_copy_## SIZE((char*)&r, &_MAV_PAYLOAD(msg)[ofs]); return r; }" 9734 . 9810)))
+          ("MAVLINK_STACK_BUFFER" . ((number "0" 417 . 418)))
+          ("MAVLINK_END_UART_SEND" (spp-arg-list ("chan" "length") 728 . 742))
+          ("_mav_put_uint16_t" (spp-arg-list ("buf" "wire_offset" "b") 5641 . 5662) . ((symbol "byte_copy_2" 5663 . 5674) (semantic-list "(&buf[wire_offset], (const char *)&b)" 5674 . 5711)))
+          ("_mav_put_int32_t" (spp-arg-list ("buf" "wire_offset" "b") 5928 . 5949) . ((symbol "byte_copy_4" 5951 . 5962) (semantic-list "(&buf[wire_offset], (const char *)&b)" 5962 . 5999)))
+          ("_mav_put_uint64_t" (spp-arg-list ("buf" "wire_offset" "b") 6025 . 6046) . ((symbol "byte_copy_8" 6047 . 6058) (semantic-list "(&buf[wire_offset], (const char *)&b)" 6058 . 6095)))
+          ("MAVLINK_ASSERT" (spp-arg-list ("x") 571 . 574))
+          ("_mav_put_uint8_t" (spp-arg-list ("buf" "wire_offset" "b") 4596 . 4617) . 
+              ((symbol "buf" 4618 . 4621) (semantic-list "[wire_offset]" 4621 . 4634) (punctuation "=" 4635 . 4636) (semantic-list "(uint8_t)" 4637 . 4646) (symbol "b" 4646 . 4647)))
+          ("_mav_put_char" (spp-arg-list ("buf" "wire_offset" "b") 4744 . 4765) . 
+              ((symbol "buf" 4769 . 4772) (semantic-list "[wire_offset]" 4772 . 4785) (punctuation "=" 4786 . 4787) (symbol "b" 4788 . 4789)))
+          ("_mav_put_uint32_t" (spp-arg-list ("buf" "wire_offset" "b") 5833 . 5854) . ((symbol "byte_copy_4" 5855 . 5866) (semantic-list "(&buf[wire_offset], (const char *)&b)" 5866 . 5903)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "mavlink_types.h"
+      :fsize 11188
+      :lastmodtime '(23690 26385 969609 500000))
+    (semanticdb-table "semanticdb-table"
+      :file "mavlink_helpers.h"
+      :fsize 36497
+      :lastmodtime '(23690 26385 969609 500000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!sitl_gazebo!include!mavlink!v2.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

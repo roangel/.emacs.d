@@ -1,0 +1,1235 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_posix.h" include (:system-flag t) nil [15 37])
+            ("controllib/blocks.hpp" include (:system-flag t) nil [38 70])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [71 99])
+            ("lib/geo/geo.h" include (:system-flag t) nil [100 124])
+            ("matrix/Matrix.hpp" include (:system-flag t) nil [125 153])
+            ("uORB/Subscription.hpp" include (:system-flag t) nil [177 209])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [210 249])
+            ("uORB/topics/actuator_armed.h" include (:system-flag t) nil [250 289])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [290 336])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [337 382])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [383 424])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [425 475])
+            ("uORB/topics/optical_flow.h" include (:system-flag t) nil [476 513])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [514 554])
+            ("uORB/topics/distance_sensor.h" include (:system-flag t) nil [555 595])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [596 637])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [638 686])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [687 732])
+            ("uORB/topics/att_pos_mocap.h" include (:system-flag t) nil [733 771])
+            ("uORB/Publication.hpp" include (:system-flag t) nil [794 825])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [826 873])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [874 922])
+            ("uORB/topics/estimator_status.h" include (:system-flag t) nil [923 964])
+            ("uORB/topics/ekf2_innovations.h" include (:system-flag t) nil [965 1006])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1008 1031])
+            ("control" using (:type ("control" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1032 1056])
+            ("DELAY_MAX" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0.5f"
+                :type "float")
+                nil [1058 1094])
+            ("HIST_STEP" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0.05f"
+                :type "float")
+                nil [1106 1143])
+            ("BIAS_MAX" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1e-1f"
+                :type "float")
+                nil [1153 1189])
+            ("HIST_LEN" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1190 1224])
+            ("N_DIST_SUBS" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1251 1287])
+            ("BETA_TABLE" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{0,
+				    8.82050518214,
+				    12.094592431,
+				    13.9876612368,
+				    16.0875642296,
+				    17.8797700658,
+				    19.6465647819,
+				   }"
+                :type "float")
+                nil [1456 1641])
+            ("BlockLocalPositionEstimator" type
+               (:superclasses 
+                  ( ("control::SuperBlock" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2631 2638])
+                    ("" type
+                       (:members 
+                          ( ("X_x" variable
+                               (:constant-flag t
+                                :default-value (2667 2668)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2661 2668])
+                            ("X_y" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2670 2674])
+                            ("X_z" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2675 2679])
+                            ("X_vx" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2680 2685])
+                            ("X_vy" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2686 2691])
+                            ("X_vz" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2692 2697])
+                            ("X_bx" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2698 2703])
+                            ("X_by" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2704 2709])
+                            ("X_bz" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2710 2715])
+                            ("X_tz" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2716 2721])
+                            ("n_x" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2722 2726]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2655 2727])
+                    ("" type
+                       (:members 
+                          ( ("U_ax" variable
+                               (:constant-flag t
+                                :default-value (2742 2743)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2735 2743])
+                            ("U_ay" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2745 2750])
+                            ("U_az" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2751 2756])
+                            ("n_u" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2757 2761]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2729 2762])
+                    ("" type
+                       (:members 
+                          ( ("Y_baro_z" variable
+                               (:constant-flag t
+                                :default-value (2781 2782)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2770 2782])
+                            ("n_y_baro" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2784 2793]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2764 2794])
+                    ("" type
+                       (:members 
+                          ( ("Y_lidar_z" variable
+                               (:constant-flag t
+                                :default-value (2814 2815)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2802 2815])
+                            ("n_y_lidar" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2817 2827]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2796 2828])
+                    ("" type
+                       (:members 
+                          ( ("Y_flow_vx" variable
+                               (:constant-flag t
+                                :default-value (2848 2849)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2836 2849])
+                            ("Y_flow_vy" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2851 2861])
+                            ("n_y_flow" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2862 2871]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2830 2872])
+                    ("" type
+                       (:members 
+                          ( ("Y_sonar_z" variable
+                               (:constant-flag t
+                                :default-value (2892 2893)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2880 2893])
+                            ("n_y_sonar" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2895 2905]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2874 2906])
+                    ("" type
+                       (:members 
+                          ( ("Y_gps_x" variable
+                               (:constant-flag t
+                                :default-value (2924 2925)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2914 2925])
+                            ("Y_gps_y" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2927 2935])
+                            ("Y_gps_z" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2936 2944])
+                            ("Y_gps_vx" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2945 2954])
+                            ("Y_gps_vy" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2955 2964])
+                            ("Y_gps_vz" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2965 2974])
+                            ("n_y_gps" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2975 2983]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2908 2984])
+                    ("" type
+                       (:members 
+                          ( ("Y_vision_x" variable
+                               (:constant-flag t
+                                :default-value (3005 3006)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2992 3006])
+                            ("Y_vision_y" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3008 3019])
+                            ("Y_vision_z" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3020 3031])
+                            ("n_y_vision" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3032 3043]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2986 3044])
+                    ("" type
+                       (:members 
+                          ( ("Y_mocap_x" variable
+                               (:constant-flag t
+                                :default-value (3064 3065)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3052 3065])
+                            ("Y_mocap_y" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3067 3077])
+                            ("Y_mocap_z" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3078 3088])
+                            ("n_y_mocap" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3089 3099]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3046 3100])
+                    ("" type
+                       (:members 
+                          ( ("Y_land_vx" variable
+                               (:constant-flag t
+                                :default-value (3120 3121)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3108 3121])
+                            ("Y_land_vy" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3123 3133])
+                            ("Y_land_agl" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3134 3145])
+                            ("n_y_land" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3146 3155]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3102 3156])
+                    ("" type
+                       (:members 
+                          ( ("POLL_FLOW" variable
+                               (:constant-flag t
+                                :default-value (3176 3177)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3164 3177])
+                            ("POLL_SENSORS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3179 3192])
+                            ("POLL_PARAM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3193 3204])
+                            ("n_poll" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3205 3212]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3158 3213])
+                    ("" type
+                       (:members 
+                          ( ("FUSE_GPS" variable
+                               (:constant-flag t
+                                :default-value (3235 3236)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3224 3236])
+                            ("FUSE_FLOW" variable
+                               (:constant-flag t
+                                :default-value (3257 3258)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3245 3258])
+                            ("FUSE_VIS_POS" variable
+                               (:constant-flag t
+                                :default-value (3282 3283)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3267 3283])
+                            ("FUSE_VIS_YAW" variable
+                               (:constant-flag t
+                                :default-value (3307 3308)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3292 3308])
+                            ("FUSE_LAND" variable
+                               (:constant-flag t
+                                :default-value (3329 3330)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3317 3330])
+                            ("FUSE_PUB_AGL_Z" variable
+                               (:constant-flag t
+                                :default-value (3356 3357)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3339 3357])
+                            ("FUSE_FLOW_GYRO_COMP" variable
+                               (:constant-flag t
+                                :default-value (3388 3389)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3366 3389])
+                            ("FUSE_BARO" variable
+                               (:constant-flag t
+                                :default-value (3410 3411)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3398 3411])
+                            ("FUSE_LAND_TARGET" variable
+                               (:constant-flag t
+                                :default-value (3439 3440)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3420 3440]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3215 3449])
+                    ("sensor_t" type
+                       (:members 
+                          ( ("SENSOR_BARO" variable
+                               (:constant-flag t
+                                :default-value (3484 3485)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3470 3485])
+                            ("SENSOR_GPS" variable
+                               (:constant-flag t
+                                :default-value (3507 3508)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3494 3508])
+                            ("SENSOR_LIDAR" variable
+                               (:constant-flag t
+                                :default-value (3532 3533)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3517 3533])
+                            ("SENSOR_FLOW" variable
+                               (:constant-flag t
+                                :default-value (3556 3557)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3542 3557])
+                            ("SENSOR_SONAR" variable
+                               (:constant-flag t
+                                :default-value (3581 3582)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3566 3582])
+                            ("SENSOR_VISION" variable
+                               (:constant-flag t
+                                :default-value (3607 3608)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3591 3608])
+                            ("SENSOR_MOCAP" variable
+                               (:constant-flag t
+                                :default-value (3632 3633)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3617 3633])
+                            ("SENSOR_LAND" variable
+                               (:constant-flag t
+                                :default-value (3656 3657)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3642 3657])
+                            ("SENSOR_LAND_TARGET" variable
+                               (:constant-flag t
+                                :default-value (3687 3688)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3666 3688]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3452 3698])
+                    ("estimate_t" type
+                       (:members 
+                          ( ("EST_XY" variable
+                               (:constant-flag t
+                                :default-value (3730 3731)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3721 3731])
+                            ("EST_Z" variable
+                               (:constant-flag t
+                                :default-value (3748 3749)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3740 3749])
+                            ("EST_TZ" variable
+                               (:constant-flag t
+                                :default-value (3767 3768)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3758 3768]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3701 3778])
+                    ("BlockLocalPositionEstimator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3800 3830])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3832 3846])
+                    ("BlockLocalPositionEstimator" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3848 3887])
+                    ("private" label nil (reparse-symbol classsubparts) [3889 3897])
+                    ("BlockLocalPositionEstimator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3959 3995]))                          
+                        :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3931 3996])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4036 4072]))                          
+                        :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3998 4073])
+                    ("dynamics" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t" variable (:type "float") (reparse-symbol arg-sub-list) [4156 4164])
+                            ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_x" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4167 4195])
+                            ("u" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_u" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4198 4226]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("n_x" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4125 4227])
+                    ("initP" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4229 4242])
+                    ("initSS" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4244 4258])
+                    ("updateSSStates" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4260 4282])
+                    ("updateSSParams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4284 4306])
+                    ("predict" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4336 4351])
+                    ("lidarMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_lidar" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4382 4410]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4364 4411])
+                    ("lidarCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4413 4433])
+                    ("lidarInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4435 4452])
+                    ("lidarCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4454 4479])
+                    ("sonarMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_sonar" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4510 4538]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4492 4539])
+                    ("sonarCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4541 4561])
+                    ("sonarInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4563 4580])
+                    ("sonarCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4582 4607])
+                    ("baroMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_baro" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4636 4663]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4619 4664])
+                    ("baroCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4666 4685])
+                    ("baroInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4687 4703])
+                    ("baroCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4705 4729])
+                    ("gpsMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil)
+                                          ("n_y_gps" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4756 4783]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4740 4784])
+                    ("gpsCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4786 4804])
+                    ("gpsInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4806 4821])
+                    ("gpsCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4823 4846])
+                    ("flowMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_flow" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4875 4902]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4858 4903])
+                    ("flowCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4905 4924])
+                    ("flowInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4926 4942])
+                    ("flowCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4944 4968])
+                    ("visionMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_vision" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5001 5030]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4982 5031])
+                    ("visionCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5033 5054])
+                    ("visionInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5056 5074])
+                    ("visionCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5076 5102])
+                    ("mocapMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_mocap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5133 5161]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5115 5162])
+                    ("mocapCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5164 5184])
+                    ("mocapInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5186 5203])
+                    ("mocapCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5205 5230])
+                    ("landMeasure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil)
+                                          ("n_y_land" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5259 5286]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5242 5287])
+                    ("landCorrect" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5289 5308])
+                    ("landInit" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5310 5326])
+                    ("landCheckTimeout" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5328 5352])
+                    ("checkTimeouts" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5368 5389])
+                    ("agl" function
+                       (:typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [5401 5454])
+                    ("landed" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5456 5470])
+                    ("getDelayPeriods" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delay" variable (:type "float") (reparse-symbol arg-sub-list) [5492 5504])
+                            ("periods" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5505 5522]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5472 5523])
+                    ("publishLocalPos" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5543 5566])
+                    ("publishGlobalPos" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5568 5592])
+                    ("publishEstimatorStatus" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5594 5624])
+                    ("_sub_armed" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("actuator_armed_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5694 5742])
+                    ("_sub_land" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("vehicle_land_detected_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5744 5798])
+                    ("_sub_att" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("vehicle_attitude_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5800 5848])
+                    ("_sub_flow" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("optical_flow_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5850 5895])
+                    ("_sub_sensor" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("sensor_combined_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5897 5947])
+                    ("_sub_param_update" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("parameter_update_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5949 6006])
+                    ("_sub_gps" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("vehicle_gps_position_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6008 6060])
+                    ("_sub_vision_pos" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("vehicle_local_position_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6062 6123])
+                    ("_sub_mocap" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("att_pos_mocap_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6125 6172])
+                    ("_sub_dist0" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("distance_sensor_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6174 6223])
+                    ("_sub_dist1" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("distance_sensor_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6225 6274])
+                    ("_sub_dist2" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("distance_sensor_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6276 6325])
+                    ("_sub_dist3" variable (:type ("uORB::Subscription" type
+                         (:template-specifier 
+                            ( ("distance_sensor_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6327 6376])
+                    ("_dist_subs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("uORB::Subscription" type
+                             (:template-specifier 
+                                ( ("distance_sensor_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6378 6441])
+                    ("_sub_lidar" variable
+                       (:pointer 1
+                        :type ("uORB::Subscription" type
+                             (:template-specifier 
+                                ( ("distance_sensor_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6443 6493])
+                    ("_sub_sonar" variable
+                       (:pointer 1
+                        :type ("uORB::Subscription" type
+                             (:template-specifier 
+                                ( ("distance_sensor_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6495 6545])
+                    ("_pub_lpos" variable (:type ("uORB::Publication" type
+                         (:template-specifier 
+                            ( ("vehicle_local_position_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6565 6619])
+                    ("_pub_gpos" variable (:type ("uORB::Publication" type
+                         (:template-specifier 
+                            ( ("vehicle_global_position_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6621 6676])
+                    ("_pub_est_status" variable (:type ("uORB::Publication" type
+                         (:template-specifier 
+                            ( ("estimator_status_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6678 6732])
+                    ("_pub_innov" variable (:type ("uORB::Publication" type
+                         (:template-specifier 
+                            ( ("ekf2_innovations_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6734 6783])
+                    ("_map_ref" variable (:type ("map_projection_reference_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6805 6848])
+                    ("_fusion" variable (:type ("BlockParamInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6874 6896])
+                    ("_vxy_pub_thresh" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6898 6931])
+                    ("_z_pub_thresh" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6933 6964])
+                    ("_sonar_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6988 7021])
+                    ("_sonar_z_offset" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7023 7056])
+                    ("_lidar_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7080 7113])
+                    ("_lidar_z_offset" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7115 7148])
+                    ("_accel_xy_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7172 7206])
+                    ("_accel_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7208 7241])
+                    ("_baro_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7264 7294])
+                    ("_gps_delay" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7316 7344])
+                    ("_gps_xy_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7346 7378])
+                    ("_gps_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7380 7411])
+                    ("_gps_vxy_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7413 7446])
+                    ("_gps_vz_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7448 7480])
+                    ("_gps_eph_max" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7482 7512])
+                    ("_gps_epv_max" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7514 7544])
+                    ("_vision_xy_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7569 7604])
+                    ("_vision_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7606 7640])
+                    ("_vision_delay" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7642 7673])
+                    ("_mocap_p_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7697 7730])
+                    ("_flow_z_offset" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7753 7785])
+                    ("_flow_scale" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7787 7816])
+                    ("_flow_min_q" variable (:type ("BlockParamInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7898 7927])
+                    ("_flow_r" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7929 7954])
+                    ("_flow_rr" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7956 7982])
+                    ("_land_z_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8005 8037])
+                    ("_land_vxy_stddev" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8039 8073])
+                    ("_pn_p_noise_density" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8094 8131])
+                    ("_pn_v_noise_density" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8133 8170])
+                    ("_pn_b_noise_density" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8172 8209])
+                    ("_pn_t_noise_density" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8211 8248])
+                    ("_t_max_grade" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8250 8280])
+                    ("_fake_origin" variable (:type ("BlockParamInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8299 8329])
+                    ("_init_origin_lat" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8331 8365])
+                    ("_init_origin_lon" variable (:type ("BlockParamFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8367 8401])
+                    ("_flow_gyro_x_high_pass" variable (:type ("BlockHighPass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8425 8462])
+                    ("_flow_gyro_y_high_pass" variable (:type ("BlockHighPass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8464 8501])
+                    ("_baroStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_y_baro" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8514 8553])
+                    ("_sonarStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_y_sonar" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8555 8596])
+                    ("_lidarStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_y_lidar" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8598 8639])
+                    ("_flowQStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("1"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8641 8674])
+                    ("_visionStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_y_vision" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8676 8719])
+                    ("_mocapStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_y_mocap" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8721 8762])
+                    ("_gpsStats" variable (:type ("BlockStats" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil)
+                              ("n_y_gps" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8764 8802])
+                    ("_landCount" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8804 8824])
+                    ("_xLowPass" variable (:type ("BlockLowPassVector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8840 8881])
+                    ("_aglLowPass" variable (:type ("BlockLowPass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8883 8908])
+                    ("_xDelay" variable (:type ("BlockDelay" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil)
+                              ("1")
+                              ("HIST_LEN" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8928 8972])
+                    ("_tDelay" variable (:type ("BlockDelay" type
+                         (:template-specifier 
+                            ( ("uint64_t" type nil nil nil)
+                              ("1")
+                              ("1")
+                              ("HIST_LEN" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8974 9019])
+                    ("_polls" variable
+                       (:dereference 1
+                        :type ("px4_pollfd_struct_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9031 9061])
+                    ("_timeStamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9063 9083])
+                    ("_time_origin" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9085 9107])
+                    ("_timeStampLastBaro" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9109 9137])
+                    ("_time_last_hist" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9139 9164])
+                    ("_time_last_flow" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9166 9191])
+                    ("_time_last_baro" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9193 9218])
+                    ("_time_last_gps" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9220 9244])
+                    ("_time_last_lidar" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9246 9272])
+                    ("_time_last_sonar" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9274 9300])
+                    ("_time_init_sonar" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9302 9328])
+                    ("_time_last_vision_p" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9330 9359])
+                    ("_time_last_mocap" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9361 9387])
+                    ("_time_last_land" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9389 9414])
+                    ("_altOrigin" variable (:type "float") (reparse-symbol classsubparts) [9441 9458])
+                    ("_altOriginInitialized" variable (:type "bool") (reparse-symbol classsubparts) [9460 9487])
+                    ("_altOriginGlobal" variable (:type "bool") (reparse-symbol classsubparts) [9489 9511])
+                    ("_baroAltOrigin" variable (:type "float") (reparse-symbol classsubparts) [9593 9614])
+                    ("_gpsAltOrigin" variable (:type "float") (reparse-symbol classsubparts) [9616 9636])
+                    ("_receivedGps" variable (:type "bool") (reparse-symbol classsubparts) [9650 9668])
+                    ("_lastArmedState" variable (:type "bool") (reparse-symbol classsubparts) [9670 9691])
+                    ("_sensorTimeout" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9704 9728])
+                    ("_sensorFault" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9730 9752])
+                    ("_estimatorInitialized" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9754 9784])
+                    ("_x" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9803 9826])
+                    ("_u" variable (:type ("Vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_u" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9844 9867])
+                    ("_R_att" variable (:type ("matrix::Dcm" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9943 9969])
+                    ("_eul" variable (:type ("Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9971 9985])
+                    ("_A" variable (:type ("Matrix" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil)
+                              ("n_x" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9988 10016])
+                    ("_B" variable (:type ("Matrix" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil)
+                              ("n_u" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10037 10065])
+                    ("_R" variable (:type ("Matrix" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_u" type nil nil nil)
+                              ("n_u" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10083 10111])
+                    ("_Q" variable (:type ("Matrix" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil)
+                              ("n_x" type nil nil nil)
+                              ("n_x" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10133 10161]))                  
+                :type "class")
+                nil [1643 10192]))          
+      :file "BlockLocalPositionEstimator.hpp"
+      :pointmax 10193
+      :fsize 10192
+      :lastmodtime '(23770 52090 811807 874000)
+      :unmatched-syntax '((punctuation 9912 . 9913) (UNDERP 9910 . 9912) (punctuation 9907 . 9908) (symbol 9904 . 9907) (punctuation 9902 . 9903) (symbol 9899 . 9902) (punctuation 9897 . 9898) (FLOAT 9892 . 9897) (punctuation 9891 . 9892) (symbol 9885 . 9891) (number 3772 . 3773) (punctuation 3770 . 3771) (punctuation 3769 . 3770) (number 3753 . 3754) (punctuation 3751 . 3752) (punctuation 3750 . 3751) (number 3735 . 3736) (punctuation 3733 . 3734) (punctuation 3732 . 3733) (number 3772 . 3773) (punctuation 3770 . 3771) (punctuation 3769 . 3770) (number 3753 . 3754) (punctuation 3751 . 3752) (punctuation 3750 . 3751) (number 3735 . 3736) (punctuation 3733 . 3734) (punctuation 3732 . 3733) (number 3692 . 3693) (punctuation 3690 . 3691) (punctuation 3689 . 3690) (number 3661 . 3662) (punctuation 3659 . 3660) (punctuation 3658 . 3659) (number 3637 . 3638) (punctuation 3635 . 3636) (punctuation 3634 . 3635) (number 3612 . 3613) (punctuation 3610 . 3611) (punctuation 3609 . 3610) (number 3586 . 3587) (punctuation 3584 . 3585) (punctuation 3583 . 3584) (number 3561 . 3562) (punctuation 3559 . 3560) (punctuation 3558 . 3559) (number 3537 . 3538) (punctuation 3535 . 3536) (punctuation 3534 . 3535) (number 3512 . 3513) (punctuation 3510 . 3511) (punctuation 3509 . 3510) (number 3489 . 3490) (punctuation 3487 . 3488) (punctuation 3486 . 3487) (number 3692 . 3693) (punctuation 3690 . 3691) (punctuation 3689 . 3690) (number 3661 . 3662) (punctuation 3659 . 3660) (punctuation 3658 . 3659) (number 3637 . 3638) (punctuation 3635 . 3636) (punctuation 3634 . 3635) (number 3612 . 3613) (punctuation 3610 . 3611) (punctuation 3609 . 3610) (number 3586 . 3587) (punctuation 3584 . 3585) (punctuation 3583 . 3584) (number 3561 . 3562) (punctuation 3559 . 3560) (punctuation 3558 . 3559) (number 3537 . 3538) (punctuation 3535 . 3536) (punctuation 3534 . 3535) (number 3512 . 3513) (punctuation 3510 . 3511) (punctuation 3509 . 3510) (number 3489 . 3490) (punctuation 3487 . 3488) (punctuation 3486 . 3487) (number 3444 . 3445) (punctuation 3442 . 3443) (punctuation 3441 . 3442) (number 3415 . 3416) (punctuation 3413 . 3414) (punctuation 3412 . 3413) (number 3393 . 3394) (punctuation 3391 . 3392) (punctuation 3390 . 3391) (number 3361 . 3362) (punctuation 3359 . 3360) (punctuation 3358 . 3359) (number 3334 . 3335) (punctuation 3332 . 3333) (punctuation 3331 . 3332) (number 3312 . 3313) (punctuation 3310 . 3311) (punctuation 3309 . 3310) (number 3287 . 3288) (punctuation 3285 . 3286) (punctuation 3284 . 3285) (number 3262 . 3263) (punctuation 3260 . 3261) (punctuation 3259 . 3260) (number 3240 . 3241) (punctuation 3238 . 3239) (punctuation 3237 . 3238) (number 3444 . 3445) (punctuation 3442 . 3443) (punctuation 3441 . 3442) (number 3415 . 3416) (punctuation 3413 . 3414) (punctuation 3412 . 3413) (number 3393 . 3394) (punctuation 3391 . 3392) (punctuation 3390 . 3391) (number 3361 . 3362) (punctuation 3359 . 3360) (punctuation 3358 . 3359) (number 3334 . 3335) (punctuation 3332 . 3333) (punctuation 3331 . 3332) (number 3312 . 3313) (punctuation 3310 . 3311) (punctuation 3309 . 3310) (number 3287 . 3288) (punctuation 3285 . 3286) (punctuation 3284 . 3285) (number 3262 . 3263) (punctuation 3260 . 3261) (punctuation 3259 . 3260) (number 3240 . 3241) (punctuation 3238 . 3239) (punctuation 3237 . 3238) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BlockLocalPositionEstimator.hpp" include nil nil [1 43])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [44 72])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [73 107])
+            ("fcntl.h" include (:system-flag t) nil [108 126])
+            ("systemlib/err.h" include (:system-flag t) nil [127 153])
+            ("matrix/math.hpp" include (:system-flag t) nil [154 180])
+            ("cstdlib" include (:system-flag t) nil [181 199])
+            ("mavlink_log_pub" variable
+               (:default-value "nullptr"
+                :type ("orb_advert_t" type (:type "class") nil nil))
+                nil [201 240])
+            ("EST_STDDEV_XY_VALID" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2.0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [315 364])
+            ("EST_STDDEV_Z_VALID" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2.0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [374 422])
+            ("EST_STDDEV_TZ_VALID" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2.0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [432 481])
+            ("P_MAX" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1.0e6f"
+                :type "float")
+                nil [492 526])
+            ("LAND_RATE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10.0f"
+                :type "float")
+                nil [568 605])
+            ("msg_label" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"[lpe] \""
+                :type "char")
+                nil [643 683])
+            ("BlockLocalPositionEstimator" function
+               (:constructor-flag t
+                :parent "BlockLocalPositionEstimator"
+                :type ("BlockLocalPositionEstimator" type (:type "class") nil nil))
+                nil [721 6047])
+            ("BlockLocalPositionEstimator" function
+               (:destructor-flag t
+                :parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [6049 6111])
+            ("dynamics" function
+               (:parent "BlockLocalPositionEstimator"
+                :arguments 
+                  ( ("t" variable (:type "float") (reparse-symbol arg-sub-list) [6201 6209])
+                    ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("BlockLocalPositionEstimator::n_x" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6211 6268])
+                    ("u" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("BlockLocalPositionEstimator::n_u" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6270 6327]))                  
+                :type ("Vector" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil)
+                          ("BlockLocalPositionEstimator::n_x" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [6113 6356])
+            ("update" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [6358 14572])
+            ("checkTimeouts" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [14574 14799])
+            ("landed" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "bool")
+                nil [14801 15048])
+            ("publishLocalPos" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [15050 17543])
+            ("publishEstimatorStatus" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [17545 18127])
+            ("publishGlobalPos" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [18129 19893])
+            ("initP" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [19895 20633])
+            ("initSS" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [20635 21012])
+            ("updateSSStates" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [21014 21469])
+            ("updateSSParams" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [21471 22659])
+            ("predict" function
+               (:parent "BlockLocalPositionEstimator"
+                :type "void")
+                nil [22661 24745])
+            ("getDelayPeriods" function
+               (:parent "BlockLocalPositionEstimator"
+                :arguments 
+                  ( ("delay" variable (:type "float") (reparse-symbol arg-sub-list) [24796 24808])
+                    ("periods" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24809 24826]))                  
+                :type "int")
+                nil [24747 25214]))          
+      :file "BlockLocalPositionEstimator.cpp"
+      :pointmax 25215
+      :fsize 25214
+      :lastmodtime '(23770 52090 807807 851000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!local_position_estimator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

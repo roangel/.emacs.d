@@ -1,0 +1,46 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("me.drton.jmavlib.conversion" package nil nil [1 37])
+            ("javax.vecmath.Vector3d" include nil nil [39 69])
+            ("RotationConversion" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("rotationMatrixByEulerAngles" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("roll" variable (:type "double") (reparse-symbol formal_parameters) [277 288])
+                            ("pitch" variable (:type "double") (reparse-symbol formal_parameters) [290 302])
+                            ("yaw" variable (:type "double") (reparse-symbol formal_parameters) [304 314]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [226 880])
+                    ("eulerAnglesByQuaternion" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("q" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [933 943]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [886 1277])
+                    ("quaternionByEulerAngles" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("euler" variable (:type "Vector3d") (reparse-symbol formal_parameters) [1329 1343]))                          
+                        :type "Float[]")
+                        (reparse-symbol class_member_declaration) [1283 2204]))                  
+                :type "class")
+                nil [188 2207]))          
+      :file "RotationConversion.java"
+      :pointmax 2208
+      :fsize 2207
+      :lastmodtime '(23690 18923 70586 543000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!jMAVSim!jMAVlib!src!me!drton!jmavlib!conversion!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

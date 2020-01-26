@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("msg_id_map" variable nil nil [39 2401])
+            ("message_id" function
+               (:documentation "
+    Get id of a message
+    "
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [2418 2425]))                  )
+                nil [2403 2546]))          
+      :file "uorb_rtps_message_ids.py"
+      :pointmax 2546
+      :fsize 2545
+      :lastmodtime '(23770 52090 719807 334000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!msg!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

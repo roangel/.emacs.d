@@ -1,0 +1,98 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_log.h" include (:system-flag t) nil [1808 1828])
+            ("systemlib/hysteresis/hysteresis.h" include nil nil [1829 1873])
+            ("systemlib" type
+               (:members 
+                  ( ("set_state_and_update" function
+                       (:parent "Hysteresis"
+                        :arguments 
+                          ( ("new_state" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1938 1959]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1900 2175])
+                    ("update" function
+                       (:parent "Hysteresis"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2177 2419]))                  
+                :type "namespace")
+                nil [1876 2422]))          
+      :file "hysteresis.cpp"
+      :pointmax 2446
+      :fsize 2445
+      :lastmodtime '(23770 52090 839808 39000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("drivers/drv_hrt.h" include (:system-flag t) nil [1857 1885])
+            ("systemlib" type
+               (:members 
+                  ( ("Hysteresis" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1929 1936])
+                            ("Hysteresis" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("init_state" variable (:type "bool") (reparse-symbol arg-sub-list) [1949 1965]))                                  
+                                :type ("Hysteresis" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1938 2130])
+                            ("Hysteresis" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2133 2150])
+                            ("set_hysteresis_time_from" function
+                               (:arguments 
+                                  ( ("from_state" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2183 2205])
+                                    ("new_hysteresis_time_us" variable
+                                       (:constant-flag t
+                                        :type ("hrt_abstime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2206 2247]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2153 2416])
+                            ("get_state" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2419 2464])
+                            ("set_state_and_update" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("new_state" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2493 2514]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2467 2515])
+                            ("update" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2518 2532])
+                            ("private" label nil (reparse-symbol classsubparts) [2534 2542])
+                            ("_state" variable (:type "bool") (reparse-symbol classsubparts) [2545 2557])
+                            ("_requested_state" variable (:type "bool") (reparse-symbol classsubparts) [2559 2581])
+                            ("_hysteresis_time_from_true_us" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2583 2625])
+                            ("_hysteresis_time_from_false_us" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2627 2670])
+                            ("_last_time_to_change_state" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2672 2711]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1910 2714]))                  
+                :type "namespace")
+                nil [1887 2717]))          
+      :file "hysteresis.h"
+      :pointmax 2741
+      :fsize 2740
+      :lastmodtime '(23770 52090 839808 39000)
+      :unmatched-syntax '((symbol 1851 . 1855) (symbol 1844 . 1850) (punctuation 1843 . 1844))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!systemlib!hysteresis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

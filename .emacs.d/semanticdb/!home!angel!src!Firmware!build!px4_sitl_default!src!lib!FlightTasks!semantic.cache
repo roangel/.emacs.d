@@ -1,0 +1,79 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTasks.hpp" include nil nil [1893 1919])
+            ("FlightTasks_generated.hpp" include nil nil [1920 1956])
+            ("_initTask" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 2012]))                  
+                :type "int")
+                nil [1958 4265])
+            ("switchVehicleCommand" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("command" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4317 4335]))                  
+                :type ("FlightTaskIndex" type (:type "class") nil nil))
+                nil [4267 4528]))          
+      :file "FlightTasks_generated.cpp"
+      :pointmax 4528
+      :fsize 4527
+      :lastmodtime '(23802 11023 156358 673000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTasks.hpp" include nil nil [1932 1958])
+            ("FlightTaskManualAltitude.hpp" include nil nil [1959 1998])
+            ("FlightTaskManualAltitudeSmooth.hpp" include nil nil [1999 2044])
+            ("FlightTaskManualAltitudeSmoothVel.hpp" include nil nil [2045 2093])
+            ("FlightTaskManualPosition.hpp" include nil nil [2094 2133])
+            ("FlightTaskManualPositionSmooth.hpp" include nil nil [2134 2179])
+            ("FlightTaskManualPositionSmoothVel.hpp" include nil nil [2180 2228])
+            ("FlightTaskSport.hpp" include nil nil [2229 2259])
+            ("FlightTaskAutoLine.hpp" include nil nil [2260 2293])
+            ("FlightTaskAutoLineSmoothVel.hpp" include nil nil [2294 2336])
+            ("FlightTaskAutoFollowMe.hpp" include nil nil [2337 2374])
+            ("FlightTaskOffboard.hpp" include nil nil [2375 2408])
+            ("FlightTaskFailsafe.hpp" include nil nil [2409 2442])
+            ("FlightTaskTransition.hpp" include nil nil [2443 2478])
+            ("FlightTaskOrbit.hpp" include nil nil [2479 2509])
+            ("TaskUnion" type
+               (:members 
+                  ( ("TaskUnion" function (:type "int") (reparse-symbol classsubparts) [2888 2902])
+                    ("TaskUnion" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2907 2922])
+                    ("manualAltitude" variable (:type ("FlightTaskManualAltitude" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2928 2968])
+                    ("manualAltitudeSmooth" variable (:type ("FlightTaskManualAltitudeSmooth" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2973 3025])
+                    ("manualAltitudeSmoothVel" variable (:type ("FlightTaskManualAltitudeSmoothVel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3030 3088])
+                    ("manualPosition" variable (:type ("FlightTaskManualPosition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3093 3133])
+                    ("manualPositionSmooth" variable (:type ("FlightTaskManualPositionSmooth" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3138 3190])
+                    ("manualPositionSmoothVel" variable (:type ("FlightTaskManualPositionSmoothVel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3195 3253])
+                    ("sport" variable (:type ("FlightTaskSport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3258 3280])
+                    ("autoLine" variable (:type ("FlightTaskAutoLine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3285 3313])
+                    ("autoLineSmoothVel" variable (:type ("FlightTaskAutoLineSmoothVel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3318 3364])
+                    ("autoFollowMe" variable (:type ("FlightTaskAutoFollowMe" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3369 3405])
+                    ("offboard" variable (:type ("FlightTaskOffboard" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3410 3438])
+                    ("failsafe" variable (:type ("FlightTaskFailsafe" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3443 3471])
+                    ("transition" variable (:type ("FlightTaskTransition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3476 3508])
+                    ("orbit" variable (:type ("FlightTaskOrbit" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3513 3535]))                  
+                :type "union")
+                nil [2866 3538]))          
+      :file "FlightTasks_generated.hpp"
+      :pointmax 3539
+      :fsize 3538
+      :lastmodtime '(23802 11023 140358 590000)
+      :unmatched-syntax '((punctuation 2863 . 2864) (semantic-list 2544 . 2863) (INT 2540 . 2543) (punctuation 2538 . 2539) (symbol 2522 . 2537) (CLASS 2516 . 2521) (ENUM 2511 . 2515) (symbol 1894 . 1898) (symbol 1887 . 1893) (punctuation 1886 . 1887))))
+  :file "!home!angel!src!Firmware!build!px4_sitl_default!src!lib!FlightTasks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

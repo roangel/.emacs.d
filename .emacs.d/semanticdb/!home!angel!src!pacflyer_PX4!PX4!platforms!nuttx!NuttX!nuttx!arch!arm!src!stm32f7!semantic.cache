@@ -1,0 +1,204 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_STM32F7_STM32_DMA_H" variable (:constant-flag t) nil [1875 1909])
+            ("nuttx/config.h" include (:system-flag t) nil [2103 2128])
+            ("sys/types.h" include (:system-flag t) nil [2129 2151])
+            ("chip/stm32_dma.h" include nil nil [2153 2180])
+            ("DMA_STATUS_FEIF" variable (:constant-flag t) nil [2328 2343])
+            ("DMA_STATUS_DMEIF" variable (:constant-flag t) nil [2417 2433])
+            ("DMA_STATUS_TEIF" variable (:constant-flag t) nil [2503 2518])
+            ("DMA_STATUS_HTIF" variable (:constant-flag t) nil [2586 2601])
+            ("DMA_STATUS_TCIF" variable (:constant-flag t) nil [2668 2683])
+            ("DMA_STATUS_ERROR" variable (:constant-flag t) nil [2755 2771])
+            ("DMA_STATUS_SUCCESS" variable (:constant-flag t) nil [2840 2858])
+            ("DMA_HANDLE" variable
+               (:pointer 1
+                :type "void")
+                nil [3208 3225])
+            ("dma_callback_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3872 3890])
+                    ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3891 3906])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3907 3917]))                  
+                :type "void")
+                nil [3849 3918])
+            ("stm32_dmaregs_s" type
+               (:members 
+                  ( ("lisr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3947 3961])
+                    ("hisr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3964 3978])
+                    ("scr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3981 3994])
+                    ("sndtr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3997 4012])
+                    ("spar" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4015 4029])
+                    ("sm0ar" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4032 4047])
+                    ("sm1ar" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4050 4065])
+                    ("sfcr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4068 4082]))                  
+                :type "struct")
+                nil [3920 4085])
+            ("EXTERN" variable (:constant-flag t) nil [4345 4351])
+            ("stm32_dmadump" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10769 10782])
+            ("stm32_dmasample" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10253 10268])
+            ("stm32_dmacapable" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9778 9794])
+            ("stm32_dmaresidual" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8858 8876]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8833 8877])
+            ("stm32_dmastop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8475 8493]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8456 8494])
+            ("stm32_dmastart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7926 7944])
+                    ("callback" variable (:type ("dma_callback_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7945 7969])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7970 7980])
+                    ("half" variable (:type "bool") (reparse-symbol arg-sub-list) [8001 8011]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7906 8012])
+            ("stm32_dmasetup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7293 7311])
+                    ("paddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7312 7327])
+                    ("maddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7328 7343])
+                    ("ntransfers" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7364 7382])
+                    ("ccr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7383 7396]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7273 7397])
+            ("stm32_dmafree" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7016 7034]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6997 7035])
+            ("stm32_dmachannel" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("DMA_HANDLE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("chan" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6292 6310]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6264 6311]))          
+      :file "stm32_dma.h"
+      :pointmax 10931
+      :fsize 10930
+      :lastmodtime '(23770 54121 603240 106000)
+      :unmatched-syntax '((TYPEDEF 3841 . 3848) (symbol 3204 . 3207) (TYPEDEF 3196 . 3203))
+      :lexical-table 
+        '(("__ARCH_ARM_SRC_STM32F7_STM32_DMA_H")
+          ("DMA_STATUS_TEIF" . ((symbol "DMA_STREAM_TEIF_BIT" 2529 . 2548)))
+          ("stm32_dmasample" (spp-arg-list ("handle" "regs") 10268 . 10281))
+          ("DMA_STATUS_HTIF" . ((symbol "DMA_STREAM_HTIF_BIT" 2612 . 2631)))
+          ("DMA_STATUS_ERROR" . ((semantic-list "(DMA_STATUS_FEIF|DMA_STATUS_DMEIF|DMA_STATUS_TEIF)" 2781 . 2831)))
+          ("DMA_STATUS_DMEIF" . ((symbol "DMA_STREAM_DMEIF_BIT" 2443 . 2463)))
+          ("DMA_STATUS_TCIF" . ((symbol "DMA_STREAM_TCIF_BIT" 2694 . 2713)))
+          ("stm32_dmadump" (spp-arg-list ("handle" "regs" "msg") 10782 . 10799))
+          ("DMA_STATUS_SUCCESS" . ((semantic-list "(DMA_STATUS_TCIF|DMA_STATUS_HTIF)" 2866 . 2899)))
+          ("stm32_dmacapable" (spp-arg-list ("maddr" "count" "ccr") 9794 . 9813) . ((semantic-list "(true)" 9814 . 9820)))
+          ("DMA_STATUS_FEIF" . ((number "0" 2354 . 2355)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [1996 2021])
+            ("sys/types.h" include (:system-flag t) nil [2023 2045])
+            ("stdint.h" include (:system-flag t) nil [2046 2065])
+            ("string.h" include (:system-flag t) nil [2066 2085])
+            ("assert.h" include (:system-flag t) nil [2086 2105])
+            ("debug.h" include (:system-flag t) nil [2106 2124])
+            ("nuttx/arch.h" include (:system-flag t) nil [2126 2149])
+            ("nuttx/board.h" include (:system-flag t) nil [2150 2174])
+            ("nuttx/kmalloc.h" include (:system-flag t) nil [2175 2201])
+            ("nuttx/userspace.h" include (:system-flag t) nil [2202 2230])
+            ("arch/stm32f7/chip.h" include (:system-flag t) nil [2232 2262])
+            ("arch/board/board.h" include (:system-flag t) nil [2263 2292])
+            ("mpu.h" include nil nil [2294 2310])
+            ("up_arch.h" include nil nil [2311 2331])
+            ("up_internal.h" include nil nil [2332 2356])
+            ("chip/stm32_memorymap.h" include nil nil [2358 2391])
+            ("stm32_mpuinit.h" include nil nil [2392 2418])
+            ("stm32_dtcm.h" include nil nil [2419 2442])
+            ("SRAM1_START" variable (:constant-flag t) nil [4019 4030])
+            ("SRAM1_END" variable (:constant-flag t) nil [4057 4066])
+            ("SRAM2_START" variable (:constant-flag t) nil [4114 4125])
+            ("SRAM2_END" variable (:constant-flag t) nil [4152 4161])
+            ("HAVE_DTCM" variable (:constant-flag t) nil [4262 4271])
+            ("CONFIG_MM_REGIONS" variable (:constant-flag t) nil [7311 7328])
+            ("CONFIG_MM_REGIONS" variable (:constant-flag t) nil [7558 7575])
+            ("CONFIG_MM_REGIONS" variable (:constant-flag t) nil [7770 7787])
+            ("up_heap_color" variable (:constant-flag t) nil [8759 8772])
+            ("up_allocate_heap" function
+               (:arguments 
+                  ( ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10432 10440])
+                    ("heap_start" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10436 10454])
+                    ("heap_size" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10455 10473]))                  
+                :type "void")
+                nil [10410 11839])
+            ("up_addregion" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13688 13693]))                  
+                :type "void")
+                nil [13670 15047]))          
+      :file "stm32_allocateheap.c"
+      :pointmax 15055
+      :fsize 15054
+      :lastmodtime '(23799 59036 854973 208000)
+      :unmatched-syntax '((string 7654 . 7727) (symbol 7647 . 7652) (punctuation 7642 . 7643) (string 7442 . 7515) (symbol 7435 . 7440) (punctuation 7430 . 7431) (string 7195 . 7268) (symbol 7188 . 7193) (punctuation 7183 . 7184) (string 6620 . 6650) (symbol 6612 . 6619) (punctuation 6609 . 6610))
+      :lexical-table 
+        '(("SRAM1_END" . ((semantic-list "(SRAM1_START + STM32F7_SRAM1_SIZE)" 4070 . 4104)))
+          ("SRAM2_END" . ((semantic-list "(SRAM2_START + STM32F7_SRAM2_SIZE)" 4165 . 4199)))
+          ("CONFIG_MM_REGIONS" . ((number "3" 7788 . 7789)))
+          ("up_heap_color" (spp-arg-list ("start" "size") 8772 . 8784))
+          ("SRAM1_START" . ((symbol "STM32_SRAM1_BASE" 4032 . 4048)))
+          ("SRAM2_START" . ((symbol "STM32_SRAM2_BASE" 4127 . 4143)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "stm32_mpuinit.h"
+      :fsize 4272
+      :lastmodtime '(23770 54121 603240 106000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32_dtcm.h"
+      :fsize 4918
+      :lastmodtime '(23770 54121 603240 106000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!stm32f7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

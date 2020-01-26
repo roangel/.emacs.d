@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTasks.hpp" include nil nil [1893 1919])
+            ("FlightTasks_generated.hpp" include nil nil [1920 1956])
+            ("_initTask" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 2012]))                  
+                :type "int")
+                nil [1958 4265])
+            ("switchVehicleCommand" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("command" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4317 4335]))                  
+                :type ("FlightTaskIndex" type (:type "class") nil nil))
+                nil [4267 4528]))          
+      :file "FlightTasks_generated.cpp"
+      :pointmax 4528
+      :fsize 4527
+      :lastmodtime '(23806 16414 57574 875000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "FlightTasks_generated.hpp"
+      :fsize 3538
+      :lastmodtime '(23806 16414 41574 791000)))
+  :file "!home!angel!src!Firmware!build!px4_fmu-v4_default!src!lib!FlightTasks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -7,10 +7,10 @@
       :major-mode 'js-mode
       :tags nil
       :file "StringReplacement.json"
-      :pointmax 4288
-      :fsize 4287
-      :lastmodtime '(23448 50952 415524 115000)
-      :unmatched-syntax '((BRACK_BLOCK 1 . 4287))))
+      :pointmax 4313
+      :fsize 4312
+      :lastmodtime '(23484 40608 10555 723000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 4312))))
   :file "!home!angel!work!WingtraPilot!src!Vehicle!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

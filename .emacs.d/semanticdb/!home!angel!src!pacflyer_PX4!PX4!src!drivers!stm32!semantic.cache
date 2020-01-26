@@ -1,0 +1,466 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1784 1807])
+            ("board_config.h" include (:system-flag t) nil [1809 1834])
+            ("sys/types.h" include (:system-flag t) nil [1836 1858])
+            ("stdint.h" include (:system-flag t) nil [1859 1878])
+            ("string.h" include (:system-flag t) nil [1879 1898])
+            ("stdlib.h" include (:system-flag t) nil [1899 1918])
+            ("stdbool.h" include (:system-flag t) nil [1919 1939])
+            ("fcntl.h" include (:system-flag t) nil [1940 1958])
+            ("unistd.h" include (:system-flag t) nil [1959 1978])
+            ("stdio.h" include (:system-flag t) nil [1979 1997])
+            ("ctype.h" include (:system-flag t) nil [1998 2016])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2019 2054])
+            ("systemlib/err.h" include (:system-flag t) nil [2055 2081])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2082 2114])
+            ("systemlib/px4_macros.h" include (:system-flag t) nil [2115 2148])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [2150 2185])
+            ("drivers/stm32/drv_io_timer.h" include (:system-flag t) nil [2186 2225]))          
+      :file "drv_led_pwm.cpp"
+      :pointmax 8753
+      :fsize 8752
+      :lastmodtime '(23770 52090 775807 663000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1969 1992])
+            ("nuttx/arch.h" include (:system-flag t) nil [1993 2016])
+            ("nuttx/irq.h" include (:system-flag t) nil [2017 2039])
+            ("sys/types.h" include (:system-flag t) nil [2041 2063])
+            ("stdbool.h" include (:system-flag t) nil [2064 2084])
+            ("assert.h" include (:system-flag t) nil [2086 2105])
+            ("debug.h" include (:system-flag t) nil [2106 2124])
+            ("time.h" include (:system-flag t) nil [2125 2142])
+            ("queue.h" include (:system-flag t) nil [2143 2161])
+            ("errno.h" include (:system-flag t) nil [2162 2180])
+            ("string.h" include (:system-flag t) nil [2181 2200])
+            ("stdio.h" include (:system-flag t) nil [2201 2219])
+            ("arch/board/board.h" include (:system-flag t) nil [2221 2250])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [2251 2286])
+            ("drv_io_timer.h" include nil nil [2288 2313])
+            ("stm32_gpio.h" include (:system-flag t) nil [2315 2338])
+            ("stm32_tim.h" include (:system-flag t) nil [2339 2361])
+            ("arraySize" variable (:constant-flag t) nil [2371 2380])
+            ("BOARD_PWM_FREQ" variable (:constant-flag t) nil [2838 2852])
+            ("BOARD_ONESHOT_FREQ" variable (:constant-flag t) nil [2910 2928])
+            ("MAX_CHANNELS_PER_TIMER" variable (:constant-flag t) nil [2953 2975])
+            ("_REG32" variable (:constant-flag t) nil [2987 2993])
+            ("REG" variable (:constant-flag t) nil [3054 3057])
+            ("rCR1" variable (:constant-flag t) nil [3115 3119])
+            ("rCR2" variable (:constant-flag t) nil [3171 3175])
+            ("rSMCR" variable (:constant-flag t) nil [3227 3232])
+            ("rDIER" variable (:constant-flag t) nil [3284 3289])
+            ("rSR" variable (:constant-flag t) nil [3341 3344])
+            ("rEGR" variable (:constant-flag t) nil [3396 3400])
+            ("rCCMR1" variable (:constant-flag t) nil [3452 3458])
+            ("rCCMR2" variable (:constant-flag t) nil [3510 3516])
+            ("rCCER" variable (:constant-flag t) nil [3568 3573])
+            ("rCNT" variable (:constant-flag t) nil [3625 3629])
+            ("rPSC" variable (:constant-flag t) nil [3681 3685])
+            ("rARR" variable (:constant-flag t) nil [3737 3741])
+            ("rCCR1" variable (:constant-flag t) nil [3793 3798])
+            ("rCCR2" variable (:constant-flag t) nil [3850 3855])
+            ("rCCR3" variable (:constant-flag t) nil [3907 3912])
+            ("rCCR4" variable (:constant-flag t) nil [3964 3969])
+            ("rDCR" variable (:constant-flag t) nil [4021 4025])
+            ("rDMAR" variable (:constant-flag t) nil [4077 4082])
+            ("rBDTR" variable (:constant-flag t) nil [4134 4139])
+            ("GTIM_SR_CCIF" variable (:constant-flag t) nil [4190 4202])
+            ("GTIM_SR_CCOF" variable (:constant-flag t) nil [4269 4281])
+            ("CCMR_C1_RESET" variable (:constant-flag t) nil [4349 4362])
+            ("CCMR_C1_NUM_BITS" variable (:constant-flag t) nil [4380 4396])
+            ("CCER_C1_NUM_BITS" variable (:constant-flag t) nil [4409 4425])
+            ("CCMR_C1_CAPTURE_INIT" variable (:constant-flag t) nil [4439 4459])
+            ("CCMR_C1_PWMOUT_INIT" variable (:constant-flag t) nil [4626 4645])
+            ("CCMR_C1_PWMIN_INIT" variable (:constant-flag t) nil [4721 4739])
+            ("CCER_C1_INIT" variable (:constant-flag t) nil [4860 4872])
+            ("channel_allocations" variable
+               (:dereference 1
+                :default-value "{ UINT8_MAX,   0,  0,  0, 0, 0 }"
+                :type ("io_timer_channel_allocation_t" type (:type "class") nil nil))
+                nil [4965 5071])
+            ("io_timer_allocation_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [5073 5111])
+            ("once" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("io_timer_allocation_t" type (:type "class") nil nil))
+                nil [5152 5190])
+            ("io_timer_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer_index" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5643 5664]))                  
+                :type "int")
+                nil [5615 7083])
+            ("io_timer_handler0" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7107 7115])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7116 7130])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7131 7141]))                  
+                :type "int")
+                nil [7085 7175])
+            ("io_timer_handler1" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7199 7207])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7208 7222])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7223 7233]))                  
+                :type "int")
+                nil [7177 7267])
+            ("io_timer_handler2" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7291 7299])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7300 7314])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7315 7325]))                  
+                :type "int")
+                nil [7269 7359])
+            ("io_timer_handler3" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7383 7391])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7392 7406])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7407 7417]))                  
+                :type "int")
+                nil [7361 7451])
+            ("io_timer_handler4" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [7475 7483])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7484 7498])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7499 7509]))                  
+                :type "int")
+                nil [7453 7543])
+            ("validate_timer_index" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7584 7599]))                  
+                :type "int")
+                nil [7545 7680])
+            ("is_timer_uninitalized" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7722 7737]))                  
+                :type "int")
+                nil [7682 7812])
+            ("set_timer_initalized" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7854 7869]))                  
+                :type "void")
+                nil [7814 7894])
+            ("set_timer_deinitalized" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7938 7953]))                  
+                :type "void")
+                nil [7896 7981])
+            ("channels_timer" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8016 8033]))                  
+                :type "int")
+                nil [7983 8085])
+            ("get_timers_firstchannels" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8130 8145]))                  
+                :type "int")
+                nil [8087 8314])
+            ("get_timer_channels" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8351 8366]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [8316 8909])
+            ("is_channels_timer_uninitalized" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8960 8977]))                  
+                :type "int")
+                nil [8911 9037])
+            ("io_timer_is_channel_free" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9068 9085]))                  
+                :type "int")
+                nil [9039 9272])
+            ("io_timer_validate_channel_index" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9310 9327]))                  
+                :type "int")
+                nil [9274 9706])
+            ("io_timer_get_mode_channels" function
+               (:arguments 
+                  ( ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9739 9768]))                  
+                :type "int")
+                nil [9708 9858])
+            ("io_timer_get_channel_mode" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9890 9907]))                  
+                :type "int")
+                nil [9860 10120])
+            ("reallocate_channel_resources" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("channels" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10162 10180])
+                    ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10181 10210])
+                    ("new_mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10216 10249]))                  
+                :type "int")
+                nil [10122 10743])
+            ("allocate_channel_resource" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10789 10806])
+                    ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10807 10836]))                  
+                :type "int")
+                nil [10745 11062])
+            ("free_channel_resource" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11105 11122]))                  
+                :type "int")
+                nil [11065 11376])
+            ("io_timer_free_channel" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11404 11421]))                  
+                :type "int")
+                nil [11378 11689])
+            ("allocate_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11720 11737])
+                    ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11738 11767]))                  
+                :type "int")
+                nil [11692 11968])
+            ("timer_set_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11996 12011])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12012 12026]))                  
+                :type "int")
+                nil [11970 12244])
+            ("io_timer_set_oneshot_mode" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12293 12308]))                  
+                :type "void")
+                nil [12248 12745])
+            ("io_timer_set_PWM_mode" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12788 12803]))                  
+                :type "void")
+                nil [12747 12874])
+            ("io_timer_trigger" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12898 12903]))                  
+                :type "void")
+                nil [12876 13683])
+            ("io_timer_init_timer" function
+               (:arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13709 13724]))                  
+                :type "int")
+                nil [13685 14967])
+            ("io_timer_set_rate" function
+               (:arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14992 15007])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15008 15022]))                  
+                :type "int")
+                nil [14970 16192])
+            ("io_timer_channel_init" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16220 16237])
+                    ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16238 16267])
+                    ("channel_handler" variable (:type ("channel_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16273 16307])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16308 16322]))                  
+                :type "int")
+                nil [16194 18954])
+            ("io_timer_set_enable" function
+               (:arguments 
+                  ( ("state" variable (:type "bool") (reparse-symbol arg-sub-list) [18980 18991])
+                    ("mode" variable (:type ("io_timer_channel_mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18992 19021])
+                    ("masks" variable (:type ("io_timer_channel_allocation_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19022 19058]))                  
+                :type "int")
+                nil [18956 22264])
+            ("io_timer_set_ccr" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22287 22304])
+                    ("value" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22305 22320]))                  
+                :type "int")
+                nil [22266 22729])
+            ("io_channel_get_ccr" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22759 22776]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [22731 23137])
+            ("io_timer_get_group" function
+               (:arguments 
+                  ( ("timer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23167 23182]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [23139 23222]))          
+      :file "drv_io_timer.c"
+      :pointmax 23223
+      :fsize 23222
+      :lastmodtime '(23856 29440 565271 143000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOARD_ONESHOT_FREQ" . ((number "8000000" 2929 . 2936)))
+          ("rARR" (spp-arg-list ("_tmr") 3741 . 3747) . ((symbol "REG" 3752 . 3755) (semantic-list "(_tmr, STM32_GTIM_ARR_OFFSET)" 3755 . 3784)))
+          ("rCCER" (spp-arg-list ("_tmr") 3573 . 3579) . ((symbol "REG" 3583 . 3586) (semantic-list "(_tmr, STM32_GTIM_CCER_OFFSET)" 3586 . 3616)))
+          ("CCER_C1_NUM_BITS" . ((number "4" 4428 . 4429)))
+          ("CCMR_C1_PWMIN_INIT" . ((number "0" 4740 . 4741)))
+          ("REG" (spp-arg-list ("_tmr" "_reg") 3057 . 3069) . ((symbol "_REG32" 3071 . 3077) (semantic-list "(io_timers[_tmr].base, _reg)" 3077 . 3105)))
+          ("rDMAR" (spp-arg-list ("_tmr") 4082 . 4088) . ((symbol "REG" 4092 . 4095) (semantic-list "(_tmr, STM32_GTIM_DMAR_OFFSET)" 4095 . 4125)))
+          ("rBDTR" (spp-arg-list ("_tmr") 4139 . 4145) . ((symbol "REG" 4147 . 4150) (semantic-list "(_tmr, STM32_ATIM_BDTR_OFFSET)" 4150 . 4180)))
+          ("rEGR" (spp-arg-list ("_tmr") 3400 . 3406) . ((symbol "REG" 3411 . 3414) (semantic-list "(_tmr, STM32_GTIM_EGR_OFFSET)" 3414 . 3443)))
+          ("GTIM_SR_CCIF" . ((semantic-list "(GTIM_SR_CC4IF|GTIM_SR_CC3IF|GTIM_SR_CC2IF|GTIM_SR_CC1IF)" 4203 . 4260)))
+          ("CCMR_C1_CAPTURE_INIT" . 
+              ((semantic-list "(GTIM_CCMR_CCS_CCIN1  << GTIM_CCMR1_CC1S_SHIFT)" 4460 . 4507) (punctuation "|" 4508 . 4509) (semantic-list "(GTIM_CCMR_ICPSC_NOPSC << GTIM_CCMR1_IC1PSC_SHIFT)" 4513 . 4563) (punctuation "|" 4564 . 4565) (semantic-list "(GTIM_CCMR_ICF_NOFILT << GTIM_CCMR1_IC1F_SHIFT)" 4569 . 4616)))
+          ("arraySize" (spp-arg-list ("a") 2380 . 2383) . ((semantic-list "(sizeof((a))/sizeof(((a)[0])))" 2384 . 2414)))
+          ("rDIER" (spp-arg-list ("_tmr") 3289 . 3295) . ((symbol "REG" 3299 . 3302) (semantic-list "(_tmr, STM32_GTIM_DIER_OFFSET)" 3302 . 3332)))
+          ("CCMR_C1_PWMOUT_INIT" . 
+              ((semantic-list "(GTIM_CCMR_MODE_PWM1 << GTIM_CCMR1_OC1M_SHIFT)" 4646 . 4692) (punctuation "|" 4693 . 4694) (symbol "GTIM_CCMR1_OC1PE" 4695 . 4711)))
+          ("rSR" (spp-arg-list ("_tmr") 3344 . 3350) . ((symbol "REG" 3356 . 3359) (semantic-list "(_tmr, STM32_GTIM_SR_OFFSET)" 3359 . 3387)))
+          ("rPSC" (spp-arg-list ("_tmr") 3685 . 3691) . ((symbol "REG" 3696 . 3699) (semantic-list "(_tmr, STM32_GTIM_PSC_OFFSET)" 3699 . 3728)))
+          ("CCMR_C1_RESET" . ((number "0x00ff" 4365 . 4371)))
+          ("MAX_CHANNELS_PER_TIMER" . ((number "4" 2976 . 2977)))
+          ("rCCMR1" (spp-arg-list ("_tmr") 3458 . 3464) . ((symbol "REG" 3467 . 3470) (semantic-list "(_tmr, STM32_GTIM_CCMR1_OFFSET)" 3470 . 3501)))
+          ("rCCR1" (spp-arg-list ("_tmr") 3798 . 3804) . ((symbol "REG" 3808 . 3811) (semantic-list "(_tmr, STM32_GTIM_CCR1_OFFSET)" 3811 . 3841)))
+          ("rCCMR2" (spp-arg-list ("_tmr") 3516 . 3522) . ((symbol "REG" 3525 . 3528) (semantic-list "(_tmr, STM32_GTIM_CCMR2_OFFSET)" 3528 . 3559)))
+          ("rCNT" (spp-arg-list ("_tmr") 3629 . 3635) . ((symbol "REG" 3640 . 3643) (semantic-list "(_tmr, STM32_GTIM_CNT_OFFSET)" 3643 . 3672)))
+          ("rCCR2" (spp-arg-list ("_tmr") 3855 . 3861) . ((symbol "REG" 3865 . 3868) (semantic-list "(_tmr, STM32_GTIM_CCR2_OFFSET)" 3868 . 3898)))
+          ("rDCR" (spp-arg-list ("_tmr") 4025 . 4031) . ((symbol "REG" 4036 . 4039) (semantic-list "(_tmr, STM32_GTIM_DCR_OFFSET)" 4039 . 4068)))
+          ("GTIM_SR_CCOF" . ((semantic-list "(GTIM_SR_CC4OF|GTIM_SR_CC3OF|GTIM_SR_CC2OF|GTIM_SR_CC1OF)" 4282 . 4339)))
+          ("rCCR3" (spp-arg-list ("_tmr") 3912 . 3918) . ((symbol "REG" 3922 . 3925) (semantic-list "(_tmr, STM32_GTIM_CCR3_OFFSET)" 3925 . 3955)))
+          ("_REG32" (spp-arg-list ("_base" "_reg") 2993 . 3006) . ((semantic-list "(*(volatile uint32_t *)(_base + _reg))" 3007 . 3045)))
+          ("rSMCR" (spp-arg-list ("_tmr") 3232 . 3238) . ((symbol "REG" 3242 . 3245) (semantic-list "(_tmr, STM32_GTIM_SMCR_OFFSET)" 3245 . 3275)))
+          ("rCCR4" (spp-arg-list ("_tmr") 3969 . 3975) . ((symbol "REG" 3979 . 3982) (semantic-list "(_tmr, STM32_GTIM_CCR4_OFFSET)" 3982 . 4012)))
+          ("CCER_C1_INIT" . ((symbol "GTIM_CCER_CC1E" 4874 . 4888)))
+          ("rCR1" (spp-arg-list ("_tmr") 3119 . 3125) . ((symbol "REG" 3130 . 3133) (semantic-list "(_tmr, STM32_GTIM_CR1_OFFSET)" 3133 . 3162)))
+          ("BOARD_PWM_FREQ" . ((number "1000000" 2853 . 2860)))
+          ("rCR2" (spp-arg-list ("_tmr") 3175 . 3181) . ((symbol "REG" 3186 . 3189) (semantic-list "(_tmr, STM32_GTIM_CR2_OFFSET)" 3189 . 3218)))
+          ("CCMR_C1_NUM_BITS" . ((number "8" 4399 . 4400)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "drv_io_timer.h"
+      :fsize 5419
+      :lastmodtime '(23770 52090 775807 663000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1969 1992])
+            ("nuttx/arch.h" include (:system-flag t) nil [1993 2016])
+            ("nuttx/irq.h" include (:system-flag t) nil [2017 2039])
+            ("sys/types.h" include (:system-flag t) nil [2041 2063])
+            ("stdbool.h" include (:system-flag t) nil [2064 2084])
+            ("assert.h" include (:system-flag t) nil [2086 2105])
+            ("debug.h" include (:system-flag t) nil [2106 2124])
+            ("time.h" include (:system-flag t) nil [2125 2142])
+            ("queue.h" include (:system-flag t) nil [2143 2161])
+            ("errno.h" include (:system-flag t) nil [2162 2180])
+            ("string.h" include (:system-flag t) nil [2181 2200])
+            ("stdio.h" include (:system-flag t) nil [2201 2219])
+            ("arch/board/board.h" include (:system-flag t) nil [2221 2250])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [2251 2286])
+            ("drv_io_timer.h" include nil nil [2288 2313])
+            ("drv_pwm_servo.h" include nil nil [2314 2340])
+            ("stm32_tim.h" include (:system-flag t) nil [2342 2364])
+            ("up_pwm_servo_set" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2387 2404])
+                    ("value" variable (:type ("servo_position_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2405 2428]))                  
+                :type "int")
+                nil [2366 2474])
+            ("up_pwm_servo_get" function
+               (:arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2510 2527]))                  
+                :type ("servo_position_t" type (:type "class") nil nil))
+                nil [2476 2568])
+            ("up_pwm_servo_init" function
+               (:arguments 
+                  ( ("channel_mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2592 2614]))                  
+                :type "int")
+                nil [2570 3556])
+            ("up_pwm_servo_deinit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3583 3588]))                  
+                :type "void")
+                nil [3558 3644])
+            ("up_pwm_servo_set_rate_group_update" function
+               (:arguments 
+                  ( ("group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3685 3700])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3701 3715]))                  
+                :type "int")
+                nil [3646 4072])
+            ("up_pwm_update" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4093 4098]))                  
+                :type "void")
+                nil [4074 4123])
+            ("up_pwm_servo_set_rate" function
+               (:arguments 
+                  ( ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4151 4165]))                  
+                :type "int")
+                nil [4125 4279])
+            ("up_pwm_servo_get_rate_group" function
+               (:arguments 
+                  ( ("group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4318 4333]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [4281 4556])
+            ("up_pwm_servo_arm" function
+               (:arguments 
+                  ( ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [4580 4591]))                  
+                :type "void")
+                nil [4558 4760]))          
+      :file "drv_pwm_servo.c"
+      :pointmax 4761
+      :fsize 4760
+      :lastmodtime '(23770 52090 775807 663000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "drv_pwm_servo.h"
+      :fsize 1856
+      :lastmodtime '(23549 3302 47906 126000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!stm32!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

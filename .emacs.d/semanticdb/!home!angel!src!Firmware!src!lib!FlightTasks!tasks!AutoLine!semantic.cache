@@ -1,0 +1,98 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAutoLine.hpp" include nil nil [1771 1804])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1805 1833])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1835 1858])
+            ("SIGMA_NORM" variable
+               (:default-value "0.001f"
+                :type "float")
+                nil [1877 1904])
+            ("_generateSetpoints" function
+               (:parent "FlightTaskAutoLine"
+                :type "void")
+                nil [1906 2410])
+            ("_setSpeedAtTarget" function
+               (:parent "FlightTaskAutoLine"
+                :type "void")
+                nil [2412 3019])
+            ("_generateHeadingAlongTrack" function
+               (:parent "FlightTaskAutoLine"
+                :type "void")
+                nil [3022 3187])
+            ("_generateXYsetpoints" function
+               (:parent "FlightTaskAutoLine"
+                :type "void")
+                nil [3189 7496])
+            ("_generateAltitudeSetpoints" function
+               (:parent "FlightTaskAutoLine"
+                :type "void")
+                nil [7498 10473]))          
+      :file "FlightTaskAutoLine.cpp"
+      :pointmax 10474
+      :fsize 10473
+      :lastmodtime '(23900 3283 430502 49000)
+      :unmatched-syntax '((symbol 1867 . 1876) (STATIC 1860 . 1866)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAutoMapper.hpp" include nil nil [1905 1940])
+            ("FlightTaskAutoLine" type
+               (:superclasses 
+                  ( ("FlightTaskAutoMapper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1999 2006])
+                    ("protected" label nil (reparse-symbol classsubparts) [2083 2093])
+                    ("DEFINE_PARAMETERS_CUSTOM_PARENT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("FlightTaskAutoMapper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2128 2149])
+                            ("" variable (:type ("_param_mis_yaw_err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2194 2213])
+                            ("" variable (:type ("_param_mpc_acc_hor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2300])
+                            ("" variable (:type ("_param_mpc_acc_up_max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2374 2396])
+                            ("" variable (:type ("_param_mpc_acc_down_max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2446 2482]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2096 2483])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2512 2521])
+                    ("_generateHeadingAlongTrack" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2563 2597])
+                    ("_generateAltitudeSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2638 2672])
+                    ("_generateXYsetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2751 2779])
+                    ("private" label nil (reparse-symbol classsubparts) [2859 2867])
+                    ("_setSpeedAtTarget" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2869 2894])
+                    ("_speed_at_target" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [2934 2964]))                  
+                :type "class")
+                nil [1942 2967]))          
+      :file "FlightTaskAutoLine.hpp"
+      :pointmax 2968
+      :fsize 2910
+      :lastmodtime '(23900 3283 430502 49000)
+      :unmatched-syntax '((semantic-list 2509 . 2511) (symbol 2491 . 2509) (VOID 2486 . 2490) (semantic-list 2402 . 2445) (semantic-list 2332 . 2373) (semantic-list 2242 . 2280) (semantic-list 2155 . 2193) (punctuation 2080 . 2081) (DEFAULT 2073 . 2080) (punctuation 2071 . 2072) (semantic-list 2068 . 2070) (symbol 2050 . 2068) (punctuation 2049 . 2050) (VIRTUAL 2041 . 2048) (punctuation 2038 . 2039) (DEFAULT 2031 . 2038) (punctuation 2029 . 2030) (semantic-list 2026 . 2028) (symbol 2008 . 2026) (symbol 1899 . 1903) (symbol 1892 . 1898) (punctuation 1891 . 1892))))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!AutoLine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

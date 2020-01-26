@@ -1,0 +1,243 @@
+;; Object systemlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "systemlib/"
+  :tables
+  (list
+    (semanticdb-table "battery_params.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1860 1883])
+            ("systemlib/param/param.h" include (:system-flag t) nil [1884 1918])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_V_LOAD_DROP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5752 5768]))                  
+                :type "int")
+                nil [5733 5775])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_R_INTERNAL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6055 6070]))                  
+                :type "int")
+                nil [6036 6078])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_N_CELLS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6648 6660]))                  
+                :type "int")
+                nil [6629 6664]))          
+      :file "battery_params.c"
+      :pointmax 7594
+      :fsize 7593
+      :lastmodtime '(23437 18825 500964 92000)
+      :unmatched-syntax '((number 6661 . 6662) (number 6072 . 6076) (punctuation 6071 . 6072) (number 5769 . 5773)))
+    (semanticdb-table "battery.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("battery.h" include nil nil [1852 1872])
+            ("Battery" function
+               (:constructor-flag t
+                :parent "Battery"
+                :type ("Battery" type (:type "class") nil nil))
+                nil [1874 3266])
+            ("Battery" function
+               (:destructor-flag t
+                :parent "Battery"
+                :type "void")
+                nil [3268 3291])
+            ("reset" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("battery_status" variable
+                       (:pointer 1
+                        :type ("battery_status_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3313 3346]))                  
+                :type "void")
+                nil [3293 3715])
+            ("updateBatteryStatus" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("timestamp" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3751 3773])
+                    ("voltage_v" variable (:type "float") (reparse-symbol arg-sub-list) [3774 3790])
+                    ("current_a" variable (:type "float") (reparse-symbol arg-sub-list) [3791 3807])
+                    ("connected" variable (:type "bool") (reparse-symbol arg-sub-list) [3816 3831])
+                    ("selected_source" variable (:type "bool") (reparse-symbol arg-sub-list) [3832 3853])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [3854 3867])
+                    ("throttle_normalized" variable (:type "float") (reparse-symbol arg-sub-list) [3876 3902])
+                    ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [3911 3922])
+                    ("battery_status" variable
+                       (:pointer 1
+                        :type ("battery_status_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3923 3956]))                  
+                :type "void")
+                nil [3717 5406])
+            ("filterVoltage" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("voltage_v" variable (:type "float") (reparse-symbol arg-sub-list) [5436 5452]))                  
+                :type "void")
+                nil [5408 5885])
+            ("filterCurrent" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("current_a" variable (:type "float") (reparse-symbol arg-sub-list) [5915 5931]))                  
+                :type "void")
+                nil [5887 6364])
+            ("filterThrottle" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("throttle" variable (:type "float") (reparse-symbol arg-sub-list) [6395 6410]))                  
+                :type "void")
+                nil [6366 6635])
+            ("initDischarged" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [6765 6776]))                  
+                :type "void")
+                nil [6736 7402])
+            ("sumDischarged" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("timestamp" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7448 7470])
+                    ("current_a" variable (:type "float") (reparse-symbol arg-sub-list) [7471 7487])
+                    ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [7502 7513]))                  
+                :type "void")
+                nil [7420 8183])
+            ("estimateRemaining" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [8217 8228]))                  
+                :type "void")
+                nil [8185 11021])
+            ("determineWarning" function
+               (:parent "Battery"
+                :arguments 
+                  ( ("connected" variable (:type "bool") (reparse-symbol arg-sub-list) [11054 11069]))                  
+                :type "void")
+                nil [11023 12895])
+            ("computeScale" function
+               (:parent "Battery"
+                :type "void")
+                nil [12897 13975]))          
+      :file "battery.cpp"
+      :pointmax 13976
+      :fsize 13975
+      :lastmodtime '(23521 20544 34717 823000)
+      :unmatched-syntax nil)
+    (semanticdb-table "battery.h"
+      :file "battery.h"
+      :fsize 5331
+      :lastmodtime '(23451 31959 659613 970000))
+    (semanticdb-table "event_logging.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_TIPPING" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [451 465]))                  
+                :type "int")
+                nil [432 469])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_TOUCHDOWN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [717 733]))                  
+                :type "int")
+                nil [698 737])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_FTW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [884 894]))                  
+                :type "int")
+                nil [865 898])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_EKF_INNOV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1714 1730]))                  
+                :type "int")
+                nil [1695 1734])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_WIND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1809 1820]))                  
+                :type "int")
+                nil [1790 1827])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_WIND_BT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1920 1934]))                  
+                :type "int")
+                nil [1901 1941])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_LAND_VEL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2041 2056]))                  
+                :type "int")
+                nil [2022 2063])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_D_MAG_NORM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2137 2154]))                  
+                :type "int")
+                nil [2118 2161])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_ARSP_FAULT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2306 2323]))                  
+                :type "int")
+                nil [2287 2327])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_MAG_JUMP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2503 2518]))                  
+                :type "int")
+                nil [2484 2522])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_ARSP_TEMP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2626 2642]))                  
+                :type "int")
+                nil [2607 2649])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_KILL_SW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2784 2798]))                  
+                :type "int")
+                nil [2765 2802])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_YAW_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2917]))                  
+                :type "int")
+                nil [2884 2924])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_FLIGHT_CNT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3009 3026]))                  
+                :type "int")
+                nil [2990 3030])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_FLIGHT_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3110 3125]))                  
+                :type "int")
+                nil [3091 3129])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_IMU_CRU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3284 3298]))                  
+                :type "int")
+                nil [3265 3302])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("EVENT_IMU_HOV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3456 3470]))                  
+                :type "int")
+                nil [3437 3474]))          
+      :file "event_logging.c"
+      :pointmax 3476
+      :fsize 3475
+      :lastmodtime '(23541 32830 769591 670000)
+      :unmatched-syntax '((number 3471 . 3472) (number 3299 . 3300) (number 3126 . 3127) (number 3027 . 3028) (number 2918 . 2922) (number 2799 . 2800) (number 2643 . 2647) (number 2519 . 2520) (number 2324 . 2325) (number 2155 . 2159) (number 2057 . 2061) (number 1935 . 1939) (number 1821 . 1825) (number 1731 . 1732) (number 895 . 896) (number 734 . 735) (number 466 . 467))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!systemlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

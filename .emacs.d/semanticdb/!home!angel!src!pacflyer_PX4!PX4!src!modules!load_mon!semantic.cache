@@ -1,0 +1,284 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1918 1936])
+            ("stdlib.h" include (:system-flag t) nil [1937 1956])
+            ("string.h" include (:system-flag t) nil [1957 1976])
+            ("unistd.h" include (:system-flag t) nil [1977 1996])
+            ("px4_config.h" include (:system-flag t) nil [1998 2021])
+            ("px4_module.h" include (:system-flag t) nil [2022 2045])
+            ("px4_workqueue.h" include (:system-flag t) nil [2046 2072])
+            ("px4_defines.h" include (:system-flag t) nil [2073 2097])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2099 2127])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2129 2161])
+            ("systemlib/cpuload.h" include (:system-flag t) nil [2162 2192])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2193 2228])
+            ("uORB/uORB.h" include (:system-flag t) nil [2230 2252])
+            ("uORB/topics/cpuload.h" include (:system-flag t) nil [2253 2285])
+            ("uORB/topics/task_stack_info.h" include (:system-flag t) nil [2286 2326])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [2327 2366])
+            ("system_load" variable
+               (:typemodifiers ("extern")
+                :type ("system_load_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2379 2419])
+            ("STACK_LOW_WARNING_THRESHOLD" variable (:constant-flag t) nil [2429 2456])
+            ("load_mon" type
+               (:members 
+                  ( ("load_mon_main" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2581 2590])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2591 2604]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2563 2605])
+                    ("LOAD_MON_INTERVAL_US" variable
+                       (:constant-flag t
+                        :default-value "1000000"
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [2626 2672])
+                    ("LoadMon" type
+                       (:superclasses 
+                          ( ("ModuleBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2719 2726])
+                            ("LoadMon" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("LoadMon" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2728 2738])
+                            ("LoadMon" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2740 2751])
+                            ("task_spawn" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2776 2785])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2786 2799]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2754 2800])
+                            ("custom_command" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2853 2862])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2863 2876]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2827 2923])
+                            ("print_usage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("reason" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "nullptr"
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2973 3001]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2950 3003])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3065 3074])
+                            ("cycle_trampoline" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("arg" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [3145 3155]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3116 3156])
+                            ("private" label nil (reparse-symbol classsubparts) [3158 3166])
+                            ("cpu_load_average_monitor" type
+                               (:members 
+                                  ( ("cpu_load_average_monitor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("param_name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3287 3310]))                                          
+                                        :type ("cpu_load_average_monitor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [3262 3354])
+                                    ("average" function (:type "int") (reparse-symbol classsubparts) [3357 3444])
+                                    ("update_average_parameter" function (:type "void") (reparse-symbol classsubparts) [3448 3634])
+                                    ("parameter" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3637 3670])
+                                    ("sum" variable
+                                       (:default-value "0.0f"
+                                        :type "float")
+                                        (reparse-symbol classsubparts) [3673 3690])
+                                    ("measurements_count" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3693 3720]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3217 3724])
+                            ("_cycle" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3794 3808])
+                            ("_compute" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3868 3884])
+                            ("_ram_used" function
+                               (:prototype-flag t
+                                :type "float")
+                                (reparse-symbol classsubparts) [3922 3940])
+                            ("_is_vehicle_armed" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4004 4029])
+                            ("_cache_cpu_load" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4111 4134])
+                            ("update_cpu_load_parameters" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4230 4264])
+                            ("_work" variable (:type ("work_s" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [4467 4487])
+                            ("_cpuload" variable (:type ("cpuload_s" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [4490 4516])
+                            ("_cpuload_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4518 4544])
+                            ("_last_idle_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4546 4574])
+                            ("_stack_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4576 4603])
+                            ("_stack_check_enabled" variable (:type "bool") (reparse-symbol classsubparts) [4605 4631])
+                            ("_vehicle_status" variable (:type ("vehicle_status_s" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [4645 4685])
+                            ("_vehicle_status_sub" variable (:type "int") (reparse-symbol classsubparts) [4687 4711])
+                            ("_vehicle_was_armed_before" variable (:type "bool") (reparse-symbol classsubparts) [4713 4744])
+                            ("_cpu_hover" variable (:type ("cpu_load_average_monitor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4746 4782])
+                            ("_cpu_cruise" variable (:type ("cpu_load_average_monitor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4784 4821])
+                            ("_cpu_load_over_threshold_param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4823 4862])
+                            ("_cpu_load_seconds_over_threshold" variable (:type "int") (reparse-symbol classsubparts) [4864 4901])
+                            ("CPU_LOAD_PEAK_TRESHOLD" variable
+                               (:default-value "80"
+                                :type "int")
+                                (reparse-symbol classsubparts) [4920 4952]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2674 4972])
+                    ("LoadMon" function
+                       (:constructor-flag t
+                        :parent "LoadMon"
+                        :type ("LoadMon" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4974 5864])
+                    ("LoadMon" function
+                       (:destructor-flag t
+                        :parent "LoadMon"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5866 5914])
+                    ("task_spawn" function
+                       (:parent "LoadMon"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5940 5949])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5950 5963]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [5916 6298])
+                    ("cycle_trampoline" function
+                       (:parent "LoadMon"
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6331 6341]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6300 6412])
+                    ("_cycle" function
+                       (:parent "LoadMon"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6414 6626])
+                    ("_compute" function
+                       (:parent "LoadMon"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6628 7884])
+                    ("_ram_used" function
+                       (:parent "LoadMon"
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [7886 8259])
+                    ("_is_vehicle_armed" function
+                       (:parent "LoadMon"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8286 8401])
+                    ("_cache_cpu_load" function
+                       (:parent "LoadMon"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8403 8787])
+                    ("update_cpu_load_parameters" function
+                       (:parent "LoadMon"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8789 9373])
+                    ("print_status" function
+                       (:parent "LoadMon"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [10994 11092])
+                    ("print_usage" function
+                       (:parent "LoadMon"
+                        :arguments 
+                          ( ("reason" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11119 11138]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11094 11728])
+                    ("load_mon_main" function
+                       (:arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [11749 11758])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11759 11772]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11731 11811]))                  
+                :type "namespace")
+                nil [2521 11814]))          
+      :file "load_mon.cpp"
+      :pointmax 11837
+      :fsize 11836
+      :lastmodtime '(23827 33130 984557 498000)
+      :unmatched-syntax '((symbol 4910 . 4919) (STATIC 4903 . 4909) (EXPLICIT 3253 . 3261) (EXPLICIT 3253 . 3261) (semantic-list 3062 . 3064) (symbol 3050 . 3062) (INT 3046 . 3049) (symbol 2554 . 2562) (string 2550 . 2553) (EXTERN 2543 . 2549))
+      :lexical-table 
+        '(("STACK_LOW_WARNING_THRESHOLD" . ((number "300" 2457 . 2460)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!load_mon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

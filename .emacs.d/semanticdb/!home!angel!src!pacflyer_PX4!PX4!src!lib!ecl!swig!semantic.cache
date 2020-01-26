@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("feature" function
+               (:prototype-flag t
+                :type "int")
+                nil [63 87])
+            ("apply" function
+               (:arguments 
+                  ( ("ARGOUT_ARRAY1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [411 436]))                  
+                :type "int")
+                nil [404 453])
+            ("apply" function
+               (:arguments 
+                  ( ("ARGOUT_ARRAY1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [463 488]))                  
+                :type "int")
+                nil [456 506])
+            ("apply" function
+               (:arguments 
+                  ( ("ARGOUT_ARRAY1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [516 541]))                  
+                :type "int")
+                nil [509 559])
+            ("apply" function
+               (:arguments 
+                  ( ("IN_ARRAY1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [569 590]))                  
+                :type "int")
+                nil [562 635])
+            ("apply" function
+               (:arguments 
+                  ( ("IN_ARRAY1" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [645 666]))                  
+                :type "int")
+                nil [638 688])
+            ("std::vector" variable (:type "int") nil [13904 13921])
+            ("std::vector" variable (:type "int") nil [13947 13967])
+            ("std::vector" variable (:type "int") nil [13992 14011]))          
+      :file "ecl.i"
+      :pointmax 14012
+      :fsize 14011
+      :lastmodtime '(23549 3356 888296 951000)
+      :unmatched-syntax '((semantic-list 13977 . 13991) (TEMPLATE 13969 . 13977) (punctuation 13968 . 13969) (semantic-list 13931 . 13946) (TEMPLATE 13923 . 13931) (punctuation 13922 . 13923) (semantic-list 13891 . 13903) (TEMPLATE 13883 . 13891) (punctuation 13882 . 13883) (semantic-list 8230 . 13839) (symbol 8226 . 8229) (symbol 8219 . 8225) (punctuation 8218 . 8219) (string 8202 . 8216) (symbol 8194 . 8201) (punctuation 8193 . 8194) (string 8162 . 8192) (symbol 8154 . 8161) (punctuation 8153 . 8154) (string 8135 . 8152) (symbol 8127 . 8134) (punctuation 8126 . 8127) (string 8086 . 8125) (symbol 8078 . 8085) (punctuation 8077 . 8078) (string 8041 . 8076) (symbol 8033 . 8040) (punctuation 8032 . 8033) (string 8003 . 8031) (symbol 7995 . 8002) (punctuation 7994 . 7995) (string 7967 . 7993) (symbol 7959 . 7966) (punctuation 7958 . 7959) (string 7924 . 7957) (symbol 7916 . 7923) (punctuation 7915 . 7916) (string 7884 . 7914) (symbol 7876 . 7883) (punctuation 7875 . 7876) (string 7844 . 7874) (symbol 7836 . 7843) (punctuation 7835 . 7836) (semantic-list 699 . 7800) (INLINE 692 . 698) (punctuation 691 . 692) (punctuation 688 . 689) (punctuation 637 . 638) (punctuation 635 . 636) (punctuation 561 . 562) (punctuation 559 . 560) (punctuation 508 . 509) (punctuation 506 . 507) (punctuation 455 . 456) (punctuation 453 . 454) (punctuation 403 . 404) (semantic-list 377 . 401) (punctuation 376 . 377) (symbol 371 . 375) (punctuation 370 . 371) (string 360 . 369) (symbol 352 . 359) (punctuation 351 . 352) (semantic-list 233 . 349) (punctuation 232 . 233) (string 168 . 180) (symbol 160 . 167) (punctuation 159 . 160) (string 144 . 158) (symbol 136 . 143) (punctuation 135 . 136) (string 120 . 134) (symbol 112 . 119) (punctuation 111 . 112) (string 98 . 110) (symbol 90 . 97) (punctuation 89 . 90) (string 82 . 85) (string 71 . 80) (punctuation 62 . 63) (symbol 58 . 61) (semantic-list 42 . 57) (symbol 36 . 42) (punctuation 35 . 36))
+      :lexical-table 
+        '(("SWIG_FILE_WITH_INIT")
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!ecl!swig!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

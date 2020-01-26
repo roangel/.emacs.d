@@ -1,0 +1,283 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("errno.h" include (:system-flag t) nil [2080 2098])
+            ("stdint.h" include (:system-flag t) nil [2099 2118])
+            ("PX4_SPIDEV_ID" variable (:constant-flag t) nil [3950 3963])
+            ("PX4_SPI_DEVICE_ID" variable (:constant-flag t) nil [4036 4053])
+            ("PX4_MK_SPI_SEL" variable (:constant-flag t) nil [4080 4094])
+            ("PX4_SPI_BUS_ID" variable (:constant-flag t) nil [4185 4199])
+            ("PX4_SPI_DEV_ID" variable (:constant-flag t) nil [4243 4257])
+            ("PX4_CHECK_ID" variable (:constant-flag t) nil [4294 4306])
+            ("BOARD_NUMBER_I2C_BUSES" variable (:constant-flag t) nil [4701 4723])
+            ("ADC_V5_V_FULL_SCALE" variable (:constant-flag t) nil [5673 5692])
+            ("ADC_V5_SCALE" variable (:constant-flag t) nil [5789 5801])
+            ("ADC_3V3_V_FULL_SCALE" variable (:constant-flag t) nil [5945 5965])
+            ("ADC_3V3_SCALE" variable (:constant-flag t) nil [6066 6079])
+            ("BOARD_ADC_OPEN_CIRCUIT_V" variable (:constant-flag t) nil [6359 6383])
+            ("BOARD_VALID_UV" variable (:constant-flag t) nil [6576 6590])
+            ("BOARD_NUMBER_BRICKS" variable (:constant-flag t) nil [6673 6692])
+            ("BOARD_ADC_BRICK_VALID" variable (:constant-flag t) nil [6745 6766])
+            ("BOARD_BATT_V_LIST" variable (:constant-flag t) nil [6827 6844])
+            ("BOARD_BATT_I_LIST" variable (:constant-flag t) nil [6891 6908])
+            ("BOARD_BRICK_VALID_LIST" variable (:constant-flag t) nil [6955 6977])
+            ("BOARD_BATTERY1_V_DIV" variable (:constant-flag t) nil [8843 8863])
+            ("BOARD_BATTERY2_V_DIV" variable (:constant-flag t) nil [8920 8940])
+            ("BOARD_BATTERY1_A_PER_V" variable (:constant-flag t) nil [9135 9157])
+            ("BOARD_BATTERY2_A_PER_V" variable (:constant-flag t) nil [9216 9238])
+            ("BOARD_EEPROM_WP_CTRL" variable (:constant-flag t) nil [10240 10260])
+            ("board_reset_e" type
+               (:members 
+                  ( ("board_reset_normal" variable
+                       (:constant-flag t
+                        :default-value (11198 11199)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11167 11199])
+                    ("board_reset_extended" variable
+                       (:constant-flag t
+                        :default-value (11263 11264)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11232 11264])
+                    ("board_reset_power_off" variable
+                       (:constant-flag t
+                        :default-value (11349 11350)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11318 11350])
+                    ("board_reset_enter_bootloader" variable
+                       (:constant-flag t
+                        :default-value (11439 11440)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11408 11440]))                  
+                :type "enum")
+                nil [11137 11500])
+            ("board_reset_e" type
+               (:typedef ("board_reset_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [11137 11500])
+            ("board_power_button_state_notification_e" type
+               (:members 
+                  ( ("PWR_BUTTON_IDEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11603 11619])
+                    ("PWR_BUTTON_DOWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11706 11722])
+                    ("PWR_BUTTON_UP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11769 11783])
+                    ("PWR_BUTTON_REQUEST_SHUT_DOWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11830 11859])
+                    ("PWR_BUTTON_RESPONSE_SHUT_DOWN_PENDING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11932 11970])
+                    ("PWR_BUTTON_RESPONSE_SHUT_DOWN_NOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12171 12205]))                  
+                :type "enum")
+                nil [11547 12312])
+            ("board_power_button_state_notification_e" type
+               (:typedef ("board_power_button_state_notification_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [11547 12312])
+            ("power_button_state_notification_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("request" variable (:type ("board_power_button_state_notification_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12397 12445]))                  
+                :type "int")
+                nil [12356 12446])
+            ("PX4_GUID_BYTE_LENGTH" variable (:constant-flag t) nil [13918 13938])
+            ("PX4_GUID_FORMAT_SIZE" variable (:constant-flag t) nil [13963 13983])
+            ("uuid_byte_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [14118 14172])
+            ("uuid_uint32_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [14266 14325])
+            ("mfguid_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [14481 14534])
+            ("px4_guid_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [14713 14762])
+            ("board_read_VBUS_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15880 15885]))                  
+                :type "int")
+                nil [15854 15886])
+            ("board_dma_alloc_init" variable (:constant-flag t) nil [16675 16695])
+            ("board_get_dma_usage" variable (:constant-flag t) nil [17747 17766])
+            ("board_on_reset" variable (:constant-flag t) nil [19590 19604])
+            ("noreturn_function" variable (:type "int") nil [20286 20304])
+            ("board_set_bootload_mode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mode" variable (:type ("board_reset_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21321 21340]))                  
+                :type "int")
+                nil [21293 21341])
+            ("board_get_hw_type_name" variable (:constant-flag t) nil [21876 21898])
+            ("board_get_hw_version" variable (:constant-flag t) nil [22558 22578])
+            ("board_get_hw_revision" variable (:constant-flag t) nil [23245 23266])
+            ("board_get_uuid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("uuid_bytes" variable (:type ("uuid_byte_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24051 24074]))                  
+                :type "void")
+                nil [24031 24075])
+            ("board_get_uuid32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("uuid_words" variable (:type ("uuid_uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25115 25140]))                  
+                :type "void")
+                nil [25093 25141])
+            ("board_get_uuid32_formated" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26817 26837])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [26838 26847])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26859 26878])
+                    ("seperator" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26890 26912]))                  
+                :type "int")
+                nil [26787 26913])
+            ("board_get_mfguid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mfgid" variable (:type ("mfguid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27766 27781]))                  
+                :type "int")
+                nil [27745 27782])
+            ("board_get_mfguid_formated" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28692 28712])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [28713 28722]))                  
+                :type "int")
+                nil [28662 28723])
+            ("board_get_px4_guid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("guid" variable (:type ("px4_guid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30339 30355]))                  
+                :type "int")
+                nil [30316 30356])
+            ("board_get_px4_guid_formated" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31302 31322])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [31323 31332]))                  
+                :type "int")
+                nil [31270 31333])
+            ("board_mcu_version" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32078 32088])
+                    ("revstr" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32089 32109])
+                    ("errata" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32110 32130]))                  
+                :type "int")
+                nil [32056 32131])
+            ("board_register_power_state_notification_cb" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cb" variable (:type ("power_button_state_notification_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33263 33300]))                  
+                :type "int")
+                nil [33202 33314])
+            ("board_shutdown" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33348 33353]))                  
+                :type "int")
+                nil [33315 33373])
+            ("px4_i2c_bus_external" variable (:constant-flag t) nil [33791 33811])
+            ("px4_spi_bus_external" variable (:constant-flag t) nil [34303 34323])
+            ("board_internal_common.h" include nil nil [34411 34445]))          
+      :file "board_common.h"
+      :pointmax 34446
+      :fsize 34445
+      :lastmodtime '(23898 29490 271865 337000)
+      :unmatched-syntax '((symbol 32047 . 32055) (symbol 26778 . 26786) (symbol 25084 . 25092) (symbol 24022 . 24030) (symbol 21284 . 21292) (semantic-list 20273 . 20285) (symbol 20255 . 20273) (VOID 20250 . 20254) (symbol 20241 . 20249) (TYPEDEF 12348 . 12355) (punctuation 8219 . 8220) (symbol 8213 . 8219) (number "1" 8193 . 8212) (symbol 8182 . 8192) (symbol 8176 . 8181) (punctuation 8173 . 8174) (symbol 5220 . 5229) (symbol 5216 . 5219) (symbol "PX4_NUMBER_I2C_BUSES" 5193 . 5215) (symbol 5187 . 5192) (punctuation 5182 . 5183) (symbol 1883 . 1887) (symbol 1876 . 1882) (punctuation 1875 . 1876))
+      :lexical-table 
+        '(("PX4_GUID_BYTE_LENGTH" . ((number "18" 13952 . 13954)))
+          ("PX4_MK_SPI_SEL" (spp-arg-list ("b" "d") 4094 . 4099) . ((symbol "PX4_SPIDEV_ID" 4106 . 4119) (semantic-list "(PX4_SPI_DEVICE_ID, ((((b) & 0xff) << 8) | ((d) & 0xff)))" 4119 . 4176)))
+          ("BOARD_ADC_OPEN_CIRCUIT_V" . ((semantic-list "(1.5f)" 6385 . 6391)))
+          ("BOARD_ADC_BRICK_VALID" . ((semantic-list "(1)" 6767 . 6770)))
+          ("BOARD_BATTERY1_V_DIV" . ((number "0.0f" 8864 . 8868)))
+          ("board_get_hw_version" (spp-arg-list nil 22578 . 22580) . ((semantic-list "(-1)" 22581 . 22585)))
+          ("px4_spi_bus_external" (spp-arg-list ("bus") 34323 . 34328) . ((symbol "false" 34329 . 34334)))
+          ("BOARD_NUMBER_I2C_BUSES" . ((symbol "PX4_NUMBER_I2C_BUSES" 4724 . 4744)))
+          ("BOARD_BATTERY2_V_DIV" . ((number "0.0f" 8941 . 8945)))
+          ("board_dma_alloc_init" (spp-arg-list nil 16695 . 16697) . ((semantic-list "(-EPERM)" 16698 . 16706)))
+          ("px4_i2c_bus_external" (spp-arg-list ("bus") 33811 . 33816) . ((symbol "true" 33817 . 33821)))
+          ("BOARD_BATTERY1_A_PER_V" . ((number "0.0f" 9158 . 9162)))
+          ("board_get_hw_type_name" (spp-arg-list nil 21898 . 21900) . ((string "\"\"" 21901 . 21903)))
+          ("PX4_CHECK_ID" (spp-arg-list ("devid") 4306 . 4313) . ((semantic-list "((devid) & PX4_SPI_DEVICE_ID)" 4320 . 4349)))
+          ("ADC_V5_V_FULL_SCALE" . ((semantic-list "(6.6f)" 5705 . 5711)))
+          ("PX4_SPIDEV_ID" (spp-arg-list ("type" "index") 3963 . 3976) . ((semantic-list "((((type) & 0xffff) << 16) | ((index) & 0xffff))" 3978 . 4026)))
+          ("BOARD_EEPROM_WP_CTRL" (spp-arg-list ("on_true") 10260 . 10269))
+          ("ADC_V5_SCALE" . ((semantic-list "(2.0f)" 5821 . 5827)))
+          ("BOARD_NUMBER_BRICKS" . ((number "1" 6693 . 6694)))
+          ("PX4_SPI_DEV_ID" (spp-arg-list ("devid") 4257 . 4264) . ((semantic-list "((devid) & 0xff)" 4269 . 4285)))
+          ("BOARD_BRICK_VALID_LIST" . ((semantic-list "{BOARD_ADC_BRICK_VALID}" 6979 . 7002)))
+          ("board_get_hw_revision" (spp-arg-list nil 23266 . 23268) . ((semantic-list "(-1)" 23269 . 23273)))
+          ("PX4_SPI_BUS_ID" (spp-arg-list ("devid") 4199 . 4206) . ((semantic-list "(((devid) >> 8) & 0xff)" 4211 . 4234)))
+          ("PX4_SPI_DEVICE_ID" . ((semantic-list "(1 << 12)" 4062 . 4071)))
+          ("BOARD_VALID_UV" . ((semantic-list "(3.7f)" 6592 . 6598)))
+          ("PX4_GUID_FORMAT_SIZE" . ((semantic-list "((2*PX4_GUID_BYTE_LENGTH)+1)" 13997 . 14025)))
+          ("ADC_3V3_SCALE" . ((semantic-list "(2.0f)" 6099 . 6105)))
+          ("BOARD_BATT_V_LIST" . ((semantic-list "{ADC_BATTERY_VOLTAGE_CHANNEL}" 6851 . 6880)))
+          ("BOARD_BATT_I_LIST" . ((semantic-list "{ADC_BATTERY_CURRENT_CHANNEL}" 6915 . 6944)))
+          ("board_get_dma_usage" (spp-arg-list ("dma_total" "dma_used" "dma_peak_used") 17766 . 17801) . ((semantic-list "(-ENOMEM)" 17802 . 17811)))
+          ("board_on_reset" (spp-arg-list ("status") 19604 . 19612))
+          ("ADC_3V3_V_FULL_SCALE" . ((semantic-list "(3.6f)" 5978 . 5984)))
+          ("BOARD_BATTERY2_A_PER_V" . ((number "0.0f" 9239 . 9243)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "board_internal_common.h"
+      :fsize 4229
+      :lastmodtime '(23770 52090 743807 476000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!boards!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

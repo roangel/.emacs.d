@@ -1,0 +1,311 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("float.h" include (:system-flag t) nil [1821 1839])
+            ("math.h" include (:system-flag t) nil [1840 1857])
+            ("stdint.h" include (:system-flag t) nil [1858 1877])
+            ("MATH_PI" variable (:constant-flag t) nil [1903 1910])
+            ("UINT64_C" variable (:constant-flag t) nil [2130 2138])
+            ("math" type
+               (:members 
+                  ( ("min" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2234 2247])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2248 2261]))                          
+                        :type ("_Tp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2219 2290])
+                    ("max" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2340 2353])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2354 2367]))                          
+                        :type ("_Tp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2325 2396])
+                    ("constrain" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2452 2467])
+                            ("min_val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2468 2487])
+                            ("max_val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2488 2507]))                          
+                        :type ("_Tp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2431 2582])
+                    ("constrainFloatToInt16" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("value" variable (:type "float") (reparse-symbol arg-sub-list) [2747 2759]))                          
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2710 2840])
+                    ("isInRange" function
+                       (:arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2898 2913])
+                            ("min_val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2914 2933])
+                            ("max_val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2934 2953]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2883 3003])
+                    ("radians" function
+                       (:arguments 
+                          ( ("degrees" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3046 3062]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3036 3133])
+                    ("degrees" function
+                       (:arguments 
+                          ( ("radians" variable
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3176 3192]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3166 3263])
+                    ("isZero" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3326 3342]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3307 3387])
+                    ("isZero" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [3451 3468]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3432 3511]))                  
+                :type "namespace")
+                nil [2168 3514]))          
+      :file "Limits.hpp"
+      :pointmax 3515
+      :fsize 3514
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax '((symbol 3156 . 3165) (punctuation 3154 . 3155) (symbol 3153 . 3154) (TYPENAME 3144 . 3152) (punctuation 3143 . 3144) (TEMPLATE 3135 . 3143) (symbol 3026 . 3035) (punctuation 3024 . 3025) (symbol 3023 . 3024) (TYPENAME 3014 . 3022) (punctuation 3013 . 3014) (TEMPLATE 3005 . 3013) (symbol 2873 . 2882) (INLINE 2866 . 2872) (punctuation 2864 . 2865) (symbol 2861 . 2864) (TYPENAME 2852 . 2860) (punctuation 2851 . 2852) (TEMPLATE 2843 . 2851) (symbol 2421 . 2430) (punctuation 2419 . 2420) (symbol 2416 . 2419) (TYPENAME 2407 . 2415) (punctuation 2406 . 2407) (TEMPLATE 2398 . 2406) (symbol 2315 . 2324) (punctuation 2313 . 2314) (symbol 2310 . 2313) (TYPENAME 2301 . 2309) (punctuation 2300 . 2301) (TEMPLATE 2292 . 2300) (symbol 2209 . 2218) (punctuation 2207 . 2208) (symbol 2204 . 2207) (TYPENAME 2195 . 2203) (punctuation 2194 . 2195) (TEMPLATE 2186 . 2194) (symbol 1815 . 1819) (symbol 1808 . 1814) (punctuation 1807 . 1808))
+      :lexical-table 
+        '(("MATH_PI" . ((number "3.141592653589793238462643383280" 1912 . 1944)))
+          ("UINT64_C" (spp-arg-list ("c") 2138 . 2141) . ((spp-symbol-merge ((symbol "c" 2142 . 2143) (symbol "ULL" 2147 . 2150)) 2142 . 2150)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Limits.hpp" include nil nil [1871 1892])
+            ("math" type
+               (:members 
+                  ( ("sign" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1971 1977]))                          )
+                        (reparse-symbol namespacesubparts) [1941 2018])
+                    ("signNoZero" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2115 2121]))                          )
+                        (reparse-symbol namespacesubparts) [2079 2163])
+                    ("expo" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2567 2582])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2583 2594]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [2533 2714])
+                    ("superexpo" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3309 3324])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3325 3336])
+                            ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3337 3348]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [3270 3485])
+                    ("deadzone" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3958 3973])
+                            ("dz" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3974 3986]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [3920 4314])
+                    ("expo_deadzone" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4359 4374])
+                            ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4375 4386])
+                            ("dz" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4387 4399]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [4316 4441])
+                    ("gradual" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4695 4710])
+                            ("x_low" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4711 4726])
+                            ("x_high" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4727 4743])
+                            ("y_low" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4744 4759])
+                            ("y_high" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4760 4776]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [4658 5024])
+                    ("expontialFromLimits" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("X_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5608 5622])
+                            ("Y_min" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5623 5638])
+                            ("Y_mid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5639 5654])
+                            ("Y_max" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5655 5670]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [5559 6449]))                  
+                :type "namespace")
+                nil [1894 6451]))          
+      :file "Functions.hpp"
+      :pointmax 6473
+      :fsize 6472
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax '((symbol 1865 . 1869) (symbol 1858 . 1864) (punctuation 1857 . 1858)))
+    (semanticdb-table "semanticdb-table"
+      :file "matrix_alg.h"
+      :fsize 2078
+      :lastmodtime '(23770 52090 783807 710000))
+    (semanticdb-table "semanticdb-table"
+      :file "SearchMin.hpp"
+      :fsize 2515
+      :lastmodtime '(23798 26597 863346 955000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!mathlib!math!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

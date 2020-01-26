@@ -1,0 +1,220 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [2205 2228])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [2230 2261])
+            ("systemlib/airspeed.h" include (:system-flag t) nil [2263 2294])
+            ("systemlib/err.h" include (:system-flag t) nil [2295 2321])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2322 2356])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2357 2392])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [2394 2444])
+            ("drivers/drv_airspeed.h" include (:system-flag t) nil [2446 2479])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2480 2508])
+            ("uORB/uORB.h" include (:system-flag t) nil [2510 2532])
+            ("uORB/topics/differential_pressure.h" include (:system-flag t) nil [2533 2579])
+            ("uORB/topics/subsystem_info.h" include (:system-flag t) nil [2580 2619])
+            ("uORB/topics/system_power.h" include (:system-flag t) nil [2620 2657])
+            ("drivers/airspeed/airspeed.h" include (:system-flag t) nil [2659 2697])
+            ("I2C_ADDRESS_MS4525DO" variable (:constant-flag t) nil [2741 2761])
+            ("PATH_MS4525" variable (:constant-flag t) nil [2847 2858])
+            ("ADDR_READ_MR" variable (:constant-flag t) nil [2906 2918])
+            ("MEAS_RATE" variable (:constant-flag t) nil [3015 3024])
+            ("MEAS_DRIVER_FILTER_FREQ" variable (:constant-flag t) nil [3037 3060])
+            ("CONVERSION_INTERVAL" variable (:constant-flag t) nil [3074 3093])
+            ("MAX_DP_COUNT" variable (:constant-flag t) nil [3144 3156])
+            ("MAX_D_DP_COUNT" variable (:constant-flag t) nil [3242 3256])
+            ("D_DP_THRESHOLD_PA" variable (:constant-flag t) nil [3350 3367])
+            ("D_DP_EXP_MOVING_AVG_WEIGHT_INVALID" variable (:constant-flag t) nil [3910 3944])
+            ("D_DP_EXP_MOVING_AVG_WEIGHT_VALID" variable (:constant-flag t) nil [3968 4000])
+            ("MEASAirspeed" type
+               (:superclasses 
+                  ( ("Airspeed" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4101 4108])
+                    ("MEASAirspeed" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [4123 4131])
+                            ("address" variable
+                               (:default-value "I2C_ADDRESS_MS4525DO"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4132 4166])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "PATH_MS4525"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4168 4198]))                          
+                        :type ("MEASAirspeed" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4110 4200])
+                    ("protected" label nil (reparse-symbol classsubparts) [4202 4212])
+                    ("cycle" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4311 4332])
+                    ("measure" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4334 4356])
+                    ("collect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4358 4380])
+                    ("_filter" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4383 4413])
+                    ("voltage_correction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("diff_pres_pa" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4493 4513])
+                            ("temperature" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4514 4533]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4469 4534])
+                    ("_t_system_power" variable (:type "int") (reparse-symbol classsubparts) [4537 4557])
+                    ("system_power" variable (:type ("system_power_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4559 4594])
+                    ("_sensor_fail_code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4597 4623])
+                    ("_dp_out_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4637 4660])
+                    ("_d_dp_out_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4677 4702])
+                    ("_first_measurement" variable (:type "bool") (reparse-symbol classsubparts) [4717 4741])
+                    ("_avg_dp_pa_raw" variable (:type "float") (reparse-symbol classsubparts) [4757 4778]))                  
+                :type "class")
+                nil [4062 4798])
+            ("ms4525_airspeed_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4878 4887])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4888 4901]))                  
+                :type "int")
+                nil [4853 4902])
+            ("MEASAirspeed" function
+               (:constructor-flag t
+                :parent "MEASAirspeed"
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [4931 4939])
+                    ("address" variable (:type "int") (reparse-symbol arg-sub-list) [4940 4952])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4953 4970]))                  
+                :type ("MEASAirspeed" type (:type "class") nil nil))
+                nil [4904 5404])
+            ("measure" function
+               (:parent "MEASAirspeed"
+                :type "int")
+                nil [5406 5623])
+            ("collect" function
+               (:parent "MEASAirspeed"
+                :type "int")
+                nil [5625 9693])
+            ("cycle" function
+               (:parent "MEASAirspeed"
+                :type "void")
+                nil [9695 10736])
+            ("voltage_correction" function
+               (:parent "MEASAirspeed"
+                :arguments 
+                  ( ("diff_press_pa" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [10972 10993])
+                    ("temperature" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [10994 11013]))                  
+                :type "void")
+                nil [10934 12120])
+            ("meas_airspeed" type
+               (:members 
+                  ( ("g_dev" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("MEASAirspeed" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12209 12239])
+                    ("start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i2c_bus" variable (:type "int") (reparse-symbol arg-sub-list) [12251 12263]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12241 12264])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12265 12276])
+                    ("test" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12277 12288])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12289 12301])
+                    ("start" function
+                       (:arguments 
+                          ( ("i2c_bus" variable (:type "int") (reparse-symbol arg-sub-list) [12449 12461]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12439 13191])
+                    ("stop" function (:type "int") (reparse-symbol namespacesubparts) [13220 13378])
+                    ("test" function (:type "int") (reparse-symbol namespacesubparts) [13525 15113])
+                    ("reset" function (:type "int") (reparse-symbol namespacesubparts) [15144 15518]))                  
+                :type "namespace")
+                nil [12182 15521])
+            ("meas_airspeed_usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [15537 15769])
+            ("ms4525_airspeed_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15796 15805])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15806 15819]))                  
+                :type "int")
+                nil [15771 16498]))          
+      :file "ms4525_airspeed.cpp"
+      :pointmax 16499
+      :fsize 16498
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax '((symbol 4844 . 4852))
+      :lexical-table 
+        '(("D_DP_EXP_MOVING_AVG_WEIGHT_INVALID" . ((semantic-list "(1.0f / 50.0f)" 3945 . 3959)))
+          ("MAX_D_DP_COUNT" . ((number "50" 3257 . 3259)))
+          ("I2C_ADDRESS_MS4525DO" . ((number "0x28" 2762 . 2766)))
+          ("PATH_MS4525" . ((string "\"/dev/ms4525\"" 2860 . 2873)))
+          ("MAX_DP_COUNT" . ((number "50" 3157 . 3159)))
+          ("MEAS_DRIVER_FILTER_FREQ" . ((number "1.2f" 3061 . 3065)))
+          ("D_DP_EXP_MOVING_AVG_WEIGHT_VALID" . ((semantic-list "(1.0f - D_DP_EXP_MOVING_AVG_WEIGHT_INVALID)" 4001 . 4044)))
+          ("MEAS_RATE" . ((number "100" 3025 . 3028)))
+          ("CONVERSION_INTERVAL" . ((semantic-list "(1000000 / MEAS_RATE)" 3094 . 3115)))
+          ("D_DP_THRESHOLD_PA" . ((number "350.0f" 3368 . 3374)))
+          ("ADDR_READ_MR" . ((number "0x00" 2921 . 2925)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!ms4525_airspeed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("math" type
+               (:members 
+                  ( ("LowPassFilter2p" variable (:type ("__EXPORT" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1944 2741]))                  
+                :type "namespace")
+                nil [1927 2744]))          
+      :file "LowPassFilter2p.hpp"
+      :pointmax 2763
+      :fsize 2762
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax '((symbol 1921 . 1925) (symbol 1914 . 1920) (punctuation 1913 . 1914) (symbol 1921 . 1925) (symbol 1914 . 1920) (punctuation 1913 . 1914) (symbol 1921 . 1925) (symbol 1914 . 1920) (punctuation 1913 . 1914)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LowPassFilter2p.hpp" include nil nil [1734 1764])
+            ("px4_defines.h" include (:system-flag t) nil [1766 1790])
+            ("cmath" include (:system-flag t) nil [1792 1808])
+            ("math" type
+               (:members 
+                  ( ("set_cutoff_frequency" function
+                       (:parent "LowPassFilter2p"
+                        :arguments 
+                          ( ("sample_freq" variable (:type "float") (reparse-symbol arg-sub-list) [1871 1889])
+                            ("cutoff_freq" variable (:type "float") (reparse-symbol arg-sub-list) [1890 1908]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1828 2483])
+                    ("apply" function
+                       (:parent "LowPassFilter2p"
+                        :arguments 
+                          ( ("sample" variable (:type "float") (reparse-symbol arg-sub-list) [2514 2527]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [2485 3007])
+                    ("reset" function
+                       (:parent "LowPassFilter2p"
+                        :arguments 
+                          ( ("sample" variable (:type "float") (reparse-symbol arg-sub-list) [3038 3051]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [3009 3281]))                  
+                :type "namespace")
+                nil [1810 3284]))          
+      :file "LowPassFilter2p.cpp"
+      :pointmax 3303
+      :fsize 3302
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!mathlib!math!filter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

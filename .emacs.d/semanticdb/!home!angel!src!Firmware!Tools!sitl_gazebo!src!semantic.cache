@@ -1,0 +1,229 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_mavlink_interface.h" include (:system-flag t) nil [919 956])
+            ("gazebo" type
+               (:members 
+                  ( ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboMavlinkInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1002 1025]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [977 1026])
+                    ("GazeboMavlinkInterface" function
+                       (:destructor-flag t
+                        :parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1028 1164])
+                    ("Load" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1200 1225])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1247]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1166 19757])
+                    ("OnUpdate" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19850 19887]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19812 21203])
+                    ("send_mavlink_message" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("mavlink_message_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21255 21288]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21205 22236])
+                    ("forward_mavlink_message" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("mavlink_message_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22291 22324]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22238 23013])
+                    ("ImuCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("imu_message" variable
+                               (:reference 1
+                                :type ("ImuPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23056 23076]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23015 23451])
+                    ("SendSensorMessages" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23453 29395])
+                    ("GpsCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("gps_msg" variable
+                               (:reference 1
+                                :type ("GpsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29438 29454]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29397 30574])
+                    ("GroundtruthCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("groundtruth_msg" variable
+                               (:reference 1
+                                :type ("GtPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30625 30648]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30576 30965])
+                    ("LidarCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("lidar_message" variable
+                               (:reference 1
+                                :type ("LidarPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31010 31034]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30967 31721])
+                    ("OpticalFlowCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("opticalFlow_message" variable
+                               (:reference 1
+                                :type ("OpticalFlowPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31772 31808]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31723 33316])
+                    ("SonarCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("sonar_message" variable
+                               (:reference 1
+                                :type ("SonarPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33361 33385]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33318 33964])
+                    ("IRLockCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("irlock_message" variable
+                               (:reference 1
+                                :type ("IRLockPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34010 34036]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33966 34618])
+                    ("VisionCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("odom_message" variable
+                               (:reference 1
+                                :type ("OdomPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34664 34686]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34620 38847])
+                    ("MagnetometerCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("mag_msg" variable
+                               (:reference 1
+                                :type ("MagnetometerPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38899 38924]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38849 39123])
+                    ("BarometerCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("baro_msg" variable
+                               (:reference 1
+                                :type ("BarometerPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39172 39195]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39125 39339])
+                    ("pollForMAVLinkMessages" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39341 40614])
+                    ("pollFromQgcAndSdk" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40616 41911])
+                    ("handle_message" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :type ("mavlink_message_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [41957 41980])
+                            ("received_actuator" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [41981 42005]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41913 42943])
+                    ("handle_control" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("_dt" variable (:type "double") (reparse-symbol arg-sub-list) [42989 43000]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [42945 44764])
+                    ("IsRunning" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [44766 44916])
+                    ("open" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [44918 45678])
+                    ("close" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [45680 46129])
+                    ("do_read" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [46168 46173]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [46131 46391])
+                    ("parse_buffer" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46488 46525])
+                            ("bytes_t" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46526 46546]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [46446 47471])
+                    ("do_write" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("check_tx_state" variable (:type "bool") (reparse-symbol arg-sub-list) [47511 47531]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47473 48397])
+                    ("onSigInt" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48399 48474]))                  
+                :type "namespace")
+                nil [958 48477]))          
+      :file "gazebo_mavlink_interface.cpp"
+      :pointmax 48478
+      :fsize 48477
+      :lastmodtime '(23801 12051 988129 656000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!Tools!sitl_gazebo!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

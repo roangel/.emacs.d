@@ -1,0 +1,330 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cdev_platform.hpp" include nil nil [1810 1838])
+            ("string" include (:system-flag t) nil [1840 1857])
+            ("map" include (:system-flag t) nil [1858 1872])
+            ("vfile.h" include nil nil [1874 1892])
+            ("../CDev.hpp" include nil nil [1893 1915])
+            ("px4_log.h" include (:system-flag t) nil [1917 1937])
+            ("px4_posix.h" include (:system-flag t) nil [1938 1960])
+            ("px4_time.h" include (:system-flag t) nil [1961 1982])
+            ("DevMgr.hpp" include nil nil [1984 2005])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2007 2027])
+            ("DriverFramework" using (:type ("DriverFramework" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2028 2060])
+            ("device::CDev::fops" variable
+               (:constant-flag t
+                :default-value "{}"
+                :type ("device::px4_file_operations_t" type (:type "class") nil nil))
+                nil [2062 2122])
+            ("devmutex" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [2124 2177])
+            ("filemutex" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [2178 2232])
+            ("lockstep_sem" variable (:type ("px4_sem_t" type (:type "class") nil nil)) nil [2234 2257])
+            ("sim_lockstep" variable
+               (:default-value "false"
+                :type "bool")
+                nil [2258 2284])
+            ("sim_delay" variable
+               (:typemodifiers ("volatile")
+                :default-value "false"
+                :type "bool")
+                nil [2285 2317])
+            ("PX4_MAX_FD" variable (:constant-flag t) nil [2327 2337])
+            ("devmap" variable
+               (:typemodifiers ("static")
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil)
+                          ("void" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2342 2376])
+            ("filemap" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{}"
+                :type ("device::file_t" type (:type "class") nil nil))
+                nil [2377 2424])
+            ("px4_sim_delay_enabled" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool")
+                (reparse-symbol extern-c-contents) [11344 11398])
+            ("px4_sim_stop_delay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [11289 11341])
+            ("px4_sim_start_delay" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [11234 11286])
+            ("px4_enable_sim_lockstep" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [11020 11231])
+            ("px4_show_files" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [10703 11017])
+            ("px4_show_topics" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [10437 10700])
+            ("px4_show_devices" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [9867 10434])
+            ("px4_access" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9691 9712])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [9713 9722]))                  )
+                (reparse-symbol extern-c-contents) [9676 9864])
+            ("px4_fsync" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [9648 9655]))                  )
+                (reparse-symbol extern-c-contents) [9634 9673])
+            ("px4_poll" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fds" variable
+                       (:pointer 1
+                        :type ("px4_pollfd_struct_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6722 6747])
+                    ("nfds" variable (:type ("nfds_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6748 6760])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [6761 6773]))                  )
+                (reparse-symbol extern-c-contents) [6709 9631])
+            ("px4_ioctl" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6424 6431])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [6432 6440])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6441 6459]))                  )
+                (reparse-symbol extern-c-contents) [6410 6706])
+            ("px4_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6081 6088])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6089 6108])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6109 6123]))                  )
+                (reparse-symbol extern-c-contents) [6063 6407])
+            ("px4_read" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [5748 5755])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5756 5769])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5770 5784]))                  )
+                (reparse-symbol extern-c-contents) [5731 6060])
+            ("px4_close" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [5362 5369]))                  )
+                (reparse-symbol extern-c-contents) [5348 5728])
+            ("px4_open" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4026 4043])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [4044 4054])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4055 4059]))                  )
+                (reparse-symbol extern-c-contents) [4013 5345])
+            ("unregister_driver" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3691 3708]))                  )
+                (reparse-symbol extern-c-contents) [3669 4010])
+            ("register_driver" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3107 3124])
+                    ("fops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device::px4_file_operations_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3125 3167])
+                    ("mode" variable (:type ("device::mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3168 3188])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3189 3200]))                  )
+                (reparse-symbol extern-c-contents) [3087 3666])
+            ("get_vdev" function
+               (:type ("device::CDev" type (:type "class") nil nil)
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2805 2812]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [2775 3084])
+            ("getDev" function
+               (:type ("device::CDev" type (:type "class") nil nil)
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2486 2503]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [2458 2772])
+            ("px4_errno" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int")
+                (reparse-symbol extern-c-contents) [2441 2455]))          
+      :file "cdev_platform.cpp"
+      :pointmax 11416
+      :fsize 11415
+      :lastmodtime '(23770 52090 751807 522000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PX4_MAX_FD" . ((number "350" 2338 . 2341)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cinttypes" include (:system-flag t) nil [16 36])
+            ("ATOMIC_ENTER" variable (:constant-flag t) nil [46 58])
+            ("ATOMIC_LEAVE" variable (:constant-flag t) nil [74 86])
+            ("device" type
+               (:members 
+                  ( ("file_operations" type
+                       (:members 
+                          ( ("op" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [143 152]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [117 155])
+                    ("file_operations" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [187 210])
+                    ("mode_t" variable
+                       (:default-value "uint32_t"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [217 235])
+                    ("file_t" type
+                       (:members 
+                          ( ("flags" variable (:type "int") (reparse-symbol classsubparts) [254 264])
+                            ("priv" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [266 277])
+                            ("vdev" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [279 290])
+                            ("file_t" function
+                               (:constructor-flag t
+                                :type ("file_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [293 345])
+                            ("file_t" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("f" variable (:type "int") (reparse-symbol arg-sub-list) [354 360])
+                                    ("c" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [361 369]))                                  
+                                :type ("file_t" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [347 407]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [237 410]))                  
+                :type "namespace")
+                nil [97 413])
+            ("register_driver" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [475 492])
+                    ("fops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device::px4_file_operations_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [493 535])
+                    ("mode" variable (:type ("device::mode_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [541 561])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [562 573]))                  
+                :type "int")
+                nil [455 574])
+            ("unregister_driver" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [617 634]))                  
+                :type "int")
+                nil [595 635]))          
+      :file "cdev_platform.hpp"
+      :pointmax 636
+      :fsize 635
+      :lastmodtime '(23770 52090 751807 522000)
+      :unmatched-syntax '((symbol 586 . 594) (symbol 446 . 454) (USING 211 . 216) (punctuation 185 . 186) (symbol 163 . 184) (USING 157 . 162) (symbol 10 . 14) (symbol 3 . 9) (punctuation 2 . 3))
+      :lexical-table 
+        '(("ATOMIC_LEAVE" . ((symbol "unlock" 87 . 93) (semantic-list "()" 93 . 95)))
+          ("ATOMIC_ENTER" . ((symbol "lock" 59 . 63) (semantic-list "()" 63 . 65)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "vfile.h"
+      :fsize 2167
+      :lastmodtime '(23770 52090 751807 522000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!device!posix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

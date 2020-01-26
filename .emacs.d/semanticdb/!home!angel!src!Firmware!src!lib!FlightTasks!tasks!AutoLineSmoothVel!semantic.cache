@@ -1,0 +1,150 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAutoMapper2.hpp" include nil nil [1914 1950])
+            ("VelocitySmoothing.hpp" include nil nil [1951 1983])
+            ("FlightTaskAutoLineSmoothVel" type
+               (:superclasses 
+                  ( ("FlightTaskAutoMapper2" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2052 2059])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2171 2180])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2200 2209])
+                    ("protected" label nil (reparse-symbol classsubparts) [2211 2221])
+                    ("DEFINE_PARAMETERS_CUSTOM_PARENT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("FlightTaskAutoMapper2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2256 2278])
+                            ("" variable (:type ("_param_mis_yaw_err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2342])
+                            ("" variable (:type ("_param_mpc_acc_hor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2410 2429])
+                            ("" variable (:type ("_param_mpc_acc_up_max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2503 2525])
+                            ("" variable (:type ("_param_mpc_acc_down_max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2575 2599])
+                            ("" variable (:type ("_param_mpc_jerk_auto" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2646 2667])
+                            ("" variable (:type ("_param_mpc_xy_traj_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2714 2735])
+                            ("" variable (:type ("_param_mpc_z_traj_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2781 2813]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2224 2814])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2843 2852])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2980 3015])
+                    ("_constrainOneSide" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [3049 3059])
+                            ("constrain" variable (:type "float") (reparse-symbol arg-sub-list) [3060 3076]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [3018 3077])
+                    ("_checkEkfResetCounters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3079 3109])
+                    ("_generateHeading" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3183 3207])
+                    ("_generateHeadingAlongTraj" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3209 3242])
+                    ("_updateTrajConstraints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3288 3318])
+                    ("_prepareSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3320 3345])
+                    ("_generateTrajectory" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3417 3444])
+                    ("_trajectory" variable
+                       (:dereference 1
+                        :type ("VelocitySmoothing" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3446 3479])
+                    ("_want_takeoff" variable (:type "bool") (reparse-symbol classsubparts) [3525 3551])
+                    ("_reset_counters" variable (:type ("" type
+                         (:members 
+                            ( ("xy" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3617 3628])
+                              ("vxy" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3631 3643])
+                              ("z" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3646 3656])
+                              ("vz" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3659 3670]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3606 3702]))                  
+                :type "class")
+                nil [1985 3705]))          
+      :file "FlightTaskAutoLineSmoothVel.hpp"
+      :pointmax 3706
+      :fsize 3705
+      :lastmodtime '(23816 61035 741749 130000)
+      :unmatched-syntax '((semantic-list 2977 . 2979) (symbol 2964 . 2977) (BOOL 2959 . 2963) (semantic-list 2840 . 2842) (symbol 2822 . 2840) (VOID 2817 . 2821) (semantic-list 2741 . 2780) (semantic-list 2673 . 2713) (semantic-list 2605 . 2645) (semantic-list 2531 . 2574) (semantic-list 2461 . 2502) (semantic-list 2371 . 2409) (semantic-list 2284 . 2322) (semantic-list 2197 . 2199) (symbol 2187 . 2197) (VOID 2182 . 2186) (semantic-list 2168 . 2170) (symbol 2160 . 2168) (BOOL 2155 . 2159) (punctuation 2151 . 2152) (DEFAULT 2144 . 2151) (punctuation 2142 . 2143) (semantic-list 2139 . 2141) (symbol 2112 . 2139) (punctuation 2111 . 2112) (VIRTUAL 2103 . 2110) (punctuation 2100 . 2101) (DEFAULT 2093 . 2100) (punctuation 2091 . 2092) (semantic-list 2088 . 2090) (symbol 2061 . 2088) (symbol 1908 . 1912) (symbol 1901 . 1907) (punctuation 1900 . 1901)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAutoLineSmoothVel.hpp" include nil nil [1771 1813])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1814 1842])
+            ("float.h" include (:system-flag t) nil [1843 1861])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1863 1886])
+            ("activate" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "bool")
+                nil [1888 2139])
+            ("reActivate" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [2141 2377])
+            ("_generateSetpoints" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [2379 2645])
+            ("_generateHeading" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [2647 2867])
+            ("_generateHeadingAlongTraj" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "bool")
+                nil [2869 3190])
+            ("_constrainOneSide" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [3498 3508])
+                    ("constrain" variable (:type "float") (reparse-symbol arg-sub-list) [3509 3525]))                  
+                :type "float")
+                nil [3438 3698])
+            ("_checkEkfResetCounters" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [3700 4756])
+            ("_prepareSetpoints" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [4758 7133])
+            ("_updateTrajConstraints" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [7135 8023])
+            ("_generateTrajectory" function
+               (:parent "FlightTaskAutoLineSmoothVel"
+                :type "void")
+                nil [8025 10085]))          
+      :file "FlightTaskAutoLineSmoothVel.cpp"
+      :pointmax 10086
+      :fsize 10085
+      :lastmodtime '(23816 61035 741749 130000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!AutoLineSmoothVel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,284 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTasks.hpp" include nil nil [1 27])
+            ("uORB/topics/vehicle_command.h" include (:system-flag t) nil [29 69])
+            ("uORB/topics/vehicle_command_ack.h" include (:system-flag t) nil [70 114])
+            ("FlightTasks" function
+               (:constructor-flag t
+                :parent "FlightTasks"
+                :type ("FlightTasks" type (:type "class") nil nil))
+                nil [116 413])
+            ("update" function
+               (:parent "FlightTasks"
+                :type "bool")
+                nil [415 663])
+            ("getPositionSetpoint" function
+               (:parent "FlightTasks"
+                :constant-flag t
+                :type ("vehicle_local_position_setpoint_s" type (:type "class") nil nil))
+                nil [665 872])
+            ("getConstraints" function
+               (:parent "FlightTasks"
+                :constant-flag t
+                :type ("vehicle_constraints_s" type (:type "class") nil nil))
+                nil [874 1062])
+            ("getGear" function
+               (:parent "FlightTasks"
+                :constant-flag t
+                :type ("landing_gear_s" type (:type "class") nil nil))
+                nil [1064 1245])
+            ("switchTask" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("new_task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1275 1306]))                  
+                :type "int")
+                nil [1247 2127])
+            ("switchTask" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("new_task_index" variable (:type "int") (reparse-symbol arg-sub-list) [2157 2176]))                  
+                :type "int")
+                nil [2129 2482])
+            ("handleParameterUpdate" function
+               (:parent "FlightTasks"
+                :type "void")
+                nil [2484 2605])
+            ("errorToString" function
+               (:pointer 1
+                :parent "FlightTasks"
+                :constant-flag t
+                :arguments 
+                  ( ("error" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2646 2662]))                  
+                :type "char")
+                nil [2607 2809])
+            ("reActivate" function
+               (:parent "FlightTasks"
+                :type "void")
+                nil [2811 2911])
+            ("_updateCommand" function
+               (:parent "FlightTasks"
+                :type "void")
+                nil [2913 4858]))          
+      :file "FlightTasks.cpp"
+      :pointmax 4859
+      :fsize 4858
+      :lastmodtime '(23816 60809 868154 814000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTask.hpp" include nil nil [1905 1930])
+            ("SubscriptionArray.hpp" include nil nil [1931 1963])
+            ("FlightTasks_generated.hpp" include nil nil [1964 2000])
+            ("lib/WeatherVane/WeatherVane.hpp" include (:system-flag t) nil [2001 2043])
+            ("new" include (:system-flag t) nil [2045 2059])
+            ("FlightTasks" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2081 2088])
+                    ("FlightTasks" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FlightTasks" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2090 2104])
+                    ("FlightTasks" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2107 2197])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2319 2333])
+                    ("getPositionSetpoint" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vehicle_local_position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2456 2518])
+                    ("getConstraints" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vehicle_constraints_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2651 2696])
+                    ("getGear" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("landing_gear_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2765 2796])
+                    ("getAvoidanceWaypoint" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vehicle_trajectory_waypoint_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2898 2957])
+                    ("getEmptyAvoidanceWaypoint" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("vehicle_trajectory_waypoint_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3061 3126])
+                    ("switchTask" function (:type "int") (reparse-symbol classsubparts) [3241 3323])
+                    ("switchTask" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("new_task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3489 3520]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3474 3521])
+                    ("switchTask" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("new_task_index" variable (:type "int") (reparse-symbol arg-sub-list) [3538 3557]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3523 3558])
+                    ("getActiveTask" function
+                       (:methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3664 3739])
+                    ("isAnyTaskActive" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3835 3894])
+                    ("handleParameterUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4006 4035])
+                    ("errorToString" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("error" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4135 4151]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [4109 4152])
+                    ("setYawHandler" function
+                       (:arguments 
+                          ( ("ext_yaw_handler" variable
+                               (:pointer 1
+                                :type ("WeatherVane" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4312 4341]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4293 4395])
+                    ("reActivate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4457 4475])
+                    ("updateVelocityControllerIO" function
+                       (:arguments 
+                          ( ("vel_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4510 4541])
+                            ("thrust_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4542 4576]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4478 4646])
+                    ("private" label nil (reparse-symbol classsubparts) [4648 4656])
+                    ("_task_union" variable (:type ("TaskUnion" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4839 4861])
+                    ("flight_task_t" type
+                       (:members 
+                          ( ("task" variable
+                               (:pointer 1
+                                :type ("FlightTask" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4935 4952])
+                            ("index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4955 4977]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4910 4981])
+                    ("_current_task" variable
+                       (:default-value "{nullptr, FlightTaskIndex::None}"
+                        :type ("flight_task_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4983 5046])
+                    ("_subscription_array" variable (:type ("SubscriptionArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5049 5087])
+                    ("task_error_t" type
+                       (:members 
+                          ( ("error" variable (:type "int") (reparse-symbol classsubparts) [5114 5124])
+                            ("msg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [5127 5143]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5090 5147])
+                    ("_numError" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "4"
+                        :type "int")
+                        (reparse-symbol classsubparts) [5150 5181])
+                    ("_taskError" variable
+                       (:dereference 1
+                        :default-value "{
+		{0, \"No Error\"},
+		{-1, \"Invalid Task \"},
+		{-2, \"Subscription Failed\"},
+		{-3, \"Activation Failed\"}
+	}"
+                        :type ("task_error_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5241 5386])
+                    ("_updateCommand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5483 5505])
+                    ("switchVehicleCommand" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("command" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5544 5562]))                          
+                        :type ("FlightTaskIndex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5507 5563])
+                    ("_sub_vehicle_command" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [5565 5595])
+                    ("_pub_vehicle_command_ack" variable
+                       (:default-value "nullptr"
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5649 5697])
+                    ("_initTask" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5770 5797]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5756 5798]))                  
+                :type "class")
+                nil [2061 5801]))          
+      :file "FlightTasks.hpp"
+      :pointmax 5802
+      :fsize 5801
+      :lastmodtime '(23801 12013 520191 944000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("em" include nil nil [24 33])
+            ("os" include nil nil [34 43])
+            ("argparse" include nil nil [44 59])
+            ("parser" variable nil nil [61 95])
+            ("parser" code nil nil [96 210])
+            ("parser" code nil nil [211 349])
+            ("parser" code nil nil [350 457])
+            ("parser" code nil nil [458 566])
+            ("parser" code nil nil [567 673])
+            ("args" variable nil nil [693 719])
+            ("for" code nil nil [721 1198]))          
+      :file "generate_flight_tasks.py"
+      :pointmax 1198
+      :fsize 1197
+      :lastmodtime '(23816 61035 741749 130000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

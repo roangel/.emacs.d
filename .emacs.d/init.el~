@@ -19,16 +19,44 @@
 
 (global-auto-revert-mode 1)
 
-;; ;; load webkit
-;; (add-to-list 'load-path "~/.emacs.d/webkit/")
-;; (require 'epc)
-;; (load "webkit.el")
+
+;; Multiple cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; UTF-8 everywhere (is probably the default already)
 (set-default buffer-file-coding-system 'utf-8-unix)
 (set-default-coding-systems 'utf-8-unix)
 (prefer-coding-system 'utf-8-unix)
 (set-default default-buffer-file-coding-system 'utf-8-unix)
+
+;; No blink limit for cursor:
+(setq blink-cursor-blinks 0)
+
+;; Forge load after magit
+(with-eval-after-load 'magit
+  (require 'forge))
+
+;; Github-review config
+(setq github-review-fetch-top-level-and-review-comments t)
+
+;; Submodule update init recursive
+(defun magit-submodule-update-recursive ()
+  (interactive)
+  (magit-run-git-async "submodule" "update" "--init" "--recursive"))
+
+(eval-after-load "magit" '(transient-append-suffix 'magit-submodule "a"
+						   '("U" "Update all (recursively)" magit-submodule-update-recursive)))
+
+;; System monitor app:
+(require 'symon)
+(symon-mode)
+(setq symon-delay 0.2)
+(setq symon-refresh-rate 20)
 
 ;; stop the silly emacs default scrolling
 (setq scroll-step 1)
@@ -55,12 +83,205 @@
 (setq font-lock-mode-maximum-decoration t)
 
 
-(setq-default c-basic-offset 2
+(setq-default c-basic-offset 8
               indent-tabs-mode t)
 
 (setq-default
  tab-width 8
  )
+
+(add-hook 'json-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
+
+
+;; == irony-mode ==
+;; (use-package irony
+;;   :ensure t
+;;   :defer t
+;;   :init
+;;   (add-hook 'c++-mode-hook 'irony-mode)
+;;   (add-hook 'c-mode-hook 'irony-mode)
+;;   (add-hook 'objc-mode-hook 'irony-mode)
+;;   :config
+;;   ;; replace the `completion-at-point' and `complete-symbol' bindings in
+;;   ;; irony-mode's buffers by irony-mode's function
+;;   (defun my-irony-mode-hook ()
+;;     (define-key irony-mode-map [remap completion-at-point]
+;;       'irony-completion-at-point-async)
+;;     (define-key irony-mode-map [remap complete-symbol]
+;;       'irony-completion-at-point-async))
+;;   (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;;   )
+
+;; == company-mode ==
+;; (use-package company
+;;   :ensure t
+;;   :defer t
+;;   :init (add-hook 'after-init-hook 'global-company-mode)
+;;   :config
+;;   ;; (use-package company-irony :ensure t :defer t)
+;;   ;; (setq company-idle-delay              0
+;;   ;; 	company-minimum-prefix-length   3
+;;   ;; 	company-show-numbers            t
+;;   ;; 	company-tooltip-limit           20
+;;   ;; 	company-dabbrev-downcase        0
+;;   ;; 	company-backends                '((company-tabnine
+;;   ;; 					   ;; company-irony company-irony-c-headers
+;;   ;; 							   )) ;; company-gtags makes it super slow when typing a dot (.)
+;;   ;; 	)
+;;   ;; ;; :bind ("M-RET" . company-complete-common)
+;;   )
+
+(add-hook 'after-init-hook 'global-company-mode)
+(use-package company-tabnine :ensure t)
+
+;; Trigger completion immediately.
+(setq company-idle-delay 0)
+
+;; Number the candidates (use M-1, M-2 etc to select completions).
+(setq company-show-numbers t)
+
+(add-to-list 'company-backends #'company-tabnine)
+
+
+;; workaround for company-transformers
+(setq company-tabnine--disable-next-transform nil)
+(defun my-company--transform-candidates (func &rest args)
+(if (not company-tabnine--disable-next-transform)
+    (apply func args)
+    (setq company-tabnine--disable-next-transform nil)
+    (car args)))
+
+(defun my-company-tabnine (func &rest args)
+(when (eq (car args) 'candidates)
+    (setq company-tabnine--disable-next-transform t))
+(apply func args))
+
+(advice-add #'company--transform-candidates :around #'my-company--transform-candidates)
+(advice-add #'company-tabnine :around #'my-company-tabnine)
+
+;; Use the tab-and-go frontend.
+;; Allows TAB to select and complete at the same time.
+;; (company-tng-configure-default)
+;; (setq company-frontends
+;;       '(company-tng-frontend
+;;         company-pseudo-tooltip-frontend
+;;         company-echo-metadata-frontend))
+
+(use-package irony-eldoc
+:ensure t
+:config
+(add-hook 'irony-mode-hook #'irony-eldoc))
+
+;; JEDI setup
+;; (use-package company-jedi
+;; :ensure t
+;; :config
+;; (add-hook 'python-mode-hook 'jedi:setup))
+
+;; (elpy-enable)
+
+
+;; (defun my/python-mode-hook ()
+;; (add-to-list 'company-backends 'company-jedi))
+
+;; (add-hook 'python-mode-hook 'my/python-mode-hook)
+
+;; Make grep work with fish shell:
+;; (setq grep-find-template "find . <X> -type f <F> -exec grep <C> -nH -e <R> \\{\\} +")
+
+;; Anaconda setup
+(use-package anaconda-mode
+  :ensure t
+  :config
+  (add-hook 'python-mode-hook 'anaconda-mode)
+  ;;(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+  )
+;; (use-package company-anaconda
+;;   :ensure t
+;;   :init (require 'rx)
+;;   :after (company)
+;;   :config
+;;   (add-to-list 'company-backends 'company-anaconda)
+;;   )
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
+ '(background-color "#202020")
+ '(background-mode dark)
+ '(compilation-message-face (quote default))
+ '(cursor-color "#cccccc")
+ '(custom-enabled-themes (quote (zenburn)))
+ '(custom-safe-themes
+   (quote
+    ("e9776d12e4ccb722a2a732c6e80423331bcb93f02e089ba2a4b02e85de1cf00e" "72a81c54c97b9e5efcc3ea214382615649ebb539cb4f2fe3a46cd12af72c7607" "58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" "3d5ef3d7ed58c9ad321f05360ad8a6b24585b9c49abcee67bdcbb0fe583a6950" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "4980e5ddaae985e4bae004280bd343721271ebb28f22b3e3b2427443e748cd3f" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" "ca36cbefb4e97c5be85b3a126739d33c7de337f82ba89633365a1da3453b2c46" "fad47d267d4e8664021a8adb02632942de0f4f75b0ddbcfa7368e637ed851b21" "c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" default)))
+ '(fci-rule-color "#3C3D37")
+ '(foreground-color "#cccccc")
+ '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
+ '(highlight-tail-colors
+   (quote
+    (("#3C3D37" . 0)
+     ("#679A01" . 20)
+     ("#4BBEAE" . 30)
+     ("#1DB4D0" . 50)
+     ("#9A8F21" . 60)
+     ("#A75B00" . 70)
+     ("#F309DF" . 85)
+     ("#3C3D37" . 100))))
+ '(hl-sexp-background-color "#1c1f26")
+ '(linum-format " %7i ")
+ '(magit-branch-read-upstream-first (quote fallback) t)
+ '(magit-diff-use-overlays nil)
+ '(nrepl-message-colors
+   (quote
+    ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+ '(org-agenda-files (quote ("~/.org/work.org")))
+ '(org-export-backends (quote (ascii html icalendar latex md odt)))
+ '(org-startup-truncated t)
+ '(package-selected-packages
+   (quote
+    (arduino-mode multiple-cursors company-irony company symon transient github-review forge magit company-tabnine py-autopep8 elpy ace-window irony-eldoc ggtags irony use-package zoom zenburn-theme yasnippet xcscope sublime-themes spacemacs-theme smex smart-tabs-mode org2issue org-bullets org-babel-eval-in-repl noctilux-theme monokai-theme monokai-alt-theme molokai-theme material-theme iedit highlight-symbol highlight-parentheses epc dired+ darkokai-theme cyberpunk-theme bm autopair)))
+ '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
+ '(pos-tip-background-color "#A6E22E")
+ '(pos-tip-foreground-color "#272822")
+ '(python-shell-interpreter "python3")
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#F92672")
+     (40 . "#CF4F1F")
+     (60 . "#C26C0F")
+     (80 . "#E6DB74")
+     (100 . "#AB8C00")
+     (120 . "#A18F00")
+     (140 . "#989200")
+     (160 . "#8E9500")
+     (180 . "#A6E22E")
+     (200 . "#729A1E")
+     (220 . "#609C3C")
+     (240 . "#4E9D5B")
+     (260 . "#3C9F79")
+     (280 . "#A1EFE4")
+     (300 . "#299BA6")
+     (320 . "#2896B5")
+     (340 . "#2790C3")
+     (360 . "#66D9EF"))))
+ '(vc-annotate-very-old-color nil)
+ '(weechat-color-list
+   (unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
+ '(zoom-mode t nil (zoom))
+ '(zoom-size (quote size-callback)))
 
 ;; tab width
 ;; (setq-default tab-width 8)
@@ -362,12 +583,12 @@
 ;; ;; we're using ssh nowadays (not rsh)
 ;; (setq remote-shell-program "/usr/bin/ssh")
 
-;; compilation
-(require 'compile)
-(add-hook 'c-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -C %s " (upward-find-file "Makefile"))))) ; FIXME: does not seem to work
-(setq compilation-exit-message-function 'compilation-exit-autoclose)
-(setq compilation-auto-jump-to-first-error nil)
-(setq compilation-scroll-output t)
+;; ;; compilation
+;; (require 'compile)
+;; (add-hook 'c-mode-hook (lambda () (set (make-local-variable 'compile-command) (format "make -C %s " (upward-find-file "Makefile"))))) ; FIXME: does not seem to work
+;; (setq compilation-exit-message-function 'compilation-exit-autoclose)
+;; (setq compilation-auto-jump-to-first-error nil)
+;; (setq compilation-scroll-output t)
 
 ;; ;; start server
 ;; (load "server")
@@ -400,10 +621,18 @@
 ;; ;; jump between matching parenthesis
 ;; ;; (global-set-key "%" 'match-paren)
 
-(setq cc-other-file-alist
-      '(("\\.c"   (".h"))
-       ("\\.cpp"   (".h"))
-       ("\\.h"   (".c"".cpp"))))
+(defvar my-cpp-other-file-alist
+  '(("\\.cpp\\'" (".h" ".hpp" ".ipp"))
+    ("\\.ipp\\'" (".hpp" ".cpp"))
+    ("\\.hpp\\'" (".ipp" ".cpp"))
+    ("\\.cxx\\'" (".hxx" ".ixx"))
+    ("\\.ixx\\'" (".cxx" ".hxx"))
+    ("\\.hxx\\'" (".ixx" ".cxx"))
+    ("\\.c\\'" (".h"))
+    ("\\.h\\'" (".cpp" ".c"))
+    ))
+
+(setq-default ff-other-file-alist 'my-cpp-other-file-alist)
 
 (setq ff-search-directories
       '("." "../src" "../include" "../../src" "../../include" ))
@@ -458,6 +687,11 @@
 (global-set-key [?\C-§] 'magit-dispatch-popup)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x G") 'magit-dispatch-popup)
+
+;; DWIM prompting when creating new branches.
+(setq magit-branch-read-upstream-first 'fallback)
+
+
 
 ;; ;; bookmarks
 ;; (global-set-key (kbd "<C-f2>") 'bm-toggle)
@@ -573,44 +807,6 @@
 ;; indentation
 ;; (setq indent-line-function 'insert-tab)
 
-;; c++11 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; http://stackoverflow.com/questions/8549351/c11-mode-or-settings-for-emacs
-(font-lock-add-keywords 'c++-mode
-                        '(;; complete some fundamental keywords
-                          ("\\<\\(void\\|unsigned\\|signed\\|char\\|short\\|bool\\|int\\|long\\|float\\|double\\)\\>" . font-lock-keyword-face)
-                          ;; namespace names and tags - these are rendered as constants by cc-mode
-                          ("\\<\\(\\w+::\\)" . font-lock-function-name-face)
-                          ;;  new C++11 keywords
-                          ("\\<\\(alignof\\|alignas\\|constexpr\\|decltype\\|noexcept\\|nullptr\\|static_assert\\|thread_local\\|override\\|final\\)\\>" . font-lock-keyword-face)
-                          ("\\<\\(char16_t\\|char32_t\\)\\>" . font-lock-keyword-face)
-                          ;; PREPROCESSOR_CONSTANT, PREPROCESSORCONSTANT
-                          ("\\<[A-Z]*_[A-Z_]+\\>" . font-lock-constant-face)
-                          ("\\<[A-Z]\\{3,\\}\\>"  . font-lock-constant-face)
-                          ;; hexadecimal numbers
-                          ("\\<0[xX][0-9A-Fa-f]+\\>" . font-lock-constant-face)
-                          ;; integer/float/scientific numbers
-                          ;;("\\<[\\-+]*[0-9]*\\.?[0-9]+\\([ulUL]+\\|[eE][\\-+]?[0-9]+\\)?\\>" . font-lock-constant-face)
-                          ("\\<[-+]?[0-9]*\\.?[0-9]+\\([uUlL]+\\|[eE][-+]?[0-9]+\\)?[fFlL]?\\>" . font-lock-constant-face)
-                          ;; c++11 string literals
-                          ;;       L"wide string"
-                          ;;       L"wide string with UNICODE codepoint: \u2018"
-                          ;;       u8"UTF-8 string", u"UTF-16 string", U"UTF-32 string"
-                          ("\\<\\([LuU8]+\\)\".*?\"" 1 font-lock-keyword-face)
-                          ;;       R"(user-defined literal)"
-                          ;;       R"( a "quot'd" string )"
-                          ;;       R"delimiter(The String Data" )delimiter"
-                          ;;       R"delimiter((a-z))delimiter" is equivalent to "(a-z)"
-                          ("\\(\\<[uU8]*R\"[^\\s-\\\\()]\\{0,16\\}(\\)" 1 font-lock-keyword-face t) ; start delimiter
-                          (   "\\<[uU8]*R\"[^\\s-\\\\()]\\{0,16\\}(\\(.*?\\))[^\\s-\\\\()]\\{0,16\\}\"" 1 font-lock-string-face t)  ; actual string
-                          (   "\\<[uU8]*R\"[^\\s-\\\\()]\\{0,16\\}(.*?\\()[^\\s-\\\\()]\\{0,16\\}\"\\)" 1 font-lock-keyword-face t) ; end delimiter
-
-                          ;; user-defined types (rather project-specific)
-                          ("\\<[A-Za-z_]+[A-Za-z_0-9]*_\\(type\\|ptr\\)\\>" . font-lock-type-face)
-                          ("\\<\\(xstring\\|xchar\\)\\>" . font-lock-type-face)
-                          ))
-
-
 ;; perl ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq cperl-auto-newline nil)
@@ -629,6 +825,22 @@
                                        (define-key inferior-octave-mode-map [up]   'comint-previous-input)
                                        (define-key inferior-octave-mode-map [down] 'comint-next-input)))
 
+(setq octave-mode-hook
+      (lambda () (progn (setq octave-comment-char ?%)
+                        (setq comment-start "%")
+                        (setq indent-tabs-mode t)
+                        (setq comment-add 0)
+                        (setq tab-width 2)
+                        (setq tab-stop-list (number-sequence 2 200 2))
+                        (setq octave-block-offset 2)
+
+                        (defun octave-indent-comment ()
+                          "A function for `smie-indent-functions' (which see)."
+                          (save-excursion
+                            (back-to-indentation)
+                            (cond
+                             ((octave-in-string-or-comment-p) nil)
+                             ((looking-at-p "\\(\\s<\\)\\1\\{2,\\}") 0)))))))
 ;; css ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (autoload 'css-mode "css-mode")
@@ -793,13 +1005,13 @@ table determines which characters these are."
 
 
                                         ; start auto-complete with emacs ----------------------------------------------
-(require 'auto-complete)
-                                        ; do default config for auto-complete
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete)
+;;                                         ; do default config for auto-complete
+;; (require 'auto-complete-config)
+;; (ac-config-default)
                                         ; start yasnippet with emacs
-(require 'yasnippet)
-(yas-global-mode 1)
+;; (require 'yasnippet)
+;; (yas-global-mode 1)
 ;;                                         ; let's define a function which initializes auto-complete-c-headers and gets called for c/c++ hooks
 ;; ;; (defun my:ac-c-header-init ()
 ;; ;;   (require 'auto-complete-c-headers)
@@ -811,7 +1023,19 @@ table determines which characters these are."
 ;; ;; (add-hook 'c++-mode-hook 'my:ac-c-header-init)
 ;; ;; (add-hook 'c-mode-hook 'my:ac-c-header-init)
 
-                                        ; Fix iedit bug in Mac
+;; Zoom mode
+
+
+(defun size-callback ()
+  (cond ((> (frame-pixel-width) 1280) '(90 . 0.6))
+        (t                            '(0.5 . 0.5))))
+
+
+;; Ace window
+(global-set-key (kbd "C-x o") 'ace-window)
+
+
+;; Fix iedit bug in Mac
 (define-key global-map (kbd "C-;") 'iedit-mode)
 
 ;; ;; ;; FLYMAKE
@@ -867,17 +1091,45 @@ table determines which characters these are."
 
 
 
+;; (add-hook 'after-init-hook 'global-company-mode)
+;; ; No delay in showing suggestions.
+;; (setq company-idle-delay 0)
+;; ; Show suggestions after entering one character.
+;; (setq company-minimum-prefix-length 1)
+;; ;; wrap list of completions
+;; (setq company-selection-wrap-around t)
+
+;; (use-package company
+;;   :defer 2
+;;   :diminish
+;;   :custom
+;;   (company-begin-commands '(self-insert-command))
+;;   (company-idle-delay .1)
+;;   (company-minimum-prefix-length 2)
+;;   (company-show-numbers t)
+;;   (company-tooltip-align-annotations 't)
+;;   (global-company-mode t))
+
+;; (use-package company-box
+;;   :after company
+;;   :diminish
+;;   :hook (company-mode . company-box-mode))
+
+;; (use-package company-anaconda
+;;   :after (anaconda-mode company)
+;;   :config (add-to-list 'company-backends 'company-anaconda))
+
 
 
 
                                         ; turn on Semantic
-(semantic-mode 1)
+;; (semantic-mode 1)
                                         ; let's define a function which adds semantic as a suggestion backend to auto complete
                                         ; and hook this function to c-mode-common-hook
-(defun my:add-semantic-to-autocomplete()
-  (add-to-list 'ac-sources 'ac-source-semantic)
-  )
-(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+;; (defun my:add-semantic-to-autocomplete()
+;;   (add-to-list 'ac-sources 'ac-source-semantic)
+;;   )
+;; (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 ;;                                         ; turn on ede mode
 ;; ;; (global-ede-mode 1)
 ;; ;;                                         ; create a project for our program.
@@ -887,69 +1139,7 @@ table determines which characters these are."
 ;; ;;                                         ; turn on automatic reparsing of open buffers in semantic
 ;; (global-semantic-idle-scheduler-mode 1)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default bold shadow italic underline bold bold-italic bold])
- '(ansi-color-names-vector
-   ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
- '(background-color "#202020")
- '(background-mode dark)
- '(compilation-message-face (quote default))
- '(cursor-color "#cccccc")
- '(custom-enabled-themes (quote (monokai)))
- '(custom-safe-themes
-   (quote
-    ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "4980e5ddaae985e4bae004280bd343721271ebb28f22b3e3b2427443e748cd3f" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "3629b62a41f2e5f84006ff14a2247e679745896b5eaa1d5bcfbc904a3441b0cd" "6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" "ca36cbefb4e97c5be85b3a126739d33c7de337f82ba89633365a1da3453b2c46" "fad47d267d4e8664021a8adb02632942de0f4f75b0ddbcfa7368e637ed851b21" "c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" default)))
- '(fci-rule-color "#3C3D37")
- '(foreground-color "#cccccc")
- '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
- '(highlight-tail-colors
-   (quote
-    (("#3C3D37" . 0)
-     ("#679A01" . 20)
-     ("#4BBEAE" . 30)
-     ("#1DB4D0" . 50)
-     ("#9A8F21" . 60)
-     ("#A75B00" . 70)
-     ("#F309DF" . 85)
-     ("#3C3D37" . 100))))
- '(hl-sexp-background-color "#1c1f26")
- '(magit-diff-use-overlays nil)
- '(nrepl-message-colors
-   (quote
-    ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
- '(org-agenda-files (quote ("~/.org/work.org")))
- '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
- '(pos-tip-background-color "#A6E22E")
- '(pos-tip-foreground-color "#272822")
- '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#F92672")
-     (40 . "#CF4F1F")
-     (60 . "#C26C0F")
-     (80 . "#E6DB74")
-     (100 . "#AB8C00")
-     (120 . "#A18F00")
-     (140 . "#989200")
-     (160 . "#8E9500")
-     (180 . "#A6E22E")
-     (200 . "#729A1E")
-     (220 . "#609C3C")
-     (240 . "#4E9D5B")
-     (260 . "#3C9F79")
-     (280 . "#A1EFE4")
-     (300 . "#299BA6")
-     (320 . "#2896B5")
-     (340 . "#2790C3")
-     (360 . "#66D9EF"))))
- '(vc-annotate-very-old-color nil)
- '(weechat-color-list
-   (unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
+
 
 ;; auto close bracket insertion. New in emacs 24
 ;; (electric-pair-mode 1)
@@ -969,16 +1159,21 @@ table determines which characters these are."
 
 ;; TAGS
 
-(setq path-to-ctags "/usr/bin/ctags") ;; <- your ctags path here
+;; (setq path-to-ctags "/usr/bin/ctags") ;; <- your ctags path here
 
-(defun create-tags (dir-name)
-  "Create tags file."
-  (interactive "DDirectory: ")
-  (shell-command
-   (format "%s -f TAGS -e -R %s" path-to-ctags (directory-file-name dir-name)))
-  )
+;; (defun create-tags (dir-name)
+;;   "Create tags file."
+;;   (interactive "DDirectory: ")
+;;   (shell-command
+;;    (format "%s -f tags -e -R %s" path-to-ctags (directory-file-name dir-name)))
+;;   )
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
+
 ;; SMEX -- autocomplete for M-x
-
 (require 'smex) ; Not needed if you use package.el
 (smex-initialize) ; Can be omitted. This might cause a (minimal) delay
                                         ; when Smex is auto-initialized on its first run.
@@ -1005,7 +1200,7 @@ table determines which characters these are."
 
 ;;                                          comment-end   "")))
 ;; font size
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 110)
 
 (global-linum-mode t)
 

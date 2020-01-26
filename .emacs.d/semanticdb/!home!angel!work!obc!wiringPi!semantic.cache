@@ -1,0 +1,25 @@
+;; Object wiringPi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wiringPi/"
+  :tables
+  (list
+    (semanticdb-table "version.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("VERSION" variable (:constant-flag t) nil [9 16])
+            ("VERSION_MAJOR" variable (:constant-flag t) nil [32 45])
+            ("VERSION_MINOR" variable (:constant-flag t) nil [56 69]))          
+      :file "version.h"
+      :pointmax 73
+      :fsize 72
+      :lastmodtime '(23486 2894 35782 9000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VERSION_MINOR" . ((number "44" 70 . 72)))
+          ("VERSION" . ((string "\"2.44\"" 17 . 23)))
+          ("VERSION_MAJOR" . ((number "2" 46 . 47)))
+          )
+))
+  :file "!home!angel!work!obc!wiringPi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

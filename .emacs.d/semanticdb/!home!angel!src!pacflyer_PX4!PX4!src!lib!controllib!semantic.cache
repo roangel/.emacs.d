@@ -1,0 +1,79 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [1805 1829])
+            ("assert.h" include (:system-flag t) nil [1830 1849])
+            ("time.h" include (:system-flag t) nil [1850 1867])
+            ("stdlib.h" include (:system-flag t) nil [1868 1887])
+            ("math.h" include (:system-flag t) nil [1888 1905])
+            ("mathlib/math/test/test.hpp" include (:system-flag t) nil [1906 1943])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [1944 1994])
+            ("block/Block.hpp" include nil nil [1996 2022])
+            ("block/BlockParam.hpp" include nil nil [2023 2054])
+            ("matrix/math.hpp" include nil nil [2056 2082])
+            ("control" type
+               (:members 
+                  ( ("Block" variable (:type "int") (reparse-symbol namespacesubparts) [2239 2773]))                  
+                :type "namespace")
+                nil [2084 2776]))          
+      :file "BlockLowPass.hpp"
+      :pointmax 2798
+      :fsize 2797
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax '((PUBLIC 2232 . 2238) (punctuation 2230 . 2231) (symbol 2217 . 2229) (symbol 2208 . 2216) (CLASS 2202 . 2207) (symbol 1799 . 1803) (symbol 1792 . 1798) (punctuation 1791 . 1792)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1793 1810])
+            ("float.h" include (:system-flag t) nil [1811 1829])
+            ("blocks.hpp" include nil nil [1831 1852])
+            ("control" type
+               (:members 
+                  ( ("update" function
+                       (:parent "BlockDerivative"
+                        :arguments 
+                          ( ("input" variable (:type "float") (reparse-symbol arg-sub-list) [1905 1917]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [1875 2314]))                  
+                :type "namespace")
+                nil [1854 2317]))          
+      :file "BlockDerivative.cpp"
+      :pointmax 2339
+      :fsize 2338
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "blocks.hpp"
+      :fsize 2307
+      :lastmodtime '(23770 52090 779807 686000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [1805 1829])
+            ("assert.h" include (:system-flag t) nil [1830 1849])
+            ("time.h" include (:system-flag t) nil [1850 1867])
+            ("stdlib.h" include (:system-flag t) nil [1868 1887])
+            ("math.h" include (:system-flag t) nil [1888 1905])
+            ("mathlib/math/test/test.hpp" include (:system-flag t) nil [1906 1943])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [1944 1994])
+            ("block/Block.hpp" include nil nil [1996 2022])
+            ("block/BlockParam.hpp" include nil nil [2023 2054])
+            ("matrix/math.hpp" include nil nil [2056 2082])
+            ("control" type
+               (:members 
+                  ( ("Block" variable (:type "int") (reparse-symbol namespacesubparts) [2192 3054]))                  
+                :type "namespace")
+                nil [2084 3057]))          
+      :file "BlockDelay.hpp"
+      :pointmax 3079
+      :fsize 3078
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax '((PUBLIC 2185 . 2191) (punctuation 2183 . 2184) (symbol 2173 . 2183) (symbol 2164 . 2172) (CLASS 2158 . 2163) (punctuation 2156 . 2157) (symbol 2153 . 2156) (symbol 2146 . 2152) (punctuation 2144 . 2145) (symbol 2143 . 2144) (symbol 2136 . 2142) (punctuation 2134 . 2135) (symbol 2133 . 2134) (symbol 2126 . 2132) (punctuation 2124 . 2125) (symbol 2120 . 2124) (CLASS 2114 . 2119) (punctuation 2113 . 2114) (TEMPLATE 2105 . 2113) (symbol 1799 . 1803) (symbol 1792 . 1798) (punctuation 1791 . 1792))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!controllib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

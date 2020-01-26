@@ -1,0 +1,157 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("lib/FlightTasks/tasks/Auto/FlightTaskAuto.hpp" include (:system-flag t) nil [1881 1937])
+            ("FlightTaskAutoMapper2" type
+               (:superclasses 
+                  ( ("FlightTaskAuto" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1993 2000])
+                    ("FlightTaskAutoMapper2" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FlightTaskAutoMapper2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2002 2026])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2089 2098])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2114 2123])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2147 2156])
+                    ("protected" label nil (reparse-symbol classsubparts) [2158 2168])
+                    ("_alt_above_ground" variable (:type "float") (reparse-symbol classsubparts) [2171 2201])
+                    ("_param_mpc_land_speed" variable (:type ("param_struct" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2339 2381])
+                    ("_param_mpc_tiltmax_lnd" variable (:type ("param_struct" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2383 2426])
+                    ("_param_mpc_land_alt1" variable (:type ("param_struct" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2428 2469])
+                    ("_param_mpc_land_alt2" variable (:type ("param_struct" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2471 2512])
+                    ("_param_mpc_tko_speed" variable (:type ("param_struct" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2514 2555])
+                    ("_generateSetpoints" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3193 3231])
+                    ("_prepareIdleSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3302 3331])
+                    ("_prepareLandSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3333 3362])
+                    ("_prepareVelocitySetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3364 3397])
+                    ("_prepareTakeoffSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3399 3431])
+                    ("_preparePositionSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3433 3466])
+                    ("_updateAltitudeAboveGround" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3469 3503])
+                    ("private" label nil (reparse-symbol classsubparts) [3660 3668])
+                    ("_reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3671 3685])
+                    ("_type_previous" variable (:type ("WaypointType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3744 3792]))                  
+                :type "class")
+                nil [1939 3844]))          
+      :file "FlightTaskAutoMapper2.hpp"
+      :pointmax 3845
+      :fsize 3844
+      :lastmodtime '(23882 47656 157839 540000)
+      :unmatched-syntax '((semantic-list 2144 . 2146) (symbol 2130 . 2144) (VOID 2125 . 2129) (semantic-list 2111 . 2113) (symbol 2105 . 2111) (BOOL 2100 . 2104) (semantic-list 2086 . 2088) (symbol 2078 . 2086) (BOOL 2073 . 2077) (punctuation 2070 . 2071) (DEFAULT 2063 . 2070) (punctuation 2061 . 2062) (semantic-list 2058 . 2060) (symbol 2037 . 2058) (punctuation 2036 . 2037) (VIRTUAL 2028 . 2035) (symbol 1875 . 1879) (symbol 1868 . 1874) (punctuation 1867 . 1868)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskAutoMapper2.hpp" include nil nil [1774 1810])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1811 1839])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1841 1864])
+            ("FlightTaskAutoMapper2" function
+               (:constructor-flag t
+                :parent "FlightTaskAutoMapper2"
+                :type ("FlightTaskAutoMapper2" type (:type "class") nil nil))
+                nil [1890 2165])
+            ("activate" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "bool")
+                nil [2183 2289])
+            ("update" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "bool")
+                nil [2291 3253])
+            ("copyParameters" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [3255 3516])
+            ("_reset" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [3518 3663])
+            ("_prepareIdleSetpoints" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [3665 3919])
+            ("_prepareLandSetpoints" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [3921 4529])
+            ("_prepareTakeoffSetpoints" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [4531 4895])
+            ("_prepareVelocitySetpoints" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [4897 5234])
+            ("_preparePositionSetpoints" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [5236 5484])
+            ("_updateAltitudeAboveGround" function
+               (:parent "FlightTaskAutoMapper2"
+                :type "void")
+                nil [5486 6028]))          
+      :file "FlightTaskAutoMapper2.cpp"
+      :pointmax 6302
+      :fsize 6301
+      :lastmodtime '(23882 47656 157839 540000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!FlightTasks!tasks!AutoMapper2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,70 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Script that runs batch processing to generate flight statistics\"\"\"" code nil nil [1 70])
+            ("__author__" variable nil nil [72 99])
+            ("__license__" variable nil nil [100 119])
+            ("sys" include nil nil [122 132])
+            ("importlib" include nil nil [133 149])
+            ("json" include nil nil [150 161])
+            ("pandas" include nil nil [162 181])
+            ("logging" include nil nil [182 196])
+            ("collections" include nil nil [197 231])
+            ("pathlib" include nil nil [232 256])
+            ("os.path" include nil nil [257 294])
+            ("pathos.pools" include nil nil [295 331])
+            ("json_minify" include nil nil [332 367])
+            ("src" include nil nil [369 400])
+            ("src.tools" include nil nil [401 439])
+            ("logger" variable nil nil [441 500])
+            ("run_single" function (:arguments 
+              ( ("files" variable nil (reparse-symbol function_parameters) [3845 3850])
+                ("config" variable nil (reparse-symbol function_parameters) [3852 3858])
+                ("df" variable nil (reparse-symbol function_parameters) [3860 3862]))              ) nil [3830 3986])
+            ("run_multi" function (:arguments 
+              ( ("files" variable nil (reparse-symbol function_parameters) [4002 4007])
+                ("config" variable nil (reparse-symbol function_parameters) [4009 4015])
+                ("df" variable nil (reparse-symbol function_parameters) [4017 4019]))              ) nil [3988 4294])
+            ("process_log_file" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4317 4321]))              ) nil [4296 4658])
+            ("get_results_from_logging_data" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [4694 4706])
+                ("config" variable nil (reparse-symbol function_parameters) [4708 4714]))              ) nil [4660 4926])
+            ("insert_threshold_override" function (:arguments 
+              ( ("results" variable nil (reparse-symbol function_parameters) [4958 4965])
+                ("override_file" variable nil (reparse-symbol function_parameters) [4967 4980]))              ) nil [4928 5778])
+            ("get_config_components" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [5806 5817]))              ) nil [5780 7741])
+            ("checks_to_import" function (:arguments 
+              ( ("config" variable nil (reparse-symbol function_parameters) [7764 7770]))              ) nil [7743 7942])
+            ("get_module" function (:arguments 
+              ( ("package" variable nil (reparse-symbol function_parameters) [7959 7966])
+                ("module_name" variable nil (reparse-symbol function_parameters) [7968 7979]))              ) nil [7944 8118])
+            ("check_results" function (:arguments 
+              ( ("logging_data" variable nil (reparse-symbol function_parameters) [8138 8150])
+                ("checks" variable nil (reparse-symbol function_parameters) [8152 8158]))              ) nil [8120 8948])
+            ("update_dataframe" function (:arguments 
+              ( ("df" variable nil (reparse-symbol function_parameters) [8971 8973])
+                ("check_result" variable nil (reparse-symbol function_parameters) [8975 8987])
+                ("file_name" variable nil (reparse-symbol function_parameters) [8989 8998]))              ) nil [8950 9119])
+            ("get_valid_csv_file" function (:arguments 
+              ( ("csv_file" variable nil (reparse-symbol function_parameters) [9144 9152])
+                ("directory" variable nil (reparse-symbol function_parameters) [9154 9163]))              ) nil [9121 9309])
+            ("get_valid_config" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [9332 9343]))              ) nil [9311 9529])
+            ("get_valid_thresholds_file" function (:arguments 
+              ( ("thresholds_handler" variable nil (reparse-symbol function_parameters) [9561 9579])
+                ("checks" variable nil (reparse-symbol function_parameters) [9581 9587]))              ) nil [9531 10235]))          
+      :file "flight_statistics.py"
+      :pointmax 10235
+      :fsize 10234
+      :lastmodtime '(23901 29133 617221 974000)
+      :unmatched-syntax '((INDENT_BLOCK 8297 . 8948) (NEWLINE 8296 . 8297) (COLON 8295 . 8296) (TRY 8205 . 8208) (AS 8290 . 8292) (INDENT_BLOCK 548 . 3828) (COLON 546 . 547) (DEF 503 . 506) (MINUS 537 . 538) (GT 538 . 539) (NAME 511 . 520) (COLON 520 . 521))))
+  :file "!home!angel!src!WingtraExplorer!src!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BlockSegwayController.hpp" include nil nil [1 37])
+            ("matrix::Eulerf" using (:type ("matrix::Eulerf" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [39 60])
+            ("matrix::Quatf" using (:type ("matrix::Quatf" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [61 81])
+            ("update" function
+               (:parent "BlockSegwayController"
+                :type "void")
+                nil [83 1888]))          
+      :file "BlockSegwayController.cpp"
+      :pointmax 1889
+      :fsize 1888
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "BlockSegwayController.hpp"
+      :fsize 575
+      :lastmodtime '(23770 52090 779807 686000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!examples!segway!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

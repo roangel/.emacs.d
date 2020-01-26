@@ -1,0 +1,542 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1857 1880])
+            ("sys/types.h" include (:system-flag t) nil [1882 1904])
+            ("stdint.h" include (:system-flag t) nil [1905 1924])
+            ("stdbool.h" include (:system-flag t) nil [1925 1945])
+            ("stdlib.h" include (:system-flag t) nil [1946 1965])
+            ("semaphore.h" include (:system-flag t) nil [1966 1988])
+            ("string.h" include (:system-flag t) nil [1989 2008])
+            ("fcntl.h" include (:system-flag t) nil [2009 2027])
+            ("poll.h" include (:system-flag t) nil [2028 2045])
+            ("errno.h" include (:system-flag t) nil [2046 2064])
+            ("stdio.h" include (:system-flag t) nil [2065 2083])
+            ("math.h" include (:system-flag t) nil [2084 2101])
+            ("unistd.h" include (:system-flag t) nil [2102 2121])
+            ("getopt.h" include (:system-flag t) nil [2122 2141])
+            ("nuttx/arch.h" include (:system-flag t) nil [2143 2166])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [2167 2192])
+            ("nuttx/clock.h" include (:system-flag t) nil [2193 2217])
+            ("arch/board/board.h" include (:system-flag t) nil [2219 2248])
+            ("board_config.h" include (:system-flag t) nil [2249 2274])
+            ("drivers/device/device.h" include (:system-flag t) nil [2276 2310])
+            ("drivers/drv_baro.h" include (:system-flag t) nil [2311 2340])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2341 2369])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2370 2408])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2410 2445])
+            ("systemlib/err.h" include (:system-flag t) nil [2446 2472])
+            ("platforms/px4_getopt.h" include (:system-flag t) nil [2473 2506])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [2508 2540])
+            ("ms5611.h" include nil nil [2553 2572])
+            ("MS56XX_DEVICE_TYPES" type
+               (:members 
+                  ( ("MS56XX_DEVICE" variable
+                       (:constant-flag t
+                        :default-value (2620 2621)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2602 2621])
+                    ("MS5611_DEVICE" variable
+                       (:constant-flag t
+                        :default-value (2640 2644)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2624 2644])
+                    ("MS5607_DEVICE" variable
+                       (:constant-flag t
+                        :default-value (2663 2667)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2647 2667]))                  
+                :type "enum")
+                nil [2574 2671])
+            ("MS5611_BUS" type
+               (:members 
+                  ( ("MS5611_BUS_ALL" variable
+                       (:constant-flag t
+                        :default-value (2709 2710)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2692 2710])
+                    ("MS5611_BUS_I2C_INTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2713 2737])
+                    ("MS5611_BUS_I2C_EXTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2739 2763])
+                    ("MS5611_BUS_SPI_INTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2765 2789])
+                    ("MS5611_BUS_SPI_EXTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2791 2816]))                  
+                :type "enum")
+                nil [2673 2817])
+            ("INCREMENT" variable (:constant-flag t) nil [2966 2975])
+            ("POW2" variable (:constant-flag t) nil [3149 3153])
+            ("ADDR_CMD_CONVERT_D1_OSR256" variable (:constant-flag t) nil [3246 3272])
+            ("ADDR_CMD_CONVERT_D1_OSR512" variable (:constant-flag t) nil [3344 3370])
+            ("ADDR_CMD_CONVERT_D1_OSR1024" variable (:constant-flag t) nil [3442 3469])
+            ("ADDR_CMD_CONVERT_D1_OSR2048" variable (:constant-flag t) nil [3541 3568])
+            ("ADDR_CMD_CONVERT_D1_OSR4096" variable (:constant-flag t) nil [3640 3667])
+            ("ADDR_CMD_CONVERT_D2_OSR256" variable (:constant-flag t) nil [3739 3765])
+            ("ADDR_CMD_CONVERT_D2_OSR512" variable (:constant-flag t) nil [3840 3866])
+            ("ADDR_CMD_CONVERT_D2_OSR1024" variable (:constant-flag t) nil [3941 3968])
+            ("ADDR_CMD_CONVERT_D2_OSR2048" variable (:constant-flag t) nil [4043 4070])
+            ("ADDR_CMD_CONVERT_D2_OSR4096" variable (:constant-flag t) nil [4145 4172])
+            ("ADDR_CMD_CONVERT_D1" variable (:constant-flag t) nil [4476 4495])
+            ("ADDR_CMD_CONVERT_D2" variable (:constant-flag t) nil [4534 4553])
+            ("MS5611_CONVERSION_INTERVAL" variable (:constant-flag t) nil [4771 4797])
+            ("MS5611_MEASUREMENT_RATIO" variable (:constant-flag t) nil [4831 4855])
+            ("MS5611_BARO_DEVICE_PATH_EXT" variable (:constant-flag t) nil [4922 4949])
+            ("MS5611_BARO_DEVICE_PATH_INT" variable (:constant-flag t) nil [4976 5003])
+            ("MS5611" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5060 5067])
+                    ("MS5611" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("interface" variable
+                               (:pointer 1
+                                :type ("device::Device" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5076 5102])
+                            ("prom_buf" variable
+                               (:reference 1
+                                :type ("ms5611::prom_u" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5103 5128])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5129 5146])
+                            ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5147 5184]))                          
+                        :type ("MS5611" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5069 5185])
+                    ("MS5611" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5187 5197])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5200 5220])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5245 5263])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5264 5277])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5278 5292]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5223 5293])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5314 5332])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [5333 5341])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5342 5360]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5295 5361])
+                    ("print_info" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5439 5459])
+                    ("protected" label nil (reparse-symbol classsubparts) [5461 5471])
+                    ("_interface" variable
+                       (:pointer 1
+                        :type ("Device" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5473 5494])
+                    ("_prom" variable (:type ("ms5611::prom_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5497 5519])
+                    ("_work" variable (:type ("work_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5522 5543])
+                    ("_measure_ticks" variable (:type "unsigned int") (reparse-symbol classsubparts) [5545 5570])
+                    ("_reports" variable
+                       (:pointer 1
+                        :type ("ringbuffer::RingBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5573 5606])
+                    ("_device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5608 5646])
+                    ("_collect_phase" variable (:type "bool") (reparse-symbol classsubparts) [5648 5670])
+                    ("_measure_phase" variable (:type "unsigned int") (reparse-symbol classsubparts) [5672 5697])
+                    ("_TEMP" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5767 5783])
+                    ("_OFF" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5785 5800])
+                    ("_SENS" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5802 5818])
+                    ("_T" variable (:type "float") (reparse-symbol classsubparts) [5833 5844])
+                    ("_msl_pressure" variable (:type "unsigned int") (reparse-symbol classsubparts) [5886 5910])
+                    ("_baro_topic" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5925 5951])
+                    ("_orb_class_instance" variable (:type "int") (reparse-symbol classsubparts) [5953 5979])
+                    ("_class_instance" variable (:type "int") (reparse-symbol classsubparts) [5981 6003])
+                    ("_sample_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6006 6035])
+                    ("_measure_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6037 6067])
+                    ("_comms_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6069 6099])
+                    ("start_cycle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delay_ticks" variable
+                               (:default-value "1"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [6448 6472]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6429 6474])
+                    ("stop_cycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6537 6557])
+                    ("cycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7060 7075])
+                    ("cycle_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7288 7298]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7258 7299])
+                    ("measure" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [7430 7453])
+                    ("collect" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [7521 7544]))                  
+                :type "class")
+                nil [5023 7547])
+            ("ms5611_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7618 7627])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7628 7641]))                  
+                :type "int")
+                nil [7602 7642])
+            ("MS5611" function
+               (:constructor-flag t
+                :parent "MS5611"
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7659 7685])
+                    ("prom_buf" variable
+                       (:reference 1
+                        :type ("ms5611::prom_u" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7686 7711])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7712 7729])
+                    ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [7738 7775]))                  
+                :type ("MS5611" type (:type "class") nil nil))
+                nil [7644 8665])
+            ("MS5611" function
+               (:destructor-flag t
+                :parent "MS5611"
+                :type "void")
+                nil [8667 9045])
+            ("init" function
+               (:parent "MS5611"
+                :type "int")
+                nil [9047 11415])
+            ("read" function
+               (:parent "MS5611"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11438 11456])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11457 11470])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11471 11485]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [11417 12778])
+            ("ioctl" function
+               (:parent "MS5611"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12798 12816])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [12817 12825])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [12826 12844]))                  
+                :type "int")
+                nil [12780 15296])
+            ("start_cycle" function
+               (:parent "MS5611"
+                :arguments 
+                  ( ("delay_ticks" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15323 15344]))                  
+                :type "void")
+                nil [15298 15588])
+            ("stop_cycle" function
+               (:parent "MS5611"
+                :type "void")
+                nil [15590 15649])
+            ("cycle_trampoline" function
+               (:parent "MS5611"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15681 15691]))                  
+                :type "void")
+                nil [15651 15759])
+            ("cycle" function
+               (:parent "MS5611"
+                :type "void")
+                nil [15761 17594])
+            ("measure" function
+               (:parent "MS5611"
+                :type "int")
+                nil [17596 18019])
+            ("collect" function
+               (:parent "MS5611"
+                :type "int")
+                nil [18021 22405])
+            ("print_info" function
+               (:parent "MS5611"
+                :type "void")
+                nil [22407 23527])
+            ("ms5611" type
+               (:members 
+                  ( ("bus_options" variable
+                       (:dereference 1
+                        :default-value "{
+#if defined(PX4_SPIDEV_EXT_BARO) && defined(PX4_SPI_BUS_EXT)
+	{ MS5611_BUS_SPI_EXTERNAL, \"/dev/ms5611_spi_ext\", &MS5611_spi_interface, PX4_SPI_BUS_EXT, NULL },
+#endif
+#ifdef PX4_SPIDEV_BARO
+	{ MS5611_BUS_SPI_INTERNAL, \"/dev/ms5611_spi_int\", &MS5611_spi_interface, PX4_SPI_BUS_BARO, NULL },
+#endif
+#ifdef PX4_I2C_BUS_ONBOARD
+	{ MS5611_BUS_I2C_INTERNAL, \"/dev/ms5611_int\", &MS5611_i2c_interface, PX4_I2C_BUS_ONBOARD, NULL },
+#endif
+#ifdef PX4_I2C_BUS_EXPANSION
+	{ MS5611_BUS_I2C_EXTERNAL, \"/dev/ms5611_ext\", &MS5611_i2c_interface, PX4_I2C_BUS_EXPANSION, NULL },
+#endif
+}"
+                        :type ("ms5611_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [23655 24391])
+                    ("ms5611_bus_option" type
+                       (:members 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [23683 23705])
+                            ("devpath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [23707 23727])
+                            ("interface_constructor" variable (:type ("MS5611_constructor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23729 23770])
+                            ("busnum" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23772 23787])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("MS5611" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23789 23801]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [23655 24391])
+                    ("NUM_BUS_OPTIONS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [24400 24415])
+                    ("start_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("ms5611_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24477 24507])
+                            ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24508 24545]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [24462 24546])
+                    ("find_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24582 24604]))                          
+                        :type ("ms5611_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24547 24605])
+                    ("start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24617 24639])
+                            ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24640 24677]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24606 24678])
+                    ("test" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24689 24711]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24679 24712])
+                    ("reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24724 24746]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24713 24747])
+                    ("info" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24748 24760])
+                    ("calibrate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("altitude" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24776 24794])
+                            ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [24795 24817]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24761 24818])
+                    ("usage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24819 24832])
+                    ("crc4" function
+                       (:arguments 
+                          ( ("n_prom" variable
+                               (:pointer 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24894 24911]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [24884 25629])
+                    ("start_bus" function
+                       (:arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("ms5611_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [25676 25706])
+                            ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [25707 25744]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [25661 26546])
+                    ("start" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [26704 26726])
+                            ("device_type" variable (:type ("MS56XX_DEVICE_TYPES" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [26727 26764]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26693 27226])
+                    ("find_bus" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [27308 27330]))                          
+                        :type ("ms5611_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [27273 27571])
+                    ("test" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [27728 27750]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27718 29339])
+                    ("reset" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [29381 29403]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29370 29742])
+                    ("info" function (:type "void") (reparse-symbol namespacesubparts) [29793 30009])
+                    ("calibrate" function
+                       (:arguments 
+                          ( ("altitude" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30090 30108])
+                            ("busid" variable (:type ("MS5611_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [30109 30131]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30075 31810])
+                    ("usage" function (:type "void") (reparse-symbol namespacesubparts) [31812 32187]))                  
+                :type "namespace")
+                nil [23589 32190])
+            ("ms5611_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [32221 32230])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32231 32244]))                  
+                :type "int")
+                nil [32205 33899]))          
+      :file "ms5611.cpp"
+      :pointmax 33900
+      :fsize 33899
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax '((symbol 7593 . 7601) (punctuation 5830 . 5831) (UNDERP 5828 . 5830) (FLOAT 5820 . 5825) (punctuation 2894 . 2895) (symbol 2872 . 2894) (symbol 2863 . 2871) (symbol 2858 . 2862) (symbol 2852 . 2857) (punctuation 2850 . 2851))
+      :lexical-table 
+        '(("ADDR_CMD_CONVERT_D1_OSR512" . ((number "0x42" 3372 . 3376)))
+          ("MS5611_CONVERSION_INTERVAL" . ((number "10000" 4798 . 4803)))
+          ("NUM_BUS_OPTIONS" . ((semantic-list "(sizeof(bus_options)/sizeof(bus_options[0]))" 24416 . 24460)))
+          ("ADDR_CMD_CONVERT_D2_OSR1024" . ((number "0x54" 3970 . 3974)))
+          ("ADDR_CMD_CONVERT_D2_OSR4096" . ((number "0x58" 4174 . 4178)))
+          ("ADDR_CMD_CONVERT_D1_OSR256" . ((number "0x40" 3274 . 3278)))
+          ("MS5611_BARO_DEVICE_PATH_EXT" . ((string "\"/dev/ms5611_ext\"" 4950 . 4967)))
+          ("ADDR_CMD_CONVERT_D1_OSR2048" . ((number "0x46" 3570 . 3574)))
+          ("ADDR_CMD_CONVERT_D2_OSR512" . ((number "0x52" 3868 . 3872)))
+          ("ADDR_CMD_CONVERT_D1_OSR1024" . ((number "0x44" 3471 . 3475)))
+          ("ADDR_CMD_CONVERT_D1_OSR4096" . ((number "0x48" 3669 . 3673)))
+          ("ADDR_CMD_CONVERT_D2_OSR256" . ((number "0x50" 3767 . 3771)))
+          ("ADDR_CMD_CONVERT_D1" . ((symbol "ADDR_CMD_CONVERT_D1_OSR1024" 4498 . 4525)))
+          ("INCREMENT" (spp-arg-list ("_x" "_lim") 2975 . 2985) . 
+              ((DO "do" 2986 . 2988) (semantic-list "{ __typeof__(_x) _tmp = _x+1; if (_tmp >= _lim) _tmp = 0; _x = _tmp; }" 2989 . 3059) (WHILE "while" 3060 . 3065) (semantic-list "(0)" 3065 . 3068)))
+          ("ADDR_CMD_CONVERT_D2" . ((symbol "ADDR_CMD_CONVERT_D2_OSR1024" 4556 . 4583)))
+          ("MS5611_BARO_DEVICE_PATH_INT" . ((string "\"/dev/ms5611_int\"" 5004 . 5021)))
+          ("POW2" (spp-arg-list ("_x") 3153 . 3157) . ((semantic-list "((_x) * (_x))" 3159 . 3172)))
+          ("MS5611_MEASUREMENT_RATIO" . ((number "3" 4856 . 4857)))
+          ("ADDR_CMD_CONVERT_D2_OSR2048" . ((number "0x56" 4072 . 4076)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ms5611.h"
+      :fsize 2929
+      :lastmodtime '(23770 52090 767807 616000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!ms5611!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

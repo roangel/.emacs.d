@@ -1,0 +1,78 @@
+;; Object manual_input_rc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "manual_input_rc/"
+  :tables
+  (list
+    (semanticdb-table "manual_input_rc.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("manual_input_rc.h" include nil nil [1939 1967])
+            ("platforms/px4_middleware.h" include (:system-flag t) nil [1969 2006])
+            ("ManualInput_rc" function
+               (:constructor-flag t
+                :parent "ManualInput_rc"
+                :type ("ManualInput_rc" type (:type "class") nil nil))
+                nil [2008 4400])
+            ("JoyCallback" function
+               (:parent "ManualInput_rc"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::JoyConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4435 4471]))                  
+                :type "void")
+                nil [4402 5409])
+            ("MapAxis" function
+               (:parent "ManualInput_rc"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::JoyConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5440 5476])
+                    ("map_index" variable (:type "int") (reparse-symbol arg-sub-list) [5477 5491])
+                    ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [5492 5505])
+                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [5506 5520])
+                    ("deadzone" variable (:type "double") (reparse-symbol arg-sub-list) [5529 5545])
+                    ("out" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5546 5557]))                  
+                :type "void")
+                nil [5411 5738])
+            ("MapButtons" function
+               (:parent "ManualInput_rc"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::JoyConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5772 5808])
+                    ("msg_mc_sp" variable
+                       (:reference 1
+                        :type ("px4::manual_control_setpoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5809 5849]))                  
+                :type "void")
+                nil [5740 10002])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10013 10022])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10023 10035]))                  
+                :type "int")
+                nil [10004 10126]))          
+      :file "manual_input_rc.cpp"
+      :pointmax 10127
+      :fsize 10126
+      :lastmodtime '(23400 32097 932833 274000)
+      :unmatched-syntax nil)
+    (semanticdb-table "manual_input_rc.h"
+      :file "manual_input_rc.h"
+      :fsize 3549
+      :lastmodtime '(23400 32097 932833 274000)))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!platforms!ros!nodes!manual_input_rc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,92 @@
+;; Object commander/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "commander/"
+  :tables
+  (list
+    (semanticdb-table "commander.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("commander.h" include nil nil [1883 1905])
+            ("platforms/px4_middleware.h" include (:system-flag t) nil [1907 1944])
+            ("Commander" function
+               (:constructor-flag t
+                :parent "Commander"
+                :type ("Commander" type (:type "class") nil nil))
+                nil [1946 2897])
+            ("ManualControlInputCallback" function
+               (:parent "Commander"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("px4::manual_control_setpointConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2942 2990]))                  
+                :type "void")
+                nil [2899 4520])
+            ("SetOffboardControl" function
+               (:parent "Commander"
+                :arguments 
+                  ( ("msg_offboard_control_mode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("px4::offboard_control_mode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4557 4617])
+                    ("msg_vehicle_control_mode" variable
+                       (:reference 1
+                        :type ("px4::vehicle_control_mode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4625 4677]))                  
+                :type "void")
+                nil [4522 5997])
+            ("EvalSwitches" function
+               (:parent "Commander"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("px4::manual_control_setpointConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6028 6076])
+                    ("msg_vehicle_status" variable
+                       (:reference 1
+                        :type ("px4::vehicle_status" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6085 6125])
+                    ("msg_commander_state" variable
+                       (:reference 1
+                        :type ("px4::commander_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6134 6176])
+                    ("msg_vehicle_control_mode" variable
+                       (:reference 1
+                        :type ("px4::vehicle_control_mode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6185 6237]))                  
+                :type "void")
+                nil [5999 8837])
+            ("OffboardControlModeCallback" function
+               (:parent "Commander"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("px4::offboard_control_modeConstPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8883 8929]))                  
+                :type "void")
+                nil [8839 9807])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9818 9827])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9828 9840]))                  
+                :type "int")
+                nil [9809 9920]))          
+      :file "commander.cpp"
+      :pointmax 9921
+      :fsize 9920
+      :lastmodtime '(23437 18825 516964 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "commander.h"
+      :file "commander.h"
+      :fsize 3660
+      :lastmodtime '(23437 18825 516964 497000)))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!platforms!ros!nodes!commander!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

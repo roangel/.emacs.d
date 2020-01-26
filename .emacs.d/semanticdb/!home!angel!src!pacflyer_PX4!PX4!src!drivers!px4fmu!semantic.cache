@@ -1,0 +1,1110 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cfloat" include (:system-flag t) nil [1813 1830])
+            ("board_config.h" include (:system-flag t) nil [1832 1857])
+            ("drivers/device/device.h" include (:system-flag t) nil [1858 1892])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [1893 1924])
+            ("drivers/drv_gpio.h" include (:system-flag t) nil [1925 1954])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1955 1983])
+            ("drivers/drv_input_capture.h" include (:system-flag t) nil [1984 2022])
+            ("drivers/drv_mixer.h" include (:system-flag t) nil [2023 2053])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [2054 2089])
+            ("drivers/drv_rc_input.h" include (:system-flag t) nil [2090 2123])
+            ("lib/rc/dsm.h" include (:system-flag t) nil [2124 2147])
+            ("lib/rc/sbus.h" include (:system-flag t) nil [2148 2172])
+            ("lib/rc/st24.h" include (:system-flag t) nil [2173 2197])
+            ("lib/rc/sumd.h" include (:system-flag t) nil [2198 2222])
+            ("px4_config.h" include (:system-flag t) nil [2223 2246])
+            ("px4_getopt.h" include (:system-flag t) nil [2247 2270])
+            ("px4_log.h" include (:system-flag t) nil [2271 2291])
+            ("px4_module.h" include (:system-flag t) nil [2292 2315])
+            ("systemlib/board_serial.h" include (:system-flag t) nil [2316 2351])
+            ("systemlib/circuit_breaker.h" include (:system-flag t) nil [2352 2390])
+            ("lib/mixer/mixer.h" include (:system-flag t) nil [2391 2419])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2420 2454])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2455 2490])
+            ("systemlib/pwm_limit/pwm_limit.h" include (:system-flag t) nil [2491 2533])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [2534 2568])
+            ("uORB/topics/actuator_armed.h" include (:system-flag t) nil [2643 2682])
+            ("uORB/topics/actuator_controls.h" include (:system-flag t) nil [2683 2725])
+            ("uORB/topics/actuator_outputs.h" include (:system-flag t) nil [2726 2767])
+            ("uORB/topics/adc_report.h" include (:system-flag t) nil [2768 2803])
+            ("uORB/topics/multirotor_motor_limits.h" include (:system-flag t) nil [2804 2852])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2853 2894])
+            ("uORB/topics/safety.h" include (:system-flag t) nil [2895 2926])
+            ("uORB/topics/vehicle_command.h" include (:system-flag t) nil [2927 2967])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [2968 3007])
+            ("SCHEDULE_INTERVAL" variable (:constant-flag t) nil [3083 3100])
+            ("CYCLE_COUNT" variable
+               (:default-value "10"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3171 3196])
+            ("MAX_ACTUATORS" variable
+               (:default-value "DIRECT_PWM_OUTPUT_CHANNELS"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3272 3323])
+            ("CPU_UUID_FORMAT" variable (:constant-flag t) nil [3434 3449])
+            ("CPU_UUID_SEPARATOR" variable (:constant-flag t) nil [3582 3600])
+            ("LED_PATTERN_FMU_OK_TO_ARM" variable (:constant-flag t) nil [3693 3718])
+            ("LED_PATTERN_FMU_REFUSE_TO_ARM" variable (:constant-flag t) nil [3761 3790])
+            ("LED_PATTERN_IO_ARMED" variable (:constant-flag t) nil [3833 3853])
+            ("LED_PATTERN_FMU_ARMED" variable (:constant-flag t) nil [3910 3931])
+            ("LED_PATTERN_IO_FMU_ARMED" variable (:constant-flag t) nil [3987 4011])
+            ("PortMode" type
+               (:members 
+                  ( ("PORT_MODE_UNSET" variable
+                       (:constant-flag t
+                        :default-value (4108 4109)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4090 4109])
+                    ("PORT_FULL_GPIO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4112 4127])
+                    ("PORT_FULL_PWM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4129 4143])
+                    ("PORT_RC_IN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4145 4156])
+                    ("PORT_PWM6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4158 4168])
+                    ("PORT_PWM4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4170 4180])
+                    ("PORT_PWM3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4182 4192])
+                    ("PORT_PWM2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4194 4204])
+                    ("PORT_PWM1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4206 4216])
+                    ("PORT_PWM3CAP1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4218 4232])
+                    ("PORT_PWM2CAP2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4234 4248])
+                    ("PORT_CAPTURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4250 4263]))                  
+                :type "enum")
+                nil [4073 4266])
+            ("PX4FMU" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ModuleBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4424 4431])
+                    ("Mode" type
+                       (:members 
+                          ( ("MODE_NONE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4447 4457])
+                            ("MODE_1PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4460 4470])
+                            ("MODE_2PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4473 4483])
+                            ("MODE_2PWM2CAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4486 4500])
+                            ("MODE_3PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4503 4513])
+                            ("MODE_3PWM1CAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4516 4530])
+                            ("MODE_4PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4533 4543])
+                            ("MODE_6PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4546 4556])
+                            ("MODE_8PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4559 4569])
+                            ("MODE_14PWM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4572 4583])
+                            ("MODE_4CAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4586 4596])
+                            ("MODE_5CAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4599 4609])
+                            ("MODE_6CAP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4612 4622]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4433 4626])
+                    ("PX4FMU" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("run_as_task" variable (:type "bool") (reparse-symbol arg-sub-list) [4635 4652]))                          
+                        :type ("PX4FMU" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4628 4653])
+                    ("PX4FMU" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4655 4673])
+                    ("task_spawn" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4722 4731])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4732 4745]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4700 4746])
+                    ("instantiate" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4800 4809])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4810 4823]))                          
+                        :type ("PX4FMU" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4773 4824])
+                    ("custom_command" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4877 4886])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4887 4900]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4851 4901])
+                    ("print_usage" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("reason" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4951 4979]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4928 4981])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [5026 5035])
+                    ("cycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5153 5166])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [5228 5237])
+                    ("fmu_new_mode" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("new_mode" variable (:type ("PortMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5314 5332]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5290 5333])
+                    ("test" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5336 5354])
+                    ("fake" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5373 5382])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5383 5396]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5357 5397])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5418 5429])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [5430 5438])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5439 5457]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5400 5458])
+                    ("write" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5482 5493])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5494 5513])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5514 5525]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5460 5526])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5529 5548])
+                    ("set_mode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5565 5575]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5551 5576])
+                    ("get_mode" function (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5578 5612])
+                    ("set_pwm_alt_rate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5637 5651]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5615 5652])
+                    ("set_pwm_alt_channels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("channels" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5680 5698]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5654 5699])
+                    ("set_i2c_bus_clock" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("bus" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5731 5744])
+                            ("clock_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5745 5763]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5702 5764])
+                    ("capture_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("context" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5798 5812])
+                            ("chan_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5813 5833])
+                            ("edge_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5842 5864])
+                            ("edge_state" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5865 5885])
+                            ("overflow" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5894 5912]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5767 5913])
+                    ("update_pwm_trims" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5916 5940])
+                    ("private" label nil (reparse-symbol classsubparts) [5942 5950])
+                    ("RC_SCAN" type
+                       (:members 
+                          ( ("RC_SCAN_PPM" variable
+                               (:constant-flag t
+                                :default-value (5983 5984)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5969 5984])
+                            ("RC_SCAN_SBUS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5988 6001])
+                            ("RC_SCAN_DSM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6004 6016])
+                            ("RC_SCAN_SUMD" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6019 6032])
+                            ("RC_SCAN_ST24" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6035 6050]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [5952 6051])
+                    ("_rc_scan_state" variable
+                       (:default-value "RC_SCAN_SBUS"
+                        :type ("RC_SCAN" type (:type "enum") nil nil))
+                        (reparse-symbol classsubparts) [6053 6096])
+                    ("RC_SCAN_STRING" variable
+                       (:pointer 1
+                        :dereference 1
+                        :default-value "{
+		\"PPM\",
+		\"SBUS\",
+		\"DSM\",
+		\"SUMD\",
+		\"ST24\"
+	}"
+                        :type "char")
+                        (reparse-symbol classsubparts) [6099 6183])
+                    ("_rc_scan_begin" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6186 6217])
+                    ("_rc_scan_locked" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6219 6248])
+                    ("_report_lock" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6250 6275])
+                    ("_cycle_timestamp" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6278 6311])
+                    ("_last_safety_check" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6313 6348])
+                    ("_time_last_mix" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6350 6381])
+                    ("_max_actuators" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "DIRECT_PWM_OUTPUT_CHANNELS"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6384 6450])
+                    ("_mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6453 6465])
+                    ("_pwm_default_rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [6467 6494])
+                    ("_pwm_alt_rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [6496 6519])
+                    ("_pwm_alt_rate_channels" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6521 6553])
+                    ("_current_update_rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [6555 6585])
+                    ("_run_as_task" variable (:type "bool") (reparse-symbol classsubparts) [6587 6607])
+                    ("_work" variable
+                       (:typemodifiers ("static")
+                        :type ("work_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6609 6636])
+                    ("_vehicle_cmd_sub" variable (:type "int") (reparse-symbol classsubparts) [6638 6660])
+                    ("_armed_sub" variable (:type "int") (reparse-symbol classsubparts) [6662 6678])
+                    ("_safety_sub" variable (:type "int") (reparse-symbol classsubparts) [6680 6697])
+                    ("_param_sub" variable (:type "int") (reparse-symbol classsubparts) [6711 6727])
+                    ("_adc_sub" variable (:type "int") (reparse-symbol classsubparts) [6729 6743])
+                    ("_rc_in" variable (:type ("rc_input_values" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6745 6775])
+                    ("_analog_rc_rssi_volt" variable (:type "float") (reparse-symbol classsubparts) [6777 6805])
+                    ("_analog_rc_rssi_stable" variable (:type "bool") (reparse-symbol classsubparts) [6807 6836])
+                    ("_to_input_rc" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6838 6864])
+                    ("_outputs_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6866 6892])
+                    ("_num_outputs" variable (:type "unsigned int") (reparse-symbol classsubparts) [6894 6916])
+                    ("_class_instance" variable (:type "int") (reparse-symbol classsubparts) [6918 6939])
+                    ("_rcs_fd" variable (:type "int") (reparse-symbol classsubparts) [6941 6954])
+                    ("_rcs_buf" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6956 6991])
+                    ("_throttle_armed" variable (:type "bool") (reparse-symbol classsubparts) [6994 7016])
+                    ("_pwm_on" variable (:type "bool") (reparse-symbol classsubparts) [7018 7032])
+                    ("_pwm_mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7034 7053])
+                    ("_pwm_initialized" variable (:type "bool") (reparse-symbol classsubparts) [7055 7078])
+                    ("_mixers" variable
+                       (:pointer 1
+                        :type ("MixerGroup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7081 7101])
+                    ("_groups_required" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7104 7130])
+                    ("_groups_subscribed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7132 7160])
+                    ("_control_subs" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [7162 7231])
+                    ("_controls" variable
+                       (:dereference 1
+                        :type ("actuator_controls_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7233 7313])
+                    ("_control_topics" variable
+                       (:dereference 1
+                        :type ("orb_id_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7315 7390])
+                    ("_poll_fds" variable
+                       (:dereference 1
+                        :type ("pollfd" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7392 7459])
+                    ("_poll_fds_num" variable (:type "unsigned int") (reparse-symbol classsubparts) [7461 7484])
+                    ("raw_rc_values" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7487 7545])
+                    ("raw_rc_count" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7547 7569])
+                    ("_pwm_limit" variable
+                       (:typemodifiers ("static")
+                        :type ("pwm_limit_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7572 7602])
+                    ("_armed" variable
+                       (:typemodifiers ("static")
+                        :type ("actuator_armed_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7604 7635])
+                    ("_safety" variable
+                       (:typemodifiers ("static")
+                        :type ("safety_s" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7637 7662])
+                    ("_failsafe_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7676 7715])
+                    ("_disarmed_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7717 7756])
+                    ("_min_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7758 7792])
+                    ("_max_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7794 7828])
+                    ("_trim_pwm" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7830 7865])
+                    ("_reverse_pwm_mask" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7867 7894])
+                    ("_num_failsafe_set" variable (:type "unsigned int") (reparse-symbol classsubparts) [7896 7923])
+                    ("_num_disarmed_set" variable (:type "unsigned int") (reparse-symbol classsubparts) [7925 7952])
+                    ("_safety_off" variable (:type "bool") (reparse-symbol classsubparts) [7954 7972])
+                    ("_to_mixer_status" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8177 8208])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8235 8266])
+                    ("_mot_t_max" variable (:type "float") (reparse-symbol classsubparts) [8343 8360])
+                    ("_thr_mdl_fac" variable (:type "float") (reparse-symbol classsubparts) [8414 8433])
+                    ("_ctl_latency" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8470 8498])
+                    ("arm_nothrottle" function
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8501 8616])
+                    ("cycle_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [8648 8658]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8619 8659])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8661 8675])
+                    ("control_callback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("handle" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8706 8723])
+                            ("control_group" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8730 8752])
+                            ("control_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8759 8781])
+                            ("input" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [8788 8801]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8678 8802])
+                    ("capture_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("chan_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8827 8847])
+                            ("edge_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8854 8876])
+                            ("edge_state" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8877 8897])
+                            ("overflow" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8898 8916]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8804 8917])
+                    ("subscribe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8919 8937])
+                    ("set_pwm_rate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rate_map" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8958 8976])
+                            ("default_rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8977 8999])
+                            ("alt_rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9000 9018]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8939 9019])
+                    ("pwm_ioctl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9037 9048])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [9049 9057])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9058 9076]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9021 9077])
+                    ("update_pwm_rev_mask" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9079 9107])
+                    ("update_pwm_out_state" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("on" variable (:type "bool") (reparse-symbol arg-sub-list) [9136 9144]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9109 9145])
+                    ("update_params" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9148 9170])
+                    ("GPIOConfig" type
+                       (:members 
+                          ( ("input" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9195 9210])
+                            ("output" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9213 9229])
+                            ("alt" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9232 9245]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [9173 9249])
+                    ("sensor_reset" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ms" variable (:type "int") (reparse-symbol arg-sub-list) [9386 9393]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9360 9394])
+                    ("peripheral_reset" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("ms" variable (:type "int") (reparse-symbol arg-sub-list) [9426 9433]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9396 9434])
+                    ("gpio_reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9452 9457]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9436 9458])
+                    ("gpio_set_function" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gpios" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9483 9498])
+                            ("function" variable (:type "int") (reparse-symbol arg-sub-list) [9499 9512]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9460 9513])
+                    ("gpio_write" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gpios" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9531 9546])
+                            ("function" variable (:type "int") (reparse-symbol arg-sub-list) [9547 9560]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9515 9561])
+                    ("gpio_read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9578 9594]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9563 9595])
+                    ("gpio_ioctl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9613 9624])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [9625 9633])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9634 9652]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9597 9653])
+                    ("capture_ioctl" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9675 9686])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [9687 9695])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9696 9714]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9656 9715])
+                    ("fill_rc_in" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("raw_rc_count_local" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9813 9841])
+                            ("raw_rc_values_local" variable
+                               (:dereference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9845 9909])
+                            ("now" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9913 9929])
+                            ("frame_drop" variable (:type "bool") (reparse-symbol arg-sub-list) [9930 9946])
+                            ("failsafe" variable (:type "bool") (reparse-symbol arg-sub-list) [9947 9961])
+                            ("frame_drops" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9965 9986])
+                            ("rssi" variable (:type "int") (reparse-symbol arg-sub-list) [9987 9996]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9797 9997])
+                    ("set_rc_scan_state" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("_rc_scan_state" variable (:type ("RC_SCAN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10023 10046]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10000 10047])
+                    ("rc_io_invert" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10049 10069])
+                    ("rc_io_invert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("invert" variable (:type "bool") (reparse-symbol arg-sub-list) [10089 10101]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10071 10102])
+                    ("safety_check_button" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10129 10134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10104 10135])
+                    ("flash_safety_button" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10162 10167]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10137 10168]))                  
+                :type "class")
+                nil [4360 10171])
+            ("PX4FMU::_pwm_limit" variable (:type ("pwm_limit_t" type (:type "class") nil nil)) nil [10343 10375])
+            ("PX4FMU::_armed" variable
+               (:default-value "{}"
+                :type ("actuator_armed_s" type (:type "class") nil nil))
+                nil [10376 10413])
+            ("PX4FMU::_safety" variable
+               (:default-value "{}"
+                :type ("safety_s" type (:type "class") nil nil))
+                nil [10414 10445])
+            ("PX4FMU::_work" variable
+               (:default-value "{}"
+                :type ("work_s" type (:type "class") nil nil))
+                nil [10446 10472])
+            ("PX4FMU" function
+               (:constructor-flag t
+                :parent "PX4FMU"
+                :arguments 
+                  ( ("run_as_task" variable (:type "bool") (reparse-symbol arg-sub-list) [10489 10506]))                  
+                :type ("PX4FMU" type (:type "class") nil nil))
+                nil [10474 13192])
+            ("PX4FMU" function
+               (:destructor-flag t
+                :parent "PX4FMU"
+                :type "void")
+                nil [13194 14031])
+            ("init" function
+               (:parent "PX4FMU"
+                :type "int")
+                nil [14033 15958])
+            ("safety_check_button" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15993 15998]))                  
+                :type "void")
+                nil [15960 17392])
+            ("flash_safety_button" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [17394 18120])
+            ("set_mode" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("mode" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18143 18153]))                  
+                :type "int")
+                nil [18122 21252])
+            ("set_pwm_rate" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("rate_map" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22802 22820])
+                    ("default_rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22821 22843])
+                    ("alt_rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22844 22862]))                  
+                :type "int")
+                nil [22777 24627])
+            ("set_pwm_alt_rate" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24658 24672]))                  
+                :type "int")
+                nil [24629 24747])
+            ("set_pwm_alt_channels" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("channels" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24782 24800]))                  
+                :type "int")
+                nil [24749 24870])
+            ("set_i2c_bus_clock" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("bus" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24902 24915])
+                    ("clock_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24916 24934]))                  
+                :type "int")
+                nil [24872 24989])
+            ("subscribe" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [24991 25782])
+            ("update_pwm_rev_mask" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [25784 26191])
+            ("update_pwm_trims" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [26193 26852])
+            ("task_spawn" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26877 26886])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26887 26900]))                  
+                :type "int")
+                nil [26854 28101])
+            ("cycle_trampoline" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28133 28143]))                  
+                :type "void")
+                nil [28103 28472])
+            ("capture_trampoline" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28506 28520])
+                    ("chan_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28521 28541])
+                    ("edge_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28548 28570])
+                    ("edge_state" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28571 28591])
+                    ("overflow" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28592 28610]))                  
+                :type "void")
+                nil [28474 28735])
+            ("capture_callback" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("chan_index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28767 28787])
+                    ("edge_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28792 28814])
+                    ("edge_state" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28815 28835])
+                    ("overflow" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28836 28854]))                  
+                :type "void")
+                nil [28737 28978])
+            ("fill_rc_in" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("raw_rc_count_local" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29004 29032])
+                    ("raw_rc_values_local" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29038 29102])
+                    ("now" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29108 29124])
+                    ("frame_drop" variable (:type "bool") (reparse-symbol arg-sub-list) [29125 29141])
+                    ("failsafe" variable (:type "bool") (reparse-symbol arg-sub-list) [29142 29156])
+                    ("frame_drops" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29162 29183])
+                    ("rssi" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [29184 29197]))                  
+                :type "void")
+                nil [28980 30442])
+            ("update_pwm_out_state" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("on" variable (:type "bool") (reparse-symbol arg-sub-list) [30802 30810]))                  
+                :type "void")
+                nil [30768 31024])
+            ("run" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [31026 31140])
+            ("cycle" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [31142 48136])
+            ("update_params" function
+               (:parent "PX4FMU"
+                :type "void")
+                nil [48138 48656])
+            ("control_callback" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("handle" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48688 48705])
+                    ("control_group" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48710 48732])
+                    ("control_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48737 48759])
+                    ("input" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [48764 48777]))                  
+                :type "int")
+                nil [48659 49889])
+            ("ioctl" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49909 49920])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [49921 49929])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [49930 49948]))                  
+                :type "int")
+                nil [49891 50832])
+            ("pwm_ioctl" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50856 50867])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [50868 50876])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [50877 50895]))                  
+                :type "int")
+                nil [50834 64274])
+            ("write" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64387 64398])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64399 64418])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64419 64430]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [64365 64845])
+            ("sensor_reset" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("ms" variable (:type "int") (reparse-symbol arg-sub-list) [64873 64880]))                  
+                :type "void")
+                nil [64847 64935])
+            ("peripheral_reset" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("ms" variable (:type "int") (reparse-symbol arg-sub-list) [64967 64974]))                  
+                :type "void")
+                nil [64937 65037])
+            ("gpio_reset" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [65062 65067]))                  
+                :type "int")
+                nil [65039 65685])
+            ("gpio_set_function" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("gpios" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65717 65732])
+                    ("function" variable (:type "int") (reparse-symbol arg-sub-list) [65733 65746]))                  
+                :type "int")
+                nil [65687 66127])
+            ("gpio_write" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("gpios" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66152 66167])
+                    ("function" variable (:type "int") (reparse-symbol arg-sub-list) [66168 66181]))                  
+                :type "int")
+                nil [66129 66468])
+            ("gpio_read" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66492 66508]))                  
+                :type "int")
+                nil [66470 66768])
+            ("capture_ioctl" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [66796 66814])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [66815 66823])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [66824 66842]))                  
+                :type "int")
+                nil [66770 68992])
+            ("gpio_ioctl" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [69017 69035])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [69036 69044])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [69045 69063]))                  
+                :type "int")
+                nil [68994 69360])
+            ("fmu_new_mode" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("new_mode" variable (:type ("PortMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69387 69405]))                  
+                :type "int")
+                nil [69362 71222])
+            ("unnamed" type
+               (:members 
+                  ( ("bind_spektrum" function (:type "void") (reparse-symbol namespacesubparts) [71238 71507])
+                    ("fmu_new_i2c_speed" function
+                       (:arguments 
+                          ( ("bus" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [71531 71544])
+                            ("clock_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [71545 71563]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [71509 71617]))                  
+                :type "namespace")
+                nil [71225 71620])
+            ("test" function
+               (:parent "PX4FMU"
+                :type "int")
+                nil [71635 76062])
+            ("fake" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76081 76090])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76091 76104]))                  
+                :type "int")
+                nil [76064 76818])
+            ("instantiate" function
+               (:pointer 1
+                :parent "PX4FMU"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76848 76857])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76858 76871]))                  
+                :type ("PX4FMU" type (:type "class") nil nil))
+                nil [76820 76968])
+            ("custom_command" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76997 77006])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77007 77020]))                  
+                :type "int")
+                nil [76970 79351])
+            ("print_usage" function
+               (:parent "PX4FMU"
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [79377 79396]))                  
+                :type "int")
+                nil [79353 83172])
+            ("print_status" function
+               (:parent "PX4FMU"
+                :type "int")
+                nil [83174 84204])
+            ("fmu_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [84239 84248])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84249 84262]))                  
+                :type "int")
+                nil [84226 84263])
+            ("fmu_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [84278 84287])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84288 84301]))                  
+                :type "int")
+                nil [84265 84339]))          
+      :file "fmu.cpp"
+      :pointmax 84340
+      :fsize 84339
+      :lastmodtime '(23901 2358 692563 248000)
+      :unmatched-syntax '((symbol 84217 . 84225) (punctuation 9793 . 9794) (DELETE 9787 . 9793) (punctuation 9785 . 9786) (semantic-list 9768 . 9784) (punctuation 9767 . 9768) (OPERATOR 9759 . 9767) (symbol 9752 . 9758) (punctuation 9749 . 9750) (DELETE 9743 . 9749) (punctuation 9741 . 9742) (semantic-list 9724 . 9740) (symbol 9718 . 9724) (semantic-list 5225 . 5227) (symbol 5213 . 5225) (INT 5209 . 5212) (semantic-list 5023 . 5025) (symbol 5020 . 5023) (VOID 5015 . 5019) (string 4305 . 4351) (symbol 4299 . 4304) (punctuation 4296 . 4297) (symbol 3262 . 3271) (STATIC 3255 . 3261) (symbol 3161 . 3170) (STATIC 3154 . 3160))
+      :lexical-table 
+        '(("SCHEDULE_INTERVAL" . ((number "2000" 3101 . 3105)))
+          ("CPU_UUID_SEPARATOR" . ((string "\" \"" 3601 . 3604)))
+          ("LED_PATTERN_IO_FMU_ARMED" . ((number "0xffff" 4014 . 4020)))
+          ("LED_PATTERN_FMU_REFUSE_TO_ARM" . ((number "0x5555" 3793 . 3799)))
+          ("CPU_UUID_FORMAT" . ((string "\"%0X\"" 3450 . 3455)))
+          ("LED_PATTERN_FMU_ARMED" . ((number "0x5500" 3935 . 3941)))
+          ("LED_PATTERN_FMU_OK_TO_ARM" . ((number "0x0003" 3721 . 3727)))
+          ("LED_PATTERN_IO_ARMED" . ((number "0x5050" 3857 . 3863)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!px4fmu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

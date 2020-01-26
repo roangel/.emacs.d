@@ -1,0 +1,1584 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1889 1912])
+            ("sys/types.h" include (:system-flag t) nil [1914 1936])
+            ("stdint.h" include (:system-flag t) nil [1937 1956])
+            ("stdbool.h" include (:system-flag t) nil [1957 1977])
+            ("stddef.h" include (:system-flag t) nil [1978 1997])
+            ("stdlib.h" include (:system-flag t) nil [1998 2017])
+            ("errno.h" include (:system-flag t) nil [2018 2036])
+            ("stdio.h" include (:system-flag t) nil [2037 2055])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2057 2092])
+            ("board_config.h" include (:system-flag t) nil [2094 2119])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2120 2148])
+            ("drivers/device/spi.h" include (:system-flag t) nil [2150 2181])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2182 2220])
+            ("drivers/device/integrator.h" include (:system-flag t) nil [2221 2259])
+            ("drivers/drv_accel.h" include (:system-flag t) nil [2260 2290])
+            ("drivers/drv_gyro.h" include (:system-flag t) nil [2291 2320])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2321 2349])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [2350 2400])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2401 2437])
+            ("mag.h" include nil nil [2439 2455])
+            ("gyro.h" include nil nil [2456 2473])
+            ("mpu9250.h" include nil nil [2474 2494])
+            ("MPU9250_gyro" function
+               (:constructor-flag t
+                :parent "MPU9250_gyro"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("MPU9250" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2523 2539])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2540 2557]))                  
+                :type ("MPU9250_gyro" type (:type "class") nil nil))
+                nil [2496 2690])
+            ("MPU9250_gyro" function
+               (:destructor-flag t
+                :parent "MPU9250_gyro"
+                :type "void")
+                nil [2692 2836])
+            ("init" function
+               (:parent "MPU9250_gyro"
+                :type "int")
+                nil [2838 3118])
+            ("parent_poll_notify" function
+               (:parent "MPU9250_gyro"
+                :type "void")
+                nil [3120 3185])
+            ("read" function
+               (:parent "MPU9250_gyro"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3214 3232])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3233 3246])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3247 3261]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [3187 3315])
+            ("ioctl" function
+               (:parent "MPU9250_gyro"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3341 3359])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [3360 3368])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3369 3387]))                  
+                :type "int")
+                nil [3317 3543]))          
+      :file "gyro.cpp"
+      :pointmax 3544
+      :fsize 3543
+      :lastmodtime '(23846 3670 961270 905000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "mag.h"
+      :fsize 5048
+      :lastmodtime '(23770 52090 763807 593000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MPU9250" type
+               (:prototype t
+                :type "class")
+                nil [1753 1767])
+            ("MPU9250_gyro" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1871 1878])
+                    ("MPU9250_gyro" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("MPU9250" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1893 1909])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1910 1927]))                          
+                        :type ("MPU9250_gyro" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1880 1928])
+                    ("MPU9250_gyro" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1930 1946])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1971 1989])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1990 2003])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2004 2018]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1949 2019])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2040 2058])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [2059 2067])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2068 2086]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2021 2087])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2090 2110])
+                    ("protected" label nil (reparse-symbol classsubparts) [2112 2122])
+                    ("MPU9250" friend nil (reparse-symbol classsubparts) [2124 2144])
+                    ("parent_poll_notify" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2148 2176])
+                    ("private" label nil (reparse-symbol classsubparts) [2178 2186])
+                    ("_parent" variable
+                       (:pointer 1
+                        :type ("MPU9250" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2188 2207])
+                    ("_gyro_topic" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2209 2235])
+                    ("_gyro_orb_class_instance" variable (:type "int") (reparse-symbol classsubparts) [2237 2268])
+                    ("_gyro_class_instance" variable (:type "int") (reparse-symbol classsubparts) [2270 2297])
+                    ("MPU9250_gyro" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MPU9250_gyro" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2380 2401]))                          
+                        :type ("MPU9250_gyro" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2367 2402])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MPU9250_gyro" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2427 2448]))                          
+                        :type ("MPU9250_gyro" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2404 2449]))                  
+                :type "class")
+                nil [1828 2452]))          
+      :file "gyro.h"
+      :pointmax 2453
+      :fsize 2452
+      :lastmodtime '(23846 3668 157252 506000)
+      :unmatched-syntax '((punctuation 2144 . 2145) (symbol 1747 . 1751) (symbol 1740 . 1746) (punctuation 1739 . 1740) (punctuation 2144 . 2145) (symbol 1747 . 1751) (symbol 1740 . 1746) (punctuation 1739 . 1740) (punctuation 2144 . 2145) (symbol 1747 . 1751) (symbol 1740 . 1746) (punctuation 1739 . 1740)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1734 1753])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [1755 1790])
+            ("systemlib/conversions.h" include (:system-flag t) nil [1791 1825])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [1827 1852])
+            ("board_config.h" include (:system-flag t) nil [1854 1879])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1880 1908])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [1910 1948])
+            ("drivers/device/integrator.h" include (:system-flag t) nil [1949 1987])
+            ("drivers/drv_accel.h" include (:system-flag t) nil [1988 2018])
+            ("drivers/drv_gyro.h" include (:system-flag t) nil [2019 2048])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2049 2077])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [2078 2128])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2129 2165])
+            ("mag.h" include nil nil [2167 2183])
+            ("gyro.h" include nil nil [2184 2201])
+            ("MPUREG_WHOAMI" variable (:constant-flag t) nil [2297 2310])
+            ("MPUREG_SMPLRT_DIV" variable (:constant-flag t) nil [2326 2343])
+            ("MPUREG_CONFIG" variable (:constant-flag t) nil [2358 2371])
+            ("MPUREG_GYRO_CONFIG" variable (:constant-flag t) nil [2387 2405])
+            ("MPUREG_ACCEL_CONFIG" variable (:constant-flag t) nil [2420 2439])
+            ("MPUREG_ACCEL_CONFIG2" variable (:constant-flag t) nil [2454 2474])
+            ("MPUREG_LPACCEL_ODR" variable (:constant-flag t) nil [2489 2507])
+            ("MPUREG_WOM_THRESH" variable (:constant-flag t) nil [2522 2539])
+            ("MPUREG_FIFO_EN" variable (:constant-flag t) nil [2554 2568])
+            ("MPUREG_I2C_MST_CTRL" variable (:constant-flag t) nil [2584 2603])
+            ("MPUREG_I2C_SLV0_ADDR" variable (:constant-flag t) nil [2618 2638])
+            ("MPUREG_I2C_SLV0_REG" variable (:constant-flag t) nil [2653 2672])
+            ("MPUREG_I2C_SLV0_CTRL" variable (:constant-flag t) nil [2687 2707])
+            ("MPUREG_I2C_SLV1_ADDR" variable (:constant-flag t) nil [2722 2742])
+            ("MPUREG_I2C_SLV1_REG" variable (:constant-flag t) nil [2757 2776])
+            ("MPUREG_I2C_SLV1_CTRL" variable (:constant-flag t) nil [2791 2811])
+            ("MPUREG_I2C_SLV2_ADDR" variable (:constant-flag t) nil [2826 2846])
+            ("MPUREG_I2C_SLV2_REG" variable (:constant-flag t) nil [2861 2880])
+            ("MPUREG_I2C_SLV2_CTRL" variable (:constant-flag t) nil [2895 2915])
+            ("MPUREG_I2C_SLV3_ADDR" variable (:constant-flag t) nil [2930 2950])
+            ("MPUREG_I2C_SLV3_REG" variable (:constant-flag t) nil [2965 2984])
+            ("MPUREG_I2C_SLV3_CTRL" variable (:constant-flag t) nil [2999 3019])
+            ("MPUREG_I2C_SLV4_ADDR" variable (:constant-flag t) nil [3034 3054])
+            ("MPUREG_I2C_SLV4_REG" variable (:constant-flag t) nil [3069 3088])
+            ("MPUREG_I2C_SLV4_DO" variable (:constant-flag t) nil [3103 3121])
+            ("MPUREG_I2C_SLV4_CTRL" variable (:constant-flag t) nil [3136 3156])
+            ("MPUREG_I2C_SLV4_DI" variable (:constant-flag t) nil [3171 3189])
+            ("MPUREG_I2C_MST_STATUS" variable (:constant-flag t) nil [3204 3225])
+            ("MPUREG_INT_PIN_CFG" variable (:constant-flag t) nil [3240 3258])
+            ("MPUREG_INT_ENABLE" variable (:constant-flag t) nil [3273 3290])
+            ("MPUREG_INT_STATUS" variable (:constant-flag t) nil [3305 3322])
+            ("MPUREG_ACCEL_XOUT_H" variable (:constant-flag t) nil [3337 3356])
+            ("MPUREG_ACCEL_XOUT_L" variable (:constant-flag t) nil [3371 3390])
+            ("MPUREG_ACCEL_YOUT_H" variable (:constant-flag t) nil [3405 3424])
+            ("MPUREG_ACCEL_YOUT_L" variable (:constant-flag t) nil [3439 3458])
+            ("MPUREG_ACCEL_ZOUT_H" variable (:constant-flag t) nil [3473 3492])
+            ("MPUREG_ACCEL_ZOUT_L" variable (:constant-flag t) nil [3507 3526])
+            ("MPUREG_TEMP_OUT_H" variable (:constant-flag t) nil [3541 3558])
+            ("MPUREG_TEMP_OUT_L" variable (:constant-flag t) nil [3573 3590])
+            ("MPUREG_GYRO_XOUT_H" variable (:constant-flag t) nil [3605 3623])
+            ("MPUREG_GYRO_XOUT_L" variable (:constant-flag t) nil [3638 3656])
+            ("MPUREG_GYRO_YOUT_H" variable (:constant-flag t) nil [3671 3689])
+            ("MPUREG_GYRO_YOUT_L" variable (:constant-flag t) nil [3704 3722])
+            ("MPUREG_GYRO_ZOUT_H" variable (:constant-flag t) nil [3737 3755])
+            ("MPUREG_GYRO_ZOUT_L" variable (:constant-flag t) nil [3770 3788])
+            ("MPUREG_EXT_SENS_DATA_00" variable (:constant-flag t) nil [3803 3826])
+            ("MPUREG_I2C_SLV0_D0" variable (:constant-flag t) nil [3841 3859])
+            ("MPUREG_I2C_SLV1_D0" variable (:constant-flag t) nil [3874 3892])
+            ("MPUREG_I2C_SLV2_D0" variable (:constant-flag t) nil [3907 3925])
+            ("MPUREG_I2C_SLV3_D0" variable (:constant-flag t) nil [3940 3958])
+            ("MPUREG_I2C_MST_DELAY_CTRL" variable (:constant-flag t) nil [3973 3998])
+            ("MPUREG_SIGNAL_PATH_RESET" variable (:constant-flag t) nil [4012 4036])
+            ("MPUREG_MOT_DETECT_CTRL" variable (:constant-flag t) nil [4050 4072])
+            ("MPUREG_USER_CTRL" variable (:constant-flag t) nil [4087 4103])
+            ("MPUREG_PWR_MGMT_1" variable (:constant-flag t) nil [4118 4135])
+            ("MPUREG_PWR_MGMT_2" variable (:constant-flag t) nil [4150 4167])
+            ("MPUREG_FIFO_COUNTH" variable (:constant-flag t) nil [4182 4200])
+            ("MPUREG_FIFO_COUNTL" variable (:constant-flag t) nil [4215 4233])
+            ("MPUREG_FIFO_R_W" variable (:constant-flag t) nil [4248 4263])
+            ("BIT_SLEEP" variable (:constant-flag t) nil [4311 4320])
+            ("BIT_H_RESET" variable (:constant-flag t) nil [4336 4347])
+            ("MPU_CLK_SEL_AUTO" variable (:constant-flag t) nil [4363 4379])
+            ("BITS_GYRO_ST_X" variable (:constant-flag t) nil [4395 4409])
+            ("BITS_GYRO_ST_Y" variable (:constant-flag t) nil [4425 4439])
+            ("BITS_GYRO_ST_Z" variable (:constant-flag t) nil [4455 4469])
+            ("BITS_FS_250DPS" variable (:constant-flag t) nil [4485 4499])
+            ("BITS_FS_500DPS" variable (:constant-flag t) nil [4515 4529])
+            ("BITS_FS_1000DPS" variable (:constant-flag t) nil [4545 4560])
+            ("BITS_FS_2000DPS" variable (:constant-flag t) nil [4576 4591])
+            ("BITS_FS_MASK" variable (:constant-flag t) nil [4607 4619])
+            ("BITS_DLPF_CFG_250HZ" variable (:constant-flag t) nil [4636 4655])
+            ("BITS_DLPF_CFG_184HZ" variable (:constant-flag t) nil [4670 4689])
+            ("BITS_DLPF_CFG_92HZ" variable (:constant-flag t) nil [4704 4722])
+            ("BITS_DLPF_CFG_41HZ" variable (:constant-flag t) nil [4737 4755])
+            ("BITS_DLPF_CFG_20HZ" variable (:constant-flag t) nil [4770 4788])
+            ("BITS_DLPF_CFG_10HZ" variable (:constant-flag t) nil [4803 4821])
+            ("BITS_DLPF_CFG_5HZ" variable (:constant-flag t) nil [4836 4853])
+            ("BITS_DLPF_CFG_3600HZ" variable (:constant-flag t) nil [4868 4888])
+            ("BITS_DLPF_CFG_MASK" variable (:constant-flag t) nil [4903 4921])
+            ("BITS_ACCEL_CONFIG2_41HZ" variable (:constant-flag t) nil [4937 4960])
+            ("BIT_RAW_RDY_EN" variable (:constant-flag t) nil [4976 4990])
+            ("BIT_INT_ANYRD_2CLEAR" variable (:constant-flag t) nil [5006 5026])
+            ("BIT_INT_BYPASS_EN" variable (:constant-flag t) nil [5041 5058])
+            ("BIT_I2C_READ_FLAG" variable (:constant-flag t) nil [5074 5091])
+            ("BIT_I2C_SLV0_NACK" variable (:constant-flag t) nil [5116 5133])
+            ("BIT_I2C_FIFO_EN" variable (:constant-flag t) nil [5157 5172])
+            ("BIT_I2C_MST_EN" variable (:constant-flag t) nil [5198 5212])
+            ("BIT_I2C_IF_DIS" variable (:constant-flag t) nil [5239 5253])
+            ("BIT_FIFO_RST" variable (:constant-flag t) nil [5280 5292])
+            ("BIT_I2C_MST_RST" variable (:constant-flag t) nil [5321 5336])
+            ("BIT_SIG_COND_RST" variable (:constant-flag t) nil [5362 5378])
+            ("BIT_I2C_SLV0_EN" variable (:constant-flag t) nil [5404 5419])
+            ("BIT_I2C_SLV0_BYTE_SW" variable (:constant-flag t) nil [5445 5465])
+            ("BIT_I2C_SLV0_REG_DIS" variable (:constant-flag t) nil [5486 5506])
+            ("BIT_I2C_SLV0_REG_GRP" variable (:constant-flag t) nil [5527 5547])
+            ("BIT_I2C_MST_MULT_MST_EN" variable (:constant-flag t) nil [5569 5592])
+            ("BIT_I2C_MST_WAIT_FOR_ES" variable (:constant-flag t) nil [5610 5633])
+            ("BIT_I2C_MST_SLV_3_FIFO_EN" variable (:constant-flag t) nil [5651 5676])
+            ("BIT_I2C_MST_P_NSR" variable (:constant-flag t) nil [5692 5709])
+            ("BITS_I2C_MST_CLOCK_258HZ" variable (:constant-flag t) nil [5733 5757])
+            ("BITS_I2C_MST_CLOCK_400HZ" variable (:constant-flag t) nil [5774 5798])
+            ("BIT_I2C_SLV0_DLY_EN" variable (:constant-flag t) nil [5816 5835])
+            ("BIT_I2C_SLV1_DLY_EN" variable (:constant-flag t) nil [5857 5876])
+            ("BIT_I2C_SLV2_DLY_EN" variable (:constant-flag t) nil [5898 5917])
+            ("BIT_I2C_SLV3_DLY_EN" variable (:constant-flag t) nil [5939 5958])
+            ("MPU_WHOAMI_9250" variable (:constant-flag t) nil [5981 5996])
+            ("MPU_WHOAMI_6500" variable (:constant-flag t) nil [6012 6027])
+            ("MPU9250_ACCEL_DEFAULT_RATE" variable (:constant-flag t) nil [6044 6070])
+            ("MPU9250_ACCEL_MAX_OUTPUT_RATE" variable (:constant-flag t) nil [6084 6113])
+            ("MPU9250_ACCEL_DEFAULT_DRIVER_FILTER_FREQ" variable (:constant-flag t) nil [6128 6168])
+            ("MPU9250_GYRO_DEFAULT_RATE" variable (:constant-flag t) nil [6180 6205])
+            ("MPU9250_GYRO_MAX_OUTPUT_RATE" variable (:constant-flag t) nil [6274 6302])
+            ("MPU9250_GYRO_DEFAULT_DRIVER_FILTER_FREQ" variable (:constant-flag t) nil [6343 6382])
+            ("MPU9250_DEFAULT_ONCHIP_FILTER_FREQ" variable (:constant-flag t) nil [6395 6429])
+            ("MPU9250_ONE_G" variable (:constant-flag t) nil [6442 6455])
+            ("MPUIOCGIS_I2C" variable (:constant-flag t) nil [6478 6491])
+            ("MPUReport" type
+               (:members 
+                  ( ("cmd" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6663 6676])
+                    ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6678 6694])
+                    ("accel_x" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6696 6716])
+                    ("accel_y" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6718 6738])
+                    ("accel_z" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6740 6760])
+                    ("temp" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6762 6779])
+                    ("gyro_x" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6781 6800])
+                    ("gyro_y" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6802 6821])
+                    ("gyro_z" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6823 6842])
+                    ("mag" variable (:type ("ak8963_regs" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6844 6867]))                  
+                :type "struct")
+                nil [6643 6870])
+            ("MPU_MAX_WRITE_BUFFER_SIZE" variable (:constant-flag t) nil [6898 6923])
+            ("MPU9250_LOW_BUS_SPEED" variable (:constant-flag t) nil [7304 7325])
+            ("MPU9250_HIGH_BUS_SPEED" variable (:constant-flag t) nil [7339 7361])
+            ("MPU9250_IS_HIGH_SPEED" variable (:constant-flag t) nil [7382 7403])
+            ("MPU9250_REG" variable (:constant-flag t) nil [7451 7462])
+            ("MPU9250_SET_SPEED" variable (:constant-flag t) nil [7512 7529])
+            ("MPU9250_HIGH_SPEED_OP" variable (:constant-flag t) nil [7559 7580])
+            ("MPU9250_LOW_SPEED_OP" variable (:constant-flag t) nil [7644 7664])
+            ("MPU9250_SPI_interface" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [7759 7767])
+                    ("external_bus" variable (:type "bool") (reparse-symbol arg-sub-list) [7768 7786]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [7714 7787])
+            ("MPU9250_I2C_interface" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [7833 7841])
+                    ("external_bus" variable (:type "bool") (reparse-symbol arg-sub-list) [7842 7860]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [7788 7861])
+            ("MPU9250_probe" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7887 7907])
+                    ("device_type" variable (:type "int") (reparse-symbol arg-sub-list) [7908 7924]))                  
+                :type "int")
+                nil [7862 7925])
+            ("MPU9250_constructor" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7974 7978])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7979 7984]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [7935 7985])
+            ("MPU9250_mag" type
+               (:prototype t
+                :type "class")
+                nil [7990 8008])
+            ("MPU9250_gyro" type
+               (:prototype t
+                :type "class")
+                nil [8009 8028])
+            ("MPU9250" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8068 8075])
+                    ("MPU9250" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("interface" variable
+                               (:pointer 1
+                                :type ("device::Device" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8085 8111])
+                            ("mag_interface" variable
+                               (:pointer 1
+                                :type ("device::Device" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8112 8142])
+                            ("path_accel" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8143 8166])
+                            ("path_gyro" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8167 8189])
+                            ("path_mag" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8192 8213])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [8216 8239]))                          
+                        :type ("MPU9250" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8077 8240])
+                    ("MPU9250" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8242 8261])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [8264 8284])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8309 8327])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8328 8341])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8342 8356]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8287 8357])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8378 8396])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [8397 8405])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8406 8424]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8359 8425])
+                    ("print_info" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8503 8523])
+                    ("print_registers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8526 8551])
+                    ("test_error" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8592 8613])
+                    ("protected" label nil (reparse-symbol classsubparts) [8615 8625])
+                    ("_interface" variable
+                       (:pointer 1
+                        :type ("Device" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8627 8648])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [8651 8672])
+                    ("MPU9250_mag" friend nil (reparse-symbol classsubparts) [8675 8699])
+                    ("MPU9250_gyro" friend nil (reparse-symbol classsubparts) [8702 8727])
+                    ("gyro_read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8758 8776])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8777 8790])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8791 8805]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8731 8806])
+                    ("gyro_ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8832 8850])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [8851 8859])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8860 8878]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8808 8879])
+                    ("private" label nil (reparse-symbol classsubparts) [8881 8889])
+                    ("_gyro" variable
+                       (:pointer 1
+                        :type ("MPU9250_gyro" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8891 8911])
+                    ("_mag" variable
+                       (:pointer 1
+                        :type ("MPU9250_mag" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8913 8935])
+                    ("_whoami" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8937 8955])
+                    ("_use_hrt" variable (:type "bool") (reparse-symbol classsubparts) [9102 9119])
+                    ("_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9122 9145])
+                    ("_call_interval" variable (:type "unsigned int") (reparse-symbol classsubparts) [9147 9172])
+                    ("_accel_reports" variable
+                       (:pointer 1
+                        :type ("ringbuffer::RingBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9175 9214])
+                    ("_accel_scale" variable (:type ("accel_calibration_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9217 9257])
+                    ("_accel_range_scale" variable (:type "float") (reparse-symbol classsubparts) [9259 9286])
+                    ("_accel_range_m_s2" variable (:type "float") (reparse-symbol classsubparts) [9288 9314])
+                    ("_accel_topic" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9316 9343])
+                    ("_accel_orb_class_instance" variable (:type "int") (reparse-symbol classsubparts) [9345 9377])
+                    ("_accel_class_instance" variable (:type "int") (reparse-symbol classsubparts) [9379 9407])
+                    ("_gyro_reports" variable
+                       (:pointer 1
+                        :type ("ringbuffer::RingBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9410 9448])
+                    ("_gyro_scale" variable (:type ("gyro_calibration_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9451 9489])
+                    ("_gyro_range_scale" variable (:type "float") (reparse-symbol classsubparts) [9491 9517])
+                    ("_gyro_range_rad_s" variable (:type "float") (reparse-symbol classsubparts) [9519 9545])
+                    ("_dlpf_freq" variable (:type "unsigned int") (reparse-symbol classsubparts) [9548 9569])
+                    ("_sample_rate" variable (:type "unsigned int") (reparse-symbol classsubparts) [9572 9595])
+                    ("_accel_reads" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9597 9626])
+                    ("_gyro_reads" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9628 9656])
+                    ("_sample_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9658 9687])
+                    ("_bad_transfers" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9689 9720])
+                    ("_bad_registers" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9722 9753])
+                    ("_good_transfers" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9755 9787])
+                    ("_reset_retries" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9789 9820])
+                    ("_duplicates" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9822 9850])
+                    ("_controller_latency_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9852 9893])
+                    ("_register_wait" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9896 9921])
+                    ("_reset_wait" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9923 9945])
+                    ("_accel_filter_x" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9948 9986])
+                    ("_accel_filter_y" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9988 10026])
+                    ("_accel_filter_z" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10028 10066])
+                    ("_gyro_filter_x" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10068 10105])
+                    ("_gyro_filter_y" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10107 10144])
+                    ("_gyro_filter_z" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10146 10183])
+                    ("_accel_int" variable (:type ("Integrator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10186 10209])
+                    ("_gyro_int" variable (:type ("Integrator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10211 10233])
+                    ("_rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [10236 10261])
+                    ("MPU9250_NUM_CHECKED_REGISTERS" variable (:constant-flag t) (reparse-symbol classsubparts) [10397 10426])
+                    ("_checked_registers" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10431 10502])
+                    ("_checked_values" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10504 10561])
+                    ("_checked_bad" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10563 10617])
+                    ("_checked_next" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10619 10643])
+                    ("_last_temperature" variable (:type "float") (reparse-symbol classsubparts) [10692 10718])
+                    ("check_null_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10742 10757])
+                            ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10758 10771]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10721 10772])
+                    ("check_duplicate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("accel_data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10795 10815]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10774 10816])
+                    ("_last_accel_data" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10870 10900])
+                    ("_got_duplicate" variable (:type "bool") (reparse-symbol classsubparts) [10902 10924])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10970 10985])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11030 11044])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [11148 11162])
+                    ("reset_mpu" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [11238 11256])
+                    ("is_i2c" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12137 12142]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12125 12164])
+                    ("measure_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12489 12499]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12457 12500])
+                    ("measure" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12583 12600])
+                    ("read_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12741 12754])
+                            ("speed" variable
+                               (:default-value "MPU9250_LOW_BUS_SPEED"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12755 12793]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12722 12795])
+                    ("read_reg16" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12818 12831]))                          
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12797 12832])
+                    ("write_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12979 12992])
+                            ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12993 13007]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12962 13008])
+                    ("modify_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13262 13275])
+                            ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13276 13294])
+                            ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13295 13311]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13244 13312])
+                    ("write_checked_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13493 13506])
+                            ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13507 13521]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13468 13522])
+                    ("modify_checked_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13792 13805])
+                            ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13806 13824])
+                            ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13825 13841]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13766 13842])
+                    ("set_accel_range" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("max_g" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14044 14059]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [14022 14060])
+                    ("swap16" function
+                       (:arguments 
+                          ( ("val" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14154 14167]))                          
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14137 14203])
+                    ("is_external" function (:type "bool") (reparse-symbol classsubparts) [14318 14416])
+                    ("self_test" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [14498 14517])
+                    ("accel_self_test" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [14593 14618])
+                    ("gyro_self_test" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [14693 14717])
+                    ("_set_dlpf_filter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("frequency_hz" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14784 14806]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14762 14807])
+                    ("_set_sample_rate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("desired_sample_rate_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14887 14919]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14865 14920])
+                    ("check_registers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15008 15013]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14987 15014])
+                    ("MPU9250" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MPU9250" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15092 15108]))                          
+                        :type ("MPU9250" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15084 15109])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MPU9250" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15129 15145]))                          
+                        :type ("MPU9250" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15111 15146]))                  
+                :type "class")
+                nil [8030 15149]))          
+      :file "mpu9250.h"
+      :pointmax 15150
+      :fsize 15149
+      :lastmodtime '(23847 19778 231240 910000)
+      :unmatched-syntax '((punctuation 8727 . 8728) (punctuation 8699 . 8700) (TYPEDEF 7927 . 7934) (semantic-list 6883 . 6888) (symbol 6879 . 6883) (symbol 6872 . 6878) (punctuation 6871 . 6872) (semantic-list 6538 . 6547) (symbol 6534 . 6538) (number 6545 . 6546) (symbol 6527 . 6533) (number 6545 . 6546) (punctuation 6526 . 6527))
+      :lexical-table 
+        '(("MPUREG_WHOAMI" . ((number "0x75" 2313 . 2317)))
+          ("MPUREG_I2C_SLV4_DO" . ((number "0x33" 3123 . 3127)))
+          ("MPUREG_MOT_DETECT_CTRL" . ((number "0x69" 4074 . 4078)))
+          ("MPUREG_USER_CTRL" . ((number "0x6A" 4105 . 4109)))
+          ("BITS_FS_MASK" . ((number "0x18" 4622 . 4626)))
+          ("BIT_I2C_SLV0_EN" . ((number "0x80" 5432 . 5436)))
+          ("BIT_I2C_MST_WAIT_FOR_ES" . ((number "0x40" 5638 . 5642)))
+          ("MPU9250_DEFAULT_ONCHIP_FILTER_FREQ" . ((number "92" 6430 . 6432)))
+          ("MPU9250_ONE_G" . ((number "9.80665f" 6460 . 6468)))
+          ("MPU9250_REG" (spp-arg-list ("r") 7462 . 7465) . ((semantic-list "((r) &~MPU9250_HIGH_BUS_SPEED)" 7471 . 7501)))
+          ("MPUREG_CONFIG" . ((number "0x1A" 2374 . 2378)))
+          ("MPUREG_I2C_SLV3_REG" . ((number "0x2F" 2986 . 2990)))
+          ("MPUREG_INT_ENABLE" . ((number "0x38" 3292 . 3296)))
+          ("MPUREG_TEMP_OUT_L" . ((number "0x42" 3592 . 3596)))
+          ("MPUREG_SIGNAL_PATH_RESET" . ((number "0x68" 4037 . 4041)))
+          ("BIT_INT_BYPASS_EN" . ((number "0x02" 5060 . 5064)))
+          ("BIT_I2C_MST_P_NSR" . ((number "0x10" 5720 . 5724)))
+          ("MPU9250_GYRO_DEFAULT_DRIVER_FILTER_FREQ" . ((number "30" 6383 . 6385)))
+          ("MPU9250_SET_SPEED" (spp-arg-list ("r" "s") 7529 . 7535) . ((semantic-list "((r)|(s))" 7539 . 7548)))
+          ("MPUREG_ACCEL_XOUT_L" . ((number "0x3C" 3392 . 3396)))
+          ("MPUREG_GYRO_YOUT_H" . ((number "0x45" 3691 . 3695)))
+          ("MPUREG_GYRO_ZOUT_L" . ((number "0x48" 3790 . 3794)))
+          ("BITS_DLPF_CFG_MASK" . ((number "0x07" 4923 . 4927)))
+          ("BIT_I2C_SLV0_NACK" . ((number "0x01" 5144 . 5148)))
+          ("BIT_SIG_COND_RST" . ((number "0x01" 5390 . 5394)))
+          ("BIT_I2C_SLV3_DLY_EN" . ((number "0x08" 5967 . 5971)))
+          ("MPU9250_ACCEL_MAX_OUTPUT_RATE" . ((number "280" 6116 . 6119)))
+          ("MPU9250_ACCEL_DEFAULT_DRIVER_FILTER_FREQ" . ((number "30" 6169 . 6171)))
+          ("MPU9250_LOW_BUS_SPEED" . ((number "0" 7329 . 7330)))
+          ("MPUREG_LPACCEL_ODR" . ((number "0x1E" 2509 . 2513)))
+          ("MPUREG_I2C_SLV2_ADDR" . ((number "0x2B" 2848 . 2852)))
+          ("MPUREG_I2C_SLV2_CTRL" . ((number "0x2D" 2917 . 2921)))
+          ("MPUREG_ACCEL_ZOUT_H" . ((number "0x3F" 3494 . 3498)))
+          ("MPU_CLK_SEL_AUTO" . ((number "0x01" 4381 . 4385)))
+          ("BIT_I2C_IF_DIS" . ((number "0x10" 5267 . 5271)))
+          ("BIT_I2C_MST_RST" . ((number "0x02" 5349 . 5353)))
+          ("BITS_I2C_MST_CLOCK_400HZ" . ((number "0x0D" 5802 . 5806)))
+          ("MPUREG_I2C_SLV4_REG" . ((number "0x32" 3090 . 3094)))
+          ("MPUREG_I2C_SLV0_D0" . ((number "0x63" 3861 . 3865)))
+          ("BIT_H_RESET" . ((number "0x80" 4350 . 4354)))
+          ("BITS_GYRO_ST_X" . ((number "0x80" 4412 . 4416)))
+          ("BIT_I2C_READ_FLAG" . ((number "0x80" 5102 . 5106)))
+          ("MPU9250_GYRO_DEFAULT_RATE" . ((number "1000" 6206 . 6210)))
+          ("MPU_MAX_WRITE_BUFFER_SIZE" . ((semantic-list "(2)" 6924 . 6927)))
+          ("MPUREG_I2C_SLV0_REG" . ((number "0x26" 2674 . 2678)))
+          ("MPUREG_I2C_SLV1_D0" . ((number "0x64" 3894 . 3898)))
+          ("MPUREG_FIFO_R_W" . ((number "0x74" 4266 . 4270)))
+          ("BITS_GYRO_ST_Y" . ((number "0x40" 4442 . 4446)))
+          ("BITS_DLPF_CFG_5HZ" . ((number "0x06" 4855 . 4859)))
+          ("MPU_WHOAMI_6500" . ((number "0x70" 6030 . 6034)))
+          ("MPUIOCGIS_I2C" . ((semantic-list "(unsigned)" 6492 . 6502) (semantic-list "(DEVIOCGDEVICEID+100)" 6502 . 6523)))
+          ("MPU9250_HIGH_BUS_SPEED" . ((number "0x8000" 7365 . 7371)))
+          ("MPUREG_SMPLRT_DIV" . ((number "0x19" 2345 . 2349)))
+          ("MPUREG_WOM_THRESH" . ((number "0x1F" 2541 . 2545)))
+          ("MPUREG_GYRO_XOUT_H" . ((number "0x43" 3625 . 3629)))
+          ("MPUREG_GYRO_YOUT_L" . ((number "0x46" 3724 . 3728)))
+          ("MPUREG_I2C_SLV2_D0" . ((number "0x65" 3927 . 3931)))
+          ("MPUREG_FIFO_COUNTH" . ((number "0x72" 4202 . 4206)))
+          ("BITS_GYRO_ST_Z" . ((number "0x20" 4472 . 4476)))
+          ("BITS_DLPF_CFG_3600HZ" . ((number "0x07" 4890 . 4894)))
+          ("BIT_I2C_SLV0_BYTE_SW" . ((number "0x40" 5473 . 5477)))
+          ("BIT_I2C_SLV0_REG_GRP" . ((number "0x10" 5555 . 5559)))
+          ("BIT_I2C_SLV0_DLY_EN" . ((number "0x01" 5844 . 5848)))
+          ("MPU9250_LOW_SPEED_OP" (spp-arg-list ("r") 7664 . 7667) . ((symbol "MPU9250_REG" 7670 . 7681) (semantic-list "((r))" 7681 . 7686)))
+          ("MPUREG_GYRO_CONFIG" . ((number "0x1B" 2407 . 2411)))
+          ("MPUREG_I2C_SLV1_ADDR" . ((number "0x28" 2744 . 2748)))
+          ("MPUREG_I2C_SLV1_CTRL" . ((number "0x2A" 2813 . 2817)))
+          ("MPUREG_I2C_SLV4_DI" . ((number "0x35" 3191 . 3195)))
+          ("MPUREG_INT_PIN_CFG" . ((number "0x37" 3260 . 3264)))
+          ("MPUREG_ACCEL_YOUT_H" . ((number "0x3D" 3426 . 3430)))
+          ("MPUREG_ACCEL_ZOUT_L" . ((number "0x40" 3528 . 3532)))
+          ("MPUREG_I2C_SLV3_D0" . ((number "0x66" 3960 . 3964)))
+          ("MPUREG_PWR_MGMT_1" . ((number "0x6B" 4137 . 4141)))
+          ("BIT_I2C_MST_EN" . ((number "0x20" 5226 . 5230)))
+          ("BIT_I2C_SLV0_REG_DIS" . ((number "0x20" 5514 . 5518)))
+          ("MPU9250_IS_HIGH_SPEED" (spp-arg-list ("r") 7403 . 7406) . ((semantic-list "((r) & MPU9250_HIGH_BUS_SPEED)" 7410 . 7440)))
+          ("MPUREG_I2C_MST_CTRL" . ((number "0x24" 2605 . 2609)))
+          ("MPUREG_I2C_SLV1_REG" . ((number "0x29" 2778 . 2782)))
+          ("MPUREG_I2C_SLV4_ADDR" . ((number "0x31" 3056 . 3060)))
+          ("MPUREG_I2C_SLV4_CTRL" . ((number "0x34" 3158 . 3162)))
+          ("MPUREG_I2C_MST_DELAY_CTRL" . ((number "0x67" 3999 . 4003)))
+          ("MPUREG_PWR_MGMT_2" . ((number "0x6C" 4169 . 4173)))
+          ("BIT_SLEEP" . ((number "0x40" 4323 . 4327)))
+          ("BIT_RAW_RDY_EN" . ((number "0x01" 4993 . 4997)))
+          ("BIT_INT_ANYRD_2CLEAR" . ((number "0x10" 5028 . 5032)))
+          ("BIT_I2C_FIFO_EN" . ((number "0x40" 5185 . 5189)))
+          ("BIT_I2C_MST_SLV_3_FIFO_EN" . ((number "0x20" 5679 . 5683)))
+          ("MPU9250_NUM_CHECKED_REGISTERS" . ((number "11" 10427 . 10429)))
+          ("MPUREG_ACCEL_CONFIG2" . ((number "0x1D" 2476 . 2480)))
+          ("MPUREG_I2C_MST_STATUS" . ((number "0x36" 3227 . 3231)))
+          ("BITS_DLPF_CFG_184HZ" . ((number "0x01" 4691 . 4695)))
+          ("BITS_I2C_MST_CLOCK_258HZ" . ((number "0x08" 5761 . 5765)))
+          ("BIT_I2C_SLV1_DLY_EN" . ((number "0x02" 5885 . 5889)))
+          ("MPU_WHOAMI_9250" . ((number "0x71" 5999 . 6003)))
+          ("MPU9250_HIGH_SPEED_OP" (spp-arg-list ("r") 7580 . 7583) . ((symbol "MPU9250_SET_SPEED" 7587 . 7604) (semantic-list "((r), MPU9250_HIGH_BUS_SPEED)" 7604 . 7633)))
+          ("MPUREG_INT_STATUS" . ((number "0x3A" 3324 . 3328)))
+          ("MPUREG_TEMP_OUT_H" . ((number "0x41" 3560 . 3564)))
+          ("MPUREG_GYRO_XOUT_L" . ((number "0x44" 3658 . 3662)))
+          ("MPUREG_FIFO_COUNTL" . ((number "0x73" 4235 . 4239)))
+          ("BITS_FS_500DPS" . ((number "0x08" 4532 . 4536)))
+          ("BITS_DLPF_CFG_41HZ" . ((number "0x03" 4757 . 4761)))
+          ("MPUREG_I2C_SLV0_ADDR" . ((number "0x25" 2640 . 2644)))
+          ("MPUREG_I2C_SLV0_CTRL" . ((number "0x27" 2709 . 2713)))
+          ("MPUREG_I2C_SLV2_REG" . ((number "0x2C" 2882 . 2886)))
+          ("MPUREG_ACCEL_XOUT_H" . ((number "0x3B" 3358 . 3362)))
+          ("MPUREG_ACCEL_YOUT_L" . ((number "0x3E" 3460 . 3464)))
+          ("MPUREG_GYRO_ZOUT_H" . ((number "0x47" 3757 . 3761)))
+          ("BITS_FS_250DPS" . ((number "0x00" 4502 . 4506)))
+          ("BITS_FS_1000DPS" . ((number "0x10" 4563 . 4567)))
+          ("BITS_DLPF_CFG_92HZ" . ((number "0x02" 4724 . 4728)))
+          ("BITS_DLPF_CFG_10HZ" . ((number "0x05" 4823 . 4827)))
+          ("BITS_ACCEL_CONFIG2_41HZ" . ((number "0x03" 4962 . 4966)))
+          ("BIT_I2C_MST_MULT_MST_EN" . ((number "0x80" 5597 . 5601)))
+          ("MPU9250_ACCEL_DEFAULT_RATE" . ((number "1000" 6071 . 6075)))
+          ("MPU9250_GYRO_MAX_OUTPUT_RATE" . ((symbol "MPU9250_ACCEL_MAX_OUTPUT_RATE" 6305 . 6334)))
+          ("MPUREG_ACCEL_CONFIG" . ((number "0x1C" 2441 . 2445)))
+          ("MPUREG_FIFO_EN" . ((number "0x23" 2571 . 2575)))
+          ("MPUREG_I2C_SLV3_ADDR" . ((number "0x2E" 2952 . 2956)))
+          ("MPUREG_I2C_SLV3_CTRL" . ((number "0x30" 3021 . 3025)))
+          ("MPUREG_EXT_SENS_DATA_00" . ((number "0x49" 3828 . 3832)))
+          ("BITS_FS_2000DPS" . ((number "0x18" 4594 . 4598)))
+          ("BITS_DLPF_CFG_250HZ" . ((number "0x00" 4657 . 4661)))
+          ("BITS_DLPF_CFG_20HZ" . ((number "0x04" 4790 . 4794)))
+          ("BIT_FIFO_RST" . ((number "0x04" 5308 . 5312)))
+          ("BIT_I2C_SLV2_DLY_EN" . ((number "0x04" 5926 . 5930)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1899 1922])
+            ("sys/types.h" include (:system-flag t) nil [1924 1946])
+            ("stdint.h" include (:system-flag t) nil [1947 1966])
+            ("stdbool.h" include (:system-flag t) nil [1967 1987])
+            ("stddef.h" include (:system-flag t) nil [1988 2007])
+            ("stdlib.h" include (:system-flag t) nil [2008 2027])
+            ("semaphore.h" include (:system-flag t) nil [2028 2050])
+            ("string.h" include (:system-flag t) nil [2051 2070])
+            ("fcntl.h" include (:system-flag t) nil [2071 2089])
+            ("poll.h" include (:system-flag t) nil [2090 2107])
+            ("errno.h" include (:system-flag t) nil [2108 2126])
+            ("stdio.h" include (:system-flag t) nil [2127 2145])
+            ("math.h" include (:system-flag t) nil [2146 2163])
+            ("unistd.h" include (:system-flag t) nil [2164 2183])
+            ("getopt.h" include (:system-flag t) nil [2184 2203])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2205 2240])
+            ("systemlib/err.h" include (:system-flag t) nil [2241 2267])
+            ("systemlib/conversions.h" include (:system-flag t) nil [2268 2302])
+            ("systemlib/px4_macros.h" include (:system-flag t) nil [2303 2336])
+            ("nuttx/arch.h" include (:system-flag t) nil [2338 2361])
+            ("nuttx/clock.h" include (:system-flag t) nil [2362 2386])
+            ("board_config.h" include (:system-flag t) nil [2388 2413])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2414 2442])
+            ("drivers/device/spi.h" include (:system-flag t) nil [2444 2475])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2476 2514])
+            ("drivers/device/integrator.h" include (:system-flag t) nil [2515 2553])
+            ("drivers/drv_accel.h" include (:system-flag t) nil [2554 2584])
+            ("drivers/drv_gyro.h" include (:system-flag t) nil [2585 2614])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2615 2643])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [2644 2694])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2695 2731])
+            ("mag.h" include nil nil [2733 2749])
+            ("gyro.h" include nil nil [2750 2767])
+            ("mpu9250.h" include nil nil [2768 2788])
+            ("MPU9250_TIMER_REDUCTION" variable (:constant-flag t) nil [3043 3066])
+            ("ACCEL_RANGE_G" variable (:constant-flag t) nil [3110 3123])
+            ("MPU9250::_checked_registers" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{ MPUREG_WHOAMI,
+									     MPUREG_PWR_MGMT_1,
+									     MPUREG_PWR_MGMT_2,
+									     MPUREG_USER_CTRL,
+									     MPUREG_SMPLRT_DIV,
+									     MPUREG_CONFIG,
+									     MPUREG_GYRO_CONFIG,
+									     MPUREG_ACCEL_CONFIG,
+									     MPUREG_ACCEL_CONFIG2,
+									     MPUREG_INT_ENABLE,
+									     MPUREG_INT_PIN_CFG
+									   }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3255 3692])
+            ("MPU9250" function
+               (:constructor-flag t
+                :parent "MPU9250"
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3712 3738])
+                    ("mag_interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3739 3769])
+                    ("path_accel" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3770 3793])
+                    ("path_gyro" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3797 3819])
+                    ("path_mag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3820 3841])
+                    ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3845 3868]))                  
+                :type ("MPU9250" type (:type "class") nil nil))
+                nil [3695 7637])
+            ("MPU9250" function
+               (:destructor-flag t
+                :parent "MPU9250"
+                :type "void")
+                nil [7639 8405])
+            ("init" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [8407 12352])
+            ("reset" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [12354 13033])
+            ("reset_mpu" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [13035 15304])
+            ("probe" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [15306 15735])
+            ("_set_sample_rate" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("desired_sample_rate_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15845 15877]))                  
+                :type "void")
+                nil [15814 16275])
+            ("_set_dlpf_filter" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("frequency_hz" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16382 16404]))                  
+                :type "void")
+                nil [16351 17270])
+            ("read" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17294 17312])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17313 17326])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17327 17341]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [17272 18088])
+            ("self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [18090 18268])
+            ("accel_self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [18270 18351])
+            ("gyro_self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [18353 19454])
+            ("test_error" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [19529 19876])
+            ("gyro_read" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19905 19923])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19924 19937])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19938 19952]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [19878 20691])
+            ("ioctl" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20712 20730])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [20731 20739])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20740 20758]))                  
+                :type "int")
+                nil [20693 24410])
+            ("gyro_ioctl" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24436 24454])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [24455 24463])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [24464 24482]))                  
+                :type "int")
+                nil [24412 25891])
+            ("read_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25919 25932])
+                    ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25933 25948]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25893 26038])
+            ("read_reg16" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26069 26082]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [26040 26264])
+            ("write_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26290 26303])
+                    ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26304 26318]))                  
+                :type "void")
+                nil [26266 26430])
+            ("modify_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26457 26470])
+                    ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26471 26489])
+                    ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26490 26506]))                  
+                :type "void")
+                nil [26432 26606])
+            ("modify_checked_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26641 26654])
+                    ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26655 26673])
+                    ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26674 26690]))                  
+                :type "void")
+                nil [26608 26798])
+            ("write_checked_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26832 26845])
+                    ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26846 26860]))                  
+                :type "void")
+                nil [26800 27066])
+            ("set_accel_range" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("max_g_in" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27097 27115]))                  
+                :type "int")
+                nil [27068 27756])
+            ("start" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [27758 28327])
+            ("stop" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [28329 28459])
+            ("measure_trampoline" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28977 28987]))                  
+                :type "void")
+                nil [28944 29091])
+            ("check_registers" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29123 29128]))                  
+                :type "void")
+                nil [29093 30988])
+            ("check_null_data" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31020 31035])
+                    ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31036 31049]))                  
+                :type "bool")
+                nil [30990 31480])
+            ("check_duplicate" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("accel_data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31512 31532]))                  
+                :type "bool")
+                nil [31482 32275])
+            ("measure" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [32277 38737])
+            ("print_info" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [38739 40014])
+            ("print_registers" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [40016 40273]))          
+      :file "mpu9250.cpp"
+      :pointmax 40274
+      :fsize 40273
+      :lastmodtime '(23847 19778 231240 910000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MPU9250_TIMER_REDUCTION" . ((number "200" 3070 . 3073)))
+          ("ACCEL_RANGE_G" . ((number "16" 3125 . 3127)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1899 1922])
+            ("sys/types.h" include (:system-flag t) nil [1924 1946])
+            ("stdint.h" include (:system-flag t) nil [1947 1966])
+            ("stdbool.h" include (:system-flag t) nil [1967 1987])
+            ("stddef.h" include (:system-flag t) nil [1988 2007])
+            ("stdlib.h" include (:system-flag t) nil [2008 2027])
+            ("semaphore.h" include (:system-flag t) nil [2028 2050])
+            ("string.h" include (:system-flag t) nil [2051 2070])
+            ("fcntl.h" include (:system-flag t) nil [2071 2089])
+            ("poll.h" include (:system-flag t) nil [2090 2107])
+            ("errno.h" include (:system-flag t) nil [2108 2126])
+            ("stdio.h" include (:system-flag t) nil [2127 2145])
+            ("math.h" include (:system-flag t) nil [2146 2163])
+            ("unistd.h" include (:system-flag t) nil [2164 2183])
+            ("getopt.h" include (:system-flag t) nil [2184 2203])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2205 2240])
+            ("systemlib/err.h" include (:system-flag t) nil [2241 2267])
+            ("systemlib/conversions.h" include (:system-flag t) nil [2268 2302])
+            ("systemlib/px4_macros.h" include (:system-flag t) nil [2303 2336])
+            ("nuttx/arch.h" include (:system-flag t) nil [2338 2361])
+            ("nuttx/clock.h" include (:system-flag t) nil [2362 2386])
+            ("board_config.h" include (:system-flag t) nil [2388 2413])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2414 2442])
+            ("drivers/device/spi.h" include (:system-flag t) nil [2444 2475])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2476 2514])
+            ("drivers/device/integrator.h" include (:system-flag t) nil [2515 2553])
+            ("drivers/drv_accel.h" include (:system-flag t) nil [2554 2584])
+            ("drivers/drv_gyro.h" include (:system-flag t) nil [2585 2614])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2615 2643])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [2644 2694])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2695 2731])
+            ("mag.h" include nil nil [2733 2749])
+            ("gyro.h" include nil nil [2750 2767])
+            ("mpu9250.h" include nil nil [2768 2788])
+            ("MPU9250_TIMER_REDUCTION" variable (:constant-flag t) nil [3043 3066])
+            ("ACCEL_RANGE_G" variable (:constant-flag t) nil [3110 3123])
+            ("MPU9250::_checked_registers" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{ MPUREG_WHOAMI,
+									     MPUREG_PWR_MGMT_1,
+									     MPUREG_PWR_MGMT_2,
+									     MPUREG_USER_CTRL,
+									     MPUREG_SMPLRT_DIV,
+									     MPUREG_CONFIG,
+									     MPUREG_GYRO_CONFIG,
+									     MPUREG_ACCEL_CONFIG,
+									     MPUREG_ACCEL_CONFIG2,
+									     MPUREG_INT_ENABLE,
+									     MPUREG_INT_PIN_CFG
+									   }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3255 3692])
+            ("MPU9250" function
+               (:constructor-flag t
+                :parent "MPU9250"
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3712 3738])
+                    ("mag_interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3739 3769])
+                    ("path_accel" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3770 3793])
+                    ("path_gyro" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3797 3819])
+                    ("path_mag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3820 3841])
+                    ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3845 3868]))                  
+                :type ("MPU9250" type (:type "class") nil nil))
+                nil [3695 7947])
+            ("MPU9250" function
+               (:destructor-flag t
+                :parent "MPU9250"
+                :type "void")
+                nil [7949 8715])
+            ("init" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [8717 13210])
+            ("reset" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [13212 13891])
+            ("reset_mpu" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [13893 16162])
+            ("probe" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [16164 16593])
+            ("_set_sample_rate" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("desired_sample_rate_hz" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16703 16735]))                  
+                :type "void")
+                nil [16672 17133])
+            ("_set_dlpf_filter" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("frequency_hz" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17240 17262]))                  
+                :type "void")
+                nil [17209 18128])
+            ("read" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18152 18170])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18171 18184])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18185 18199]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [18130 18946])
+            ("self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [18948 19126])
+            ("accel_self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [19128 19209])
+            ("gyro_self_test" function
+               (:parent "MPU9250"
+                :type "int")
+                nil [19211 20312])
+            ("test_error" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [20387 20734])
+            ("gyro_read" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20763 20781])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20782 20795])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20796 20810]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [20736 21549])
+            ("ioctl" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21570 21588])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [21589 21597])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21598 21616]))                  
+                :type "int")
+                nil [21551 25509])
+            ("gyro_ioctl" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25535 25553])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [25554 25562])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [25563 25581]))                  
+                :type "int")
+                nil [25511 26990])
+            ("read_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27018 27031])
+                    ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27032 27047]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26992 27137])
+            ("read_reg16" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27168 27181]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [27139 27363])
+            ("write_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27389 27402])
+                    ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27403 27417]))                  
+                :type "void")
+                nil [27365 27529])
+            ("modify_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27556 27569])
+                    ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27570 27588])
+                    ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27589 27605]))                  
+                :type "void")
+                nil [27531 27705])
+            ("modify_checked_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27740 27753])
+                    ("clearbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27754 27772])
+                    ("setbits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27773 27789]))                  
+                :type "void")
+                nil [27707 27897])
+            ("write_checked_reg" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27931 27944])
+                    ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27945 27959]))                  
+                :type "void")
+                nil [27899 28165])
+            ("set_accel_range" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("max_g_in" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28196 28214]))                  
+                :type "int")
+                nil [28167 28855])
+            ("start" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [28857 29426])
+            ("stop" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [29428 29558])
+            ("measure_trampoline" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30076 30086]))                  
+                :type "void")
+                nil [30043 30190])
+            ("check_registers" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30222 30227]))                  
+                :type "void")
+                nil [30192 32087])
+            ("check_null_data" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32119 32134])
+                    ("size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32135 32148]))                  
+                :type "bool")
+                nil [32089 32579])
+            ("check_duplicate" function
+               (:parent "MPU9250"
+                :arguments 
+                  ( ("accel_data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32611 32631]))                  
+                :type "bool")
+                nil [32581 33374])
+            ("measure" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [33376 40656])
+            ("print_info" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [40658 41933])
+            ("print_registers" function
+               (:parent "MPU9250"
+                :type "void")
+                nil [41935 42192]))          
+      :file "mpu9250.cpp~"
+      :pointmax 42193
+      :fsize 41706
+      :lastmodtime '(23846 4401 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MPU9250_TIMER_REDUCTION" . ((number "200" 3070 . 3073)))
+          ("ACCEL_RANGE_G" . ((number "16" 3125 . 3127)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!mpu9250!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

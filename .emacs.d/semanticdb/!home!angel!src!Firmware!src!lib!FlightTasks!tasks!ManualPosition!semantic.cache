@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CollisionPrevention/CollisionPrevention.hpp" include (:system-flag t) nil [1853 1907])
+            ("FlightTaskManualAltitude.hpp" include nil nil [1908 1947])
+            ("FlightTaskManualPosition" type
+               (:superclasses 
+                  ( ("FlightTaskManualAltitude" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2016 2023])
+                    ("FlightTaskManualPosition" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FlightTaskManualPosition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2025 2052])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2171 2180])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2198 2207])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2233 2242])
+                    ("protected" label nil (reparse-symbol classsubparts) [2453 2463])
+                    ("_updateXYlock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2465 2486])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2570 2579])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2601 2610])
+                    ("private" label nil (reparse-symbol classsubparts) [2971 2979])
+                    ("_velocity_scale" variable (:type "float") (reparse-symbol classsubparts) [2981 3009])
+                    ("_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3048 3074])
+                    ("_weathervane_yaw_handler" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("WeatherVane" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3130 3180])
+                    ("_collision_prevention" variable (:type ("CollisionPrevention" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3299 3341]))                  
+                :type "class")
+                nil [1949 3391]))          
+      :file "FlightTaskManualPosition.hpp"
+      :pointmax 3392
+      :fsize 3391
+      :lastmodtime '(23816 60809 868154 814000)
+      :unmatched-syntax '((semantic-list 2644 . 2970) (symbol 2613 . 2644) (semantic-list 2890 . 2933) (semantic-list 2818 . 2860) (semantic-list 2746 . 2788) (semantic-list 2676 . 2717) (semantic-list 2598 . 2600) (symbol 2586 . 2598) (VOID 2581 . 2585) (semantic-list 2567 . 2569) (symbol 2551 . 2567) (VOID 2546 . 2550) (semantic-list 2407 . 2450) (symbol 2398 . 2406) (semantic-list 2371 . 2397) (symbol 2358 . 2371) (VOID 2353 . 2357) (semantic-list 2230 . 2232) (symbol 2214 . 2230) (BOOL 2209 . 2213) (semantic-list 2195 . 2197) (symbol 2187 . 2195) (BOOL 2182 . 2186) (semantic-list 2131 . 2170) (symbol 2108 . 2131) (BOOL 2103 . 2107) (punctuation 2100 . 2101) (DEFAULT 2093 . 2100) (punctuation 2091 . 2092) (semantic-list 2088 . 2090) (symbol 2064 . 2088) (punctuation 2063 . 2064) (VIRTUAL 2055 . 2062) (symbol 1847 . 1851) (symbol 1840 . 1846) (punctuation 1839 . 1840)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskManualPosition.hpp" include nil nil [1781 1820])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1821 1849])
+            ("float.h" include (:system-flag t) nil [1850 1868])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1870 1893])
+            ("FlightTaskManualPosition" function
+               (:constructor-flag t
+                :parent "FlightTaskManualPosition"
+                :type ("FlightTaskManualPosition" type (:type "class") nil nil))
+                nil [1895 1982])
+            ("initializeSubscriptions" function
+               (:parent "FlightTaskManualPosition"
+                :arguments 
+                  ( ("subscription_array" variable
+                       (:reference 1
+                        :type ("SubscriptionArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2039 2077]))                  
+                :type "bool")
+                nil [1984 2194])
+            ("updateInitialize" function
+               (:parent "FlightTaskManualPosition"
+                :type "bool")
+                nil [2196 2508])
+            ("activate" function
+               (:parent "FlightTaskManualPosition"
+                :type "bool")
+                nil [2510 3172])
+            ("_scaleSticks" function
+               (:parent "FlightTaskManualPosition"
+                :type "void")
+                nil [3174 4680])
+            ("_updateXYlock" function
+               (:parent "FlightTaskManualPosition"
+                :type "void")
+                nil [4682 5703])
+            ("_updateSetpoints" function
+               (:parent "FlightTaskManualPosition"
+                :type "void")
+                nil [5705 6250]))          
+      :file "FlightTaskManualPosition.cpp"
+      :pointmax 6251
+      :fsize 6250
+      :lastmodtime '(23816 61035 741749 130000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!ManualPosition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

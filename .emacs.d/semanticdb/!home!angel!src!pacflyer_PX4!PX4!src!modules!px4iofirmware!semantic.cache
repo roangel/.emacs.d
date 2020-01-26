@@ -1,0 +1,873 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("inttypes.h" include (:system-flag t) nil [1753 1774])
+            ("REG_TO_SIGNED" variable (:constant-flag t) nil [3199 3212])
+            ("SIGNED_TO_REG" variable (:constant-flag t) nil [3245 3258])
+            ("REG_TO_FLOAT" variable (:constant-flag t) nil [3299 3311])
+            ("FLOAT_TO_REG" variable (:constant-flag t) nil [3366 3378])
+            ("PX4IO_PROTOCOL_VERSION" variable (:constant-flag t) nil [3459 3481])
+            ("PX4IO_PROTOCOL_MAX_CONTROL_COUNT" variable (:constant-flag t) nil [3549 3581])
+            ("PX4IO_PAGE_CONFIG" variable (:constant-flag t) nil [3754 3771])
+            ("PX4IO_P_CONFIG_PROTOCOL_VERSION" variable (:constant-flag t) nil [3786 3817])
+            ("PX4IO_P_CONFIG_HARDWARE_VERSION" variable (:constant-flag t) nil [3858 3889])
+            ("PX4IO_P_CONFIG_BOOTLOADER_VERSION" variable (:constant-flag t) nil [3925 3958])
+            ("PX4IO_P_CONFIG_MAX_TRANSFER" variable (:constant-flag t) nil [3989 4016])
+            ("PX4IO_P_CONFIG_CONTROL_COUNT" variable (:constant-flag t) nil [4061 4089])
+            ("PX4IO_P_CONFIG_ACTUATOR_COUNT" variable (:constant-flag t) nil [4145 4174])
+            ("PX4IO_P_CONFIG_RC_INPUT_COUNT" variable (:constant-flag t) nil [4228 4257])
+            ("PX4IO_P_CONFIG_ADC_INPUT_COUNT" variable (:constant-flag t) nil [4315 4345])
+            ("PX4IO_P_CONFIG_RELAY_COUNT" variable (:constant-flag t) nil [4388 4414])
+            ("PX4IO_MAX_TRANSFER_LEN" variable (:constant-flag t) nil [4462 4484])
+            ("PX4IO_PAGE_STATUS" variable (:constant-flag t) nil [4526 4543])
+            ("PX4IO_P_STATUS_FREEMEM" variable (:constant-flag t) nil [4555 4577])
+            ("PX4IO_P_STATUS_CPULOAD" variable (:constant-flag t) nil [4590 4612])
+            ("PX4IO_P_STATUS_FLAGS" variable (:constant-flag t) nil [4626 4646])
+            ("PX4IO_P_STATUS_FLAGS_OUTPUTS_ARMED" variable (:constant-flag t) nil [4683 4717])
+            ("PX4IO_P_STATUS_FLAGS_OVERRIDE" variable (:constant-flag t) nil [4766 4795])
+            ("PX4IO_P_STATUS_FLAGS_RC_OK" variable (:constant-flag t) nil [4839 4865])
+            ("PX4IO_P_STATUS_FLAGS_RC_PPM" variable (:constant-flag t) nil [4908 4935])
+            ("PX4IO_P_STATUS_FLAGS_RC_DSM" variable (:constant-flag t) nil [4979 5006])
+            ("PX4IO_P_STATUS_FLAGS_RC_SBUS" variable (:constant-flag t) nil [5050 5078])
+            ("PX4IO_P_STATUS_FLAGS_FMU_OK" variable (:constant-flag t) nil [5123 5150])
+            ("PX4IO_P_STATUS_FLAGS_RAW_PWM" variable (:constant-flag t) nil [5203 5231])
+            ("PX4IO_P_STATUS_FLAGS_MIXER_OK" variable (:constant-flag t) nil [5296 5325])
+            ("PX4IO_P_STATUS_FLAGS_ARM_SYNC" variable (:constant-flag t) nil [5362 5391])
+            ("PX4IO_P_STATUS_FLAGS_INIT_OK" variable (:constant-flag t) nil [5463 5491])
+            ("PX4IO_P_STATUS_FLAGS_FAILSAFE" variable (:constant-flag t) nil [5566 5595])
+            ("PX4IO_P_STATUS_FLAGS_SAFETY_OFF" variable (:constant-flag t) nil [5640 5671])
+            ("PX4IO_P_STATUS_FLAGS_FMU_INITIALIZED" variable (:constant-flag t) nil [5711 5747])
+            ("PX4IO_P_STATUS_FLAGS_RC_ST24" variable (:constant-flag t) nil [5804 5832])
+            ("PX4IO_P_STATUS_FLAGS_RC_SUMD" variable (:constant-flag t) nil [5878 5906])
+            ("PX4IO_P_STATUS_ALARMS" variable (:constant-flag t) nil [5953 5974])
+            ("PX4IO_P_STATUS_ALARMS_VBATT_LOW" variable (:constant-flag t) nil [6051 6082])
+            ("PX4IO_P_STATUS_ALARMS_TEMPERATURE" variable (:constant-flag t) nil [6152 6185])
+            ("PX4IO_P_STATUS_ALARMS_SERVO_CURRENT" variable (:constant-flag t) nil [6235 6270])
+            ("PX4IO_P_STATUS_ALARMS_ACC_CURRENT" variable (:constant-flag t) nil [6331 6364])
+            ("PX4IO_P_STATUS_ALARMS_FMU_LOST" variable (:constant-flag t) nil [6429 6459])
+            ("PX4IO_P_STATUS_ALARMS_RC_LOST" variable (:constant-flag t) nil [6524 6553])
+            ("PX4IO_P_STATUS_ALARMS_PWM_ERROR" variable (:constant-flag t) nil [6609 6640])
+            ("PX4IO_P_STATUS_ALARMS_VSERVO_FAULT" variable (:constant-flag t) nil [6701 6735])
+            ("PX4IO_P_STATUS_VSERVO" variable (:constant-flag t) nil [6812 6833])
+            ("PX4IO_P_STATUS_VRSSI" variable (:constant-flag t) nil [6881 6901])
+            ("PX4IO_P_STATUS_PRSSI" variable (:constant-flag t) nil [6937 6957])
+            ("PX4IO_P_STATUS_MIXER" variable (:constant-flag t) nil [6996 7016])
+            ("PX4IO_PAGE_ACTUATORS" variable (:constant-flag t) nil [7120 7140])
+            ("PX4IO_PAGE_SERVOS" variable (:constant-flag t) nil [7240 7257])
+            ("PX4IO_PAGE_RAW_RC_INPUT" variable (:constant-flag t) nil [7353 7376])
+            ("PX4IO_P_RAW_RC_COUNT" variable (:constant-flag t) nil [7388 7408])
+            ("PX4IO_P_RAW_RC_FLAGS" variable (:constant-flag t) nil [7452 7472])
+            ("PX4IO_P_RAW_RC_FLAGS_FRAME_DROP" variable (:constant-flag t) nil [7514 7545])
+            ("PX4IO_P_RAW_RC_FLAGS_FAILSAFE" variable (:constant-flag t) nil [7588 7617])
+            ("PX4IO_P_RAW_RC_FLAGS_RC_DSM11" variable (:constant-flag t) nil [7671 7700])
+            ("PX4IO_P_RAW_RC_FLAGS_MAPPING_OK" variable (:constant-flag t) nil [7753 7784])
+            ("PX4IO_P_RAW_RC_FLAGS_RC_OK" variable (:constant-flag t) nil [7831 7857])
+            ("PX4IO_P_RAW_RC_NRSSI" variable (:constant-flag t) nil [7899 7919])
+            ("PX4IO_P_RAW_RC_DATA" variable (:constant-flag t) nil [8005 8024])
+            ("PX4IO_P_RAW_FRAME_COUNT" variable (:constant-flag t) nil [8124 8147])
+            ("PX4IO_P_RAW_LOST_FRAME_COUNT" variable (:constant-flag t) nil [8217 8245])
+            ("PX4IO_P_RAW_RC_BASE" variable (:constant-flag t) nil [8313 8332])
+            ("PX4IO_PAGE_RC_INPUT" variable (:constant-flag t) nil [8446 8465])
+            ("PX4IO_P_RC_VALID" variable (:constant-flag t) nil [8477 8493])
+            ("PX4IO_P_RC_BASE" variable (:constant-flag t) nil [8538 8553])
+            ("PX4IO_PAGE_RAW_ADC_INPUT" variable (:constant-flag t) nil [8645 8669])
+            ("PX4IO_PAGE_PWM_INFO" variable (:constant-flag t) nil [8744 8763])
+            ("PX4IO_RATE_MAP_BASE" variable (:constant-flag t) nil [8775 8794])
+            ("PX4IO_PAGE_SETUP" variable (:constant-flag t) nil [8883 8899])
+            ("PX4IO_P_SETUP_FEATURES" variable (:constant-flag t) nil [8912 8934])
+            ("PX4IO_P_SETUP_FEATURES_SBUS1_OUT" variable (:constant-flag t) nil [8947 8979])
+            ("PX4IO_P_SETUP_FEATURES_SBUS2_OUT" variable (:constant-flag t) nil [9028 9060])
+            ("PX4IO_P_SETUP_FEATURES_PWM_RSSI" variable (:constant-flag t) nil [9109 9140])
+            ("PX4IO_P_SETUP_FEATURES_ADC_RSSI" variable (:constant-flag t) nil [9191 9222])
+            ("PX4IO_P_SETUP_ARMING" variable (:constant-flag t) nil [9274 9294])
+            ("PX4IO_P_SETUP_ARMING_IO_ARM_OK" variable (:constant-flag t) nil [9330 9360])
+            ("PX4IO_P_SETUP_ARMING_FMU_ARMED" variable (:constant-flag t) nil [9407 9437])
+            ("PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK" variable (:constant-flag t) nil [9483 9522])
+            ("PX4IO_P_SETUP_ARMING_FAILSAFE_CUSTOM" variable (:constant-flag t) nil [9602 9638])
+            ("PX4IO_P_SETUP_ARMING_INAIR_RESTART_OK" variable (:constant-flag t) nil [9712 9749])
+            ("PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE" variable (:constant-flag t) nil [9798 9836])
+            ("PX4IO_P_SETUP_ARMING_RC_HANDLING_DISABLED" variable (:constant-flag t) nil [9956 9997])
+            ("PX4IO_P_SETUP_ARMING_LOCKDOWN" variable (:constant-flag t) nil [10066 10095])
+            ("PX4IO_P_SETUP_ARMING_FORCE_FAILSAFE" variable (:constant-flag t) nil [10187 10222])
+            ("PX4IO_P_SETUP_ARMING_TERMINATION_FAILSAFE" variable (:constant-flag t) nil [10304 10345])
+            ("PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE" variable (:constant-flag t) nil [10462 10501])
+            ("PX4IO_P_SETUP_PWM_RATES" variable (:constant-flag t) nil [10648 10671])
+            ("PX4IO_P_SETUP_PWM_DEFAULTRATE" variable (:constant-flag t) nil [10727 10756])
+            ("PX4IO_P_SETUP_PWM_ALTRATE" variable (:constant-flag t) nil [10808 10833])
+            ("PX4IO_P_SETUP_RELAYS_PAD" variable (:constant-flag t) nil [10886 10910])
+            ("PX4IO_P_SETUP_VSERVO_SCALE" variable (:constant-flag t) nil [10923 10949])
+            ("PX4IO_P_SETUP_DSM" variable (:constant-flag t) nil [11024 11041])
+            ("" type
+               (:members 
+                  ( ("dsm_bind_power_down" variable
+                       (:constant-flag t
+                        :default-value (11125 11126)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11103 11126])
+                    ("dsm_bind_power_up" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11129 11147])
+                    ("dsm_bind_set_rx_out" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11149 11169])
+                    ("dsm_bind_send_pulses" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11171 11192])
+                    ("dsm_bind_reinit_uart" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11194 11216]))                  
+                :type "enum")
+                nil [11067 11217])
+            ("PX4IO_P_SETUP_SET_DEBUG" variable (:constant-flag t) nil [11234 11257])
+            ("PX4IO_P_SETUP_REBOOT_BL" variable (:constant-flag t) nil [11302 11325])
+            ("PX4IO_REBOOT_BL_MAGIC" variable (:constant-flag t) nil [11371 11392])
+            ("PX4IO_P_SETUP_CRC" variable (:constant-flag t) nil [11454 11471])
+            ("PX4IO_P_SETUP_FORCE_SAFETY_OFF" variable (:constant-flag t) nil [11556 11586])
+            ("PX4IO_P_SETUP_RC_THR_FAILSAFE_US" variable (:constant-flag t) nil [11842 11874])
+            ("PX4IO_P_SETUP_FORCE_SAFETY_ON" variable (:constant-flag t) nil [11946 11975])
+            ("PX4IO_FORCE_SAFETY_MAGIC" variable (:constant-flag t) nil [12051 12075])
+            ("PX4IO_P_SETUP_PWM_REVERSE" variable (:constant-flag t) nil [12142 12167])
+            ("PX4IO_P_SETUP_TRIM_ROLL" variable (:constant-flag t) nil [12224 12247])
+            ("PX4IO_P_SETUP_TRIM_PITCH" variable (:constant-flag t) nil [12298 12322])
+            ("PX4IO_P_SETUP_TRIM_YAW" variable (:constant-flag t) nil [12373 12395])
+            ("PX4IO_P_SETUP_SCALE_ROLL" variable (:constant-flag t) nil [12445 12469])
+            ("PX4IO_P_SETUP_SCALE_PITCH" variable (:constant-flag t) nil [12520 12545])
+            ("PX4IO_P_SETUP_SCALE_YAW" variable (:constant-flag t) nil [12597 12620])
+            ("PX4IO_P_SETUP_SBUS_RATE" variable (:constant-flag t) nil [12672 12695])
+            ("PX4IO_P_SETUP_MOTOR_SLEW_MAX" variable (:constant-flag t) nil [12749 12777])
+            ("PX4IO_P_SETUP_THR_MDL_FAC" variable (:constant-flag t) nil [12818 12843])
+            ("PX4IO_P_SETUP_THERMAL" variable (:constant-flag t) nil [12926 12947])
+            ("PX4IO_THERMAL_IGNORE" variable (:constant-flag t) nil [12986 13006])
+            ("PX4IO_THERMAL_OFF" variable (:constant-flag t) nil [13028 13045])
+            ("PX4IO_THERMAL_FULL" variable (:constant-flag t) nil [13058 13076])
+            ("PX4IO_PAGE_CONTROLS" variable (:constant-flag t) nil [13140 13159])
+            ("PX4IO_P_CONTROLS_GROUP_0" variable (:constant-flag t) nil [13234 13258])
+            ("PX4IO_P_CONTROLS_GROUP_1" variable (:constant-flag t) nil [13355 13379])
+            ("PX4IO_P_CONTROLS_GROUP_2" variable (:constant-flag t) nil [13476 13500])
+            ("PX4IO_P_CONTROLS_GROUP_3" variable (:constant-flag t) nil [13597 13621])
+            ("PX4IO_P_CONTROLS_GROUP_VALID" variable (:constant-flag t) nil [13719 13747])
+            ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP0" variable (:constant-flag t) nil [13760 13795])
+            ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP1" variable (:constant-flag t) nil [13849 13884])
+            ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP2" variable (:constant-flag t) nil [13938 13973])
+            ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP3" variable (:constant-flag t) nil [14027 14062])
+            ("PX4IO_PAGE_MIXERLOAD" variable (:constant-flag t) nil [14174 14194])
+            ("PX4IO_PAGE_RC_CONFIG" variable (:constant-flag t) nil [14234 14254])
+            ("PX4IO_P_RC_CONFIG_MIN" variable (:constant-flag t) nil [14301 14322])
+            ("PX4IO_P_RC_CONFIG_CENTER" variable (:constant-flag t) nil [14363 14387])
+            ("PX4IO_P_RC_CONFIG_MAX" variable (:constant-flag t) nil [14427 14448])
+            ("PX4IO_P_RC_CONFIG_DEADZONE" variable (:constant-flag t) nil [14490 14516])
+            ("PX4IO_P_RC_CONFIG_ASSIGNMENT" variable (:constant-flag t) nil [14572 14600])
+            ("PX4IO_P_RC_CONFIG_ASSIGNMENT_MODESWITCH" variable (:constant-flag t) nil [14640 14679])
+            ("PX4IO_P_RC_CONFIG_OPTIONS" variable (:constant-flag t) nil [14729 14754])
+            ("PX4IO_P_RC_CONFIG_OPTIONS_ENABLED" variable (:constant-flag t) nil [14799 14832])
+            ("PX4IO_P_RC_CONFIG_OPTIONS_REVERSE" variable (:constant-flag t) nil [14850 14883])
+            ("PX4IO_P_RC_CONFIG_STRIDE" variable (:constant-flag t) nil [14901 14925])
+            ("PX4IO_PAGE_DIRECT_PWM" variable (:constant-flag t) nil [15018 15039])
+            ("PX4IO_PAGE_FAILSAFE_PWM" variable (:constant-flag t) nil [15143 15166])
+            ("PX4IO_PAGE_SENSORS" variable (:constant-flag t) nil [15270 15288])
+            ("PX4IO_P_SENSORS_ALTITUDE" variable (:constant-flag t) nil [15338 15362])
+            ("PX4IO_PAGE_TEST" variable (:constant-flag t) nil [15489 15504])
+            ("PX4IO_P_TEST_LED" variable (:constant-flag t) nil [15520 15536])
+            ("PX4IO_PAGE_CONTROL_MIN_PWM" variable (:constant-flag t) nil [15626 15652])
+            ("PX4IO_PAGE_CONTROL_MAX_PWM" variable (:constant-flag t) nil [15745 15771])
+            ("PX4IO_PAGE_CONTROL_TRIM_PWM" variable (:constant-flag t) nil [15866 15893])
+            ("PX4IO_PAGE_DISARMED_PWM" variable (:constant-flag t) nil [16009 16032])
+            ("px4io_mixdata" type
+               (:members 
+                  ( ("f2i_mixer_magic" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16278 16303])
+                    ("F2I_MIXER_MAGIC" variable (:constant-flag t) (reparse-symbol classsubparts) [16312 16327])
+                    ("action" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16338 16354])
+                    ("F2I_MIXER_ACTION_RESET" variable (:constant-flag t) (reparse-symbol classsubparts) [16363 16385])
+                    ("F2I_MIXER_ACTION_APPEND" variable (:constant-flag t) (reparse-symbol classsubparts) [16398 16421])
+                    ("text" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [16428 16442]))                  
+                :type "struct")
+                nil [16254 16477])
+            ("PKT_MAX_REGS" variable (:constant-flag t) nil [16548 16560])
+            ("IOPacket" type
+               (:members 
+                  ( ("count_code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16628 16648])
+                    ("crc" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16650 16663])
+                    ("page" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16665 16679])
+                    ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16681 16697])
+                    ("regs" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16699 16727]))                  
+                :type "struct")
+                nil [16609 16730])
+            ("PKT_CODE_READ" variable (:constant-flag t) nil [16907 16920])
+            ("PKT_CODE_WRITE" variable (:constant-flag t) nil [16966 16980])
+            ("PKT_CODE_SUCCESS" variable (:constant-flag t) nil [17027 17043])
+            ("PKT_CODE_CORRUPT" variable (:constant-flag t) nil [17085 17101])
+            ("PKT_CODE_ERROR" variable (:constant-flag t) nil [17146 17160])
+            ("PKT_CODE_MASK" variable (:constant-flag t) nil [17214 17227])
+            ("PKT_COUNT_MASK" variable (:constant-flag t) nil [17242 17256])
+            ("PKT_COUNT" variable (:constant-flag t) nil [17272 17281])
+            ("PKT_CODE" variable (:constant-flag t) nil [17329 17337])
+            ("PKT_SIZE" variable (:constant-flag t) nil [17384 17392])
+            ("crc8_tab" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	0x00, 0x07, 0x0E, 0x09, 0x1C, 0x1B, 0x12, 0x15,
+	0x38, 0x3F, 0x36, 0x31, 0x24, 0x23, 0x2A, 0x2D,
+	0x70, 0x77, 0x7E, 0x79, 0x6C, 0x6B, 0x62, 0x65,
+	0x48, 0x4F, 0x46, 0x41, 0x54, 0x53, 0x5A, 0x5D,
+	0xE0, 0xE7, 0xEE, 0xE9, 0xFC, 0xFB, 0xF2, 0xF5,
+	0xD8, 0xDF, 0xD6, 0xD1, 0xC4, 0xC3, 0xCA, 0xCD,
+	0x90, 0x97, 0x9E, 0x99, 0x8C, 0x8B, 0x82, 0x85,
+	0xA8, 0xAF, 0xA6, 0xA1, 0xB4, 0xB3, 0xBA, 0xBD,
+	0xC7, 0xC0, 0xC9, 0xCE, 0xDB, 0xDC, 0xD5, 0xD2,
+	0xFF, 0xF8, 0xF1, 0xF6, 0xE3, 0xE4, 0xED, 0xEA,
+	0xB7, 0xB0, 0xB9, 0xBE, 0xAB, 0xAC, 0xA5, 0xA2,
+	0x8F, 0x88, 0x81, 0x86, 0x93, 0x94, 0x9D, 0x9A,
+	0x27, 0x20, 0x29, 0x2E, 0x3B, 0x3C, 0x35, 0x32,
+	0x1F, 0x18, 0x11, 0x16, 0x03, 0x04, 0x0D, 0x0A,
+	0x57, 0x50, 0x59, 0x5E, 0x4B, 0x4C, 0x45, 0x42,
+	0x6F, 0x68, 0x61, 0x66, 0x73, 0x74, 0x7D, 0x7A,
+	0x89, 0x8E, 0x87, 0x80, 0x95, 0x92, 0x9B, 0x9C,
+	0xB1, 0xB6, 0xBF, 0xB8, 0xAD, 0xAA, 0xA3, 0xA4,
+	0xF9, 0xFE, 0xF7, 0xF0, 0xE5, 0xE2, 0xEB, 0xEC,
+	0xC1, 0xC6, 0xCF, 0xC8, 0xDD, 0xDA, 0xD3, 0xD4,
+	0x69, 0x6E, 0x67, 0x60, 0x75, 0x72, 0x7B, 0x7C,
+	0x51, 0x56, 0x5F, 0x58, 0x4D, 0x4A, 0x43, 0x44,
+	0x19, 0x1E, 0x17, 0x10, 0x05, 0x02, 0x0B, 0x0C,
+	0x21, 0x26, 0x2F, 0x28, 0x3D, 0x3A, 0x33, 0x34,
+	0x4E, 0x49, 0x40, 0x47, 0x52, 0x55, 0x5C, 0x5B,
+	0x76, 0x71, 0x78, 0x7F, 0x6A, 0x6D, 0x64, 0x63,
+	0x3E, 0x39, 0x30, 0x37, 0x22, 0x25, 0x2C, 0x2B,
+	0x06, 0x01, 0x08, 0x0F, 0x1A, 0x1D, 0x14, 0x13,
+	0xAE, 0xA9, 0xA0, 0xA7, 0xB2, 0xB5, 0xBC, 0xBB,
+	0x96, 0x91, 0x98, 0x9F, 0x8A, 0x8D, 0x84, 0x83,
+	0xDE, 0xD9, 0xD0, 0xD7, 0xC2, 0xC5, 0xCC, 0xCB,
+	0xE6, 0xE1, 0xE8, 0xEF, 0xFA, 0xFD, 0xF4, 0xF3
+}"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [17470 19102])
+            ("crc_packet" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pkt" variable
+                       (:pointer 1
+                        :type ("IOPacket" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19130 19151]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [19104 19176])
+            ("crc_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pkt" variable
+                       (:pointer 1
+                        :type ("IOPacket" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19203 19224]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [19177 19396]))          
+      :file "protocol.h"
+      :pointmax 19397
+      :fsize 19396
+      :lastmodtime '(23807 35764 923221 601000)
+      :unmatched-syntax '((semantic-list 16743 . 16748) (symbol 16739 . 16743) (symbol 16732 . 16738) (punctuation 16731 . 16732) (semantic-list 16599 . 16608) (symbol 16595 . 16599) (number 16606 . 16607) (symbol 16588 . 16594) (number 16606 . 16607) (punctuation 16587 . 16588) (semantic-list 16490 . 16495) (symbol 16486 . 16490) (symbol 16479 . 16485) (punctuation 16478 . 16479) (semantic-list 16244 . 16253) (symbol 16240 . 16244) (number 16251 . 16252) (symbol 16233 . 16239) (number 16251 . 16252) (punctuation 16232 . 16233) (symbol 1747 . 1751) (symbol 1740 . 1746) (punctuation 1739 . 1740))
+      :lexical-table 
+        '(("PX4IO_P_CONFIG_ADC_INPUT_COUNT" . ((number "7" 4347 . 4348)))
+          ("PX4IO_P_STATUS_FLAGS_MIXER_OK" . ((semantic-list "(1 << 8)" 5327 . 5335)))
+          ("PX4IO_P_STATUS_FLAGS_FMU_INITIALIZED" . ((semantic-list "(1 << 13)" 5748 . 5757)))
+          ("PX4IO_P_STATUS_ALARMS_RC_LOST" . ((semantic-list "(1 << 5)" 6555 . 6563)))
+          ("PX4IO_P_SETUP_SCALE_ROLL" . ((number "19" 12471 . 12473)))
+          ("PX4IO_P_SETUP_SCALE_PITCH" . ((number "20" 12547 . 12549)))
+          ("PX4IO_THERMAL_IGNORE" . ((symbol "UINT16_MAX" 13009 . 13019)))
+          ("PX4IO_PAGE_MIXERLOAD" . ((number "52" 14197 . 14199)))
+          ("PX4IO_P_RC_CONFIG_MAX" . ((number "2" 14451 . 14452)))
+          ("PX4IO_PAGE_CONTROL_MIN_PWM" . ((number "106" 15654 . 15657)))
+          ("PX4IO_PAGE_CONFIG" . ((number "0" 3776 . 3777)))
+          ("PX4IO_P_STATUS_FLAGS" . ((number "2" 4649 . 4650)))
+          ("PX4IO_P_STATUS_FLAGS_OVERRIDE" . ((semantic-list "(1 << 1)" 4797 . 4805)))
+          ("PX4IO_P_STATUS_ALARMS_ACC_CURRENT" . ((semantic-list "(1 << 3)" 6365 . 6373)))
+          ("PX4IO_P_RAW_RC_FLAGS_RC_OK" . ((semantic-list "(1 << 4)" 7859 . 7867)))
+          ("PX4IO_P_RAW_LOST_FRAME_COUNT" . ((number "5" 8247 . 8248)))
+          ("PX4IO_PAGE_RC_INPUT" . ((number "5" 8467 . 8468)))
+          ("PX4IO_P_SETUP_FEATURES_SBUS2_OUT" . ((semantic-list "(1 << 1)" 9061 . 9069)))
+          ("PX4IO_P_SETUP_ARMING_IO_ARM_OK" . ((semantic-list "(1 << 0)" 9362 . 9370)))
+          ("PX4IO_P_SETUP_ARMING_INAIR_RESTART_OK" . ((semantic-list "(1 << 4)" 9750 . 9758)))
+          ("PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE" . ((semantic-list "(1 << 10)" 10502 . 10511)))
+          ("PX4IO_P_RC_CONFIG_MIN" . ((number "0" 14325 . 14326)))
+          ("PX4IO_P_TEST_LED" . ((number "0" 15539 . 15540)))
+          ("PX4IO_P_CONFIG_HARDWARE_VERSION" . ((number "1" 3891 . 3892)))
+          ("PX4IO_P_CONFIG_BOOTLOADER_VERSION" . ((number "2" 3959 . 3960)))
+          ("PX4IO_P_CONFIG_CONTROL_COUNT" . ((number "4" 4091 . 4092)))
+          ("PX4IO_P_STATUS_FLAGS_OUTPUTS_ARMED" . ((semantic-list "(1 << 0)" 4718 . 4726)))
+          ("PX4IO_P_STATUS_FLAGS_RAW_PWM" . ((semantic-list "(1 << 7)" 5233 . 5241)))
+          ("PX4IO_P_STATUS_ALARMS_PWM_ERROR" . ((semantic-list "(1 << 6)" 6642 . 6650)))
+          ("PX4IO_P_RAW_RC_NRSSI" . ((number "2" 7922 . 7923)))
+          ("PX4IO_PAGE_PWM_INFO" . ((number "7" 8765 . 8766)))
+          ("PX4IO_P_SETUP_PWM_DEFAULTRATE" . ((number "3" 10758 . 10759)))
+          ("PX4IO_P_RC_CONFIG_ASSIGNMENT_MODESWITCH" . ((number "100" 14680 . 14683)))
+          ("PX4IO_P_RC_CONFIG_OPTIONS_REVERSE" . ((semantic-list "(1 << 1)" 14884 . 14892)))
+          ("PX4IO_PAGE_FAILSAFE_PWM" . ((number "55" 15169 . 15171)))
+          ("PX4IO_PAGE_TEST" . ((number "127" 15508 . 15511)))
+          ("PKT_CODE_MASK" . ((number "0xc0" 17229 . 17233)))
+          ("PKT_CODE" (spp-arg-list ("_p") 17337 . 17341) . ((semantic-list "((_p).count_code & PKT_CODE_MASK)" 17342 . 17375)))
+          ("PX4IO_P_STATUS_ALARMS_TEMPERATURE" . ((semantic-list "(1 << 1)" 6186 . 6194)))
+          ("PX4IO_P_STATUS_ALARMS_SERVO_CURRENT" . ((semantic-list "(1 << 2)" 6271 . 6279)))
+          ("PX4IO_P_RAW_FRAME_COUNT" . ((number "4" 8150 . 8151)))
+          ("PX4IO_P_RC_BASE" . ((number "1" 8557 . 8558)))
+          ("PX4IO_P_SETUP_FEATURES_PWM_RSSI" . ((semantic-list "(1 << 2)" 9142 . 9150)))
+          ("PX4IO_P_SETUP_PWM_ALTRATE" . ((number "4" 10835 . 10836)))
+          ("PX4IO_P_SETUP_DSM" . ((number "7" 11044 . 11045)))
+          ("PX4IO_REBOOT_BL_MAGIC" . ((number "14662" 11395 . 11400)))
+          ("REG_TO_FLOAT" (spp-arg-list ("_reg") 3311 . 3317) . ((semantic-list "((float)REG_TO_SIGNED(_reg) / 10000.0f)" 3318 . 3357)))
+          ("PX4IO_P_STATUS_ALARMS_FMU_LOST" . ((semantic-list "(1 << 4)" 6461 . 6469)))
+          ("PX4IO_P_STATUS_PRSSI" . ((number "8" 6960 . 6961)))
+          ("PX4IO_P_SETUP_REBOOT_BL" . ((number "10" 11328 . 11330)))
+          ("PX4IO_P_SETUP_TRIM_PITCH" . ((number "17" 12324 . 12326)))
+          ("PKT_SIZE" (spp-arg-list ("_p") 17392 . 17396) . ((semantic-list "((size_t)((uint8_t *)&((_p).regs[PKT_COUNT(_p)]) - ((uint8_t *)&(_p))))" 17397 . 17468)))
+          ("F2I_MIXER_ACTION_RESET" . ((number "0" 16388 . 16389)))
+          ("REG_TO_SIGNED" (spp-arg-list ("_reg") 3212 . 3218) . ((semantic-list "((int16_t)(_reg))" 3219 . 3236)))
+          ("PX4IO_P_CONFIG_ACTUATOR_COUNT" . ((number "5" 4176 . 4177)))
+          ("PX4IO_P_STATUS_FREEMEM" . ((number "0" 4580 . 4581)))
+          ("PX4IO_P_STATUS_FLAGS_ARM_SYNC" . ((semantic-list "(1 << 9)" 5393 . 5401)))
+          ("PX4IO_P_RAW_RC_FLAGS" . ((number "1" 7475 . 7476)))
+          ("PX4IO_P_SETUP_FEATURES_ADC_RSSI" . ((semantic-list "(1 << 3)" 9224 . 9232)))
+          ("PX4IO_P_SETUP_ARMING_TERMINATION_FAILSAFE" . ((semantic-list "(1 << 9)" 10346 . 10354)))
+          ("PX4IO_P_SETUP_SCALE_YAW" . ((number "21" 12623 . 12625)))
+          ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP0" . ((semantic-list "(1 << 0)" 13796 . 13804)))
+          ("PX4IO_P_SENSORS_ALTITUDE" . ((number "0" 15364 . 15365)))
+          ("PKT_MAX_REGS" . ((number "32" 16561 . 16563)))
+          ("PKT_CODE_CORRUPT" . ((number "0x40" 17102 . 17106)))
+          ("PX4IO_P_STATUS_FLAGS_RC_PPM" . ((semantic-list "(1 << 3)" 4937 . 4945)))
+          ("PX4IO_P_RAW_RC_COUNT" . ((number "0" 7411 . 7412)))
+          ("PX4IO_P_RAW_RC_BASE" . ((number "6" 8335 . 8336)))
+          ("PX4IO_P_SETUP_ARMING_FAILSAFE_CUSTOM" . ((semantic-list "(1 << 3)" 9639 . 9647)))
+          ("PX4IO_P_SETUP_FORCE_SAFETY_OFF" . ((number "12" 11588 . 11590)))
+          ("PX4IO_P_SETUP_FORCE_SAFETY_ON" . ((number "14" 11977 . 11979)))
+          ("PX4IO_THERMAL_OFF" . ((number "0" 13048 . 13049)))
+          ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP1" . ((semantic-list "(1 << 1)" 13885 . 13893)))
+          ("PX4IO_P_RC_CONFIG_DEADZONE" . ((number "3" 14518 . 14519)))
+          ("PKT_CODE_ERROR" . ((number "0x80" 17162 . 17166)))
+          ("F2I_MIXER_ACTION_APPEND" . ((number "1" 16424 . 16425)))
+          ("PX4IO_P_STATUS_FLAGS_RC_OK" . ((semantic-list "(1 << 2)" 4867 . 4875)))
+          ("PX4IO_P_STATUS_FLAGS_SAFETY_OFF" . ((semantic-list "(1 << 12)" 5673 . 5682)))
+          ("PX4IO_PAGE_SERVOS" . ((number "3" 7259 . 7260)))
+          ("PX4IO_P_RAW_RC_FLAGS_FRAME_DROP" . ((semantic-list "(1 << 0)" 7547 . 7555)))
+          ("PX4IO_P_RAW_RC_FLAGS_FAILSAFE" . ((semantic-list "(1 << 1)" 7619 . 7627)))
+          ("PX4IO_P_RAW_RC_DATA" . ((number "3" 8027 . 8028)))
+          ("PX4IO_PAGE_RAW_ADC_INPUT" . ((number "6" 8670 . 8671)))
+          ("PX4IO_PAGE_SETUP" . ((number "50" 8901 . 8903)))
+          ("PX4IO_P_SETUP_FEATURES" . ((number "0" 8937 . 8938)))
+          ("PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK" . ((semantic-list "(1 << 2)" 9523 . 9531)))
+          ("PX4IO_P_SETUP_CRC" . ((number "11" 11474 . 11476)))
+          ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP2" . ((semantic-list "(1 << 2)" 13974 . 13982)))
+          ("PX4IO_PAGE_RC_CONFIG" . ((number "53" 14257 . 14259)))
+          ("PX4IO_P_RC_CONFIG_ASSIGNMENT" . ((number "4" 14602 . 14603)))
+          ("PX4IO_PAGE_DIRECT_PWM" . ((number "54" 15042 . 15044)))
+          ("PX4IO_PAGE_DISARMED_PWM" . ((number "109" 16034 . 16037)))
+          ("PKT_CODE_WRITE" . ((number "0x40" 16982 . 16986)))
+          ("FLOAT_TO_REG" (spp-arg-list ("_float") 3378 . 3386) . ((symbol "SIGNED_TO_REG" 3387 . 3400) (semantic-list "((int16_t)floorf((_float + 0.00005f) * 10000.0f))" 3400 . 3449)))
+          ("PX4IO_P_CONFIG_PROTOCOL_VERSION" . ((number "0" 3819 . 3820)))
+          ("PX4IO_P_STATUS_ALARMS" . ((number "3" 5977 . 5978)))
+          ("PX4IO_P_STATUS_ALARMS_VBATT_LOW" . ((semantic-list "(1 << 0)" 6084 . 6092)))
+          ("PX4IO_P_STATUS_ALARMS_VSERVO_FAULT" . ((semantic-list "(1 << 7)" 6736 . 6744)))
+          ("PX4IO_PAGE_RAW_RC_INPUT" . ((number "4" 7378 . 7379)))
+          ("PX4IO_P_SETUP_RELAYS_PAD" . ((number "5" 10912 . 10913)))
+          ("PX4IO_P_SETUP_VSERVO_SCALE" . ((number "6" 10951 . 10952)))
+          ("PX4IO_P_SETUP_TRIM_ROLL" . ((number "16" 12250 . 12252)))
+          ("PX4IO_THERMAL_FULL" . ((number "10000" 13079 . 13084)))
+          ("PX4IO_P_CONTROLS_GROUP_0" . ((semantic-list "(PX4IO_PROTOCOL_MAX_CONTROL_COUNT * 0)" 13260 . 13298)))
+          ("PX4IO_P_CONTROLS_GROUP_VALID_GROUP3" . ((semantic-list "(1 << 3)" 14063 . 14071)))
+          ("PX4IO_P_RC_CONFIG_OPTIONS" . ((number "5" 14756 . 14757)))
+          ("PKT_CODE_READ" . ((number "0x00" 16922 . 16926)))
+          ("F2I_MIXER_MAGIC" . ((number "0x6d74" 16329 . 16335)))
+          ("PX4IO_MAX_TRANSFER_LEN" . ((number "64" 4488 . 4490)))
+          ("PX4IO_PAGE_STATUS" . ((number "1" 4545 . 4546)))
+          ("PX4IO_P_STATUS_FLAGS_FMU_OK" . ((semantic-list "(1 << 6)" 5152 . 5160)))
+          ("PX4IO_P_STATUS_VRSSI" . ((number "7" 6904 . 6905)))
+          ("PX4IO_P_RAW_RC_FLAGS_MAPPING_OK" . ((semantic-list "(1 << 3)" 7786 . 7794)))
+          ("PX4IO_RATE_MAP_BASE" . ((number "0" 8797 . 8798)))
+          ("PX4IO_P_SETUP_ARMING_FMU_ARMED" . ((semantic-list "(1 << 1)" 9439 . 9447)))
+          ("PX4IO_P_SETUP_ARMING_RC_HANDLING_DISABLED" . ((semantic-list "(1 << 6)" 9998 . 10006)))
+          ("PX4IO_P_SETUP_SET_DEBUG" . ((number "9" 11260 . 11261)))
+          ("PX4IO_P_SETUP_PWM_REVERSE" . ((number "15" 12169 . 12171)))
+          ("PX4IO_P_SETUP_TRIM_YAW" . ((number "18" 12398 . 12400)))
+          ("PX4IO_P_CONTROLS_GROUP_1" . ((semantic-list "(PX4IO_PROTOCOL_MAX_CONTROL_COUNT * 1)" 13381 . 13419)))
+          ("PX4IO_P_RC_CONFIG_CENTER" . ((number "1" 14389 . 14390)))
+          ("PX4IO_P_RC_CONFIG_STRIDE" . ((number "6" 14927 . 14928)))
+          ("PKT_CODE_SUCCESS" . ((number "0x00" 17044 . 17048)))
+          ("PKT_COUNT_MASK" . ((number "0x3f" 17258 . 17262)))
+          ("PX4IO_P_STATUS_CPULOAD" . ((number "1" 4615 . 4616)))
+          ("PX4IO_P_STATUS_FLAGS_RC_SBUS" . ((semantic-list "(1 << 5)" 5080 . 5088)))
+          ("PX4IO_P_STATUS_FLAGS_INIT_OK" . ((semantic-list "(1 << 10)" 5493 . 5502)))
+          ("PX4IO_P_STATUS_FLAGS_FAILSAFE" . ((semantic-list "(1 << 11)" 5597 . 5606)))
+          ("PX4IO_P_STATUS_FLAGS_RC_ST24" . ((semantic-list "(1 << 14)" 5834 . 5843)))
+          ("PX4IO_P_RAW_RC_FLAGS_RC_DSM11" . ((semantic-list "(1 << 2)" 7702 . 7710)))
+          ("PX4IO_P_SETUP_RC_THR_FAILSAFE_US" . ((number "13" 11875 . 11877)))
+          ("PX4IO_PAGE_CONTROLS" . ((number "51" 13162 . 13164)))
+          ("PX4IO_P_CONTROLS_GROUP_2" . ((semantic-list "(PX4IO_PROTOCOL_MAX_CONTROL_COUNT * 2)" 13502 . 13540)))
+          ("PX4IO_P_CONTROLS_GROUP_VALID" . ((number "64" 13749 . 13751)))
+          ("PX4IO_PAGE_CONTROL_MAX_PWM" . ((number "107" 15773 . 15776)))
+          ("PX4IO_PAGE_CONTROL_TRIM_PWM" . ((number "108" 15895 . 15898)))
+          ("PKT_COUNT" (spp-arg-list ("_p") 17281 . 17285) . ((semantic-list "((_p).count_code & PKT_COUNT_MASK)" 17286 . 17320)))
+          ("PX4IO_PROTOCOL_VERSION" . ((number "4" 3483 . 3484)))
+          ("PX4IO_PROTOCOL_MAX_CONTROL_COUNT" . ((number "8" 3582 . 3583)))
+          ("PX4IO_P_CONFIG_RELAY_COUNT" . ((number "8" 4417 . 4418)))
+          ("PX4IO_P_STATUS_FLAGS_RC_DSM" . ((semantic-list "(1 << 4)" 5008 . 5016)))
+          ("PX4IO_P_STATUS_VSERVO" . ((number "6" 6836 . 6837)))
+          ("PX4IO_P_STATUS_MIXER" . ((number "9" 7019 . 7020)))
+          ("PX4IO_PAGE_ACTUATORS" . ((number "2" 7142 . 7143)))
+          ("PX4IO_P_RC_VALID" . ((number "0" 8496 . 8497)))
+          ("PX4IO_P_SETUP_FEATURES_SBUS1_OUT" . ((semantic-list "(1 << 0)" 8980 . 8988)))
+          ("PX4IO_P_SETUP_ARMING" . ((number "1" 9297 . 9298)))
+          ("PX4IO_P_SETUP_PWM_RATES" . ((number "2" 10674 . 10675)))
+          ("PX4IO_FORCE_SAFETY_MAGIC" . ((number "22027" 12077 . 12082)))
+          ("PX4IO_P_SETUP_MOTOR_SLEW_MAX" . ((number "24" 12779 . 12781)))
+          ("PX4IO_P_CONTROLS_GROUP_3" . ((semantic-list "(PX4IO_PROTOCOL_MAX_CONTROL_COUNT * 3)" 13623 . 13661)))
+          ("PX4IO_P_RC_CONFIG_OPTIONS_ENABLED" . ((semantic-list "(1 << 0)" 14833 . 14841)))
+          ("SIGNED_TO_REG" (spp-arg-list ("_signed") 3258 . 3267) . ((semantic-list "((uint16_t)(_signed))" 3268 . 3289)))
+          ("PX4IO_P_CONFIG_MAX_TRANSFER" . ((number "3" 4019 . 4020)))
+          ("PX4IO_P_CONFIG_RC_INPUT_COUNT" . ((number "6" 4259 . 4260)))
+          ("PX4IO_P_STATUS_FLAGS_RC_SUMD" . ((semantic-list "(1 << 15)" 5908 . 5917)))
+          ("PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE" . ((semantic-list "(1 << 5)" 9837 . 9845)))
+          ("PX4IO_P_SETUP_ARMING_LOCKDOWN" . ((semantic-list "(1 << 7)" 10097 . 10105)))
+          ("PX4IO_P_SETUP_ARMING_FORCE_FAILSAFE" . ((semantic-list "(1 << 8)" 10223 . 10231)))
+          ("PX4IO_P_SETUP_SBUS_RATE" . ((number "22" 12698 . 12700)))
+          ("PX4IO_P_SETUP_THR_MDL_FAC" . ((number "25" 12846 . 12848)))
+          ("PX4IO_P_SETUP_THERMAL" . ((number "26" 12950 . 12952)))
+          ("PX4IO_PAGE_SENSORS" . ((number "56" 15291 . 15293)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1862 1885])
+            ("stdbool.h" include (:system-flag t) nil [1887 1907])
+            ("stdlib.h" include (:system-flag t) nil [1908 1927])
+            ("string.h" include (:system-flag t) nil [1928 1947])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1949 1977])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [1978 2013])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2014 2046])
+            ("stm32_pwr.h" include (:system-flag t) nil [2047 2069])
+            ("rc/dsm.h" include (:system-flag t) nil [2070 2089])
+            ("rc/sbus.h" include (:system-flag t) nil [2090 2110])
+            ("px4io.h" include nil nil [2112 2130])
+            ("protocol.h" include nil nil [2131 2152])
+            ("registers_set_one" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2196])
+                    ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2197 2212])
+                    ("value" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2213 2228]))                  
+                :type "int")
+                nil [2154 2229])
+            ("pwm_configure_rates" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("map" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2262 2275])
+                    ("defaultrate" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2276 2297])
+                    ("altrate" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2298 2315]))                  
+                :type "void")
+                nil [2230 2316])
+            ("update_mc_thrust_param" variable (:type "bool") nil [2318 2346])
+            ("r_page_config" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	[PX4IO_P_CONFIG_PROTOCOL_VERSION]	= PX4IO_PROTOCOL_VERSION,
+	[PX4IO_P_CONFIG_HARDWARE_VERSION]	= 2,
+	[PX4IO_P_CONFIG_BOOTLOADER_VERSION]	= PX4IO_BL_VERSION,
+	[PX4IO_P_CONFIG_MAX_TRANSFER]		= PX4IO_MAX_TRANSFER_LEN,
+	[PX4IO_P_CONFIG_CONTROL_COUNT]		= PX4IO_CONTROL_CHANNELS,
+	[PX4IO_P_CONFIG_ACTUATOR_COUNT]		= PX4IO_SERVO_COUNT,
+	[PX4IO_P_CONFIG_RC_INPUT_COUNT]		= PX4IO_RC_INPUT_CHANNELS,
+	[PX4IO_P_CONFIG_ADC_INPUT_COUNT]	= PX4IO_ADC_CHANNEL_COUNT,
+	[PX4IO_P_CONFIG_RELAY_COUNT]		= PX4IO_RELAY_CHANNELS,
+}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2404 2955])
+            ("r_page_status" variable
+               (:dereference 1
+                :typemodifiers ("volatile")
+                :default-value "{
+	[PX4IO_P_STATUS_FREEMEM]		= 0,
+	[PX4IO_P_STATUS_CPULOAD]		= 0,
+	[PX4IO_P_STATUS_FLAGS]			= 0,
+	[PX4IO_P_STATUS_ALARMS]			= 0,
+	[PX4IO_P_STATUS_VSERVO]			= 0,
+	[PX4IO_P_STATUS_VRSSI]			= 0,
+	[PX4IO_P_STATUS_PRSSI]			= 0,
+	[PX4IO_P_STATUS_MIXER]			= 0,
+}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2996 3288])
+            ("r_page_actuators" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3342 3389])
+            ("r_page_servos" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3432 3475])
+            ("r_page_raw_rc_input" variable
+               (:dereference 1
+                :default-value "{
+	[PX4IO_P_RAW_RC_COUNT]			= 0,
+	[PX4IO_P_RAW_RC_FLAGS]			= 0,
+	[PX4IO_P_RAW_RC_NRSSI]			= 0,
+	[PX4IO_P_RAW_RC_DATA]			= 0,
+	[PX4IO_P_RAW_FRAME_COUNT]		= 0,
+	[PX4IO_P_RAW_LOST_FRAME_COUNT]		= 0,
+	[PX4IO_P_RAW_RC_BASE ...(PX4IO_P_RAW_RC_BASE + PX4IO_RC_INPUT_CHANNELS)] = 0
+}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3514 3824])
+            ("r_page_rc_input" variable
+               (:dereference 1
+                :default-value "{
+	[PX4IO_P_RC_VALID]			= 0,
+	[PX4IO_P_RC_BASE ...(PX4IO_P_RC_BASE + PX4IO_RC_MAPPED_CONTROL_CHANNELS)] = 0
+}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3873 4013])
+            ("r_page_scratch" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4142 4171])
+            ("r_page_direct_pwm" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4212 4259])
+            ("r_page_setup" variable
+               (:dereference 1
+                :typemodifiers ("volatile")
+                :default-value "{
+	/* default to RSSI ADC functionality */
+	[PX4IO_P_SETUP_FEATURES]		= PX4IO_P_SETUP_FEATURES_ADC_RSSI,
+	[PX4IO_P_SETUP_ARMING]			= (PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE),
+	[PX4IO_P_SETUP_PWM_RATES]		= 0,
+	[PX4IO_P_SETUP_PWM_DEFAULTRATE]		= 50,
+	[PX4IO_P_SETUP_PWM_ALTRATE]		= 200,
+	[PX4IO_P_SETUP_SBUS_RATE]		= 72,
+	/* this is unused, but we will pad it for readability (the compiler pads it automatically) */
+	[PX4IO_P_SETUP_RELAYS_PAD]		= 0,
+#ifdef ADC_VSERVO
+	[PX4IO_P_SETUP_VSERVO_SCALE]		= 10000,
+#else
+	[PX4IO_P_SETUP_VBATT_SCALE]		= 10000,
+#endif
+	[PX4IO_P_SETUP_SET_DEBUG]		= 0,
+	[PX4IO_P_SETUP_REBOOT_BL]		= 0,
+	[PX4IO_P_SETUP_CRC ...(PX4IO_P_SETUP_CRC + 1)] = 0,
+	[PX4IO_P_SETUP_RC_THR_FAILSAFE_US] = 0,
+	[PX4IO_P_SETUP_PWM_REVERSE] = 0,
+	[PX4IO_P_SETUP_TRIM_ROLL] = 0,
+	[PX4IO_P_SETUP_TRIM_PITCH] = 0,
+	[PX4IO_P_SETUP_TRIM_YAW] = 0,
+	[PX4IO_P_SETUP_SCALE_ROLL] = 10000,
+	[PX4IO_P_SETUP_SCALE_PITCH] = 10000,
+	[PX4IO_P_SETUP_SCALE_YAW] = 10000,
+	[PX4IO_P_SETUP_MOTOR_SLEW_MAX] = 0,
+	[PX4IO_P_SETUP_THR_MDL_FAC] = 0,
+	[PX4IO_P_SETUP_THERMAL] = PX4IO_THERMAL_IGNORE
+}"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4303 5419])
+            ("PX4IO_P_SETUP_FEATURES_VALID" variable (:constant-flag t) nil [5429 5457])
+            ("PX4IO_P_SETUP_ARMING_VALID" variable (:constant-flag t) nil [5617 5643])
+            ("PX4IO_P_SETUP_RATES_VALID" variable (:constant-flag t) nil [6120 6145])
+            ("PX4IO_P_SETUP_RELAYS_VALID" variable (:constant-flag t) nil [6185 6211])
+            ("r_page_controls" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6302 6374])
+            ("r_page_rc_input_config" variable
+               (:dereference 1
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6479 6564])
+            ("PX4IO_P_RC_CONFIG_OPTIONS_VALID" variable (:constant-flag t) nil [6594 6625])
+            ("r_page_servo_failsafe" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0, 0, 0, 0, 0, 0 }"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6824 6904])
+            ("r_page_servo_control_min" variable
+               (:dereference 1
+                :default-value "{ PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN }"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6965 7160])
+            ("r_page_servo_control_max" variable
+               (:dereference 1
+                :default-value "{ PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX }"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [7221 7416])
+            ("r_page_servo_control_trim" variable
+               (:dereference 1
+                :default-value "{ PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM }"
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [7479 7682])
+            ("r_page_servo_disarmed" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0, 0, 0, 0, 0, 0 }"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [7752 7832])
+            ("registers_set" function
+               (:arguments 
+                  ( ("page" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7852 7865])
+                    ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7866 7881])
+                    ("values" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7882 7905])
+                    ("num_values" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7906 7926]))                  
+                :type "int")
+                nil [7834 12304])
+            ("registers_set_one" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12335 12348])
+                    ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12349 12364])
+                    ("value" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12365 12380]))                  
+                :type "int")
+                nil [12306 20954])
+            ("last_page" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [20956 20974])
+            ("last_offset" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [20975 20995])
+            ("registers_get" function
+               (:arguments 
+                  ( ("page" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21015 21028])
+                    ("offset" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21029 21044])
+                    ("values" variable
+                       (:pointer 2
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21045 21063])
+                    ("num_values" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [21064 21085]))                  
+                :type "int")
+                nil [20997 25490])
+            ("pwm_configure_rates" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("map" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25603 25616])
+                    ("defaultrate" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25617 25638])
+                    ("altrate" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25639 25656]))                  
+                :type "void")
+                nil [25571 26726]))          
+      :file "registers.c"
+      :pointmax 26727
+      :fsize 26726
+      :lastmodtime '(23770 52090 827807 969000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PX4IO_P_SETUP_FEATURES_VALID" . ((semantic-list "(PX4IO_P_SETUP_FEATURES_SBUS1_OUT | \\
+		PX4IO_P_SETUP_FEATURES_SBUS2_OUT | \\
+		PX4IO_P_SETUP_FEATURES_ADC_RSSI | \\
+		PX4IO_P_SETUP_FEATURES_PWM_RSSI)" 5458 . 5607)))
+          ("PX4IO_P_SETUP_ARMING_VALID" . ((semantic-list "(PX4IO_P_SETUP_ARMING_FMU_ARMED | \\
+		PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK | \\
+		PX4IO_P_SETUP_ARMING_INAIR_RESTART_OK | \\
+		PX4IO_P_SETUP_ARMING_IO_ARM_OK | \\
+		PX4IO_P_SETUP_ARMING_FAILSAFE_CUSTOM | \\
+		PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE | \\
+		PX4IO_P_SETUP_ARMING_RC_HANDLING_DISABLED | \\
+		PX4IO_P_SETUP_ARMING_LOCKDOWN | \\
+		PX4IO_P_SETUP_ARMING_FORCE_FAILSAFE | \\
+		PX4IO_P_SETUP_ARMING_TERMINATION_FAILSAFE | \\
+		PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE)" 5644 . 6111)))
+          ("PX4IO_P_SETUP_RATES_VALID" . ((semantic-list "((1 << PX4IO_SERVO_COUNT) - 1)" 6146 . 6176)))
+          ("PX4IO_P_RC_CONFIG_OPTIONS_VALID" . ((semantic-list "(PX4IO_P_RC_CONFIG_OPTIONS_REVERSE | PX4IO_P_RC_CONFIG_OPTIONS_ENABLED)" 6626 . 6697)))
+          ("PX4IO_P_SETUP_RELAYS_VALID" . ((semantic-list "((1 << PX4IO_RELAY_CHANNELS) - 1)" 6212 . 6245)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "px4io.h"
+      :fsize 8408
+      :lastmodtime '(23770 52090 827807 969000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1849 1872])
+            ("platform/cxxinitialize.h" include nil nil [1873 1908])
+            ("stdio.h" include (:system-flag t) nil [1910 1928])
+            ("stdbool.h" include (:system-flag t) nil [1957 1977])
+            ("stdlib.h" include (:system-flag t) nil [1978 1997])
+            ("errno.h" include (:system-flag t) nil [1998 2016])
+            ("string.h" include (:system-flag t) nil [2017 2036])
+            ("poll.h" include (:system-flag t) nil [2037 2054])
+            ("signal.h" include (:system-flag t) nil [2055 2074])
+            ("crc32.h" include (:system-flag t) nil [2075 2093])
+            ("syslog.h" include (:system-flag t) nil [2094 2113])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [2115 2150])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2151 2179])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2181 2216])
+            ("systemlib/pwm_limit/pwm_limit.h" include (:system-flag t) nil [2217 2259])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2260 2292])
+            ("stm32_uart.h" include (:system-flag t) nil [2294 2317])
+            ("DEBUG" variable (:constant-flag t) nil [2327 2332])
+            ("px4io.h" include nil nil [2333 2351])
+            ("user_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2377 2386])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2387 2400]))                  
+                :type "int")
+                nil [2362 2401])
+            ("system_state" variable (:type ("sys_state_s" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2403 2436])
+            ("serial_dma_call" variable
+               (:typemodifiers ("static")
+                :type ("hrt_call" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2438 2477])
+            ("pwm_limit" variable (:type ("pwm_limit_t" type (:type "class") nil nil)) nil [2479 2501])
+            ("dt" variable (:type "float") nil [2503 2512])
+            ("msg_counter" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2596 2633])
+            ("last_msg_counter" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2634 2676])
+            ("msg_next_out" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2677 2727])
+            ("msg_next_in" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2677 2727])
+            ("NUM_MSG" variable (:constant-flag t) nil [2880 2887])
+            ("msg" variable
+               (:dereference 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [2890 2940])
+            ("heartbeat_blink" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2970 2975]))                  
+                :type "void")
+                nil [2942 2976])
+            ("ring_blink" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3000 3005]))                  
+                :type "void")
+                nil [2977 3006])
+            ("update_mem_usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3036 3041]))                  
+                :type "void")
+                nil [3007 3042])
+            ("isr_debug" function
+               (:arguments 
+                  ( ("level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3118 3132])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3133 3149])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3150 3154]))                  
+                :type "void")
+                nil [3103 3387])
+            ("show_debug_messages" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3463 3468]))                  
+                :type "void")
+                nil [3431 3738])
+            ("update_mem_usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3824 3829]))                  
+                :type "void")
+                nil [3795 4242])
+            ("heartbeat_blink" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4272 4277]))                  
+                :type "void")
+                nil [4244 4348])
+            ("ring_blink" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4373 4378]))                  
+                :type "void")
+                nil [4350 5461])
+            ("reboot_time" variable
+               (:typemodifiers ("static")
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [5463 5491])
+            ("schedule_reboot" function
+               (:arguments 
+                  ( ("time_delta_usec" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5575 5600]))                  
+                :type "void")
+                nil [5554 5658])
+            ("check_reboot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5725 5730]))                  
+                :type "void")
+                nil [5700 5819])
+            ("calculate_fw_crc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5850 5855]))                  
+                :type "void")
+                nil [5821 6252])
+            ("user_start" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6269 6278])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6279 6292]))                  
+                :type "int")
+                nil [6254 11390]))          
+      :file "px4io.c"
+      :pointmax 11392
+      :fsize 11391
+      :lastmodtime '(23799 57196 58734 901000)
+      :unmatched-syntax '((symbol 2353 . 2361))
+      :lexical-table 
+        '(("DEBUG")
+          ("NUM_MSG" . ((number "1" 2888 . 2889)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!px4iofirmware!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

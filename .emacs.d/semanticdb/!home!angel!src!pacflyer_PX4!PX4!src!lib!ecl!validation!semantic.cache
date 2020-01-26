@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("data_validator.h" include nil nil [1880 1907])
+            ("ecl/ecl.h" include (:system-flag t) nil [1908 1928])
+            ("DataValidator" function
+               (:constructor-flag t
+                :parent "DataValidator"
+                :type ("DataValidator" type (:type "class") nil nil))
+                nil [1930 2297])
+            ("put" function
+               (:parent "DataValidator"
+                :arguments 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2342])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [2343 2353])
+                    ("error_count_in" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2354 2378])
+                    ("priority_in" variable (:type "int") (reparse-symbol arg-sub-list) [2379 2395]))                  
+                :type "void")
+                nil [2299 2530])
+            ("put" function
+               (:parent "DataValidator"
+                :arguments 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2556 2575])
+                    ("val" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2576 2598])
+                    ("error_count_in" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2599 2623])
+                    ("priority_in" variable (:type "int") (reparse-symbol arg-sub-list) [2624 2640]))                  
+                :type "void")
+                nil [2532 3571])
+            ("confidence" function
+               (:parent "DataValidator"
+                :arguments 
+                  ( ("timestamp" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3605 3624]))                  
+                :type "float")
+                nil [3573 4644])
+            ("print" function
+               (:parent "DataValidator"
+                :type "void")
+                nil [4646 4984]))          
+      :file "data_validator.cpp"
+      :pointmax 4985
+      :fsize 4627
+      :lastmodtime '(23713 51846 965670 559000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "data_validator.h"
+      :fsize 6603
+      :lastmodtime '(23713 51846 965670 559000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!ecl!validation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

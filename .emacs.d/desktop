@@ -2,34 +2,3268 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Sep 12 17:56:27 2018
+;; Created Fri Jan 24 18:34:58 2020
 ;; Desktop file format version 206
-;; Emacs version 24.5.1
+;; Emacs version 25.2.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23449 14123 150934 82000) (desktop . "206") "angel@angel-Latitude-E7240" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (foreground-color . "#F8F8F2") (background-color . "#272822") (mouse-color . "#F8F8F2") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 5) (right-fringe . 11) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen . maximized) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 10) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "red") (sticky) (environment) (frameset--id . "C677-60C1-CF7C-B843") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 81) (width . 308) (left . 1431) (top . 24)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 68) (min-pixel-width . 160) (min-pixel-height-ignore . 51) (min-pixel-width-ignore . 96) (min-pixel-height-safe . 17) (min-pixel-width-safe . 32)) hc (pixel-width . 2495) (pixel-height . 1376) (total-width . 312) (total-height . 80) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1264) (pixel-height . 1376) (total-width . 158) (total-height . 80) (normal-height . 1.0) (normal-width . 0.5066132264529057) (buffer "mc_pc_wingtra_main.cpp" (selected . t) (hscroll . 0) (fringes 5 11 nil) (margins 4) (scroll-bars 10 2 t nil) (vscroll . 0) (dedicated) (point . 5850) (start . 5665))) (leaf (last . t) (pixel-width . 1231) (pixel-height . 1376) (total-width . 154) (total-height . 80) (normal-height . 1.0) (normal-width . 0.4933867735470942) (buffer "*Ibuffer*" (selected) (hscroll . 0) (fringes 5 11 nil) (margins 1) (scroll-bars 10 2 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)))))])
-(setq extended-command-history '("revert-buffer" "load-file" "tabify" "smart-tabs-mode" "whitespace-mode" "global-whitespace-mode" "whitespace-mode" "smart-tabs-mode" "whitespace-mode" "list-packages" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "load-file" "whitespace-mode" "rgrep" "magit-status" "magit-commit" "rgrep" "magit-diff"))
-(setq file-name-history '("~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/.emacs.d/init.el" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/.emacs.d/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/.emacs.d/init.el" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/" "~/work/pacflyer_PX4/PX4" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/" "~/work/pacflyer_PX4/" "~/work/pacflyer_PX4" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/Documentation/" "~/work/pacflyer_PX4/PX4/.github/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/.emacs.d/init.el" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/sess001/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/" "~/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/sess003/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/sdlog2/" "~/work/pacflyer_PX4/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/commander/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/msg/motor_check_res.msg" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/work/pacflyer_PX4/PX4/msg/" "~/work/pacflyer_PX4/PX4/msg/motor_check_trig.msg" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/" "~/work/pacflyer_PX4/PX4/" "~/work/pacflyer_PX4/doc/" "~/work/pacflyer_PX4/.git/hooks/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/" "~/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/" "~/work/pacflyer_PX4/PX4/src/modules/mc_att_control/"))
-(setq grep-history nil)
+(setq desktop-saved-frameset [frameset 1 (24107 10946 57457 143000) (desktop . "208") "angel@angel-ThinkPad-T480s" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#DCDCCC") (background-color . "#3F3F3F") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 2) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (fullscreen . maximized) (display-type . color) (background-mode . dark) (cursor-color . "red") (sticky) (environment) (frameset--id . "DBE7-2412-31B9-3BF2") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 86) (width . 316) (left . 1920) (top . 0)) ((min-height . 4) (min-width . 25) (min-height-ignore . 2) (min-width-ignore . 21) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 64) (min-pixel-width . 200) (min-pixel-height-ignore . 32) (min-pixel-width-ignore . 168) (min-pixel-height-safe . 16) (min-pixel-width-safe . 32)) hc (pixel-width . 2560) (pixel-height . 1372) (total-width . 320) (total-height . 86) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1280) (pixel-height . 1372) (total-width . 160) (total-height . 86) (normal-height . 1.0) (normal-width . 0.5) (buffer "FlightTaskTransition.cpp" (selected . t) (hscroll . 0) (fringes 2 8 nil) (margins 9) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 3372) (start . 2517))) (leaf (last . t) (pixel-width . 1280) (pixel-height . 1372) (total-width . 160) (total-height . 86) (normal-height . 1.0) (normal-width . 0.5) (buffer "magit: pacflyer_PX4" (selected) (hscroll . 0) (fringes 2 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 1033) (start . 1)))))])
+(setq extended-command-history '("rgrep" "org-reload" "rgrep" "magit-blame" "rgrep" "org-table-export" "rgrep" "magit-blame" "rgrep" "kill-grep" "rgrep" "kill-grep" "rgrep" "c++-mode" "rgrep" "magit-blame" "rgrep" "delete-trailing-whitespace" "rgrep" "magit-blame" "rgrep" "rgre[" "rgrep" "org-reload" "rgrep" "magit-blame" "rgrep" "magit-blame" "rgrep" "magit-blame"))
+(setq file-name-history '("~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Manual/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Transition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Auto/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/FlightTask/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Transition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/WingtraExplorer/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/pacflyer_PX4/PX4/src/modules/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/msg/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/WingtraExplorer/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/AutoMapper/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/lib/" "~/src/pacflyer_PX4/PX4/lib/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/src/modules/geometric_controller/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/pacflyer_PX4/PX4/msg/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/tmp/jupyter_notebook/" "~/tmp/jupyter_notebooks/" "~/src/WingtraExplorer/" "~/src/pacflyer_PX4/PX4/src/modules/geometric_controller/" "~/src/pacflyer_PX4/PX4/src/modules/ekf2/" "~/src/pacflyer_PX4/PX4/src/modules/geometric_controller/" "~/src/WingtraPilot/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/msg/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/pacflyer_PX4/PX4/src/modules/commander/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Manual/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/src/modules/commander/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/weather_vane/" "~/src/pacflyer_PX4/PX4/src/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/Firmware/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/lib/" "~/src/pacflyer_PX4/PX4/src/modules/commander/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Descend/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/" "~/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Auto/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/PX4/src/modules/systemlib/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/" "~/src/pacflyer_PX4/PX4/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/PX4/msg/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/PX4/src/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/" "~/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/" "~/src/pacflyer_PX4/" "~/src/pacflyer_PX4/PX4/" "~/src/pacflyer_PX4/PX4/src/"))
+(setq grep-history '("grep  --exclude=.\\#\\* --exclude=\\*.o --exclude=\\*\\~ --exclude=\\*.bin --exclude=\\*.lbin --exclude=\\*.so --exclude=\\*.a --exclude=\\*.ln --exclude=\\*.blg --exclude=\\*.bbl --exclude=\\*.elc --exclude=\\*.lof --exclude=\\*.glo --exclude=\\*.idx --exclude=\\*.lot --exclude=\\*.fmt --exclude=\\*.tfm --exclude=\\*.class --exclude=\\*.fas --exclude=\\*.lib --exclude=\\*.mem --exclude=\\*.x86f --exclude=\\*.sparcf --exclude=\\*.dfsl --exclude=\\*.pfsl --exclude=\\*.d64fsl --exclude=\\*.p64fsl --exclude=\\*.lx64fsl --exclude=\\*.lx32fsl --exclude=\\*.dx64fsl --exclude=\\*.dx32fsl --exclude=\\*.fx64fsl --exclude=\\*.fx32fsl --exclude=\\*.sx64fsl --exclude=\\*.sx32fsl --exclude=\\*.wx64fsl --exclude=\\*.wx32fsl --exclude=\\*.fasl --exclude=\\*.ufsl --exclude=\\*.fsl --exclude=\\*.dxl --exclude=\\*.lo --exclude=\\*.la --exclude=\\*.gmo --exclude=\\*.mo --exclude=\\*.toc --exclude=\\*.aux --exclude=\\*.cp --exclude=\\*.fn --exclude=\\*.ky --exclude=\\*.pg --exclude=\\*.tp --exclude=\\*.vr --exclude=\\*.cps --exclude=\\*.fns --exclude=\\*.kys --exclude=\\*.pgs --exclude=\\*.tps --exclude=\\*.vrs --exclude=\\*.pyc --exclude=\\*.pyo -i --color -nH -e sess279 * .*" "grep  --exclude=.\\#\\* --exclude=\\*.o --exclude=\\*\\~ --exclude=\\*.bin --exclude=\\*.lbin --exclude=\\*.so --exclude=\\*.a --exclude=\\*.ln --exclude=\\*.blg --exclude=\\*.bbl --exclude=\\*.elc --exclude=\\*.lof --exclude=\\*.glo --exclude=\\*.idx --exclude=\\*.lot --exclude=\\*.fmt --exclude=\\*.tfm --exclude=\\*.class --exclude=\\*.fas --exclude=\\*.lib --exclude=\\*.mem --exclude=\\*.x86f --exclude=\\*.sparcf --exclude=\\*.dfsl --exclude=\\*.pfsl --exclude=\\*.d64fsl --exclude=\\*.p64fsl --exclude=\\*.lx64fsl --exclude=\\*.lx32fsl --exclude=\\*.dx64fsl --exclude=\\*.dx32fsl --exclude=\\*.fx64fsl --exclude=\\*.fx32fsl --exclude=\\*.sx64fsl --exclude=\\*.sx32fsl --exclude=\\*.wx64fsl --exclude=\\*.wx32fsl --exclude=\\*.fasl --exclude=\\*.ufsl --exclude=\\*.fsl --exclude=\\*.dxl --exclude=\\*.lo --exclude=\\*.la --exclude=\\*.gmo --exclude=\\*.mo --exclude=\\*.toc --exclude=\\*.aux --exclude=\\*.cp --exclude=\\*.fn --exclude=\\*.ky --exclude=\\*.pg --exclude=\\*.tp --exclude=\\*.vr --exclude=\\*.cps --exclude=\\*.fns --exclude=\\*.kys --exclude=\\*.pgs --exclude=\\*.tps --exclude=\\*.vrs --exclude=\\*.pyc --exclude=\\*.pyo -i --color -nH -e sess008 * .*"))
 (setq compile-history '("./setup_and_compilation.sh "))
-(setq minibuffer-history '("3329" "1527" "731" "whitespace-indent-tabs-mode" "whitespace-style" "3308" "185" "1730" "1135" "33" "578" "469" "457" "155" "1737" "1740" "2435" "3329" "1583" "105" "1-5" "2897" "459" "1159" "797" "731" "2689" "2908" "983" "1546" "1349" "167" "155" "4378" "2897" "2495" "1860" "2899" "2500" "1859" "c++-mode" "1023" "694" "161" "4170" "2380" "735" "2322" "2380" "635"))
-(setq query-replace-history '("tmp_db" "m_data_base" "/home/gazebo-cf" "~"))
+(setq minibuffer-history '("On pr-fix_switching_assisted: WIP" "On pr-fix_switching_assisted: wip assisted" "pr-fix_BT" "325" "On master: Fix incompatible versioning" "2461" "stash@{0}" "On subtree/fix_tunes: " "213" "stash@{0}" "On subtree/fix_pwm_output: wip task failure" "211" "On pr-arth_v_thr:" "63" "pr-change_thr_RTH" "63" "65" "1184" "orgtbl-to-tsv" "pr-new_align_wind" "66" "On update/subtree_v1.10.0: dist_bottom_valid fix" "511" "146" "64" "82" "417" "809" "267" "881" "0" "84" "11" "159" "124" "677" "229" "47" "64" "789" "74" "178" "358" "71" "105" "pr-fix_classic_rth" "121" "687" "415" "145"))
+(setq query-replace-history '("descend_speed_wind_based" "vel_wind_based" "" "</sub>" "_" "<sub>" ".get()" "->get()" "mpc_debug" "_mpc_debug" "mpc_debug" "_mpc_debug" "motor_status" "motors_status" "_motors_status[1].motor_checked" "_motor_1_checked" "_motors_status[0].motor_checked" "_motor_0_checked" "motor_0_checked" "geometric_controller_status" "_geometric_controller_status" "wingtra_safety" "_wingtra_safety" "false" "true" "false" "true" "landing" "hover_landing" "landing" "hover_landing" "pitch rate error" "error rate pitch" "roll rate error" "error rate roll" "yaw rate error" "error rate yaw" "yaw rate error" "error rate yaw" "yaw rate error" "error yaw rate" "pitch error" "error pitch" "false" "true" "Control" "Controlsion" "INDI" "Indi" "_b_y_vel_max" "_b_vel_y_max" "_b_x_vel_max" "_b_vel_x_max" "max_vel_dyn" "max_fw_vel_dyn" "motor_min_spin" "min_motor_spin" "_param_mpc_land_alt2" "_param_mpc_tdn_alt" "shut_off_motors"))
 (setq read-expression-history nil)
-(setq regexp-history nil)
-(setq regexp-search-ring '("offset" "boffset" "tab-width" "sdlog" "log" "inside" "indide " "elapsed_time" "hrt_el" "motor_check_res_pub" "sleep" "motor_check" "sub" "SUCCESSFUL" "SUCESSFUL" "motor_check"))
-(setq search-ring '("highlight-80" "blin" "blinker" "DejaVu" "blinkers" "my" "highlight-sym" "bm" "xcscope"))
+(setq regexp-history '("Total time taken in function get_fft: \\([0-9]\\.[0-9]+\\)" "Total time taken in function get_fft: \\d\\.\\d+" "Total time taken in function get_fft: [\\d]" "Total time taken in function get_fft:.+"))
+(setq regexp-search-ring '("Transition" "position_setpoint" "resetS" "position_setpoint" "position_setpoint(0)" "position_setpoint" "update" "Altitude" "update" "_position_setpoint(0)" "_updateXYlock" "HOLD" "params" "activate" "Manual" "getVel"))
+(setq search-ring '("pos_s" "highlight-80" "blin" "blinker" "DejaVu" "blinkers" "my" "highlight-sym" "bm" "xcscope"))
 (setq shell-command-history nil)
 (setq tags-file-name nil)
 (setq register-alist nil)
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_main.cpp"
-  "mc_pc_wingtra_main.cpp"
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Transition/FlightTaskTransition.cpp"
+  "FlightTaskTransition.cpp"
   'c++-mode
-  '(abbrev-mode global-auto-revert-mode auto-complete-mode yas-minor-mode autopair-mode linum-mode)
-  5850
-  '(88095 nil)
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3372
+  '(3315 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/FlightTaskManualAltitude.cpp"
+  "FlightTaskManualAltitude.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  4097
+  '(2235 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/FlightTaskManualPosition.cpp"
+  "FlightTaskManualPosition.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2997
+  '(3150 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/FlightTask/FlightTask.cpp"
+  "FlightTask.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  5058
+  '(675 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Manual/FlightTaskManual.cpp"
+  "FlightTaskManual.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  5564
+  '(5133 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/mc_pos_control_params.c"
+  "mc_pos_control_params.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  12979
+  '(13211 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualPosition/FlightTaskManualPosition.hpp"
+  "FlightTaskManualPosition.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3471
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/PositionControl.cpp"
+  "PositionControl.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  7523
+  '(7093 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/PositionControl/PositionControl.hpp"
+  "PositionControl.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  6717
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/mc_pos_control_main.cpp"
+  "mc_pos_control_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  33812
+  '(33812 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Transition/FlightTaskTransition.hpp"
+  "FlightTaskTransition.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2127
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/FlightTask/FlightTask.hpp"
+  "FlightTask.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  8340
+  '(8340 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/ManualAltitude/FlightTaskManualAltitude.hpp"
+  "FlightTaskManualAltitude.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3345
+  '(6326 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Manual/FlightTaskManual.hpp"
+  "FlightTaskManual.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2946
+  '(2121 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Auto/FlightTaskAuto.cpp"
+  "FlightTaskAuto.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2339
+  '(3059 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/tasks/Auto/FlightTaskAuto.hpp"
+  "FlightTaskAuto.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  4565
+  '(3407 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/flight_tasks/FlightTasks.cpp"
+  "FlightTasks.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/orgs/sprints.org"
+  "sprints.org"
+  'org-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode)
+  87331
+  '(87946 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/mpc_debug.msg"
+  "mpc_debug.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  463
+  '(126 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/state_of_charge.py"
+  "state_of_charge.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  7903
+  '(3016 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockDelay.hpp"
+  "BlockDelay.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1868
+  '(1887 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/battery_status.msg"
+  "battery_status.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  2645
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/control_state.msg"
+  "control_state.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  1672
+  '(126 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/jMAVlib/src/me/drton/jmavlib/conversion/RotationConversion.java"
+  "RotationConversion.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  882
+  '(880 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_main.cpp"
+  "geometric_controller_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  5284
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/geometric_controller/MotorFaultDetection.cpp"
+  "MotorFaultDetection.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  4338
+  '(319 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/geometric_controller/MotorFaultDetection.hpp"
+  "MotorFaultDetection.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  1000
+  '(297 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/geometric_controller/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  134
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/requirements.txt"
+  "requirements.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  351
+  '(351 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/ekf2/ekf2_main.cpp"
+  "ekf2_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  69861
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_params.c"
+  "geometric_controller_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  8863
+  '(17709 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/Vehicle/Vehicle.cc"
+  "Vehicle.cc"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  148623
+  '(147604 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth.cpp"
+  "adaptive_rth.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  1
+  '(523 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_status.msg"
+  "vehicle_status.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  7184
+  '(263 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/Commander.hpp"
+  "Commander.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  20492
+  '(1790 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/mc_pos_control_params.c"
+  "mc_pos_control_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  19868
+  '(19904 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/PositionControl/PositionControl.cpp"
+  "PositionControl.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  13105
+  '(13105 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.config/fish/config.fish"
+  "config.fish"
+  'conf-space-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode)
+  221
+  '(396 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/mc_pc_wingtra_05092019.cpp"
+  "mc_pc_wingtra_05092019.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode)
+  77149
+  '(44045 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/utilities/custom_fields.py"
+  "custom_fields.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode smerge-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  1899
+  '(295 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/block/Block.hpp"
+  "Block.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1857
+  '(1857 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth_params.c"
+  "adaptive_rth_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  3691
+  '(2091 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/helpfuncs/helpfuncs.h"
+  "helpfuncs.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  6266
+  '(6299 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_attitude_setpoint.msg"
+  "vehicle_attitude_setpoint.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode smerge-mode magit-file-mode)
+  853
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/state_machine_helper.cpp"
+  "state_machine_helper.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1986
+  '(1986 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/mission_block.cpp"
+  "mission_block.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  2077
+  '(2077 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/platforms/px4_log.h"
+  "px4_log.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  2919
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/commander_params.c"
+  "commander_params.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  29091
+  '(1944 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/cmake/configs/nuttx_px4fmu-v4_production.cmake"
+  "nuttx_px4fmu-v4_production.cmake"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  2953
+  '(2218 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/position_setpoint.msg"
+  "position_setpoint.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  312
+  '(79 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/ecl_ekf/analyse_logdata_ekf.py"
+  "analyse_logdata_ekf.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/systemcmds/tests/tests_main.c"
+  "tests_main.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  4350
+  '(86 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/systemcmds/tests/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  2530
+  '(1723 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/position_setpoint_triplet.msg"
+  "position_setpoint_triplet.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  691
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/navigator_main.cpp"
+  "navigator_main.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2182
+  '(2182 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/mission.cpp"
+  "mission.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  5138
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/mission.h"
+  "mission.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  5832
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/loiter.cpp"
+  "loiter.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1898
+  '(1898 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/Vehicle/Vehicle.h"
+  "Vehicle.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  28040
+  '(872 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/version/px_update_git_header.py"
+  "px_update_git_header.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  6103
+  '(69 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/PlanView/PlanView.qml"
+  "PlanView.qml"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  83175
+  '(2678 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/ui/MainWindowInner.qml"
+  "MainWindowInner.qml"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  33511
+  '(33511 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/QmlControls/WingtraFirmwareCompatibilityWarningDialog.qml"
+  "WingtraFirmwareCompatibilityWarningDialog.qml"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  2203
+  '(2291 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/localization/WingtraPilot_de.ts"
+  "WingtraPilot_de.ts"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  480597
+  '(480587 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/gyro_calibration.h"
+  "gyro_calibration.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/gyro_calibration.cpp"
+  "gyro_calibration.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  9315
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/mag_calibration.cpp"
+  "mag_calibration.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  30203
+  '(2347 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/terrain_estimator.cpp"
+  "terrain_estimator.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  12977
+  '(2151 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/ecl_ekf/batch_replay_wingtra.py"
+  "batch_replay_wingtra.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  445
+  '(50 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_local_position_setpoint.msg"
+  "vehicle_local_position_setpoint.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  982
+  '(3 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/uORB/Subscription.hpp"
+  "Subscription.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2420
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/jMAVlib/src/me/drton/jmavlib/log/ulog/ULogReader.java"
+  "ULogReader.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  1377
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/wingtra_safety.msg"
+  "wingtra_safety.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  451
+  '(358 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/msg/vehicle_constraints.msg"
+  "vehicle_constraints.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  330
+  '(297 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/include/unit_test.h"
+  "unit_test.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/logger.cpp"
+  "logger.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  13706
+  '(1789 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  5228
+  '(1833 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/ecl_ekf/replay_compatibility_test.py"
+  "replay_compatibility_test.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  602
+  '(534 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/PositionControl/ControlMath.cpp"
+  "ControlMath.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  2037
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/ecl_ekf/batch_csv_wingtra.py"
+  "batch_csv_wingtra.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  656
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/sensors/sensors.cpp"
+  "sensors.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  8847
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/simulator/simulator_mavlink.cpp"
+  "simulator_mavlink.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  14529
+  '(206 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_receiver.cpp"
+  "mavlink_receiver.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  88215
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/bms_data.msg"
+  "bms_data.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1394
+  '(1408 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth.h"
+  "adaptive_rth.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  1240
+  '(583 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/estimator_status.msg"
+  "estimator_status.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode smerge-mode magit-file-mode)
+  15542
+  '(15542 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/mount_orientation.msg"
+  "mount_orientation.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_local_position.msg"
+  "vehicle_local_position.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode smerge-mode magit-file-mode)
+  3902
+  '(3 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/Matrix.hpp"
+  "Matrix.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1703
+  '(435 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/uORB/Publication.hpp"
+  "Publication.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1006
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/md25/md25.cpp"
+  "md25.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  12445
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/geometric_controller_output.msg"
+  "geometric_controller_output.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/fw_pos_control_l1/FixedwingPositionControl.cpp"
+  "FixedwingPositionControl.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  71384
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/Quaternion.hpp"
+  "Quaternion.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  15754
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/test/slice.cpp"
+  "slice.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  3487
+  '(81 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/Vector.hpp"
+  "Vector.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  675
+  '(304 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/README.md"
+  "README.md"
+  'markdown-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  3319
+  '(3067 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/block/BlockParam.cpp"
+  "BlockParam.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  3989
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mc_pos_control/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  80
+  '(1700 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/fw_pos_control_l1/FixedwingPositionControl.hpp"
+  "FixedwingPositionControl.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  79
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/mc_pos_control_main.cpp"
+  "mc_pos_control_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  1
+  '(6203 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/PositionControl/PositionControlTest.cpp"
+  "PositionControlTest.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  5523
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_pos_control/PositionControl/ControlMathTest.cpp"
+  "ControlMathTest.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1786
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/weather_vane/WeatherVane.cpp"
+  "WeatherVane.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1908
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/Utility/ManualVelocitySmoothingXY.cpp"
+  "ManualVelocitySmoothingXY.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  2891
+  '(2887 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/ManualAltitude/FlightTaskManualAltitude.cpp"
+  "FlightTaskManualAltitude.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  3258
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/ManualAltitude/FlightTaskManualAltitude.hpp"
+  "FlightTaskManualAltitude.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/AutoLineSmoothVel/FlightTaskAutoLineSmoothVel.hpp"
+  "FlightTaskAutoLineSmoothVel.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  3533
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/AutoLineSmoothVel/FlightTaskAutoLineSmoothVel.cpp"
+  "FlightTaskAutoLineSmoothVel.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  8376
+  '(7998 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/AutoLine/FlightTaskAutoLine.hpp"
+  "FlightTaskAutoLine.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  2095
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/flight_tasks/tasks/AutoLine/FlightTaskAutoLine.cpp"
+  "FlightTaskAutoLine.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  307
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/collision_prevention/CollisionPrevention.hpp"
+  "CollisionPrevention.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  6072
+  '(3155 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/collision_prevention/CollisionPrevention.cpp"
+  "CollisionPrevention.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  3637
+  '(3437 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/msg/vehicle_local_position_setpoint.msg"
+  "vehicle_local_position_setpoint.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  406
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/systemcmds/tests/test_smooth_z.cpp"
+  "test_smooth_z.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/protected_functions.hpp"
+  "protected_functions.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1
+  '(3345 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/tecs/tecs.h"
+  "tecs.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1851
+  '(1851 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/tecs/tecs.cpp"
+  "tecs.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1807
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/SquareMatrix.hpp"
+  "SquareMatrix.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  126
+  '(8600 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/systemcmds/tests/tests_main.h"
+  "tests_main.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1730
+  '(86 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_messages.cpp"
+  "mavlink_messages.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  129452
+  '(1932 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode company-mode zoom-mode highlight-symbol-mode highlight-parentheses-mode autopair-mode linum-mode yas-minor-mode)
+  24909
+  '(24961 nil)
+  nil
+  nil
+  '((indicate-empty-lines . t) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/rcS_template.in"
+  "rcS_template.in"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  3109
+  '(3 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/boards/px4/fmu-v4/default.cmake"
+  "default.cmake"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  1
+  '(1330 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mavlink/mavlink_messages.cpp"
+  "mavlink_messages.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  93059
+  '(92985 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/mathlib/math/TrajMath.hpp"
+  "TrajMath.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  2886
+  '(1882 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/lib/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  2530
+  '(2123 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/platforms/common/include/px4_platform_common/module_params.h"
+  "module_params.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/ekf2/ekf2_main.cpp"
+  "ekf2_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  2015
+  '(2015 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/build/px4_sitl_default/src/lib/FlightTasks/FlightTasks_generated.cpp"
+  "FlightTasks_generated.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1893
+  '(4302 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/Downloads/openvpn-2.4.8/README"
+  "README"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  107
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/Downloads/openvpn-2.4.8/INSTALL"
+  "INSTALL"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  8490
+  '(6863 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  13735
+  '(101 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/geo/geo.cpp"
+  "geo.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  5138
+  '(4618 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/system_performance.py"
+  "system_performance.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  4319
+  '(3626 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_status_flags.msg"
+  "vehicle_status_flags.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  3860
+  '(180 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  2510
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/art/compass_rose.svg"
+  "compass_rose.svg"
+  'image-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  118077
+  '(118077 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/utilities/test_helper.py"
+  "test_helper.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode smerge-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  8620
+  '(8620 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/data_containers/ulog/logging_data.py"
+  "logging_data.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  15591
+  '(13722 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/camera_feedback/camera_feedback.cpp"
+  "camera_feedback.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/camera_feedback/camera_feedback.hpp"
+  "camera_feedback.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1955
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/art/terrain.tgd"
+  "terrain.tgd"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/art/screenshot.png"
+  "screenshot.png"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode linum-mode magit-file-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . no-conversion)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/.gitmodules"
+  ".gitmodules"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/attitude_controller.py"
+  "attitude_controller.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  340
+  '(294 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/platforms/posix/cmake/sitl_tests.cmake"
+  "sitl_tests.cmake"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode smerge-mode magit-file-mode)
+  1349
+  '(82 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/ci/pr_unit_tests.sh"
+  "pr_unit_tests.sh"
+  'sh-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  276
+  '(22 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/configs/thresholds/system_performance_thresholds.json"
+  "system_performance_thresholds.json"
+  'js-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  5455
+  '(5337 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/patch_parachute_2.patch"
+  "patch_parachute_2.patch"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  10183
+  '(2359 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/patch_parachute_1.patch"
+  "patch_parachute_1.patch"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  6932
+  '(3145 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/PreflightCheck.cpp"
+  "PreflightCheck.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1886
+  '(1886 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/px4fmu/fmu.cpp"
+  "fmu.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  3882
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/patch_parachute.patch"
+  "patch_parachute.patch"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  4228
+  '(3421 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/block/BlockParam.hpp"
+  "BlockParam.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1766
+  '(1139 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/parachute_arduino/main/main.ino"
+  "main.ino"
+  'arduino-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode)
+  1003
+  '(1571 nil)
+  nil
+  nil
+  '((tab-width . 2) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_metadata.cpp"
+  "mavlink_metadata.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode smerge-mode magit-file-mode)
+  12645
+  '(12645 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/platforms/px4_micro_hal.h"
+  "px4_micro_hal.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1746
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/platforms/nuttx/NuttX/nuttx/arch/arm/src/stm32/stm32_gpio.c"
+  "stm32_gpio.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  21560
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/px4fmu/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/systemcmds/tests/test_mixer.cpp"
+  "test_mixer.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  11790
+  '(86 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/configs/default_checks.json"
+  "default_checks.json"
+  'js-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1286
+  '(283 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/gui_items/tab_views/messages_view.py"
+  "messages_view.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  1476
+  '(1519 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/utilities/style_sheet.py"
+  "style_sheet.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  589
+  '(461 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/system_information.py"
+  "system_information.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  269
+  '(380 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/telemetry.py"
+  "telemetry.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/touchdown.py"
+  "touchdown.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  5880
+  '(686 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/log_writer.h"
+  "log_writer.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3312
+  '(1986 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/log_writer_file.cpp"
+  "log_writer_file.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1785
+  '(1785 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/log_writer.cpp"
+  "log_writer.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1918
+  '(1867 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/logger.h"
+  "logger.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  14635
+  '(1782 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/sensors/rc_update.cpp"
+  "rc_update.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  26443
+  '(1836 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/boards/common/board_common.h"
+  "board_common.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  3894
+  '(2119 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/hover_controller.py"
+  "hover_controller.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  5473
+  '(132 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/power_supply.py"
+  "power_supply.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  792
+  '(792 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/cruise_controller.py"
+  "cruise_controller.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  555
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/configs/thresholds/attitude_controller_thresholds.json"
+  "attitude_controller_thresholds.json"
+  'js-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  3582
+  '(2945 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/setup.cfg"
+  "setup.cfg"
+  'conf-unix-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  44
+  '(44 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/enginefailure.cpp"
+  "enginefailure.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3720
+  '(3716 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/datalinkloss.cpp"
+  "datalinkloss.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  4512
+  '(2243 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/gpsfailure.cpp"
+  "gpsfailure.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3666
+  '(3716 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/navigator.h"
+  "navigator.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  6307
+  '(1983 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/logger/params.c"
+  "params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  5816
+  '(2307 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PULL_REQUEST_TEMPLATE.md~"
+  "PULL_REQUEST_TEMPLATE.md~"
+  'markdown-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode linum-mode bug-reference-mode magit-file-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/replay/replay_params.c"
+  "replay_params.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  6160
+  '(6160 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/replay/replay_main.cpp"
+  "replay_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  105
+  '(105 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/filter/LowPassFilter2realP.hpp"
+  "LowPassFilter2realP.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1135
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/filter/LowPassFilter2realP.cpp"
+  "LowPassFilter2realP.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  693
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/sensors/parameters.cpp"
+  "parameters.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  5745
+  '(4314 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/microhard/microhard.cpp"
+  "microhard.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  796
+  '(679 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/mission_block.h"
+  "mission_block.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  4594
+  '(1849 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_fast_sess368_fft.txt"
+  "output_fast_sess368_fft.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  1757
+  '(1222 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_slow_sess368_fft.txt"
+  "output_slow_sess368_fft.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  842
+  '(1222 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/utilities/batch_processing_helper.py"
+  "batch_processing_helper.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode magit-file-mode)
+  279
+  '(279 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_fast_fft_filtered.txt"
+  "output_fast_fft_filtered.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  39803
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_fast_fft.txt"
+  "output_fast_fft.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  237401
+  '(86503 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_slow_fft_filtered.txt"
+  "output_slow_fft_filtered.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  1
+  '(40388 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/output_slow_fft.txt"
+  "output_slow_fft.txt"
+  'text-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/timing_fft.py"
+  "timing_fft.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode)
+  21
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/ekf2/ekf2_params.c"
+  "ekf2_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  37711
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/land_detector/LandDetector.cpp"
+  "LandDetector.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1888
+  '(1888 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PULL_REQUEST_TEMPLATE.md"
+  "PULL_REQUEST_TEMPLATE.md"
+  'markdown-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  235
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/filter/LowPassFilter2p.hpp"
+  "LowPassFilter2p.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2345
+  '(149 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/filter/LowPassFilter2p.cpp"
+  "LowPassFilter2p.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2551
+  '(3370 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/jMAVlib/src/me/drton/jmavlib/processing/Filter.java"
+  "Filter.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  689
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/jMAVlib/src/me/drton/jmavlib/processing/Batterworth2pLPF.java"
+  "Batterworth2pLPF.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  951
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockDerivative.hpp"
+  "BlockDerivative.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  3090
+  '(2734 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockDerivative.cpp"
+  "BlockDerivative.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2012
+  '(2013 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockLowPass.cpp"
+  "BlockLowPass.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1951
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockLowPass.hpp"
+  "BlockLowPass.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2536
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockHighPass.hpp"
+  "BlockHighPass.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2557
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/Downloads/angel_hil_params.params"
+  "angel_hil_params.params"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/Downloads/sebi_hil.params"
+  "sebi_hil.params"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/Downloads/angel_param_hil_file.params"
+  "angel_param_hil_file.params"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  13455
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/controllib_test/controllib_test_main.cpp"
+  "controllib_test_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  13900
+  '(14451 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/test/squareMatrix.cpp"
+  "squareMatrix.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  1244
+  '(353 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/patch_tmp.patch"
+  "patch_tmp.patch"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  806
+  '(29245 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  6436
+  '(106 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/untitled.m"
+  "untitled.m"
+  'octave-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  42
+  '(21 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/replay/compatibility.cpp"
+  "compatibility.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  6984
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/replay/compatibility.hpp"
+  "compatibility.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2089
+  '(2911 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/Vector3.hpp"
+  "Vector3.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  2963
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/math.hpp"
+  "math.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  553
+  '(104 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode magit-file-mode)
+  4103
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/LeastSquaresSolver.hpp"
+  "LeastSquaresSolver.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  845
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/wingtra_landed.msg"
+  "wingtra_landed.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_land_detected.msg"
+  "vehicle_land_detected.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode magit-file-mode)
+  1065
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/mc_pc_wingtra_old.cpp"
+  "mc_pc_wingtra_old.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode)
+  46732
+  '(23558 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockLowPass2.cpp"
+  "BlockLowPass2.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  1916
+  '(2166 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/BlockLowPass2.hpp"
+  "BlockLowPass2.hpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode magit-file-mode)
+  2805
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/mathlib/mathlib.cpp"
+  "mathlib.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  2225
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/file.diff"
+  "file.diff"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  17634
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/tmp/flight_task_error.patch"
+  "flight_task_error.patch"
+  'diff-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode)
+  528
+  '(6101 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/boards/px4/sitl/src/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode magit-file-mode)
+  1770
+  '(1770 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/controllib/block/Block.cpp"
+  "Block.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2726
+  '(105 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/jMAVSim/src/me/drton/jmavsim/Filter.java"
+  "Filter.java"
+  'java-mode
+  '(abbrev-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode ggtags-mode magit-file-mode)
+  272
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/state_machine_helper.h"
+  "state_machine_helper.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  5099
+  '(1660 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/configs/sitl_checks.json"
+  "sitl_checks.json"
+  'js-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  688
+  '(197 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/simulator/ledsim/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode magit-file-mode)
+  1742
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/boards/px4/sitl/src/board_config.h"
+  "board_config.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  2060
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/replay/replay_main.cpp"
+  "replay_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode smerge-mode magit-file-mode)
+  2098
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_receiver.h"
+  "mavlink_receiver.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/Functions.hpp"
+  "Functions.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  4001
+  '(4418 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/src/modules/mc_att_control/mc_att_control_main.cpp"
+  "mc_att_control_main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  14654
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/Firmware/platforms/qurt/include/board_config.h"
+  "board_config.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  350
+  '(304 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/platforms/px4_tasks.h"
+  "px4_tasks.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  5755
+  '(5770 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/include/visibility.h"
+  "visibility.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  4362
+  '(105 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_log_handler.cpp"
+  "mavlink_log_handler.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  1947
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.local/share/omf/init.fish"
+  "init.fish"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode magit-file-mode)
+  1917
+  '(1956 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/setup_gazebo.bash"
+  "setup_gazebo.bash"
+  'sh-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  325
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/commander/commander_tests/commander_tests.cpp"
+  "commander_tests.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1114
+  '(1114 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.bashrc"
+  ".bashrc"
+  'sh-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode)
+  4070
+  '(4028 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.local/share/omf/themes/bobthefish/fish_prompt.fish"
+  "fish_prompt.fish"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode magit-file-mode)
+  1
+  '(22403 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.config/fish/conf.d/omf.fish"
+  "omf.fish"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/.config/fish/fishd.angel-ThinkPad-T480s"
+  "fishd.angel-ThinkPad-T480s"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/home_position.msg"
+  "home_position.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  762
+  '(3 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf.h"
+  "ekf.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  5054
+  '(2066 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf_helper.cpp"
+  "ekf_helper.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  41503
+  '(2253 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf.cpp"
+  "ekf.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  19336
+  '(3315 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/mathlib/mathlib.h"
+  "mathlib.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  298
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/utilities/parameters_metadata.py"
+  "parameters_metadata.py"
+  'python-mode
+  '(global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2607
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraPilot/src/FirmwarePlugin/PX4/PX4ParameterFactMetaData.xml"
+  "PX4ParameterFactMetaData.xml"
+  'nxml-mode
+  '(auto-fill-mode global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode yas-minor-mode magit-file-mode)
+  195965
+  '(196243 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/adaptive_rth.msg"
+  "adaptive_rth.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  1031
+  '(1031 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/mission_feasibility_checker.cpp"
+  "mission_feasibility_checker.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  12473
+  '(109 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/navigator/geofence_params.c"
+  "geofence_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2700
+  '(1936 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/rth_energy/rth_energy.cpp"
+  "rth_energy.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  4902
+  '(1850 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/var/log/dpkg.log"
+  "dpkg.log"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode linum-mode yas-minor-mode)
+  16187
+  '(1 nil)
+  t
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/examples/test_resample.py"
+  "test_resample.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode yas-minor-mode elpy-mode highlight-indentation-mode)
+  906
+  '(137 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/matrix/matrix/Vector2.hpp"
+  "Vector2.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  341
+  '(1257 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/etc/apt/sources.list"
+  "sources.list"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode linum-mode yas-minor-mode)
+  2363
+  '(2300 t)
+  t
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/component_checks/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  734
+  '(174 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/WingtraExplorer/src/tools/flight_statistics.py"
+  "flight_statistics.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode elpy-mode highlight-indentation-mode magit-file-mode)
+  4847
+  '(197 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/examples/test_fft.py"
+  "test_fft.py"
+  'python-mode
+  '(eldoc-mode global-auto-revert-mode company-mode anaconda-mode zoom-mode autopair-mode linum-mode yas-minor-mode elpy-mode highlight-indentation-mode)
+  298
+  '(355 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/sensors/sensor_params.c"
+  "sensor_params.c"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  5210
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/drv_gyro.h"
+  "drv_gyro.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1979
+  '(1979 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/uORB/uORB.cpp"
+  "uORB.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2224
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/sensor_gyro.msg"
+  "sensor_gyro.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (fill-column . 0)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/sensor_accel.msg"
+  "sensor_accel.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_command.msg"
+  "vehicle_command.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  3211
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/drivers/drv_accel.h"
+  "drv_accel.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  1988
+  '(1988 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/platforms/nuttx/NuttX/nuttx/include/stdio.h"
+  "stdio.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  6757
+  '(146 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/platforms/posix/cmake/sitl_target.cmake"
+  "sitl_target.cmake"
+  'cmake-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  766
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/Tools/sitl_run.sh"
+  "sitl_run.sh"
+  'sh-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-prog-mode yas-minor-mode smerge-mode magit-file-mode)
+  595
+  '(22 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/platforms/nuttx/NuttX/nuttx/arch/arm/src/stm32/chip/stm32_tim.h"
+  "stm32_tim.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  28856
+  '(2423 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/systemcmds/pwm/pwm.cpp"
+  "pwm.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  18070
+  '(1994 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/examples/fixedwing_control/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2170
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/estimator_interface.h"
+  "estimator_interface.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  8544
+  '(1916 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/ecl/EKF/common.h"
+  "common.h"
+  'c-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode hide-ifdef-mode highlight-parentheses-mode autopair-mode linum-mode ggtags-mode yas-minor-mode magit-file-mode)
+  20675
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/manual_control_setpoint.msg"
+  "manual_control_setpoint.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  4043
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/actuator_controls.msg"
+  "actuator_controls.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  282
+  '(5 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/msg/vehicle_attitude.msg"
+  "vehicle_attitude.msg"
+  'fundamental-mode
+  '(global-auto-revert-mode company-mode zoom-mode autopair-mode linum-mode bug-reference-mode yas-minor-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/local_position_estimator/BlockLocalPositionEstimator.cpp"
+  "BlockLocalPositionEstimator.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  28978
+  '(28978 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/modules/local_position_estimator/BlockLocalPositionEstimator.hpp"
+  "BlockLocalPositionEstimator.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  13009
+  '(48 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mathlib/math/Limits.hpp"
+  "Limits.hpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2330
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/angel/src/pacflyer_PX4/PX4/src/lib/mixer/mixer_helicopter.cpp"
+  "mixer_helicopter.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode global-auto-revert-mode company-mode irony-mode zoom-mode autopair-mode linum-mode ggtags-mode bug-reference-prog-mode yas-minor-mode magit-file-mode)
+  2099
+  '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))

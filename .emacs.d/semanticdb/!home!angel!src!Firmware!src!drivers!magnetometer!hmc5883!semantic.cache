@@ -1,0 +1,892 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ADDR_ID_A" variable (:constant-flag t) nil [1829 1838])
+            ("ADDR_ID_B" variable (:constant-flag t) nil [1854 1863])
+            ("ADDR_ID_C" variable (:constant-flag t) nil [1879 1888])
+            ("ID_A_WHO_AM_I" variable (:constant-flag t) nil [1905 1918])
+            ("ID_B_WHO_AM_I" variable (:constant-flag t) nil [1933 1946])
+            ("ID_C_WHO_AM_I" variable (:constant-flag t) nil [1961 1974])
+            ("HMC5883_SPI_interface" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2053 2061]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [2008 2062])
+            ("HMC5883_I2C_interface" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2108 2116]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [2063 2117])
+            ("HMC5883_constructor" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2165 2169]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [2126 2170]))          
+      :file "hmc5883.h"
+      :pointmax 2171
+      :fsize 2170
+      :lastmodtime '(23622 59299 497307 674000)
+      :unmatched-syntax '((TYPEDEF 2118 . 2125) (symbol 1815 . 1819) (symbol 1808 . 1814) (punctuation 1807 . 1808))
+      :lexical-table 
+        '(("ADDR_ID_A" . ((number "0x0a" 1841 . 1845)))
+          ("ADDR_ID_B" . ((number "0x0b" 1866 . 1870)))
+          ("ADDR_ID_C" . ((number "0x0c" 1891 . 1895)))
+          ("ID_A_WHO_AM_I" . ((string "'H'" 1921 . 1924)))
+          ("ID_B_WHO_AM_I" . ((string "'4'" 1949 . 1952)))
+          ("ID_C_WHO_AM_I" . ((string "'3'" 1977 . 1980)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1847 1870])
+            ("px4_defines.h" include (:system-flag t) nil [1871 1895])
+            ("px4_time.h" include (:system-flag t) nil [1896 1917])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [1919 1950])
+            ("sys/types.h" include (:system-flag t) nil [1952 1974])
+            ("stdint.h" include (:system-flag t) nil [1975 1994])
+            ("stdlib.h" include (:system-flag t) nil [1995 2014])
+            ("stdbool.h" include (:system-flag t) nil [2015 2035])
+            ("semaphore.h" include (:system-flag t) nil [2036 2058])
+            ("string.h" include (:system-flag t) nil [2059 2078])
+            ("fcntl.h" include (:system-flag t) nil [2079 2097])
+            ("poll.h" include (:system-flag t) nil [2098 2115])
+            ("errno.h" include (:system-flag t) nil [2116 2134])
+            ("stdio.h" include (:system-flag t) nil [2135 2153])
+            ("math.h" include (:system-flag t) nil [2154 2171])
+            ("unistd.h" include (:system-flag t) nil [2172 2191])
+            ("nuttx/arch.h" include (:system-flag t) nil [2193 2216])
+            ("px4_work_queue/ScheduledWorkItem.hpp" include (:system-flag t) nil [2217 2264])
+            ("nuttx/clock.h" include (:system-flag t) nil [2265 2289])
+            ("board_config.h" include (:system-flag t) nil [2291 2316])
+            ("perf/perf_counter.h" include (:system-flag t) nil [2318 2348])
+            ("systemlib/err.h" include (:system-flag t) nil [2349 2375])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2377 2405])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2406 2434])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2435 2473])
+            ("drivers/drv_device.h" include (:system-flag t) nil [2474 2505])
+            ("uORB/uORB.h" include (:system-flag t) nil [2507 2529])
+            ("float.h" include (:system-flag t) nil [2531 2549])
+            ("px4_getopt.h" include (:system-flag t) nil [2550 2573])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2574 2610])
+            ("hmc5883.h" include nil nil [2612 2632])
+            ("HMC5883_CONVERSION_INTERVAL" variable (:constant-flag t) nil [2812 2839])
+            ("ADDR_CONF_A" variable (:constant-flag t) nil [2884 2895])
+            ("ADDR_CONF_B" variable (:constant-flag t) nil [2911 2922])
+            ("ADDR_MODE" variable (:constant-flag t) nil [2938 2947])
+            ("ADDR_DATA_OUT_X_MSB" variable (:constant-flag t) nil [2963 2982])
+            ("ADDR_DATA_OUT_X_LSB" variable (:constant-flag t) nil [2997 3016])
+            ("ADDR_DATA_OUT_Z_MSB" variable (:constant-flag t) nil [3031 3050])
+            ("ADDR_DATA_OUT_Z_LSB" variable (:constant-flag t) nil [3065 3084])
+            ("ADDR_DATA_OUT_Y_MSB" variable (:constant-flag t) nil [3099 3118])
+            ("ADDR_DATA_OUT_Y_LSB" variable (:constant-flag t) nil [3133 3152])
+            ("ADDR_STATUS" variable (:constant-flag t) nil [3167 3178])
+            ("ADDR_TEMP_OUT_MSB" variable (:constant-flag t) nil [3229 3246])
+            ("ADDR_TEMP_OUT_LSB" variable (:constant-flag t) nil [3261 3278])
+            ("HMC5883L_MODE_NORMAL" variable (:constant-flag t) nil [3339 3359])
+            ("HMC5883L_MODE_POSITIVE_BIAS" variable (:constant-flag t) nil [3393 3420])
+            ("HMC5883L_MODE_NEGATIVE_BIAS" variable (:constant-flag t) nil [3459 3486])
+            ("HMC5883L_AVERAGING_1" variable (:constant-flag t) nil [3526 3546])
+            ("HMC5883L_AVERAGING_2" variable (:constant-flag t) nil [3587 3607])
+            ("HMC5883L_AVERAGING_4" variable (:constant-flag t) nil [3626 3646])
+            ("HMC5883L_AVERAGING_8" variable (:constant-flag t) nil [3665 3685])
+            ("MODE_REG_CONTINOUS_MODE" variable (:constant-flag t) nil [3705 3728])
+            ("MODE_REG_SINGLE_MODE" variable (:constant-flag t) nil [3747 3767])
+            ("STATUS_REG_DATA_OUT_LOCK" variable (:constant-flag t) nil [3801 3825])
+            ("STATUS_REG_DATA_READY" variable (:constant-flag t) nil [3915 3936])
+            ("HMC5983_TEMP_SENSOR_ENABLE" variable (:constant-flag t) nil [4011 4037])
+            ("HMC5883_BUS" type
+               (:members 
+                  ( ("HMC5883_BUS_ALL" variable
+                       (:constant-flag t
+                        :default-value (4086 4087)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4068 4087])
+                    ("HMC5883_BUS_I2C_INTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4090 4115])
+                    ("HMC5883_BUS_I2C_EXTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4117 4142])
+                    ("HMC5883_BUS_SPI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4144 4161]))                  
+                :type "enum")
+                nil [4048 4162])
+            ("HMC5883" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("px4::ScheduledWorkItem" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4233 4240])
+                    ("HMC5883" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("interface" variable
+                               (:pointer 1
+                                :type ("device::Device" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4250 4276])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4277 4294])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [4295 4318]))                          
+                        :type ("HMC5883" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4242 4319])
+                    ("HMC5883" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4321 4340])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4343 4363])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4388 4406])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4407 4420])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4421 4435]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4366 4436])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4457 4475])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [4476 4484])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4485 4503]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4438 4504])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4567 4581])
+                    ("print_info" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4659 4679])
+                    ("protected" label nil (reparse-symbol classsubparts) [4681 4691])
+                    ("_interface" variable
+                       (:pointer 1
+                        :type ("Device" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4693 4714])
+                    ("private" label nil (reparse-symbol classsubparts) [4716 4724])
+                    ("_measure_interval" variable (:type "unsigned int") (reparse-symbol classsubparts) [4727 4758])
+                    ("_reports" variable
+                       (:pointer 1
+                        :type ("ringbuffer::RingBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4761 4794])
+                    ("_scale" variable (:type ("mag_calibration_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4796 4828])
+                    ("_range_scale" variable (:type "float") (reparse-symbol classsubparts) [4830 4852])
+                    ("_range_ga" variable (:type "float") (reparse-symbol classsubparts) [4854 4873])
+                    ("_collect_phase" variable (:type "bool") (reparse-symbol classsubparts) [4875 4897])
+                    ("_class_instance" variable (:type "int") (reparse-symbol classsubparts) [4899 4921])
+                    ("_orb_class_instance" variable (:type "int") (reparse-symbol classsubparts) [4923 4949])
+                    ("_mag_topic" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4952 4977])
+                    ("_sample_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4980 5009])
+                    ("_comms_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5011 5041])
+                    ("_range_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5043 5073])
+                    ("_conf_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5075 5104])
+                    ("_sensor_ok" variable (:type "bool") (reparse-symbol classsubparts) [5131 5149])
+                    ("_calibrated" variable (:type "bool") (reparse-symbol classsubparts) [5192 5211])
+                    ("_rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [5248 5273])
+                    ("_last_report" variable (:type ("mag_report" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5276 5310])
+                    ("_range_bits" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5345 5367])
+                    ("_conf_reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5369 5389])
+                    ("_temperature_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5391 5422])
+                    ("_temperature_error_count" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5424 5459])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5704 5719])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [5753 5767])
+                    ("calibrate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6101 6119])
+                            ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6120 6136]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6085 6137])
+                    ("set_excitement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6536 6552]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6515 6553])
+                    ("set_temperature_compensation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6645 6661]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6610 6662])
+                    ("set_range" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("range" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6792 6807]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6775 6808])
+                    ("check_range" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6997 7002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6977 7003])
+                    ("check_conf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7212 7217]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7193 7218])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [7734 7743])
+                    ("write_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7907 7919])
+                            ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7920 7932]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7891 7933])
+                    ("read_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8089 8101])
+                            ("val" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8102 8115]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8074 8116])
+                    ("measure" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8225 8241])
+                    ("collect" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8309 8325])
+                    ("meas_to_float" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("in" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8531 8545]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [8509 8546])
+                    ("check_scale" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8648 8669])
+                    ("check_offset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8773 8795])
+                    ("HMC5883" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("HMC5883" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8874 8890]))                          
+                        :type ("HMC5883" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8866 8891])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("HMC5883" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8911 8927]))                          
+                        :type ("HMC5883" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8893 8928]))                  
+                :type "class")
+                nil [4164 8931])
+            ("hmc5883_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9003 9012])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9013 9026]))                  
+                :type "int")
+                nil [8986 9027])
+            ("HMC5883" function
+               (:constructor-flag t
+                :parent "HMC5883"
+                :arguments 
+                  ( ("interface" variable
+                       (:pointer 1
+                        :type ("device::Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9047 9073])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9074 9091])
+                    ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [9092 9115]))                  
+                :type ("HMC5883" type (:type "class") nil nil))
+                nil [9030 10318])
+            ("HMC5883" function
+               (:destructor-flag t
+                :parent "HMC5883"
+                :type "void")
+                nil [10320 10673])
+            ("init" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [10675 11162])
+            ("set_range" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("range" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11187 11202]))                  
+                :type "int")
+                nil [11164 12343])
+            ("check_range" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12535 12540]))                  
+                :type "void")
+                nil [12509 12872])
+            ("check_conf" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13080 13085]))                  
+                :type "void")
+                nil [13055 13392])
+            ("read" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13416 13434])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13435 13448])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13449 13463]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [13394 14660])
+            ("ioctl" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14681 14699])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [14700 14708])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14709 14727]))                  
+                :type "int")
+                nil [14662 16620])
+            ("start" function
+               (:parent "HMC5883"
+                :type "void")
+                nil [16622 16796])
+            ("stop" function
+               (:parent "HMC5883"
+                :type "void")
+                nil [16798 16963])
+            ("reset" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [16965 17071])
+            ("Run" function
+               (:parent "HMC5883"
+                :type "void")
+                nil [17073 17972])
+            ("measure" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [17974 18181])
+            ("collect" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [18183 23275])
+            ("calibrate" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23300 23318])
+                    ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23319 23335]))                  
+                :type "int")
+                nil [23277 27190])
+            ("check_scale" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [27192 27641])
+            ("check_offset" function
+               (:parent "HMC5883"
+                :type "int")
+                nil [27643 28105])
+            ("set_excitement" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28135 28151]))                  
+                :type "int")
+                nil [28107 28751])
+            ("set_temperature_compensation" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29772 29788]))                  
+                :type "int")
+                nil [29730 30328])
+            ("write_reg" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30353 30365])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30366 30378]))                  
+                :type "int")
+                nil [30330 30443])
+            ("read_reg" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30467 30479])
+                    ("val" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30480 30493]))                  
+                :type "int")
+                nil [30445 30585])
+            ("meas_to_float" function
+               (:parent "HMC5883"
+                :arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30616 30630]))                  
+                :type "float")
+                nil [30587 30735])
+            ("print_info" function
+               (:parent "HMC5883"
+                :type "void")
+                nil [30737 30957])
+            ("hmc5883" type
+               (:members 
+                  ( ("bus_options" variable
+                       (:dereference 1
+                        :default-value "{
+	{ HMC5883_BUS_I2C_EXTERNAL, \"/dev/hmc5883_ext\", &HMC5883_I2C_interface, PX4_I2C_BUS_EXPANSION, NULL },
+#ifdef PX4_I2C_BUS_EXPANSION1
+	{ HMC5883_BUS_I2C_EXTERNAL, \"/dev/hmc5883_ext1\", &HMC5883_I2C_interface, PX4_I2C_BUS_EXPANSION1, NULL },
+#endif
+#ifdef PX4_I2C_BUS_EXPANSION2
+	{ HMC5883_BUS_I2C_EXTERNAL, \"/dev/hmc5883_ext2\", &HMC5883_I2C_interface, PX4_I2C_BUS_EXPANSION2, NULL },
+#endif
+#ifdef PX4_I2C_BUS_ONBOARD
+	{ HMC5883_BUS_I2C_INTERNAL, \"/dev/hmc5883_int\", &HMC5883_I2C_interface, PX4_I2C_BUS_ONBOARD, NULL },
+#endif
+#ifdef PX4_SPIDEV_HMC
+	{ HMC5883_BUS_SPI, \"/dev/hmc5883_spi\", &HMC5883_SPI_interface, PX4_SPI_BUS_SENSORS, NULL },
+#endif
+}"
+                        :type ("hmc5883_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [31086 31907])
+                    ("hmc5883_bus_option" type
+                       (:members 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [31115 31138])
+                            ("devpath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [31140 31160])
+                            ("interface_constructor" variable (:type ("HMC5883_constructor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31162 31204])
+                            ("busnum" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [31206 31221])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("HMC5883" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31223 31236]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [31086 31907])
+                    ("NUM_BUS_OPTIONS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [31916 31931])
+                    ("start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31989 32012])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32013 32036]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31978 32037])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [32038 32050])
+                    ("start_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("hmc5883_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32066 32097])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32098 32121]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [32051 32122])
+                    ("find_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32159 32182]))                          
+                        :type ("hmc5883_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [32123 32183])
+                    ("test" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32194 32217]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32184 32218])
+                    ("reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32230 32253]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32219 32254])
+                    ("info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32264 32287]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [32255 32288])
+                    ("calibrate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32303 32326]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [32289 32327])
+                    ("temp_enable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32344 32362])
+                            ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [32363 32375]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [32328 32376])
+                    ("usage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32377 32390])
+                    ("start_bus" function
+                       (:arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("hmc5883_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32457 32488])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32489 32512]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [32442 33208])
+                    ("start" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [33366 33389])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [33390 33413]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33355 33816])
+                    ("stop" function (:type "int") (reparse-symbol namespacesubparts) [33818 34084])
+                    ("find_bus" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [34166 34189]))                          
+                        :type ("hmc5883_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [34130 34432])
+                    ("test" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [34590 34613]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34580 35703])
+                    ("calibrate" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [37926 37949]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [37912 38320])
+                    ("reset" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [38362 38385]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38351 38746])
+                    ("temp_enable" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [38816 38839])
+                            ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [38840 38852]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [38800 39147])
+                    ("info" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("HMC5883_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [39207 39230]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [39198 39391])
+                    ("usage" function (:type "void") (reparse-symbol namespacesubparts) [39393 39702]))                  
+                :type "namespace")
+                nil [31019 39705])
+            ("hmc5883_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [39737 39746])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39747 39760]))                  
+                :type "int")
+                nil [39720 41927]))          
+      :file "hmc5883.cpp"
+      :pointmax 41928
+      :fsize 41928
+      :lastmodtime '(23816 61035 733749 74000)
+      :unmatched-syntax '((symbol 8977 . 8985) (semantic-list 7731 . 7733) (symbol 7728 . 7731) (VOID 7721 . 7725))
+      :lexical-table 
+        '(("HMC5883_CONVERSION_INTERVAL" . ((semantic-list "(1000000 / 150)" 2840 . 2855)))
+          ("STATUS_REG_DATA_OUT_LOCK" . ((semantic-list "(1 << 1)" 3826 . 3834)))
+          ("NUM_BUS_OPTIONS" . ((semantic-list "(sizeof(bus_options)/sizeof(bus_options[0]))" 31932 . 31976)))
+          ("ADDR_DATA_OUT_X_MSB" . ((number "0x03" 2984 . 2988)))
+          ("HMC5883L_AVERAGING_8" . ((semantic-list "(3 << 5)" 3687 . 3695)))
+          ("ADDR_MODE" . ((number "0x02" 2950 . 2954)))
+          ("HMC5883L_MODE_NORMAL" . ((semantic-list "(0 << 0)" 3361 . 3369)))
+          ("HMC5883L_MODE_NEGATIVE_BIAS" . ((semantic-list "(1 << 1)" 3487 . 3495)))
+          ("MODE_REG_SINGLE_MODE" . ((semantic-list "(1 << 0)" 3769 . 3777)))
+          ("ADDR_DATA_OUT_Y_MSB" . ((number "0x07" 3120 . 3124)))
+          ("ADDR_DATA_OUT_X_LSB" . ((number "0x04" 3018 . 3022)))
+          ("ADDR_TEMP_OUT_MSB" . ((number "0x31" 3248 . 3252)))
+          ("STATUS_REG_DATA_READY" . ((semantic-list "(1 << 0)" 3938 . 3946)))
+          ("HMC5983_TEMP_SENSOR_ENABLE" . ((semantic-list "(1 << 7)" 4038 . 4046)))
+          ("ADDR_CONF_A" . ((number "0x00" 2898 . 2902)))
+          ("ADDR_DATA_OUT_Z_MSB" . ((number "0x05" 3052 . 3056)))
+          ("ADDR_STATUS" . ((number "0x09" 3181 . 3185)))
+          ("HMC5883L_AVERAGING_1" . ((semantic-list "(0 << 5)" 3548 . 3556)))
+          ("MODE_REG_CONTINOUS_MODE" . ((semantic-list "(0 << 0)" 3730 . 3738)))
+          ("ADDR_CONF_B" . ((number "0x01" 2925 . 2929)))
+          ("ADDR_DATA_OUT_Y_LSB" . ((number "0x08" 3154 . 3158)))
+          ("HMC5883L_AVERAGING_2" . ((semantic-list "(1 << 5)" 3609 . 3617)))
+          ("ADDR_TEMP_OUT_LSB" . ((number "0x32" 3280 . 3284)))
+          ("HMC5883L_MODE_POSITIVE_BIAS" . ((semantic-list "(1 << 0)" 3421 . 3429)))
+          ("HMC5883L_AVERAGING_4" . ((semantic-list "(2 << 5)" 3648 . 3656)))
+          ("ADDR_DATA_OUT_Z_LSB" . ((number "0x06" 3086 . 3090)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1840 1863])
+            ("sys/types.h" include (:system-flag t) nil [1865 1887])
+            ("stdint.h" include (:system-flag t) nil [1888 1907])
+            ("stdbool.h" include (:system-flag t) nil [1908 1928])
+            ("string.h" include (:system-flag t) nil [1929 1948])
+            ("assert.h" include (:system-flag t) nil [1949 1968])
+            ("debug.h" include (:system-flag t) nil [1969 1987])
+            ("errno.h" include (:system-flag t) nil [1988 2006])
+            ("unistd.h" include (:system-flag t) nil [2007 2026])
+            ("arch/board/board.h" include (:system-flag t) nil [2028 2057])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [2059 2090])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2091 2119])
+            ("drivers/drv_device.h" include (:system-flag t) nil [2120 2151])
+            ("hmc5883.h" include nil nil [2153 2173])
+            ("board_config.h" include nil nil [2175 2200])
+            ("HMC5883L_ADDRESS" variable (:constant-flag t) nil [2210 2226])
+            ("HMC5883_I2C_interface" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2272 2280]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [2234 2281])
+            ("HMC5883_I2C" type
+               (:superclasses 
+                  ( ("device::I2C" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2324 2331])
+                    ("HMC5883_I2C" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2345 2353]))                          
+                        :type ("HMC5883_I2C" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2333 2354])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2409 2426])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2427 2438])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2439 2454]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2392 2455])
+                    ("write" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2475 2492])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2493 2504])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2505 2520]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2457 2521])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("operation" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2542 2561])
+                            ("arg" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2562 2576]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2524 2577])
+                    ("protected" label nil (reparse-symbol classsubparts) [2579 2589])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2591 2611]))                  
+                :type "class")
+                nil [2283 2615])
+            ("HMC5883_I2C_interface" function
+               (:pointer 1
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2656 2664]))                  
+                :type ("device::Device" type (:type "class") nil nil))
+                nil [2617 2698])
+            ("HMC5883_I2C" function
+               (:constructor-flag t
+                :parent "HMC5883_I2C"
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [2725 2733]))                  
+                :type ("HMC5883_I2C" type (:type "class") nil nil))
+                nil [2700 2854])
+            ("ioctl" function
+               (:parent "HMC5883_I2C"
+                :arguments 
+                  ( ("operation" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2879 2898])
+                    ("arg" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2899 2913]))                  
+                :type "int")
+                nil [2856 3111])
+            ("probe" function
+               (:parent "HMC5883_I2C"
+                :type "int")
+                nil [3113 3584])
+            ("write" function
+               (:parent "HMC5883_I2C"
+                :arguments 
+                  ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3609 3626])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3627 3638])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3639 3654]))                  
+                :type "int")
+                nil [3586 3831])
+            ("read" function
+               (:parent "HMC5883_I2C"
+                :arguments 
+                  ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3855 3872])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3873 3884])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3885 3900]))                  
+                :type "int")
+                nil [3833 3979]))          
+      :file "hmc5883_i2c.cpp"
+      :pointmax 3980
+      :fsize 3979
+      :lastmodtime '(23801 12013 504191 975000)
+      :unmatched-syntax '((punctuation 2388 . 2389) (DEFAULT 2381 . 2388) (punctuation 2379 . 2380) (semantic-list 2376 . 2378) (symbol 2365 . 2376) (punctuation 2364 . 2365) (VIRTUAL 2356 . 2363))
+      :lexical-table 
+        '(("HMC5883L_ADDRESS" . ((number "0x1E" 2228 . 2232)))
+          )
+))
+  :file "!home!angel!src!Firmware!src!drivers!magnetometer!hmc5883!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDP3X.hpp" include nil nil [1734 1754])
+            ("probe" function
+               (:parent "SDP3X"
+                :type "int")
+                nil [1849 1894])
+            ("write_command" function
+               (:parent "SDP3X"
+                :arguments 
+                  ( ("command" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1938]))                  
+                :type "int")
+                nil [1896 2095])
+            ("init_sdp3x" function
+               (:parent "SDP3X"
+                :type "bool")
+                nil [2097 3414])
+            ("collect" function
+               (:parent "SDP3X"
+                :type "int")
+                nil [3416 4608])
+            ("cycle" function
+               (:parent "SDP3X"
+                :type "void")
+                nil [4610 4945])
+            ("crc" function
+               (:parent "SDP3X"
+                :arguments 
+                  ( ("data" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4963 4984])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4985 4999])
+                    ("checksum" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5000 5017]))                  
+                :type "bool")
+                nil [4947 5406]))          
+      :file "SDP3X.cpp"
+      :pointmax 5407
+      :fsize 5406
+      :lastmodtime '(23770 52090 771807 640000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "SDP3X.hpp"
+      :fsize 3814
+      :lastmodtime '(23770 52090 771807 640000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!sdp3x_airspeed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

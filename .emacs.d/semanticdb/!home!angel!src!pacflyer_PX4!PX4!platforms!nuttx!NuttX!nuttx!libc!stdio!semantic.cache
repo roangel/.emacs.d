@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [1994 2019])
+            ("sys/types.h" include (:system-flag t) nil [2021 2043])
+            ("stdio.h" include (:system-flag t) nil [2044 2062])
+            ("libc.h" include nil nil [2064 2081])
+            ("snprintf" function
+               (:arguments 
+                  ( ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2443 2451])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2447 2457])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2458 2470])
+                    ("IPTR" variable
+                       (:constant-flag t
+                        :type ("FAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2490])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2486 2499])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2500 2504]))                  
+                :type "int")
+                nil [2430 3454]))          
+      :file "lib_snprintf.c"
+      :pointmax 3455
+      :fsize 3454
+      :lastmodtime '(23770 54121 951242 82000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!libc!stdio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

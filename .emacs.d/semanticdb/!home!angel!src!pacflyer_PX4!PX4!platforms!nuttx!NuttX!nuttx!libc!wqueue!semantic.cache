@@ -1,0 +1,29 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [1998 2023])
+            ("stdint.h" include (:system-flag t) nil [2025 2044])
+            ("signal.h" include (:system-flag t) nil [2045 2064])
+            ("assert.h" include (:system-flag t) nil [2065 2084])
+            ("queue.h" include (:system-flag t) nil [2085 2103])
+            ("errno.h" include (:system-flag t) nil [2104 2122])
+            ("nuttx/clock.h" include (:system-flag t) nil [2124 2148])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [2149 2174])
+            ("wqueue/wqueue.h" include nil nil [2176 2202]))          
+      :file "work_queue.c"
+      :pointmax 6620
+      :fsize 6619
+      :lastmodtime '(23770 54121 959242 128000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "wqueue.h"
+      :fsize 4349
+      :lastmodtime '(23770 54121 959242 128000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!libc!wqueue!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

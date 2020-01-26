@@ -1,0 +1,28 @@
+;; Object obc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "obc/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("OUT" variable (:default-value ("out")) nil [78 89])
+            ("subdirs" variable (:default-value ("libsoccptp" "libmavconn" "wiringPi/wiringPi" "watchdog")) nil [128 188])
+            ("obc_version" variable (:default-value ("$$(if [ -z $$(git tag -l --points-at HEAD) ] ; then echo \"notag\" ; else echo $$(git tag -l --points-at HEAD) ; fi)")) nil [188 315])
+            (".PHONY" function (:arguments ("all" "clean" "$(subdirs)")) nil [316 345])
+            ("all" function (:arguments ("frontend")) nil [346 360])
+            ("frontend" function (:arguments ("$(OUT)" "$(subdirs)")) nil [675 703])
+            ("release" function (:arguments ("all")) nil [795 849])
+            ("clean" function (:arguments ("$(subdirs)" "frontend")) nil [851 975])
+            ("format" function nil nil [976 1079])
+            ("$(subdirs)" function nil nil [1080 1092])
+            ("$(OUT)" function nil nil [1184 1209])
+            ("submodulesclean" function nil nil [1210 1338]))          
+      :file "Makefile"
+      :pointmax 1338
+      :fsize 1337
+      :lastmodtime '(23486 2728 231299 904000)
+      :unmatched-syntax '((shell-command 1289 . 1337) (bol 1288 . 1288) (ENDIF 1177 . 1182) (bol 1173 . 1173) (shell-command 1158 . 1172) (bol 1157 . 1157) (ELSE 1152 . 1156) (bol 1148 . 1148) (shell-command 1127 . 1147) (bol 1126 . 1126) (semantic-list 1101 . 1125) (IFEQ 1096 . 1100) (bol 1092 . 1092) (ENDIF 788 . 793) (bol 784 . 784) (shell-command 769 . 783) (bol 768 . 768) (ELSE 763 . 767) (bol 759 . 759) (shell-command 738 . 758) (bol 737 . 737) (semantic-list 712 . 736) (IFEQ 707 . 711) (bol 703 . 703) (shell-command 658 . 673) (bol 657 . 657) (shell-command 588 . 656) (bol 587 . 587) (shell-command 458 . 586) (bol 457 . 457) (ENDIF 451 . 456) (bol 447 . 447) (shell-command 429 . 446) (bol 428 . 428) (ELSE 423 . 427) (bol 419 . 419) (shell-command 395 . 418) (bol 394 . 394) (semantic-list 369 . 393) (IFEQ 364 . 368) (bol 360 . 360) (symbol 117 . 126) (semantic-list 109 . 117) (punctuation 108 . 109) (punctuation 106 . 107) (symbol 97 . 105) (symbol 90 . 96) (bol 90 . 90))))
+  :file "!home!angel!work!obc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

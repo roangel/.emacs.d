@@ -1,0 +1,141 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1868 1885])
+            ("stdio.h" include (:system-flag t) nil [1886 1904])
+            ("float.h" include (:system-flag t) nil [1905 1923])
+            ("controllib/blocks.hpp" include (:system-flag t) nil [1925 1957])
+            ("control" using (:type ("control" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1959 1983])
+            ("ASSERT_CL" variable (:constant-flag t) nil [1993 2002])
+            ("basicBlocksTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2050 2072])
+            ("blockLimitTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2073 2094])
+            ("blockLimitSymTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2095 2119])
+            ("blockLowPassTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2120 2143])
+            ("blockHighPassTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2144 2168])
+            ("blockLowPass2Test" function
+               (:prototype-flag t
+                :type "int")
+                nil [2169 2193])
+            ("blockIntegralTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2194 2218])
+            ("blockIntegralTrapTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2219 2247])
+            ("blockDerivativeTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2248 2274])
+            ("blockPTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2275 2292])
+            ("blockPITest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2293 2311])
+            ("blockPDTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2312 2330])
+            ("blockPIDTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2331 2350])
+            ("blockOutputTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2351 2373])
+            ("blockRandUniformTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2374 2401])
+            ("blockRandGaussTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2402 2427])
+            ("blockStatsTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2428 2449])
+            ("blockDelayTest" function
+               (:prototype-flag t
+                :type "int")
+                nil [2450 2471])
+            ("basicBlocksTest" function (:type "int") nil [2473 3284])
+            ("blockLimitTest" function (:type "int") nil [3286 3701])
+            ("blockLimitSymTest" function (:type "int") nil [3703 4083])
+            ("blockLowPassTest" function (:type "int") nil [4085 4780])
+            ("blockHighPassTest" function (:type "int") nil [4783 5583])
+            ("blockLowPass2Test" function (:type "int") nil [5585 6294])
+            ("blockIntegralTest" function (:type "int") nil [6297 7154])
+            ("blockIntegralTrapTest" function (:type "int") nil [7156 8188])
+            ("blockDerivativeTest" function (:type "int") nil [8190 8839])
+            ("blockPTest" function (:type "int") nil [8841 9199])
+            ("blockPITest" function (:type "int") nil [9201 9816])
+            ("blockPDTest" function (:type "int") nil [9818 10597])
+            ("blockPIDTest" function (:type "int") nil [10599 11625])
+            ("blockOutputTest" function (:type "int") nil [11627 12249])
+            ("blockRandUniformTest" function (:type "int") nil [12251 13014])
+            ("blockRandGaussTest" function (:type "int") nil [13016 13839])
+            ("blockStatsTest" function (:type "int") nil [13841 14354])
+            ("blockDelayTest" function (:type "int") nil [14356 15003])
+            ("controllib_test_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15050 15059])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15060 15073]))                  
+                :type "int")
+                nil [15025 15074])
+            ("controllib_test_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15101 15110])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15111 15124]))                  
+                :type "int")
+                nil [15076 15155]))          
+      :file "controllib_test_main.cpp"
+      :pointmax 15156
+      :fsize 15155
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax '((symbol 15016 . 15024) (punctuation 6294 . 6295) (punctuation 4780 . 4781))
+      :lexical-table 
+        '(("ASSERT_CL" (spp-arg-list ("T") 2002 . 2005) . 
+              ((IF "if" 2006 . 2008) (semantic-list "(!(T))" 2009 . 2015) (semantic-list "{ printf(\"FAIL\\n\"); return -1; }" 2016 . 2048)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!controllib!controllib_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

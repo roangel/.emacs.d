@@ -1,0 +1,220 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("standard.h" include nil nil [1962 1983])
+            ("vtol_att_control_main.h" include nil nil [1984 2018])
+            ("float.h" include (:system-flag t) nil [2020 2038])
+            ("Standard" function
+               (:constructor-flag t
+                :parent "Standard"
+                :arguments 
+                  ( ("attc" variable
+                       (:pointer 1
+                        :type ("VtolAttitudeControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2059 2085]))                  
+                :type ("Standard" type (:type "class") nil nil))
+                nil [2040 3624])
+            ("Standard" function
+               (:destructor-flag t
+                :parent "Standard"
+                :type "void")
+                nil [3626 3651])
+            ("parameters_update" function
+               (:parent "Standard"
+                :type "void")
+                nil [3653 6410])
+            ("update_vtol_state" function
+               (:parent "Standard"
+                :type "void")
+                nil [6412 10326])
+            ("update_transition_state" function
+               (:parent "Standard"
+                :type "void")
+                nil [10328 15091])
+            ("update_mc_state" function
+               (:parent "Standard"
+                :type "void")
+                nil [15093 18113])
+            ("update_fw_state" function
+               (:parent "Standard"
+                :type "void")
+                nil [18115 18436])
+            ("fill_actuator_outputs" function
+               (:parent "Standard"
+                :type "void")
+                nil [18656 20867])
+            ("waiting_on_tecs" function
+               (:parent "Standard"
+                :type "void")
+                nil [20869 20976])
+            ("set_max_mc" function
+               (:parent "Standard"
+                :arguments 
+                  ( ("pwm_value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21061 21080]))                  
+                :type "void")
+                nil [21035 21707]))          
+      :file "standard.cpp"
+      :pointmax 21708
+      :fsize 21707
+      :lastmodtime '(23770 52090 855808 133000)
+      :unmatched-syntax '((punctuation 20976 . 20977)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("tiltrotor.h" include nil nil [1871 1893])
+            ("vtol_att_control_main.h" include nil nil [1894 1928])
+            ("ARSP_YAW_CTRL_DISABLE" variable (:constant-flag t) nil [1938 1959])
+            ("Tiltrotor" function
+               (:constructor-flag t
+                :parent "Tiltrotor"
+                :arguments 
+                  ( ("attc" variable
+                       (:pointer 1
+                        :type ("VtolAttitudeControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2058 2084]))                  
+                :type ("Tiltrotor" type (:type "class") nil nil))
+                nil [2037 3325])
+            ("Tiltrotor" function
+               (:destructor-flag t
+                :parent "Tiltrotor"
+                :type "void")
+                nil [3327 3355])
+            ("parameters_update" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [3357 5706])
+            ("get_motor_off_channels" function
+               (:parent "Tiltrotor"
+                :arguments 
+                  ( ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [5746 5759]))                  
+                :type "int")
+                nil [5708 6020])
+            ("update_vtol_state" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [6022 8977])
+            ("update_mc_state" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [8979 9325])
+            ("update_fw_state" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [9327 9678])
+            ("update_transition_state" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [9680 13423])
+            ("waiting_on_tecs" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [13425 13559])
+            ("fill_actuator_outputs" function
+               (:parent "Tiltrotor"
+                :type "void")
+                nil [13607 15241])
+            ("set_rear_motor_state" function
+               (:parent "Tiltrotor"
+                :arguments 
+                  ( ("state" variable (:type ("rear_motor_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15317 15340])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [15341 15351]))                  
+                :type "void")
+                nil [15280 16528])
+            ("is_motor_off_channel" function
+               (:parent "Tiltrotor"
+                :arguments 
+                  ( ("channel" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16567 16585]))                  
+                :type "bool")
+                nil [16530 16647]))          
+      :file "tiltrotor.cpp"
+      :pointmax 16648
+      :fsize 16647
+      :lastmodtime '(23770 52090 855808 133000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARSP_YAW_CTRL_DISABLE" . ((number "7.0f" 1960 . 1964)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("vtol_type.h" include nil nil [1865 1887])
+            ("vtol_att_control_main.h" include nil nil [1888 1922])
+            ("cfloat" include (:system-flag t) nil [1924 1941])
+            ("px4_defines.h" include (:system-flag t) nil [1942 1966])
+            ("matrix/math.hpp" include (:system-flag t) nil [1967 1993])
+            ("VtolType" function
+               (:constructor-flag t
+                :parent "VtolType"
+                :arguments 
+                  ( ("att_controller" variable
+                       (:pointer 1
+                        :type ("VtolAttitudeControl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2014 2050]))                  
+                :type ("VtolType" type (:type "class") nil nil))
+                nil [1995 2838])
+            ("VtolType" function
+               (:destructor-flag t
+                :parent "VtolType"
+                :type "void")
+                nil [2840 2866])
+            ("set_idle_mc" function
+               (:parent "VtolType"
+                :type "void")
+                nil [2908 3598])
+            ("set_idle_fw" function
+               (:parent "VtolType"
+                :type "void")
+                nil [3640 4174])
+            ("update_mc_state" function
+               (:parent "VtolType"
+                :type "void")
+                nil [4176 5115])
+            ("update_fw_state" function
+               (:parent "VtolType"
+                :type "void")
+                nil [5117 5965])
+            ("update_transition_state" function
+               (:parent "VtolType"
+                :type "void")
+                nil [5967 6041])
+            ("can_transition_on_ground" function
+               (:parent "VtolType"
+                :type "bool")
+                nil [6043 6152])
+            ("check_quadchute_condition" function
+               (:parent "VtolType"
+                :type "void")
+                nil [6154 8058]))          
+      :file "vtol_type.cpp"
+      :pointmax 8059
+      :fsize 8058
+      :lastmodtime '(23770 52090 855808 133000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "vtol_type.h"
+      :fsize 6286
+      :lastmodtime '(23770 52090 855808 133000))
+    (semanticdb-table "semanticdb-table"
+      :file "vtol_att_control_main.h"
+      :fsize 10244
+      :lastmodtime '(23770 52090 855808 133000))
+    (semanticdb-table "semanticdb-table"
+      :file "tiltrotor.h"
+      :fsize 5031
+      :lastmodtime '(23770 52090 855808 133000))
+    (semanticdb-table "semanticdb-table"
+      :file "standard.h"
+      :fsize 3971
+      :lastmodtime '(23770 52090 855808 133000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!vtol_att_control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

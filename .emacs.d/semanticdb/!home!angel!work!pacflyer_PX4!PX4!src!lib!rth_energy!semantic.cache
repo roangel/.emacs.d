@@ -1,0 +1,542 @@
+;; Object rth_energy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rth_energy/"
+  :tables
+  (list
+    (semanticdb-table "rth_energy.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("rth_energy.h" include nil nil [365 388])
+            ("Rth_energy" function
+               (:constructor-flag t
+                :parent "Rth_energy"
+                :type ("Rth_energy" type (:type "class") nil nil))
+                nil [390 418])
+            ("rise_energy_cruise" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("home_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [550 572])
+                    ("current_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [582 607])
+                    ("min_rth_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [608 633])
+                    ("dv_rise_cruise" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [634 662]))                  
+                :type "float")
+                nil [513 829])
+            ("rise_energy_hover" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("home_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [976 998])
+                    ("current_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1007 1032])
+                    ("dist_to_home" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1033 1059])
+                    ("min_dist" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1060 1082])
+                    ("min_rth_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1083 1108])
+                    ("dv_rise_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1117 1144])
+                    ("des_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1145 1166]))                  
+                :type "float")
+                nil [940 1506])
+            ("fly_back_energy_cruise" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("dist_to_home" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1722 1748])
+                    ("dv_cruise" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1749 1772])
+                    ("wind_magnitude" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1773 1801])
+                    ("airspeed_desired" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1804 1834]))                  
+                :type "float")
+                nil [1681 2192])
+            ("fly_back_energy_hover" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("dist_to_home" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2306 2332])
+                    ("dv_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2333 2355]))                  
+                :type "float")
+                nil [2266 2392])
+            ("loiter_down_energy" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("home_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2544 2566])
+                    ("current_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2567 2592])
+                    ("transition_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2593 2621])
+                    ("dv_loiter_down" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2631 2659])
+                    ("sink_speed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2660 2684])
+                    ("min_rth_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2685 2710]))                  
+                :type "float")
+                nil [2507 3013])
+            ("transition_land_energy" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("transition_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3159 3187])
+                    ("d_hor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3188 3207])
+                    ("d_vert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3210 3230])
+                    ("z_sec_stage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3231 3256])
+                    ("v_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3257 3278])
+                    ("des_speed_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3279 3308])
+                    ("s_des" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3311 3330])
+                    ("dv_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3331 3353])
+                    ("dv_hover_des" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3354 3380])
+                    ("thdn_speed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3381 3405]))                  
+                :type "float")
+                nil [3118 3908])
+            ("hover_land_energy" function
+               (:parent "Rth_energy"
+                :arguments 
+                  ( ("home_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4017 4039])
+                    ("current_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4048 4073])
+                    ("z_sec_stage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4074 4099])
+                    ("des_speed_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4100 4129])
+                    ("s_des" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4138 4157])
+                    ("dv_hover" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4158 4180])
+                    ("dv_hover_des" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4181 4207])
+                    ("des_alt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4208 4229])
+                    ("thdn_speed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4238 4262]))                  
+                :type "float")
+                nil [3981 4941]))          
+      :file "rth_energy.cpp"
+      :pointmax 4942
+      :fsize 4941
+      :lastmodtime '(23437 18825 464963 180000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rth_energy.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("RTHENERGY_H" variable (:constant-flag t) nil [409 420])
+            ("Rth_energy" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [441 448])
+                    ("Rth_energy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Rth_energy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [451 464])
+                    ("rise_energy_hover" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("home_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [498 520])
+                            ("current_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [532 557])
+                            ("dist_to_home" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [558 584])
+                            ("min_dis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [585 606])
+                            ("min_rth_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [607 632])
+                            ("dv_rise_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [644 671])
+                            ("descend_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [672 697]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [467 698])
+                    ("rise_energy_cruise" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("home_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [733 755])
+                            ("current_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [761 786])
+                            ("min_rth_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [787 812])
+                            ("dv_rise_cruise" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [813 841]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [701 842])
+                    ("fly_back_energy_cruise" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("dist_to_home" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [881 907])
+                            ("dv_cruise" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [908 931])
+                            ("wind_magnitude" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [932 960])
+                            ("airspeed_desired" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [970 1000]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [845 1001])
+                    ("fly_back_energy_hover" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("dist_to_home" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1039 1065])
+                            ("dv_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1066 1088]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [1004 1089])
+                    ("loiter_down_energy" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("home_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1124 1146])
+                            ("current_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1147 1172])
+                            ("transition_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1173 1201])
+                            ("dv_loiter_down" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1207 1235])
+                            ("sink_speed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1236 1260])
+                            ("min_rth_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1261 1286]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [1092 1287])
+                    ("transition_land_energy" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("transition_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1326 1354])
+                            ("d_hor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1355 1374])
+                            ("d_vert" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1384 1404])
+                            ("z_sec_stage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1405 1430])
+                            ("v_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1431 1452])
+                            ("descend_speed_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1453 1486])
+                            ("s_des" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1496 1515])
+                            ("dv_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1516 1538])
+                            ("dv_hover_des" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1539 1565])
+                            ("touchdown_speed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1566 1595]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [1290 1596])
+                    ("hover_land_energy" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("home_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1630 1652])
+                            ("current_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1664 1689])
+                            ("z_sec_stage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1690 1715])
+                            ("descend_speed_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1716 1749])
+                            ("s_des" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1761 1780])
+                            ("dv_hover" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1781 1803])
+                            ("dv_hover_des" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1804 1830])
+                            ("descend_alt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1831 1856])
+                            ("touchdown_speed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1868 1897]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [1599 1898]))                  
+                :type "class")
+                nil [422 1901]))          
+      :file "rth_energy.h"
+      :pointmax 1925
+      :fsize 1924
+      :lastmodtime '(23437 18825 464963 180000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RTHENERGY_H")
+          )
+))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!lib!rth_energy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

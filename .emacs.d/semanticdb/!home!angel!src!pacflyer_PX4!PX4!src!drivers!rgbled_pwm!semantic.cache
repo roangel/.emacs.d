@@ -1,0 +1,263 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [1883 1908])
+            ("sys/types.h" include (:system-flag t) nil [1945 1967])
+            ("stdint.h" include (:system-flag t) nil [1968 1987])
+            ("string.h" include (:system-flag t) nil [1988 2007])
+            ("stdlib.h" include (:system-flag t) nil [2008 2027])
+            ("stdbool.h" include (:system-flag t) nil [2028 2048])
+            ("fcntl.h" include (:system-flag t) nil [2049 2067])
+            ("unistd.h" include (:system-flag t) nil [2068 2087])
+            ("stdio.h" include (:system-flag t) nil [2088 2106])
+            ("ctype.h" include (:system-flag t) nil [2107 2125])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [2127 2152])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2153 2181])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2183 2218])
+            ("systemlib/err.h" include (:system-flag t) nil [2219 2245])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2246 2278])
+            ("board_config.h" include (:system-flag t) nil [2280 2305])
+            ("drivers/drv_led.h" include (:system-flag t) nil [2307 2335])
+            ("lib/led/led.h" include (:system-flag t) nil [2336 2360])
+            ("drivers/device/device.h" include (:system-flag t) nil [2361 2395])
+            ("systemlib/err.h" include (:system-flag t) nil [2396 2422])
+            ("RGBLED_ONTIME" variable (:constant-flag t) nil [2432 2445])
+            ("RGBLED_OFFTIME" variable (:constant-flag t) nil [2458 2472])
+            ("RGBLED_PWM" type
+               (:superclasses 
+                  ( ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2519 2526])
+                    ("RGBLED_PWM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("RGBLED_PWM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2528 2541])
+                    ("RGBLED_PWM" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2543 2565])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2569 2589])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2591 2612])
+                    ("status" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2614 2628])
+                    ("private" label nil (reparse-symbol classsubparts) [2630 2638])
+                    ("_work" variable (:type ("work_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2640 2655])
+                    ("_r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2658 2671])
+                    ("_g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2673 2686])
+                    ("_b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2688 2701])
+                    ("_brightness" variable (:type "float") (reparse-symbol classsubparts) [2703 2723])
+                    ("_running" variable
+                       (:typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2726 2750])
+                    ("_should_run" variable
+                       (:typemodifiers ("volatile")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2752 2779])
+                    ("_led_controller" variable (:type ("LedController" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2782 2813])
+                    ("led_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2844 2854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2816 2855])
+                    ("led" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2857 2870])
+                    ("send_led_rgb" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2873 2894])
+                    ("get" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("on" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2906 2915])
+                            ("powersave" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2916 2932])
+                            ("r" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2933 2944])
+                            ("g" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2945 2956])
+                            ("b" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2957 2968]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2896 2969]))                  
+                :type "class")
+                nil [2478 2972])
+            ("rgbled_pwm_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3014 3023])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3024 3037]))                  
+                :type "int")
+                nil [2994 3038])
+            ("led_pwm_servo_set" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3068 3085])
+                    ("value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3086 3101]))                  
+                :type "int")
+                nil [3039 3102])
+            ("led_pwm_servo_get" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3137 3154]))                  
+                :type "unsigned int")
+                nil [3103 3155])
+            ("led_pwm_servo_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3186 3191]))                  
+                :type "int")
+                nil [3156 3192])
+            ("led_pwm_servo_deinit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3226 3231]))                  
+                :type "void")
+                nil [3193 3232])
+            ("unnamed" type
+               (:members 
+                  ( ("g_rgbled" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("RGBLED_PWM" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3289 3320]))                  
+                :type "namespace")
+                nil [3277 3322])
+            ("RGBLED_PWM" function
+               (:constructor-flag t
+                :parent "RGBLED_PWM"
+                :type ("RGBLED_PWM" type (:type "class") nil nil))
+                nil [3324 3491])
+            ("RGBLED_PWM" function
+               (:destructor-flag t
+                :parent "RGBLED_PWM"
+                :type "void")
+                nil [3493 3622])
+            ("init" function
+               (:parent "RGBLED_PWM"
+                :type "int")
+                nil [3624 3869])
+            ("status" function
+               (:parent "RGBLED_PWM"
+                :type "int")
+                nil [3871 4241])
+            ("probe" function
+               (:parent "RGBLED_PWM"
+                :type "int")
+                nil [4242 4283])
+            ("led_trampoline" function
+               (:parent "RGBLED_PWM"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4317 4327]))                  
+                :type "void")
+                nil [4285 4403])
+            ("led" function
+               (:parent "RGBLED_PWM"
+                :type "void")
+                nil [4435 5877])
+            ("send_led_rgb" function
+               (:parent "RGBLED_PWM"
+                :type "int")
+                nil [5968 6259])
+            ("get" function
+               (:parent "RGBLED_PWM"
+                :arguments 
+                  ( ("on" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [6281 6290])
+                    ("powersave" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [6291 6307])
+                    ("r" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6308 6319])
+                    ("g" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6320 6331])
+                    ("b" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6332 6343]))                  
+                :type "int")
+                nil [6261 6437])
+            ("rgbled_usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [6439 6530])
+            ("rgbled_pwm_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6552 6561])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6562 6575]))                  
+                :type "int")
+                nil [6532 7562]))          
+      :file "rgbled_pwm.cpp"
+      :pointmax 7563
+      :fsize 7562
+      :lastmodtime '(23770 52090 771807 640000)
+      :unmatched-syntax '((symbol 2985 . 2993))
+      :lexical-table 
+        '(("RGBLED_ONTIME" . ((number "120" 2446 . 2449)))
+          ("RGBLED_OFFTIME" . ((number "120" 2473 . 2476)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!rgbled_pwm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

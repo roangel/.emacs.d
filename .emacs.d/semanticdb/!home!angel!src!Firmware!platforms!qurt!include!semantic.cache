@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PX4_I2C_BUS_ESC" variable (:constant-flag t) nil [44 59])
+            ("PX4_I2C_BUS_EXPANSION" variable (:constant-flag t) nil [71 92])
+            ("PX4_I2C_BUS_LED" variable (:constant-flag t) nil [103 118])
+            ("BOARD_OVERRIDE_UUID" variable (:constant-flag t) nil [131 150])
+            ("PX4_SOC_ARCH_ID" variable (:constant-flag t) nil [202 217])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [252 270])
+            ("BOARD_HAS_NO_BOOTLOADER" variable (:constant-flag t) nil [279 302])
+            ("drivers/boards/common/board_common.h" include (:system-flag t) nil [304 351]))          
+      :file "board_config.h"
+      :pointmax 352
+      :fsize 351
+      :lastmodtime '(23900 2471 4520 27000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("PX4_I2C_BUS_EXPANSION" . ((number "3" 93 . 94)))
+          ("BOARD_OVERRIDE_UUID" . ((string "\"SYSTEMID0000    \"" 151 . 169)))
+          ("BOARD_HAS_NO_RESET")
+          ("PX4_I2C_BUS_LED" . ((number "3" 120 . 121)))
+          ("PX4_SOC_ARCH_ID" . ((symbol "PX4_SOC_ARCH_ID_QURT" 222 . 242)))
+          ("BOARD_HAS_NO_BOOTLOADER")
+          ("PX4_I2C_BUS_ESC" . ((number "1" 61 . 62)))
+          )
+))
+  :file "!home!angel!src!Firmware!platforms!qurt!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

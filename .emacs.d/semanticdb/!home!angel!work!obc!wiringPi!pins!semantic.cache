@@ -1,0 +1,22 @@
+;; Object pins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pins/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("SRC" variable (:default-value ("pins.tex")) nil [2 17])
+            ("all" function (:arguments ("${SRC}")) nil [46 103])
+            ("pins.dvi" function (:arguments ("pins.tex")) nil [104 143])
+            ("pdf" function (:arguments ("pins.dvi")) nil [144 178])
+            (".PHONY" function (:arguments ("clean")) nil [180 194])
+            ("clean" function nil nil [194 249]))          
+      :file "Makefile"
+      :pointmax 249
+      :fsize 248
+      :lastmodtime '(23486 2894 35782 9000)
+      :unmatched-syntax '((shell-command 202 . 248) (bol 201 . 201) (punctuation 36 . 37) (punctuation 34 . 35) (punctuation 33 . 34) (symbol 31 . 32) (bol 31 . 31))))
+  :file "!home!angel!work!obc!wiringPi!pins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

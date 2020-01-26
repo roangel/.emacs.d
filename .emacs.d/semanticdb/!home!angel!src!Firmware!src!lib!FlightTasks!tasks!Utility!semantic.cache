@@ -1,0 +1,171 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ObstacleAvoidance.hpp" include nil nil [1774 1806])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1808 1831])
+            ("time_literals" using (:type ("time_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1832 1862])
+            ("_ms" variable (:type "int") nil [1991 1995])
+            ("_ms" variable (:type "int") nil [2146 2150])
+            ("empty_trajectory_waypoint" variable
+               (:constant-flag t
+                :default-value "{0, 0, {0, 0, 0, 0, 0, 0, 0},
+	{	{0, {NAN, NAN, NAN}, {NAN, NAN, NAN}, {NAN, NAN, NAN}, NAN, NAN, false, {0, 0, 0}},
+		{0, {NAN, NAN, NAN}, {NAN, NAN, NAN}, {NAN, NAN, NAN}, NAN, NAN, false, {0, 0, 0}},
+		{0, {NAN, NAN, NAN}, {NAN, NAN, NAN}, {NAN, NAN, NAN}, NAN, NAN, false, {0, 0, 0}},
+		{0, {NAN, NAN, NAN}, {NAN, NAN, NAN}, {NAN, NAN, NAN}, NAN, NAN, false, {0, 0, 0}},
+		{0, {NAN, NAN, NAN}, {NAN, NAN, NAN}, {NAN, NAN, NAN}, NAN, NAN, false, {0, 0, 0}}
+	}
+}"
+                :type ("vehicle_trajectory_waypoint_s" type (:type "class") nil nil))
+                nil [2152 2681])
+            ("ObstacleAvoidance" function
+               (:constructor-flag t
+                :parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("ModuleParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2720 2741]))                  
+                :type ("ObstacleAvoidance" type (:type "class") nil nil))
+                nil [2683 2942])
+            ("ObstacleAvoidance" function
+               (:destructor-flag t
+                :parent "ObstacleAvoidance"
+                :type "void")
+                nil [2944 3209])
+            ("initializeSubscriptions" function
+               (:parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("subscription_array" variable
+                       (:reference 1
+                        :type ("SubscriptionArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3259 3297]))                  
+                :type "bool")
+                nil [3211 3535])
+            ("injectAvoidanceSetpoints" function
+               (:parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("pos_sp" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3586 3603])
+                    ("vel_sp" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3604 3621])
+                    ("yaw_sp" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3622 3636])
+                    ("yaw_speed_sp" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3639 3659]))                  
+                :type "void")
+                nil [3537 5392])
+            ("updateAvoidanceDesiredWaypoints" function
+               (:parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("curr_wp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5450 5474])
+                    ("curr_yaw" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5475 5496])
+                    ("curr_yawspeed" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5499 5525])
+                    ("next_wp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5528 5552])
+                    ("next_yaw" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5553 5574])
+                    ("next_yawspeed" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5575 5601])
+                    ("ext_yaw_active" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5602 5628]))                  
+                :type "void")
+                nil [5394 7024])
+            ("updateAvoidanceDesiredSetpoints" function
+               (:parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("pos_sp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7082 7105])
+                    ("vel_sp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7106 7129]))                  
+                :type "void")
+                nil [7026 7497])
+            ("checkAvoidanceProgress" function
+               (:parent "ObstacleAvoidance"
+                :arguments 
+                  ( ("pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7546 7566])
+                    ("prev_wp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7567 7591])
+                    ("target_acceptance_radius" variable (:type "float") (reparse-symbol arg-sub-list) [7594 7625])
+                    ("closest_pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7626 7653])
+                    ("wp_type" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7654 7672]))                  
+                :type "void")
+                nil [7499 9298])
+            ("_publishAvoidanceDesiredWaypoint" function
+               (:parent "ObstacleAvoidance"
+                :type "void")
+                nil [9300 9689])
+            ("_publishVehicleCmdDoLoiter" function
+               (:parent "ObstacleAvoidance"
+                :type "void")
+                nil [9691 10500]))          
+      :file "ObstacleAvoidance.cpp"
+      :pointmax 10501
+      :fsize 10500
+      :lastmodtime '(23816 61035 741749 130000)
+      :unmatched-syntax '((number 2143 . 2146) (punctuation 2141 . 2142) (symbol 2120 . 2140) (symbol 2111 . 2119) (symbol 2101 . 2110) (STATIC 2094 . 2100) (number 1988 . 1991) (punctuation 1986 . 1987) (symbol 1957 . 1985) (symbol 1948 . 1956) (symbol 1938 . 1947) (STATIC 1931 . 1937)))
+    (semanticdb-table "semanticdb-table"
+      :file "ObstacleAvoidance.hpp"
+      :fsize 5984
+      :lastmodtime '(23816 61035 741749 130000)))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!Utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

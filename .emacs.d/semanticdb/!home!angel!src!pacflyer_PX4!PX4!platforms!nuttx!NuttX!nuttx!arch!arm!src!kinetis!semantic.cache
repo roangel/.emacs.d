@@ -1,0 +1,103 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_KINETEIS_KINETEIS_DMA_H" variable (:constant-flag t) nil [1915 1953])
+            ("nuttx/config.h" include (:system-flag t) nil [2131 2156])
+            ("sys/types.h" include (:system-flag t) nil [2157 2179])
+            ("chip/kinetis_dma.h" include nil nil [2181 2210])
+            ("DMA_HANDLE" variable
+               (:pointer 1
+                :type "void")
+                nil [2586 2603])
+            ("dma_callback_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2635 2653])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2654 2664])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [2665 2676]))                  
+                :type "void")
+                nil [2612 2677])
+            ("EXTERN" variable (:constant-flag t) nil [3375 3381])
+            ("kinetis_dmadump" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6930 6945])
+            ("kinetis_dmasample" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6478 6495])
+            ("kinetis_dmastop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6101 6119]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6080 6120])
+            ("kinetis_dmastart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5642 5660])
+                    ("callback" variable (:type ("dma_callback_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5661 5685])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5686 5696]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5621 5697])
+            ("kinetis_dmarxsetup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5256 5274])
+                    ("control" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5275 5292])
+                    ("config" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5293 5309])
+                    ("srcaddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5333 5350])
+                    ("destaddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5351 5369])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5370 5384]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5233 5385])
+            ("kinetis_dmafree" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4969 4987]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4948 4988])
+            ("kinetis_dmachannel" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("DMA_HANDLE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4527 4532]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4497 4533])
+            ("kinetis_dmainitilaize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3944 3949]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3917 3950]))          
+      :file "kinetis_dma.h"
+      :pointmax 7098
+      :fsize 7097
+      :lastmodtime '(23770 54121 475239 379000)
+      :unmatched-syntax '((TYPEDEF 2604 . 2611) (symbol 2582 . 2585) (TYPEDEF 2574 . 2581))
+      :lexical-table 
+        '(("__ARCH_ARM_SRC_KINETEIS_KINETEIS_DMA_H")
+          ("kinetis_dmadump" (spp-arg-list ("handle" "regs" "msg") 6945 . 6962))
+          ("kinetis_dmasample" (spp-arg-list ("handle" "regs") 6495 . 6508))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!kinetis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

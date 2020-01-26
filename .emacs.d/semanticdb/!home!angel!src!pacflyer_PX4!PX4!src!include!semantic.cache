@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__EXPORT" variable (:constant-flag t) nil [1960 1968])
+            ("__PRIVATE" variable (:constant-flag t) nil [2062 2071])
+            ("__BEGIN_DECLS" variable (:constant-flag t) nil [2142 2155])
+            ("__END_DECLS" variable (:constant-flag t) nil [2180 2191]))          
+      :file "visibility.h"
+      :pointmax 2640
+      :fsize 2639
+      :lastmodtime '(23770 52090 779807 686000)
+      :unmatched-syntax '((symbol 1905 . 1909) (symbol 1898 . 1904) (punctuation 1897 . 1898))
+      :lexical-table 
+        '(("__END_DECLS" . ((close-paren "}" 2193 . 2194)))
+          ("__EXPORT" . ((symbol "__attribute__" 1969 . 1982) (semantic-list "((visibility (\"default\")))" 1983 . 2009)))
+          ("__BEGIN_DECLS" . 
+              ((EXTERN "extern" 2157 . 2163) (string "\"C\"" 2164 . 2167) (open-paren "{" 2168 . 2169)))
+          ("__PRIVATE" . ((symbol "__attribute__" 2072 . 2085) (semantic-list "((visibility (\"hidden\")))" 2086 . 2111)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

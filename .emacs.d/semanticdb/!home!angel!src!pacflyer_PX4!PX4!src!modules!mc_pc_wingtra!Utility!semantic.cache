@@ -1,0 +1,164 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("matrix/matrix/math.hpp" include (:system-flag t) nil [1908 1941])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [1942 1992])
+            ("ControlMath" type
+               (:members 
+                  ( ("thrustToAttitude" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thr_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2250 2281])
+                            ("yaw_sp" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2282 2301]))                          
+                        :type ("vehicle_attitude_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2205 2302])
+                    ("constrainXY" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2789 2816])
+                            ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2817 2844])
+                            ("max" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2845 2862]))                          
+                        :type ("matrix::Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2760 2863])
+                    ("cross_sphere_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sphere_c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3155 3188])
+                            ("sphere_r" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3189 3210])
+                            ("line_a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3211 3242])
+                            ("line_b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3252 3283])
+                            ("res" variable
+                               (:reference 1
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3284 3306]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3132 3307]))                  
+                :type "namespace")
+                nil [1994 3309]))          
+      :file "ControlMath.hpp"
+      :pointmax 3310
+      :fsize 3309
+      :lastmodtime '(23898 37283 838237 557000)
+      :unmatched-syntax '((symbol 1902 . 1906) (symbol 1895 . 1901) (punctuation 1894 . 1895)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ControlMath.hpp" include nil nil [1769 1795])
+            ("platforms/px4_defines.h" include (:system-flag t) nil [1796 1830])
+            ("float.h" include (:system-flag t) nil [1831 1849])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1850 1878])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [1879 1915])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1918 1941])
+            ("ControlMath" type
+               (:members 
+                  ( ("thrustToAttitude" function
+                       (:arguments 
+                          ( ("thr_sp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2011 2034])
+                            ("yaw" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2035 2051]))                          
+                        :type ("vehicle_attitude_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1966 4566])
+                    ("constrainXY" function
+                       (:arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4589 4608])
+                            ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4609 4628])
+                            ("max" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4629 4646]))                          
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4568 6564])
+                    ("cross_sphere_line" function
+                       (:arguments 
+                          ( ("sphere_c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6589 6614])
+                            ("sphere_r" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [6615 6636])
+                            ("line_a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6646 6669])
+                            ("line_b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6670 6693])
+                            ("res" variable
+                               (:reference 1
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6694 6708]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6566 7677]))                  
+                :type "namespace")
+                nil [1942 7679]))          
+      :file "ControlMath.cpp"
+      :pointmax 7680
+      :fsize 7679
+      :lastmodtime '(23898 37283 838237 557000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!mc_pc_wingtra!Utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

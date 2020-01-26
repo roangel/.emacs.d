@@ -1,0 +1,378 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("matplotlib" include nil nil [92 109])
+            ("matplotlib" code nil nil [110 131])
+            ("matplotlib.pyplot" include nil nil [133 164])
+            ("matplotlib.backends.backend_pdf" include nil nil [165 217])
+            ("analyse_ekf" function (:arguments 
+              ( ("estimator_status" variable nil (reparse-symbol function_parameters) [235 251])
+                ("ekf2_innovations" variable nil (reparse-symbol function_parameters) [253 269])
+                ("sensor_preflight" variable nil (reparse-symbol function_parameters) [271 287])
+                ("check_levels" variable nil (reparse-symbol function_parameters) [289 301])
+                ("plot" variable nil (reparse-symbol function_parameters) [319 323])
+                ("output_plot_filename" variable nil (reparse-symbol function_parameters) [331 351])
+                ("late_start_early_ending" variable nil (reparse-symbol function_parameters) [358 381]))              ) nil [219 95121]))          
+      :file "analyse_logdata_ekf.py"
+      :pointmax 95121
+      :fsize 95120
+      :lastmodtime '(23827 31461 220805 709000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [47 62])
+            ("glob" include nil nil [63 78])
+            ("os" include nil nil [63 78])
+            ("\"\"\"
+Runs process_logdata_ekf.py on the .ulg files in the supplied directory. ulog files are skipped from the analysis, if a 
+ corresponding .pdf file already exists (unless the overwrite flag was set). 
+\"\"\"" code nil nil [80 286])
+            ("parser" variable nil nil [288 491])
+            ("parser" code nil nil [492 529])
+            ("parser" code nil nil [530 821])
+            ("parser" code nil nil [822 1080])
+            ("is_valid_directory" function (:arguments 
+              ( ("parser" variable nil (reparse-symbol function_parameters) [1105 1111])
+                ("arg" variable nil (reparse-symbol function_parameters) [1113 1116]))              ) nil [1082 1294])
+            ("args" variable nil nil [1295 1321])
+            ("ulog_directory" variable nil nil [1322 1358])
+            ("print" code nil nil [1359 1416])
+            ("ulog_files" variable nil nil [1498 1578])
+            ("if" code nil nil [1736 1916])
+            ("for" code nil nil [1942 2245]))          
+      :file "batch_process_logdata_ekf.py"
+      :pointmax 2245
+      :fsize 2244
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [47 62])
+            ("os" include nil nil [63 72])
+            ("numpy" include nil nil [73 91])
+            ("matplotlib.pyplot" include nil nil [92 123])
+            ("\"\"\"
+Performs a composite analysis of ekf log analysis meta data for all .ulg.csv files in the specified directory
+Generates and saves histogram plots for the meta data in population_data.pdf
+Generates and saves population summary data in population_data.csv
+\"\"\"" code nil nil [125 386])
+            ("parser" variable nil nil [388 544])
+            ("parser" code nil nil [545 582])
+            ("is_valid_directory" function (:arguments 
+              ( ("parser" variable nil (reparse-symbol function_parameters) [607 613])
+                ("arg" variable nil (reparse-symbol function_parameters) [615 618]))              ) nil [584 796])
+            ("args" variable nil nil [797 823])
+            ("metadata_directory" variable nil nil [824 864])
+            ("print" code nil nil [1026 1092])
+            ("population_data" variable nil nil [1093 1113])
+            ("for" code nil nil [1114 1744])
+            ("matplotlib.backends.backend_pdf" include nil nil [1991 2043])
+            ("output_plot_filename" variable nil nil [2044 2088])
+            ("pp" variable nil nil [2089 2147])
+            ("population_results" variable nil nil [2185 6651])
+            ("found_keys" variable nil nil [6689 6724])
+            ("result" variable nil nil [6742 6812])
+            ("population_results" code nil nil [6813 6904])
+            ("population_results" code nil nil [6905 6990])
+            ("result" variable nil nil [7014 7088])
+            ("population_results" code nil nil [7089 7177])
+            ("population_results" code nil nil [7178 7260])
+            ("result" variable nil nil [7275 7349])
+            ("population_results" code nil nil [7350 7438])
+            ("population_results" code nil nil [7439 7521])
+            ("result" variable nil nil [7541 7615])
+            ("population_results" code nil nil [7616 7704])
+            ("population_results" code nil nil [7705 7787])
+            ("result" variable nil nil [7807 7881])
+            ("population_results" code nil nil [7882 7970])
+            ("population_results" code nil nil [7971 8053])
+            ("result" variable nil nil [8071 8145])
+            ("population_results" code nil nil [8146 8234])
+            ("population_results" code nil nil [8235 8317])
+            ("result" variable nil nil [8348 8423])
+            ("population_results" code nil nil [8424 8513])
+            ("population_results" code nil nil [8514 8597])
+            ("result" variable nil nil [8628 8702])
+            ("population_results" code nil nil [8703 8791])
+            ("population_results" code nil nil [8792 8874])
+            ("temp" variable nil nil [8929 9008])
+            ("result1" variable nil nil [9009 9042])
+            ("temp" variable nil nil [9043 9123])
+            ("result2" variable nil nil [9124 9157])
+            ("if" code nil nil [9159 9870])
+            ("temp" variable nil nil [9895 9974])
+            ("result1" variable nil nil [9975 10008])
+            ("temp" variable nil nil [10009 10089])
+            ("result2" variable nil nil [10090 10123])
+            ("if" code nil nil [10125 10732])
+            ("temp" variable nil nil [10776 10855])
+            ("result1" variable nil nil [10856 10889])
+            ("temp" variable nil nil [10890 10970])
+            ("result2" variable nil nil [10971 11004])
+            ("if" code nil nil [11006 11613])
+            ("temp" variable nil nil [11630 11709])
+            ("result1" variable nil nil [11710 11743])
+            ("temp" variable nil nil [11744 11824])
+            ("result2" variable nil nil [11825 11858])
+            ("if" code nil nil [11860 12463])
+            ("temp" variable nil nil [12482 12561])
+            ("result1" variable nil nil [12562 12595])
+            ("temp" variable nil nil [12596 12676])
+            ("result2" variable nil nil [12677 12710])
+            ("if" code nil nil [12712 13319])
+            ("temp" variable nil nil [13349 13429])
+            ("result1" variable nil nil [13430 13463])
+            ("temp" variable nil nil [13464 13545])
+            ("result2" variable nil nil [13546 13579])
+            ("if" code nil nil [13581 14184])
+            ("temp" variable nil nil [14207 14293])
+            ("result1" variable nil nil [14294 14327])
+            ("temp" variable nil nil [14328 14414])
+            ("result2" variable nil nil [14415 14448])
+            ("if" code nil nil [14450 15066])
+            ("temp" variable nil nil [15097 15179])
+            ("result1" code nil nil [15180 15222])
+            ("temp" variable nil nil [15223 15305])
+            ("result2" code nil nil [15306 15348])
+            ("if" code nil nil [15350 15956])
+            ("temp" variable nil nil [16007 16089])
+            ("result1" code nil nil [16090 16132])
+            ("temp" variable nil nil [16133 16215])
+            ("result2" code nil nil [16216 16258])
+            ("if" code nil nil [16260 16882])
+            ("temp" variable nil nil [16936 17018])
+            ("result1" variable nil nil [17019 17052])
+            ("temp" variable nil nil [17053 17135])
+            ("result2" variable nil nil [17136 17169])
+            ("if" code nil nil [17171 17799])
+            ("temp" variable nil nil [17835 17927])
+            ("result" code nil nil [17928 17969])
+            ("if" code nil nil [17971 18316])
+            ("temp" variable nil nil [18353 18445])
+            ("result" variable nil nil [18446 18478])
+            ("if" code nil nil [18480 18825])
+            ("temp" variable nil nil [18862 18954])
+            ("result" variable nil nil [18955 18987])
+            ("if" code nil nil [18989 19332])
+            ("temp" variable nil nil [19356 19443])
+            ("result" variable nil nil [19444 19476])
+            ("if" code nil nil [19478 19732])
+            ("temp" variable nil nil [19759 19846])
+            ("result" variable nil nil [19847 19879])
+            ("if" code nil nil [19881 20138])
+            ("pp" code nil nil [20160 20170])
+            ("print" code nil nil [20171 20233])
+            ("plt" code nil nil [20294 20310])
+            ("population_results_filename" code nil nil [20344 20417])
+            ("file" variable nil nil [20418 20462])
+            ("file" code nil nil [20464 20502])
+            ("key_list" variable nil nil [20634 20676])
+            ("key_list" code nil nil [20677 20692])
+            ("for" code nil nil [20693 20806])
+            ("file" code nil nil [20807 20819])
+            ("print" code nil nil [20821 20882])
+            ("single_log_results" variable nil nil [20884 31790]))          
+      :file "batch_process_metadata_ekf.py"
+      :pointmax 31791
+      :fsize 31790
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [25 62])
+            ("argparse" include nil nil [64 79])
+            ("sys" include nil nil [80 94])
+            ("os" include nil nil [80 94])
+            ("pyulog" include nil nil [96 116])
+            ("analyse_logdata_ekf" include nil nil [118 161])
+            ("\"\"\"
+Performs a health assessment on the ecl EKF navigation estimator data contained in a an ULog file
+Outputs a health assessment summary in a csv file named <inputfilename>.mdat.csv
+Outputs summary plots in a pdf file named <inputfilename>.pdf
+\"\"\"" code nil nil [163 411])
+            ("parser" variable nil nil [413 522])
+            ("parser" code nil nil [523 598])
+            ("parser" code nil nil [599 748])
+            ("parser" code nil nil [749 911])
+            ("parser" code nil nil [912 1170])
+            ("is_valid_directory" function (:arguments 
+              ( ("parser" variable nil (reparse-symbol function_parameters) [1195 1201])
+                ("arg" variable nil (reparse-symbol function_parameters) [1203 1206]))              ) nil [1172 1384])
+            ("args" variable nil nil [1385 1411])
+            ("ulog" variable nil nil [1477 1509])
+            ("data" variable nil nil [1510 1531])
+            ("estimator_status_data" variable nil nil [1605 1631])
+            ("ekf2_innovations_data" variable nil nil [1858 1884])
+            ("sensor_preflight_data" variable nil nil [2226 2252])
+            ("if" code nil nil [2458 2721])
+            ("with" code nil nil [2795 2987])
+            ("print" code nil nil [2988 3067])
+            ("test_results" variable nil nil [3096 3345])
+            ("with" code nil nil [3379 3798])
+            ("print" code nil nil [3799 3867])
+            ("if" code nil nil [3869 3950])
+            ("if" code nil nil [3989 4288]))          
+      :file "process_logdata_ekf.py"
+      :pointmax 4288
+      :fsize 4287
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax '((INDENT_BLOCK 2013 . 2066) (COLON 2011 . 2012) (TRY 1885 . 1888) (AS 2003 . 2005) (INDENT_BLOCK 1760 . 1813) (COLON 1758 . 1759) (TRY 1632 . 1635) (AS 1750 . 1752)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [50 65])
+            ("sys" include nil nil [66 80])
+            ("os" include nil nil [66 80])
+            ("subprocess" include nil nil [81 98])
+            ("csv" include nil nil [99 109])
+            ("pathlib" include nil nil [110 134])
+            ("shutil" include nil nil [135 160])
+            ("parser" variable nil nil [162 255])
+            ("parser" code nil nil [256 350])
+            ("args" variable nil nil [351 377])
+            ("old_test_results_path" variable nil nil [379 448])
+            ("if" code nil nil [450 601])
+            ("batch_replay_script_path" variable nil nil [602 707])
+            ("if" code nil nil [708 814])
+            ("if" code nil nil [815 1012])
+            ("\"\"\"
+Process the result csv and check for relevant empty fields
+\"\"\"" code nil nil [1013 1079])
+            ("csv_report_path" variable nil nil [1080 1166])
+            ("if" code nil nil [1168 1266])
+            ("with" code nil nil [1323 1696])
+            ("print" code nil nil [1696 1717]))          
+      :file "replay_compatibility_test.py"
+      :pointmax 1718
+      :fsize 1717
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("glob" include nil nil [49 69])
+            ("sys" include nil nil [49 69])
+            ("os" include nil nil [49 69])
+            ("subprocess" include nil nil [70 87])
+            ("json" include nil nil [88 99])
+            ("re" include nil nil [100 109])
+            ("check_and_install_dependencies" function nil nil [112 773])
+            ("if" code nil nil [774 831])
+            ("git" include nil nil [832 842])
+            ("pandas" include nil nil [843 856])
+            ("pathlib" include nil nil [857 881])
+            ("functools" include nil nil [882 911])
+            ("multiprocessing" include nil nil [912 940])
+            ("MAX_FILE_NUMBER" variable nil nil [943 964])
+            ("ANCESTOR_HASH" variable nil nil [1094 1152])
+            ("format_codes" type
+               (:members 
+                  ( ("HEADER" variable nil (reparse-symbol indented_block_body) [1232 1251])
+                    ("OKBLUE" variable nil (reparse-symbol indented_block_body) [1256 1275])
+                    ("OKGREEN" variable nil (reparse-symbol indented_block_body) [1280 1300])
+                    ("WARNING" variable nil (reparse-symbol indented_block_body) [1305 1325])
+                    ("FAIL" variable nil (reparse-symbol indented_block_body) [1330 1347])
+                    ("ENDC" variable nil (reparse-symbol indented_block_body) [1352 1368])
+                    ("BOLD" variable nil (reparse-symbol indented_block_body) [1373 1389])
+                    ("UNDERLINE" variable nil (reparse-symbol indented_block_body) [1394 1415]))                  
+                :type "class")
+                nil [1208 1416])
+            ("is_valid_git_hash" function (:arguments 
+              ( ("repo" variable nil (reparse-symbol function_parameters) [1439 1443])
+                ("git_hash" variable nil (reparse-symbol function_parameters) [1445 1453]))              ) nil [1417 1559])
+            ("replay_ulog_file" function (:arguments 
+              ( ("ulog_file" variable nil (reparse-symbol function_parameters) [1582 1591])
+                ("cmake_directory" variable nil (reparse-symbol function_parameters) [1593 1608]))              ) nil [1561 2262])
+            ("run_batch_replay" function (:arguments 
+              ( ("ulog_directory" variable nil (reparse-symbol function_parameters) [2284 2298])
+                ("git_hash" variable nil (reparse-symbol function_parameters) [2300 2308]))              ) nil [2263 5015])
+            ("replay_one_ulog_file" function (:arguments 
+              ( ("ulog_files_zip" variable nil (reparse-symbol function_parameters) [5041 5055])
+                ("num_ulog_files" variable nil (reparse-symbol function_parameters) [5057 5071])
+                ("pac_dir" variable nil (reparse-symbol function_parameters) [5073 5080])
+                ("sitl_dir" variable nil (reparse-symbol function_parameters) [5082 5090]))              ) nil [5016 6704])
+            ("get_all_config_files" function (:arguments 
+              ( ("config_dir" variable nil (reparse-symbol function_parameters) [6731 6741]))              ) nil [6706 7009])
+            ("get_all_rim_params" function nil nil [7010 7418])
+            ("append_rim_config_to_csv" function (:arguments 
+              ( ("replayed_files" variable nil (reparse-symbol function_parameters) [7448 7462])
+                ("replay_config" variable nil (reparse-symbol function_parameters) [7464 7477])
+                ("all_rim_params" variable nil (reparse-symbol function_parameters) [7479 7493]))              ) nil [7419 8243])
+            ("run_batch_processing" function (:arguments 
+              ( ("replayed_files" variable nil (reparse-symbol function_parameters) [8269 8283]))              ) nil [8244 8685])
+            ("run_batch_processing_file" function (:arguments 
+              ( ("replayed_file_zip" variable nil (reparse-symbol function_parameters) [8716 8733])
+                ("num_files" variable nil (reparse-symbol function_parameters) [8735 8744]))              ) nil [8686 10997])
+            ("merge_csv_files" function (:arguments 
+              ( ("csv_files" variable nil (reparse-symbol function_parameters) [11018 11027])
+                ("output_dir" variable nil (reparse-symbol function_parameters) [11029 11039]))              ) nil [10998 13196]))          
+      :file "wingtra_lib.py"
+      :pointmax 13196
+      :fsize 13195
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax '((INDENT_BLOCK 9931 . 10786) (NEWLINE 9930 . 9931) (COLON 9929 . 9930) (TRY 9373 . 9376) (AS 9925 . 9927) (INDENT_BLOCK 6673 . 6704) (NEWLINE 6672 . 6673) (COLON 6671 . 6672) (TRY 5097 . 5100) (AS 6667 . 6669) (INDENT_BLOCK 4265 . 5015) (NEWLINE 4166 . 4167) (COLON 4165 . 4166) (FINALLY 4158 . 4165) (INDENT_BLOCK 2036 . 2236) (NEWLINE 2035 . 2036) (COLON 2034 . 2035) (TRY 1890 . 1893) (AS 2030 . 2032)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [50 65])
+            ("sys" include nil nil [66 80])
+            ("os" include nil nil [66 80])
+            ("traceback" include nil nil [81 97])
+            ("wingtra_lib" include nil nil [98 123])
+            ("wingtra_test_lib" include nil nil [124 154])
+            ("pathlib" include nil nil [155 179])
+            ("shutil" include nil nil [180 215])
+            ("parser" variable nil nil [217 298])
+            ("parser" code nil nil [299 336])
+            ("parser" code nil nil [337 444])
+            ("parser" code nil nil [445 528])
+            ("parser" code nil nil [529 636])
+            ("parser" code nil nil [637 897])
+            ("args" variable nil nil [898 924]))          
+      :file "batch_replay_wingtra.py"
+      :pointmax 3351
+      :fsize 3350
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax '((INDENT_BLOCK 3312 . 3351) (COLON 3310 . 3311) (TRY 926 . 929) (AS 3306 . 3308)))
+    (semanticdb-table "semanticdb-table"
+      :file "wingtra_test_lib.py"
+      :fsize 10126
+      :lastmodtime '(23798 26597 807346 577000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [49 64])
+            ("glob" include nil nil [65 85])
+            ("sys" include nil nil [65 85])
+            ("os" include nil nil [65 85])
+            ("wingtra_lib" include nil nil [86 125])
+            ("pathlib" include nil nil [126 150])
+            ("\"\"\" Create csv file out of the ones that have been created from the processing tool
+\"\"\"" code nil nil [152 239])
+            ("parser" variable nil nil [241 387])
+            ("parser" code nil nil [388 537])
+            ("parser" code nil nil [538 588])
+            ("args" variable nil nil [589 615])
+            ("input_directory" variable nil nil [617 655])
+            ("output_directory" variable nil nil [656 696])
+            ("if" code nil nil [697 763])
+            ("csv_files" variable nil nil [764 827])
+            ("print" code nil nil [829 934])
+            ("merge_csv_files" code nil nil [935 979]))          
+      :file "batch_csv_wingtra.py"
+      :pointmax 980
+      :fsize 979
+      :lastmodtime '(23798 26597 803346 549000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!ecl_ekf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,868 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_DRV_AIRSPEED_H" variable (:constant-flag t) nil [1858 1873])
+            ("stdint.h" include (:system-flag t) nil [1875 1894])
+            ("sys/ioctl.h" include (:system-flag t) nil [1895 1917])
+            ("drv_sensor.h" include nil nil [1919 1942])
+            ("drv_orb_dev.h" include nil nil [1943 1967])
+            ("AIRSPEED_BASE_DEVICE_PATH" variable (:constant-flag t) nil [1977 2002])
+            ("AIRSPEED0_DEVICE_PATH" variable (:constant-flag t) nil [2027 2048])
+            ("_AIRSPEEDIOCBASE" variable (:constant-flag t) nil [2202 2218])
+            ("__AIRSPEEDIOC" variable (:constant-flag t) nil [2237 2250])
+            ("AIRSPEEDIOCSSCALE" variable (:constant-flag t) nil [2298 2315])
+            ("AIRSPEEDIOCGSCALE" variable (:constant-flag t) nil [2342 2359])
+            ("airspeed_scale" type
+               (:members 
+                  ( ("offset_pa" variable (:type "float") (reparse-symbol classsubparts) [2467 2483])
+                    ("scale" variable (:type "float") (reparse-symbol classsubparts) [2485 2497]))                  
+                :type "struct")
+                nil [2442 2500]))          
+      :file "drv_airspeed.h"
+      :pointmax 2531
+      :fsize 2530
+      :lastmodtime '(23549 3302 31906 15000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AIRSPEED_BASE_DEVICE_PATH" . ((string "\"/dev/airspeed\"" 2003 . 2018)))
+          ("_DRV_AIRSPEED_H")
+          ("AIRSPEEDIOCGSCALE" . ((symbol "__AIRSPEEDIOC" 2361 . 2374) (semantic-list "(1)" 2374 . 2377)))
+          ("_AIRSPEEDIOCBASE" . ((semantic-list "(0x7700)" 2220 . 2228)))
+          ("AIRSPEEDIOCSSCALE" . ((symbol "__AIRSPEEDIOC" 2317 . 2330) (semantic-list "(0)" 2330 . 2333)))
+          ("AIRSPEED0_DEVICE_PATH" . ((string "\"/dev/airspeed0\"" 2049 . 2065)))
+          ("__AIRSPEEDIOC" (spp-arg-list ("_n") 2250 . 2254) . ((semantic-list "(_PX4_IOC(_AIRSPEEDIOCBASE, _n))" 2256 . 2288)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "drv_sensor.h"
+      :fsize 5206
+      :lastmodtime '(23770 52090 755807 546000))
+    (semanticdb-table "semanticdb-table"
+      :file "drv_orb_dev.h"
+      :fsize 3449
+      :lastmodtime '(23770 52090 755807 546000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_DRV_GYRO_H" variable (:constant-flag t) nil [1830 1841])
+            ("stdint.h" include (:system-flag t) nil [1843 1862])
+            ("sys/ioctl.h" include (:system-flag t) nil [1863 1885])
+            ("drv_sensor.h" include nil nil [1887 1910])
+            ("drv_orb_dev.h" include nil nil [1911 1935])
+            ("GYRO_BASE_DEVICE_PATH" variable (:constant-flag t) nil [1945 1966])
+            ("GYRO0_DEVICE_PATH" variable (:constant-flag t) nil [1987 2004])
+            ("GYRO1_DEVICE_PATH" variable (:constant-flag t) nil [2026 2043])
+            ("GYRO2_DEVICE_PATH" variable (:constant-flag t) nil [2065 2082])
+            ("uORB/topics/sensor_gyro.h" include (:system-flag t) nil [2097 2133])
+            ("gyro_report" variable (:constant-flag t) nil [2142 2153])
+            ("gyro_report" variable (:constant-flag t) nil [2142 2153])
+            ("gyro_report" variable (:constant-flag t) nil [2142 2153])
+            ("gyro_calibration_s" type
+               (:members 
+                  ( ("x_offset" variable (:type "float") (reparse-symbol classsubparts) [2259 2274])
+                    ("x_scale" variable (:type "float") (reparse-symbol classsubparts) [2276 2290])
+                    ("y_offset" variable (:type "float") (reparse-symbol classsubparts) [2292 2307])
+                    ("y_scale" variable (:type "float") (reparse-symbol classsubparts) [2309 2323])
+                    ("z_offset" variable (:type "float") (reparse-symbol classsubparts) [2325 2340])
+                    ("z_scale" variable (:type "float") (reparse-symbol classsubparts) [2342 2356]))                  
+                :type "struct")
+                nil [2230 2359])
+            ("_GYROIOCBASE" variable (:constant-flag t) nil [2400 2412])
+            ("_GYROIOC" variable (:constant-flag t) nil [2431 2439])
+            ("GYROIOCSSAMPLERATE" variable (:constant-flag t) nil [2545 2563])
+            ("GYRO_SAMPLERATE_DEFAULT" variable (:constant-flag t) nil [2585 2608])
+            ("GYROIOCGSAMPLERATE" variable (:constant-flag t) nil [2707 2725])
+            ("GYROIOCSSCALE" variable (:constant-flag t) nil [2794 2807])
+            ("GYROIOCGSCALE" variable (:constant-flag t) nil [2879 2892])
+            ("GYROIOCSRANGE" variable (:constant-flag t) nil [2997 3010])
+            ("GYROIOCGRANGE" variable (:constant-flag t) nil [3101 3114])
+            ("GYROIOCSELFTEST" variable (:constant-flag t) nil [3175 3190])
+            ("GYROIOCTYPE" variable (:constant-flag t) nil [3246 3257]))          
+      :file "drv_gyro.h"
+      :pointmax 3299
+      :fsize 3298
+      :lastmodtime '(23846 3750 53790 481000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GYROIOCGSAMPLERATE" . ((symbol "_GYROIOC" 2810 . 2818) (semantic-list "(1)" 2818 . 2821)))
+          ("GYROIOCSRANGE" . ((symbol "_GYROIOC" 3096 . 3104) (semantic-list "(6)" 3104 . 3107)))
+          ("GYROIOCSELFTEST" . ((symbol "_GYROIOC" 3276 . 3284) (semantic-list "(8)" 3284 . 3287)))
+          ("_DRV_GYRO_H")
+          ("GYRO0_DEVICE_PATH" . ((string "\"/dev/gyro0\"" 2005 . 2017)))
+          ("_GYROIOCBASE" . ((semantic-list "(0x2300)" 2498 . 2506)))
+          ("GYRO_SAMPLERATE_DEFAULT" . ((number "1000003" 2696 . 2703)))
+          ("GYROIOCGSCALE" . ((symbol "_GYROIOC" 2978 . 2986) (semantic-list "(5)" 2986 . 2989)))
+          ("GYRO1_DEVICE_PATH" . ((string "\"/dev/gyro1\"" 2044 . 2056)))
+          ("gyro_raw_report" . ((symbol "sensor_gyro_raw_s" 2234 . 2251)))
+          ("GYRO2_DEVICE_PATH" . ((string "\"/dev/gyro2\"" 2083 . 2095)))
+          ("GYRO_BASE_DEVICE_PATH" . ((string "\"/dev/gyro\"" 1967 . 1978)))
+          ("GYROIOCSSCALE" . ((symbol "_GYROIOC" 2893 . 2901) (semantic-list "(4)" 2901 . 2904)))
+          ("GYROIOCSSAMPLERATE" . ((symbol "_GYROIOC" 2648 . 2656) (semantic-list "(0)" 2656 . 2659)))
+          ("GYROIOCGRANGE" . ((symbol "_GYROIOC" 3200 . 3208) (semantic-list "(7)" 3208 . 3211)))
+          ("gyro_report" . ((symbol "sensor_gyro_s" 2154 . 2167)))
+          ("GYROIOCTYPE" . ((symbol "_GYROIOC" 3344 . 3352) (semantic-list "(13)" 3352 . 3356)))
+          ("_GYROIOC" (spp-arg-list ("_n") 2523 . 2527) . ((semantic-list "(_PX4_IOC(_GYROIOCBASE, _n))" 2529 . 2557)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/types.h" include (:system-flag t) nil [1840 1862])
+            ("stdbool.h" include (:system-flag t) nil [1863 1883])
+            ("inttypes.h" include (:system-flag t) nil [1884 1905])
+            ("px4_time.h" include (:system-flag t) nil [1907 1928])
+            ("queue.h" include (:system-flag t) nil [1929 1947])
+            ("hrt_init" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5420 5425]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5399 5426])
+            ("hrt_call_delay" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5315 5338])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5339 5357]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5288 5358])
+            ("hrt_call_init" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4950 4973]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4924 4974])
+            ("hrt_cancel" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4846 4869]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4823 4870])
+            ("hrt_called" function
+               (:type "bool"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4737 4760]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4714 4761])
+            ("hrt_call_every" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4416 4439])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4440 4458])
+                    ("interval" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4459 4480])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4492 4512])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4513 4523]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4389 4524])
+            ("hrt_call_at" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4093 4116])
+                    ("calltime" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4117 4138])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4139 4159])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4160 4170]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4069 4171])
+            ("hrt_call_after" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3927 3950])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3951 3969])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3970 3990])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3991 4001]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3900 4002])
+            ("hrt_store_absolute_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("now" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3395 3421]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3352 3422])
+            ("hrt_elapsed_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("then" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3142 3175]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3106 3176])
+            ("abstime_to_ts" function
+               (:type "void"
+                :arguments 
+                  ( ("ts" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2869 2889])
+                    ("abstime" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2890 2910]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2843 2911])
+            ("ts_to_abstime" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ts" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2763 2783]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2730 2784])
+            ("hrt_absolute_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2665 2670]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2628 2671])
+            ("hrt_call_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("hrt_call" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [2414 2563])
+            ("hrt_call" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("link" variable (:type ("sq_entry_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2441 2464])
+                    ("deadline" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2467 2489])
+                    ("period" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2491 2511])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2513 2534])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2536 2548]))                  )
+                (reparse-symbol extern-c-contents) [2414 2563])
+            ("hrt_callout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2374 2384]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2353 2385])
+            ("hrt_abstime" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("uint64_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2142 2171]))          
+      :file "drv_hrt.h"
+      :pointmax 5899
+      :fsize 5898
+      :lastmodtime '(23770 52090 755807 546000)
+      :unmatched-syntax '((symbol 5390 . 5398) (symbol 5279 . 5287) (symbol 4915 . 4923) (symbol 4814 . 4822) (symbol 4705 . 4713) (symbol 4380 . 4388) (symbol 4060 . 4068) (symbol 3891 . 3899) (symbol 3343 . 3351) (symbol 3097 . 3105) (symbol 2834 . 2842) (symbol 2721 . 2729) (symbol 2619 . 2627) (TYPEDEF 2345 . 2352) (symbol 1834 . 1838) (symbol 1827 . 1833) (punctuation 1826 . 1827)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [2003 2027])
+            ("stdint.h" include (:system-flag t) nil [2029 2048])
+            ("sys/ioctl.h" include (:system-flag t) nil [2049 2071])
+            ("drv_orb_dev.h" include nil nil [2073 2097])
+            ("up_pwm_servo_get" function
+               (:type ("servo_position_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11883 11900]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11842 11901])
+            ("up_pwm_servo_set" function
+               (:type "int"
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11583 11600])
+                    ("value" variable (:type ("servo_position_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11601 11624]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11555 11625])
+            ("up_pwm_update" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11385 11390]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11359 11391])
+            ("up_pwm_servo_set_rate_group_update" function
+               (:type "int"
+                :arguments 
+                  ( ("group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11171 11186])
+                    ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11187 11201]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11125 11202])
+            ("up_pwm_servo_get_rate_group" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10846 10861]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10802 10862])
+            ("up_pwm_servo_set_rate" function
+               (:type "int"
+                :arguments 
+                  ( ("rate" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10482 10496]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10449 10497])
+            ("up_pwm_servo_arm" function
+               (:type "void"
+                :arguments 
+                  ( ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [10246 10257]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10217 10258])
+            ("up_pwm_servo_deinit" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9910 9915]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9878 9916])
+            ("up_pwm_servo_init" function
+               (:type "int"
+                :arguments 
+                  ( ("channel_mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9796 9818]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9767 9819])
+            ("PWM_SERVO_GET_RATEGROUP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9303 9326])
+            ("PWM_SERVO_GET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9099 9112])
+            ("PWM_SERVO_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8986 8999])
+            ("PWM_SERVO_SET_MODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8788 8806])
+            ("PWM_SERVO_MODE_6CAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8750 8769])
+            ("PWM_SERVO_MODE_5CAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8712 8731])
+            ("PWM_SERVO_MODE_4CAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8674 8693])
+            ("PWM_SERVO_MODE_14PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8636 8656])
+            ("PWM_SERVO_MODE_8PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8598 8617])
+            ("PWM_SERVO_MODE_6PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8560 8579])
+            ("PWM_SERVO_MODE_4PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8522 8541])
+            ("PWM_SERVO_MODE_3PWM1CAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8484 8507])
+            ("PWM_SERVO_MODE_3PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8446 8465])
+            ("PWM_SERVO_MODE_2PWM2CAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8408 8431])
+            ("PWM_SERVO_MODE_2PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8370 8389])
+            ("PWM_SERVO_MODE_1PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8332 8351])
+            ("PWM_SERVO_MODE_NONE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8294 8313])
+            ("PWM_SERVO_SET_SBUS_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8147 8170])
+            ("PWM_SERVO_SET_OVERRIDE_IMMEDIATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8035 8067])
+            ("PWM_SERVO_SET_FORCE_SAFETY_ON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7911 7940])
+            ("PWM_SERVO_SET_TERMINATION_FAILSAFE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7774 7808])
+            ("PWM_SERVO_SET_FORCE_FAILSAFE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7641 7669])
+            ("PWM_SERVO_SET_FORCE_SAFETY_OFF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7470 7500])
+            ("PWM_SERVO_GET_DISABLE_LOCKDOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7334 7364])
+            ("PWM_SERVO_SET_DISABLE_LOCKDOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7200 7230])
+            ("PWM_SERVO_SET_COUNT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7078 7097])
+            ("PWM_SERVO_GET_TRIM_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6915 6937])
+            ("PWM_SERVO_SET_TRIM_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6806 6828])
+            ("PWM_SERVO_GET_MAX_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6698 6719])
+            ("PWM_SERVO_SET_MAX_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6583 6604])
+            ("PWM_SERVO_GET_MIN_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6468 6489])
+            ("PWM_SERVO_SET_MIN_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6353 6374])
+            ("PWM_SERVO_GET_DISARMED_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6233 6259])
+            ("PWM_SERVO_SET_DISARMED_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6128 6154])
+            ("PWM_SERVO_GET_FAILSAFE_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5986 6012])
+            ("PWM_SERVO_SET_FAILSAFE_PWM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5882 5908])
+            ("DSM_BIND_POWER_UP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5787 5804])
+            ("DSMX8_BIND_PULSES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5634 5651])
+            ("DSMX_BIND_PULSES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5531 5547])
+            ("DSM2_BIND_PULSES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5428 5444])
+            ("DSM_BIND_START" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5374 5388])
+            ("PWM_SERVO_CLEAR_ARM_OK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5291 5313])
+            ("PWM_SERVO_SET_ARM_OK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5165 5185])
+            ("PWM_SERVO_GET_SELECT_UPDATE_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5031 5063])
+            ("PWM_SERVO_SET_SELECT_UPDATE_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4921 4953])
+            ("PWM_SERVO_GET_COUNT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4775 4794])
+            ("PWM_SERVO_GET_UPDATE_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4659 4684])
+            ("PWM_SERVO_SET_UPDATE_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4556 4581])
+            ("PWM_SERVO_GET_DEFAULT_UPDATE_RATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4445 4478])
+            ("PWM_SERVO_DISARM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4353 4369])
+            ("PWM_SERVO_ARM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4243 4256])
+            ("_PWM_SERVO_BASE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4159 4174])
+            ("pwm_output_rc_config" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("channel" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3858 3874])
+                    ("rc_min" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3876 3892])
+                    ("rc_trim" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3894 3911])
+                    ("rc_max" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3913 3929])
+                    ("rc_dz" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3931 3946])
+                    ("rc_assignment" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3948 3971])
+                    ("rc_reverse" variable (:type "bool") (reparse-symbol classsubparts) [3973 3993]))                  )
+                (reparse-symbol extern-c-contents) [3827 3996])
+            ("servo_position_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("uint16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3653 3687])
+            ("PWM_IGNORE_THIS_CHANNEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3519 3542])
+            ("PWM_LOWEST_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3400 3414])
+            ("PWM_DEFAULT_TRIM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3323 3339])
+            ("PWM_DEFAULT_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3259 3274])
+            ("PWM_HIGHEST_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3192 3207])
+            ("PWM_HIGHEST_MIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3097 3112])
+            ("PWM_DEFAULT_MIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3017 3032])
+            ("PWM_MOTOR_OFF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2953 2966])
+            ("PWM_LOWEST_MIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2880 2894])
+            ("pwm_output_values" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("channel_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2496 2519])
+                    ("values" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2521 2541]))                  )
+                (reparse-symbol extern-c-contents) [2468 2544])
+            ("PWM_OUTPUT_MAX_CHANNELS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2440 2463])
+            ("PWM_OUTPUT0_DEVICE_PATH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2388 2411])
+            ("PWM_OUTPUT_BASE_DEVICE_PATH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2334 2361]))          
+      :file "drv_pwm_output.h"
+      :pointmax 11915
+      :fsize 11914
+      :lastmodtime '(23798 26597 847346 847000)
+      :unmatched-syntax '((symbol 11833 . 11841) (symbol 11546 . 11554) (symbol 11350 . 11358) (symbol 11116 . 11124) (symbol 10793 . 10801) (symbol 10440 . 10448) (symbol 10208 . 10216) (symbol 9869 . 9877) (symbol 9758 . 9766) (symbol 1997 . 2001) (symbol 1990 . 1996) (punctuation 1989 . 1990))
+      :lexical-table 
+        '(("_PWM_SERVO_BASE" . ((number "0x2a00" 4176 . 4182)))
+          ("PWM_SERVO_GET_UPDATE_RATE" . ((symbol "_PX4_IOC" 4685 . 4693) (semantic-list "(_PWM_SERVO_BASE, 4)" 4693 . 4713)))
+          ("DSMX8_BIND_PULSES" . ((number "9" 5652 . 5653)))
+          ("PWM_SERVO_SET_COUNT" . ((symbol "_PX4_IOC" 7098 . 7106) (semantic-list "(_PWM_SERVO_BASE, 22)" 7106 . 7127)))
+          ("PWM_SERVO_MODE_NONE" . ((number "0" 8322 . 8323)))
+          ("PWM_SERVO_ARM" . ((symbol "_PX4_IOC" 4258 . 4266) (semantic-list "(_PWM_SERVO_BASE, 0)" 4266 . 4286)))
+          ("PWM_SERVO_SET_SELECT_UPDATE_RATE" . ((symbol "_PX4_IOC" 4954 . 4962) (semantic-list "(_PWM_SERVO_BASE, 6)" 4962 . 4982)))
+          ("PWM_SERVO_SET_OVERRIDE_IMMEDIATE" . ((symbol "_PX4_IOC" 8068 . 8076) (semantic-list "(_PWM_SERVO_BASE, 32)" 8076 . 8097)))
+          ("PWM_SERVO_SET_SBUS_RATE" . ((symbol "_PX4_IOC" 8173 . 8181) (semantic-list "(_PWM_SERVO_BASE, 33)" 8181 . 8202)))
+          ("PWM_SERVO_MODE_2PWM2CAP" . ((number "3" 8436 . 8437)))
+          ("PWM_SERVO_MODE_14PWM" . ((number "9" 8664 . 8665)))
+          ("PWM_SERVO_SET" (spp-arg-list ("_servo") 8999 . 9007) . ((symbol "_PX4_IOC" 9008 . 9016) (semantic-list "(_PWM_SERVO_BASE, 0x30 + _servo)" 9016 . 9048)))
+          ("PWM_SERVO_MODE_1PWM" . ((number "1" 8360 . 8361)))
+          ("PWM_SERVO_SET_MODE" . ((symbol "_PX4_IOC" 8815 . 8823) (semantic-list "(_PWM_SERVO_BASE, 34)" 8823 . 8844)))
+          ("PWM_IGNORE_THIS_CHANNEL" . ((symbol "UINT16_MAX" 3543 . 3553)))
+          ("DSM_BIND_POWER_UP" . ((symbol "_PX4_IOC" 5805 . 5813) (semantic-list "(_PWM_SERVO_BASE, 11)" 5813 . 5834)))
+          ("PWM_SERVO_SET_FAILSAFE_PWM" . ((symbol "_PX4_IOC" 5909 . 5917) (semantic-list "(_PWM_SERVO_BASE, 12)" 5917 . 5938)))
+          ("PWM_SERVO_GET_TRIM_PWM" . ((symbol "_PX4_IOC" 6938 . 6946) (semantic-list "(_PWM_SERVO_BASE, 21)" 6946 . 6967)))
+          ("PWM_SERVO_MODE_2PWM" . ((number "2" 8398 . 8399)))
+          ("PWM_SERVO_MODE_3PWM1CAP" . ((number "5" 8512 . 8513)))
+          ("PWM_SERVO_SET_UPDATE_RATE" . ((symbol "_PX4_IOC" 4582 . 4590) (semantic-list "(_PWM_SERVO_BASE, 3)" 4590 . 4610)))
+          ("PWM_SERVO_CLEAR_ARM_OK" . ((symbol "_PX4_IOC" 5314 . 5322) (semantic-list "(_PWM_SERVO_BASE, 9)" 5322 . 5342)))
+          ("PWM_SERVO_MODE_3PWM" . ((number "4" 8474 . 8475)))
+          ("PWM_OUTPUT_BASE_DEVICE_PATH" . ((string "\"/dev/pwm_output\"" 2362 . 2379)))
+          ("PWM_SERVO_SET_MAX_PWM" . ((symbol "_PX4_IOC" 6605 . 6613) (semantic-list "(_PWM_SERVO_BASE, 18)" 6613 . 6634)))
+          ("PWM_SERVO_MODE_4PWM" . ((number "6" 8550 . 8551)))
+          ("PWM_SERVO_SET_ARM_OK" . ((symbol "_PX4_IOC" 5186 . 5194) (semantic-list "(_PWM_SERVO_BASE, 8)" 5194 . 5214)))
+          ("PWM_SERVO_GET_FAILSAFE_PWM" . ((symbol "_PX4_IOC" 6013 . 6021) (semantic-list "(_PWM_SERVO_BASE, 13)" 6021 . 6042)))
+          ("PWM_SERVO_SET_DISABLE_LOCKDOWN" . ((symbol "_PX4_IOC" 7232 . 7240) (semantic-list "(_PWM_SERVO_BASE, 23)" 7240 . 7261)))
+          ("PWM_DEFAULT_MAX" . ((number "2000" 3275 . 3279)))
+          ("PWM_LOWEST_MAX" . ((number "200" 3415 . 3418)))
+          ("PWM_SERVO_SET_TRIM_PWM" . ((symbol "_PX4_IOC" 6829 . 6837) (semantic-list "(_PWM_SERVO_BASE, 20)" 6837 . 6858)))
+          ("PWM_SERVO_GET_DISABLE_LOCKDOWN" . ((symbol "_PX4_IOC" 7366 . 7374) (semantic-list "(_PWM_SERVO_BASE, 24)" 7374 . 7395)))
+          ("PWM_SERVO_SET_TERMINATION_FAILSAFE" . ((symbol "_PX4_IOC" 7809 . 7817) (semantic-list "(_PWM_SERVO_BASE, 27)" 7817 . 7838)))
+          ("PWM_SERVO_MODE_6PWM" . ((number "7" 8588 . 8589)))
+          ("PWM_SERVO_MODE_4CAP" . ((number "10" 8701 . 8703)))
+          ("PWM_OUTPUT0_DEVICE_PATH" . ((string "\"/dev/pwm_output0\"" 2412 . 2430)))
+          ("PWM_LOWEST_MIN" . ((number "90" 2895 . 2897)))
+          ("PWM_MOTOR_OFF" . ((number "900" 2967 . 2970)))
+          ("PWM_DEFAULT_MIN" . ((number "1000" 3033 . 3037)))
+          ("PWM_DEFAULT_TRIM" . ((number "0" 3340 . 3341)))
+          ("PWM_SERVO_DISARM" . ((symbol "_PX4_IOC" 4370 . 4378) (semantic-list "(_PWM_SERVO_BASE, 1)" 4378 . 4398)))
+          ("PWM_SERVO_SET_DISARMED_PWM" . ((symbol "_PX4_IOC" 6155 . 6163) (semantic-list "(_PWM_SERVO_BASE, 14)" 6163 . 6184)))
+          ("PWM_SERVO_SET_MIN_PWM" . ((symbol "_PX4_IOC" 6375 . 6383) (semantic-list "(_PWM_SERVO_BASE, 16)" 6383 . 6404)))
+          ("PWM_SERVO_GET_MAX_PWM" . ((symbol "_PX4_IOC" 6720 . 6728) (semantic-list "(_PWM_SERVO_BASE, 19)" 6728 . 6749)))
+          ("PWM_SERVO_SET_FORCE_FAILSAFE" . ((symbol "_PX4_IOC" 7671 . 7679) (semantic-list "(_PWM_SERVO_BASE, 26)" 7679 . 7700)))
+          ("PWM_SERVO_MODE_5CAP" . ((number "11" 8739 . 8741)))
+          ("PWM_OUTPUT_MAX_CHANNELS" . ((number "16" 2464 . 2466)))
+          ("PWM_HIGHEST_MAX" . ((number "2200" 3208 . 3212)))
+          ("PWM_SERVO_GET_COUNT" . ((symbol "_PX4_IOC" 4795 . 4803) (semantic-list "(_PWM_SERVO_BASE, 5)" 4803 . 4823)))
+          ("PWM_SERVO_MODE_8PWM" . ((number "8" 8626 . 8627)))
+          ("PWM_SERVO_MODE_6CAP" . ((number "12" 8777 . 8779)))
+          ("PWM_SERVO_GET_RATEGROUP" (spp-arg-list ("_n") 9326 . 9330) . ((symbol "_PX4_IOC" 9331 . 9339) (semantic-list "(_PWM_SERVO_BASE, 0x70 + _n)" 9339 . 9367)))
+          ("PWM_HIGHEST_MIN" . ((number "1600" 3113 . 3117)))
+          ("PWM_SERVO_GET_DEFAULT_UPDATE_RATE" . ((symbol "_PX4_IOC" 4479 . 4487) (semantic-list "(_PWM_SERVO_BASE, 2)" 4487 . 4507)))
+          ("PWM_SERVO_GET_SELECT_UPDATE_RATE" . ((symbol "_PX4_IOC" 5064 . 5072) (semantic-list "(_PWM_SERVO_BASE, 7)" 5072 . 5092)))
+          ("PWM_SERVO_GET" (spp-arg-list ("_servo") 9112 . 9120) . ((symbol "_PX4_IOC" 9121 . 9129) (semantic-list "(_PWM_SERVO_BASE, 0x50 + _servo)" 9129 . 9161)))
+          ("DSMX_BIND_PULSES" . ((number "7" 5548 . 5549)))
+          ("PWM_SERVO_GET_DISARMED_PWM" . ((symbol "_PX4_IOC" 6260 . 6268) (semantic-list "(_PWM_SERVO_BASE, 15)" 6268 . 6289)))
+          ("PWM_SERVO_GET_MIN_PWM" . ((symbol "_PX4_IOC" 6490 . 6498) (semantic-list "(_PWM_SERVO_BASE, 17)" 6498 . 6519)))
+          ("PWM_SERVO_SET_FORCE_SAFETY_OFF" . ((symbol "_PX4_IOC" 7502 . 7510) (semantic-list "(_PWM_SERVO_BASE, 25)" 7510 . 7531)))
+          ("DSM_BIND_START" . ((symbol "_PX4_IOC" 5389 . 5397) (semantic-list "(_PWM_SERVO_BASE, 10)" 5397 . 5418)))
+          ("DSM2_BIND_PULSES" . ((number "3" 5445 . 5446)))
+          ("PWM_SERVO_SET_FORCE_SAFETY_ON" . ((symbol "_PX4_IOC" 7942 . 7950) (semantic-list "(_PWM_SERVO_BASE, 28)" 7950 . 7971)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [1799 1823])
+            ("stdint.h" include (:system-flag t) nil [1825 1844])
+            ("up_pwm_trigger_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("channel_mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2178 2200]))                  
+                :type "int")
+                nil [2147 2201])
+            ("up_pwm_trigger_deinit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2296 2301]))                  
+                :type "void")
+                nil [2262 2302])
+            ("up_pwm_trigger_arm" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("armed" variable (:type "bool") (reparse-symbol arg-sub-list) [2591 2602]))                  
+                :type "void")
+                nil [2560 2603])
+            ("up_pwm_trigger_set" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("channel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2797 2814])
+                    ("value" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2815 2830]))                  
+                :type "int")
+                nil [2767 2831]))          
+      :file "drv_pwm_trigger.h"
+      :pointmax 2844
+      :fsize 2843
+      :lastmodtime '(23770 52090 755807 546000)
+      :unmatched-syntax '((close-paren "}" 2833 . 2844) (symbol 2758 . 2766) (symbol 2551 . 2559) (symbol 2253 . 2261) (symbol 2138 . 2146) (symbol 1793 . 1797) (symbol 1786 . 1792) (punctuation 1785 . 1786)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_DRV_ACCEL_H" variable (:constant-flag t) nil [1836 1848])
+            ("stdint.h" include (:system-flag t) nil [1850 1869])
+            ("sys/ioctl.h" include (:system-flag t) nil [1870 1892])
+            ("drv_sensor.h" include nil nil [1894 1917])
+            ("drv_orb_dev.h" include nil nil [1918 1942])
+            ("ACCEL_BASE_DEVICE_PATH" variable (:constant-flag t) nil [1952 1974])
+            ("ACCEL0_DEVICE_PATH" variable (:constant-flag t) nil [1996 2014])
+            ("ACCEL1_DEVICE_PATH" variable (:constant-flag t) nil [2037 2055])
+            ("ACCEL2_DEVICE_PATH" variable (:constant-flag t) nil [2078 2096])
+            ("uORB/topics/sensor_accel.h" include (:system-flag t) nil [2112 2149])
+            ("accel_report" variable (:constant-flag t) nil [2158 2170])
+            ("accel_calibration_s" type
+               (:members 
+                  ( ("x_offset" variable (:type "float") (reparse-symbol classsubparts) [2279 2294])
+                    ("x_scale" variable (:type "float") (reparse-symbol classsubparts) [2296 2310])
+                    ("y_offset" variable (:type "float") (reparse-symbol classsubparts) [2312 2327])
+                    ("y_scale" variable (:type "float") (reparse-symbol classsubparts) [2329 2343])
+                    ("z_offset" variable (:type "float") (reparse-symbol classsubparts) [2345 2360])
+                    ("z_scale" variable (:type "float") (reparse-symbol classsubparts) [2362 2376]))                  
+                :type "struct")
+                nil [2249 2379])
+            ("_ACCELIOCBASE" variable (:constant-flag t) nil [2520 2533])
+            ("_ACCELIOC" variable (:constant-flag t) nil [2552 2561])
+            ("ACCELIOCSSAMPLERATE" variable (:constant-flag t) nil [2670 2689])
+            ("ACCEL_SAMPLERATE_DEFAULT" variable (:constant-flag t) nil [2712 2736])
+            ("ACCELIOCGSAMPLERATE" variable (:constant-flag t) nil [2836 2855])
+            ("ACCELIOCSSCALE" variable (:constant-flag t) nil [2954 2968])
+            ("ACCELIOCGSCALE" variable (:constant-flag t) nil [3070 3084])
+            ("ACCELIOCSRANGE" variable (:constant-flag t) nil [3174 3188])
+            ("ACCELIOCGRANGE" variable (:constant-flag t) nil [3264 3278])
+            ("ACCELIOCSELFTEST" variable (:constant-flag t) nil [3346 3362])
+            ("ACCELIOCGEXTERNAL" variable (:constant-flag t) nil [3437 3454])
+            ("ACCELIOCTYPE" variable (:constant-flag t) nil [3512 3524]))          
+      :file "drv_accel.h"
+      :pointmax 3567
+      :fsize 3566
+      :lastmodtime '(23846 838 889736 163000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ACCELIOC" (spp-arg-list ("_n") 2561 . 2565) . ((semantic-list "(_PX4_IOC(_ACCELIOCBASE, _n))" 2567 . 2596)))
+          ("ACCELIOCGRANGE" . ((symbol "_ACCELIOC" 3280 . 3289) (semantic-list "(8)" 3289 . 3292)))
+          ("ACCEL_BASE_DEVICE_PATH" . ((string "\"/dev/accel\"" 1975 . 1987)))
+          ("ACCELIOCSSAMPLERATE" . ((symbol "_ACCELIOC" 2690 . 2699) (semantic-list "(0)" 2699 . 2702)))
+          ("ACCELIOCSRANGE" . ((symbol "_ACCELIOC" 3190 . 3199) (semantic-list "(7)" 3199 . 3202)))
+          ("_DRV_ACCEL_H")
+          ("ACCELIOCGSAMPLERATE" . ((symbol "_ACCELIOC" 2856 . 2865) (semantic-list "(1)" 2865 . 2868)))
+          ("_ACCELIOCBASE" . ((semantic-list "(0x2100)" 2535 . 2543)))
+          ("ACCEL_SAMPLERATE_DEFAULT" . ((number "1000003" 2740 . 2747)))
+          ("ACCELIOCGSCALE" . ((symbol "_ACCELIOC" 3086 . 3095) (semantic-list "(6)" 3095 . 3098)))
+          ("ACCELIOCSELFTEST" . ((symbol "_ACCELIOC" 3363 . 3372) (semantic-list "(9)" 3372 . 3375)))
+          ("ACCELIOCTYPE" . ((symbol "_ACCELIOC" 3526 . 3535) (semantic-list "(13)" 3535 . 3539)))
+          ("accel_report" . ((symbol "sensor_accel_s" 2171 . 2185)))
+          ("ACCELIOCGEXTERNAL" . ((symbol "_ACCELIOC" 3455 . 3464) (semantic-list "(12)" 3464 . 3468)))
+          ("ACCEL0_DEVICE_PATH" . ((string "\"/dev/accel0\"" 2015 . 2028)))
+          ("ACCEL1_DEVICE_PATH" . ((string "\"/dev/accel1\"" 2056 . 2069)))
+          ("ACCELIOCSSCALE" . ((symbol "_ACCELIOC" 2970 . 2979) (semantic-list "(5)" 2979 . 2982)))
+          ("ACCEL2_DEVICE_PATH" . ((string "\"/dev/accel2\"" 2097 . 2110)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

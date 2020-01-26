@@ -1,0 +1,192 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_SAM34_SAM_DMAC_H" variable (:constant-flag t) nil [1880 1911])
+            ("nuttx/config.h" include (:system-flag t) nil [2105 2130])
+            ("stdint.h" include (:system-flag t) nil [2132 2151])
+            ("chip.h" include nil nil [2153 2170])
+            ("DMACH_FLAG_FIFOSIZE_SHIFT" variable (:constant-flag t) nil [2866 2891])
+            ("DMACH_FLAG_FIFOSIZE_MASK" variable (:constant-flag t) nil [2952 2976])
+            ("DMACH_FLAG_FIFO_8BYTES" variable (:constant-flag t) nil [3033 3055])
+            ("DMACH_FLAG_FIFO_32BYTES" variable (:constant-flag t) nil [3126 3149])
+            ("DMACH_FLAG_BURST_LARGEST" variable (:constant-flag t) nil [3265 3289])
+            ("DMACH_FLAG_BURST_HALF" variable (:constant-flag t) nil [3345 3366])
+            ("DMACH_FLAG_BURST_SINGLE" variable (:constant-flag t) nil [3415 3438])
+            ("DMACH_FLAG_FIFOCFG_SHIFT" variable (:constant-flag t) nil [3489 3513])
+            ("DMACH_FLAG_FIFOCFG_MASK" variable (:constant-flag t) nil [3580 3603])
+            ("DMACH_FLAG_FIFOCFG_LARGEST" variable (:constant-flag t) nil [3660 3686])
+            ("DMACH_FLAG_FIFOCFG_HALF" variable (:constant-flag t) nil [3761 3784])
+            ("DMACH_FLAG_FIFOCFG_SINGLE" variable (:constant-flag t) nil [3859 3884])
+            ("DMACH_FLAG_PERIPHPID_SHIFT" variable (:constant-flag t) nil [4001 4027])
+            ("DMACH_FLAG_PERIPHPID_MASK" variable (:constant-flag t) nil [4088 4113])
+            ("DMACH_FLAG_PERIPHH2SEL" variable (:constant-flag t) nil [4169 4191])
+            ("DMACH_FLAG_PERIPHISPERIPH" variable (:constant-flag t) nil [4254 4279])
+            ("DMACH_FLAG_PERIPHWIDTH_SHIFT" variable (:constant-flag t) nil [4347 4375])
+            ("DMACH_FLAG_PERIPHWIDTH_MASK" variable (:constant-flag t) nil [4438 4465])
+            ("DMACH_FLAG_PERIPHWIDTH_8BITS" variable (:constant-flag t) nil [4522 4550])
+            ("DMACH_FLAG_PERIPHWIDTH_16BITS" variable (:constant-flag t) nil [4617 4646])
+            ("DMACH_FLAG_PERIPHWIDTH_32BITS" variable (:constant-flag t) nil [4713 4742])
+            ("DMACH_FLAG_PERIPHINCREMENT" variable (:constant-flag t) nil [4807 4833])
+            ("DMACH_FLAG_PERIPHCHUNKSIZE" variable (:constant-flag t) nil [4910 4936])
+            ("DMACH_FLAG_PERIPHCHUNKSIZE_1" variable (:constant-flag t) nil [5004 5032])
+            ("DMACH_FLAG_PERIPHCHUNKSIZE_4" variable (:constant-flag t) nil [5108 5136])
+            ("DMACH_FLAG_MEMPID_SHIFT" variable (:constant-flag t) nil [5250 5273])
+            ("DMACH_FLAG_MEMPID_MASK" variable (:constant-flag t) nil [5335 5357])
+            ("DMACH_FLAG_MEMH2SEL" variable (:constant-flag t) nil [5413 5432])
+            ("DMACH_FLAG_MEMISPERIPH" variable (:constant-flag t) nil [5499 5521])
+            ("DMACH_FLAG_MEMWIDTH_SHIFT" variable (:constant-flag t) nil [5593 5618])
+            ("DMACH_FLAG_MEMWIDTH_MASK" variable (:constant-flag t) nil [5680 5704])
+            ("DMACH_FLAG_MEMWIDTH_8BITS" variable (:constant-flag t) nil [5761 5786])
+            ("DMACH_FLAG_MEMWIDTH_16BITS" variable (:constant-flag t) nil [5853 5879])
+            ("DMACH_FLAG_MEMWIDTH_32BITS" variable (:constant-flag t) nil [5946 5972])
+            ("DMACH_FLAG_MEMINCREMENT" variable (:constant-flag t) nil [6037 6060])
+            ("DMACH_FLAG_MEMCHUNKSIZE" variable (:constant-flag t) nil [6136 6159])
+            ("DMACH_FLAG_MEMCHUNKSIZE_1" variable (:constant-flag t) nil [6226 6251])
+            ("DMACH_FLAG_MEMCHUNKSIZE_4" variable (:constant-flag t) nil [6323 6348])
+            ("DMA_HANDLE" variable
+               (:pointer 1
+                :type "void")
+                nil [6696 6713])
+            ("dma_callback_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6745 6763])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6764 6774])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [6775 6786]))                  
+                :type "void")
+                nil [6722 6787])
+            ("EXTERN" variable (:constant-flag t) nil [8241 8247])
+            ("sam_dmadump" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13279 13290])
+            ("sam_dmasample" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12842 12855])
+            ("sam_dmastop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12472 12490]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12455 12491])
+            ("sam_dmastart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12028 12046])
+                    ("callback" variable (:type ("dma_callback_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12047 12071])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12072 12082]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12011 12083])
+            ("sam_dmarxsetup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11694 11712])
+                    ("paddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11713 11728])
+                    ("maddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11729 11744])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11764 11778]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11675 11779])
+            ("sam_dmatxsetup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11104 11122])
+                    ("paddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11123 11138])
+                    ("maddr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11139 11154])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11174 11188]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11085 11189])
+            ("sam_dmafree" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10579 10597]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10562 10598])
+            ("sam_dmaconfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handle" variable (:type ("DMA_HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10118 10136])
+                    ("chflags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10137 10154]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10099 10155])
+            ("sam_dmachannel" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("DMA_HANDLE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dmach_flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9414 9435]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9388 9436]))          
+      :file "sam_dmac.h"
+      :pointmax 13436
+      :fsize 13435
+      :lastmodtime '(23770 54121 539239 743000)
+      :unmatched-syntax '((TYPEDEF 6714 . 6721) (symbol 6692 . 6695) (TYPEDEF 6684 . 6691))
+      :lexical-table 
+        '(("DMACH_FLAG_FIFO_32BYTES" . ((semantic-list "(1 << DMACH_FLAG_FIFOSIZE_SHIFT)" 3162 . 3194)))
+          ("DMACH_FLAG_PERIPHWIDTH_SHIFT" . ((semantic-list "(10)" 4385 . 4389)))
+          ("DMACH_FLAG_PERIPHINCREMENT" . ((semantic-list "(1 << 12)" 4845 . 4854)))
+          ("DMACH_FLAG_PERIPHCHUNKSIZE_1" . ((semantic-list "(0)" 5040 . 5043)))
+          ("__ARCH_ARM_SRC_SAM34_SAM_DMAC_H")
+          ("DMACH_FLAG_PERIPHPID_MASK" . ((semantic-list "(15 << DMACH_FLAG_PERIPHPID_SHIFT)" 4126 . 4160)))
+          ("DMACH_FLAG_MEMPID_MASK" . ((semantic-list "(15 << DMACH_FLAG_MEMPID_SHIFT)" 5373 . 5404)))
+          ("DMACH_FLAG_MEMWIDTH_32BITS" . ((semantic-list "(2 << DMACH_FLAG_MEMWIDTH_SHIFT)" 5982 . 6014)))
+          ("DMACH_FLAG_PERIPHWIDTH_32BITS" . ((semantic-list "(2 << DMACH_FLAG_PERIPHWIDTH_SHIFT)" 4749 . 4784)))
+          ("DMACH_FLAG_FIFOCFG_LARGEST" . ((semantic-list "(DMACH_FLAG_BURST_LARGEST << DMACH_FLAG_FIFOCFG_SHIFT)" 3696 . 3750)))
+          ("DMACH_FLAG_PERIPHCHUNKSIZE_4" . ((symbol "DMACH_FLAG_PERIPHCHUNKSIZE" 5144 . 5170)))
+          ("DMACH_FLAG_PERIPHCHUNKSIZE" . ((semantic-list "(1 << 13)" 4948 . 4957)))
+          ("DMACH_FLAG_MEMWIDTH_MASK" . ((semantic-list "(3 << DMACH_FLAG_MEMWIDTH_SHIFT)" 5718 . 5750)))
+          ("DMACH_FLAG_MEMINCREMENT" . ((semantic-list "(1 << 22)" 6075 . 6084)))
+          ("DMACH_FLAG_FIFOCFG_HALF" . ((semantic-list "(DMACH_FLAG_BURST_HALF << DMACH_FLAG_FIFOCFG_SHIFT)" 3797 . 3848)))
+          ("sam_dmadump" (spp-arg-list ("handle" "regs" "msg") 13290 . 13307))
+          ("DMACH_FLAG_PERIPHWIDTH_8BITS" . ((semantic-list "(0 << DMACH_FLAG_PERIPHWIDTH_SHIFT)" 4558 . 4593)))
+          ("DMACH_FLAG_MEMH2SEL" . ((semantic-list "(1 << 18)" 5451 . 5460)))
+          ("DMACH_FLAG_MEMWIDTH_SHIFT" . ((semantic-list "(20)" 5631 . 5635)))
+          ("DMACH_FLAG_MEMCHUNKSIZE_1" . ((semantic-list "(0)" 6262 . 6265)))
+          ("DMACH_FLAG_PERIPHPID_SHIFT" . ((semantic-list "(4)" 4039 . 4042)))
+          ("DMACH_FLAG_PERIPHISPERIPH" . ((semantic-list "(1 << 9)" 4292 . 4300)))
+          ("DMACH_FLAG_MEMISPERIPH" . ((semantic-list "(1 << 19)" 5537 . 5546)))
+          ("DMACH_FLAG_FIFOCFG_SHIFT" . ((semantic-list "(2)" 3527 . 3530)))
+          ("DMACH_FLAG_MEMWIDTH_16BITS" . ((semantic-list "(1 << DMACH_FLAG_MEMWIDTH_SHIFT)" 5889 . 5921)))
+          ("DMACH_FLAG_MEMCHUNKSIZE" . ((semantic-list "(1 << 23)" 6174 . 6183)))
+          ("DMACH_FLAG_BURST_SINGLE" . ((number "2" 3453 . 3454)))
+          ("DMACH_FLAG_PERIPHWIDTH_16BITS" . ((semantic-list "(1 << DMACH_FLAG_PERIPHWIDTH_SHIFT)" 4653 . 4688)))
+          ("DMACH_FLAG_MEMCHUNKSIZE_4" . ((symbol "DMACH_FLAG_MEMCHUNKSIZE" 6359 . 6382)))
+          ("DMACH_FLAG_FIFOSIZE_MASK" . ((semantic-list "(1 << DMACH_FLAG_FIFOSIZE_SHIFT)" 2990 . 3022)))
+          ("DMACH_FLAG_BURST_LARGEST" . ((number "0" 3303 . 3304)))
+          ("DMACH_FLAG_FIFOCFG_MASK" . ((semantic-list "(3 << DMACH_FLAG_FIFOCFG_SHIFT)" 3618 . 3649)))
+          ("DMACH_FLAG_PERIPHWIDTH_MASK" . ((semantic-list "(3 << DMACH_FLAG_PERIPHWIDTH_SHIFT)" 4476 . 4511)))
+          ("DMACH_FLAG_FIFOSIZE_SHIFT" . ((semantic-list "(1)" 2904 . 2907)))
+          ("DMACH_FLAG_FIFO_8BYTES" . ((semantic-list "(0 << DMACH_FLAG_FIFOSIZE_SHIFT)" 3069 . 3101)))
+          ("DMACH_FLAG_BURST_HALF" . ((number "1" 3383 . 3384)))
+          ("DMACH_FLAG_FIFOCFG_SINGLE" . ((semantic-list "(DMACH_FLAG_BURST_SINGLE << DMACH_FLAG_FIFOCFG_SHIFT)" 3895 . 3948)))
+          ("DMACH_FLAG_PERIPHH2SEL" . ((semantic-list "(1 << 8)" 4207 . 4215)))
+          ("DMACH_FLAG_MEMPID_SHIFT" . ((semantic-list "(14)" 5288 . 5292)))
+          ("DMACH_FLAG_MEMWIDTH_8BITS" . ((semantic-list "(0 << DMACH_FLAG_MEMWIDTH_SHIFT)" 5797 . 5829)))
+          ("sam_dmasample" (spp-arg-list ("handle" "regs") 12855 . 12868))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "chip.h"
+      :fsize 3853
+      :lastmodtime '(23770 54121 531239 697000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!sam34!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

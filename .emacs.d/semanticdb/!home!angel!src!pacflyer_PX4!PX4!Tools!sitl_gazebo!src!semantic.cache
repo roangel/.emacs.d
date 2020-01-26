@@ -1,0 +1,640 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_mavlink_interface.h" include (:system-flag t) nil [923 960])
+            ("gazebo" type
+               (:members 
+                  ( ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboMavlinkInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1006 1029]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [981 1030])
+                    ("GazeboMavlinkInterface" function
+                       (:destructor-flag t
+                        :parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1032 1123])
+                    ("Load" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1159 1184])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1185 1206]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1125 13879])
+                    ("OnUpdate" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13972 14009]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13934 15052])
+                    ("send_mavlink_message" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("mavlink_message_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15104 15137])
+                            ("destination_port" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [15138 15165]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15054 16070])
+                    ("ImuCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("imu_message" variable
+                               (:reference 1
+                                :type ("ImuPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16113 16133]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16072 24458])
+                    ("GpsCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("gps_msg" variable
+                               (:reference 1
+                                :type ("GpsPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24501 24517]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24460 25678])
+                    ("SimModelGroundtruthCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("sim_model_groundtruth_msg" variable
+                               (:reference 1
+                                :type ("SimMGtPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25785 25822]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25728 26443])
+                    ("GroundtruthCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("groundtruth_msg" variable
+                               (:reference 1
+                                :type ("GtPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26494 26517]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26445 26833])
+                    ("LidarCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("lidar_message" variable
+                               (:reference 1
+                                :type ("LidarPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26878 26902]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26835 27616])
+                    ("SonarCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("sonar_message" variable
+                               (:reference 1
+                                :type ("SonarPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29098 29122]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29055 29809])
+                    ("IRLockCallback" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("irlock_message" variable
+                               (:reference 1
+                                :type ("IRLockPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29855 29881]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [29811 30568])
+                    ("pollForMAVLinkMessages" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("_dt" variable (:type "double") (reparse-symbol arg-sub-list) [35717 35728])
+                            ("_timeoutMs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35729 35749]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35665 36529])
+                    ("handle_message" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("msg" variable
+                               (:pointer 1
+                                :type ("mavlink_message_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36575 36598]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36531 37540])
+                    ("handle_control" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("_dt" variable (:type "double") (reparse-symbol arg-sub-list) [37586 37597]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [37542 39361])
+                    ("open" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39363 40123])
+                    ("close" function
+                       (:parent "GazeboMavlinkInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40125 40316])
+                    ("do_read" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40355 40360]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40318 40578])
+                    ("parse_buffer" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40675 40712])
+                            ("bytes_t" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40713 40733]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40633 41625])
+                    ("do_write" function
+                       (:parent "GazeboMavlinkInterface"
+                        :arguments 
+                          ( ("check_tx_state" variable (:type "bool") (reparse-symbol arg-sub-list) [41665 41685]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [41627 42497]))                  
+                :type "namespace")
+                nil [962 42500]))          
+      :file "gazebo_mavlink_interface.cpp"
+      :pointmax 42501
+      :fsize 42500
+      :lastmodtime '(23799 36318 456996 212000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo/gazebo.hh" include (:system-flag t) nil [1 28])
+            ("gazebo" type
+               (:members 
+                  ( ("WorldPluginTutorial" type
+                       (:superclasses 
+                          ( ("WorldPlugin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [106 113])
+                            ("WorldPluginTutorial" function
+                               (:constructor-flag t
+                                :type ("WorldPluginTutorial" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [114 219])
+                            ("public" label nil (reparse-symbol classsubparts) [225 232])
+                            ("Load" function
+                               (:arguments 
+                                  ( ("_world" variable (:type ("physics::WorldPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [243 268])
+                                    ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [269 290]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [233 318]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [51 323]))                  
+                :type "namespace")
+                nil [30 373]))          
+      :file "hello_world.cc"
+      :pointmax 373
+      :fsize 372
+      :lastmodtime '(23549 3386 864512 514000)
+      :unmatched-syntax '((semantic-list 350 . 371) (symbol 326 . 350)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gazebo_wingtra_vtol_model.cpp"
+      :pointmax 23431
+      :fsize 23430
+      :lastmodtime '(23799 36318 456996 212000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo/physics/physics.hh" include (:system-flag t) nil [628 664])
+            ("gazebo/transport/transport.hh" include (:system-flag t) nil [665 705])
+            ("gazebo_gimbal_controller_plugin.hh" include (:system-flag t) nil [706 751])
+            ("gazebo" using (:type ("gazebo" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [753 776])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [777 797])
+            ("GimbalControllerPlugin" function
+               (:constructor-flag t
+                :parent "GimbalControllerPlugin"
+                :type ("GimbalControllerPlugin" type (:type "class") nil nil))
+                nil [899 1479])
+            ("Load" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1565 1590])
+                    ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1593 1614]))                  
+                :type "void")
+                nil [1531 7627])
+            ("Init" function
+               (:parent "GimbalControllerPlugin"
+                :type "void")
+                nil [7679 10249])
+            ("ImuCallback" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("imu_message" variable
+                       (:reference 1
+                        :type ("ImuPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10292 10312]))                  
+                :type "void")
+                nil [10251 10526])
+            ("OnPitchStringMsg" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_msg" variable
+                       (:reference 1
+                        :type ("ConstGzStringPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11447 11470]))                  
+                :type "void")
+                nil [11401 11594])
+            ("OnRollStringMsg" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_msg" variable
+                       (:reference 1
+                        :type ("ConstGzStringPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11691 11714]))                  
+                :type "void")
+                nil [11646 11836])
+            ("OnYawStringMsg" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_msg" variable
+                       (:reference 1
+                        :type ("ConstGzStringPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11932 11955]))                  
+                :type "void")
+                nil [11888 12075])
+            ("ThreeAxisRot" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("r11" variable (:type "double") (reparse-symbol arg-sub-list) [12199 12210])
+                    ("r12" variable (:type "double") (reparse-symbol arg-sub-list) [12211 12222])
+                    ("r21" variable (:type "double") (reparse-symbol arg-sub-list) [12223 12234])
+                    ("r31" variable (:type "double") (reparse-symbol arg-sub-list) [12235 12246])
+                    ("r32" variable (:type "double") (reparse-symbol arg-sub-list) [12247 12258]))                  
+                :type ("ignition::math::Vector3d" type (:type "class") nil nil))
+                nil [12134 12362])
+            ("QtoZXY" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_q" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ignition::math::Quaterniond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12473 12511]))                  
+                :type ("ignition::math::Vector3d" type (:type "class") nil nil))
+                nil [12414 12948])
+            ("OnUpdate" function
+               (:parent "GimbalControllerPlugin"
+                :type "void")
+                nil [13000 20559])
+            ("NormalizeAbout" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_angle" variable (:type "double") (reparse-symbol arg-sub-list) [20657 20671])
+                    ("reference" variable (:type "double") (reparse-symbol arg-sub-list) [20672 20689]))                  
+                :type "double")
+                nil [20611 20918])
+            ("ShortestAngularDistance" function
+               (:parent "GimbalControllerPlugin"
+                :arguments 
+                  ( ("_from" variable (:type "double") (reparse-symbol arg-sub-list) [21025 21038])
+                    ("_to" variable (:type "double") (reparse-symbol arg-sub-list) [21039 21050]))                  
+                :type "double")
+                nil [20970 21105]))          
+      :file "gazebo_gimbal_controller_plugin.cpp"
+      :pointmax 21106
+      :fsize 21105
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax '((semantic-list 823 . 847) (symbol 799 . 823)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gazebo_gps_plugin.cpp"
+      :pointmax 1439
+      :fsize 8340
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_imu_plugin.h" include nil nil [875 905])
+            ("chrono" include (:system-flag t) nil [907 924])
+            ("cmath" include (:system-flag t) nil [925 941])
+            ("iostream" include (:system-flag t) nil [942 961])
+            ("stdio.h" include (:system-flag t) nil [962 980])
+            ("boost/bind.hpp" include (:system-flag t) nil [982 1007])
+            ("gazebo" type
+               (:members 
+                  ( ("GazeboImuPlugin" function
+                       (:constructor-flag t
+                        :parent "GazeboImuPlugin"
+                        :type ("GazeboImuPlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1029 1118])
+                    ("GazeboImuPlugin" function
+                       (:destructor-flag t
+                        :parent "GazeboImuPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1120 1195])
+                    ("Load" function
+                       (:parent "GazeboImuPlugin"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1225 1250])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1251 1272]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1198 7002])
+                    ("addNoise" function
+                       (:parent "GazeboImuPlugin"
+                        :arguments 
+                          ( ("linear_acceleration" variable
+                               (:pointer 1
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7172 7209])
+                            ("angular_velocity" variable
+                               (:pointer 1
+                                :type ("Eigen::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7241 7275])
+                            ("dt" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [7307 7323]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7141 9503])
+                    ("OnUpdate" function
+                       (:parent "GazeboImuPlugin"
+                        :arguments 
+                          ( ("_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9589 9621]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9558 13156])
+                    ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboImuPlugin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13184 13200]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [13159 13201]))                  
+                :type "namespace")
+                nil [1009 13203]))          
+      :file "gazebo_imu_plugin.cpp"
+      :pointmax 13204
+      :fsize 13203
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gazebo_irlock_plugin.cpp"
+      :pointmax 3535
+      :fsize 3565
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gazebo_lidar_plugin.cpp"
+      :pointmax 4598
+      :fsize 4597
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_motor_model.h" include nil nil [876 907])
+            ("ignition/math.hh" include (:system-flag t) nil [908 935])
+            ("gazebo" type
+               (:members 
+                  ( ("GazeboMotorModel" function
+                       (:destructor-flag t
+                        :parent "GazeboMotorModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [957 1054])
+                    ("InitializeParams" function
+                       (:parent "GazeboMotorModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1056 1100])
+                    ("Publish" function
+                       (:parent "GazeboMotorModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1102 1251])
+                    ("Load" function
+                       (:parent "GazeboMotorModel"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1306])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1307 1328]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1253 6307])
+                    ("OnUpdate" function
+                       (:parent "GazeboMotorModel"
+                        :arguments 
+                          ( ("_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6697 6729]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6665 6898])
+                    ("VelocityCallback" function
+                       (:parent "GazeboMotorModel"
+                        :arguments 
+                          ( ("rot_velocities" variable
+                               (:reference 1
+                                :type ("CommandMotorSpeedPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6940 6977]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6900 7370])
+                    ("MotorFailureCallback" function
+                       (:parent "GazeboMotorModel"
+                        :arguments 
+                          ( ("fail_msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("msgs::Int" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7416 7467]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7372 7515])
+                    ("UpdateForcesAndMoments" function
+                       (:parent "GazeboMotorModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7517 11727])
+                    ("UpdateMotorFail" function
+                       (:parent "GazeboMotorModel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11729 12405])
+                    ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboMotorModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12432 12449]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12407 12450]))                  
+                :type "namespace")
+                nil [937 12452]))          
+      :file "gazebo_motor_model.cpp"
+      :pointmax 12453
+      :fsize 12453
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_multirotor_base_plugin.h" include nil nil [875 917])
+            ("ctime" include (:system-flag t) nil [919 935])
+            ("gazebo" type
+               (:members 
+                  ( ("GazeboMultirotorBasePlugin" function
+                       (:destructor-flag t
+                        :parent "GazeboMultirotorBasePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [957 1055])
+                    ("Load" function
+                       (:parent "GazeboMultirotorBasePlugin"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1095 1120])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1121 1142]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1057 2871])
+                    ("OnUpdate" function
+                       (:parent "GazeboMultirotorBasePlugin"
+                        :arguments 
+                          ( ("_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2968 3000]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2926 3522])
+                    ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboMultirotorBasePlugin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3549 3576]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3524 3577]))                  
+                :type "namespace")
+                nil [937 3579]))          
+      :file "gazebo_multirotor_base_plugin.cpp"
+      :pointmax 3580
+      :fsize 3579
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_uuv_plugin.h" include nil nil [967 997])
+            ("ignition/math.hh" include (:system-flag t) nil [998 1025])
+            ("gazebo" type
+               (:members 
+                  ( ("GazeboUUVPlugin" function
+                       (:destructor-flag t
+                        :parent "GazeboUUVPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1047 1123])
+                    ("Load" function
+                       (:parent "GazeboUUVPlugin"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1194 1219])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1220 1241]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1167 3811])
+                    ("CommandCallback" function
+                       (:parent "GazeboUUVPlugin"
+                        :arguments 
+                          ( ("command" variable
+                               (:reference 1
+                                :type ("CommandMotorSpeedPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3886 3916]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3848 4161])
+                    ("OnUpdate" function
+                       (:parent "GazeboUUVPlugin"
+                        :arguments 
+                          ( ("_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4240 4272]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4209 8467]))                  
+                :type "namespace")
+                nil [1027 8512]))          
+      :file "gazebo_uuv_plugin.cpp"
+      :pointmax 8513
+      :fsize 8512
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax '((semantic-list 8493 . 8510) (symbol 8469 . 8493)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gazebo_controller_interface.h" include nil nil [876 916])
+            ("gazebo" type
+               (:members 
+                  ( ("GazeboControllerInterface" function
+                       (:destructor-flag t
+                        :parent "GazeboControllerInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [938 1033])
+                    ("Load" function
+                       (:parent "GazeboControllerInterface"
+                        :arguments 
+                          ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1072 1097])
+                            ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1119]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1035 2507])
+                    ("OnUpdate" function
+                       (:parent "GazeboControllerInterface"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("common::UpdateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2603 2639]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2562 3089])
+                    ("CommandMotorCallback" function
+                       (:parent "GazeboControllerInterface"
+                        :arguments 
+                          ( ("input_reference_msg" variable
+                               (:reference 1
+                                :type ("CommandMotorSpeedPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3144 3186]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3091 3430])
+                    ("GZ_REGISTER_MODEL_PLUGIN" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("GazeboControllerInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3458 3484]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3433 3485]))                  
+                :type "namespace")
+                nil [918 3487]))          
+      :file "gazebo_controller_interface.cpp"
+      :pointmax 3488
+      :fsize 3487
+      :lastmodtime '(23798 26604 763393 662000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!sitl_gazebo!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

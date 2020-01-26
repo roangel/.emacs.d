@@ -1,0 +1,111 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "camera_interface.h"
+      :file "camera_interface.h"
+      :fsize 1380
+      :lastmodtime '(23437 18825 432962 369000))
+    (semanticdb-table "gpio.h"
+      :file "gpio.h"
+      :fsize 608
+      :lastmodtime '(23437 18825 432962 369000))
+    (semanticdb-table "pwm.h"
+      :file "pwm.h"
+      :fsize 436
+      :lastmodtime '(23437 18825 432962 369000))
+    (semanticdb-table "seagull_map2.h"
+      :file "seagull_map2.h"
+      :fsize 971
+      :lastmodtime '(23437 18825 432962 369000))
+    (semanticdb-table "seagull_map2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sys/ioctl.h" include (:system-flag t) nil [60 82])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [83 115])
+            ("uORB/topics/trigger_pwm.h" include (:system-flag t) nil [117 153])
+            ("drivers/drv_pwm_trigger.h" include nil nil [167 203])
+            ("seagull_map2.h" include nil nil [204 229])
+            ("PWM_CAMERA_DISARMED" variable (:constant-flag t) nil [373 392])
+            ("PWM_CAMERA_NEUTRAL" variable (:constant-flag t) nil [407 425])
+            ("PWM_1_CAMERA_ON" variable (:constant-flag t) nil [441 456])
+            ("PWM_1_CAMERA_AUTOFOCUS_SHOOT" variable (:constant-flag t) nil [473 501])
+            ("PWM_1_CAMERA_INSTANT_SHOOT" variable (:constant-flag t) nil [515 541])
+            ("PWM_1_CAMERA_OFF" variable (:constant-flag t) nil [555 571])
+            ("PWM_2_CAMERA_KEEP_ALIVE" variable (:constant-flag t) nil [588 611])
+            ("PWM_2_CAMERA_ON_OFF" variable (:constant-flag t) nil [626 645])
+            ("BUSY_TIME" variable (:constant-flag t) nil [661 670])
+            ("CameraInterfaceSeagull" function
+               (:constructor-flag t
+                :parent "CameraInterfaceSeagull"
+                :type ("CameraInterfaceSeagull" type (:type "class") nil nil))
+                nil [736 1242])
+            ("CameraInterfaceSeagull" function
+               (:destructor-flag t
+                :parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [1244 1455])
+            ("setup" function
+               (:parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [1457 2608])
+            ("check_busy" function
+               (:parent "CameraInterfaceSeagull"
+                :type "bool")
+                nil [2676 2826])
+            ("set_camera_on" function
+               (:parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [2948 3019])
+            ("trigger" function
+               (:parent "CameraInterfaceSeagull"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [3077 3089]))                  
+                :type "void")
+                nil [3040 3886])
+            ("send_keep_alive" function
+               (:parent "CameraInterfaceSeagull"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [3933 3945]))                  
+                :type "void")
+                nil [3888 4742])
+            ("send_toggle_power" function
+               (:parent "CameraInterfaceSeagull"
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [4791 4803]))                  
+                :type "void")
+                nil [4744 5840])
+            ("turn_off_long" function
+               (:parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [5882 6822])
+            ("set_neutral" function
+               (:parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [6886 7807])
+            ("info" function
+               (:parent "CameraInterfaceSeagull"
+                :type "void")
+                nil [7828 8018]))          
+      :file "seagull_map2.cpp"
+      :pointmax 8090
+      :fsize 8089
+      :lastmodtime '(23484 55657 905165 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PWM_CAMERA_DISARMED" . ((number "900" 395 . 398)))
+          ("PWM_1_CAMERA_OFF" . ((number "1900" 575 . 579)))
+          ("BUSY_TIME" . 
+              ((number "650" 675 . 678) (punctuation "*" 679 . 680) (number "1000" 681 . 685)))
+          ("PWM_1_CAMERA_AUTOFOCUS_SHOOT" . ((number "1300" 502 . 506)))
+          ("PWM_CAMERA_NEUTRAL" . ((number "1500" 428 . 432)))
+          ("PWM_1_CAMERA_INSTANT_SHOOT" . ((number "1700" 542 . 546)))
+          ("PWM_1_CAMERA_ON" . ((number "1100" 460 . 464)))
+          ("PWM_2_CAMERA_ON_OFF" . ((number "1900" 648 . 652)))
+          ("PWM_2_CAMERA_KEEP_ALIVE" . ((number "1700" 613 . 617)))
+          )
+))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!drivers!camera_trigger!interfaces!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

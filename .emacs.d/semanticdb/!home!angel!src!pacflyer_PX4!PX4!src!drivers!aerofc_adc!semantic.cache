@@ -1,0 +1,256 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1732 1755])
+            ("px4_defines.h" include (:system-flag t) nil [1756 1780])
+            ("cstring" include (:system-flag t) nil [1782 1800])
+            ("arch/board/board.h" include (:system-flag t) nil [1802 1831])
+            ("nuttx/arch.h" include (:system-flag t) nil [1833 1856])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [1857 1882])
+            ("board_config.h" include (:system-flag t) nil [1884 1909])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [1911 1942])
+            ("drivers/drv_adc.h" include (:system-flag t) nil [1943 1971])
+            ("systemlib/err.h" include (:system-flag t) nil [1973 1999])
+            ("SLAVE_ADDR" variable (:constant-flag t) nil [2009 2019])
+            ("ADC_ENABLE_REG" variable (:constant-flag t) nil [2033 2047])
+            ("ADC_CHANNEL_REG" variable (:constant-flag t) nil [2061 2076])
+            ("MAX_CHANNEL" variable (:constant-flag t) nil [2090 2101])
+            ("CYCLE_TICKS_DELAY" variable (:constant-flag t) nil [2121 2138])
+            ("AEROFC_ADC_BUS" type
+               (:members 
+                  ( ("AEROFC_ADC_BUS_ALL" variable
+                       (:constant-flag t
+                        :default-value (2199 2200)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2178 2200])
+                    ("AEROFC_ADC_BUS_I2C_INTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2203 2231])
+                    ("AEROFC_ADC_BUS_I2C_EXTERNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2233 2262]))                  
+                :type "enum")
+                nil [2155 2263])
+            ("bus_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+#ifdef PX4_I2C_BUS_EXPANSION
+	{ AEROFC_ADC_BUS_I2C_EXTERNAL, PX4_I2C_BUS_EXPANSION },
+#endif
+#ifdef PX4_I2C_BUS_EXPANSION1
+	{ AEROFC_ADC_BUS_I2C_EXTERNAL, PX4_I2C_BUS_EXPANSION1 },
+#endif
+#ifdef PX4_I2C_BUS_ONBOARD
+	{ AEROFC_ADC_BUS_I2C_INTERNAL, PX4_I2C_BUS_ONBOARD },
+#endif
+}"
+                :type ("aerofc_adc_bus_option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2265 2647])
+            ("aerofc_adc_bus_option" type
+               (:members 
+                  ( ("busid" variable (:type ("AEROFC_ADC_BUS" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2304 2330])
+                    ("busnum" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2332 2347]))                  
+                :type "struct")
+                nil [2265 2647])
+            ("aerofc_adc_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2691 2700])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2701 2714]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2671 2715])
+            ("AEROFC_ADC" type
+               (:superclasses 
+                  ( ("device::I2C" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2759 2766])
+                    ("AEROFC_ADC" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bus" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2779 2791]))                          
+                        :type ("AEROFC_ADC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2768 2792])
+                    ("AEROFC_ADC" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2794 2816])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2819 2838])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2858 2869])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [2870 2878])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2879 2897]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2840 2898])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2921 2932])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2933 2946])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2947 2958]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2900 2959])
+                    ("private" label nil (reparse-symbol classsubparts) [2961 2969])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2971 2991])
+                    ("cycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2994 3007])
+                    ("cycle_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3038 3048]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3009 3049])
+                    ("_work" variable (:type ("work_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3052 3072])
+                    ("_sample" variable (:type ("px4_adc_msg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3074 3096])
+                    ("_sample_mutex" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3098 3128]))                  
+                :type "class")
+                nil [2719 3131])
+            ("instance" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "nullptr"
+                :type ("AEROFC_ADC" type (:type "class") nil nil))
+                nil [3133 3171])
+            ("test" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3173 3602])
+            ("help" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3604 3788])
+            ("aerofc_adc_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3810 3819])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3820 3833]))                  
+                :type "int")
+                nil [3790 5048])
+            ("AEROFC_ADC" function
+               (:constructor-flag t
+                :parent "AEROFC_ADC"
+                :arguments 
+                  ( ("bus" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5073 5085]))                  
+                :type ("AEROFC_ADC" type (:type "class") nil nil))
+                nil [5050 5233])
+            ("AEROFC_ADC" function
+               (:destructor-flag t
+                :parent "AEROFC_ADC"
+                :type "void")
+                nil [5235 5294])
+            ("init" function
+               (:parent "AEROFC_ADC"
+                :type "int")
+                nil [5296 5504])
+            ("probe" function
+               (:parent "AEROFC_ADC"
+                :type "int")
+                nil [5506 5911])
+            ("ioctl" function
+               (:parent "AEROFC_ADC"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5935 5946])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [5947 5955])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5956 5974]))                  
+                :type "int")
+                nil [5913 5995])
+            ("read" function
+               (:parent "AEROFC_ADC"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6022 6033])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6034 6047])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6048 6059]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [5997 6296])
+            ("cycle_trampoline" function
+               (:parent "AEROFC_ADC"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6332 6342]))                  
+                :type "void")
+                nil [6298 6418])
+            ("cycle" function
+               (:parent "AEROFC_ADC"
+                :type "void")
+                nil [6420 6860]))          
+      :file "aerofc_adc.cpp"
+      :pointmax 6861
+      :fsize 6860
+      :lastmodtime '(23770 52090 735807 428000)
+      :unmatched-syntax '((symbol 2662 . 2670))
+      :lexical-table 
+        '(("SLAVE_ADDR" . ((number "0x50" 2020 . 2024)))
+          ("ADC_CHANNEL_REG" . ((number "0x05" 2077 . 2081)))
+          ("MAX_CHANNEL" . ((number "5" 2102 . 2103)))
+          ("CYCLE_TICKS_DELAY" . ((symbol "MSEC2TICK" 2139 . 2148) (semantic-list "(100)" 2148 . 2153)))
+          ("ADC_ENABLE_REG" . ((number "0x00" 2048 . 2052)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!aerofc_adc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

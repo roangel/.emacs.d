@@ -1,0 +1,523 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ekf.h" include nil nil [1873 1889])
+            ("ecl.h" include (:system-flag t) nil [1891 1907])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1908 1936])
+            ("cstdlib" include (:system-flag t) nil [1937 1955])
+            ("resetVelocity" function
+               (:parent "Ekf"
+                :type "bool")
+                nil [2073 4750])
+            ("resetPosition" function
+               (:parent "Ekf"
+                :type "bool")
+                nil [4864 7225])
+            ("resetHeight" function
+               (:parent "Ekf"
+                :type "void")
+                nil [7283 12918])
+            ("alignOutputFilter" function
+               (:parent "Ekf"
+                :type "void")
+                nil [12997 14070])
+            ("realignYawGPS" function
+               (:parent "Ekf"
+                :type "bool")
+                nil [14266 20473])
+            ("resetMagHeading" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("mag_init" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20544 20563])
+                    ("increase_yaw_var" variable (:type "bool") (reparse-symbol arg-sub-list) [20564 20586])
+                    ("update_buffer" variable (:type "bool") (reparse-symbol arg-sub-list) [20587 20606]))                  
+                :type "bool")
+                nil [20518 28288])
+            ("getMagDeclination" function
+               (:parent "Ekf"
+                :type "float")
+                nil [28386 29018])
+            ("makeSymmetrical" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [29108 29124])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29156 29170])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29171 29184]))                  
+                :type "void")
+                nil [29082 29427])
+            ("constrainStates" function
+               (:parent "Ekf"
+                :type "void")
+                nil [29429 30435])
+            ("calcEarthRateNED" function
+               (:methodconst-flag t
+                :parent "Ekf"
+                :arguments 
+                  ( ("omega" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30503 30519])
+                    ("lat_rad" variable (:type "float") (reparse-symbol arg-sub-list) [30520 30534]))                  
+                :type "void")
+                nil [30476 30673])
+            ("get_vel_pos_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("vel_pos_innov" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [30785 30808]))                  
+                :type "void")
+                nil [30757 30871])
+            ("get_aux_vel_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("aux_vel_innov" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [30970 30993]))                  
+                :type "void")
+                nil [30942 31056])
+            ("get_mag_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("mag_innov" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [31149 31168]))                  
+                :type "void")
+                nil [31125 31223])
+            ("get_airspeed_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("airspeed_innov" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [31306 31328]))                  
+                :type "void")
+                nil [31277 31390])
+            ("get_beta_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("beta_innov" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [31480 31498]))                  
+                :type "void")
+                nil [31455 31552])
+            ("get_heading_innov" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("heading_innov" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [31633 31654]))                  
+                :type "void")
+                nil [31605 31714])
+            ("get_vel_pos_innov_var" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("vel_pos_innov_var" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [31839 31866]))                  
+                :type "void")
+                nil [31807 31937])
+            ("get_mag_innov_var" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("mag_innov_var" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [32041 32064]))                  
+                :type "void")
+                nil [32013 32127])
+            ("get_airspeed_innov_var" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("airspeed_innov_var" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [32222 32248]))                  
+                :type "void")
+                nil [32189 32318])
+            ("get_beta_innov_var" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("beta_innov_var" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [32419 32441]))                  
+                :type "void")
+                nil [32390 32503])
+            ("get_heading_innov_var" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("heading_innov_var" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [32596 32621]))                  
+                :type "void")
+                nil [32564 32689])
+            ("get_gps_check_status" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32746 32760]))                  
+                :type "void")
+                nil [32715 32802])
+            ("get_state_delayed" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [32884 32897]))                  
+                :type "void")
+                nil [32856 33468])
+            ("get_accel_bias" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("bias" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [33525 33539]))                  
+                :type "void")
+                nil [33500 33740])
+            ("get_gyro_bias" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("bias" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [33801 33815]))                  
+                :type "void")
+                nil [33777 34013])
+            ("get_ekf_origin" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("origin_time" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34177 34199])
+                    ("origin_pos" variable
+                       (:pointer 1
+                        :type ("map_projection_reference_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34200 34239])
+                    ("origin_alt" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [34240 34258]))                  
+                :type "bool")
+                nil [34152 34481])
+            ("get_output_tracking_error" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("error" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [34648 34663]))                  
+                :type "void")
+                nil [34612 34726])
+            ("get_imu_vibe_metrics" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("vibe" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35101 35115]))                  
+                :type "void")
+                nil [35070 35168])
+            ("get_gps_drift_metrics" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("drift" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35589 35604])
+                    ("blocked" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [35605 35619]))                  
+                :type "bool")
+                nil [35557 35799])
+            ("get_ekf_gpos_accuracy" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("ekf_eph" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35924 35939])
+                    ("ekf_epv" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [35940 35955]))                  
+                :type "void")
+                nil [35892 36857])
+            ("get_ekf_lpos_accuracy" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("ekf_eph" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [36981 36996])
+                    ("ekf_epv" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [36997 37012]))                  
+                :type "void")
+                nil [36949 37690])
+            ("get_ekf_vel_accuracy" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("ekf_evh" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37787 37802])
+                    ("ekf_evv" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [37803 37818]))                  
+                :type "void")
+                nil [37756 38811])
+            ("get_ekf_ctrl_limits" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("vxy_max" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [39312 39327])
+                    ("vz_max" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [39328 39342])
+                    ("hagl_min" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [39343 39359])
+                    ("hagl_max" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [39360 39376]))                  
+                :type "void")
+                nil [39282 40789])
+            ("reset_imu_bias" function
+               (:parent "Ekf"
+                :type "bool")
+                nil [40791 41600])
+            ("get_innovation_test_status" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42169 42186])
+                    ("mag" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42187 42198])
+                    ("vel" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42199 42210])
+                    ("pos" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42211 42222])
+                    ("hgt" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42223 42234])
+                    ("tas" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42235 42246])
+                    ("hagl" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42247 42259])
+                    ("beta" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [42260 42272]))                  
+                :type "void")
+                nil [42132 43236])
+            ("get_ekf_soln_status" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43343 43360]))                  
+                :type "void")
+                nil [43313 45094])
+            ("fuse" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("K" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [45131 45140])
+                    ("innovation" variable (:type "float") (reparse-symbol arg-sub-list) [45141 45158]))                  
+                :type "void")
+                nil [45116 46035])
+            ("zeroRows" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [46119 46135])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46167 46181])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46182 46195]))                  
+                :type "void")
+                nil [46100 46317])
+            ("zeroCols" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [46404 46420])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46452 46466])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46467 46480]))                  
+                :type "void")
+                nil [46385 46616])
+            ("zeroOffDiag" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [46640 46656])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46688 46702])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46703 46716]))                  
+                :type "void")
+                nil [46618 47075])
+            ("uncorrelateQuatStates" function
+               (:parent "Ekf"
+                :type "void")
+                nil [47077 47507])
+            ("setDiag" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [47527 47543])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47575 47589])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47590 47603])
+                    ("variance" variable (:type "float") (reparse-symbol arg-sub-list) [47604 47619]))                  
+                :type "void")
+                nil [47509 47826])
+            ("global_position_is_valid" function
+               (:parent "Ekf"
+                :type "bool")
+                nil [47828 48138])
+            ("update_deadreckoning_status" function
+               (:parent "Ekf"
+                :type "void")
+                nil [48221 49398])
+            ("cross_product" function
+               (:parent "EstimatorInterface"
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49477 49500])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49501 49524]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [49434 49742])
+            ("quat_to_invrotmat" function
+               (:parent "EstimatorInterface"
+                :arguments 
+                  ( ("quat" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Quatf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49859 49877]))                  
+                :type ("Matrix3f" type (:type "class") nil nil))
+                nil [49812 50537])
+            ("calcRotVecVariances" function
+               (:parent "Ekf"
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [50601 51891])
+            ("initialiseQuatCovariances" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("rot_vec_var" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52002 52024]))                  
+                :type "void")
+                nil [51966 55934])
+            ("setControlBaroHeight" function
+               (:parent "Ekf"
+                :type "void")
+                nil [55936 56132])
+            ("setControlRangeHeight" function
+               (:parent "Ekf"
+                :type "void")
+                nil [56134 56331])
+            ("setControlGPSHeight" function
+               (:parent "Ekf"
+                :type "void")
+                nil [56333 56528])
+            ("setControlEVHeight" function
+               (:parent "Ekf"
+                :type "void")
+                nil [56530 56724])
+            ("calcExtVisRotMat" function
+               (:parent "Ekf"
+                :type "void")
+                nil [56921 58149])
+            ("resetExtVisRotMat" function
+               (:parent "Ekf"
+                :type "void")
+                nil [58344 58909])
+            ("get_ekf2ev_quaternion" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("quat" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [59048 59060]))                  
+                :type "void")
+                nil [59016 59200])
+            ("increaseQuatYawErrVariance" function
+               (:parent "Ekf"
+                :arguments 
+                  ( ("yaw_variance" variable (:type "float") (reparse-symbol arg-sub-list) [59342 59361]))                  
+                :type "void")
+                nil [59305 61309])
+            ("save_mag_cov_data" function
+               (:parent "Ekf"
+                :type "void")
+                nil [61400 61807])
+            ("kahanSummation" function
+               (:methodconst-flag t
+                :parent "Ekf"
+                :arguments 
+                  ( ("sum_previous" variable (:type "float") (reparse-symbol arg-sub-list) [61835 61854])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [61855 61867])
+                    ("accumulator" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [61868 61887]))                  
+                :type "float")
+                nil [61809 62008]))          
+      :file "ekf_helper.cpp"
+      :pointmax 62009
+      :fsize 62008
+      :lastmodtime '(23824 59319 157847 389000)
+      :unmatched-syntax '((semantic-list 47558 . 47573) (semantic-list 47543 . 47558) (semantic-list 47533 . 47543) (semantic-list 46671 . 46686) (semantic-list 46656 . 46671) (semantic-list 46646 . 46656) (semantic-list 46435 . 46450) (semantic-list 46420 . 46435) (semantic-list 46410 . 46420) (semantic-list 46150 . 46165) (semantic-list 46135 . 46150) (semantic-list 46125 . 46135) (semantic-list 29139 . 29154) (semantic-list 29124 . 29139) (semantic-list 29114 . 29124)))
+    (semanticdb-table "semanticdb-table"
+      :file "ekf.h"
+      :fsize 37031
+      :lastmodtime '(23824 59319 157847 389000)))
+  :file "!home!angel!src!Firmware!src!lib!ecl!EKF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

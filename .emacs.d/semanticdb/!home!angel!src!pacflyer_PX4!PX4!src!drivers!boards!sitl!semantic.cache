@@ -1,0 +1,121 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BOARD_OVERRIDE_UUID" variable (:constant-flag t) nil [1821 1840])
+            ("BOARD_OVERRIDE_MFGUID" variable (:constant-flag t) nil [1915 1936])
+            ("BOARD_NAME" variable (:constant-flag t) nil [1966 1976])
+            ("BOARD_BATTERY1_V_DIV" variable (:constant-flag t) nil [1992 2012])
+            ("BOARD_BATTERY1_A_PER_V" variable (:constant-flag t) nil [2039 2061])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [2086 2104])
+            ("BOARD_HAS_NO_BOOTLOADER" variable (:constant-flag t) nil [2113 2136])
+            ("CONFIG_ARCH_BOARD_SITL" variable (:constant-flag t) nil [2146 2168])
+            ("PX4_I2C_BUS_EXPANSION" variable (:constant-flag t) nil [2180 2201])
+            ("PX4_I2C_BUS_ONBOARD" variable (:constant-flag t) nil [2212 2231])
+            ("PX4_NUMBER_I2C_BUSES" variable (:constant-flag t) nil [2243 2263])
+            ("system_config.h" include (:system-flag t) nil [2267 2293])
+            ("../common/board_common.h" include nil nil [2294 2329]))          
+      :file "board_config.h"
+      :pointmax 2330
+      :fsize 2329
+      :lastmodtime '(23770 52090 751807 522000)
+      :unmatched-syntax '((symbol 1807 . 1811) (symbol 1800 . 1806) (punctuation 1799 . 1800))
+      :lexical-table 
+        '(("BOARD_BATTERY1_V_DIV" . ((semantic-list "(10.177939394f)" 2015 . 2030)))
+          ("BOARD_OVERRIDE_MFGUID" . ((symbol "BOARD_OVERRIDE_UUID" 1937 . 1956)))
+          ("BOARD_NAME" . ((string "\"SITL\"" 1977 . 1983)))
+          ("BOARD_BATTERY1_A_PER_V" . ((semantic-list "(15.391030303f)" 2062 . 2077)))
+          ("PX4_I2C_BUS_EXPANSION" . ((number "1" 2202 . 2203)))
+          ("BOARD_OVERRIDE_UUID" . ((string "\"SIMULATIONID\"" 1841 . 1855)))
+          ("BOARD_HAS_NO_RESET")
+          ("BOARD_HAS_NO_BOOTLOADER")
+          ("PX4_I2C_BUS_ONBOARD" . ((number "2" 2233 . 2234)))
+          ("CONFIG_ARCH_BOARD_SITL" . ((number "1" 2169 . 2170)))
+          ("PX4_NUMBER_I2C_BUSES" . ((number "1" 2264 . 2265)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1787 1810])
+            ("px4_log.h" include (:system-flag t) nil [1811 1831])
+            ("stdbool.h" include (:system-flag t) nil [1832 1852])
+            ("led_toggle" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1978 1986]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1955 1987])
+            ("led_off" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1945 1953]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1925 1954])
+            ("led_on" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1915 1923]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1896 1924])
+            ("led_init" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1889 1894]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1868 1895])
+            ("_led_state" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ false, false }"
+                :type "bool")
+                nil [2001 2046])
+            ("led_init" function (:type "void") nil [2057 2100])
+            ("led_on" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2123 2131]))                  
+                :type "void")
+                nil [2111 2223])
+            ("led_off" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2247 2255]))                  
+                :type "void")
+                nil [2234 2349])
+            ("led_toggle" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2376 2384]))                  
+                :type "void")
+                nil [2360 2529]))          
+      :file "sitl_led.c"
+      :pointmax 2530
+      :fsize 2529
+      :lastmodtime '(23770 52090 751807 522000)
+      :unmatched-syntax '((symbol 2351 . 2359) (symbol 2225 . 2233) (symbol 2102 . 2110) (symbol 2048 . 2056)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1797 1820])
+            ("px4_log.h" include (:system-flag t) nil [1821 1841])
+            ("stdbool.h" include (:system-flag t) nil [1842 1862])
+            ("board_shutdown" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1994 1999]))                  
+                :type "int")
+                nil [1968 2037]))          
+      :file "sitl_shutdowm.c"
+      :pointmax 2038
+      :fsize 2037
+      :lastmodtime '(23898 27327 61796 48000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!boards!sitl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

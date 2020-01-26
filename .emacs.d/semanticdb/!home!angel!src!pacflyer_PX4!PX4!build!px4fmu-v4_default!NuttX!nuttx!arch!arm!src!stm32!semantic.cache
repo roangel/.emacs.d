@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [2128 2153])
+            ("stdint.h" include (:system-flag t) nil [2155 2174])
+            ("stdio.h" include (:system-flag t) nil [2175 2193])
+            ("assert.h" include (:system-flag t) nil [2194 2213])
+            ("errno.h" include (:system-flag t) nil [2214 2232])
+            ("debug.h" include (:system-flag t) nil [2233 2251])
+            ("nuttx/arch.h" include (:system-flag t) nil [2253 2276])
+            ("nuttx/drivers/pwm.h" include (:system-flag t) nil [2277 2307])
+            ("arch/board/board.h" include (:system-flag t) nil [2308 2337])
+            ("up_internal.h" include nil nil [2339 2363])
+            ("up_arch.h" include nil nil [2364 2384])
+            ("chip.h" include nil nil [2386 2403])
+            ("stm32_pwm.h" include nil nil [2404 2426])
+            ("stm32.h" include nil nil [2427 2445]))          
+      :file "stm32_pwm.c"
+      :pointmax 74880
+      :fsize 74879
+      :lastmodtime '(23549 3465 989087 413000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "chip.h"
+      :fsize 6286
+      :lastmodtime '(23549 3465 973087 296000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32_pwm.h"
+      :fsize 35999
+      :lastmodtime '(23549 3465 989087 413000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32.h"
+      :fsize 3289
+      :lastmodtime '(23549 3465 981087 355000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!px4fmu-v4_default!NuttX!nuttx!arch!arm!src!stm32!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

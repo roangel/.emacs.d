@@ -1,1052 +1,168 @@
-((("do_motors_check" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("check_status" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("org-src-fontify-natively" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("org-hide-leading-stars" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setq" .
-   [2 0 0 0])
-  ("org-bullets-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("lambda" .
-   [1 0 0 0 0 0])
-  ("org-mode-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-hook" .
-   [1 0 0 0 0 0 0 0])
-  ("ind" .
-   [4 0 0])
-  ("w" .
-   [1])
-  ("insertTab" .
-   [1 0 0 0 0 0 0 0 0])
-  ("CF_index" .
-   [4 0 0 0 0 0 0 0])
-  ("tmp_entry" .
-   [9 0 0 0 0 0 0 0 0])
-  ("CrazyflieEntry" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tmp_db" .
-   [1 0 0 0 0 0])
-  ("cf" .
-   [1 0])
-  ("FROM_UNITS_TO_METERS" .
-   [1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0])
-  ("ymin" .
-   [1 0 0 0])
-  ("crazyfly_zone_index" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("found_j" .
-   [3 0 0 0 0 0 0])
-  ("height" .
-   [2 0 0 0 0 0])
-  ("xmax" .
-   [2 0 0 0])
-  ("width" .
-   [3 0 0 0 0])
-  ("ymax" .
-   [2 0 0 0])
-  ("xmin" .
-   [3 0 0 0])
-  ("addCFZone" .
-   [2 0 0 0 0 0 0 0 0])
-  ("cf_exists" .
-   [2 0 0 0 0 0 0 0 0])
-  ("studentID" .
-   [1 0 0 0 0 0 0 0 0])
-  ("localArea" .
-   [2 0 0 0 0 0 0 0 0])
-  ("crazyflieContext" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyflieEntries" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("d" .
-   [1])
-  ("setRowCount" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("clear_all_links" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("link" .
-   [2 0 0 0])
-  ("CrazyflieDB" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("m_data_base" .
-   [4 0 0 0 0 0 1 0 0 0 0])
-  ("crazyflieDB" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("db" .
-   [1 0])
-  ("getDBCall" .
-   [1 0 0 0 0 0 0 0 0])
-  ("call" .
-   [1 0 0 0])
-  ("Duration" .
-   [1 0 0 0 0 0 0 0])
-  ("waitForExistence" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("m_read_db_client" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("TESTING_FAKE_DATA" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("text" .
-   [3 0 0 0])
-  ("item" .
-   [2 0 0 0])
-  ("ordered_row_indexes" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("row" .
-   [3 0 0])
-  ("removeRow" .
-   [2 0 0 0 0 0 0 0 0])
-  ("select" .
-   [1 0 0 0 0 0])
-  ("item_cf" .
-   [1 0 0 0 0 0 0])
-  ("item_cf_zone" .
-   [3 0 0 0 0 0 0 0 0 0 0 0])
-  ("item_id" .
-   [3 0 0 0 0 0 0])
-  ("QTableWidgetItem" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("unlink" .
-   [1 0 0 0 0 0])
-  ("isCFLinked" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("io" .
-   [1 0])
-  ("err_message_student_id" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0])
-  ("err_message_cf_zone" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("err_message_cf" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("hide" .
-   [1 0 0 0])
-  ("err" .
-   [1 0 0])
-  ("isStudentIDLinked" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("cf_linker" .
-   [19 0 0 0 0 0 0 0 0])
-  ("is" .
-   [1 0])
-  ("is_linked" .
-   [2 0 0 0 0 0 0 0 0])
-  ("plot" .
-   [1 0 0 0])
-  ("CFlinker" .
-   [1 0 0 0 0 0 0 0])
-  ("links" .
-   [8 0 0 0 0])
-  ("count" .
-   [9 0 0 0 0])
-  ("comboBox" .
-   [1 0 0 0 0 0 0 0])
-  ("UserRole" .
-   [1 0 0 0 0 0 0 0])
-  ("setItemData" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("value" .
-   [2 0 0 0 0])
-  ("spinBox_student_ids" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("u" .
-   [9])
-  ("addNewRow" .
-   [1 0 0 0 0 0 0 0 0])
-  ("crazyfly_name" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("assignCFZone" .
+((("error_return" .
    [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("linkCF" .
-   [1 0 0 0 0 0])
-  ("getCFIndexFromName" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("toStdString" .
-   [5 0 0 0 0 0 1 0 0 0 0])
-  ("comboBoxCFs" .
-   [5 0 0 0 0 0 0 0 0 0 0])
-  ("cf_name" .
-   [14 0 0 0 0 0 0])
-  ("getCFZoneIndexFromName" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("toInt" .
-   [2 0 0 0 0])
-  ("split" .
-   [2 0 0 0 0])
-  ("currentText" .
-   [4 0 0 0 0 0 0 0 0 0 0])
-  ("search" .
-   [1 0 0 0 0 0])
-  ("CFLinker" .
-   [7 0 0 0 0 0 0 1])
-  ("cf_zone_index" .
-   [28 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("m_crazyfly_zones" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("m_crazyflies_vector" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("row_count" .
-   [2 0 0 0 0 0 0 0 0])
-  ("rowCount" .
-   [3 0 0 0 0 0 0 0])
-  ("m_ui" .
-   [16 0 0 0])
-  ("Ui" .
-   [2 0])
-  ("getName" .
-   [6 0 0 0 0 0 0])
-  ("Right" .
-   [1 0 0 0 0])
-  ("d_fall_pps" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("i" .
-   [10])
-  ("FROM_MILIMETERS_TO_UNITS" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("updateMarker" .
-   [3 0 0 0 0 0 0 0 0 0 0 0])
-  ("fillInfo" .
-   [1 0 0 0 0 0 0 0])
-  ("m_z" .
+  ("got" .
    [1 0 0])
-  ("m_y" .
-   [3 0 0])
-  ("m_x" .
-   [3 0 0])
-  ("marker_msg" .
-   [5 0 0 0 0 0 0 0 0 0])
-  ("crazyFly" .
-   [6 0 0 0 0 0 0 0])
-  ("updateNewViconData" .
-   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("ViconData" .
-   [1 0 0 0 0 0 0 0 0])
-  ("position" .
-   [1 0 0 0 0 0 0 0])
-  ("DRONE_HEIGHT" .
-   [0 0 0 0 0 0 0 0 1 0 0 0])
-  ("DRONE_WIDTH" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("markers_vector" .
-   [6 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("end" .
-   [1 0 0])
-  ("begin" .
-   [4 0 0 0 0])
-  ("erase" .
-   [4 0 0 0 0])
-  ("std" .
-   [25 0 0])
-  ("newViconData" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("UnlabeledMarker" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("p_msg" .
-   [23 0 0 0 0])
-  ("UnlabeledMarkersArray" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("messageCallback" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("rosNodeThread" .
+  ("faulty_sensor" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("m_topic" .
-   [1 0 0 0 0 0 0])
-  ("subscribe" .
-   [1 0 0 0 0 0 0 0 0])
-  ("m_vicon_subscriber" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("markers" .
-   [13 0 0 0 0 0 0])
-  ("markerArray" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("publish" .
-   [1 0 0 0 0 0 0])
-  ("unlabeledMarkersPublisher" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("advertise" .
-   [1 0 0 0 0 0 0 0 0])
-  ("Publisher" .
-   [1 0 0 0 0 0 0 0 0])
-  ("ros" .
-   [2 0 0])
-  ("Translation" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("z" .
-   [4])
-  ("unlabeledMarkerIndex" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("unlabeledMarkerCount" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("MarkerCount" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("GetUnlabeledMarkerCount" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setPosMarkers" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("clearHighlighted" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("check" .
-   [1 0 0 0 0])
-  ("checked" .
-   [2 0 0 0 0 0 0])
-  ("HIGHLIGHT_WIDTH" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("_y_highlight" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("_x_highlight" .
-   [1 0 0 0 0 1 0 0 0 0 0 0])
-  ("setHighlighted" .
-   [3 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("_highlight_diameter" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("HIGHLIGHT_DIAMETER" .
-   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_y" .
-   [3 0])
-  ("_x" .
-   [2 0])
-  ("_highlight_circle" .
-   [6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("g" .
-   [5])
-  ("_highlighted" .
-   [3 0 0 1 0 0 0 1 0 0 0 1])
-  ("mapFromSceneToWorld" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("point" .
-   [2 0 0 0 0])
-  ("f" .
-   [2])
-  ("TO_MILIMETERS" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("MARKER_DIAMETER" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_diameter" .
-   [1 0 0 0 0 0 0 0 0])
-  ("TO_METERS" .
-   [4 0 0 0 0 0 0 0 0])
-  ("setRect" .
-   [3 0 0 0 0 0 0])
-  ("circle" .
-   [4 0 0 0 0 0])
-  ("QGraphicsEllipseItem" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0])
-  ("marker" .
-   [19 0 0 0 0 0])
-  ("Marker" .
-   [17 0 0 0 0 0])
-  ("addItem" .
-   [9 0 0 0 0 0 0])
-  ("setZValue" .
-   [1 0 0 0 0 0 0 0 0])
-  ("QColor" .
-   [2 0 0 0 0 0])
-  ("scale" .
-   [5 0 0 0 0])
-  ("graphicsView" .
-   [3 0 0 0 0 0 0 0 0 0 0 0])
-  ("centerViewIndex" .
-   [2 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("centerButtonClickedSignal" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0])
-  ("centerButtonClicked" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("slots" .
-   [1 0 0 0 0])
-  ("clicked" .
-   [1 0 0 0 0 0 0])
-  ("center_button" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("pressed" .
-   [1 0 0 0 0 0 0])
-  ("but" .
-   [0 0 1])
-  ("widget" .
-   [9 0 0 0 0 0])
-  ("QPushButton" .
-   [1 0 0 0 0 1 0 0 0 0 0])
-  ("signals" .
-   [3 0 0 0 0 0 0])
-  ("C" .
-   [4])
-  ("button1" .
-   [1 0 0 0 0 0 0])
-  ("crazyFlyZoneTab" .
-   [6 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("removeTable" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("MainGUIWindow" .
-   [4 0 0 0 1 1 1 3 1 0 0 0 0])
-  ("transitionToMode" .
-   [1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("modeChanged" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("clear" .
-   [17 0 0 0 1])
-  ("removeItem" .
-   [10 0 0 0 0 0 0 0 0 0])
-  ("remove" .
-   [3 0 0 0 0 0])
-  ("setDarkColor" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("setLightColor" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("boundingRect" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("option" .
-   [1 0 0 0 0 0])
-  ("p" .
-   [4])
-  ("painter" .
-   [3 0 0 0 0 0 0])
-  ("lock" .
-   [2 0 0 0])
-  ("unlock" .
-   [4 0 0 0 0 0])
-  ("locked" .
-   [4 0 0 0 0 0])
-  ("crazyfly_zones" .
-   [27 0 0 0 0 0 0 0 0 1 0 0 0 1])
-  ("ItemIsMovable" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ItemIsSelectable" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("QGraphicsItem" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("setFlag" .
-   [2 0 0 0 0 0 0])
-  ("unlockCrazyFlyZones" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("lockTablePieces" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("unlockTablePieces" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("lockCrazyFlyZones" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setMode" .
-   [2 0 0 0 0 0 0])
-  ("new_mode" .
-   [3 0 0 0 0 0 0 0])
-  ("getMode" .
-   [3 0 0 0 0 0 0])
-  ("next_mode" .
-   [2 0 0 0 0 0 0 0 0])
-  ("changeModeTo" .
-   [0 0 0 0 0 0 0 0 0 0 1 0])
-  ("NoPen" .
-   [1 0 0 0 0])
-  ("n" .
-   [7])
-  ("setPen" .
-   [3 0 0 0 0 0])
-  ("removeTablePiece" .
-   [2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("numCrazyFlyZonesChanged" .
-   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tmp_table_piece_item" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("add" .
-   [1 0 0])
-  ("updateIndexesAndLabelsCrazyFlyZones" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setSelectedCrazyFlyZone" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("removeCrazyFlyZone" .
-   [3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("updateIndexesAndLabelsCrazyFlyZone" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("checkSelectedCrazyFlyZone" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("table_pieces" .
-   [12 0 0 0 0 0 0 0 2 0 0 0])
-  ("setBrush" .
+  ("dev_name" .
    [2 0 0 0 0 0 0 0])
-  ("tablePiece" .
-   [5 0 0 0 0 0 0 0 0 0])
-  ("create" .
-   [1 0 0 0 0 0])
-  ("mode_crazyfly_zones" .
-   [1 0 0 0 0 0 1 1 2 2 1 0 0 1 0 0 0 0 0])
-  ("mode_table" .
-   [9 0 0 0 0 0 0 0 1 0])
-  ("mode" .
-   [18 0 0 0])
-  ("vector" .
-   [9 0 0 0 0 0])
-  ("selected_rect" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("rectangleSelected" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("emit" .
-   [9 0 0 0])
-  ("checkSelectedRectangle" .
-   [3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("isSelected" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("of" .
-   [1 0])
-  ("size" .
-   [41 0 0 0])
-  ("setSelectedRectangle" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("rectangles" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("SLOT" .
-   [6 0 0 0])
-  ("SIGNAL" .
-   [6 0 0 0 0 0])
-  ("tabWidget" .
-   [24 0 0 0 0 0 0 0 1])
-  ("ui" .
-   [76 0])
-  ("connect" .
-   [6 0 0 0 0 0 0])
-  ("QObject" .
-   [5 0 0 1 0 0 0])
-  ("removeRectangle" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("addRectangleToVector" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("index" .
-   [40 0 0 0 0])
-  ("in" .
-   [23 0])
-  ("myGraphicsView" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("myGraphicsScene" .
-   [12 0 0 0 0 0 0 0 0 0 0 2 0 0 0])
-  ("localPos" .
-   [1 0 0 0 0 0 0 0])
-  ("tmp_point" .
-   [1 0 0 0 0 0 0 0 0])
-  ("mouse" .
-   [1 0 0 0 0])
-  ("deleteGrabbers" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("grabbersAreCreated" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("a" .
-   [4])
-  ("_grabbers_created" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("createGrabbers" .
-   [2 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("myGraphicsRectItem" .
-   [4 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0])
-  ("my" .
-   [2 0])
-  ("qDebug" .
-   [16 0 0 0 0 0])
-  ("checkCornerGrabbers" .
-   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("_is_active" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("isActive" .
-   [5 0 0 0 0 0 0 0])
-  ("is_active" .
-   [1 0 0 0 0 0 0 0 0])
-  ("_bottomRight_corner" .
-   [3 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("_topRight_corner" .
-   [3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("_topLeft_corner" .
-   [2 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("_bottomLeft_corner" .
-   [2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("rs" .
-   [1 0])
-  ("Corner" .
-   [6 0 0 0 0 0])
-  ("c" .
-   [15])
-  ("bottomRight" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("topRight" .
-   [5 0 0 0 0 0 0 0])
-  ("bottomLeft" .
-   [4 0 0 0 0 0 0 0 0 0])
-  ("setAcceptHoverEvents" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("_corners" .
-   [3 0 0 0 0 0 0 0])
-  ("corners" .
-   [1 0 0 0 0 0 0])
-  ("topLeft" .
-   [6 0 0 0 0 0 0])
-  ("getWidth" .
-   [2 0 0 0 0 1 0 0])
-  ("getHeight" .
-   [3 0 0 0 0 0 0 0 0])
-  ("_width" .
-   [1 0 0 0 0 0])
-  ("_height" .
-   [1 0 0 0 0 0 0])
-  ("CornerGrabber" .
-   [13 0 0 0 0 0 0 0 1 0 0 0 1])
-  ("qreal" .
-   [13 0 0 0 0])
-  ("y" .
-   [17])
-  ("TopHandle" .
-   [1 0 0 0 0 0 0 0 0])
-  ("red" .
+  ("dev" .
    [1 0 0])
-  ("scene" .
-   [50 0 0 0 0])
-  ("s" .
-   [23])
-  ("topHandle" .
-   [1 0 0 0 0 0 0 0 0])
-  ("HandleItem" .
-   [7 0 0 0 0 0 0 0 0 0])
-  ("x" .
-   [23])
-  ("ABSOLUTE_SCRIPT_PATH" .
-   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("DIR" .
-   [3 0 0])
-  ("print" .
-   [1 0 0 0 0])
-  ("filename" .
-   [1 0 0 0 0 0 0 0])
-  ("Qt" .
-   [10 0])
-  ("blue" .
-   [3 0 0 0])
-  ("rect" .
-   [20 0 0 0])
-  ("QRect" .
-   [6 0 0 0 0])
-  ("pen" .
-   [4 0 0])
-  ("addRect" .
-   [2 0 0 0 0 0 0])
-  ("brush" .
-   [3 0 0 0 0])
-  ("mouseEvent" .
-   [5 0 0 0 0 0 0 0 0 0])
-  ("scenePos" .
-   [4 0 0 0 0 0 0 0])
-  ("NULL" .
-   [4 0 0 0])
-  ("QPen" .
-   [3 0 0 0])
-  ("black" .
-   [3 0 0 0 0])
-  ("QBrush" .
-   [2 0 0 0 0 0])
-  ("startedRect" .
-   [3 0 0 0 0 0 0 0 1 0 0])
-  ("setBottomRight" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("QPoint" .
-   [4 0 0 0 0 0])
-  ("p1" .
-   [12 0])
-  ("firstClick" .
-   [2 0 0 0 0 0 2 0 0 0])
-  ("toPoint" .
-   [0 0 0 0 1 0 0])
-  ("p2" .
-   [5 0])
-  ("push_back" .
-   [6 0 0 0 0 0 0 0 0])
-  ("tmp_rect" .
-   [11 0 1 0 0 0 0 0])
-  ("tmp_rect_item" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("QGraphicsRectItem" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("back" .
-   [1 0 0 0])
-  ("QRectF" .
-   [10 0 0 0 0 2])
-  ("QPointF" .
-   [15 0 0 0 0 0 0])
-  ("t" .
-   [7])
-  ("nrf_gpio_pin_clear" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("LED_DOWN" .
-   [2 0 0 0 0 0 0 0])
-  ("nrf_delay" .
-   [1 0 0 0 0 0 0 0 0])
-  ("nrf_gpio_pin_set" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("nrf_delay_ms" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyFlyZone" .
-   [17 0 0 0 0 0 1 0 0 0 0 1])
-  ("sizeChanged" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("update" .
-   [8 0 0 0 0 0])
-  ("updateLabelPosition" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setLabelPosition" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Q_OBJECT" .
-   [1 0 1 1 0 0 0 0])
-  ("label" .
-   [6 0 0 0 0])
-  ("setParentItem" .
-   [3 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("setText" .
-   [4 0 0 0 0 0 0])
-  ("string" .
-   [15 0 0 0 0 0])
-  ("QString" .
-   [17 0 0 0 0 0 0])
-  ("rectSizeChanged" .
-   [2 0 0 0 0 1 0 0 1 0 0 0 0 0 0])
-  ("prepareGeometryChange" .
-   [0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("set" .
-   [5 0 0])
-  ("numTablePiecesChanged" .
-   [2 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("newNum" .
-   [4 0 0 0 0 0])
-  ("MainWindow" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("radioButton" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("radioButton_crazyfly_zones_mode" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("QGridLayout" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("QSpacerItem" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("spacer" .
-   [1 0 0 0 0 0])
-  ("mainLayout" .
-   [5 0 0 0 0 0 1 0 0 0])
-  ("addWidget" .
-   [1 0 0 0 0 0 0 0 0])
-  ("setRowStretch" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("_num_columns" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("_num_rows" .
-   [1 0 0 0 0 0 0 0 0])
-  ("CATKIN_MAKE" .
-   [18 0 0 2 0 0 1 0 0 0 0])
-  ("FROM_METERS" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("FROM_METERS_TO_UNITS" .
-   [8 0 0 0 4 2 1 2 0 2 1 0 0 0 0 0 0 0 0 2])
-  ("qreal_x" .
-   [2 0 0 0 0 0 0])
-  ("qreal_y" .
-   [1 0 0 0 0 0 0])
-  ("setPosMarker" .
-   [3 0 0 0 0 0 0 0 0 0 0 0])
-  ("setPos" .
-   [4 0 0 0 0 0])
-  ("mapFromWorldToScene" .
-   [3 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("new_p" .
-   [1 0 0 0 0])
-  ("vec" .
-   [3 0 0])
-  ("ConstPtr" .
-   [3 0 0 0 0 0 0 0])
-  ("ptrToMessage" .
-   [8 0 0 0 1 0 0 0 0 0 0 0])
-  ("ROS_INFO" .
-   [12 0 0 0 0 0 0 0])
-  ("ROS_INFO_STREAM" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tmp_marker" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("crazyflieName" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("name_found" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("index_name_found" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyfly_vector" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tmp_p_crazyfly" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyfly_vector_size_before" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyflies" .
-   [9 0 0 0 0 0 0 0 0 0])
-  ("CrazyflieData" .
+  ("substring_int" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("name" .
-   [11 0 0 0])
-  ("crazyfly" .
-   [10 0 0 0 1 0 0 0])
-  ("PI" .
-   [3 0])
-  ("m_yaw" .
-   [1 0 0 0 0])
-  ("FROM_RADIANS_TO_DEGREES" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("yaw" .
-   [2 0 0])
-  ("setEnabled" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("scaleSpinBox" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("e" .
-   [3])
-  ("setValue" .
+  ("skipped_last_batt_l2" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("log_SBL2" .
    [1 0 0 0 0 0 0 0])
-  ("setChecked" .
+  ("log_SBL2_s" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("crazyflies_vector" .
-   [11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setScaleCFs" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("arg1" .
-   [1 0 0 0])
-  ("checkBox_vicon_crazyflies" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("doNumCrazyFlyZonesChanged" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("current_count" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("comboBoxCFZones" .
-   [2 0 0 0 0 1 0 0 2 0 1 0 0 0 3])
-  ("qstr" .
-   [13 0 0 0])
-  ("append" .
-   [4 0 0 0 0 0])
-  ("N" .
-   [3])
-  ("number" .
-   [5 0 0 0 0 0])
-  ("str" .
-   [2 0 0])
-  ("list_discovered_student_ids" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("found_string" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("c_str" .
-   [5 0 0 0 0])
-  ("table_links" .
-   [20 0 0 0 0 0 0 0 0 0 0])
-  ("header" .
-   [1 0 0 0 0 0])
-  ("horizontal_header" .
-   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("setFont" .
-   [1 0 0 0 0 0 0])
-  ("m_name" .
-   [1 0 0 0 0 0])
-  ("occluded" .
-   [5 0 0 0 0 0 0 0])
-  ("Occluded" .
+  ("log_SBL1_s" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("log_SBID" .
    [1 0 0 0 0 0 0 0])
-  ("m_occluded" .
-   [2 0 0 0 1 0 0 0 0 0])
-  ("p_crazyfly_msg" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("v" .
-   [3])
-  ("isOccluded" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("m_added_to_scene" .
-   [1 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0])
-  ("added" .
-   [2 0 0 0 0])
-  ("isAddedToScene" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setAddedToScene" .
+  ("sbs_id_data_sub" .
    [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("m" .
-   [3])
-  ("table" .
-   [3 0 0 0 0])
-  ("m_p_table" .
-   [6 0 0 0 0 0 0 0 0])
-  ("QTableWidget" .
-   [2 0 0 0 0 0 0 0 0 0 0 1])
-  ("p_table" .
-   [1 0 0 0 0 0 0])
-  ("column" .
-   [1 0 0 0 0 0])
-  ("columnCount" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("student_id" .
-   [15 0 0 0 0 0 0 0 0 0])
-  ("student" .
-   [5 0 0 0 0 0 0])
-  ("str_id" .
-   [2 0 0 0 0 0])
-  ("fromStdString" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("str_cf_name" .
-   [2 0 0 0 0 0 0 0 0 0 0])
-  ("crazyfly_zone" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("getIndex" .
-   [17 0 0 0 0 0 0 0])
-  ("str_cf_zone_index" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("updateComboBoxesCFs" .
-   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("updateComboBoxesCFZones" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("updateComboBoxes" .
-   [2 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
-  ("tab" .
-   [1 0 0])
-  ("addTab" .
-   [2 0 0 0 0 0])
-  ("removeTab" .
-   [5 0 0 0 0 0 0 0 0])
-  ("tabText" .
-   [2 0 0 0 0 0 0])
-  ("found" .
-   [2 0 0 0 0])
-  ("found_name" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("getTabIndexFromName" .
-   [1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("found_index" .
-   [5 0 0 0 0 0 0 0 0 0 0])
-  ("setCurrentIndex" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("get" .
-   [1 0 0])
-  ("cf_index" .
-   [2 0 0 0 0 0 0 0])
-  ("doTabClosed" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("unlink_selection" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("unlink_cf_zone" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("isCFZoneLinked" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("sceneBoundingRect" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("r" .
-   [3])
-  ("removeAllCFZones" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("radio_address" .
-   [15 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tmp_link" .
-   [1 0 0 0 0 0 0 0])
-  ("str_radio_address" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("item_radio_address" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyflieAddress" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("err_message_radio_address" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("isRadioAddressLinked" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("crazyfly_vector_size_after" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("warnx" .
-   [7 0 0 0 0])
-  ("_prev_test_pwm_motor_0" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("_actuator_pwm" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("motor_pwm" .
-   [6 0 0 0 0 0 0 0 0])
-  ("_prev_test_pwm_motor_1" .
+  ("sbs_lifetime_data2_sub" .
    [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_prev_test_pwm_motor_" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("portname" .
-   [1 0 0 0 0 0 0 0])
-  ("baudrate_bootloader" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("pwm_sequence_start" .
-   [6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("_started_sequence" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("hrt_abstime" .
-   [1 0 0 1 0 1 0 4 0 0 1])
-  ("_now_sequence" .
-   [3 0 0 0 0 0 0 0 0 1 0 0 1])
-  ("hrt_absolute_time" .
-   [4 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0])
-  ("motor" .
-   [2 0 0 0 0])
-  ("param_t" .
-   [3 0 0 0 0 0 0])
-  ("_prev_pwm_sequence_start" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_started_pwm_sequence" .
-   [2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("time_on" .
-   [1 0 0 0 0 0 0])
-  ("_step_counter" .
-   [6 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_time_on" .
-   [7 0 0 0 0 0 1 0])
-  ("_time_off" .
-   [1 0 0 0 0 0 0 0 0])
-  ("_step_size" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("_step_time_off" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_step_time_on" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("motor_check_trig" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_check_trig" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2])
-  ("_motor_check_trig_pub" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("enable" .
-   [5 0 0 0 0 0])
-  ("_motor_check_trig_sub" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("motor_check_trig_s" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("orb_check" .
-   [1 0 0 0 0 0 0 0 0])
-  ("updated" .
-   [2 0 0 0 0 0 0])
-  ("orb_copy" .
-   [1 0 0 0 0 0 0 0])
-  ("orb" .
-   [1 0 0])
-  ("orb_subscribe" .
+  ("SBL2" .
+   [1 0 0 0])
+  ("SBL1" .
+   [1 0 0 0])
+  ("SBID" .
+   [2 0 0 0])
+  ("cycle_count" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("serial_number" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("log_SBL1" .
+   [3 0 0 0 0 0 0 0])
+  ("cb_time_cell3" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ORB_ID" .
-   [1 0 0 0 0 0])
-  ("_mfd_flag_en" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("uint8_t" .
+  ("cb_time_cell4" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cb_time_cell2" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cb_time_cell1" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("num_of_partial_resets" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0])
+  ("num_of_shutdowns" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("sbs_lifetime_data2" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_temp_fet" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_temp_int_sensor" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max" .
+   [2 0 0])
+  ("max_delta_cell_temp" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("min" .
+   [4 0 0])
+  ("max_temp_cell" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_avg_dsg_power" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_avg_dsg_current" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_discharge_current" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_charge_current" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_delta_cell_voltage" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cell" .
+   [3 0 0 0])
+  ("cell1_max_voltage" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("sbs_lifetime_data1_sub" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("sbs_id_data" .
+   [5 0 0 0 0 0 0 0 0 0 1])
+  ("sbs_lifetime_data" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("sbs_lifetime_data1" .
+   [2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
+  ("c" .
+   [3])
+  ("full" .
+   [1 0 0 0])
+  ("full_charge_capacity" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0])
+  ("remaining_capacity" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BATT_SMBUS_REMAINING_CAPACITY" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("remaining" .
+   [1 0 0 0 0 0 0 0 0])
+  ("absolute" .
+   [1 0 0 0 0 0 0 0])
+  ("rsoc" .
+   [2 0 0 0])
+  ("R" .
+   [1])
+  ("BATT_SMBUS_RSOC" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("_v_empty_hover_corrected" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("param_set_no_notification" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("yaw_offset_log" .
+   [5 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("yaw_offset" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("fabsf" .
+   [1 0 0 0 0])
+  ("e" .
+   [1])
+  ("a" .
+   [2])
+  ("event_value" .
+   [9 0 0 0 0 0 0 0 0 0 0])
+  ("int32_t" .
+   [2 0 0 0 0 0 0])
+  ("_params" .
    [1 0 0 0 0 0 0])
-  ("uint16_t" .
+  ("warnx" .
+   [3 0 0 0 0])
+  ("_tr_rth_alt" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("t" .
+   [1])
+  ("delta_v_rth" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("d" .
+   [2])
+  ("delta_v_transition_land" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("delta_v_transition_land_energy" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("instance" .
    [2 0 0 0 0 0 0 0])
-  ("PARAM_DEFINE_INT32" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_spin_pwm_min" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("orb_advert_t" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_check_res_pub" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_check_res" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("motor_check_res" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("check_finished" .
-   [4 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("motors_checked" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motors_checked" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_check_trig_enable_previous" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("_motor_check_trig_forced_pub" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0])
-  ("condition" .
-   [1 0 0 0 0 0 0 0 0])))
+  ("ORB_PRIO_DEFAULT" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("to" .
+   [1 0])
+  ("device_name" .
+   [5 1 0 0 0 0 0 0 0 0 0])
+  ("uint8_t" .
+   [7 0 0 0 0 0 0])
+  ("len" .
+   [3 0 0])
+  ("substring" .
+   [3 0 0 0 0 0 0 0 0])
+  ("number" .
+   [2 0 0 0 0 0])
+  ("atoi" .
+   [1 0 0 0])
+  ("subs" .
+   [1 0 0 0])
+  ("int32" .
+   [1 0 0 0 0])
+  ("GAZEBO_MAJOR_VERSION" .
+   [0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 12])
+  ("GAZEBO_VISIBLE" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("GAZEBO_M" .
+   [0 0 0 0 0 0 0 1])))

@@ -1,0 +1,240 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("float.h" include (:system-flag t) nil [1855 1873])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1875 1903])
+            ("lib/ecl/EKF/ekf.h" include (:system-flag t) nil [1904 1932])
+            ("lib/mathlib/mathlib.h" include (:system-flag t) nil [1933 1965])
+            ("lib/perf/perf_counter.h" include (:system-flag t) nil [1966 2000])
+            ("px4_defines.h" include (:system-flag t) nil [2001 2025])
+            ("px4_module.h" include (:system-flag t) nil [2026 2049])
+            ("px4_module_params.h" include (:system-flag t) nil [2050 2080])
+            ("px4_posix.h" include (:system-flag t) nil [2081 2103])
+            ("px4_tasks.h" include (:system-flag t) nil [2104 2126])
+            ("px4_time.h" include (:system-flag t) nil [2127 2148])
+            ("uORB/Publication.hpp" include (:system-flag t) nil [2149 2180])
+            ("uORB/Subscription.hpp" include (:system-flag t) nil [2181 2213])
+            ("uORB/topics/airspeed.h" include (:system-flag t) nil [2214 2247])
+            ("uORB/topics/distance_sensor.h" include (:system-flag t) nil [2248 2288])
+            ("uORB/topics/ekf2_innovations.h" include (:system-flag t) nil [2289 2330])
+            ("uORB/topics/ekf2_timestamps.h" include (:system-flag t) nil [2331 2371])
+            ("uORB/topics/ekf_gps_position.h" include (:system-flag t) nil [2372 2413])
+            ("uORB/topics/estimator_status.h" include (:system-flag t) nil [2414 2455])
+            ("uORB/topics/ekf_gps_drift.h" include (:system-flag t) nil [2456 2494])
+            ("uORB/topics/landing_target_pose.h" include (:system-flag t) nil [2495 2539])
+            ("uORB/topics/optical_flow.h" include (:system-flag t) nil [2540 2577])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2578 2619])
+            ("uORB/topics/sensor_bias.h" include (:system-flag t) nil [2620 2656])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2657 2697])
+            ("uORB/topics/sensor_selection.h" include (:system-flag t) nil [2698 2739])
+            ("uORB/topics/vehicle_air_data.h" include (:system-flag t) nil [2740 2781])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [2782 2823])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [2824 2872])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [2873 2918])
+            ("uORB/topics/vehicle_land_detected.h" include (:system-flag t) nil [2919 2965])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [2966 3013])
+            ("uORB/topics/vehicle_magnetometer.h" include (:system-flag t) nil [3014 3059])
+            ("uORB/topics/vehicle_odometry.h" include (:system-flag t) nil [3060 3101])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [3102 3141])
+            ("uORB/topics/wind_estimate.h" include (:system-flag t) nil [3142 3180])
+            ("BLEND_MASK_USE_SPD_ACC" variable (:constant-flag t) nil [3303 3325])
+            ("BLEND_MASK_USE_HPOS_ACC" variable (:constant-flag t) nil [3341 3364])
+            ("BLEND_MASK_USE_VPOS_ACC" variable (:constant-flag t) nil [3379 3402])
+            ("GPS_MAX_RECEIVERS" variable (:constant-flag t) nil [3532 3549])
+            ("GPS_BLENDED_INSTANCE" variable (:constant-flag t) nil [3560 3580])
+            ("math::constrain" using (:type ("math::constrain" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3584 3606])
+            ("time_literals" using (:type ("time_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3607 3637])
+            ("ekf2_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3673 3682])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3683 3696]))                  
+                :type "int")
+                nil [3659 3697])
+            ("ModuleParams" variable (:type "int") nil [3750 30819])
+            ("Ekf2" function
+               (:constructor-flag t
+                :parent "Ekf2"
+                :type ("Ekf2" type (:type "class") nil nil))
+                nil [30821 35787])
+            ("Ekf2" function
+               (:destructor-flag t
+                :parent "Ekf2"
+                :type "void")
+                nil [35789 35900])
+            ("print_status" function
+               (:parent "Ekf2"
+                :type "int")
+                nil [35902 36263])
+            ("update_mag_bias" function
+               (:template 
+                  ( ("Param" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mag_bias_param" variable
+                       (:reference 1
+                        :type ("Param" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36317 36339])
+                    ("axis_index" variable (:type "int") (reparse-symbol arg-sub-list) [36340 36355]))                  
+                :parent "Ekf2")
+                nil [36265 36953])
+            ("update_mag_decl" function
+               (:template 
+                  ( ("Param" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("mag_decl_param" variable
+                       (:reference 1
+                        :type ("Param" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37007 37029]))                  
+                :parent "Ekf2")
+                nil [36955 37258])
+            ("run" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [37260 75986])
+            ("getRangeSubIndex" function
+               (:parent "Ekf2"
+                :type "int")
+                nil [75988 76394])
+            ("publish_attitude" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("sensors" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76424 76457])
+                    ("now" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76458 76481]))                  
+                :type "bool")
+                nil [76396 77035])
+            ("publish_wind_estimate" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("timestamp" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77070 77099]))                  
+                :type "bool")
+                nil [77037 77694])
+            ("get_vel_body_wind" function
+               (:parent "Ekf2"
+                :constant-flag t
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [77696 78233])
+            ("blend_gps_data" function
+               (:parent "Ekf2"
+                :type "bool")
+                nil [78235 85890])
+            ("update_gps_blend_states" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [86319 91717])
+            ("update_gps_offsets" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [91933 94640])
+            ("apply_gps_offsets" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [94737 96217])
+            ("calc_gps_blend_output" function
+               (:parent "Ekf2"
+                :type "void")
+                nil [96310 99055])
+            ("filter_altitude_ellipsoid" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("amsl_hgt" variable (:type "float") (reparse-symbol arg-sub-list) [99095 99110]))                  
+                :type "float")
+                nil [99057 99924])
+            ("instantiate" function
+               (:pointer 1
+                :parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [99950 99959])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99960 99973]))                  
+                :type ("Ekf2" type (:type "class") nil nil))
+                nil [99926 100132])
+            ("custom_command" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [100159 100168])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100169 100182]))                  
+                :type "int")
+                nil [100134 100226])
+            ("print_usage" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100250 100269]))                  
+                :type "int")
+                nil [100228 100987])
+            ("task_spawn" function
+               (:parent "Ekf2"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [101010 101019])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101020 101033]))                  
+                :type "int")
+                nil [100989 101295])
+            ("ekf2_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [101311 101320])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101321 101334]))                  
+                :type "int")
+                nil [101297 101370]))          
+      :file "ekf2_main.cpp"
+      :pointmax 101371
+      :fsize 101370
+      :lastmodtime '(23900 3283 442502 140000)
+      :unmatched-syntax '((PUBLIC 3743 . 3749) (punctuation 3741 . 3742) (punctuation 3740 . 3741) (symbol 3736 . 3740) (punctuation 3735 . 3736) (symbol 3725 . 3735) (PUBLIC 3718 . 3724) (punctuation 3716 . 3717) (symbol 3710 . 3715) (symbol 3705 . 3709) (CLASS 3699 . 3704) (symbol 3650 . 3658))
+      :lexical-table 
+        '(("BLEND_MASK_USE_SPD_ACC" . ((number "1" 3331 . 3332)))
+          ("BLEND_MASK_USE_HPOS_ACC" . ((number "2" 3369 . 3370)))
+          ("GPS_BLENDED_INSTANCE" . ((number "2" 3581 . 3582)))
+          ("BLEND_MASK_USE_VPOS_ACC" . ((number "4" 3407 . 3408)))
+          ("GPS_MAX_RECEIVERS" . ((number "2" 3550 . 3551)))
+          )
+))
+  :file "!home!angel!src!Firmware!src!modules!ekf2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

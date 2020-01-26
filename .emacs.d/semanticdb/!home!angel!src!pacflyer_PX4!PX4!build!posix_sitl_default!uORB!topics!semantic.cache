@@ -1,0 +1,57 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "differential_pressure.h"
+      :pointmax 2614
+      :fsize 2674
+      :lastmodtime '(23838 8811 437934 432000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "ekf2_innovations.h"
+      :pointmax 2595
+      :fsize 2498
+      :lastmodtime '(23838 8811 437934 432000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "actuator_armed.h"
+      :pointmax 2359
+      :fsize 2358
+      :lastmodtime '(23838 8811 437934 432000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "vehicle_status.h"
+      :pointmax 6090
+      :fsize 6089
+      :lastmodtime '(23838 8811 433934 403000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "vehicle_local_position_setpoint.h"
+      :pointmax 2315
+      :fsize 2314
+      :lastmodtime '(23838 8811 437934 432000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "vehicle_land_detected.h"
+      :pointmax 2349
+      :fsize 2348
+      :lastmodtime '(23838 8811 437934 432000)
+      :unmatched-syntax nil)
+)
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default!uORB!topics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

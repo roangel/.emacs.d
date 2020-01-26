@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [2350 2375])
+            ("sys/types.h" include (:system-flag t) nil [2377 2399])
+            ("sys/ioctl.h" include (:system-flag t) nil [2400 2422])
+            ("errno.h" include (:system-flag t) nil [2424 2442])
+            ("assert.h" include (:system-flag t) nil [2443 2462])
+            ("debug.h" include (:system-flag t) nil [2463 2481])
+            ("string.h" include (:system-flag t) nil [2482 2501])
+            ("arch/board/board.h" include (:system-flag t) nil [2503 2532])
+            ("nuttx/irq.h" include (:system-flag t) nil [2533 2555])
+            ("nuttx/arch.h" include (:system-flag t) nil [2556 2579])
+            ("nuttx/fs/ioctl.h" include (:system-flag t) nil [2580 2607])
+            ("nuttx/analog/adc.h" include (:system-flag t) nil [2608 2637])
+            ("nuttx/analog/ioctl.h" include (:system-flag t) nil [2638 2669])
+            ("chip.h" include nil nil [2671 2688])
+            ("stm32l4_rcc.h" include nil nil [2689 2713])
+            ("stm32l4_tim.h" include nil nil [2714 2738])
+            ("stm32l4_dma.h" include nil nil [2739 2763])
+            ("stm32l4_adc.h" include nil nil [2764 2788]))          
+      :file "stm32l4_adc.c"
+      :pointmax 56229
+      :fsize 56229
+      :lastmodtime '(23770 54121 611240 152000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARCH_ARM_SRC_STM32L4_STM32L4_ADC_H" variable (:constant-flag t) nil [2080 2116])
+            ("nuttx/config.h" include (:system-flag t) nil [2310 2335])
+            ("nuttx/analog/adc.h" include (:system-flag t) nil [2336 2365])
+            ("chip.h" include nil nil [2366 2383])
+            ("chip/stm32l4_adc.h" include nil nil [2384 2413]))          
+      :file "stm32l4_adc.h"
+      :pointmax 31303
+      :fsize 31302
+      :lastmodtime '(23770 54121 611240 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ARCH_ARM_SRC_STM32L4_STM32L4_ADC_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "chip.h"
+      :fsize 3108
+      :lastmodtime '(23770 54121 607240 129000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32l4_rcc.h"
+      :fsize 8159
+      :lastmodtime '(23770 54121 615240 174000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32l4_tim.h"
+      :fsize 7825
+      :lastmodtime '(23770 54121 615240 174000))
+    (semanticdb-table "semanticdb-table"
+      :file "stm32l4_dma.h"
+      :fsize 11028
+      :lastmodtime '(23770 54121 611240 152000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!arch!arm!src!stm32l4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1179 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("param.h" include nil nil [1988 2006])
+            ("float.h" include (:system-flag t) nil [2008 2026])
+            ("math.h" include (:system-flag t) nil [2027 2044])
+            ("px4_defines.h" include (:system-flag t) nil [2046 2070])
+            ("px4_posix.h" include (:system-flag t) nil [2071 2093])
+            ("px4_sem.h" include (:system-flag t) nil [2094 2114])
+            ("px4_shutdown.h" include (:system-flag t) nil [2115 2140])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2141 2169])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2170 2205])
+            ("systemlib/uthash/utarray.h" include (:system-flag t) nil [2207 2244])
+            ("systemlib/bson/tinybson.h" include (:system-flag t) nil [2245 2281])
+            ("uORB/uORB.h" include nil nil [2531 2554])
+            ("uORB/topics/parameter_update.h" include nil nil [2555 2597])
+            ("FLASH_PARAMS_EXPOSE" variable (:constant-flag t) nil [2649 2668])
+            ("px4_parameters.h" include nil nil [2732 2759])
+            ("crc32.h" include (:system-flag t) nil [2760 2778])
+            ("param_user_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [2855 2891])
+            ("debug" variable (:constant-flag t) nil [2980 2985])
+            ("PARAM_OPEN" variable (:constant-flag t) nil [3115 3125])
+            ("PARAM_CLOSE" variable (:constant-flag t) nil [3139 3150])
+            ("px4_workqueue.h" include (:system-flag t) nil [3191 3217])
+            ("last_autosave_timestamp" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("hrt_abstime" type (:type "class") nil nil))
+                nil [3245 3292])
+            ("autosave_work" variable
+               (:typemodifiers ("static")
+                :type ("work_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3293 3328])
+            ("autosave_scheduled" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3329 3368])
+            ("autosave_disabled" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [3369 3407])
+            ("param_info_base" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "(const struct param_info_s *) &px4_parameters"
+                :type ("param_info_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3483 3581])
+            ("param_info_count" variable (:constant-flag t) nil [3590 3606])
+            ("param_wbuf_s" type
+               (:members 
+                  ( ("val" variable (:type ("param_value_u" type (:type "union") nil nil)) (reparse-symbol classsubparts) [3702 3726])
+                    ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3728 3744])
+                    ("unsaved" variable (:type "bool") (reparse-symbol classsubparts) [3746 3761]))                  
+                :type "struct")
+                nil [3679 3764])
+            ("param_changed_storage" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3767 3806])
+            ("size_param_changed_storage_bytes" variable
+               (:default-value "0"
+                :type "int")
+                nil [3807 3848])
+            ("bits_per_allocation_unit" variable
+               (:constant-flag t
+                :default-value "(sizeof(*param_changed_storage) * 8)"
+                :type "int")
+                nil [3849 3924])
+            ("PARAM_UNLOCK_CODE" variable (:constant-flag t) nil [4031 4048])
+            ("PARAM_FILE_NAME_FACTORY" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"/fs/mtd_params_factory\""
+                :type "char")
+                nil [4108 4171])
+            ("change_with_no_check" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+	\"SENS_DPRES_OFF\",
+	\"RTL_RETURN_ALT\",
+	\"GF_MAX_HOR_DIST\",
+	\"GF_MAX_VER_DIST\",
+	\"COM_RC_LOSS_T\",
+	\"COM_MIS_LOSS_T\",
+	\"TRIG_INTERFACE\",
+	\"TRIG_MODE\",
+	\"TRIG_OFFSET\",
+	\"SYS_BOOT_MODE\",
+	\"TRIG_USB_FOCUS\",
+	\"LND_FLIGHT_T*\",
+	\"COM_FLIGHT_UUID\",
+	\"EKF2_MAGBIAS_*\",
+	\"EVENT_*\",
+	\"L_OFF_*\",
+	\"RTL_TR_ALT\",
+	\"EKF2_MAG_DECL\"
+}"
+                :type "char")
+                nil [4293 4648])
+            ("wingtra_white_list" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+	\"RC1*\",
+	\"RC2*\",
+	\"RC3*\",
+	\"RC4*\",
+	\"RC5*\",
+	\"RC6*\",
+	\"RC7*\",
+	\"RC8*\",
+	\"RC9*\",
+	\"RC_CHAN_CNT\",
+	\"CAL*\",
+	\"BAT_V_OFFS_CURR\",
+	\"BAT_VOLT_OFF\",
+	\"SENS*\",
+	\"OFF*\",
+	\"FLAP_TO_PWM*\",
+	\"AIRCRAFT_ID\",
+	\"SYS_AUTOSTART\",
+	\"FLAP_LIMIT_LOWER\",
+	\"FLAP_LIMIT_UPPER\",
+	\"FLAP_PWM_MIN\",
+	\"FLAP_PWM_MAX\",
+	\"PAC_FLAP_LIM_LO\",
+	\"PAC_FLAP_LIM_HI\",
+	\"DIST_SENS_OFFSET\",
+	\"DIST_SENS_TO_GND\",
+	\"TRIG_INTERFACE\",
+	\"TRIG_MODE\",
+	\"TRIG_OFFSET\",
+	\"TRIG_USB_FOCUS\",
+	\"SYS_BOOT_MODE\",
+	\"SYS_HW_VER\",
+	\"LND_FLIGHT_T*\",
+	\"COM_FLIGHT_UUID\",
+	\"EKF2_MAGBIAS_*\",
+	\"L_OFF_*\",
+	\"EKF2_MAG_DECL\"
+}"
+                :type "char")
+                nil [4945 5542])
+            ("wingtra_params_factory_list" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+	\"RC1*\",
+	\"RC2*\",
+	\"RC3*\",
+	\"RC4*\",
+	\"RC5*\",
+	\"RC6*\",
+	\"RC7*\",
+	\"RC8*\",
+	\"RC9*\",
+	\"RC_CHAN_CNT\",
+	\"CAL*\",
+	\"BAT_V_OFFS_CURR\",
+	\"BAT_VOLT_OFF\",
+	\"SENS_DPRES_ANSC\",
+	\"SENS_B*\",
+	\"SENS_F*\",
+	\"SENS_E*\",
+	\"OFF*\",
+	\"FLAP_TO_PWM*\",
+	\"AIRCRAFT_ID\",
+	\"FLAP_LIMIT_LOWER\",
+	\"FLAP_LIMIT_UPPER\",
+	\"FLAP_PWM_MIN\",
+	\"FLAP_PWM_MAX\",
+	\"PAC_FLAP_LIM_LO\",
+	\"PAC_FLAP_LIM_HI\",
+	\"DIST_SENS_OFFSET\",
+	\"DIST_SENS_TO_GND\",
+	\"TRIG_USB_FOCUS\",
+	\"SYS_HW_VER\"
+}"
+                :type "char")
+                nil [5788 6268])
+            ("get_param_info_count" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6482 6487]))                  
+                :type "unsigned int")
+                nil [6445 7060])
+            ("param_values" variable
+               (:pointer 1
+                :type ("UT_array" type (:type "class") nil nil))
+                nil [7138 7168])
+            ("param_icd" variable
+               (:constant-flag t
+                :default-value "{sizeof(struct param_wbuf_s), NULL, NULL, NULL}"
+                :type ("UT_icd" type (:type "class") nil nil))
+                nil [7242 7318])
+            ("param_topic" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("orb_advert_t" type (:type "class") nil nil))
+                nil [7384 7423])
+            ("param_set_used_internal" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7468 7482]))                  
+                :type "void")
+                nil [7432 7483])
+            ("param_find_internal" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7520 7537])
+                    ("notification" variable (:type "bool") (reparse-symbol arg-sub-list) [7538 7556]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [7485 7557])
+            ("param_sem" variable
+               (:typemodifiers ("static")
+                :type ("px4_sem_t" type (:type "class") nil nil))
+                nil [7796 7823])
+            ("reader_lock_holders" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7885 7920])
+            ("reader_lock_holders_lock" variable
+               (:typemodifiers ("static")
+                :type ("px4_sem_t" type (:type "class") nil nil))
+                nil [7921 7963])
+            ("param_export_perf" variable
+               (:typemodifiers ("static")
+                :type ("perf_counter_t" type (:type "class") nil nil))
+                nil [8033 8073])
+            ("param_find_perf" variable
+               (:typemodifiers ("static")
+                :type ("perf_counter_t" type (:type "class") nil nil))
+                nil [8074 8112])
+            ("param_get_perf" variable
+               (:typemodifiers ("static")
+                :type ("perf_counter_t" type (:type "class") nil nil))
+                nil [8113 8150])
+            ("param_set_perf" variable
+               (:typemodifiers ("static")
+                :type ("perf_counter_t" type (:type "class") nil nil))
+                nil [8151 8188])
+            ("param_sem_save" variable
+               (:typemodifiers ("static")
+                :type ("px4_sem_t" type (:type "class") nil nil))
+                nil [8190 8222])
+            ("param_lock_reader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8550 8555]))                  
+                :type "void")
+                nil [8520 8853])
+            ("param_lock_writer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8934 8939]))                  
+                :type "void")
+                nil [8904 8989])
+            ("param_unlock_reader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9057 9062]))                  
+                :type "void")
+                nil [9025 9299])
+            ("param_unlock_writer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9367 9372]))                  
+                :type "void")
+                nil [9335 9403])
+            ("param_assert_locked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9486 9491]))                  
+                :type "void")
+                nil [9454 9506])
+            ("param_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9524 9529]))                  
+                :type "void")
+                nil [9508 9881])
+            ("handle_in_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10048 10062]))                  
+                :type "bool")
+                nil [10020 10142])
+            ("param_compare_values" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10316 10330])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10331 10345]))                  
+                :type "int")
+                nil [10284 10560])
+            ("param_find_changed" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10852 10866]))                  
+                :type ("param_wbuf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10804 11082])
+            ("_param_notify_changes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11118 11123]))                  
+                :type "void")
+                nil [11084 11513])
+            ("param_notify_changes" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11541 11546]))                  
+                :type "void")
+                nil [11515 11576])
+            ("param_find_internal" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11606 11623])
+                    ("notification" variable (:type "bool") (reparse-symbol arg-sub-list) [11624 11642]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [11578 12322])
+            ("param_find" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12343 12360]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [12324 12405])
+            ("param_find_no_notification" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12442 12459]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [12407 12505])
+            ("param_count" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12528 12533]))                  
+                :type "unsigned int")
+                nil [12507 12569])
+            ("param_count_used" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12597 12602]))                  
+                :type "unsigned int")
+                nil [12571 12924])
+            ("param_for_index" function
+               (:arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12950 12965]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [12926 13095])
+            ("param_for_used_index" function
+               (:arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13126 13141]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [13097 13713])
+            ("param_get_index" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13735 13749]))                  
+                :type "int")
+                nil [13715 13826])
+            ("param_get_used_index" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13853 13867]))                  
+                :type "int")
+                nil [13828 14398])
+            ("param_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14424 14438]))                  
+                :type "char")
+                nil [14400 14511])
+            ("param_value_is_default" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14541 14555]))                  
+                :type "bool")
+                nil [14513 14688])
+            ("param_value_unsaved" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14715 14729]))                  
+                :type "bool")
+                nil [14690 14878])
+            ("param_type" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14909 14923]))                  
+                :type ("param_type_e" type (:type "enum") nil nil))
+                nil [14880 15010])
+            ("param_size" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15030 15044]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [15012 15368])
+            ("param_get_value_ptr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15635 15649]))                  
+                :type "void")
+                nil [15595 16156])
+            ("param_get" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16172 16186])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16187 16197]))                  
+                :type "int")
+                nil [16158 16458])
+            ("autosave_worker" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16593 16603]))                  
+                :type "void")
+                nil [16565 16947])
+            ("param_autosave" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17281 17286]))                  
+                :type "void")
+                nil [17254 18115])
+            ("param_control_autosave" function
+               (:arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [18145 18157]))                  
+                :type "void")
+                nil [18117 18406])
+            ("param_set_internal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18439 18453])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18454 18470])
+                    ("mark_saved" variable (:type "bool") (reparse-symbol arg-sub-list) [18471 18487])
+                    ("notify_changes" variable (:type "bool") (reparse-symbol arg-sub-list) [18488 18508]))                  
+                :type "int")
+                nil [18409 20436])
+            ("param_set_internal_with_protection" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20574 20588])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20589 20605])
+                    ("mark_saved" variable (:type "bool") (reparse-symbol arg-sub-list) [20606 20622])
+                    ("notify_changes" variable (:type "bool") (reparse-symbol arg-sub-list) [20623 20643])
+                    ("protection_required" variable (:type "bool") (reparse-symbol arg-sub-list) [20651 20676]))                  
+                :type "int")
+                nil [20528 20936])
+            ("param_set" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21626 21640])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21641 21657]))                  
+                :type "int")
+                nil [21612 21811])
+            ("param_set_no_notification" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21843 21857])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21858 21874]))                  
+                :type "int")
+                nil [21813 22011])
+            ("param_used" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22029 22043]))                  
+                :type "bool")
+                nil [22013 22262])
+            ("param_set_used_internal" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22293 22307]))                  
+                :type "void")
+                nil [22264 22542])
+            ("param_reset" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22560 22574]))                  
+                :type "int")
+                nil [22544 23046])
+            ("param_reset_all_internal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("auto_save" variable (:type "bool") (reparse-symbol arg-sub-list) [23084 23099]))                  
+                :type "void")
+                nil [23047 23517])
+            ("param_reset_all" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23540 23545]))                  
+                :type "void")
+                nil [23519 23582])
+            ("param_reset_excludes" function
+               (:arguments 
+                  ( ("excludes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23610 23633])
+                    ("num_excludes" variable (:type "int") (reparse-symbol arg-sub-list) [23634 23651]))                  
+                :type "void")
+                nil [23584 24911])
+            ("param_set_default_file" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24940 24961]))                  
+                :type "int")
+                nil [24913 25177])
+            ("param_get_default_file" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25215 25220]))                  
+                :type "char")
+                nil [25179 25298])
+            ("param_save_default" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25323 25328]))                  
+                :type "int")
+                nil [25300 26041])
+            ("param_save_factory" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26113 26118]))                  
+                :type "int")
+                nil [26090 26635])
+            ("param_load_default" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26793 26798]))                  
+                :type "int")
+                nil [26770 27365])
+            ("param_export" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [27384 27391])
+                    ("only_unsaved" variable (:type "bool") (reparse-symbol arg-sub-list) [27392 27410]))                  
+                :type "int")
+                nil [27367 30310])
+            ("param_export_selected" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [30450 30457])
+                    ("params_strings" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30458 30487])
+                    ("number_element_array" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30488 30519]))                  
+                :type "int")
+                nil [30424 34613])
+            ("param_show_print" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34648 34658])
+                    ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34659 34673]))                  
+                :type "void")
+                nil [34626 36350])
+            ("param_print_wingtra_white_list" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36398 36403]))                  
+                :type "int")
+                nil [36363 36621])
+            ("param_export_selected_wingtra_default" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [36676 36683]))                  
+                :type "int")
+                nil [36634 36784])
+            ("param_import_state" type
+               (:members 
+                  ( ("mark_saved" variable (:type "bool") (reparse-symbol classsubparts) [36831 36847]))                  
+                :type "struct")
+                nil [36802 36850])
+            ("param_import_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("decoder" variable (:type ("bson_decoder_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36885 36908])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36909 36922])
+                    ("node" variable (:type ("bson_node_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36924 36941]))                  
+                :type "int")
+                nil [36852 39220])
+            ("param_import_internal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [39255 39262])
+                    ("mark_saved" variable (:type "bool") (reparse-symbol arg-sub-list) [39263 39279]))                  
+                :type "int")
+                nil [39222 39701])
+            ("param_import" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [39720 39727]))                  
+                :type "int")
+                nil [39703 39899])
+            ("param_load" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [39916 39923]))                  
+                :type "int")
+                nil [39901 40002])
+            ("param_foreach" function
+               (:arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [40036 40046])
+                            ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40047 40061]))                          
+                        :type "void")
+                        nil nil)
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [40063 40073])
+                    ("only_changed" variable (:type "bool") (reparse-symbol arg-sub-list) [40074 40092])
+                    ("only_used" variable (:type "bool") (reparse-symbol arg-sub-list) [40093 40108]))                  
+                :type "void")
+                nil [40004 40387])
+            ("param_hash_check" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40415 40420]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [40389 40925])
+            ("wingtra_is_param_locked" function
+               (:arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40974 40988]))                  
+                :type "bool")
+                nil [40945 41958])
+            ("wingtra_param_lock" function
+               (:arguments 
+                  ( ("should_be_locked" variable (:type "bool") (reparse-symbol arg-sub-list) [41984 42006]))                  
+                :type "void")
+                nil [41960 42308]))          
+      :file "param.c"
+      :pointmax 42325
+      :fsize 42324
+      :lastmodtime '(23827 33131 48558 110000)
+      :unmatched-syntax '((PRIVATE 36915 . 36922) (punctuation 6442 . 6443) (semantic-list 6406 . 6442) (SIZEOF 6400 . 6406) (punctuation 6398 . 6399) (semantic-list 6368 . 6397) (SIZEOF 6362 . 6368) (punctuation 6360 . 6361) (symbol 6328 . 6359) (INT 6324 . 6327) (CONST 6318 . 6323) (punctuation 5685 . 5686) (semantic-list 5662 . 5685) (SIZEOF 5656 . 5662) (punctuation 5654 . 5655) (semantic-list 5633 . 5653) (SIZEOF 5627 . 5633) (punctuation 5625 . 5626) (symbol 5602 . 5624) (INT 5598 . 5601) (CONST 5592 . 5597) (punctuation 4837 . 4838) (semantic-list 4812 . 4837) (SIZEOF 4806 . 4812) (punctuation 4804 . 4805) (semantic-list 4781 . 4803) (SIZEOF 4775 . 4781) (punctuation 4773 . 4774) (symbol 4748 . 4772) (INT 4744 . 4747) (CONST 4738 . 4743) (punctuation 2853 . 2854) (string 2833 . 2853) (symbol 2820 . 2833) (punctuation 2818 . 2819) (symbol 2799 . 2817) (punctuation 2798 . 2799) (CHAR 2793 . 2797) (CONST 2787 . 2792) (STATIC 2780 . 2786))
+      :lexical-table 
+        '(("PARAM_UNLOCK_CODE" . ((number "20170109" 4049 . 4057)))
+          ("PARAM_CLOSE" . ((symbol "close" 3151 . 3156)))
+          ("FLASH_PARAMS_EXPOSE")
+          ("debug" (spp-arg-list ("fmt" "args...") 2985 . 2999) . 
+              ((DO "do" 3001 . 3003) (semantic-list "{ }" 3004 . 3007) (WHILE "while" 3008 . 3013) (semantic-list "(0)" 3013 . 3016)))
+          ("param_info_count" . 
+              ((symbol "px4_parameters" 3607 . 3621) (punctuation "." 3621 . 3622) (symbol "param_count" 3622 . 3633)))
+          ("PARAM_OPEN" . ((symbol "open" 3126 . 3130)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYSTEMLIB_PARAM_PARAM_H" variable (:constant-flag t) nil [2117 2141])
+            ("stdint.h" include (:system-flag t) nil [2143 2162])
+            ("stdbool.h" include (:system-flag t) nil [2163 2183])
+            ("sys/types.h" include (:system-flag t) nil [2184 2206])
+            ("PARAM_FILE_MAXSIZE" variable (:constant-flag t) nil [2266 2284])
+            ("param_type_e" type
+               (:members 
+                  ( ("PARAM_TYPE_INT32" variable
+                       (:constant-flag t
+                        :default-value (2420 2421)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2401 2421])
+                    ("PARAM_TYPE_FLOAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2424 2441])
+                    ("PARAM_TYPE_STRUCT" variable
+                       (:constant-flag t
+                        :default-value (2527 2530)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2507 2530])
+                    ("PARAM_TYPE_STRUCT_MAX" variable
+                       (:constant-flag t
+                        :default-value (2557 2582)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2533 2582])
+                    ("PARAM_TYPE_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (2607 2613)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2586 2613]))                  
+                :type "enum")
+                nil [2334 2629])
+            ("param_type_t" type
+               (:typedef ("param_type_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [2334 2629])
+            ("param_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3367 3392])
+            ("PARAM_INVALID" variable (:constant-flag t) nil [3463 3476])
+            ("PARAM_HASH" variable (:constant-flag t) nil [3554 3564])
+            ("param_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3742 3747]))                  
+                :type "void")
+                nil [3725 3748])
+            ("param_find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4114 4131]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [4095 4132])
+            ("param_find_no_notification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4379 4396]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [4344 4397])
+            ("param_count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4520 4525]))                  
+                :type "unsigned int")
+                nil [4499 4526])
+            ("param_count_used" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4662 4667]))                  
+                :type "unsigned int")
+                nil [4636 4668])
+            ("param_used" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4802 4816]))                  
+                :type "bool")
+                nil [4785 4817])
+            ("param_for_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5049 5064]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [5025 5065])
+            ("param_for_used_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5297 5312]))                  
+                :type ("param_t" type (:type "class") nil nil))
+                nil [5268 5313])
+            ("param_get_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5511 5525]))                  
+                :type "int")
+                nil [5490 5526])
+            ("param_get_used_index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5759 5773]))                  
+                :type "int")
+                nil [5733 5774])
+            ("param_name" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6013 6027]))                  
+                :type "char")
+                nil [5990 6028])
+            ("param_value_is_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6227 6241]))                  
+                :type "bool")
+                nil [6198 6242])
+            ("param_value_unsaved" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6421 6435]))                  
+                :type "bool")
+                nil [6395 6436])
+            ("param_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6642 6656]))                  
+                :type ("param_type_t" type (:type "class") nil nil))
+                nil [6618 6657])
+            ("param_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6860 6874]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6841 6875])
+            ("param_get" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7289 7303])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7304 7314]))                  
+                :type "int")
+                nil [7274 7315])
+            ("wingtra_is_param_locked" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7830 7844]))                  
+                :type "bool")
+                nil [7800 7845])
+            ("wingtra_param_lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("should_be_locked" variable (:type "bool") (reparse-symbol arg-sub-list) [8349 8371]))                  
+                :type "void")
+                nil [8324 8372])
+            ("param_set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8793 8807])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8808 8824]))                  
+                :type "int")
+                nil [8778 8825])
+            ("param_set_no_notification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9293 9307])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9308 9324]))                  
+                :type "int")
+                nil [9262 9325])
+            ("param_notify_changes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9537 9542]))                  
+                :type "void")
+                nil [9511 9543])
+            ("param_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9866 9880]))                  
+                :type "int")
+                nil [9849 9881])
+            ("param_reset_all" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10098 10103]))                  
+                :type "void")
+                nil [10076 10104])
+            ("param_reset_excludes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("excludes" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10558 10581])
+                    ("num_excludes" variable (:type "int") (reparse-symbol arg-sub-list) [10582 10599]))                  
+                :type "void")
+                nil [10531 10600])
+            ("param_export" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [10860 10867])
+                    ("only_unsaved" variable (:type "bool") (reparse-symbol arg-sub-list) [10868 10886]))                  
+                :type "int")
+                nil [10842 10887])
+            ("param_export_selected" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11339 11346])
+                    ("params_strings" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11347 11376])
+                    ("number_element_array" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11377 11408]))                  
+                :type "int")
+                nil [11313 11409])
+            ("param_export_selected_wingtra_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11726 11733]))                  
+                :type "int")
+                nil [11684 11734])
+            ("param_show_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12123 12133])
+                    ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12134 12148]))                  
+                :type "void")
+                nil [12101 12149])
+            ("param_print_wingtra_white_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12391 12396]))                  
+                :type "int")
+                nil [12356 12397])
+            ("param_import" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [12833 12840]))                  
+                :type "int")
+                nil [12815 12841])
+            ("param_load" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [13239 13246]))                  
+                :type "int")
+                nil [13223 13247])
+            ("param_foreach" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [13904 13914])
+                            ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13915 13929]))                          
+                        :type "void")
+                        nil nil)
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13931 13941])
+                    ("only_changed" variable (:type "bool") (reparse-symbol arg-sub-list) [13942 13960])
+                    ("only_used" variable (:type "bool") (reparse-symbol arg-sub-list) [13961 13976]))                  
+                :type "void")
+                nil [13871 13977])
+            ("param_set_default_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14192 14213]))                  
+                :type "int")
+                nil [14163 14214])
+            ("param_get_default_file" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14462 14467]))                  
+                :type "char")
+                nil [14427 14468])
+            ("param_save_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14650 14655]))                  
+                :type "int")
+                nil [14625 14656])
+            ("param_save_factory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14910 14915]))                  
+                :type "int")
+                nil [14886 14916])
+            ("param_load_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15044 15049]))                  
+                :type "int")
+                nil [15019 15050])
+            ("param_hash_check" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15205 15210]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [15179 15211])
+            ("param_control_autosave" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [15430 15442]))                  
+                :type "void")
+                nil [15402 15443])
+            ("PARAM_DEFINE_INT32" variable (:constant-flag t) nil [15869 15887])
+            ("PARAM_DEFINE_FLOAT" variable (:constant-flag t) nil [15946 15964])
+            ("PARAM_DEFINE_STRUCT" variable (:constant-flag t) nil [16044 16063])
+            ("param_value_u" type
+               (:members 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [16139 16148])
+                    ("i" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16150 16161])
+                    ("f" variable (:type "float") (reparse-symbol classsubparts) [16163 16172]))                  
+                :type "union")
+                nil [16116 16175])
+            ("param_info_s" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [16336 16999])
+                    ("type" variable (:type ("param_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17008 17026])
+                    ("val" variable (:type ("param_value_u" type (:type "union") nil nil)) (reparse-symbol classsubparts) [17028 17052]))                  
+                :type "struct")
+                nil [16313 17055])
+            ("wingtra_white_list" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [17185 17225])
+            ("wingtra_num_white_list" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type "int")
+                nil [17282 17322])
+            ("wingtra_params_factory_list" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [17446 17495])
+            ("wingtra_num_params_factory_list" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type "int")
+                nil [17558 17607])
+            ("change_with_no_check" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [17752 17794])
+            ("num_change_with_no_check" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type "int")
+                nil [17884 17926])
+            ("CHECK_PARAM_TYPE" variable (:constant-flag t) nil [18264 18280])
+            ("param_get_cplusplus" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18589 18603])
+                    ("val" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [18604 18615]))                  
+                :type "int")
+                nil [18551 18694])
+            ("param_get_cplusplus" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("param" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18733 18747])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18748 18761]))                  
+                :type "int")
+                nil [18695 18840])
+            ("param_get" variable (:constant-flag t) nil [18874 18883]))          
+      :file "param.h"
+      :pointmax 18962
+      :fsize 18961
+      :lastmodtime '(23770 52090 839808 39000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PARAM_FILE_MAXSIZE" . ((number "4096" 2285 . 2289)))
+          ("PARAM_DEFINE_FLOAT" (spp-arg-list ("_name" "_default") 15964 . 15981))
+          ("PARAM_DEFINE_STRUCT" (spp-arg-list ("_name" "_default") 16063 . 16080))
+          ("PARAM_INVALID" . ((semantic-list "((uint32_t)0xffffffff)" 3477 . 3499)))
+          ("PARAM_HASH" . ((semantic-list "((uint32_t)INT32_MAX)" 3570 . 3591)))
+          ("_SYSTEMLIB_PARAM_PARAM_H")
+          ("PARAM_DEFINE_INT32" (spp-arg-list ("_name" "_default") 15887 . 15904))
+          ("param_get" (spp-arg-list ("param" "val") 18883 . 18895) . ((symbol "param_get_cplusplus" 18896 . 18915) (semantic-list "(param, val)" 18915 . 18927)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [2239 2276])
+            ("sys" include nil nil [2277 2287])
+            ("os" include nil nil [2288 2297])
+            ("argparse" include nil nil [2298 2313])
+            ("px4params" include nil nil [2314 2404])
+            ("re" include nil nil [2406 2415])
+            ("json" include nil nil [2416 2427])
+            ("codecs" include nil nil [2428 2441])
+            ("main" function nil nil [2443 8835])
+            ("if" code nil nil [8862 8900]))          
+      :file "px_process_params.py"
+      :pointmax 8900
+      :fsize 8899
+      :lastmodtime '(23827 33131 48558 110000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!systemlib!param!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

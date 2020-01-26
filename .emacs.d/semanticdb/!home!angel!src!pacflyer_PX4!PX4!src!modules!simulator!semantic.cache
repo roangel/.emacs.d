@@ -1,0 +1,459 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("systemlib/param/param.h" include (:system-flag t) nil [1876 1910])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SITL_UDP_PRT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1979 1992]))                  
+                :type "int")
+                nil [1960 2000])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SIM_BAT_DRAIN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2137 2151]))                  
+                :type "int")
+                nil [2118 2156]))          
+      :file "simulator_params.c"
+      :pointmax 2157
+      :fsize 2156
+      :lastmodtime '(23770 52090 835808 15000)
+      :unmatched-syntax '((number 2152 . 2154) (number 1993 . 1998)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_log.h" include (:system-flag t) nil [1783 1803])
+            ("px4_tasks.h" include (:system-flag t) nil [1804 1826])
+            ("px4_time.h" include (:system-flag t) nil [1827 1848])
+            ("pthread.h" include (:system-flag t) nil [1849 1869])
+            ("poll.h" include (:system-flag t) nil [1870 1887])
+            ("systemlib/err.h" include (:system-flag t) nil [1888 1914])
+            ("errno.h" include (:system-flag t) nil [1915 1933])
+            ("stdio.h" include (:system-flag t) nil [1934 1952])
+            ("stdlib.h" include (:system-flag t) nil [1953 1972])
+            ("string.h" include (:system-flag t) nil [1973 1992])
+            ("sys/types.h" include (:system-flag t) nil [1993 2015])
+            ("drivers/drv_board_led.h" include (:system-flag t) nil [2016 2050])
+            ("simulator.h" include nil nil [2052 2074])
+            ("simulator" using (:type ("simulator" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2076 2102])
+            ("g_sim_task" variable
+               (:typemodifiers ("static")
+                :default-value "-1"
+                :type ("px4_task_t" type (:type "class") nil nil))
+                nil [2104 2138])
+            ("Simulator::_instance" variable
+               (:pointer 1
+                :default-value "nullptr"
+                :type ("Simulator" type (:type "class") nil nil))
+                nil [2140 2182])
+            ("getInstance" function
+               (:pointer 1
+                :parent "Simulator"
+                :type ("Simulator" type (:type "class") nil nil))
+                nil [2184 2242])
+            ("getMPUReport" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2273 2286])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2287 2295]))                  
+                :type "bool")
+                nil [2244 2332])
+            ("getRawAccelReport" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2368 2381])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2382 2390]))                  
+                :type "bool")
+                nil [2334 2429])
+            ("getMagReport" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2460 2473])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2474 2482]))                  
+                :type "bool")
+                nil [2431 2519])
+            ("getBaroSample" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2551 2564])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2565 2573]))                  
+                :type "bool")
+                nil [2521 2611])
+            ("getGPSSample" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2642 2655])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2656 2664]))                  
+                :type "bool")
+                nil [2613 2701])
+            ("getAirspeedSample" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2737 2750])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2751 2759]))                  
+                :type "bool")
+                nil [2703 2801])
+            ("write_MPU_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2834 2844]))                  
+                :type "void")
+                nil [2803 2870])
+            ("write_accel_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2905 2915]))                  
+                :type "void")
+                nil [2872 2943])
+            ("write_mag_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2976 2986]))                  
+                :type "void")
+                nil [2945 3012])
+            ("write_baro_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3046 3056]))                  
+                :type "void")
+                nil [3014 3083])
+            ("write_gps_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3116 3126]))                  
+                :type "void")
+                nil [3085 3152])
+            ("write_airspeed_data" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3190 3200]))                  
+                :type "void")
+                nil [3154 3231])
+            ("parameters_update" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [3267 3278]))                  
+                :type "void")
+                nil [3233 3528])
+            ("start" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3551 3560])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3561 3574]))                  
+                :type "int")
+                nil [3530 4217])
+            ("usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [4219 4485])
+            ("simulator_main" function
+               (:type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4527 4536])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4537 4550]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4501 4551])
+            ("simulator_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4599 4608])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4609 4622]))                  )
+                (reparse-symbol extern-c-contents) [4580 5647]))          
+      :file "simulator.cpp"
+      :pointmax 5651
+      :fsize 5650
+      :lastmodtime '(23770 52090 835808 15000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "simulator.h"
+      :fsize 11243
+      :lastmodtime '(23799 36300 352903 439000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("termios.h" include (:system-flag t) nil [1788 1808])
+            ("px4_log.h" include (:system-flag t) nil [1809 1829])
+            ("px4_time.h" include (:system-flag t) nil [1830 1851])
+            ("px4_tasks.h" include (:system-flag t) nil [1852 1874])
+            ("simulator.h" include nil nil [1875 1897])
+            ("simulator_config.h" include (:system-flag t) nil [1898 1927])
+            ("errno.h" include nil nil [1928 1946])
+            ("geo/geo.h" include (:system-flag t) nil [1947 1967])
+            ("drivers/drv_pwm_output.h" include (:system-flag t) nil [1968 2003])
+            ("sys/socket.h" include (:system-flag t) nil [2004 2027])
+            ("netinet/in.h" include (:system-flag t) nil [2028 2051])
+            ("pthread.h" include (:system-flag t) nil [2052 2072])
+            ("conversion/rotation.h" include (:system-flag t) nil [2073 2105])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2106 2134])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [2135 2182])
+            ("uORB/topics/sim_model_groundtruth.h" include (:system-flag t) nil [2183 2229])
+            ("hrt_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2284 2289]))                  
+                :type ("hrt_abstime" type (:type "class") nil nil))
+                nil [2262 2290])
+            ("SEND_INTERVAL" variable (:constant-flag t) nil [2300 2313])
+            ("UDP_PORT" variable (:constant-flag t) nil [2326 2334])
+            ("PRESS_GROUND" variable (:constant-flag t) nil [2351 2363])
+            ("DENSITY" variable (:constant-flag t) nil [2382 2389])
+            ("mavlink_message_lengths" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "MAVLINK_MESSAGE_LENGTHS"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2399 2475])
+            ("mavlink_message_crcs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "MAVLINK_MESSAGE_CRCS"
+                :type ("mavlink_msg_entry_t" type (:type "class") nil nil))
+                nil [2476 2555])
+            ("mg2ms2" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "CONSTANTS_ONE_G / 1000.0f"
+                :type "float")
+                nil [2590 2644])
+            ("_fd" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2830 2845])
+            ("_buf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [2846 2878])
+            ("_srcaddr" variable (:type ("sockaddr_in" type (:type "class") nil nil)) nil [2879 2900])
+            ("batt_sim_start" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("hrt_abstime" type (:type "class") nil nil))
+                nil [2947 2985])
+            ("mode_flag_armed" variable
+               (:constant-flag t
+                :default-value "128"
+                :type "unsigned int")
+                nil [2987 3024])
+            ("mode_flag_custom" variable
+               (:constant-flag t
+                :default-value "1"
+                :type "unsigned int")
+                nil [3051 3087])
+            ("simulator" using (:type ("simulator" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3089 3115])
+            ("pack_actuator_message" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :type ("mavlink_hil_controls_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3169 3197])
+                    ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3198 3213]))                  
+                :type "void")
+                nil [3117 6385])
+            ("send_controls" function
+               (:parent "Simulator"
+                :type "void")
+                nil [6387 6956])
+            ("fill_rc_input_msg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rc" variable
+                       (:pointer 1
+                        :type ("rc_input_values" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6988 7015])
+                    ("rc_channels" variable
+                       (:pointer 1
+                        :type ("mavlink_rc_channels_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7016 7051]))                  
+                :type "void")
+                nil [6958 7969])
+            ("update_sensors" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("imu" variable
+                       (:pointer 1
+                        :type ("mavlink_hil_sensor_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8002 8028]))                  
+                :type "void")
+                nil [7971 9142])
+            ("update_gps" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("gps_sim" variable
+                       (:pointer 1
+                        :type ("mavlink_hil_gps_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9171 9198]))                  
+                :type "void")
+                nil [9144 9627])
+            ("handle_message" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("mavlink_message_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9660 9683])
+                    ("publish" variable (:type "bool") (reparse-symbol arg-sub-list) [9684 9697]))                  
+                :type "void")
+                nil [9629 17929])
+            ("send_mavlink_message" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("msgid" variable
+                       (:constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18023 18044])
+                    ("msg_data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18045 18066])
+                    ("component_ID" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18067 18088]))                  
+                :type "void")
+                nil [17986 18821])
+            ("poll_topics" function
+               (:parent "Simulator"
+                :type "void")
+                nil [18823 19447])
+            ("sending_trampoline" function
+               (:pointer 1
+                :parent "Simulator"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19485 19503]))                  
+                :type "void")
+                nil [19449 19544])
+            ("send" function
+               (:parent "Simulator"
+                :type "void")
+                nil [19546 20383])
+            ("initializeSensorData" function
+               (:parent "Simulator"
+                :type "void")
+                nil [20385 21001])
+            ("pollForMAVLinkMessages" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("publish" variable (:type "bool") (reparse-symbol arg-sub-list) [21042 21055])
+                    ("udp_port" variable (:type "int") (reparse-symbol arg-sub-list) [21056 21069]))                  
+                :type "void")
+                nil [21003 26867])
+            ("publish_sensor_topics" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("imu" variable
+                       (:pointer 1
+                        :type ("mavlink_hil_sensor_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29012 29038]))                  
+                :type "int")
+                nil [28975 31324])
+            ("publish_flow_topic" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("flow_mavlink" variable
+                       (:pointer 1
+                        :type ("mavlink_hil_optical_flow_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31360 31401]))                  
+                :type "int")
+                nil [31326 32695])
+            ("publish_ev_topic" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("ev_mavlink" variable
+                       (:pointer 1
+                        :type ("mavlink_vision_position_estimate_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32729 32776]))                  
+                :type "int")
+                nil [32697 33497])
+            ("publish_distance_topic" function
+               (:parent "Simulator"
+                :arguments 
+                  ( ("dist_mavlink" variable
+                       (:pointer 1
+                        :type ("mavlink_distance_sensor_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33537 33577]))                  
+                :type "int")
+                nil [33499 34187]))          
+      :file "simulator_mavlink.cpp"
+      :pointmax 34188
+      :fsize 34187
+      :lastmodtime '(23799 36300 352903 439000)
+      :unmatched-syntax '((punctuation 2945 . 2946) (semantic-list 2935 . 2945) (SIZEOF 2929 . 2935) (punctuation 2927 . 2928) (symbol 2918 . 2926) (symbol 2908 . 2917) (STATIC 2901 . 2907) (symbol 2253 . 2261))
+      :lexical-table 
+        '(("DENSITY" . ((number "1.2041f" 2390 . 2397)))
+          ("UDP_PORT" . ((number "14560" 2336 . 2341)))
+          ("SEND_INTERVAL" . ((number "20" 2315 . 2317)))
+          ("PRESS_GROUND" . ((number "101325.0f" 2364 . 2373)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!simulator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

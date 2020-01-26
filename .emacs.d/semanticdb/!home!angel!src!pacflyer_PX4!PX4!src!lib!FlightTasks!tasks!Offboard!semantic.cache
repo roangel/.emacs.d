@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTask.hpp" include nil nil [1789 1814])
+            ("uORB/topics/position_setpoint_triplet.h" include (:system-flag t) nil [1815 1865])
+            ("uORB/topics/position_setpoint.h" include (:system-flag t) nil [1866 1908])
+            ("FlightTaskOffboard" type
+               (:superclasses 
+                  ( ("FlightTask" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1957 1964])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2110 2119])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2135 2144])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2162 2171])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2197 2206])
+                    ("protected" label nil (reparse-symbol classsubparts) [2208 2218])
+                    ("_sub_triplet_setpoint" variable
+                       (:pointer 1
+                        :type ("uORB::Subscription" type
+                             (:template-specifier 
+                                ( ("position_setpoint_triplet_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2220 2300])
+                    ("private" label nil (reparse-symbol classsubparts) [2301 2309])
+                    ("_position_lock" variable (:type ("matrix::Vector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2311 2345]))                  
+                :type "class")
+                nil [1910 2616]))          
+      :file "FlightTaskOffboard.hpp"
+      :pointmax 2617
+      :fsize 2616
+      :lastmodtime '(23818 21208 154773 904000)
+      :unmatched-syntax '((semantic-list 2379 . 2613) (symbol 2348 . 2379) (semantic-list 2535 . 2577) (semantic-list 2467 . 2507) (semantic-list 2397 . 2438) (semantic-list 2194 . 2196) (symbol 2178 . 2194) (BOOL 2173 . 2177) (semantic-list 2159 . 2161) (symbol 2151 . 2159) (BOOL 2146 . 2150) (semantic-list 2132 . 2134) (symbol 2126 . 2132) (BOOL 2121 . 2125) (semantic-list 2070 . 2109) (symbol 2047 . 2070) (BOOL 2042 . 2046) (punctuation 2039 . 2040) (DEFAULT 2032 . 2039) (punctuation 2030 . 2031) (semantic-list 2027 . 2029) (symbol 2009 . 2027) (punctuation 2008 . 2009) (VIRTUAL 2000 . 2007) (punctuation 1996 . 1997) (DEFAULT 1989 . 1996) (punctuation 1987 . 1988) (semantic-list 1984 . 1986) (symbol 1966 . 1984) (symbol 1783 . 1787) (symbol 1776 . 1782) (punctuation 1775 . 1776)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskOffboard.hpp" include nil nil [1769 1802])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1803 1831])
+            ("float.h" include (:system-flag t) nil [1832 1850])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1852 1875])
+            ("initializeSubscriptions" function
+               (:parent "FlightTaskOffboard"
+                :arguments 
+                  ( ("subscription_array" variable
+                       (:reference 1
+                        :type ("SubscriptionArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1926 1964]))                  
+                :type "bool")
+                nil [1877 2177])
+            ("updateInitialize" function
+               (:parent "FlightTaskOffboard"
+                :type "bool")
+                nil [2179 2557])
+            ("activate" function
+               (:parent "FlightTaskOffboard"
+                :type "bool")
+                nil [2559 2740])
+            ("update" function
+               (:parent "FlightTaskOffboard"
+                :type "bool")
+                nil [2742 8769]))          
+      :file "FlightTaskOffboard.cpp"
+      :pointmax 8770
+      :fsize 8769
+      :lastmodtime '(23818 21208 154773 904000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!FlightTasks!tasks!Offboard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

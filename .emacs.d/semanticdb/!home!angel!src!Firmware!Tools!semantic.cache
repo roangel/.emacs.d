@@ -1,0 +1,353 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [2272 2309])
+            ("sys" include nil nil [2311 2321])
+            ("argparse" include nil nil [2322 2337])
+            ("binascii" include nil nil [2338 2353])
+            ("serial" include nil nil [2354 2367])
+            ("socket" include nil nil [2368 2381])
+            ("struct" include nil nil [2382 2395])
+            ("json" include nil nil [2396 2407])
+            ("zlib" include nil nil [2408 2419])
+            ("base64" include nil nil [2420 2433])
+            ("time" include nil nil [2434 2445])
+            ("array" include nil nil [2446 2458])
+            ("os" include nil nil [2459 2468])
+            ("sys" include nil nil [2470 2507])
+            ("if" code nil nil [2533 2620])
+            ("firmware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''Loads a firmware file'''" code nil (reparse-symbol indented_block_body) [2650 2677])
+                    ("desc" variable nil (reparse-symbol indented_block_body) [2683 2692])
+                    ("image" variable nil (reparse-symbol indented_block_body) [2697 2712])
+                    ("crctab" variable nil (reparse-symbol indented_block_body) [2717 6073])
+                    ("crcpad" variable nil (reparse-symbol indented_block_body) [6078 6117])
+                    ("__init__" function
+                       (:suite 
+                          ( ("f" variable nil (reparse-symbol indented_block_body) [6182 6201])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6210 6234])
+                            ("f" code nil (reparse-symbol indented_block_body) [6243 6252])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6262 6339])
+                            ("while" code nil (reparse-symbol indented_block_body) [6386 6461]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6136 6140])
+                            ("path" variable nil (reparse-symbol function_parameters) [6142 6146]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6123 6461])
+                    ("property" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6479 6483])
+                            ("propname" variable nil (reparse-symbol function_parameters) [6485 6493]))                          )
+                        (reparse-symbol indented_block_body) [6466 6531])
+                    ("__crc32" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6548 6552])
+                            ("bytes" variable nil (reparse-symbol function_parameters) [6554 6559])
+                            ("state" variable nil (reparse-symbol function_parameters) [6561 6566]))                          )
+                        (reparse-symbol indented_block_body) [6536 6713])
+                    ("crc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6726 6730])
+                            ("padlen" variable nil (reparse-symbol function_parameters) [6732 6738]))                          )
+                        (reparse-symbol indented_block_body) [6718 6922]))                  
+                :type "class")
+                nil [2622 6922])
+            ("uploader" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''Uploads a firmware file to the PX FMU bootloader'''" code nil (reparse-symbol indented_block_body) [6952 7006])
+                    ("'\\x12'" code nil (reparse-symbol indented_block_body) [7052 7058])
+                    ("'\\x20'" code nil (reparse-symbol indented_block_body) [7082 7088])
+                    ("'\\x10'" code nil (reparse-symbol indented_block_body) [7131 7137])
+                    ("'\\x11'" code nil (reparse-symbol indented_block_body) [7161 7167])
+                    ("'\\x13'" code nil (reparse-symbol indented_block_body) [7191 7197])
+                    ("'\\x14'" code nil (reparse-symbol indented_block_body) [7233 7239])
+                    ("'\\x00'" code nil (reparse-symbol indented_block_body) [7296 7302])
+                    ("'\\x21'" code nil (reparse-symbol indented_block_body) [7377 7383])
+                    ("'\\x22'" code nil (reparse-symbol indented_block_body) [7407 7413])
+                    ("'\\x23'" code nil (reparse-symbol indented_block_body) [7437 7443])
+                    ("'\\x24'" code nil (reparse-symbol indented_block_body) [7467 7473])
+                    ("'\\x27'" code nil (reparse-symbol indented_block_body) [7513 7519])
+                    ("'\\x28'" code nil (reparse-symbol indented_block_body) [7543 7549])
+                    ("'\\x29'" code nil (reparse-symbol indented_block_body) [7589 7595])
+                    ("'\\x2a'" code nil (reparse-symbol indented_block_body) [7631 7637])
+                    ("'\\x2b'" code nil (reparse-symbol indented_block_body) [7701 7707])
+                    ("'\\x2c'" code nil (reparse-symbol indented_block_body) [7770 7776])
+                    ("'\\x2d'" code nil (reparse-symbol indented_block_body) [7832 7838])
+                    ("'\\x2e'" code nil (reparse-symbol indented_block_body) [7892 7898])
+                    ("MAX_DES_LENGTH" variable nil (reparse-symbol indented_block_body) [7948 7968])
+                    ("'\\x30'" code nil (reparse-symbol indented_block_body) [7993 7999])
+                    ("'\\x01'" code nil (reparse-symbol indented_block_body) [8024 8030])
+                    ("BL_REV_MIN" variable nil (reparse-symbol indented_block_body) [8073 8092])
+                    ("BL_REV_MAX" variable nil (reparse-symbol indented_block_body) [8150 8169])
+                    ("'\\x02'" code nil (reparse-symbol indented_block_body) [8246 8252])
+                    ("'\\x03'" code nil (reparse-symbol indented_block_body) [8296 8302])
+                    ("'\\x04'" code nil (reparse-symbol indented_block_body) [8350 8356])
+                    ("PROG_MULTI_MAX" variable nil (reparse-symbol indented_block_body) [8398 8419])
+                    ("READ_MULTI_MAX" variable nil (reparse-symbol indented_block_body) [8480 8501])
+                    ("NSH_INIT" variable nil (reparse-symbol indented_block_body) [8540 8584])
+                    ("\"reboot -b\\n\"" code nil (reparse-symbol indented_block_body) [8608 8621])
+                    ("\"reboot\\n\"" code nil (reparse-symbol indented_block_body) [8645 8655])
+                    ("MAVLINK_REBOOT_ID1" variable nil (reparse-symbol indented_block_body) [8660 8859])
+                    ("MAVLINK_REBOOT_ID0" variable nil (reparse-symbol indented_block_body) [8864 9063])
+                    ("MAX_FLASH_PRGRAM_TIME" variable nil (reparse-symbol indented_block_body) [9069 9099])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [9479 9527])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9598 9613])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9622 9643])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9652 9671])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9697 9725])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9777 9863])
+                            ("''" code nil (reparse-symbol indented_block_body) [9884 9886])
+                            ("''" code nil (reparse-symbol indented_block_body) [9906 9908])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9917 9963])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9972 10020])
+                            ("self" code nil (reparse-symbol indented_block_body) [10029 10063]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9185 9189])
+                            ("portname" variable nil (reparse-symbol function_parameters) [9191 9199])
+                            ("baudrate_bootloader" variable nil (reparse-symbol function_parameters) [9201 9220])
+                            ("baudrate_flightstack" variable nil (reparse-symbol function_parameters) [9222 9242]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9172 10064])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10079 10083]))                          )
+                        (reparse-symbol indented_block_body) [10069 10150])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10164 10168]))                          )
+                        (reparse-symbol indented_block_body) [10155 10929])
+                    ("__probe" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10967 10971])
+                            ("state" variable nil (reparse-symbol function_parameters) [10973 10978]))                          )
+                        (reparse-symbol indented_block_body) [10955 11030])
+                    ("__send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11046 11050])
+                            ("c" variable nil (reparse-symbol function_parameters) [11052 11053]))                          )
+                        (reparse-symbol indented_block_body) [11035 11130])
+                    ("__recv" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11146 11150])
+                            ("count" variable nil (reparse-symbol function_parameters) [11152 11157]))                          )
+                        (reparse-symbol indented_block_body) [11135 11361])
+                    ("__recv_int" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11381 11385]))                          )
+                        (reparse-symbol indented_block_body) [11366 11478])
+                    ("__getSync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11497 11501])
+                            ("doFlush" variable nil (reparse-symbol function_parameters) [11503 11510]))                          )
+                        (reparse-symbol indented_block_body) [11483 12035])
+                    ("__ackSyncWindow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12257 12261])
+                            ("count" variable nil (reparse-symbol function_parameters) [12263 12268]))                          )
+                        (reparse-symbol indented_block_body) [12237 13049])
+                    ("__sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13121 13125]))                          )
+                        (reparse-symbol indented_block_body) [13110 13460])
+                    ("__trySync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13479 13483]))                          )
+                        (reparse-symbol indented_block_body) [13465 14261])
+                    ("__determineInterface" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14352 14356]))                          )
+                        (reparse-symbol indented_block_body) [14327 15100])
+                    ("__getInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15184 15188])
+                            ("param" variable nil (reparse-symbol function_parameters) [15190 15195]))                          )
+                        (reparse-symbol indented_block_body) [15170 15342])
+                    ("__getOTP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15422 15426])
+                            ("param" variable nil (reparse-symbol function_parameters) [15428 15433]))                          )
+                        (reparse-symbol indented_block_body) [15409 15651])
+                    ("__getSN" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15729 15733])
+                            ("param" variable nil (reparse-symbol function_parameters) [15735 15740]))                          )
+                        (reparse-symbol indented_block_body) [15717 15957])
+                    ("__getCHIP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16008 16012]))                          )
+                        (reparse-symbol indented_block_body) [15994 16149])
+                    ("__getCHIPDes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16203 16207]))                          )
+                        (reparse-symbol indented_block_body) [16186 16421])
+                    ("__drawProgressBar" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16448 16452])
+                            ("label" variable nil (reparse-symbol function_parameters) [16454 16459])
+                            ("progress" variable nil (reparse-symbol function_parameters) [16461 16469])
+                            ("maxVal" variable nil (reparse-symbol function_parameters) [16471 16477]))                          )
+                        (reparse-symbol indented_block_body) [16426 16719])
+                    ("__erase" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16814 16818])
+                            ("label" variable nil (reparse-symbol function_parameters) [16820 16825]))                          )
+                        (reparse-symbol indented_block_body) [16802 17749])
+                    ("__program_multi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17837 17841])
+                            ("data" variable nil (reparse-symbol function_parameters) [17843 17847])
+                            ("windowMode" variable nil (reparse-symbol function_parameters) [17849 17859]))                          )
+                        (reparse-symbol indented_block_body) [17817 18705])
+                    ("__verify_multi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18766 18770])
+                            ("data" variable nil (reparse-symbol function_parameters) [18772 18776]))                          )
+                        (reparse-symbol indented_block_body) [18747 19306])
+                    ("__reboot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19354 19358]))                          )
+                        (reparse-symbol indented_block_body) [19341 19581])
+                    ("__split_len" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19664 19668])
+                            ("seq" variable nil (reparse-symbol function_parameters) [19670 19673])
+                            ("length" variable nil (reparse-symbol function_parameters) [19675 19681]))                          )
+                        (reparse-symbol indented_block_body) [19648 19753])
+                    ("__program" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19790 19794])
+                            ("label" variable nil (reparse-symbol function_parameters) [19796 19801])
+                            ("fw" variable nil (reparse-symbol function_parameters) [19803 19805]))                          )
+                        (reparse-symbol indented_block_body) [19776 20932])
+                    ("__verify_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20971 20975])
+                            ("label" variable nil (reparse-symbol function_parameters) [20977 20982])
+                            ("fw" variable nil (reparse-symbol function_parameters) [20984 20986]))                          )
+                        (reparse-symbol indented_block_body) [20955 21568])
+                    ("__verify_v3" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21589 21593])
+                            ("label" variable nil (reparse-symbol function_parameters) [21595 21600])
+                            ("fw" variable nil (reparse-symbol function_parameters) [21602 21604]))                          )
+                        (reparse-symbol indented_block_body) [21573 22101])
+                    ("__set_boot_delay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22127 22131])
+                            ("boot_delay" variable nil (reparse-symbol function_parameters) [22133 22143]))                          )
+                        (reparse-symbol indented_block_body) [22106 22302])
+                    ("identify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22357 22361]))                          )
+                        (reparse-symbol indented_block_body) [22344 23007])
+                    ("upload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23049 23053])
+                            ("fw" variable nil (reparse-symbol function_parameters) [23055 23057])
+                            ("force" variable nil (reparse-symbol function_parameters) [23059 23064])
+                            ("boot_delay" variable nil (reparse-symbol function_parameters) [23072 23082]))                          )
+                        (reparse-symbol indented_block_body) [23038 28031])
+                    ("__next_baud_flightstack" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28064 28068]))                          )
+                        (reparse-symbol indented_block_body) [28036 28496])
+                    ("send_reboot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28517 28521]))                          )
+                        (reparse-symbol indented_block_body) [28501 29678]))                  
+                :type "class")
+                nil [6924 29678])
+            ("main" function nil nil [29680 37436])
+            ("if" code nil nil [37438 37476]))          
+      :file "px_uploader.py"
+      :pointmax 37531
+      :fsize 37530
+      :lastmodtime '(23816 61035 713748 933000)
+      :unmatched-syntax '((INDENT_BLOCK 36940 . 36971) (NEWLINE 36895 . 36896) (COLON 36894 . 36895) (FINALLY 36887 . 36894) (INDENT_BLOCK 36810 . 36870) (NEWLINE 36809 . 36810) (COLON 36808 . 36809) (EXCEPT 36794 . 36800) (INDENT_BLOCK 36726 . 36777) (NEWLINE 36687 . 36688) (COLON 36686 . 36687) (TRY 36360 . 36363) (AS 36681 . 36683) (INDENT_BLOCK 14702 . 14812) (NEWLINE 14607 . 14608) (COLON 14606 . 14607) (TRY 14497 . 14500) (AS 14602 . 14604)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [1906 1921])
+            ("json" include nil nil [1922 1933])
+            ("base64" include nil nil [1934 1947])
+            ("zlib" include nil nil [1948 1959])
+            ("time" include nil nil [1960 1971])
+            ("subprocess" include nil nil [1972 1989])
+            ("mkdesc" function nil nil [2036 2335])
+            ("parser" variable nil nil [2356 2451])
+            ("parser" code nil nil [2452 2551])
+            ("parser" code nil nil [2552 2635])
+            ("parser" code nil nil [2636 2731])
+            ("parser" code nil nil [2732 2809])
+            ("parser" code nil nil [2810 2890])
+            ("parser" code nil nil [2891 2976])
+            ("parser" code nil nil [2977 3086])
+            ("parser" code nil nil [3087 3173])
+            ("parser" code nil nil [3174 3258])
+            ("parser" code nil nil [3259 3333])
+            ("args" variable nil nil [3334 3360])
+            ("if" code nil nil [3417 3529])
+            ("desc" variable nil nil [3530 3569])
+            ("if" code nil nil [3571 3636])
+            ("if" code nil nil [3636 3719])
+            ("if" code nil nil [3719 3782])
+            ("if" code nil nil [3782 3845])
+            ("if" code nil nil [3845 3919])
+            ("if" code nil nil [3919 4177])
+            ("if" code nil nil [4177 4438])
+            ("if" code nil nil [4438 4642])
+            ("if" code nil nil [4642 4818])
+            ("print" code nil nil [4819 4852]))          
+      :file "px_mkfw.py"
+      :pointmax 4853
+      :fsize 4852
+      :lastmodtime '(23743 157 185238 888000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!Tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

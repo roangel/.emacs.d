@@ -1,0 +1,193 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskManualAltitude.hpp" include nil nil [1777 1816])
+            ("float.h" include (:system-flag t) nil [1817 1835])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1836 1864])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1866 1889])
+            ("initializeSubscriptions" function
+               (:parent "FlightTaskManualAltitude"
+                :arguments 
+                  ( ("subscription_array" variable
+                       (:reference 1
+                        :type ("SubscriptionArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1946 1984]))                  
+                :type "bool")
+                nil [1891 2188])
+            ("updateInitialize" function
+               (:parent "FlightTaskManualAltitude"
+                :type "bool")
+                nil [2190 2479])
+            ("activate" function
+               (:parent "FlightTaskManualAltitude"
+                :arguments 
+                  ( ("last_setpoint" variable (:type ("vehicle_local_position_setpoint_s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2521 2569]))                  
+                :type "bool")
+                nil [2481 3479])
+            ("_scaleSticks" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [3481 3856])
+            ("_updateAltitudeLock" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [3858 7042])
+            ("_respectMinAltitude" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [7044 7457])
+            ("_terrainFollowing" function
+               (:parent "FlightTaskManualAltitude"
+                :arguments 
+                  ( ("apply_brake" variable (:type "bool") (reparse-symbol arg-sub-list) [7508 7525])
+                    ("stopped" variable (:type "bool") (reparse-symbol arg-sub-list) [7526 7539]))                  
+                :type "void")
+                nil [7459 8499])
+            ("_respectMaxAltitude" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [8501 9673])
+            ("_respectGroundSlowdown" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [9675 10619])
+            ("_rotateIntoHeadingFrame" function
+               (:parent "FlightTaskManualAltitude"
+                :arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10676 10688]))                  
+                :type "void")
+                nil [10621 10889])
+            ("_updateHeadingSetpoints" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [10891 11662])
+            ("_updateSetpoints" function
+               (:parent "FlightTaskManualAltitude"
+                :type "void")
+                nil [11664 12325])
+            ("_checkTakeoff" function
+               (:parent "FlightTaskManualAltitude"
+                :type "bool")
+                nil [12327 12483])
+            ("update" function
+               (:parent "FlightTaskManualAltitude"
+                :type "bool")
+                nil [12485 12627]))          
+      :file "FlightTaskManualAltitude.cpp"
+      :pointmax 12628
+      :fsize 12627
+      :lastmodtime '(23900 3283 430502 49000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTaskManual.hpp" include nil nil [1841 1872])
+            ("uORB/topics/home_position.h" include (:system-flag t) nil [1873 1911])
+            ("FlightTaskManualAltitude" type
+               (:superclasses 
+                  ( ("FlightTaskManual" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1972 1979])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2136 2145])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2210 2219])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2245 2254])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2270 2279])
+                    ("protected" label nil (reparse-symbol classsubparts) [2281 2291])
+                    ("_updateHeadingSetpoints" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2293 2324])
+                    ("_updateSetpoints" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2356 2388])
+                    ("_scaleSticks" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2420 2448])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2510 2519])
+                    ("_rotateIntoHeadingFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("vec" variable
+                               (:reference 1
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2597 2619]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2568 2620])
+                    ("_updateAltitudeLock" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2783 2810])
+                    ("private" label nil (reparse-symbol classsubparts) [3937 3945])
+                    ("_terrainFollowing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("apply_brake" variable (:type "bool") (reparse-symbol arg-sub-list) [4248 4265])
+                            ("stopped" variable (:type "bool") (reparse-symbol arg-sub-list) [4266 4279]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4225 4280])
+                    ("_respectMinAltitude" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4518 4545])
+                    ("_respectMaxAltitude" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4548 4575])
+                    ("_respectGroundSlowdown" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4726 4756])
+                    ("_sub_home_position" variable
+                       (:pointer 1
+                        :type ("uORB::SubscriptionPollable" type
+                             (:template-specifier 
+                                ( ("home_position_s" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4759 4832])
+                    ("_reset_counter" variable
+                       (:default-value "0"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4835 4862])
+                    ("_max_speed_up" variable
+                       (:default-value "10.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [4916 4944])
+                    ("_min_speed_down" variable
+                       (:default-value "1.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [4946 4975])
+                    ("_terrain_follow" variable (:type "bool") (reparse-symbol classsubparts) [4977 5005])
+                    ("_terrain_hold" variable (:type "bool") (reparse-symbol classsubparts) [5069 5095])
+                    ("_dist_to_ground_lock" variable
+                       (:default-value "NAN"
+                        :type "float")
+                        (reparse-symbol classsubparts) [5411 5444]))                  
+                :type "class")
+                nil [1913 5447]))          
+      :file "FlightTaskManualAltitude.hpp"
+      :pointmax 5448
+      :fsize 5447
+      :lastmodtime '(23900 3283 430502 49000)
+      :unmatched-syntax '((semantic-list 2844 . 3936) (symbol 2813 . 2844) (semantic-list 3796 . 3836) (semantic-list 3661 . 3702) (semantic-list 3541 . 3581) (semantic-list 3419 . 3459) (semantic-list 3298 . 3341) (semantic-list 3184 . 3224) (semantic-list 3074 . 3108) (semantic-list 3002 . 3044) (semantic-list 2938 . 2975) (semantic-list 2868 . 2909) (semantic-list 2507 . 2509) (symbol 2494 . 2507) (BOOL 2489 . 2493) (semantic-list 2267 . 2269) (symbol 2261 . 2267) (BOOL 2256 . 2260) (semantic-list 2242 . 2244) (symbol 2226 . 2242) (BOOL 2221 . 2225) (semantic-list 2160 . 2209) (symbol 2152 . 2160) (BOOL 2147 . 2151) (semantic-list 2096 . 2135) (symbol 2073 . 2096) (BOOL 2068 . 2072) (punctuation 2065 . 2066) (DEFAULT 2058 . 2065) (punctuation 2056 . 2057) (semantic-list 2053 . 2055) (symbol 2029 . 2053) (punctuation 2028 . 2029) (VIRTUAL 2020 . 2027) (punctuation 2017 . 2018) (DEFAULT 2010 . 2017) (punctuation 2008 . 2009) (semantic-list 2005 . 2007) (symbol 1981 . 2005) (symbol 1835 . 1839) (symbol 1828 . 1834) (punctuation 1827 . 1828))))
+  :file "!home!angel!src!Firmware!src!lib!FlightTasks!tasks!ManualAltitude!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

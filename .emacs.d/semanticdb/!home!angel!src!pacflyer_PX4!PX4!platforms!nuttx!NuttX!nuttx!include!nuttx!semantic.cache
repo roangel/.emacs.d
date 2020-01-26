@@ -1,0 +1,450 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__INCLUDE_NUTTX_SCHED_H" variable (:constant-flag t) nil [1850 1873])
+            ("nuttx/config.h" include (:system-flag t) nil [2059 2084])
+            ("sys/types.h" include (:system-flag t) nil [2086 2108])
+            ("stdint.h" include (:system-flag t) nil [2109 2128])
+            ("queue.h" include (:system-flag t) nil [2129 2147])
+            ("signal.h" include (:system-flag t) nil [2148 2167])
+            ("semaphore.h" include (:system-flag t) nil [2168 2190])
+            ("pthread.h" include (:system-flag t) nil [2191 2211])
+            ("mqueue.h" include (:system-flag t) nil [2212 2231])
+            ("time.h" include (:system-flag t) nil [2232 2249])
+            ("nuttx/clock.h" include (:system-flag t) nil [2251 2275])
+            ("nuttx/irq.h" include (:system-flag t) nil [2276 2298])
+            ("nuttx/wdog.h" include (:system-flag t) nil [2299 2322])
+            ("nuttx/mm/shm.h" include (:system-flag t) nil [2323 2348])
+            ("nuttx/fs/fs.h" include (:system-flag t) nil [2349 2373])
+            ("nuttx/net/net.h" include (:system-flag t) nil [2374 2400])
+            ("arch/arch.h" include (:system-flag t) nil [2402 2424])
+            ("HAVE_TASK_GROUP" variable (:constant-flag t) nil [3532 3547])
+            ("HAVE_TASK_GROUP" variable (:constant-flag t) nil [3642 3657])
+            ("HAVE_TASK_GROUP" variable (:constant-flag t) nil [4363 4378])
+            ("CONFIG_SCHED_SPORADIC_MAXREPL" variable (:constant-flag t) nil [4852 4881])
+            ("NULL_TASK_PROCESS_ID" variable (:constant-flag t) nil [5038 5058])
+            ("INVALID_PROCESS_ID" variable (:constant-flag t) nil [5082 5100])
+            ("MAX_LOCK_COUNT" variable (:constant-flag t) nil [5194 5208])
+            ("TCB_FLAG_TTYPE_SHIFT" variable (:constant-flag t) nil [5280 5300])
+            ("TCB_FLAG_TTYPE_MASK" variable (:constant-flag t) nil [5352 5371])
+            ("TCB_FLAG_TTYPE_TASK" variable (:constant-flag t) nil [5417 5436])
+            ("TCB_FLAG_TTYPE_PTHREAD" variable (:constant-flag t) nil [5504 5526])
+            ("TCB_FLAG_TTYPE_KERNEL" variable (:constant-flag t) nil [5587 5608])
+            ("TCB_FLAG_NONCANCELABLE" variable (:constant-flag t) nil [5669 5691])
+            ("TCB_FLAG_CANCEL_DEFERRED" variable (:constant-flag t) nil [5752 5776])
+            ("TCB_FLAG_CANCEL_PENDING" variable (:constant-flag t) nil [5848 5871])
+            ("TCB_FLAG_POLICY_SHIFT" variable (:constant-flag t) nil [5931 5952])
+            ("TCB_FLAG_POLICY_MASK" variable (:constant-flag t) nil [6003 6023])
+            ("TCB_FLAG_SCHED_FIFO" variable (:constant-flag t) nil [6069 6088])
+            ("TCB_FLAG_SCHED_RR" variable (:constant-flag t) nil [6160 6177])
+            ("TCB_FLAG_SCHED_SPORADIC" variable (:constant-flag t) nil [6258 6281])
+            ("TCB_FLAG_SCHED_OTHER" variable (:constant-flag t) nil [6353 6373])
+            ("TCB_FLAG_CPU_LOCKED" variable (:constant-flag t) nil [6443 6462])
+            ("TCB_FLAG_EXIT_PROCESSING" variable (:constant-flag t) nil [6519 6543])
+            ("GROUP_FLAG_NOCLDWAIT" variable (:constant-flag t) nil [6702 6722])
+            ("GROUP_FLAG_ADDRENV" variable (:constant-flag t) nil [6791 6809])
+            ("GROUP_FLAG_PRIVILEGED" variable (:constant-flag t) nil [6881 6902])
+            ("GROUP_FLAG_DELETED" variable (:constant-flag t) nil [6958 6976])
+            ("CHILD_FLAG_TTYPE_SHIFT" variable (:constant-flag t) nil [7176 7198])
+            ("CHILD_FLAG_TTYPE_MASK" variable (:constant-flag t) nil [7254 7275])
+            ("CHILD_FLAG_TTYPE_TASK" variable (:constant-flag t) nil [7321 7342])
+            ("CHILD_FLAG_TTYPE_PTHREAD" variable (:constant-flag t) nil [7409 7433])
+            ("CHILD_FLAG_TTYPE_KERNEL" variable (:constant-flag t) nil [7493 7516])
+            ("CHILD_FLAG_EXITED" variable (:constant-flag t) nil [7576 7593])
+            ("SPORADIC_FLAG_ALLOCED" variable (:constant-flag t) nil [7765 7786])
+            ("SPORADIC_FLAG_MAIN" variable (:constant-flag t) nil [7842 7860])
+            ("SPORADIC_FLAG_REPLENISH" variable (:constant-flag t) nil [7915 7938])
+            ("tstate_e" type
+               (:members 
+                  ( ("TSTATE_TASK_INVALID" variable
+                       (:constant-flag t
+                        :default-value (8655 8656)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8630 8656])
+                    ("TSTATE_TASK_PENDING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8706 8726])
+                    ("TSTATE_TASK_READYTORUN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8783 8806])
+                    ("TSTATE_TASK_RUNNING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8961 8981])
+                    ("TSTATE_TASK_INACTIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9025 9046])
+                    ("TSTATE_WAIT_SEM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9110 9126])
+                    ("TSTATE_WAIT_SIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9216 9232])
+                    ("TSTATE_WAIT_MQNOTEMPTY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9325 9348])
+                    ("TSTATE_WAIT_MQNOTFULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9414 9436])
+                    ("NUM_TASK_STATES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9610 9658]))                  
+                :type "enum")
+                nil [8612 9659])
+            ("tstate_t" type
+               (:typedef ("tstate_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [9660 9691])
+            ("FIRST_READY_TO_RUN_STATE" variable (:constant-flag t) nil [9819 9843])
+            ("LAST_READY_TO_RUN_STATE" variable (:constant-flag t) nil [9877 9900])
+            ("FIRST_ASSIGNED_STATE" variable (:constant-flag t) nil [9932 9952])
+            ("LAST_ASSIGNED_STATE" variable (:constant-flag t) nil [9988 10007])
+            ("FIRST_BLOCKED_STATE" variable (:constant-flag t) nil [10043 10062])
+            ("LAST_BLOCKED_STATE" variable (:constant-flag t) nil [10099 10117])
+            ("start_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10239 10244]))                  
+                :type "void")
+                nil [10223 10245])
+            ("entry_u" type
+               (:members 
+                  ( ("pthread" variable (:type ("pthread_startroutine_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10376 10407])
+                    ("main" variable (:type ("main_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10410 10422]))                  
+                :type "union")
+                nil [10358 10425])
+            ("entry_t" type
+               (:typedef ("entry_u" type (:type "union") nil nil)
+                :type "typedef")
+                nil [10426 10456])
+            ("join_s" type
+               (:prototype t
+                :type "struct")
+                nil [15681 15695])
+            ("task_group_s" type
+               (:members 
+                  ( ("tg_flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16396 16413])
+                    ("tg_nmembers" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16564 16587])
+                    ("tg_joinsem" variable (:type ("sem_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19003 19020])
+                    ("tg_joinhead" variable
+                       (:pointer 1
+                        :type ("join_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [19090 19117])
+                    ("tg_jointail" variable
+                       (:pointer 1
+                        :type ("join_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [19173 19200])
+                    ("tg_nkeys" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19252 19269])
+                    ("tg_sigactionq" variable (:type ("sq_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19458 19483])
+                    ("tg_sigpendingq" variable (:type ("sq_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19541 19567])
+                    ("tg_envsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19747 19769])
+                    ("tg_envp" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [19834 19849])
+                    ("tg_msgdesq" variable (:type ("sq_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21307 21329]))                  
+                :type "struct")
+                nil [15855 21794])
+            ("wdog_s" type
+               (:prototype t
+                :type "struct")
+                nil [22102 22116])
+            ("tcb_s" type
+               (:members 
+                  ( ("flink" variable
+                       (:pointer 1
+                        :type ("tcb_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22287 22307])
+                    ("blink" variable
+                       (:pointer 1
+                        :type ("tcb_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22370 22390])
+                    ("group" variable
+                       (:pointer 1
+                        :type ("task_group_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22505 22532])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22676 22689])
+                    ("start" variable (:type ("start_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22759 22774])
+                    ("entry" variable (:type ("entry_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22842 22857])
+                    ("sched_priority" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22925 22949])
+                    ("init_priority" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23008 23031])
+                    ("task_state" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23384 23404])
+                    ("flags" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23658 23673])
+                    ("lockcount" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23741 23760])
+                    ("waitdog" variable
+                       (:pointer 1
+                        :type ("wdog_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24415 24438])
+                    ("adj_stack_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24579 24604])
+                    ("stack_alloc_ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [24832 24854])
+                    ("adj_stack_ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [24998 25018])
+                    ("waitsem" variable
+                       (:pointer 1
+                        :type ("sem_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25438 25453])
+                    ("sigprocmask" variable (:type ("sigset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25637 25660])
+                    ("sigwaitmask" variable (:type ("sigset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25720 25743])
+                    ("sigpendactionq" variable (:type ("sq_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25803 25829])
+                    ("sigpostedq" variable (:type ("sq_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25886 25908])
+                    ("sigunbinfo" variable (:type ("siginfo_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25969 25991])
+                    ("msgwaitq" variable
+                       (:pointer 1
+                        :type ("mqueue_inode_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26178 26210])
+                    ("pterrno" variable (:type "int") (reparse-symbol classsubparts) [26349 26361])
+                    ("xcp" variable (:type ("xcptcontext" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [26600 26623]))                  
+                :type "struct")
+                nil [22182 26804])
+            ("task_tcb_s" type
+               (:members 
+                  ( ("cmn" variable (:type ("tcb_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [27518 27535])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [27978 27990]))                  
+                :type "struct")
+                nil [27412 28057])
+            ("pthread_tcb_s" type
+               (:members 
+                  ( ("cmn" variable (:type ("tcb_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [28789 28806])
+                    ("arg" variable (:type ("pthread_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28957 28976])
+                    ("joininfo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [29044 29059])
+                    ("mhead" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [29248 29278]))                  
+                :type "struct")
+                nil [28680 29844])
+            ("sched_foreach_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29972 29982])
+                    ("tcb" variable
+                       (:pointer 1
+                        :type ("tcb_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29976 29994])
+                    ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29995 30003])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29999 30009]))                  
+                :type "void")
+                nil [29948 30010])
+            ("EXTERN" variable (:constant-flag t) nil [30288 30294])
+            ("sched_suspend_scheduler" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35147 35170])
+            ("sched_resume_scheduler" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [34460 34482])
+            ("task_vforkabort" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33740 33750])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("task_tcb_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33744 33769])
+                    ("errcode" variable (:type "int") (reparse-symbol arg-sub-list) [33770 33782]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33719 33783])
+            ("task_vforkstart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33688 33698])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("task_tcb_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33692 33717]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33666 33718])
+            ("task_vforksetup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("task_tcb_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("retaddr" variable (:type ("start_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33648 33664]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33613 33665])
+            ("sched_gettcb" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("tcb_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31089 31099]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31062 31100])
+            ("sched_foreach" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("handler" variable (:type ("sched_foreach_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30962 30986])
+                    ("" variable (:type ("FAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30987 30995])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30991 31001]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30943 31002])
+            ("sched_self" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("tcb_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30752 30757]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30727 30758]))          
+      :file "sched.h"
+      :pointmax 35296
+      :fsize 35295
+      :lastmodtime '(23770 54121 923241 924000)
+      :unmatched-syntax '((symbol 33609 . 33612) (symbol 31058 . 31061) (symbol 30723 . 30726) (TYPEDEF 29940 . 29947) (symbol 29244 . 29247) (symbol 29040 . 29043) (symbol 27974 . 27977) (symbol 26174 . 26177) (symbol 24994 . 24997) (symbol 24828 . 24831) (symbol 24411 . 24414) (symbol 22501 . 22504) (symbol 22366 . 22369) (symbol 22283 . 22286) (symbol 22098 . 22101) (symbol 19830 . 19833) (symbol 19169 . 19172) (symbol 19086 . 19089) (symbol 10218 . 10222) (TYPEDEF 10210 . 10217))
+      :lexical-table 
+        '(("MAX_LOCK_COUNT" . ((number "127" 5221 . 5224)))
+          ("TCB_FLAG_TTYPE_MASK" . ((semantic-list "(3 << TCB_FLAG_TTYPE_SHIFT)" 5379 . 5406)))
+          ("TCB_FLAG_SCHED_FIFO" . ((semantic-list "(0 << TCB_FLAG_POLICY_SHIFT)" 6094 . 6122)))
+          ("TCB_FLAG_SCHED_SPORADIC" . ((semantic-list "(2 << TCB_FLAG_POLICY_SHIFT)" 6283 . 6311)))
+          ("FIRST_ASSIGNED_STATE" . ((symbol "TSTATE_TASK_ASSIGNED" 9959 . 9979)))
+          ("TCB_FLAG_TTYPE_PTHREAD" . ((semantic-list "(1 << TCB_FLAG_TTYPE_SHIFT)" 5529 . 5556)))
+          ("TCB_FLAG_SCHED_RR" . ((semantic-list "(1 << TCB_FLAG_POLICY_SHIFT)" 6185 . 6213)))
+          ("GROUP_FLAG_ADDRENV" . ((semantic-list "(1 << 1)" 6818 . 6826)))
+          ("CHILD_FLAG_TTYPE_TASK" . ((semantic-list "(0 << CHILD_FLAG_TTYPE_SHIFT)" 7346 . 7375)))
+          ("sched_suspend_scheduler" (spp-arg-list ("tcb") 35170 . 35175))
+          ("TCB_FLAG_TTYPE_KERNEL" . ((semantic-list "(2 << TCB_FLAG_TTYPE_SHIFT)" 5612 . 5639)))
+          ("TCB_FLAG_POLICY_SHIFT" . ((semantic-list "(5)" 5958 . 5961)))
+          ("SPORADIC_FLAG_REPLENISH" . ((semantic-list "(1 << 2)" 7942 . 7950)))
+          ("INVALID_PROCESS_ID" . 
+              ((semantic-list "(pid_t)" 5109 . 5116) (punctuation "-" 5116 . 5117) (number "1" 5117 . 5118)))
+          ("sched_resume_scheduler" (spp-arg-list ("tcb") 34482 . 34487))
+          ("TCB_FLAG_EXIT_PROCESSING" . ((semantic-list "(1 << 8)" 6546 . 6554)))
+          ("__INCLUDE_NUTTX_SCHED_H")
+          ("HAVE_TASK_GROUP" . ((number "1" 4381 . 4382)))
+          ("CONFIG_SCHED_SPORADIC_MAXREPL" . ((number "3" 4882 . 4883)))
+          ("NULL_TASK_PROCESS_ID" . ((semantic-list "(pid_t)" 5065 . 5072) (number "0" 5072 . 5073)))
+          ("LAST_BLOCKED_STATE" . ((semantic-list "(NUM_TASK_STATES-1)" 10126 . 10145)))
+          ("TCB_FLAG_TTYPE_TASK" . ((semantic-list "(0 << TCB_FLAG_TTYPE_SHIFT)" 5442 . 5469)))
+          ("TCB_FLAG_POLICY_MASK" . ((semantic-list "(3 << TCB_FLAG_POLICY_SHIFT)" 6030 . 6058)))
+          ("GROUP_FLAG_NOCLDWAIT" . ((semantic-list "(1 << 0)" 6729 . 6737)))
+          ("FIRST_BLOCKED_STATE" . ((symbol "TSTATE_TASK_INACTIVE" 10070 . 10090)))
+          ("CHILD_FLAG_TTYPE_MASK" . ((semantic-list "(3 << CHILD_FLAG_TTYPE_SHIFT)" 7281 . 7310)))
+          ("FIRST_READY_TO_RUN_STATE" . ((symbol "TSTATE_TASK_READYTORUN" 9846 . 9868)))
+          ("TCB_FLAG_CPU_LOCKED" . ((semantic-list "(1 << 7)" 6470 . 6478)))
+          ("GROUP_FLAG_PRIVILEGED" . ((semantic-list "(1 << 2)" 6908 . 6916)))
+          ("CHILD_FLAG_TTYPE_SHIFT" . ((semantic-list "(0)" 7203 . 7206)))
+          ("SPORADIC_FLAG_ALLOCED" . ((semantic-list "(1 << 0)" 7792 . 7800)))
+          ("TCB_FLAG_NONCANCELABLE" . ((semantic-list "(1 << 2)" 5696 . 5704)))
+          ("CHILD_FLAG_TTYPE_PTHREAD" . ((semantic-list "(1 << CHILD_FLAG_TTYPE_SHIFT)" 7434 . 7463)))
+          ("CHILD_FLAG_TTYPE_KERNEL" . ((semantic-list "(2 << CHILD_FLAG_TTYPE_SHIFT)" 7518 . 7547)))
+          ("SPORADIC_FLAG_MAIN" . ((semantic-list "(1 << 1)" 7869 . 7877)))
+          ("TCB_FLAG_TTYPE_SHIFT" . ((semantic-list "(0)" 5307 . 5310)))
+          ("TCB_FLAG_SCHED_OTHER" . ((semantic-list "(3 << TCB_FLAG_POLICY_SHIFT)" 6378 . 6406)))
+          ("GROUP_FLAG_DELETED" . ((semantic-list "(1 << 3)" 6985 . 6993)))
+          ("CHILD_FLAG_EXITED" . ((semantic-list "(1 << 2)" 7603 . 7611)))
+          ("LAST_ASSIGNED_STATE" . ((symbol "TSTATE_TASK_RUNNING" 10015 . 10034)))
+          ("TCB_FLAG_CANCEL_DEFERRED" . ((semantic-list "(1 << 3)" 5779 . 5787)))
+          ("TCB_FLAG_CANCEL_PENDING" . ((semantic-list "(1 << 4)" 5875 . 5883)))
+          ("LAST_READY_TO_RUN_STATE" . ((symbol "TSTATE_TASK_RUNNING" 9904 . 9923)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "signal.h"
+      :fsize 3221
+      :lastmodtime '(23770 54121 927241 946000))
+    (semanticdb-table "semanticdb-table"
+      :file "semaphore.h"
+      :fsize 7524
+      :lastmodtime '(23770 54121 923241 924000))
+    (semanticdb-table "semanticdb-table"
+      :file "pthread.h"
+      :fsize 4971
+      :lastmodtime '(23770 54121 923241 924000))
+    (semanticdb-table "semanticdb-table"
+      :file "mqueue.h"
+      :fsize 8175
+      :lastmodtime '(23770 54121 919241 901000))
+    (semanticdb-table "semanticdb-table"
+      :file "time.h"
+      :fsize 5014
+      :lastmodtime '(23770 54121 927241 946000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!nuttx!include!nuttx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

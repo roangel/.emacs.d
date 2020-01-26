@@ -1,0 +1,635 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("me.drton.jmavsim" package nil nil [1 26])
+            ("me.drton.jmavlib.geo.GlobalPositionProjector" include nil nil [28 80])
+            ("me.drton.jmavlib.geo.LatLonAlt" include nil nil [81 119])
+            ("me.drton.jmavlib.log.FormatErrorException" include nil nil [120 169])
+            ("me.drton.jmavlib.log.LogReader" include nil nil [170 208])
+            ("javax.vecmath.Vector3d" include nil nil [210 240])
+            ("java.io.EOFException" include nil nil [241 269])
+            ("java.io.FileNotFoundException" include nil nil [270 307])
+            ("java.io.IOException" include nil nil [308 335])
+            ("java.util.HashMap" include nil nil [336 361])
+            ("java.util.Map" include nil nil [362 383])
+            ("LogPlayerTarget" type
+               (:typemodifiers ("public")
+                :superclasses "Target"
+                :members 
+                  ( ("logReader" variable
+                       (:typemodifiers ("private")
+                        :type "LogReader")
+                        (reparse-symbol class_member_declaration) [483 518])
+                    ("logStart" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [523 549])
+                    ("timeStart" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [554 581])
+                    ("logT" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [586 608])
+                    ("positionOffset" variable
+                       (:typemodifiers ("private")
+                        :type "Vector3d")
+                        (reparse-symbol class_member_declaration) [613 662])
+                    ("posKeys" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [667 738])
+                    ("velKeys" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [743 817])
+                    ("globalFrame" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [822 858])
+                    ("projector" variable
+                       (:typemodifiers ("private")
+                        :type "GlobalPositionProjector")
+                        (reparse-symbol class_member_declaration) [863 912])
+                    ("postitionPrev" variable
+                       (:typemodifiers ("private")
+                        :type "Vector3d")
+                        (reparse-symbol class_member_declaration) [917 965])
+                    ("timePrev" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [970 996])
+                    ("LogPlayerTarget" function
+                       (:constructor-flag t
+                        :throws ("FileNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("world" variable (:type "World") (reparse-symbol formal_parameters) [1025 1036])
+                            ("size" variable (:type "double") (reparse-symbol formal_parameters) [1038 1049]))                          )
+                        (reparse-symbol class_member_declaration) [1002 1115])
+                    ("openLog" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("logReader" variable (:type "LogReader") (reparse-symbol formal_parameters) [1141 1160]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1121 1277])
+                    ("setLogKeys" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("posKeys" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1306 1322])
+                            ("velKeys" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1324 1340]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1283 1413])
+                    ("setGlobalFrame" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("globalFrame" variable (:type "boolean") (reparse-symbol formal_parameters) [1446 1465]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1419 1570])
+                    ("setGlobalReference" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("reference" variable (:type "LatLonAlt") (reparse-symbol formal_parameters) [1607 1626]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1576 1675])
+                    ("setTimeStart" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("timeStart" variable (:type "long") (reparse-symbol formal_parameters) [1706 1720]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1681 1765])
+                    ("setPositionOffset" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("positionOffset" variable (:type "Vector3d") (reparse-symbol formal_parameters) [1801 1824]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1771 1879])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("t" variable (:type "long") (reparse-symbol formal_parameters) [1918 1924]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1899 4169]))                  
+                :type "class")
+                nil [433 4171]))          
+      :file "LogPlayerTarget.java"
+      :pointmax 4172
+      :fsize 4171
+      :lastmodtime '(23549 3396 920585 114000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("me.drton.jmavsim" package nil nil [1 26])
+            ("me.drton.jmavlib.geo.LatLonAlt" include nil nil [28 66])
+            ("me.drton.jmavlib.mavlink.MAVLinkSchema" include nil nil [67 113])
+            ("me.drton.jmavsim.Visualizer3D.ViewTypes" include nil nil [114 161])
+            ("me.drton.jmavsim.Visualizer3D.ZoomModes" include nil nil [162 209])
+            ("me.drton.jmavsim.vehicle.AbstractMulticopter" include nil nil [210 262])
+            ("me.drton.jmavsim.vehicle.Quadcopter" include nil nil [263 306])
+            ("org.xml.sax.SAXException" include nil nil [308 340])
+            ("javax.swing.JFrame" include nil nil [342 368])
+            ("javax.swing.SwingUtilities" include nil nil [369 403])
+            ("javax.vecmath.Matrix3d" include nil nil [404 434])
+            ("javax.vecmath.Vector3d" include nil nil [435 465])
+            ("javax.xml.parsers.ParserConfigurationException" include nil nil [466 520])
+            ("java.io.IOException" include nil nil [522 549])
+            ("java.io.InputStream" include nil nil [550 577])
+            ("java.lang.Math" include nil nil [578 600])
+            ("java.net.URL" include nil nil [601 621])
+            ("java.util.Arrays" include nil nil [622 646])
+            ("java.util.HashSet" include nil nil [647 672])
+            ("java.util.Scanner" include nil nil [673 698])
+            ("java.util.concurrent.ScheduledExecutorService" include nil nil [699 752])
+            ("java.util.concurrent.TimeUnit" include nil nil [753 790])
+            ("java.util.concurrent.Executors" include nil nil [791 829])
+            ("java.util.concurrent.ScheduledFuture" include nil nil [830 874])
+            ("Simulator" type
+               (:typemodifiers ("public")
+                :interfaces ("Runnable")
+                :members 
+                  ( ("USE_SERIAL_PORT" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [975 1029])
+                    ("COMMUNICATE_WITH_QGC" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1077 1130])
+                    ("DO_MAG_FIELD_LOOKUP" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1161 1223])
+                    ("USE_GIMBAL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1289 1350])
+                    ("GUI_SHOW_REPORT_PANEL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1441 1495])
+                    ("GUI_START_MAXIMIZED" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1536 1590])
+                    ("GUI_ENABLE_AA" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1634 1687])
+                    ("GUI_START_VIEW" variable
+                       (:typemodifiers ("public" "static")
+                        :type "ViewTypes")
+                        (reparse-symbol class_member_declaration) [1720 1790])
+                    ("GUI_START_ZOOM" variable
+                       (:typemodifiers ("public" "static")
+                        :type "ZoomModes")
+                        (reparse-symbol class_member_declaration) [1795 1866])
+                    ("LOG_TO_STDOUT" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1871 1932])
+                    ("DEBUG_MODE" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2041 2082])
+                    ("DEFAULT_SIM_SPEED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2088 2139])
+                    ("DEFAULT_AUTOPILOT_SYSID" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2150 2214])
+                    ("DEFAULT_AUTOPILOT_TYPE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2313 2375])
+                    ("DEFAULT_AUTOPILOT_PORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2402 2460])
+                    ("DEFAULT_QGC_PEER_PORT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2465 2522])
+                    ("DEFAULT_SERIAL_PATH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2527 2597])
+                    ("DEFAULT_SERIAL_BAUD_RATE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2602 2663])
+                    ("LOCAL_HOST" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2668 2720])
+                    ("DEFAULT_VEHICLE_MODEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2725 2811])
+                    ("DEFAULT_GIMBAL_MODEL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2816 2894])
+                    ("DEFAULT_ORIGIN_POS" variable
+                       (:typemodifiers ("public" "static")
+                        :type "LatLonAlt")
+                        (reparse-symbol class_member_declaration) [3172 3257])
+                    ("DEFAULT_MAG_INCL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [3580 3627])
+                    ("DEFAULT_MAG_DECL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [3632 3678])
+                    ("DEFAULT_MAG_FIELD" variable
+                       (:typemodifiers ("public" "static")
+                        :type "Vector3d")
+                        (reparse-symbol class_member_declaration) [4037 4124])
+                    ("DEFAULT_CAM_PITCH_CHAN" variable
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4130 4186])
+                    ("DEFAULT_CAM_ROLL_CHAN" variable
+                       (:typemodifiers ("public" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4249 4306])
+                    ("DEFAULT_CAM_PITCH_SCAL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "Double")
+                        (reparse-symbol class_member_declaration) [4368 4427])
+                    ("DEFAULT_CAM_ROLL_SCAL" variable
+                       (:typemodifiers ("public" "static")
+                        :type "Double")
+                        (reparse-symbol class_member_declaration) [4483 4542])
+                    ("sleepInterval" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4600 4664])
+                    ("autopilotSysId" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4699 4759])
+                    ("autopilotType" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4764 4825])
+                    ("autopilotIpAddress" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4830 4884])
+                    ("autopilotPort" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4889 4947])
+                    ("qgcIpAddress" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4952 5000])
+                    ("qgcPeerPort" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5005 5060])
+                    ("serialPath" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5065 5120])
+                    ("serialBaudRate" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5125 5186])
+                    ("monitorMessage" variable
+                       (:typemodifiers ("private" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5272 5318])
+                    ("visualizer" variable
+                       (:typemodifiers ("private")
+                        :type "Visualizer3D")
+                        (reparse-symbol class_member_declaration) [5324 5356])
+                    ("vehicle" variable
+                       (:typemodifiers ("private")
+                        :type "AbstractMulticopter")
+                        (reparse-symbol class_member_declaration) [5361 5397])
+                    ("gimbal" variable
+                       (:typemodifiers ("private")
+                        :type "CameraGimbal2D")
+                        (reparse-symbol class_member_declaration) [5402 5432])
+                    ("hilSystem" variable
+                       (:typemodifiers ("private")
+                        :type "MAVLinkHILSystem")
+                        (reparse-symbol class_member_declaration) [5437 5472])
+                    ("autopilotMavLinkPort" variable
+                       (:typemodifiers ("private")
+                        :type "MAVLinkPort")
+                        (reparse-symbol class_member_declaration) [5477 5518])
+                    ("udpGCMavLinkPort" variable
+                       (:typemodifiers ("private")
+                        :type "UDPMavLinkPort")
+                        (reparse-symbol class_member_declaration) [5523 5563])
+                    ("world" variable
+                       (:typemodifiers ("private")
+                        :type "World")
+                        (reparse-symbol class_member_declaration) [5611 5631])
+                    ("executor" variable
+                       (:typemodifiers ("private")
+                        :type "ScheduledExecutorService")
+                        (reparse-symbol class_member_declaration) [5636 5725])
+                    ("outputHandler" variable
+                       (:typemodifiers ("private")
+                        :type "SystemOutHandler")
+                        (reparse-symbol class_member_declaration) [5730 5769])
+                    ("shutdown" variable
+                       (:typemodifiers ("public" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5892 5933])
+                    ("Simulator" function
+                       (:constructor-flag t
+                        :throws ("IOException" "InterruptedException")
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [5939 14616])
+                    ("buildMulticopter" function
+                       (:typemodifiers ("private")
+                        :type "AbstractMulticopter")
+                        (reparse-symbol class_member_declaration) [14622 15621])
+                    ("buildAQ_leora" function
+                       (:typemodifiers ("private")
+                        :type "AbstractMulticopter")
+                        (reparse-symbol class_member_declaration) [15717 16769])
+                    ("buildGimbal" function
+                       (:typemodifiers ("private")
+                        :type "CameraGimbal2D")
+                        (reparse-symbol class_member_declaration) [16775 17143])
+                    ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17149 17426])
+                    ("magFieldLookup" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("pos" variable (:type "LatLonAlt") (reparse-symbol formal_parameters) [18019 18032]))                          
+                        :type "Vector3d")
+                        (reparse-symbol class_member_declaration) [17981 20205])
+                    ("PRINT_INDICATION_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20211 20291])
+                    ("UDP_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20296 20363])
+                    ("QGC_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20368 20448])
+                    ("SERIAL_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20453 20526])
+                    ("MAG_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20531 20582])
+                    ("REP_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20587 20634])
+                    ("GUI_AA_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20639 20693])
+                    ("GIMBAL_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20698 20756])
+                    ("GUI_MAX_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20761 20812])
+                    ("GUI_VIEW_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20817 20886])
+                    ("AP_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20891 20953])
+                    ("SPEED_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20958 21010])
+                    ("CMD_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21015 21145])
+                    ("CMD_STRING_JAR" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21150 21233])
+                    ("USAGE_STRING" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [21238 21732])
+                    ("main" function
+                       (:throws ("InterruptedException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [21762 21775]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21738 29877])
+                    ("handleHelpFlag" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29883 32814])
+                    ("printKeyCommands" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [32820 35446]))                  
+                :type "class")
+                nil [925 35449]))          
+      :file "Simulator.java"
+      :pointmax 35450
+      :fsize 35449
+      :lastmodtime '(23549 3396 920585 114000)
+      :unmatched-syntax '((SEMICOLON 5605 . 5606) (GT 5593 . 5594) (QUESTION 5592 . 5593) (PRIVATE 5568 . 5575) (LT 5591 . 5592) (SEMICOLON 5266 . 5267) (PAREN_BLOCK 5264 . 5266) (GT 5263 . 5264) (LT 5255 . 5256) (NEW 5244 . 5247) (EQ 5242 . 5243) (GT 5222 . 5223) (PRIVATE 5192 . 5199) (LT 5214 . 5215)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("me.drton.jmavsim" package nil nil [1 26])
+            ("java.util.concurrent.BlockingQueue" include nil nil [28 70])
+            ("java.util.concurrent.LinkedBlockingQueue" include nil nil [71 119])
+            ("javax.sound.sampled.AudioFormat" include nil nil [121 160])
+            ("javax.sound.sampled.AudioSystem" include nil nil [161 200])
+            ("javax.sound.sampled.LineUnavailableException" include nil nil [201 253])
+            ("javax.sound.sampled.SourceDataLine" include nil nil [254 296])
+            ("PeripherialBuzzer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("af" variable (:type "AudioFormat") (reparse-symbol class_member_declaration) [394 409])
+                    ("sdl" variable (:type "SourceDataLine") (reparse-symbol class_member_declaration) [414 433])
+                    ("sample_rate" variable (:type "float") (reparse-symbol class_member_declaration) [438 464])
+                    ("Note" type
+                       (:members 
+                          ( ("frequency" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [527 548])
+                            ("duration" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [557 577])
+                            ("Note" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("frequency" variable (:type "int") (reparse-symbol formal_parameters) [598 611])
+                                    ("duration" variable (:type "int") (reparse-symbol formal_parameters) [613 625]))                                  )
+                                (reparse-symbol class_member_declaration) [586 729]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [506 735])
+                    ("playNote" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("note" variable (:type "int") (reparse-symbol formal_parameters) [762 770])
+                            ("duration" variable (:type "int") (reparse-symbol formal_parameters) [772 784]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [741 838])
+                    ("NoteConsumer" type
+                       (:typemodifiers ("public")
+                        :interfaces ("Runnable")
+                        :members 
+                          ( ("run" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [900 1324]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [844 1330])
+                    ("PeripherialBuzzer" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1336 1722])
+                    ("generateTone" function
+                       (:throws ("LineUnavailableException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hz" variable (:type "int") (reparse-symbol formal_parameters) [1753 1759])
+                            ("msecs" variable (:type "int") (reparse-symbol formal_parameters) [1761 1770]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1728 2220]))                  
+                :type "class")
+                nil [298 2222]))          
+      :file "PeripherialBuzzer.java"
+      :pointmax 2223
+      :fsize 2222
+      :lastmodtime '(23549 3396 920585 114000)
+      :unmatched-syntax '((SEMICOLON 388 . 389) (NEW 363 . 366) (EQ 361 . 362) (GT 353 . 354) (IDENTIFIER 335 . 348) (LT 348 . 349)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("me.drton.jmavsim" package nil nil [1 26])
+            ("me.drton.jmavlib.conversion.RotationConversion" include nil nil [28 82])
+            ("me.drton.jmavlib.mavlink.MAVLinkMessage" include nil nil [83 130])
+            ("me.drton.jmavlib.mavlink.MAVLinkSchema" include nil nil [131 177])
+            ("me.drton.jmavsim.vehicle.AbstractVehicle" include nil nil [178 226])
+            ("javax.vecmath.*" include nil nil [228 251])
+            ("java.util.Arrays" include nil nil [252 276])
+            ("java.util.Collections" include nil nil [277 306])
+            ("java.util.List" include nil nil [307 329])
+            ("java.util.ArrayList" include nil nil [330 357])
+            ("MAVLinkHILSystem" type
+               (:typemodifiers ("public")
+                :superclasses "MAVLinkSystem"
+                :members 
+                  ( ("vehicle" variable
+                       (:typemodifiers ("private")
+                        :type "AbstractVehicle")
+                        (reparse-symbol class_member_declaration) [616 648])
+                    ("gotHeartBeat" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [653 690])
+                    ("inited" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [695 726])
+                    ("stopped" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [731 763])
+                    ("initTime" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [768 794])
+                    ("initDelay" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [799 828])
+                    ("gotHilActuatorControls" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [833 888])
+                    ("hilStateUpdateInterval" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [953 994])
+                    ("nextHilStatePub" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1026 1059])
+                    ("MAVLinkHILSystem" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("schema" variable (:type "MAVLinkSchema") (reparse-symbol formal_parameters) [1467 1487])
+                            ("sysId" variable (:type "int") (reparse-symbol formal_parameters) [1489 1498])
+                            ("componentId" variable (:type "int") (reparse-symbol formal_parameters) [1500 1515])
+                            ("vehicle" variable (:type "AbstractVehicle") (reparse-symbol formal_parameters) [1517 1540]))                          )
+                        (reparse-symbol class_member_declaration) [1443 1624])
+                    ("handleMessage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "MAVLinkMessage") (reparse-symbol formal_parameters) [1670 1688]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1644 5141])
+                    ("initMavLink" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5147 5635])
+                    ("endSim" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5641 6112])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("t" variable (:type "long") (reparse-symbol formal_parameters) [6151 6157]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6132 10364]))                  
+                :type "class")
+                nil [558 10367]))          
+      :file "MAVLinkHILSystem.java"
+      :pointmax 10368
+      :fsize 10367
+      :lastmodtime '(23549 3396 920585 114000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!jMAVSim!src!me!drton!jmavsim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

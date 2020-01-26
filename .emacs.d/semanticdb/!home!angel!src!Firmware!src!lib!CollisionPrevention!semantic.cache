@@ -1,0 +1,214 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CollisionPrevention/CollisionPrevention.hpp" include (:system-flag t) nil [1814 1868])
+            ("matrix" using (:type ("matrix" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1869 1892])
+            ("time_literals" using (:type ("time_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1893 1923])
+            ("CollisionPrevention" function
+               (:constructor-flag t
+                :parent "CollisionPrevention"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("ModuleParams" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1967 1988]))                  
+                :type ("CollisionPrevention" type (:type "class") nil nil))
+                nil [1926 2017])
+            ("CollisionPrevention" function
+               (:destructor-flag t
+                :parent "CollisionPrevention"
+                :type "void")
+                nil [2019 2168])
+            ("publishConstrainedSetpoint" function
+               (:parent "CollisionPrevention"
+                :arguments 
+                  ( ("original_setpoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2223 2257])
+                    ("adapted_setpoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2260 2293]))                  
+                :type "void")
+                nil [2170 2903])
+            ("calculateConstrainedSetpoint" function
+               (:parent "CollisionPrevention"
+                :arguments 
+                  ( ("setpoint" variable
+                       (:reference 1
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2960 2979])
+                    ("curr_pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3007])
+                    ("curr_vel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3008 3033]))                  
+                :type "void")
+                nil [2905 6553])
+            ("modifySetpoint" function
+               (:parent "CollisionPrevention"
+                :arguments 
+                  ( ("original_setpoint" variable
+                       (:reference 1
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6596 6624])
+                    ("max_speed" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [6625 6647])
+                    ("curr_pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6650 6675])
+                    ("curr_vel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6676 6701]))                  
+                :type "void")
+                nil [6555 7512]))          
+      :file "CollisionPrevention.cpp"
+      :pointmax 7513
+      :fsize 7512
+      :lastmodtime '(23817 439 886650 906000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_module_params.h" include (:system-flag t) nil [1877 1907])
+            ("float.h" include (:system-flag t) nil [1908 1926])
+            ("matrix/matrix/math.hpp" include (:system-flag t) nil [1927 1960])
+            ("uORB/topics/obstacle_distance.h" include (:system-flag t) nil [1961 2003])
+            ("uORB/topics/collision_constraints.h" include (:system-flag t) nil [2004 2050])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2051 2079])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2080 2108])
+            ("uORB/topics/mavlink_log.h" include (:system-flag t) nil [2109 2145])
+            ("uORB/Subscription.hpp" include (:system-flag t) nil [2146 2178])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [2179 2213])
+            ("CollisionPrevention" type
+               (:superclasses 
+                  ( ("ModuleParams" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2265 2272])
+                    ("CollisionPrevention" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :type ("ModuleParams" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2294 2315]))                          
+                        :type ("CollisionPrevention" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2274 2316])
+                    ("CollisionPrevention" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2319 2342])
+                    ("is_active" function (:type "bool") (reparse-symbol classsubparts) [2345 2405])
+                    ("modifySetpoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("original_setpoint" variable
+                               (:reference 1
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2428 2464])
+                            ("max_speed" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2465 2487])
+                            ("curr_pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2495 2528])
+                            ("curr_vel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2529 2562]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2408 2563])
+                    ("private" label nil (reparse-symbol classsubparts) [2565 2573])
+                    ("_interfering" variable (:type "bool") (reparse-symbol classsubparts) [2576 2601])
+                    ("_constraints_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2679 2718])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2754 2793])
+                    ("_sub_obstacle_distance" variable (:type ("uORB::SubscriptionData" type
+                         (:template-specifier 
+                            ( ("obstacle_distance_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2830 2924])
+                    ("RANGE_STREAM_TIMEOUT_US" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3000 3041])
+                    ("MESSAGE_THROTTLE_US" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3060 3098])
+                    ("_last_message" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3101 3130])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3482 3496])
+                    ("calculateConstrainedSetpoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("setpoint" variable
+                               (:reference 1
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3533 3560])
+                            ("curr_pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3561 3594])
+                            ("curr_vel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3602 3635]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3499 3636])
+                    ("publishConstrainedSetpoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("original_setpoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3671 3713])
+                            ("adapted_setpoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector2f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3714 3755]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3639 3756]))                  
+                :type "class")
+                nil [2215 3760]))          
+      :file "CollisionPrevention.hpp"
+      :pointmax 3761
+      :fsize 3760
+      :lastmodtime '(23817 439 886650 906000)
+      :unmatched-syntax '((semantic-list 3150 . 3479) (symbol 3133 . 3150) (semantic-list 3366 . 3409) (semantic-list 3272 . 3307) (semantic-list 3154 . 3195) (symbol 3050 . 3059) (STATIC 3043 . 3049) (symbol 2990 . 2999) (STATIC 2983 . 2989) (symbol 1871 . 1875) (symbol 1864 . 1870) (punctuation 1863 . 1864))))
+  :file "!home!angel!src!Firmware!src!lib!CollisionPrevention!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

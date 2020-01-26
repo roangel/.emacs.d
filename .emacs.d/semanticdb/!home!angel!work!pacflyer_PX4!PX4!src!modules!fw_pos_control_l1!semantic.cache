@@ -1,0 +1,746 @@
+;; Object fw_pos_control_l1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fw_pos_control_l1/"
+  :tables
+  (list
+    (semanticdb-table "FixedwingPositionControl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FixedwingPositionControl.hpp" include nil nil [1739 1778])
+            ("fw_pos_control_l1_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1827 1836])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1837 1850]))                  
+                :type "int")
+                nil [1800 1851])
+            ("l1_control::g_control" variable
+               (:pointer 1
+                :type ("FixedwingPositionControl" type (:type "class") nil nil))
+                nil [1853 1901])
+            ("_control_task" variable
+               (:typemodifiers ("static")
+                :default-value "-1"
+                :type "int")
+                nil [1902 1932])
+            ("FixedwingPositionControl" function
+               (:constructor-flag t
+                :parent "FixedwingPositionControl"
+                :type ("FixedwingPositionControl" type (:type "class") nil nil))
+                nil [1972 5964])
+            ("FixedwingPositionControl" function
+               (:destructor-flag t
+                :parent "FixedwingPositionControl"
+                :type "void")
+                nil [5966 6442])
+            ("parameters_update" function
+               (:parent "FixedwingPositionControl"
+                :type "int")
+                nil [6444 14076])
+            ("vehicle_control_mode_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [14078 14294])
+            ("vehicle_status_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [14587 15275])
+            ("manual_control_setpoint_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [15575 16195])
+            ("control_state_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [17239 18234])
+            ("vehicle_attitude_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [18252 18754])
+            ("position_setpoint_triplet_poll" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [18756 19072])
+            ("task_main_trampoline" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [19126 19135])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19136 19149]))                  
+                :type "void")
+                nil [19074 19422])
+            ("get_demanded_airspeed" function
+               (:parent "FixedwingPositionControl"
+                :type "float")
+                nil [19424 20008])
+            ("calculate_target_airspeed" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("airspeed_demand" variable (:type "float") (reparse-symbol arg-sub-list) [20068 20090]))                  
+                :type "float")
+                nil [20010 21143])
+            ("calculate_gndspeed_undershoot" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("curr_pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21206 21238])
+                    ("ground_speed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21241 21277])
+                    ("pos_sp_prev" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21280 21319])
+                    ("pos_sp_curr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21320 21359]))                  
+                :type "void")
+                nil [21145 23219])
+            ("fw_pos_ctrl_status_publish" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [23221 23579])
+            ("get_waypoint_heading_distance" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("heading" variable (:type "float") (reparse-symbol arg-sub-list) [23642 23656])
+                    ("waypoint_prev" variable
+                       (:reference 1
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23657 23692])
+                    ("waypoint_next" variable
+                       (:reference 1
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23695 23730])
+                    ("flag_init" variable (:type "bool") (reparse-symbol arg-sub-list) [23731 23746]))                  
+                :type "void")
+                nil [23581 25103])
+            ("update_desired_altitude" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [25478 25487]))                  
+                :type "bool")
+                nil [25423 27419])
+            ("do_takeoff_help" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("hold_altitude" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [27810 27831])
+                    ("pitch_limit_min" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [27832 27855]))                  
+                :type "void")
+                nil [27763 28212])
+            ("control_position" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("curr_pos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28262 28294])
+                    ("ground_speed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("math::Vector" type
+                             (:template-specifier (("2"))
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28295 28331])
+                    ("pos_sp_prev" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28334 28373])
+                    ("pos_sp_curr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("position_setpoint_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28374 28413]))                  
+                :type "bool")
+                nil [28214 60843])
+            ("get_tecs_pitch" function
+               (:parent "FixedwingPositionControl"
+                :type "float")
+                nil [60845 61040])
+            ("get_tecs_thrust" function
+               (:parent "FixedwingPositionControl"
+                :type "float")
+                nil [61042 61241])
+            ("task_main" function
+               (:parent "FixedwingPositionControl"
+                :type "void")
+                nil [61800 69136])
+            ("tecs_update_pitch_throttle" function
+               (:parent "FixedwingPositionControl"
+                :arguments 
+                  ( ("alt_sp" variable (:type "float") (reparse-symbol arg-sub-list) [70284 70297])
+                    ("airspeed_sp" variable (:type "float") (reparse-symbol arg-sub-list) [70298 70316])
+                    ("pitch_min_rad" variable (:type "float") (reparse-symbol arg-sub-list) [70319 70339])
+                    ("pitch_max_rad" variable (:type "float") (reparse-symbol arg-sub-list) [70340 70360])
+                    ("throttle_min" variable (:type "float") (reparse-symbol arg-sub-list) [70363 70382])
+                    ("throttle_max" variable (:type "float") (reparse-symbol arg-sub-list) [70383 70402])
+                    ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [70403 70425])
+                    ("climbout_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [70428 70447])
+                    ("climbout_pitch_min_rad" variable (:type "float") (reparse-symbol arg-sub-list) [70448 70477])
+                    ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70480 70493]))                  
+                :type "void")
+                nil [70226 76913])
+            ("start" function
+               (:parent "FixedwingPositionControl"
+                :type "int")
+                nil [76915 77321])
+            ("fw_pos_control_l1_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [77350 77359])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77360 77373]))                  
+                :type "int")
+                nil [77323 78388]))          
+      :file "FixedwingPositionControl.cpp"
+      :pointmax 78389
+      :fsize 78388
+      :lastmodtime '(23484 55657 913165 539000)
+      :unmatched-syntax '((symbol 1791 . 1799)))
+    (semanticdb-table "FixedwingPositionControl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FIXEDWINGPOSITIONCONTROL_HPP_" variable (:constant-flag t) nil [2251 2280])
+            ("px4_config.h" include (:system-flag t) nil [2282 2305])
+            ("px4_defines.h" include (:system-flag t) nil [2306 2330])
+            ("px4_posix.h" include (:system-flag t) nil [2331 2353])
+            ("px4_tasks.h" include (:system-flag t) nil [2354 2376])
+            ("cfloat" include (:system-flag t) nil [2378 2395])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2440 2468])
+            ("ecl/l1/ecl_l1_pos_controller.h" include (:system-flag t) nil [2469 2510])
+            ("ecl/tecs/tecs.h" include (:system-flag t) nil [2511 2537])
+            ("geo/geo.h" include (:system-flag t) nil [2538 2558])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2618 2646])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2704 2739])
+            ("uORB/Subscription.hpp" include (:system-flag t) nil [2740 2772])
+            ("uORB/topics/fw_pos_ctrl_status.h" include (:system-flag t) nil [2821 2864])
+            ("uORB/topics/manual_control_setpoint.h" include (:system-flag t) nil [2865 2913])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2914 2955])
+            ("uORB/topics/position_setpoint_triplet.h" include (:system-flag t) nil [2956 3006])
+            ("uORB/topics/sensor_bias.h" include (:system-flag t) nil [3007 3043])
+            ("uORB/topics/sensor_baro.h" include (:system-flag t) nil [3044 3080])
+            ("uORB/topics/tecs_status.h" include (:system-flag t) nil [3081 3117])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [3118 3159])
+            ("uORB/topics/vehicle_attitude_setpoint.h" include (:system-flag t) nil [3160 3210])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [3266 3311])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [3312 3360])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [3361 3408])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [3471 3510])
+            ("uORB/uORB.h" include (:system-flag t) nil [3511 3533])
+            ("uORB/topics/control_state.h" include (:system-flag t) nil [3589 3627])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [3639 3673])
+            ("HDG_HOLD_DIST_NEXT" variable
+               (:default-value "3000.0f"
+                :type "float")
+                nil [3703 3739])
+            ("HDG_HOLD_REACHED_DIST" variable
+               (:default-value "1000.0f"
+                :type "float")
+                nil [3828 3867])
+            ("HDG_HOLD_SET_BACK_DIST" variable
+               (:default-value "100.0f"
+                :type "float")
+                nil [3976 4014])
+            ("HDG_HOLD_YAWRATE_THRESH" variable
+               (:default-value "0.15f"
+                :type "float")
+                nil [4095 4133])
+            ("HDG_HOLD_MAN_INPUT_THRESH" variable
+               (:default-value "0.01f"
+                :type "float")
+                nil [4213 4254])
+            ("T_ALT_TIMEOUT" variable
+               (:default-value "1"
+                :type ("hrt_abstime" type (:type "class") nil nil))
+                nil [4353 4383])
+            ("THROTTLE_THRESH" variable
+               (:default-value "0.05f"
+                :type "float")
+                nil [4472 4503])
+            ("MANUAL_THROTTLE_CLIMBOUT_THRESH" variable
+               (:default-value "0.85f"
+                :type "float")
+                nil [4620 4667])
+            ("ALTHOLD_EPV_RESET_THRESH" variable
+               (:default-value "5.0f"
+                :type "float")
+                nil [4779 4817])
+            ("MSL_PRESSURE_MILLIBAR" variable
+               (:default-value "1013.25f"
+                :type "float")
+                nil [4836 4875])
+            ("math::constrain" using (:type ("math::constrain" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [4924 4946])
+            ("math::max" using (:type ("math::max" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [4947 4963])
+            ("math::min" using (:type ("math::min" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [4964 4980])
+            ("math::radians" using (:type ("math::radians" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [4981 5001])
+            ("matrix::Dcmf" using (:type ("matrix::Dcmf" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5003 5022])
+            ("matrix::Eulerf" using (:type ("matrix::Eulerf" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5023 5044])
+            ("matrix::Quatf" using (:type ("matrix::Quatf" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5045 5065])
+            ("matrix::Vector2f" using (:type ("matrix::Vector2f" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5066 5089])
+            ("matrix::Vector3f" using (:type ("matrix::Vector3f" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5090 5113])
+            ("uORB::Subscription" using (:type ("uORB::Subscription" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [5115 5140])
+            ("FixedwingPositionControl" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5270 5277])
+                    ("FixedwingPositionControl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FixedwingPositionControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5279 5306])
+                    ("FixedwingPositionControl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5308 5336])
+                    ("start" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5563 5582])
+                    ("task_running" function (:type "bool") (reparse-symbol classsubparts) [5659 5705])
+                    ("private" label nil (reparse-symbol classsubparts) [5707 5715])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5717 5756])
+                    ("_task_should_exit" variable (:type "bool") (reparse-symbol classsubparts) [5759 5790])
+                    ("_task_running" variable (:type "bool") (reparse-symbol classsubparts) [5834 5861])
+                    ("_global_pos_sub" variable (:type "int") (reparse-symbol classsubparts) [5915 5940])
+                    ("_local_pos_sub" variable (:type "int") (reparse-symbol classsubparts) [5942 5966])
+                    ("_pos_sp_triplet_sub" variable (:type "int") (reparse-symbol classsubparts) [5968 5997])
+                    ("_control_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [5999 6026])
+                    ("_vehicle_attitude_sub" variable (:type "int") (reparse-symbol classsubparts) [6064 6095])
+                    ("_vehicle_status_sub" variable (:type "int") (reparse-symbol classsubparts) [6230 6259])
+                    ("_params_sub" variable (:type "int") (reparse-symbol classsubparts) [6404 6425])
+                    ("_manual_control_sub" variable (:type "int") (reparse-symbol classsubparts) [6471 6500])
+                    ("_sensor_baro_sub" variable (:type "int") (reparse-symbol classsubparts) [6550 6576])
+                    ("_ctrl_state_sub" variable (:type "int") (reparse-symbol classsubparts) [6578 6603])
+                    ("_attitude_sp_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6651 6690])
+                    ("_tecs_status_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6719 6758])
+                    ("_fw_pos_ctrl_status_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6793 6839])
+                    ("_attitude_setpoint_id" variable (:type ("orb_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6886 6926])
+                    ("_fw_pos_ctrl_status" variable (:type ("fw_pos_ctrl_status_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6929 6974])
+                    ("_manual" variable (:type ("manual_control_setpoint_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7009 7046])
+                    ("_pos_sp_triplet" variable (:type ("position_setpoint_triplet_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7075 7122])
+                    ("_att" variable (:type ("vehicle_attitude_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7158 7185])
+                    ("_att_sp" variable (:type ("vehicle_attitude_setpoint_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7223 7262])
+                    ("_control_mode" variable (:type ("vehicle_control_mode_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7391 7432])
+                    ("_global_pos" variable (:type ("vehicle_global_position_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7456 7497])
+                    ("_local_pos" variable (:type ("vehicle_local_position_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7533 7572])
+                    ("_vehicle_status" variable (:type ("vehicle_status_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7714 7751])
+                    ("_ctrl_state" variable (:type ("control_state_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7777 7810])
+                    ("_sub_sensors" variable (:type ("Subscription" type
+                         (:template-specifier 
+                            ( ("sensor_bias_s" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7902 7943])
+                    ("_loop_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7946 7972])
+                    ("_hold_alt" variable (:type "float") (reparse-symbol classsubparts) [8011 8033])
+                    ("_hdg_hold_yaw" variable (:type "float") (reparse-symbol classsubparts) [8189 8215])
+                    ("_hdg_hold_enabled" variable (:type "bool") (reparse-symbol classsubparts) [8259 8289])
+                    ("_yaw_lock_engaged" variable (:type "bool") (reparse-symbol classsubparts) [8322 8352])
+                    ("_althold_epv" variable (:type "float") (reparse-symbol classsubparts) [8395 8420])
+                    ("_was_in_deadband" variable (:type "bool") (reparse-symbol classsubparts) [8487 8516])
+                    ("_hdg_hold_prev_wp" variable (:type ("position_setpoint_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8581 8622])
+                    ("_hdg_hold_curr_wp" variable (:type ("position_setpoint_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8669 8710])
+                    ("_control_position_last_called" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8759 8804])
+                    ("_airspeed_valid" variable (:type "bool") (reparse-symbol classsubparts) [10208 10236])
+                    ("_airspeed_last_received" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10287 10326])
+                    ("_airspeed" variable (:type "float") (reparse-symbol classsubparts) [10393 10415])
+                    ("_eas2tas" variable (:type "float") (reparse-symbol classsubparts) [10417 10438])
+                    ("_groundspeed_undershoot" variable (:type "float") (reparse-symbol classsubparts) [10441 10477])
+                    ("_R_nb" variable (:type ("math::Matrix" type
+                         (:template-specifier (("3") ("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [10527 10552])
+                    ("_roll" variable (:type "float") (reparse-symbol classsubparts) [10579 10597])
+                    ("_pitch" variable (:type "float") (reparse-symbol classsubparts) [10599 10618])
+                    ("_yaw" variable (:type "float") (reparse-symbol classsubparts) [10620 10637])
+                    ("_reinitialize_tecs" variable (:type "bool") (reparse-symbol classsubparts) [10640 10670])
+                    ("_is_tecs_running" variable (:type "bool") (reparse-symbol classsubparts) [10749 10778])
+                    ("_last_tecs_update" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10780 10813])
+                    ("_asp_after_transition" variable (:type "float") (reparse-symbol classsubparts) [10816 10850])
+                    ("_was_in_transition" variable (:type "bool") (reparse-symbol classsubparts) [10852 10883])
+                    ("_pos_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10915 10945])
+                    ("_alt_reset_counter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11032 11062])
+                    ("_mode_auto" variable (:type "bool") (reparse-symbol classsubparts) [11145 11167])
+                    ("_l1_control" variable (:type ("ECL_L1_Pos_Controller" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11212 11246])
+                    ("_tecs" variable (:type ("TECS" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11248 11261])
+                    ("_control_mode_current" variable (:type ("FW_POSCTRL_MODE" type
+                         (:prototype t
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [11264 11439])
+                    ("FW_POSCTRL_MODE" type
+                       (:members 
+                          ( ("FW_POSCTRL_MODE_AUTO" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11289 11310])
+                            ("FW_POSCTRL_MODE_POSITION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11313 11338])
+                            ("FW_POSCTRL_MODE_ALTITUDE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11341 11366])
+                            ("FW_POSCTRL_MODE_OTHER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [11369 11393]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [11264 11439])
+                    ("_parameters" variable (:type ("" type
+                         (:members 
+                            ( ("l1_period" variable (:type "float") (reparse-symbol classsubparts) [11575 11591])
+                              ("l1_damping" variable (:type "float") (reparse-symbol classsubparts) [11594 11611])
+                              ("time_const" variable (:type "float") (reparse-symbol classsubparts) [11615 11632])
+                              ("time_const_throt" variable (:type "float") (reparse-symbol classsubparts) [11635 11658])
+                              ("min_sink_rate" variable (:type "float") (reparse-symbol classsubparts) [11661 11681])
+                              ("max_sink_rate" variable (:type "float") (reparse-symbol classsubparts) [11684 11704])
+                              ("max_climb_rate" variable (:type "float") (reparse-symbol classsubparts) [11707 11728])
+                              ("climbout_diff" variable (:type "float") (reparse-symbol classsubparts) [11731 11751])
+                              ("heightrate_p" variable (:type "float") (reparse-symbol classsubparts) [11754 11773])
+                              ("heightrate_ff" variable (:type "float") (reparse-symbol classsubparts) [11776 11796])
+                              ("speedrate_p" variable (:type "float") (reparse-symbol classsubparts) [11799 11817])
+                              ("throttle_damp" variable (:type "float") (reparse-symbol classsubparts) [11820 11840])
+                              ("integrator_gain" variable (:type "float") (reparse-symbol classsubparts) [11843 11865])
+                              ("vertical_accel_limit" variable (:type "float") (reparse-symbol classsubparts) [11868 11895])
+                              ("height_comp_filter_omega" variable (:type "float") (reparse-symbol classsubparts) [11898 11929])
+                              ("speed_comp_filter_omega" variable (:type "float") (reparse-symbol classsubparts) [11932 11962])
+                              ("roll_throttle_compensation" variable (:type "float") (reparse-symbol classsubparts) [11965 11998])
+                              ("speed_weight" variable (:type "float") (reparse-symbol classsubparts) [12001 12020])
+                              ("pitch_damping" variable (:type "float") (reparse-symbol classsubparts) [12023 12043])
+                              ("airspeed_min" variable (:type "float") (reparse-symbol classsubparts) [12047 12066])
+                              ("airspeed_trim" variable (:type "float") (reparse-symbol classsubparts) [12069 12089])
+                              ("airspeed_max" variable (:type "float") (reparse-symbol classsubparts) [12092 12111])
+                              ("airspeed_trans" variable (:type "float") (reparse-symbol classsubparts) [12114 12135])
+                              ("pitch_limit_min" variable (:type "float") (reparse-symbol classsubparts) [12183 12205])
+                              ("pitch_limit_max" variable (:type "float") (reparse-symbol classsubparts) [12208 12230])
+                              ("roll_limit" variable (:type "float") (reparse-symbol classsubparts) [12233 12250])
+                              ("throttle_min" variable (:type "float") (reparse-symbol classsubparts) [12254 12273])
+                              ("throttle_max" variable (:type "float") (reparse-symbol classsubparts) [12276 12295])
+                              ("throttle_idle" variable (:type "float") (reparse-symbol classsubparts) [12298 12318])
+                              ("throttle_cruise" variable (:type "float") (reparse-symbol classsubparts) [12321 12343])
+                              ("throttle_slew_max" variable (:type "float") (reparse-symbol classsubparts) [12346 12370])
+                              ("throttle_alt_scale" variable (:type "float") (reparse-symbol classsubparts) [12373 12398])
+                              ("man_roll_max_rad" variable (:type "float") (reparse-symbol classsubparts) [12402 12425])
+                              ("airspeed_user_max" variable (:type "float") (reparse-symbol classsubparts) [12992 13016])
+                              ("man_roll_limit" variable (:type "float") (reparse-symbol classsubparts) [13031 13052])
+                              ("airspeed_max_std" variable (:type "float") (reparse-symbol classsubparts) [13067 13090])
+                              ("pac_man_thr_max" variable (:type "float") (reparse-symbol classsubparts) [13104 13126])
+                              ("pac_fw_r_rmax_rad" variable (:type "float") (reparse-symbol classsubparts) [13140 13164]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11564 13193])
+                    ("_parameter_handles" variable (:type ("" type
+                         (:members 
+                            ( ("l1_period" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13258 13276])
+                              ("l1_damping" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13279 13298])
+                              ("time_const" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13302 13321])
+                              ("time_const_throt" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13324 13349])
+                              ("min_sink_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13352 13374])
+                              ("max_sink_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13377 13399])
+                              ("max_climb_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13402 13425])
+                              ("climbout_diff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13428 13450])
+                              ("heightrate_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13453 13474])
+                              ("heightrate_ff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13477 13499])
+                              ("speedrate_p" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13502 13522])
+                              ("throttle_damp" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13525 13547])
+                              ("integrator_gain" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13550 13574])
+                              ("vertical_accel_limit" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13577 13606])
+                              ("height_comp_filter_omega" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13609 13642])
+                              ("speed_comp_filter_omega" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13645 13677])
+                              ("roll_throttle_compensation" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13680 13715])
+                              ("speed_weight" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13718 13739])
+                              ("pitch_damping" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13742 13764])
+                              ("airspeed_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13768 13789])
+                              ("airspeed_trim" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13792 13814])
+                              ("airspeed_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13817 13838])
+                              ("airspeed_trans" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13841 13864])
+                              ("airspeed_disabled" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13867 13893])
+                              ("pitch_limit_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13897 13921])
+                              ("pitch_limit_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13924 13948])
+                              ("roll_limit" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13951 13970])
+                              ("throttle_min" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13974 13995])
+                              ("throttle_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13998 14019])
+                              ("throttle_idle" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14022 14044])
+                              ("throttle_cruise" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14047 14071])
+                              ("throttle_slew_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14074 14100])
+                              ("throttle_alt_scale" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14103 14130])
+                              ("airspeed_user_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14764 14790])
+                              ("man_roll_limit" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14793 14816])
+                              ("airspeed_max_std" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14831 14856])
+                              ("pac_man_thr_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14871 14895])
+                              ("pac_fw_r_rmax" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14909 14931]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13247 14968])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [15066 15091])
+                    ("control_state_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15157 15184])
+                    ("control_update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15197 15220])
+                    ("manual_control_setpoint_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15222 15259])
+                    ("position_setpoint_triplet_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15261 15300])
+                    ("vehicle_attitude_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15302 15332])
+                    ("vehicle_control_mode_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15379 15413])
+                    ("vehicle_status_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15466 15494])
+                    ("fw_pos_ctrl_status_publish" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15533 15568])
+                    ("get_waypoint_heading_distance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("heading" variable (:type "float") (reparse-symbol arg-sub-list) [15921 15935])
+                            ("waypoint_prev" variable
+                               (:reference 1
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15936 15971])
+                            ("waypoint_next" variable
+                               (:reference 1
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15975 16010])
+                            ("flag_init" variable (:type "bool") (reparse-symbol arg-sub-list) [16011 16026]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15885 16027])
+                    ("do_takeoff_help" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("hold_altitude" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [16550 16571])
+                            ("pitch_limit_min" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [16572 16595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16527 16596])
+                    ("update_desired_altitude" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [16821 16830]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [16791 16831])
+                    ("control_position" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curr_pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("2"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16857 16889])
+                            ("ground_speed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("2"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16890 16926])
+                            ("pos_sp_prev" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16933 16972])
+                            ("pos_sp_curr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16973 17012]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [16834 17013])
+                    ("get_tecs_pitch" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [17016 17040])
+                    ("get_tecs_thrust" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [17042 17067])
+                    ("get_demanded_airspeed" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [17070 17101])
+                    ("calculate_target_airspeed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("airspeed_demand" variable (:type "float") (reparse-symbol arg-sub-list) [17136 17158]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [17103 17159])
+                    ("calculate_gndspeed_undershoot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curr_pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("2"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17197 17229])
+                            ("ground_speed" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("math::Vector" type
+                                     (:template-specifier (("2"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17230 17266])
+                            ("pos_sp_prev" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17270 17309])
+                            ("pos_sp_curr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("position_setpoint_s" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17310 17349]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17161 17350])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17532 17541])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [17542 17555]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17499 17556])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [17602 17620])
+                    ("tecs_update_pitch_throttle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("alt_sp" variable (:type "float") (reparse-symbol arg-sub-list) [17820 17833])
+                            ("airspeed_sp" variable (:type "float") (reparse-symbol arg-sub-list) [17834 17852])
+                            ("pitch_min_rad" variable (:type "float") (reparse-symbol arg-sub-list) [17858 17878])
+                            ("pitch_max_rad" variable (:type "float") (reparse-symbol arg-sub-list) [17879 17899])
+                            ("throttle_min" variable (:type "float") (reparse-symbol arg-sub-list) [17905 17924])
+                            ("throttle_max" variable (:type "float") (reparse-symbol arg-sub-list) [17925 17944])
+                            ("throttle_cruise" variable (:type "float") (reparse-symbol arg-sub-list) [17945 17967])
+                            ("climbout_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [17973 17992])
+                            ("climbout_pitch_min_rad" variable (:type "float") (reparse-symbol arg-sub-list) [17993 18022])
+                            ("mode" variable
+                               (:default-value "tecs_status_s"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18028 18056])
+                            ("" variable (:type ("TECS_MODE_NORMAL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18058 18075]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [17788 18076]))                  
+                :type "class")
+                nil [5237 18080])
+            ("l1_control" type
+               (:members 
+                  ( ("g_control" variable
+                       (:pointer 1
+                        :typemodifiers ("extern")
+                        :type ("FixedwingPositionControl" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18105 18148]))                  
+                :type "namespace")
+                nil [18082 18150]))          
+      :file "FixedwingPositionControl.hpp"
+      :pointmax 18216
+      :fsize 18215
+      :lastmodtime '(23437 18825 472963 383000)
+      :unmatched-syntax '((punctuation 18057 . 18058) (punctuation 18056 . 18057) (punctuation 5490 . 5491) (DELETE 5484 . 5490) (punctuation 5482 . 5483) (semantic-list 5442 . 5481) (punctuation 5441 . 5442) (OPERATOR 5433 . 5441) (symbol 5408 . 5432) (punctuation 5405 . 5406) (DELETE 5399 . 5405) (punctuation 5397 . 5398) (semantic-list 5362 . 5396) (symbol 5338 . 5362) (symbol 4826 . 4835) (STATIC 4819 . 4825) (symbol 4769 . 4778) (STATIC 4762 . 4768) (symbol 4610 . 4619) (STATIC 4603 . 4609) (symbol 4462 . 4471) (STATIC 4455 . 4461) (symbol 4343 . 4352) (STATIC 4336 . 4342) (symbol 4203 . 4212) (STATIC 4196 . 4202) (symbol 4085 . 4094) (STATIC 4078 . 4084) (symbol 3966 . 3975) (STATIC 3959 . 3965) (symbol 3818 . 3827) (STATIC 3811 . 3817) (symbol 3693 . 3702) (STATIC 3686 . 3692))
+      :lexical-table 
+        '(("FIXEDWINGPOSITIONCONTROL_HPP_")
+          )
+))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!fw_pos_control_l1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

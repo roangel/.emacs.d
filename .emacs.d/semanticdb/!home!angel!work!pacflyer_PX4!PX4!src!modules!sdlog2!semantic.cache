@@ -594,9 +594,69 @@
       :fsize 2629
       :lastmodtime '(23437 18825 492963 889000))
     (semanticdb-table "sdlog2_format.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SDLOG2_FORMAT_H_" variable (:constant-flag t) nil [2376 2392])
+            ("LOG_PACKET_HEADER_LEN" variable (:constant-flag t) nil [2402 2423])
+            ("LOG_PACKET_HEADER" variable (:constant-flag t) nil [2437 2454])
+            ("LOG_PACKET_HEADER_INIT" variable (:constant-flag t) nil [2501 2523])
+            ("HEAD_BYTE1" variable (:constant-flag t) nil [2677 2687])
+            ("HEAD_BYTE2" variable (:constant-flag t) nil [2720 2730])
+            ("log_format_s" type
+               (:members 
+                  ( ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2779 2792])
+                    ("length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2794 2809])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2851 2864])
+                    ("format" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2866 2882])
+                    ("labels" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2884 2900]))                  
+                :type "struct")
+                nil [2756 2903])
+            ("LOG_FORMAT" variable (:constant-flag t) nil [2913 2923])
+            ("LOG_FORMAT_S" variable (:constant-flag t) nil [3149 3161])
+            ("LOG_FORMAT_MSG" variable (:constant-flag t) nil [3408 3422])
+            ("LOG_PACKET_SIZE" variable (:constant-flag t) nil [3439 3454]))          
       :file "sdlog2_format.h"
+      :pointmax 3548
       :fsize 3547
-      :lastmodtime '(23437 18825 492963 889000))
+      :lastmodtime '(23437 18825 492963 889000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LOG_FORMAT" (spp-arg-list ("_name" "_format" "_labels") 2923 . 2948) . ((semantic-list "{ \\
+		.type = LOG_##_name##_MSG, \\
+			.length = sizeof(struct log_##_name##_s) + LOG_PACKET_HEADER_LEN, \\
+				  .name = #_name, \\
+					  .format = _format, \\
+						    .labels = _labels \\
+	}" 2949 . 3139)))
+          ("LOG_PACKET_HEADER" . 
+              ((symbol "uint8_t" 2462 . 2469) (symbol "head1" 2470 . 2475) (punctuation "," 2475 . 2476) (symbol "head2" 2477 . 2482) (punctuation "," 2482 . 2483) (symbol "msg_type" 2484 . 2492)))
+          ("HEAD_BYTE1" . ((number "0xA3" 2689 . 2693)))
+          ("LOG_FORMAT_MSG" . ((number "0x80" 3425 . 3429)))
+          ("HEAD_BYTE2" . ((number "0x95" 2732 . 2736)))
+          ("LOG_FORMAT_S" (spp-arg-list ("_name" "_struct_name" "_format" "_labels") 3161 . 3200) . ((semantic-list "{ \\
+		.type = LOG_##_name##_MSG, \\
+			.length = sizeof(struct log_##_struct_name##_s) + LOG_PACKET_HEADER_LEN, \\
+				  .name = #_name, \\
+					  .format = _format, \\
+						    .labels = _labels \\
+	}" 3201 . 3398)))
+          ("LOG_PACKET_HEADER_LEN" . ((number "3" 2427 . 2428)))
+          ("LOG_PACKET_SIZE" (spp-arg-list ("_name") 3454 . 3461) . 
+              ((symbol "LOG_PACKET_HEADER_LEN" 3462 . 3483) (punctuation "+" 3484 . 3485) (SIZEOF "sizeof" 3486 . 3492) (semantic-list "(struct log_##_name##_s)" 3492 . 3516)))
+          ("LOG_PACKET_HEADER_INIT" (spp-arg-list ("id") 2523 . 2527) . 
+              ((punctuation "." 2528 . 2529) (symbol "head1" 2529 . 2534) (punctuation "=" 2535 . 2536) (symbol "HEAD_BYTE1" 2537 . 2547) (punctuation "," 2547 . 2548) (punctuation "." 2549 . 2550) (symbol "head2" 2550 . 2555) (punctuation "=" 2556 . 2557) (symbol "HEAD_BYTE2" 2558 . 2568) (punctuation "," 2568 . 2569) (punctuation "." 2570 . 2571) (symbol "msg_type" 2571 . 2579) (punctuation "=" 2580 . 2581) (symbol "id" 2582 . 2584)))
+          ("SDLOG2_FORMAT_H_")
+          )
+)
     (semanticdb-table "sdlog2_messages.h"
       :major-mode 'c-mode
       :tags 
@@ -755,6 +815,7 @@
                         (reparse-symbol classsubparts) [4454 4470]))                  
                 :type "struct")
                 nil [4434 4473])
+            ("LOG_AIRS_MSG" variable (:constant-flag t) nil [4513 4525])
             ("LOG_AIRS_MSG" variable (:constant-flag t) nil [4513 4525])
             ("log_AIRS_s" type
                (:members 
@@ -1172,8 +1233,8 @@
       :file "sdlog2_messages.h"
       :pointmax 16906
       :fsize 16905
-      :lastmodtime '(23437 18825 492963 889000)
-      :unmatched-syntax '((semantic-list 11907 . 11912) (symbol 11903 . 11907) (symbol 11896 . 11902) (punctuation 11895 . 11896) (semantic-list 2079 . 2088) (symbol 2075 . 2079) (number 2086 . 2087) (symbol 2068 . 2074) (number 2086 . 2087) (punctuation 2067 . 2068))
+      :lastmodtime '(23529 30680 349270 929000)
+      :unmatched-syntax nil
       :lexical-table 
         '(("SDLOG2_MESSAGES_H_")
           ("LOG_DGPS_MSG" . ((number "58" 3546 . 3548)))

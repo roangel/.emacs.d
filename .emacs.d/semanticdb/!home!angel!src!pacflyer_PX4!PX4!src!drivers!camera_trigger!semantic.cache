@@ -1,0 +1,609 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2062 2080])
+            ("stdlib.h" include (:system-flag t) nil [2081 2100])
+            ("string.h" include (:system-flag t) nil [2101 2120])
+            ("fcntl.h" include (:system-flag t) nil [2121 2139])
+            ("stdbool.h" include (:system-flag t) nil [2140 2160])
+            ("poll.h" include (:system-flag t) nil [2161 2178])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2179 2207])
+            ("px4_workqueue.h" include (:system-flag t) nil [2208 2234])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2235 2267])
+            ("systemlib/err.h" include (:system-flag t) nil [2268 2294])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2295 2329])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [2330 2364])
+            ("matrix/math.hpp" include (:system-flag t) nil [2365 2391])
+            ("uORB/uORB.h" include (:system-flag t) nil [2394 2416])
+            ("uORB/topics/camera_trigger.h" include (:system-flag t) nil [2417 2456])
+            ("uORB/topics/camera_capture.h" include (:system-flag t) nil [2457 2496])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2497 2537])
+            ("uORB/topics/vehicle_command.h" include (:system-flag t) nil [2538 2578])
+            ("uORB/topics/vehicle_command_ack.h" include (:system-flag t) nil [2579 2623])
+            ("uORB/topics/vehicle_local_position.h" include (:system-flag t) nil [2624 2671])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [2672 2720])
+            ("uORB/topics/safety.h" include (:system-flag t) nil [2744 2775])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [2776 2817])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [2818 2863])
+            ("uORB/topics/geotag_dataman_item.h" include (:system-flag t) nil [2864 2908])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2929 2957])
+            ("interfaces/src/camera_interface.h" include nil nil [2959 3003])
+            ("interfaces/src/gpio.h" include nil nil [3004 3036])
+            ("interfaces/src/pwm.h" include nil nil [3037 3068])
+            ("interfaces/src/seagull_map2.h" include nil nil [3069 3109])
+            ("SAFETY_TIME" variable (:constant-flag t) nil [3119 3130])
+            ("camera_trigger_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3244 3253])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3254 3267]))                  
+                :type "int")
+                nil [3220 3268])
+            ("camera_interface_mode_t" variable (:type "int") nil [3467 3491])
+            ("trigger_mode_t" variable (:type "int") nil [3724 3739])
+            ("commandParamToInt" variable (:constant-flag t) nil [3749 3766])
+            ("CameraTrigger" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3840 3847])
+                    ("CameraTrigger" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CameraTrigger" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3875 3891])
+                    ("CameraTrigger" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3937 3954])
+                    ("update_intervalometer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3997 4027])
+                    ("update_distance" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4078 4102])
+                    ("update_geotag" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4155 4177])
+                    ("safety_process" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4238 4261])
+                    ("shoot_once" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("log" variable
+                               (:constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4397 4419]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4366 4421])
+                    ("set_neutral" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4475 4495])
+                    ("enable_keep_alive" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("on" variable (:type "bool") (reparse-symbol arg-sub-list) [4587 4595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4563 4596])
+                    ("toggle_power" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4642 4669])
+                    ("turn_off_long" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4726 4748])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4781 4795])
+                    ("set_sim" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4838 4854])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4886 4899])
+                    ("status" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4932 4947])
+                    ("test" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("param1" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [5007 5026]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4982 5027])
+                    ("set_trig_dist" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dist" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [5094 5111]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5074 5112])
+                    ("private" label nil (reparse-symbol classsubparts) [5114 5122])
+                    ("_engagecall" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5125 5154])
+                    ("_disengagecall" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5156 5188])
+                    ("_engage_turn_on_off_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5190 5235])
+                    ("_disengage_turn_on_off_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5237 5285])
+                    ("_keepalivecall_up" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5287 5322])
+                    ("_keepalivecall_down" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5324 5361])
+                    ("_engage_turn_off_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5393 5432])
+                    ("_setneutral_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5434 5468])
+                    ("_log_trigger_call" variable (:type ("hrt_call" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5470 5505])
+                    ("_work" variable
+                       (:typemodifiers ("static")
+                        :type ("work_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5528 5555])
+                    ("_activation_time" variable (:type "float") (reparse-symbol classsubparts) [5558 5583])
+                    ("_interval" variable (:type "float") (reparse-symbol classsubparts) [5585 5603])
+                    ("_distance" variable (:type "float") (reparse-symbol classsubparts) [5605 5624])
+                    ("_trigger_seq" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5626 5650])
+                    ("_trigger_enabled" variable (:type "bool") (reparse-symbol classsubparts) [5652 5676])
+                    ("_trigger_paused" variable (:type "bool") (reparse-symbol classsubparts) [5678 5701])
+                    ("_one_shot" variable (:type "bool") (reparse-symbol classsubparts) [5703 5720])
+                    ("_test_shot" variable (:type "bool") (reparse-symbol classsubparts) [5722 5740])
+                    ("_turning_on" variable (:type "bool") (reparse-symbol classsubparts) [5742 5762])
+                    ("_last_shoot_position" variable (:type ("matrix::Vector2f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5764 5803])
+                    ("_valid_position" variable (:type "bool") (reparse-symbol classsubparts) [5805 5828])
+                    ("_trig_dist_cmd" variable (:type "float") (reparse-symbol classsubparts) [5857 5880])
+                    ("_gps_time_offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5882 5909])
+                    ("_trigger_offset" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5911 5937])
+                    ("_poll_interval_usec" variable (:type "int") (reparse-symbol classsubparts) [5939 5966])
+                    ("_gps_time_initialized" variable (:type "bool") (reparse-symbol classsubparts) [5968 5997])
+                    ("_preflight_required" variable (:type "bool") (reparse-symbol classsubparts) [5999 6027])
+                    ("_trig_dist_updated" variable (:type "bool") (reparse-symbol classsubparts) [6029 6055])
+                    ("_sim" variable (:type "bool") (reparse-symbol classsubparts) [6057 6069])
+                    ("_do_neutral" variable (:type "bool") (reparse-symbol classsubparts) [6071 6091])
+                    ("_safety_process_complete" variable (:type "bool") (reparse-symbol classsubparts) [6093 6126])
+                    ("_geotag_dataman_item" variable (:type ("geotag_dataman_item_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6153 6203])
+                    ("_safety" variable (:type ("safety_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6205 6231])
+                    ("_command_sub" variable (:type "int") (reparse-symbol classsubparts) [6254 6273])
+                    ("_lpos_sub" variable (:type "int") (reparse-symbol classsubparts) [6275 6291])
+                    ("_safety_sub" variable (:type "int") (reparse-symbol classsubparts) [6315 6333])
+                    ("_vgposition_sub" variable (:type "int") (reparse-symbol classsubparts) [6335 6357])
+                    ("_vattitude_sub" variable (:type "int") (reparse-symbol classsubparts) [6359 6380])
+                    ("_vgpsposition_sub" variable (:type "int") (reparse-symbol classsubparts) [6382 6406])
+                    ("_trigger_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6429 6456])
+                    ("_cmd_ack_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6458 6485])
+                    ("_geotag_dataman_item_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6509 6548])
+                    ("_mavlink_log_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6550 6581])
+                    ("_p_mode" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6604 6622])
+                    ("_p_activation_time" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6624 6653])
+                    ("_p_interval" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6655 6677])
+                    ("_p_distance" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6679 6701])
+                    ("_p_interface" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6703 6726])
+                    ("_p_offset" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6728 6748])
+                    ("_trigger_mode" variable (:type ("trigger_mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6763 6793])
+                    ("_camera_interface_mode" variable (:type ("camera_interface_mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6796 6843])
+                    ("_camera_interface" variable
+                       (:pointer 1
+                        :type ("CameraInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6845 6881])
+                    ("cycle_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6986 6996]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6957 6997])
+                    ("engage" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7046 7056]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7027 7057])
+                    ("log_trigger" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7118 7128]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7094 7129])
+                    ("disengage" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7182 7192]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7160 7193])
+                    ("engange_turn_on_off" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7254 7264]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7222 7265])
+                    ("engage_turn_off" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7354 7364]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7326 7365])
+                    ("engange_set_neutral" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7441 7451]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7409 7452])
+                    ("disengage_turn_on_off" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7517 7527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7483 7528])
+                    ("keep_alive_up" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7596 7606]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7570 7607])
+                    ("keep_alive_down" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7678 7688]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7650 7689]))                  
+                :type "class")
+                nil [3818 7693])
+            ("CameraTrigger::_work" variable (:type ("work_s" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [7695 7730])
+            ("camera_trigger" type
+               (:members 
+                  ( ("g_camera_trigger" variable
+                       (:pointer 1
+                        :type ("CameraTrigger" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7760 7792]))                  
+                :type "namespace")
+                nil [7732 7794])
+            ("CameraTrigger" function
+               (:constructor-flag t
+                :parent "CameraTrigger"
+                :type ("CameraTrigger" type (:type "class") nil nil))
+                nil [7796 12221])
+            ("CameraTrigger" function
+               (:destructor-flag t
+                :parent "CameraTrigger"
+                :type "void")
+                nil [12223 12333])
+            ("update_intervalometer" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [12335 12929])
+            ("update_distance" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [12931 14171])
+            ("update_geotag" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [14187 15373])
+            ("safety_process" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [15389 18418])
+            ("enable_keep_alive" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("on" variable (:type "bool") (reparse-symbol arg-sub-list) [18458 18466]))                  
+                :type "void")
+                nil [18420 18887])
+            ("toggle_power" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [18889 19205])
+            ("shoot_once" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("log" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [19252 19267]))                  
+                :type "void")
+                nil [19207 19795])
+            ("set_neutral" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [19840 20008])
+            ("turn_off_long" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [20069 20701])
+            ("start" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [20722 22141])
+            ("set_sim" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [22197 22244])
+            ("stop" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [22265 22679])
+            ("test" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("param1" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [22720 22739]))                  
+                :type "void")
+                nil [22681 23531])
+            ("set_trig_dist" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("dist" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [23636 23653]))                  
+                :type "void")
+                nil [23602 23709])
+            ("cycle_trampoline" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23767 23777]))                  
+                :type "void")
+                nil [23730 34124])
+            ("engage" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34153 34163]))                  
+                :type "void")
+                nil [34126 34966])
+            ("disengage" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34998 35008]))                  
+                :type "void")
+                nil [34968 35118])
+            ("engange_turn_on_off" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35160 35170]))                  
+                :type "void")
+                nil [35120 35289])
+            ("log_trigger" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35334 35344]))                  
+                :type "void")
+                nil [35302 35606])
+            ("engange_set_neutral" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35666 35676]))                  
+                :type "void")
+                nil [35626 35786])
+            ("engage_turn_off" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [35858 35868]))                  
+                :type "void")
+                nil [35822 35980])
+            ("disengage_turn_on_off" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36040 36050]))                  
+                :type "void")
+                nil [35998 36170])
+            ("keep_alive_up" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36206 36216]))                  
+                :type "void")
+                nil [36172 36333])
+            ("keep_alive_down" function
+               (:parent "CameraTrigger"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36371 36381]))                  
+                :type "void")
+                nil [36335 36499])
+            ("status" function
+               (:parent "CameraTrigger"
+                :type "void")
+                nil [36501 37431])
+            ("usage" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [37433 37574])
+            ("camera_trigger_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [37600 37609])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37610 37623]))                  
+                :type "int")
+                nil [37576 39058]))          
+      :file "camera_trigger.cpp"
+      :pointmax 39059
+      :fsize 39058
+      :lastmodtime '(23798 26597 843346 820000)
+      :unmatched-syntax '((semantic-list 3516 . 3723) (symbol 3508 . 3515) (punctuation 3506 . 3507) (ENUM 3501 . 3505) (TYPEDEF 3493 . 3500) (semantic-list 3293 . 3466) (symbol 3285 . 3292) (punctuation 3283 . 3284) (ENUM 3278 . 3282) (TYPEDEF 3270 . 3277) (symbol 3211 . 3219))
+      :lexical-table 
+        '(("SAFETY_TIME" . 
+              ((number "12" 3134 . 3136) (punctuation "*" 3137 . 3138) (number "1000" 3139 . 3143) (punctuation "*" 3144 . 3145) (number "1000" 3146 . 3150)))
+          ("commandParamToInt" (spp-arg-list ("n") 3766 . 3769) . 
+              ((symbol "static_cast" 3770 . 3781) (punctuation "<" 3781 . 3782) (INT "int" 3782 . 3785) (punctuation ">" 3785 . 3786) (semantic-list "(n >= 0 ? n + 0.5f : n - 0.5f)" 3786 . 3816)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_INTERFACE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2201 2216]))                  
+                :type "int")
+                nil [2182 2220])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_INTERVAL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2444 2458]))                  
+                :type "int")
+                nil [2425 2468])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_POLARITY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2720 2734]))                  
+                :type "int")
+                nil [2701 2738])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_ACT_TIME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2956 2970]))                  
+                :type "int")
+                nil [2937 2979])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_PINS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3851 3861]))                  
+                :type "int")
+                nil [3832 3866])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_DISTANCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4057 4071]))                  
+                :type "int")
+                nil [4038 4079])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TRIG_OFFSET" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4361 4373]))                  
+                :type "int")
+                nil [4342 4379]))          
+      :file "camera_trigger_params.c"
+      :pointmax 4391
+      :fsize 4390
+      :lastmodtime '(23827 33130 972557 383000)
+      :unmatched-syntax '((number 4374 . 4377) (number 4072 . 4077) (number 3862 . 3864) (number 2971 . 2977) (number 2735 . 2736) (number 2459 . 2466) (number 2217 . 2218))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!camera_trigger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

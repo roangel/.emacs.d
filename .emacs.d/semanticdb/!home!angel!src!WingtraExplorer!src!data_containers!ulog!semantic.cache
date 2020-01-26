@@ -1,0 +1,346 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Provides LoggindData and LoggingDataHelper class that stores time series information about all logged variables
+as well as additional calculated variables
+\"\"\"" code nil nil [1 162])
+            ("__author__" variable nil nil [164 204])
+            ("__license__" variable nil nil [205 224])
+            ("re" include nil nil [227 236])
+            ("os" include nil nil [237 246])
+            ("sys" include nil nil [247 257])
+            ("pandas" include nil nil [258 277])
+            ("numpy" include nil nil [278 296])
+            ("time" include nil nil [297 308])
+            ("pickle" include nil nil [309 322])
+            ("logging" include nil nil [323 337])
+            ("copy" include nil nil [338 363])
+            ("pathlib" include nil nil [364 388])
+            ("collections" include nil nil [389 424])
+            ("src.utilities" include nil nil [426 479])
+            ("logger" variable nil nil [481 540])
+            ("VEHICLE_STATUS_TOPIC" variable nil nil [542 583])
+            ("LoggingData" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [673 694])
+                            ("for" code nil (reparse-symbol indented_block_body) [703 1080])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1088 1142])
+                            ("helper_info" variable nil (reparse-symbol indented_block_body) [1152 1206])
+                            ("helper_info" variable nil (reparse-symbol indented_block_body) [1215 1280])
+                            ("helper_info" variable nil (reparse-symbol indented_block_body) [1289 1366])
+                            ("forward_transition_lines, back_transition_lines" code nil (reparse-symbol indented_block_body) [1376 1453])
+                            ("helper_info" variable nil (reparse-symbol indented_block_body) [1462 1512])
+                            ("helper_info" variable nil (reparse-symbol indented_block_body) [1521 1568])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1578 1622]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [625 629])
+                            ("data_list" variable nil (reparse-symbol function_parameters) [631 640])
+                            ("helper_info" variable nil (reparse-symbol function_parameters) [649 662]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [612 1932])
+                    ("get_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2067 2071])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [2073 2083])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [2085 2095]))                          
+                        :documentation "Provides a safe method to extract data by its topic and field names.
+        * field_name can either be a single string, or a list of field names
+        * If the data cannot be accessed by the given (topic_name, field_name) combination,
+          it checks if the data is available under an alternative name set,
+          as topic and field names can change from one software version to the other.
+        * In case a list of field_names is passed as an argument, and one or more of the fields
+          do not exist in the current log, it checks for alternative names of
+          (topic_name, field_name) combination of individual fields
+          and concatenates the resulting dataframes if not empty.
+        * If no data is found for the given (topic_name, field_name) combination
+          as well as its alternatives, an empty dataframe is returned.
+        ")
+                        (reparse-symbol indented_block_body) [2054 3722])
+                    ("get_data_for_alt_topic_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3760 3764])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [3766 3776])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [3778 3788]))                          
+                        :documentation "Given a topic_name, field_name combination, checks for its alternative names
+        and returns the corresponding dataframe in case its found, otherwise returns an empty dataframe
+        ")
+                        (reparse-symbol indented_block_body) [3727 4221])
+                    ("get_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4239 4243])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [4245 4255])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [4257 4267]))                          
+                        :documentation "Provides a method to extract the correct names for a topic and field name in this logging_data.
+        * If the data contains the given (topic_name, field_name) combination, then this is just directly returned
+        * If the data does not contain the given (topic_name, field_name) combination,
+          it checks if the data contains an alternative name set, as topic and field names can change
+          from one software version to the other and returns this
+        * If the data doesn't contain the (topic_name, field_name) combination and there is no alternative,
+          empty strings are returned.
+        ")
+                        (reparse-symbol indented_block_body) [4226 5855])
+                    ("get_alternate_names_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5889 5893]))                          )
+                        (reparse-symbol indented_block_body) [5860 6135])
+                    ("get_cruise_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6160 6164])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [6166 6176])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [6178 6188]))                          )
+                        (reparse-symbol indented_block_body) [6140 6777])
+                    ("get_hover_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6801 6805])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [6807 6817])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [6819 6829])
+                            ("offset" variable nil (reparse-symbol function_parameters) [6836 6842]))                          
+                        :documentation "offset: determines how many seconds after BT to consider for hover regime.")
+                        (reparse-symbol indented_block_body) [6782 7198])
+                    ("get_hover_data_segments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7231 7235])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [7237 7247])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [7249 7259])
+                            ("offset" variable nil (reparse-symbol function_parameters) [7266 7272]))                          
+                        :documentation "offset: determines how many seconds after BT to consider for hover regime.")
+                        (reparse-symbol indented_block_body) [7203 8486])
+                    ("get_armed_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8510 8514])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [8516 8526])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [8528 8538]))                          )
+                        (reparse-symbol indented_block_body) [8491 8844])
+                    ("get_postflight_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8873 8877])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [8879 8889])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [8891 8901]))                          )
+                        (reparse-symbol indented_block_body) [8849 9144])
+                    ("get_valid_GPS_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9172 9176])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [9178 9188])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [9190 9200]))                          )
+                        (reparse-symbol indented_block_body) [9149 9597])
+                    ("get_control_mode_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9628 9632])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [9634 9644])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [9646 9656])
+                            ("get_data_fn_str" variable nil (reparse-symbol function_parameters) [9658 9673])
+                            ("modes" variable nil (reparse-symbol function_parameters) [9686 9691]))                          
+                        :documentation "Return data for given topic and field for the given control mode.")
+                        (reparse-symbol indented_block_body) [9602 10286])
+                    ("get_control_mode_intervals" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10322 10326])
+                            ("modes" variable nil (reparse-symbol function_parameters) [10328 10333]))                          )
+                        (reparse-symbol indented_block_body) [10291 10946])
+                    ("get_control_mode_transitions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10984 10988]))                          )
+                        (reparse-symbol indented_block_body) [10951 11650])
+                    ("remove_non_armed_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11681 11685]))                          )
+                        (reparse-symbol indented_block_body) [11655 11952])
+                    ("get_arming_interval" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11981 11985]))                          )
+                        (reparse-symbol indented_block_body) [11957 12356])
+                    ("get_arming_interval_in_utc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12392 12396]))                          )
+                        (reparse-symbol indented_block_body) [12361 12643])
+                    ("get_common_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12752 12756])
+                            ("topics" variable nil (reparse-symbol function_parameters) [12758 12764])
+                            ("fields" variable nil (reparse-symbol function_parameters) [12766 12772])
+                            ("get_data_fn_str" variable nil (reparse-symbol function_parameters) [12774 12789]))                          
+                        :documentation " Given fields from 2 or more different topics with potentially different indices (timestamps), return a common dataframe
+        with resampled data and optionally select regime (hover,cruise) of interest. Examples:
+        1) Combine two different topics
+        *******************************
+        Input: topics = ['a', 'b'], fields=[['col3', 'col4'], ['col1', 'col2']]
+        a                       b
+                col3  col4          col1 col2
+        1.5     4     1         1   3    2
+        2.5     5     6         2   4    1
+        3.5     6     3         3   5    6
+        7.5     8     7         4   6    3
+        9.5     9     8         8   8    7
+                                9   9    8
+        Returns:
+              col3  col4  col1  col2
+        1.0   NaN   NaN   3.0   2.0
+        1.5   4.0   1.0   3.0   2.0
+        2.0   4.0   1.0   4.0   1.0
+        2.5   5.0   6.0   4.0   1.0
+        3.0   5.0   6.0   5.0   6.0
+        3.5   6.0   3.0   5.0   6.0
+        4.0   6.0   3.0   6.0   3.0
+        7.5   8.0   7.0   6.0   3.0
+        8.0   8.0   7.0   8.0   7.0
+        9.0   8.0   7.0   9.0   8.0
+        9.5   9.0   8.0   9.0   8.0
+
+        2) Combine more than two different topics and fields
+        ****************************************************
+        Input:     topics= ['a', 'b', 'c', 'd'], fields = [['field1'], None, None, ['field2', 'field3','field4']]
+        Result:    The resulting dataframe will contain fields field1, field2, field3, field3 
+                   and all fields that are part of topics b and c.
+        Note: if there are duplicate names in the two topics, e.g. 'landed' field is present in both
+        mpc_debug and vehicle_land_detected, then the returned dataframe will have the columns named thus:
+        Input: topic1='mpc_debug', field1='landed', topic2='vehicle_land_detected', field2='landed'
+        Returns:
+            landed_0 landed_1
+        ... ...      ...
+        ... ...      ...
+        3) Get specific regime data
+        ***************************
+        If one wants only hover data the variable get_data_fn_str needs to be defined as 'get_hover_data'
+        respectively for cruise only as 'get_cruise_data'.        
+        ")
+                        (reparse-symbol indented_block_body) [12732 15445])
+                    ("get_transition_lines" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15475 15479]))                          )
+                        (reparse-symbol indented_block_body) [15450 16279])
+                    ("get_norm" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16297 16301])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [16303 16313])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [16315 16325])
+                            ("get_data_fn_str" variable nil (reparse-symbol function_parameters) [16332 16347]))                          )
+                        (reparse-symbol indented_block_body) [16284 16583])
+                    ("get_sum" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16600 16604])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [16606 16616])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [16618 16628]))                          )
+                        (reparse-symbol indented_block_body) [16588 16721])
+                    ("get_product" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16742 16746])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [16748 16758])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [16760 16770]))                          )
+                        (reparse-symbol indented_block_body) [16726 16864])
+                    ("get_arctan2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16885 16889])
+                            ("topic" variable nil (reparse-symbol function_parameters) [16891 16896])
+                            ("field1" variable nil (reparse-symbol function_parameters) [16898 16904])
+                            ("field2" variable nil (reparse-symbol function_parameters) [16906 16912]))                          )
+                        (reparse-symbol indented_block_body) [16869 17120])
+                    ("get_deg_from_rad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17146 17150])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [17152 17162])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [17164 17174]))                          )
+                        (reparse-symbol indented_block_body) [17125 17353])
+                    ("get_rad_from_deg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17379 17383])
+                            ("topic_name" variable nil (reparse-symbol function_parameters) [17385 17395])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [17397 17407]))                          )
+                        (reparse-symbol indented_block_body) [17358 17586]))                  
+                :type "class")
+                nil [586 17586])
+            ("LoggingDataHelper" type
+               (:members 
+                  ( ("STRING_DEFAULT" variable nil (reparse-symbol indented_block_body) [17619 17641])
+                    ("DICT_DEFAULT" variable nil (reparse-symbol indented_block_body) [17646 17663])
+                    ("LIST_DEFAULT" variable nil (reparse-symbol indented_block_body) [17668 17685])
+                    ("TUPLE_DEFAULT" variable nil (reparse-symbol indented_block_body) [17690 17712])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [17754 17772])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17781 17854])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17863 17926])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17935 18000])
+                            ("self" code nil (reparse-symbol indented_block_body) [18009 18075])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18084 18149])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18158 18220])
+                            ("self" code nil (reparse-symbol indented_block_body) [18229 18302])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18311 18400])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18409 18486])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18495 18572])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18581 18658])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18667 18740])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18749 18819])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18828 18885])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18894 18959])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18968 19055])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19065 19145])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19154 19236])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19245 19419])
+                            ("True" code nil (reparse-symbol indented_block_body) [19513 19517])
+                            ("False" code nil (reparse-symbol indented_block_body) [19595 19600]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17731 17735])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17737 17743]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17718 19601])
+                    ("set_start_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19625 19629])
+                            ("start_time" variable nil (reparse-symbol function_parameters) [19631 19641]))                          )
+                        (reparse-symbol indented_block_body) [19606 19869])
+                    ("set_armed_area_utc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19897 19901])
+                            ("armed_area_utc" variable nil (reparse-symbol function_parameters) [19903 19917]))                          )
+                        (reparse-symbol indented_block_body) [19874 20027])
+                    ("get_utc_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20049 20053])
+                            ("time_in_usec" variable nil (reparse-symbol function_parameters) [20055 20067]))                          )
+                        (reparse-symbol indented_block_body) [20032 20159]))                  
+                :type "class")
+                nil [17588 20159]))          
+      :file "logging_data.py"
+      :pointmax 20159
+      :fsize 20158
+      :lastmodtime '(23901 29133 617221 974000)
+      :unmatched-syntax '((NAME 19526 . 19530) (IF 19557 . 19559) (ELSE 19590 . 19594) (NAME 19428 . 19432) (IF 19459 . 19461) (ELSE 19508 . 19512) (RETURN 12538 . 12544) (IF 12564 . 12566) (ELSE 12588 . 12592) (RETURN 12276 . 12282) (IF 12302 . 12304) (ELSE 12317 . 12321) (NAME 5624 . 5633) (IF 5646 . 5648) (ELSE 5665 . 5669) (INDENT_BLOCK 1761 . 1932) (NEWLINE 1760 . 1761) (COLON 1759 . 1760) (TRY 1631 . 1634) (AS 1754 . 1756))))
+  :file "!home!angel!src!WingtraExplorer!src!data_containers!ulog!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

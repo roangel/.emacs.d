@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("uORB/topics/differential_pressure.h" include (:system-flag t) nil [1812 1858])
+            ("__orb_differential_pressure_fields" variable
+               (:dereference 1
+                :default-value "\"uint64_t timestamp;uint64_t error_count;uint32_t error_dp_out_count;uint32_t error_d_dp_out_count;float differential_pressure_raw_pa;float differential_pressure_filtered_pa;float temperature;uint32_t device_id;uint8_t sensor_fail_code;uint8_t[7] _padding0;\""
+                :type "char")
+                nil [1870 2173])
+            ("ORB_DEFINE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("differential_pressure" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2186 2208])
+                    ("" variable (:type ("differential_pressure_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [2209 2240])
+                    ("" variable (:type ("__orb_differential_pressure_fields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2280]))                  
+                :type "int")
+                nil [2175 2281]))          
+      :file "differential_pressure.cpp"
+      :pointmax 2283
+      :fsize 2282
+      :lastmodtime '(23614 1131 29123 409000)
+      :unmatched-syntax '((number 2241 . 2243) (symbol 1860 . 1869))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default!msg!topics_sources!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("lib/FlightTasks/tasks/FlightTask/FlightTask.hpp" include (:system-flag t) nil [1932 1990])
+            ("lib/FlightTasks/tasks/ManualAltitude/FlightTaskManualAltitude.hpp" include (:system-flag t) nil [1991 2067])
+            ("lib/FlightTasks/tasks/ManualAltitudeSmooth/FlightTaskManualAltitudeSmooth.hpp" include (:system-flag t) nil [2068 2156])
+            ("lib/FlightTasks/tasks/AutoLine/FlightTaskAutoLine.hpp" include (:system-flag t) nil [2157 2221])
+            ("lib/FlightTasks/tasks/AutoLineSmoothVel/FlightTaskAutoLineSmoothVel.hpp" include (:system-flag t) nil [2222 2304])
+            ("lib/FlightTasks/tasks/Failsafe/FlightTaskFailsafe.hpp" include (:system-flag t) nil [2305 2369])
+            ("lib/FlightTasks/tasks/Transition/FlightTaskTransition.hpp" include (:system-flag t) nil [2370 2438])
+            ("TaskUnion" type
+               (:members 
+                  ( ("TaskUnion" function (:type "int") (reparse-symbol classsubparts) [2659 2673])
+                    ("TaskUnion" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2678 2693])
+                    ("manualAltitude" variable (:type ("FlightTaskManualAltitude" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2699 2739])
+                    ("manualAltitudeSmooth" variable (:type ("FlightTaskManualAltitudeSmooth" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2744 2796])
+                    ("autoLine" variable (:type ("FlightTaskAutoLine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2801 2829])
+                    ("autoLineSmoothVel" variable (:type ("FlightTaskAutoLineSmoothVel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2834 2880])
+                    ("failsafe" variable (:type ("FlightTaskFailsafe" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2885 2913])
+                    ("transition" variable (:type ("FlightTaskTransition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2918 2950]))                  
+                :type "union")
+                nil [2637 2953]))          
+      :file "FlightTasks_generated.hpp"
+      :pointmax 2954
+      :fsize 2766
+      :lastmodtime '(23884 21724 53449 218000)
+      :unmatched-syntax '((punctuation 2634 . 2635) (semantic-list 2473 . 2634) (INT 2469 . 2472) (punctuation 2467 . 2468) (symbol 2451 . 2466) (CLASS 2445 . 2450) (ENUM 2440 . 2444) (symbol 1894 . 1898) (symbol 1887 . 1893) (punctuation 1886 . 1887)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FlightTasks.hpp" include nil nil [1893 1919])
+            ("FlightTasks_generated.hpp" include nil nil [1920 1956])
+            ("_initTask" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("task_index" variable (:type ("FlightTaskIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 2012]))                  
+                :type "int")
+                nil [1958 3038])
+            ("switchVehicleCommand" function
+               (:parent "FlightTasks"
+                :arguments 
+                  ( ("command" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3090 3108]))                  
+                :type ("FlightTaskIndex" type (:type "class") nil nil))
+                nil [3040 3210]))          
+      :file "FlightTasks_generated.cpp"
+      :pointmax 3210
+      :fsize 3209
+      :lastmodtime '(23884 21724 57449 248000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default!src!lib!FlightTasks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("mathlib.h" include nil nil [1904 1924]))          
+      :file "mathlib.cpp"
+      :pointmax 2419
+      :fsize 2418
+      :lastmodtime '(23798 26604 851394 257000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MATHLIB_H" variable (:constant-flag t) nil [1920 1929])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2306 2334]))          
+      :file "mathlib.h"
+      :pointmax 2379
+      :fsize 2378
+      :lastmodtime '(23798 26604 851394 257000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MATHLIB_H")
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!lib!ecl!mathlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

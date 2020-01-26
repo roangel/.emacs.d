@@ -1,7 +1,430 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_main.cpp"))
+(("/home/angel/.gitconfig" . 229)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/navigator/land.cpp" . 2990)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/manual_input/manual_input.cpp" . 6816)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/manual_input_rc/manual_input_rc.cpp" . 5305)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/vtol_att_control/vtol_type.cpp" . 6610)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/commander/commander.cpp" . 6631)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_control_mode.msg" . 1039)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/estimator_status.msg" . 6342)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_local_position.msg" . 364)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/PreflightCheck.cpp" . 5957)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_messages.cpp" . 56244)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/state_machine_helper.h" . 2408)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/moment_force_mapping_params.c" . 3603)
+ ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/rcS" . 10164)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pos_control/mc_pos_control_main.cpp" . 25956)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/gnd_att_control/GroundRoverAttitudeControl.hpp" . 5195)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/gnd_att_control/GroundRoverAttitudeControl.cpp" . 7555)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/fw_att_control/fw_att_control_main.cpp" . 22859)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/fw_pos_control_l1/FixedwingPositionControl.hpp" . 15228)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/fw_pos_control_l1/FixedwingPositionControl.cpp" . 65805)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/vtol_att_control/vtol_att_control_main.cpp" . 10014)
+ ("/home/angel/work/obc/libmavconn/CMakeLists.txt" . 826)
+ ("/home/angel/work/obc/libmavconn/Makefile" . 1201)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/manual_control_setpoint.msg" . 1742)
+ ("/home/angel/work/obc/mavlink_generator/createRPiHeader" . 305)
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/Commander.hpp" . 2704)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/navigator/navigator_main.cpp" . 20163)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander_helper.h" . 2440)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander_helper.cpp" . 3484)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/state_machine_helper.cpp" . 18839)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/rc_update.cpp" . 27411)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/position_setpoint.msg" . 650)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_status.msg" . 776)
+ ("/home/angel/.emacs.d/init.el" . 43680)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_gyro.m" . 102)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/main.m" . 986)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander_params.c" . 82)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_params.c" . 157)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/battery_status.msg" . 348)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/systemlib/battery_params.c" . 4739)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/fix_time_array.m" . 357)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/flight_statistics.m" . 1253)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pos_control/mc_pos_control_params.c" . 7881)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/ll40ls/LidarLiteI2C.cpp" . 5131)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_params.c" . 10762)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/systemlib/event_logging.c" . 510)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/msgs_2018_10_05_11_11_12.txt" . 3364)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/msgs_2018_10_03_12_39_26.txt" . 5221)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/msgs_2018_10_05_12_49_47.txt" . 5417)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/msgs_2018_10_03_11_59_35.txt" . 2189)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/sess005/preflight_perf001.txt" . 311)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/sess005/postflight_perf001.txt" . 339)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/msgs_2018_10_03_10_50_29.txt" . 2206)
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/MSGS_2~6.TXT" . 6870)
+ ("/home/angel/work/obc/Makefile" . 346)
+ ("/home/angel/work/obc/frontend/sources/camerafunc.cpp" . 22096)
+ ("/home/angel/work/obc/frontend/sources/command.cpp" . 432)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander.cpp" . 58218)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth.h" . 3249)
+ ("/home/angel/work/obc/frontend/sources/main.h" . 4680)
+ ("/home/angel/work/obc/frontend/sources/main.cpp" . 5692)
+ ("/home/angel/work/obc/watchdog/sources/main.cpp" . 5207)
+ ("/home/angel/work/obc/wiringPi/INSTALL" . 118)
+ ("/home/angel/work/obc/out/bin/px_uploader.py" . 3079)
+ ("/home/angel/work/obc/wingtra_echo" . 2872)
+ ("/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init/ekf2/wingtra_tailsitter" . 2784)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_mag.m" . 1364)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_posVel.m" . 393)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_offset.m" . 311)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_hoverGPS.m" . 561)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_sensBias.m" . 960)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_airspeed.m" . 719)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_cruiseGPS.m" . 564)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_posVelInnov.m" . 554)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/ekf_flags.m" . 761)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/preprocessing_tests/plot_annotatedFtData.m" . 408)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/utilities/v_line.m" . 2856)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/hline_vline/v_line.m" . 2891)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/attitude_controller_old_data.m" . 1094)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/haversine_distance.m" . 568)
+ ("/home/angel/work/postprocessing/postprocessing/state_estimation/compare_results/EvaluateSimulation.m" . 530)
+ ("/home/angel/work/postprocessing/postprocessing/state_estimation/sysvector_to_paul_riseborough/LoadPX4StackData.m" . 205)
+ ("/home/angel/work/postprocessing/postprocessing/state_estimation/main.m" . 953)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/preprocessing_tests/main_postprocessing.m" . 7107)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/preprocessing_tests/extractdatapoints.m" . 486)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/update_GUI.m" . 6005)
+ ("/home/angel/work/postprocessing/postprocessing/state_estimation/presentation/utilities/export_fig.m" . 23420)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/utilities/export_fig.m" . 23420)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/preprocessing_tests/importpx4log.m" . 899)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/natsortfiles.m" . 1585)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/natsort.m" . 7429)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/export_fig.m" . 23420)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/importpx4log.m" . 1790)
+ ("/home/angel/Downloads/sample.tex" . 55062)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/compare_mag_calibration.m" . 637)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/trajectory.m" . 6926)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/to_euler_avoid_gimbal.m" . 108)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/dcm_to_angle.m" . 346)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/dcm_to_euler.m" . 110)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/angle_to_dcm.m" . 513)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/euler213_to_dcm.m" . 67)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/quat_to_angle.m" . 542)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/quat_to_rotm.m" . 35)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/rotm_to_eul.m" . 44)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_control.m" . 763)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/position_controller.m" . 7804)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/mag_calibration.m" . 2846)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/get_curpt.m" . 591)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/plot_video.m" . 2042)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/prunedata.m" . 705)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/estimator_to_video.m" . 220)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/attitude_controller.m" . 11823)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/get_pts.m" . 679)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/Position_GUI.m" . 6936)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/hline_vline/h_line.m" . 2960)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/h_line.m" . 857)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/utilities/h_line.m" . 2960)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/eul_to_rotm.m" . 206)
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img/x_z_ADP_LQR.tex" . 5419)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/quat_to_dcm.m" . 10)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/mag_heading.m" . 640)
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img/thrust_MPC_ADP.tex" . 12293)
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img/x_z_MPC_ADP.tex" . 6736)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/auto_processing.m" . 4661)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/power_meas_postprocessing.m" . 289)
+ ("/home/angel/Downloads/my-priv-things/org/work_wingtra.odt" . 601)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/get_rect.m" . 580)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_params.c" . 19077)
+ ("/home/angel/work/LOGS_folder/blocked_planes/20181102_stringtest_1348/msgs_2018_11_02_09_59_11.txt" . 1600)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/moment_force_mapping_main.cpp" . 5023)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/helpfuncs/helpfuncs.h" . 8212)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/sdlog2_format.h" . 1054)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/automated_report.m" . 11224)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_distSensor.m" . 1559)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_imu.m" . 724)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_receiver.cpp" . 61600)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_main.cpp" . 54042)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/mag_calibration.cpp" . 26034)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf_helper.cpp" . 3731)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf.h" . 11813)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/airspeed_fusion.cpp" . 12374)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/estimator_interface.h" . 16511)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/sbs_da_status1.msg" . 294)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/sdlog2_messages.h" . 11416)
+ ("/home/angel/work/pacflyer_PX4/PX4/CMakeLists.txt" . 1324)
+ ("/home/angel/work/pacflyer_PX4/PX4/Makefile" . 2408)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/ekf.cpp" . 5196)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/common.h" . 5019)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/estimator_interface.cpp" . 6754)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/ekf2/ekf2_main.cpp" . 7141)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/sensor_combined.msg" . 1472)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/common.h" . 1887)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/voted_sensors_update.h" . 8275)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/voted_sensors_update.cpp" . 27803)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/uavcan/sensors/sensor_bridge.hpp" . 2833)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/sbs_da_status2.msg" . 357)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/ist8310/ist8310.cpp" . 23362)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_baro.m" . 160)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/sbs_lifetime_data2.msg" . 46)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/batt_smbus_wingtra/sbs.h" . 3562)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/camera_trigger/camera_trigger.cpp" . 12131)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/camera_trigger/interfaces/src/seagull_map2.cpp" . 2273)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/stm32/adc/adc.cpp" . 9315)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/CMakeLists.txt" . 4020)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/nan_mean.m" . 1003)
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/preprocessing_tests/plot_mxflankcandidates.m" . 849)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/Postprocessing_GUI.m" . 29260)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_battery_RTH.m" . 2099)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth_params.c" . 2970)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/rth_energy/rth_energy.cpp" . 3877)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/adaptive_rth.cpp" . 2897)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_main.cpp" . 42367)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_level_horizon.m" . 1055)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/mc_att_control_params.c" . 676)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/test_currentCalib.m" . 186)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/systemlib/param/param.c" . 5078)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/systemlib/battery.cpp" . 3722)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/parameters.h" . 4107)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/mc_att_control_main.cpp" . 16382)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/parameters.cpp" . 23395)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/sensor_params.c" . 5546)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/accelerometer_calibration.cpp" . 29457)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/preprocessing_Fcn.m" . 5390)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/battery.m" . 12916)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/sensor_params_battery.c" . 4657)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/sensors.cpp" . 15372)
+ ("/home/angel/work/postprocessing/postprocessing/analysis/untitled.m" . 1433)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/control_state.msg" . 1850)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/drv_adc.h" . 2391)
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/sbs_id_data.msg" . 40)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2_format.h" . 862)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/batt_smbus_wingtra/batt_smbus.cpp" . 39899)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2.c" . 122345)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/mavlink/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/mavlink/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Tools"))
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo"))
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/gazebo_wingtra_vtol_model.cpp" . 15285)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2_messages.h" . 25481)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/gazebo_imu_plugin.cpp" . 11866)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/gazebo_gps_plugin.cpp"))
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/include/gazebo_gps_plugin.h" . 3350)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/gazebo_gps_plugin.cpp" . 9876)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/include/gazebo_mavlink_interface.h" . 9485)
+ ("/home/angel/work/pacflyer_PX4/PX4/Tools/sitl_gazebo/src/gazebo_mavlink_interface.cpp" . 42123)
+ ("/home/angel/.emacs.d/recentf" . 1893)
+ ("/home/angel/Downloads/"
+  (dired-filename . "/home/angel/Downloads/astyle"))
+ ("/home/angel/work/"
+  (dired-filename . "/home/angel/work/LOGS_folder"))
+ ("/home/angel/work/LOGS_folder/"
+  (dired-filename . "/home/angel/work/LOGS_folder/temperature"))
+ ("/home/angel/work/LOGS_folder/temperature/"
+  (dired-filename . "/home/angel/work/LOGS_folder/temperature/pre_flight_log_id_data"))
+ ("/home/angel/work/LOGS_folder/temperature/pre_flight_log_id_data/"
+  (dired-filename . "/home/angel/work/LOGS_folder/temperature/pre_flight_log_id_data/log"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/.."))
+ ("/home/angel/work/postprocessing/postprocessing/analysis/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis/utilities"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/batt_smbus_wingtra/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/drivers/batt_smbus_wingtra/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/drivers/.."))
+ ("/home/angel/work/pacflyer_PX4/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/sensors/sensor_params_battery.c"))
+ ("/home/angel/work/pacflyer_PX4/PX4/msg/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/msg/sbs_id_data.msg"))
+ ("/home/angel/work/postprocessing/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing"))
+ ("/home/angel/work/postprocessing/postprocessing/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis"))
+ ("/home/angel/work/postprocessing/postprocessing/analysis/tests/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis/tests/.."))
+ ("/home/angel/work/postprocessing/postprocessing/analysis/utilities/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis/utilities/median_filter.m"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/drivers/camera_trigger/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/drivers/camera_trigger/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander_tests"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/lib/ecl/EKF/airspeed_fusion.cpp"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/ekf2/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/ekf2/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/.."))
+ ("/home/angel/"
+  (dired-filename . "/home/angel/work"))
+ ("/home/angel/work/LOGS_folder/blocked_planes/"
+  (dired-filename . "/home/angel/work/LOGS_folder/blocked_planes/20181102_stringtest_1348"))
+ ("/home/angel/work/LOGS_folder/blocked_planes/20181102_stringtest_1348/"
+  (dired-filename . "/home/angel/work/LOGS_folder/blocked_planes/20181102_stringtest_1348/msgs_2018_11_02_09_59_11.txt"))
+ ("/home/angel/work/pacflyer_PX4/PX4/mavlink/include/mavlink/v1.0/ASLUAV/mavlink_msg_sens_power.h" . 8137)
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/sec/04_numerical.tex" . 16086)
+ ("/home/angel/paper/"
+  (dired-filename . "/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc"))
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/sec/"
+  (dired-filename . "/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/sec/.."))
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/"
+  (dired-filename . "/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img"))
+ ("/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img/"
+  (dired-filename . "/home/angel/paper/paper-adp-2018-nonlinearquads-for-ecc/img/thrust_MPC_ADP.tex"))
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/utilities/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/wind_tunnel/utilities/.."))
+ ("/home/angel/work/postprocessing/postprocessing/wind_tunnel/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/wind_tunnel/.."))
+ ("/home/angel/Downloads/my-priv-things/org/work_wingtra.org" . 11479)
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/helpfuncs/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/lib/helpfuncs/helpfuncs.h"))
+ ("/home/angel/Downloads/my-priv-things/org/"
+  (dired-filename . "/home/angel/Downloads/my-priv-things/org/work_wingtra.org"))
+ ("/home/angel/work/postprocessing/postprocessing/analysis/system_id/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis/system_id/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/lib/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/lib/helpfuncs"))
+ ("/home/angel/work/postprocessing/postprocessing/analysis/hline_vline/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/analysis/hline_vline/v_line.m"))
+ ("/home/angel/work/obc/shared_libs_arm/"
+  (dired-filename . "/home/angel/work/obc/shared_libs_arm/.."))
+ ("/home/angel/work/obc/arduino/"
+  (dired-filename . "/home/angel/work/obc/arduino/.."))
+ ("/home/angel/work/obc/frontend/sources/"
+  (dired-filename . "/home/angel/work/obc/frontend/sources/.."))
+ ("/home/angel/work/obc/frontend/.obj/"
+  (dired-filename . "/home/angel/work/obc/frontend/.obj/.."))
+ ("/home/angel/work/obc/tools/"
+  (dired-filename . "/home/angel/work/obc/tools/.."))
+ ("/home/angel/work/obc/CImg/plugins/"
+  (dired-filename . "/home/angel/work/obc/CImg/plugins/.."))
+ ("/home/angel/work/obc/CImg/"
+  (dired-filename . "/home/angel/work/obc/CImg/.."))
+ ("/home/angel/work/obc/doc/"
+  (dired-filename . "/home/angel/work/obc/doc/.."))
+ ("/home/angel/work/obc/watchdog/sources/"
+  (dired-filename . "/home/angel/work/obc/watchdog/sources/.."))
+ ("/home/angel/work/obc/wiringPi/debian/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/debian/.."))
+ ("/home/angel/work/obc/wiringPi/devLib/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/devLib/.."))
+ ("/home/angel/work/obc/wiringPi/gpio/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/gpio/.."))
+ ("/home/angel/work/obc/wiringPi/pins/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/pins/.."))
+ ("/home/angel/work/obc/wiringPi/wiringPi/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/wiringPi/.."))
+ ("/home/angel/work/obc/wiringPi/wiringPiD/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/wiringPiD/.."))
+ ("/home/angel/work/obc/wiringPi/"
+  (dired-filename . "/home/angel/work/obc/wiringPi/.."))
+ ("/home/angel/work/obc/out/bin/"
+  (dired-filename . "/home/angel/work/obc/out/bin/.."))
+ ("/home/angel/work/obc/out/"
+  (dired-filename . "/home/angel/work/obc/out/.."))
+ ("/home/angel/work/obc/examples/"
+  (dired-filename . "/home/angel/work/obc/examples/.."))
+ ("/home/angel/work/obc/watchdog/"
+  (dired-filename . "/home/angel/work/obc/watchdog/.."))
+ ("/home/angel/Downloads/my-priv-things/"
+  (dired-filename . "/home/angel/Downloads/my-priv-things/org"))
+ ("/home/angel/work/obc/frontend/scripts/"
+  (dired-filename . "/home/angel/work/obc/frontend/scripts/.."))
+ ("/home/angel/work/obc/frontend/"
+  (dired-filename . "/home/angel/work/obc/frontend/.."))
+ ("/home/angel/work/obc/"
+  (dired-filename . "/home/angel/work/obc/.."))
+ ("/home/angel/work/obc/out/lib/"
+  (dired-filename . "/home/angel/work/obc/out/lib/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/sess005/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/sess005/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/log/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1081_Birri/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/sess056/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/sess056/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/msgs/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/msgs/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181008_1247_Birri/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1246_Birri/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20181005_1246_Birri/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180911_1227_OberwilLieli/sess043/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180911_1227_OberwilLieli/sess043/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180919_1227_OberwilLieli/msgs/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180919_1227_OberwilLieli/msgs/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/log/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/log/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/Reports/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/Reports/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180920_1047_OberwilLieli/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/log/msgs/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/log/msgs/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/log/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/log/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180927_1110_Aesch/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180911_1227_OberwilLieli/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180911_1227_OberwilLieli/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180912_1227_OberwilLieli/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180912_1227_OberwilLieli/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180919_1227_OberwilLieli/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180919_1227_OberwilLieli/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180924_1247_Bonstetten/log/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180924_1247_Bonstetten/log/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180924_1247_Bonstetten/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180924_1247_Bonstetten/.."))
+ ("/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/"
+  (dired-filename . "/home/angel/FLIGHT_LOGS_SS1.9_ORGANISED/20180919_1227_OberwilLieli"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_params.c"))
+ ("/home/angel/work/postprocessing/postprocessing/predict_mapping/"
+  (dired-filename . "/home/angel/work/postprocessing/postprocessing/predict_mapping/.."))
+ ("/home/angel/work/WingtraPilot/"
+  (dired-filename . "/home/angel/work/WingtraPilot/QGCInstaller.pri"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/navigator/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/navigator/navigator_mode.h"))
+ ("/home/angel/work/WingtraPilot/test/"
+  (dired-filename . "/home/angel/work/WingtraPilot/test/.."))
+ ("/home/angel/WingtraPilot/"
+  (dired-filename . "/home/angel/WingtraPilot/Logs"))
+ ("/home/angel/WingtraPilot/Logs/"
+  (dired-filename . "/home/angel/WingtraPilot/Logs/20180910_174142.txt"))
+ ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common"))
+ ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d"))
+ ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/moment_force_mapping_main.cpp"))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/commander/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/commander/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/nodes/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/platforms/ros/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/platforms/.."))
+ ("/home/angel/work/pacflyer_PX4/PX4/posix-configs/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL"))
+ ("/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init"))
+ ("/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init/ekf2"))
+ ("/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init/ekf2/"
+  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/posix-configs/SITL/init/ekf2/wingtra_tailsitter"))
+ ("/home/angel/work/WingtraPilot/src/Vehicle/"
+  (dired-filename . "/home/angel/work/WingtraPilot/src/Vehicle/.."))
+ ("/home/angel/work/WingtraPilot/src/"
+  (dired-filename . "/home/angel/work/WingtraPilot/src/Vehicle"))
  ("/home/angel/eProsima_FastCDR-1.0.7-Linux/install-sh" . 13259)
  ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_command_ack.msg" . 593)
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mavlink/mavlink_main.cpp" . 57437)
@@ -10,87 +433,25 @@
  ("/home/angel/.profile" . 616)
  ("/home/angel/.bashrc" . 3737)
  ("/home/angel/work/pacflyer_PX4/PX4/Tools/px_uploader.py" . 9266)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_main.cpp" . 40078)
  ("/home/angel/Downloads/WingtraPilot/wingtra-pilot.sh" . 146)
- ("/home/angel/Downloads/my-priv-things/org/work_wingtra.org" . 6769)
  ("/home/angel/Downloads/astyle/build/gcc/Makefile" . 4726)
- ("/home/angel/work/pacflyer_PX4/PX4/msg/battery_status.msg" . 139)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_params.c" . 5341)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/mc_att_control_params.c" . 82)
  ("/home/angel/work/pacflyer_PX4/.git/hooks/pre-push" . 3557)
  ("/home/angel/work/pacflyer_PX4/doc/pre-push-PX4" . 5054)
- ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/rcS" . 10206)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/state_machine_helper.cpp" . 3088)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/sdlog2_messages.h" . 11504)
  ("/home/angel/work/pacflyer_PX4/PX4/msg/telemetry_status.msg" . 519)
  ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_roi.msg" . 37)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2_format.h" . 2343)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/sdlog2.c" . 4060)
  ("/home/angel/work/pacflyer_PX4/PX4/platforms/nuttx/NuttX/nuttx/libc/time/lib_localtime.c" . 237)
- ("/home/angel/work/WingtraPilot/src/Vehicle/StringReplacement.json" . 4149)
- ("/home/angel/work/pacflyer_PX4/PX4/msg/motor_check_trig.msg" . 13)
- ("/home/angel/work/pacflyer_PX4/PX4/msg/vehicle_status.msg" . 2002)
- ("/home/angel/work/pacflyer_PX4/PX4/Makefile" . 16460)
- ("/home/angel/work/pacflyer_PX4/PX4/msg/motor_check_res.msg" . 347)
- ("/home/angel/work/pacflyer_PX4/PX4/msg/CMakeLists.txt" . 3952)
  ("/usr/share/emacs/24.5/lisp/whitespace.el.gz" . 16729)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/moment_force_mapping_main.cpp" . 41785)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2_messages.h" . 21755)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander.cpp" . 110844)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pc_wingtra/mc_pc_wingtra_main.cpp" . 8517)
- ("/home/angel/.emacs.d/init.el" . 1576)
- ("/home/angel/.emacs.d/recentf" . 1528)
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2_wingtra/sdlog2.c"))
  ("/home/angel/.emacs.d/"
   (dired-filename . "/home/angel/.emacs.d/abbrev_defs"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/moment_force_mapping/moment_force_mapping_main.cpp"))
  ("/home/angel/.emacs.d/elpa/smart-tabs-mode-20160629.1452/smart-tabs-mode-autoloads.el" . 1886)
- ("/home/angel/work/pacflyer_PX4/PX4/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Makefile"))
- ("/home/angel/work/pacflyer_PX4/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4"))
- ("/home/angel/work/pacflyer_PX4/PX4/msg/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/msg/CMakeLists.txt"))
  ("/home/angel/work/pacflyer_PX4/PX4/platforms/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/platforms/nuttx"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/sdlog2/sdlog2.c"))
- ("/home/angel/"
-  (dired-filename . "/home/angel/work"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/commander/commander.cpp"))
  ("/home/angel/work/pacflyer_PX4/PX4/Documentation/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Documentation/.."))
  ("/home/angel/work/pacflyer_PX4/PX4/.github/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/.github/.."))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/.."))
- ("/home/angel/work/pacflyer_PX4/PX4/src/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/.."))
- ("/home/angel/work/"
-  (dired-filename . "/home/angel/work/WingtraPilot"))
- ("/home/angel/work/WingtraPilot/"
-  (dired-filename . "/home/angel/work/WingtraPilot/src"))
- ("/home/angel/work/WingtraPilot/src/"
-  (dired-filename . "/home/angel/work/WingtraPilot/src/Vehicle"))
- ("/home/angel/work/WingtraPilot/src/Vehicle/"
-  (dired-filename . "/home/angel/work/WingtraPilot/src/Vehicle/StringReplacement.json"))
  ("/home/angel/work/pacflyer_PX4/PX4/build/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default"))
- ("/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs"))
- ("/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/sess001/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/sess001/.."))
- ("/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/build/posix_sitl_default/logs/sess001"))
- ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common"))
- ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d"))
- ("/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/ROMFS/px4fmu_common/init.d/rcS"))
  ("/home/angel/work/pacflyer_PX4/.git/branches/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/.git/branches/.."))
  ("/home/angel/work/pacflyer_PX4/.git/hooks/"
@@ -99,32 +460,20 @@
   (dired-filename . "/home/angel/work/pacflyer_PX4/.git/.."))
  ("/home/angel/work/pacflyer_PX4/doc/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/doc/.."))
- ("/home/angel/Downloads/"
-  (dired-filename . "/home/angel/Downloads/astyle"))
  ("/home/angel/Downloads/astyle/"
   (dired-filename . "/home/angel/Downloads/astyle/build"))
  ("/home/angel/Downloads/astyle/build/"
   (dired-filename . "/home/angel/Downloads/astyle/build/gcc"))
  ("/home/angel/Downloads/astyle/build/gcc/"
   (dired-filename . "/home/angel/Downloads/astyle/build/gcc/Makefile"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/geometric_controller/geometric_controller_main.cpp"))
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/attitude_estimator_q/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/attitude_estimator_q/.."))
  ("/home/angel/Downloads/WingtraPilot/"
   (dired-filename . "/home/angel/Downloads/WingtraPilot/.."))
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/px4iofirmware/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/px4iofirmware/.."))
- ("/home/angel/work/pacflyer_PX4/PX4/Tools/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/Tools/px_uploader.py"))
- ("/home/angel/Downloads/my-priv-things/org/"
-  (dired-filename . "/home/angel/Downloads/my-priv-things/org/.."))
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/output_pwm/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/output_pwm/output_pwm.cpp"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_att_control/CMakeLists.txt"))
- ("/home/angel/work/pacflyer_PX4/PX4/src/platforms/"
-  (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/platforms/.."))
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pos_control/"
   (dired-filename . "/home/angel/work/pacflyer_PX4/PX4/src/modules/mc_pos_control/.."))
  ("/home/angel/work/pacflyer_PX4/PX4/src/modules/mavlink/"
@@ -137,8 +486,6 @@
   (dired-filename . "/home/angel"))
  ("/home/angel/eProsima_FastCDR-1.0.7-Linux/"
   (dired-filename . "/home/angel/eProsima_FastCDR-1.0.7-Linux/.."))
- ("/home/angel/Downloads/my-priv-things/"
-  (dired-filename . "/home/angel/Downloads/my-priv-things/.."))
  ("/"
   (dired-filename . "/.."))
  ("/../"

@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1830 1853])
+            ("px4_tasks.h" include (:system-flag t) nil [1854 1876])
+            ("px4_posix.h" include (:system-flag t) nil [1877 1899])
+            ("px4_getopt.h" include (:system-flag t) nil [1900 1923])
+            ("px4_defines.h" include (:system-flag t) nil [1924 1948])
+            ("px4_log.h" include (:system-flag t) nil [1949 1969])
+            ("px4_module.h" include (:system-flag t) nil [1970 1993])
+            ("stdio.h" include (:system-flag t) nil [1995 2013])
+            ("stdlib.h" include (:system-flag t) nil [2014 2033])
+            ("string.h" include (:system-flag t) nil [2034 2053])
+            ("stdbool.h" include (:system-flag t) nil [2054 2074])
+            ("unistd.h" include (:system-flag t) nil [2075 2094])
+            ("fcntl.h" include (:system-flag t) nil [2095 2113])
+            ("poll.h" include (:system-flag t) nil [2114 2131])
+            ("sys/ioctl.h" include (:system-flag t) nil [2132 2154])
+            ("sys/stat.h" include (:system-flag t) nil [2155 2176])
+            ("arch/board/board.h" include (:system-flag t) nil [2233 2262])
+            ("systemlib/systemlib.h" include nil nil [2264 2296])
+            ("systemlib/err.h" include nil nil [2297 2323])
+            ("systemlib/param/param.h" include nil nil [2324 2358])
+            ("drivers/drv_pwm_output.h" include nil nil [2359 2394])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2414 2433]))                  
+                :type "void")
+                nil [2396 2434])
+            ("pwm_main" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2471 2480])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2481 2494]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2458 2495])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2528 2547]))                  
+                :type "void")
+                nil [2510 6375])
+            ("get_parameter_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("option" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6413 6432])
+                    ("paramDescription" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6433 6462]))                  
+                :type "unsigned int")
+                nil [6377 7198])
+            ("pwm_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7213 7222])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7223 7236]))                  
+                :type "int")
+                nil [7200 24151]))          
+      :file "pwm.cpp"
+      :pointmax 24152
+      :fsize 24151
+      :lastmodtime '(23770 52090 871808 227000)
+      :unmatched-syntax '((symbol 2449 . 2457))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!systemcmds!pwm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

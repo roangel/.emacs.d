@@ -1,0 +1,172 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_log.h" include nil nil [1869 1889])
+            ("px4_posix.h" include nil nil [1890 1912])
+            ("px4_workqueue.h" include nil nil [1913 1939])
+            ("px4_time.h" include nil nil [1940 1961])
+            ("hrt_work.h" include nil nil [1962 1983])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1984 2012])
+            ("unistd.h" include (:system-flag t) nil [2013 2032])
+            ("stdio.h" include (:system-flag t) nil [2033 2051])
+            ("stdlib.h" include (:system-flag t) nil [2052 2071])
+            ("errno.h" include (:system-flag t) nil [2072 2090])
+            ("stdbool.h" include (:system-flag t) nil [2091 2111])
+            ("signal.h" include (:system-flag t) nil [2138 2157])
+            ("fcntl.h" include (:system-flag t) nil [2166 2184])
+            ("sched.h" include (:system-flag t) nil [2185 2203])
+            ("unistd.h" include (:system-flag t) nil [2204 2223])
+            ("string.h" include (:system-flag t) nil [2224 2243])
+            ("sys/stat.h" include (:system-flag t) nil [2245 2266])
+            ("sys/types.h" include (:system-flag t) nil [2267 2289])
+            ("string" include (:system-flag t) nil [2290 2307])
+            ("px4_tasks.h" include (:system-flag t) nil [2309 2331])
+            ("systemlib/err.h" include (:system-flag t) nil [2332 2358])
+            ("MAX_CMD_LEN" variable (:constant-flag t) nil [2368 2379])
+            ("PX4_MAX_TASKS" variable (:constant-flag t) nil [2393 2406])
+            ("SHELL_TASK_ID" variable (:constant-flag t) nil [2418 2431])
+            ("_shell_task_id" variable
+               (:default-value "0"
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [2451 2480])
+            ("task_entry" type
+               (:members 
+                  ( ("pid" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2503 2517])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2519 2536])
+                    ("isused" variable (:type "bool") (reparse-symbol classsubparts) [2538 2550])
+                    ("task_entry" function
+                       (:constructor-flag t
+                        :type ("task_entry" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2552 2583]))                  
+                :type "struct")
+                nil [2482 2586])
+            ("taskmap" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("task_entry" type (:type "class") nil nil))
+                nil [2588 2629])
+            ("pthdata_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("entry" variable (:type ("px4_main_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2649 2666])
+                          ("argc" variable (:type "int") (reparse-symbol classsubparts) [2668 2677])
+                          ("argv" variable
+                             (:pointer 1
+                              :dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2679 2692]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2631 2741])
+            ("entry_adapter" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2770 2780]))                  
+                :type "void")
+                nil [2743 3024])
+            ("px4_systemreset" function
+               (:arguments 
+                  ( ("to_bootloader" variable (:type "bool") (reparse-symbol arg-sub-list) [3047 3066]))                  
+                :type "void")
+                nil [3026 3133])
+            ("px4_task_spawn_cmd" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3165 3182])
+                    ("scheduler" variable (:type "int") (reparse-symbol arg-sub-list) [3183 3197])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [3198 3211])
+                    ("stack_size" variable (:type "int") (reparse-symbol arg-sub-list) [3212 3227])
+                    ("entry" variable (:type ("px4_main_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3228 3245])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3255 3274]))                  
+                :type ("px4_task_t" type (:type "class") nil nil))
+                nil [3135 6327])
+            ("px4_task_delete" function
+               (:arguments 
+                  ( ("id" variable (:type ("px4_task_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6349 6363]))                  
+                :type "int")
+                nil [6329 6755])
+            ("px4_task_exit" function
+               (:arguments 
+                  ( ("ret" variable (:type "int") (reparse-symbol arg-sub-list) [6776 6784]))                  
+                :type "void")
+                nil [6757 7183])
+            ("px4_task_kill" function
+               (:arguments 
+                  ( ("id" variable (:type ("px4_task_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7203 7217])
+                    ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [7218 7226]))                  
+                :type "int")
+                nil [7185 7545])
+            ("px4_show_tasks" function (:type "void") nil [7547 7853])
+            ("px4_getpid" function (:type ("px4_task_t" type (:type "class") nil nil)) nil [7855 8141])
+            ("px4_get_taskname" function
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [8144 8373])
+            ("timer_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8396 8407]))                  
+                :type "void")
+                nil [8375 8483])
+            ("px4_sem_timedwait" function
+               (:arguments 
+                  ( ("sem" variable
+                       (:pointer 1
+                        :type ("px4_sem_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8507 8522])
+                    ("ts" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8523 8549]))                  
+                :type "int")
+                nil [8485 8990])
+            ("px4_prctl" function
+               (:arguments 
+                  ( ("option" variable (:type "int") (reparse-symbol arg-sub-list) [9006 9017])
+                    ("arg2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9018 9035])
+                    ("pid" variable (:type ("px4_task_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9036 9051]))                  
+                :type "int")
+                nil [8992 9304]))          
+      :file "px4_qurt_tasks.cpp"
+      :pointmax 9305
+      :fsize 9304
+      :lastmodtime '(23770 52090 867808 203000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_CMD_LEN" . ((number "100" 2380 . 2383)))
+          ("PX4_MAX_TASKS" . ((number "50" 2407 . 2409)))
+          ("SHELL_TASK_ID" . ((semantic-list "(PX4_MAX_TASKS+1)" 2432 . 2449)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!platforms!qurt!px4_layer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

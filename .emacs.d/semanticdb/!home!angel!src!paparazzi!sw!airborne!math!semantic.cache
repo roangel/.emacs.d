@@ -1,0 +1,1710 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PPRZ_ALGEBRA_INT_H" variable (:constant-flag t) nil [951 969])
+            ("int32_mat_mul" function
+               (:type "void"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 2
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24335 24347])
+                    ("a" variable
+                       (:pointer 2
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24348 24360])
+                    ("b" variable
+                       (:pointer 2
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24361 24373])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [24374 24380])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [24381 24387])
+                    ("l" variable (:type "int") (reparse-symbol arg-sub-list) [24388 24394]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [24302 24578])
+            ("int32_vect_find" function
+               (:type "bool"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24004 24021])
+                    ("s" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24022 24038])
+                    ("loc" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24039 24048])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24049 24061]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23969 24198])
+            ("int32_vect_smul" function
+               (:type "void"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23702 23713])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23714 23731])
+                    ("s" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23732 23748])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23749 23761]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23667 23821])
+            ("int32_vect_sub" function
+               (:type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23549 23560])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23561 23578])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23579 23591]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23515 23648])
+            ("int32_vect_add" function
+               (:type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23400 23411])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23412 23429])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23430 23442]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23366 23499])
+            ("int32_vect_mul" function
+               (:type "void"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23227 23238])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23239 23256])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23257 23274])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23275 23287]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23193 23350])
+            ("int32_vect_diff" function
+               (:type "void"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23036 23047])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23048 23065])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23066 23083])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23084 23096]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [23001 23159])
+            ("int32_vect_sum" function
+               (:type "void"
+                :arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22859 22870])
+                    ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22871 22888])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22889 22906])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22907 22919]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [22825 22982])
+            ("int32_vect_copy" function
+               (:type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22708 22719])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22720 22737])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22738 22750]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [22673 22806])
+            ("int32_vect_set_value" function
+               (:type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22563 22574])
+                    ("v" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22575 22591])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22592 22604]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [22523 22657])
+            ("int32_vect_zero" function
+               (:type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22418 22429])
+                    ("n" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22430 22442]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [22383 22496])
+            ("INT32_EULERS_DOT_OF_RATES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22132 22157])
+            ("INT32_EULERS_DOT_321_OF_RATES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21931 21960])
+            ("INT32_RATES_OF_EULERS_DOT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21734 21759])
+            ("INT32_RATES_OF_EULERS_DOT_321" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21533 21562])
+            ("int32_eulers_dot_of_rates" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21426 21451])
+            ("int32_eulers_dot_321_of_rates" function
+               (:type "void"
+                :arguments 
+                  ( ("ed" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21347 21370])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21371 21393])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21394 21415]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21305 21416])
+            ("int32_rates_of_eulers_dot_321" function
+               (:type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21235 21256])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21257 21279])
+                    ("ed" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21280 21303]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21193 21304])
+            ("INT_RATES_LSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21035 21051])
+            ("INT_RATES_RSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20870 20886])
+            ("INT_RATES_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20816 20830])
+            ("INT32_EULERS_RSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20601 20620])
+            ("INT32_EULERS_LSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20416 20435])
+            ("INT32_EULERS_OF_QUAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20254 20274])
+            ("INT32_EULERS_OF_RMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20091 20111])
+            ("int32_eulers_of_quat" function
+               (:type "void"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19995 20017])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20018 20038]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19962 20039])
+            ("int32_eulers_of_rmat" function
+               (:type "void"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19916 19938])
+                    ("rm" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19939 19960]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19883 19961])
+            ("INT_EULERS_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19835 19850])
+            ("INT32_QUAT_OF_RMAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19648 19666])
+            ("INT32_QUAT_OF_AXIS_ANGLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19463 19487])
+            ("INT32_QUAT_OF_EULERS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19302 19322])
+            ("INT32_QUAT_VMULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19134 19150])
+            ("INT32_QUAT_INTEGRATE_FI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18935 18958])
+            ("INT32_QUAT_DERIVATIVE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18758 18779])
+            ("INT32_QUAT_INV_COMP_NORM_SHORTEST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18535 18568])
+            ("INT32_QUAT_COMP_NORM_SHORTEST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18324 18353])
+            ("INT32_QUAT_INV_COMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18143 18162])
+            ("INT32_QUAT_COMP_INV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17962 17981])
+            ("INT32_QUAT_COMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17793 17808])
+            ("INT32_QUAT_NORMALIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17645 17665])
+            ("INT32_QUAT_WRAP_SHORTEST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17485 17509])
+            ("INT32_QUAT_NORM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17340 17355])
+            ("INT32_QUAT_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17201 17216])
+            ("int32_quat_of_rmat" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17107 17127])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17128 17148]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17076 17149])
+            ("int32_quat_of_axis_angle" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16978 16998])
+                    ("uv" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16999 17021])
+                    ("angle" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17022 17036]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16941 17037])
+            ("int32_quat_of_eulers" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16630 16650])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16651 16673]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16597 16674])
+            ("int32_quat_vmult" function
+               (:type "void"
+                :arguments 
+                  ( ("v_out" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16489 16514])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16515 16535])
+                    ("v_in" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16536 16560]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16460 16561])
+            ("int32_quat_integrate_fi" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16213 16233])
+                    ("hr" variable
+                       (:pointer 1
+                        :type ("Int64Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16234 16255])
+                    ("omega" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16256 16281])
+                    ("freq" variable (:type "int") (reparse-symbol arg-sub-list) [16282 16291]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16177 16292])
+            ("int32_quat_derivative" function
+               (:type "void"
+                :arguments 
+                  ( ("qd" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16018 16039])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16040 16067])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16068 16088]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15984 16089])
+            ("int32_quat_inv_comp_norm_shortest" function
+               (:type "void"
+                :arguments 
+                  ( ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15789 15811])
+                    ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15812 15834])
+                    ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15835 15857]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15743 15858])
+            ("int32_quat_comp_inv_norm_shortest" function
+               (:type "void"
+                :arguments 
+                  ( ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15541 15563])
+                    ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15564 15586])
+                    ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15587 15609]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15495 15610])
+            ("int32_quat_comp_norm_shortest" function
+               (:type "void"
+                :arguments 
+                  ( ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15294 15316])
+                    ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15317 15339])
+                    ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15340 15362]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15252 15363])
+            ("int32_quat_inv_comp" function
+               (:type "void"
+                :arguments 
+                  ( ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15060 15082])
+                    ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15083 15105])
+                    ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15106 15128]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15028 15129])
+            ("int32_quat_comp_inv" function
+               (:type "void"
+                :arguments 
+                  ( ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14845 14867])
+                    ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14868 14890])
+                    ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14891 14913]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14813 14914])
+            ("int32_quat_comp" function
+               (:type "void"
+                :arguments 
+                  ( ("a2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14631 14653])
+                    ("a2b" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14654 14676])
+                    ("b2c" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14677 14699]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14603 14700])
+            ("int32_quat_normalize" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14238 14258]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [14198 14499])
+            ("int32_quat_wrap_shortest" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14080 14100]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [14036 14158])
+            ("int32_quat_norm" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13906 13926]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [13867 14034])
+            ("int32_quat_identity" function
+               (:type "void"
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13740 13760]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [13701 13835])
+            ("INT32_RMAT_OF_EULERS_312" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13459 13483])
+            ("INT32_RMAT_OF_EULERS_321" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13284 13308])
+            ("INT32_RMAT_OF_EULERS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13117 13137])
+            ("INT32_RMAT_OF_QUAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12960 12978])
+            ("INT32_RMAT_TRANSP_RATEMULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12764 12790])
+            ("INT32_RMAT_RATEMULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12583 12602])
+            ("INT32_RMAT_TRANSP_VMULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12390 12413])
+            ("INT32_RMAT_VMULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12218 12234])
+            ("INT32_RMAT_COMP_INV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12025 12044])
+            ("INT32_RMAT_COMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11844 11859])
+            ("int32_rmat_of_eulers" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11747 11767])
+            ("int32_rmat_of_eulers_312" function
+               (:type "void"
+                :arguments 
+                  ( ("rm" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11653 11674])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11675 11697]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11616 11698])
+            ("int32_rmat_of_eulers_321" function
+               (:type "void"
+                :arguments 
+                  ( ("rm" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11526 11547])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11548 11570]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11489 11571])
+            ("int32_rmat_of_quat" function
+               (:type "void"
+                :arguments 
+                  ( ("rm" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10926 10947])
+                    ("q" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10948 10968]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10895 10969])
+            ("int32_rmat_transp_ratemult" function
+               (:type "void"
+                :arguments 
+                  ( ("rb" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10735 10757])
+                    ("m_b2a" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10758 10782])
+                    ("ra" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10822 10844]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10696 10845])
+            ("int32_rmat_ratemult" function
+               (:type "void"
+                :arguments 
+                  ( ("rb" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10509 10531])
+                    ("m_a2b" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10532 10556])
+                    ("ra" variable
+                       (:pointer 1
+                        :type ("Int32Rates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10589 10611]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10477 10612])
+            ("int32_rmat_transp_vmult" function
+               (:type "void"
+                :arguments 
+                  ( ("vb" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10299 10321])
+                    ("m_b2a" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10322 10346])
+                    ("va" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10383 10405]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10263 10406])
+            ("int32_rmat_vmult" function
+               (:type "void"
+                :arguments 
+                  ( ("vb" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10084 10106])
+                    ("m_a2b" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10107 10131])
+                    ("va" variable
+                       (:pointer 1
+                        :type ("Int32Vect3" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10161 10183]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10055 10184])
+            ("int32_rmat_comp_inv" function
+               (:type "void"
+                :arguments 
+                  ( ("m_a2b" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9882 9906])
+                    ("m_a2c" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9907 9931])
+                    ("m_b2c" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9964 9988]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9850 9989])
+            ("int32_rmat_comp" function
+               (:type "void"
+                :arguments 
+                  ( ("m_a2c" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9615 9639])
+                    ("m_a2b" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9640 9664])
+                    ("m_b2c" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9693 9717]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9587 9718])
+            ("int32_rmat_identity" function
+               (:type "void"
+                :arguments 
+                  ( ("rm" variable
+                       (:pointer 1
+                        :type ("Int32RMat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9349 9370]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [9310 9465])
+            ("INT32_MAT33_DIAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8693 8709])
+            ("INT32_MAT33_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8148 8164])
+            ("INT32_VECT3_LSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7958 7976])
+            ("INT32_VECT3_RSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7793 7811])
+            ("INT32_VECT3_NORM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7735 7751])
+            ("INT32_VECT3_SCALE_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7526 7545])
+            ("INT32_VECT3_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7470 7486])
+            ("INT_VECT3_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7417 7431])
+            ("INT32_VECT2_SCALE_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7227 7246])
+            ("INT32_VECT2_LSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7113 7131])
+            ("INT32_VECT2_RSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6999 7017])
+            ("INT32_VECT2_NORMALIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6831 6852])
+            ("int32_vect2_normalize" function
+               (:type "void"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6606 6627])
+                    ("frac" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6628 6641]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [6565 6821])
+            ("int32_vect2_norm" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6460 6481]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [6420 6528])
+            ("int32_vect2_norm2" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6325 6346]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [6284 6386])
+            ("INT32_VECT2_NORM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6194 6210])
+            ("INT_VECT2_ZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6051 6065])
+            ("INT32_SQRT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5882 5892])
+            ("int32_gcd" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5849 5860])
+                    ("b" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5861 5872]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5823 5873])
+            ("int32_sqrt" function
+               (:type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("in" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5809 5821]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5782 5822])
+            ("INT_MULT_RSHIFT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5732 5747])
+            ("MAG_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5663 5679])
+            ("MAG_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5596 5611])
+            ("ACCEL_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5526 5544])
+            ("ACCEL_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5457 5474])
+            ("SPEED_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5387 5405])
+            ("SPEED_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5318 5335])
+            ("POS_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5250 5266])
+            ("POS_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5183 5198])
+            ("TRIG_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5115 5132])
+            ("TRIG_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5047 5063])
+            ("QUAT1_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4978 4996])
+            ("QUAT1_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4910 4927])
+            ("ANGLE_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4840 4858])
+            ("ANGLE_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4771 4788])
+            ("RATE_FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4702 4719])
+            ("RATE_BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4634 4650])
+            ("DOUBLE_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4567 4580])
+            ("FLOAT_OF_BFP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4502 4514])
+            ("BFP_OF_REAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4446 4457])
+            ("Int64Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4341 4351])
+                    ("y" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4354 4364])
+                    ("z" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4367 4377]))                  )
+                (reparse-symbol extern-c-contents) [4319 4380])
+            ("Int64Vect2" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4291 4301])
+                    ("y" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4304 4314]))                  )
+                (reparse-symbol extern-c-contents) [4269 4317])
+            ("Int64Rates" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("p" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4227 4237])
+                    ("q" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4240 4250])
+                    ("r" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4253 4263]))                  )
+                (reparse-symbol extern-c-contents) [4205 4266])
+            ("Int32Rates" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("p" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4056 4066])
+                    ("q" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4105 4115])
+                    ("r" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4154 4164]))                  )
+                (reparse-symbol extern-c-contents) [4034 4203])
+            ("Int16Rates" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("p" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3856 3866])
+                    ("q" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3869 3879])
+                    ("r" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3882 3892]))                  )
+                (reparse-symbol extern-c-contents) [3834 3895])
+            ("Int32Mat33" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("m" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3760 3777]))                  )
+                (reparse-symbol extern-c-contents) [3738 3780])
+            ("Int32RMat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("m" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3664 3681]))                  )
+                (reparse-symbol extern-c-contents) [3643 3684])
+            ("INT32_TRIG_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3538 3553])
+            ("Int32Eulers" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("phi" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3348 3360])
+                    ("theta" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3400 3414])
+                    ("psi" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3452 3464]))                  )
+                (reparse-symbol extern-c-contents) [3325 3504])
+            ("Int16Eulers" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("phi" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3193 3205])
+                    ("theta" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3208 3222])
+                    ("psi" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3225 3237]))                  )
+                (reparse-symbol extern-c-contents) [3170 3240])
+            ("INT32_COURSE_NORMALIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2986 3008])
+            ("INT32_ANGLE_NORMALIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2799 2820])
+            ("INT32_DEG_OF_RAD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2717 2733])
+            ("INT32_RAD_OF_DEG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2636 2652])
+            ("INT32_ANGLE_2_PI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2540 2556])
+            ("INT32_ANGLE_PI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2445 2459])
+            ("INT32_ANGLE_PI_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2350 2366])
+            ("INT32_ANGLE_PI_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2255 2271])
+            ("INT32_RATE_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2228 2243])
+            ("INT32_ANGLE_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2200 2216])
+            ("Int64Quat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("qi" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2082 2093])
+                    ("qx" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2096 2107])
+                    ("qy" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2110 2121])
+                    ("qz" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2124 2135]))                  )
+                (reparse-symbol extern-c-contents) [2061 2138])
+            ("Int32Quat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("qi" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2002 2013])
+                    ("qx" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2016 2027])
+                    ("qy" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2030 2041])
+                    ("qz" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2044 2055]))                  )
+                (reparse-symbol extern-c-contents) [1981 2058])
+            ("INT32_QUAT_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1880 1895])
+            ("Int32Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1780 1790])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1793 1803])
+                    ("z" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1806 1816]))                  )
+                (reparse-symbol extern-c-contents) [1758 1819])
+            ("Int32Vect2" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1730 1740])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1743 1753]))                  )
+                (reparse-symbol extern-c-contents) [1708 1756])
+            ("INT32_PERCENTAGE_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1682 1703])
+            ("INT32_MAG_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1655 1669])
+            ("INT32_ACCEL_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1627 1643])
+            ("INT32_SPEED_OF_CM_S_DEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1592 1615])
+            ("INT32_SPEED_OF_CM_S_NUM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1554 1577])
+            ("INT32_SPEED_OF_CM_S" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1518 1537])
+            ("INT32_SPEED_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1490 1506])
+            ("INT32_POS_OF_CM_DEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1458 1477])
+            ("INT32_POS_OF_CM_NUM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1427 1446])
+            ("INT32_POS_OF_CM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1398 1413])
+            ("INT32_POS_FRAC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1373 1387])
+            ("Int16Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1324 1334])
+                    ("y" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1337 1347])
+                    ("z" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1350 1360]))                  )
+                (reparse-symbol extern-c-contents) [1302 1363])
+            ("Uint16Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1258 1269])
+                    ("y" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1272 1283])
+                    ("z" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1286 1297]))                  )
+                (reparse-symbol extern-c-contents) [1235 1300])
+            ("Int8Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1197 1206])
+                    ("y" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1209 1218])
+                    ("z" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1221 1230]))                  )
+                (reparse-symbol extern-c-contents) [1176 1233])
+            ("Uint8Vect3" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1135 1145])
+                    ("y" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1148 1158])
+                    ("z" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1161 1171]))                  )
+                (reparse-symbol extern-c-contents) [1113 1174])
+            ("stdlib.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1091 1110])
+            ("math/pprz_trig_int.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1059 1090])
+            ("math/pprz_algebra.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1028 1058])
+            ("std.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1011 1027]))          
+      :file "pprz_algebra_int.h"
+      :pointmax 24676
+      :fsize 24675
+      :lastmodtime '(23735 21819 248224 528000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RATE_FLOAT_OF_BFP" (spp-arg-list ("_ai") 4719 . 4724) . ((symbol "FLOAT_OF_BFP" 4726 . 4738) (semantic-list "((_ai), INT32_RATE_FRAC)" 4738 . 4762)))
+          ("INT_MULT_RSHIFT" (spp-arg-list ("_a" "_b" "_r") 5747 . 5759) . ((semantic-list "(((_a)*(_b))>>(_r))" 5760 . 5779)))
+          ("INT32_VECT2_SCALE_2" (spp-arg-list ("_a" "_b" "_num" "_den") 7246 . 7266) . ((semantic-list "{   \\
+    (_a).x = ((_b).x * (_num)) / (_den);        \\
+    (_a).y = ((_b).y * (_num)) / (_den);        \\
+  }" 7267 . 7376)))
+          ("INT32_VECT3_LSHIFT" (spp-arg-list ("_o" "_i" "_l") 7976 . 7988) . ((semantic-list "{ \\
+    (_o).x = ((_i).x << (_l));       \\
+    (_o).y = ((_i).y << (_l));       \\
+    (_o).z = ((_i).z << (_l));       \\
+  }" 7989 . 8113)))
+          ("INT32_MAT33_ZERO" (spp-arg-list ("_m") 8164 . 8168) . ((semantic-list "{                      \\
+    MAT33_ELMT((_m), 0, 0) = 0;                     \\
+    MAT33_ELMT((_m), 0, 1) = 0;                     \\
+    MAT33_ELMT((_m), 0, 2) = 0;                     \\
+    MAT33_ELMT((_m), 1, 0) = 0;                     \\
+    MAT33_ELMT((_m), 1, 1) = 0;                     \\
+    MAT33_ELMT((_m), 1, 2) = 0;                     \\
+    MAT33_ELMT((_m), 2, 0) = 0;                     \\
+    MAT33_ELMT((_m), 2, 1) = 0;                     \\
+    MAT33_ELMT((_m), 2, 2) = 0;                     \\
+  }" 8169 . 8683)))
+          ("int32_rmat_of_eulers" . ((symbol "int32_rmat_of_eulers_321" 11768 . 11792)))
+          ("INT32_RMAT_OF_EULERS_321" (spp-arg-list ("_rm" "_e") 13308 . 13317) . 
+              ((symbol "WARNING" 13318 . 13325) (semantic-list "(\"INT32_RMAT_OF_EULERS_321 macro is deprecated, use the lower case function instead\")" 13325 . 13410) (symbol "int32_rmat_of_eulers_321" 13411 . 13435) (semantic-list "(&(_rm), &(_e))" 13435 . 13450)))
+          ("INT32_QUAT_DERIVATIVE" (spp-arg-list ("_qd" "_r" "_q") 18779 . 18792) . 
+              ((symbol "WARNING" 18793 . 18800) (semantic-list "(\"INT32_QUAT_DERIVATIVE macro is deprecated, use the lower case function instead\")" 18800 . 18882) (symbol "int32_quat_derivative" 18883 . 18904) (semantic-list "(&(_qd), &(_r), &(_q))" 18904 . 18926)))
+          ("INT32_QUAT_OF_RMAT" (spp-arg-list ("_q" "_r") 19666 . 19674) . 
+              ((symbol "WARNING" 19675 . 19682) (semantic-list "(\"INT32_QUAT_OF_RMAT macro is deprecated, use the lower case function instead\")" 19682 . 19761) (symbol "int32_quat_of_rmat" 19762 . 19780) (semantic-list "(&(_q), &(_r))" 19780 . 19794)))
+          ("INT_RATES_ZERO" (spp-arg-list ("_e") 20830 . 20834) . ((symbol "RATES_ASSIGN" 20835 . 20847) (semantic-list "(_e, 0, 0, 0)" 20847 . 20860)))
+          ("int32_eulers_dot_of_rates" . ((symbol "int32_eulers_dot_321_of_rates" 21452 . 21481)))
+          ("INT32_ANGLE_FRAC" . ((number "12" 2217 . 2219)))
+          ("POS_BFP_OF_REAL" (spp-arg-list ("_af") 5198 . 5203) . ((symbol "BFP_OF_REAL" 5207 . 5218) (semantic-list "((_af), INT32_POS_FRAC)" 5218 . 5241)))
+          ("INT32_VECT3_ZERO" (spp-arg-list ("_v") 7486 . 7490) . ((symbol "VECT3_ASSIGN" 7491 . 7503) (semantic-list "(_v, 0, 0, 0)" 7503 . 7516)))
+          ("INT32_RMAT_OF_EULERS" (spp-arg-list ("_rm" "_e") 13137 . 13146) . 
+              ((symbol "WARNING" 13147 . 13154) (semantic-list "(\"INT32_RMAT_OF_EULERS macro is deprecated, use the lower case function instead\")" 13154 . 13235) (symbol "int32_rmat_of_eulers_321" 13236 . 13260) (semantic-list "(&(_rm), &(_e))" 13260 . 13275)))
+          ("INT32_QUAT_COMP_INV" (spp-arg-list ("_a2b" "_a2c" "_b2c") 17981 . 17999) . 
+              ((symbol "WARNING" 18000 . 18007) (semantic-list "(\"INT32_QUAT_COMP_INV macro is deprecated, use the lower case function instead\")" 18007 . 18087) (symbol "int32_quat_comp_inv" 18088 . 18107) (semantic-list "(&(_a2b), &(_a2c), &(_b2c))" 18107 . 18134)))
+          ("INT32_SPEED_FRAC" . ((number "19" 1507 . 1509)))
+          ("TRIG_FLOAT_OF_BFP" (spp-arg-list ("_ti") 5132 . 5137) . ((symbol "FLOAT_OF_BFP" 5139 . 5151) (semantic-list "((_ti),INT32_TRIG_FRAC)" 5151 . 5174)))
+          ("INT_VECT3_ZERO" (spp-arg-list ("_v") 7431 . 7435) . ((symbol "VECT3_ASSIGN" 7436 . 7448) (semantic-list "(_v, 0, 0, 0)" 7448 . 7461)))
+          ("INT32_VECT3_RSHIFT" (spp-arg-list ("_o" "_i" "_r") 7811 . 7823) . ((semantic-list "{ \\
+    (_o).x = ((_i).x >> (_r));       \\
+    (_o).y = ((_i).y >> (_r));       \\
+    (_o).z = ((_i).z >> (_r));       \\
+  }" 7824 . 7948)))
+          ("INT_EULERS_ZERO" (spp-arg-list ("_e") 19850 . 19854) . ((symbol "EULERS_ASSIGN" 19855 . 19868) (semantic-list "(_e, 0, 0, 0)" 19868 . 19881)))
+          ("INT32_SPEED_OF_CM_S" . ((number "5242.88" 1538 . 1545)))
+          ("INT32_QUAT_FRAC" . ((number "15" 1896 . 1898)))
+          ("INT32_ANGLE_PI_2" . 
+              ((semantic-list "(int32_t)" 2369 . 2378) (symbol "ANGLE_BFP_OF_REAL" 2378 . 2395) (semantic-list "(   1.5707963267948966192313216916397514)" 2395 . 2436)))
+          ("INT32_ANGLE_PI" . 
+              ((semantic-list "(int32_t)" 2464 . 2473) (symbol "ANGLE_BFP_OF_REAL" 2473 . 2490) (semantic-list "(   3.1415926535897932384626433832795029)" 2490 . 2531)))
+          ("INT32_TRIG_FRAC" . ((number "14" 3554 . 3556)))
+          ("QUAT1_BFP_OF_REAL" (spp-arg-list ("_qf") 4927 . 4932) . ((symbol "BFP_OF_REAL" 4934 . 4945) (semantic-list "((_qf), INT32_QUAT_FRAC)" 4945 . 4969)))
+          ("ACCEL_FLOAT_OF_BFP" (spp-arg-list ("_ai") 5544 . 5549) . ((symbol "FLOAT_OF_BFP" 5550 . 5562) (semantic-list "((_ai), INT32_ACCEL_FRAC)" 5562 . 5587)))
+          ("INT32_VECT2_NORM" (spp-arg-list ("_v") 6210 . 6214) . ((symbol "int32_sqrt" 6215 . 6225) (semantic-list "(VECT2_NORM2(_v))" 6225 . 6242)))
+          ("INT32_QUAT_COMP_NORM_SHORTEST" (spp-arg-list ("_a2c" "_a2b" "_b2c") 18353 . 18371) . 
+              ((symbol "WARNING" 18372 . 18379) (semantic-list "(\"INT32_QUAT_COMP_NORM_SHORTEST macro is deprecated, use the lower case function instead\")" 18379 . 18469) (symbol "int32_quat_comp_norm_shortest" 18470 . 18499) (semantic-list "(&(_a2c), &(_a2b), &(_b2c))" 18499 . 18526)))
+          ("INT32_COURSE_NORMALIZE" (spp-arg-list ("_a") 3008 . 3012) . ((semantic-list "{                \\
+    while ((_a) < 0) (_a) += INT32_ANGLE_2_PI;                  \\
+    while ((_a) >= INT32_ANGLE_2_PI)  (_a) -= INT32_ANGLE_2_PI; \\
+  }" 3013 . 3167)))
+          ("BFP_OF_REAL" (spp-arg-list ("_vr" "_frac") 4457 . 4469) . ((semantic-list "((_vr)*(1<<(_frac)))" 4473 . 4493)))
+          ("RATE_BFP_OF_REAL" (spp-arg-list ("_af") 4650 . 4655) . ((symbol "BFP_OF_REAL" 4658 . 4669) (semantic-list "((_af), INT32_RATE_FRAC)" 4669 . 4693)))
+          ("ANGLE_BFP_OF_REAL" (spp-arg-list ("_af") 4788 . 4793) . ((symbol "BFP_OF_REAL" 4795 . 4806) (semantic-list "((_af), INT32_ANGLE_FRAC)" 4806 . 4831)))
+          ("QUAT1_FLOAT_OF_BFP" (spp-arg-list ("_qi") 4996 . 5001) . ((symbol "FLOAT_OF_BFP" 5002 . 5014) (semantic-list "((_qi), INT32_QUAT_FRAC)" 5014 . 5038)))
+          ("INT32_SQRT" (spp-arg-list ("_out" "_in") 5892 . 5902) . 
+              ((symbol "WARNING" 5903 . 5910) (semantic-list "(\"INT32_SQRT macro is deprecated, use the lower case function instead\")" 5910 . 5981) (semantic-list "{ _out = int32_sqrt(_in); }" 5982 . 6009)))
+          ("INT32_RMAT_VMULT" (spp-arg-list ("_vb" "_m_a2b" "_va") 12234 . 12252) . 
+              ((symbol "WARNING" 12253 . 12260) (semantic-list "(\"INT32_RMAT_VMULT macro is deprecated, use the lower case function instead\")" 12260 . 12337) (symbol "int32_rmat_vmult" 12338 . 12354) (semantic-list "(&(_vb), &(_m_a2b), &(_va))" 12354 . 12381)))
+          ("INT32_RMAT_OF_QUAT" (spp-arg-list ("_rm" "_q") 12978 . 12987) . 
+              ((symbol "WARNING" 12988 . 12995) (semantic-list "(\"INT32_RMAT_OF_QUAT macro is deprecated, use the lower case function instead\")" 12995 . 13074) (symbol "int32_rmat_of_quat" 13075 . 13093) (semantic-list "(&(_rm), &(_q))" 13093 . 13108)))
+          ("INT32_QUAT_NORMALIZE" (spp-arg-list ("q") 17665 . 17668) . 
+              ((symbol "WARNING" 17669 . 17676) (semantic-list "(\"INT32_QUAT_NORMALIZE macro is deprecated, use the lower case function instead\")" 17676 . 17757) (symbol "int32_quat_normalize" 17758 . 17778) (semantic-list "(&(q))" 17778 . 17784)))
+          ("INT32_EULERS_OF_RMAT" (spp-arg-list ("_e" "_rm") 20111 . 20120) . 
+              ((symbol "WARNING" 20121 . 20128) (semantic-list "(\"INT32_EULERS_OF_RMAT macro is deprecated, use the lower case function instead\")" 20128 . 20209) (symbol "int32_eulers_of_rmat" 20210 . 20230) (semantic-list "(&(_e), &(_rm))" 20230 . 20245)))
+          ("INT32_RATE_FRAC" . ((number "12" 2244 . 2246)))
+          ("INT32_ANGLE_PI_4" . 
+              ((semantic-list "(int32_t)" 2274 . 2283) (symbol "ANGLE_BFP_OF_REAL" 2283 . 2300) (semantic-list "(   0.7853981633974483096156608458198757)" 2300 . 2341)))
+          ("INT32_RMAT_TRANSP_VMULT" (spp-arg-list ("_vb" "_m_b2a" "_va") 12413 . 12431) . 
+              ((symbol "WARNING" 12432 . 12439) (semantic-list "(\"INT32_RMAT_TRANSP_VMULT macro is deprecated, use the lower case function instead\")" 12439 . 12523) (symbol "int32_rmat_transp_vmult" 12524 . 12547) (semantic-list "(&(_vb), &(_m_b2a), &(_va))" 12547 . 12574)))
+          ("INT32_QUAT_INV_COMP" (spp-arg-list ("_b2c" "_a2b" "_a2c") 18162 . 18180) . 
+              ((symbol "WARNING" 18181 . 18188) (semantic-list "(\"INT32_QUAT_INV_COMP macro is deprecated, use the lower case function instead\")" 18188 . 18268) (symbol "int32_quat_inv_comp" 18269 . 18288) (semantic-list "(&(_b2c), &(_a2b), &(_a2c))" 18288 . 18315)))
+          ("INT32_RATES_OF_EULERS_DOT_321" (spp-arg-list ("_r" "_e" "_ed") 21562 . 21575) . 
+              ((symbol "WARNING" 21576 . 21583) (semantic-list "(\"INT32_RATES_OF_EULERS_DOT_321 macro is deprecated, use the lower case function instead\")" 21583 . 21673) (symbol "int32_rates_of_eulers_dot_321" 21674 . 21703) (semantic-list "(&(_r), &(_e), &(_ed))" 21703 . 21725)))
+          ("INT32_POS_OF_CM_NUM" . ((number "64" 1447 . 1449)))
+          ("INT32_SPEED_OF_CM_S_NUM" . ((number "41943" 1578 . 1583)))
+          ("INT32_ANGLE_2_PI" . 
+              ((semantic-list "(int32_t)" 2559 . 2568) (symbol "ANGLE_BFP_OF_REAL" 2568 . 2585) (semantic-list "(2.*3.1415926535897932384626433832795029)" 2585 . 2626)))
+          ("POS_FLOAT_OF_BFP" (spp-arg-list ("_ai") 5266 . 5271) . ((symbol "FLOAT_OF_BFP" 5274 . 5286) (semantic-list "((_ai), INT32_POS_FRAC)" 5286 . 5309)))
+          ("INT_VECT2_ZERO" (spp-arg-list ("_v") 6065 . 6069) . ((symbol "VECT2_ASSIGN" 6070 . 6082) (semantic-list "(_v, 0, 0)" 6082 . 6092)))
+          ("INT32_QUAT_NORM" (spp-arg-list ("n" "q") 17355 . 17361) . 
+              ((symbol "WARNING" 17362 . 17369) (semantic-list "(\"INT32_QUAT_NORM macro is deprecated, use the lower case function instead\")" 17369 . 17445) (semantic-list "{ n = int32_quat_norm(&(q)); }" 17446 . 17476)))
+          ("INT32_QUAT_OF_EULERS" (spp-arg-list ("_q" "_e") 19322 . 19330) . 
+              ((symbol "WARNING" 19331 . 19338) (semantic-list "(\"INT32_QUAT_OF_EULERS macro is deprecated, use the lower case function instead\")" 19338 . 19419) (symbol "int32_quat_of_eulers" 19420 . 19440) (semantic-list "(&(_q), &(_e))" 19440 . 19454)))
+          ("INT32_QUAT_OF_AXIS_ANGLE" (spp-arg-list ("_q" "_uv" "_an") 19487 . 19501) . 
+              ((symbol "WARNING" 19502 . 19509) (semantic-list "(\"INT32_QUAT_OF_AXIS_ANGLE macro is deprecated, use the lower case function instead\")" 19509 . 19594) (symbol "int32_quat_of_axis_angle" 19595 . 19619) (semantic-list "(&(_q), &(_uv), _an)" 19619 . 19639)))
+          ("PPRZ_ALGEBRA_INT_H")
+          ("INT32_MAG_FRAC" . ((number "11" 1670 . 1672)))
+          ("INT32_PERCENTAGE_FRAC" . ((number "10" 1704 . 1706)))
+          ("INT32_MAT33_DIAG" (spp-arg-list ("_m" "_d00" "_d11" "_d22") 8709 . 8731) . ((semantic-list "{    \\
+    MAT33_ELMT((_m), 0, 0) = (_d00);                \\
+    MAT33_ELMT((_m), 0, 1) = 0;                     \\
+    MAT33_ELMT((_m), 0, 2) = 0;                     \\
+    MAT33_ELMT((_m), 1, 0) = 0;                     \\
+    MAT33_ELMT((_m), 1, 1) = (_d11);                \\
+    MAT33_ELMT((_m), 1, 2) = 0;                     \\
+    MAT33_ELMT((_m), 2, 0) = 0;                     \\
+    MAT33_ELMT((_m), 2, 1) = 0;                     \\
+    MAT33_ELMT((_m), 2, 2) = (_d22);                \\
+  }" 8732 . 9228)))
+          ("INT32_RMAT_COMP" (spp-arg-list ("_m_a2c" "_m_a2b" "_m_b2c") 11859 . 11883) . 
+              ((symbol "WARNING" 11884 . 11891) (semantic-list "(\"INT32_RMAT_COMP macro is deprecated, use the lower case function instead\")" 11891 . 11967) (symbol "int32_rmat_comp" 11968 . 11983) (semantic-list "(&(_m_a2c), &(_m_a2b), &(_m_b2c))" 11983 . 12016)))
+          ("INT32_POS_FRAC" . ((number "8" 1388 . 1389)))
+          ("INT32_ANGLE_NORMALIZE" (spp-arg-list ("_a") 2820 . 2824) . ((semantic-list "{             \\
+    while ((_a) > INT32_ANGLE_PI)  (_a) -= INT32_ANGLE_2_PI;    \\
+    while ((_a) < -INT32_ANGLE_PI) (_a) += INT32_ANGLE_2_PI;    \\
+  }" 2825 . 2976)))
+          ("DOUBLE_OF_BFP" (spp-arg-list ("_vbfp" "_frac") 4580 . 4594) . ((semantic-list "((double)(_vbfp)/(1<<(_frac)))" 4595 . 4625)))
+          ("ANGLE_FLOAT_OF_BFP" (spp-arg-list ("_ai") 4858 . 4863) . ((symbol "FLOAT_OF_BFP" 4864 . 4876) (semantic-list "((_ai), INT32_ANGLE_FRAC)" 4876 . 4901)))
+          ("INT32_RMAT_COMP_INV" (spp-arg-list ("_m_a2b" "_m_a2c" "_m_b2c") 12044 . 12068) . 
+              ((symbol "WARNING" 12069 . 12076) (semantic-list "(\"INT32_RMAT_COMP_INV macro is deprecated, use the lower case function instead\")" 12076 . 12156) (symbol "int32_rmat_comp_inv" 12157 . 12176) (semantic-list "(&(_m_a2b), &(_m_a2c), &(_m_b2c))" 12176 . 12209)))
+          ("INT32_RMAT_RATEMULT" (spp-arg-list ("_rb" "_m_a2b" "_ra") 12602 . 12620) . 
+              ((symbol "WARNING" 12621 . 12628) (semantic-list "(\"INT32_RMAT_RATEMULT macro is deprecated, use the lower case function instead\")" 12628 . 12708) (symbol "int32_rmat_ratemult" 12709 . 12728) (semantic-list "(&(_rb), &(_m_a2b), &(_ra))" 12728 . 12755)))
+          ("INT32_QUAT_ZERO" (spp-arg-list ("_q") 17216 . 17220) . 
+              ((symbol "WARNING" 17221 . 17228) (semantic-list "(\"INT32_QUAT_ZERO macro is deprecated, use the lower case function instead\")" 17228 . 17304) (symbol "int32_quat_identity" 17305 . 17324) (semantic-list "(&(_q))" 17324 . 17331)))
+          ("INT32_QUAT_WRAP_SHORTEST" (spp-arg-list ("q") 17509 . 17512) . 
+              ((symbol "WARNING" 17513 . 17520) (semantic-list "(\"INT32_QUAT_WRAP_SHORTEST macro is deprecated, use the lower case function instead\")" 17520 . 17605) (symbol "int32_quat_wrap_shortest" 17606 . 17630) (semantic-list "(&(q))" 17630 . 17636)))
+          ("INT_RATES_LSHIFT" (spp-arg-list ("_o" "_i" "_r") 21051 . 21063) . ((semantic-list "{   \\
+    (_o).p = ((_i).p << (_r));       \\
+    (_o).q = ((_i).q << (_r));       \\
+    (_o).r = ((_i).r << (_r));       \\
+  }" 21064 . 21190)))
+          ("INT32_EULERS_DOT_OF_RATES" (spp-arg-list ("_ed" "_e" "_r") 22157 . 22170) . 
+              ((symbol "WARNING" 22175 . 22182) (semantic-list "(\"INT32_EULERS_DOT_OF_RATES macro is deprecated, use the lower case function instead\")" 22182 . 22268) (symbol "int32_eulers_dot_321_of_rates" 22269 . 22298) (semantic-list "(&(_ed), &(_e), &(_r))" 22298 . 22320)))
+          ("INT32_POS_OF_CM" . ((number "2.56" 1414 . 1418)))
+          ("INT32_DEG_OF_RAD" (spp-arg-list ("_rad") 2733 . 2739) . ((semantic-list "(int32_t)" 2740 . 2749) (semantic-list "(((int64_t)(_rad) * 857374503)/14964008)" 2749 . 2789)))
+          ("SPEED_FLOAT_OF_BFP" (spp-arg-list ("_ai") 5405 . 5410) . ((symbol "FLOAT_OF_BFP" 5411 . 5423) (semantic-list "((_ai), INT32_SPEED_FRAC)" 5423 . 5448)))
+          ("INT32_VECT3_SCALE_2" (spp-arg-list ("_a" "_b" "_num" "_den") 7545 . 7565) . ((semantic-list "{   \\
+    (_a).x = ((_b).x * (_num)) / (_den);        \\
+    (_a).y = ((_b).y * (_num)) / (_den);        \\
+    (_a).z = ((_b).z * (_num)) / (_den);        \\
+  }" 7566 . 7725)))
+          ("INT32_QUAT_COMP" (spp-arg-list ("_a2c" "_a2b" "_b2c") 17808 . 17826) . 
+              ((symbol "WARNING" 17827 . 17834) (semantic-list "(\"INT32_QUAT_COMP macro is deprecated, use the lower case function instead\")" 17834 . 17910) (symbol "int32_quat_comp" 17911 . 17926) (semantic-list "(&(_a2c), &(_a2b), &(_b2c))" 17926 . 17953)))
+          ("INT32_QUAT_INV_COMP_NORM_SHORTEST" (spp-arg-list ("_b2c" "_a2b" "_a2c") 18568 . 18586) . 
+              ((symbol "WARNING" 18587 . 18594) (semantic-list "(\"INT32_QUAT_INV_COMP_NORM_SHORTEST macro is deprecated, use the lower case function instead\")" 18594 . 18688) (symbol "int32_quat_inv_comp_norm_shortest" 18689 . 18722) (semantic-list "(&(_b2c), &(_a2b), &(_a2c))" 18722 . 18749)))
+          ("INT32_EULERS_LSHIFT" (spp-arg-list ("_o" "_i" "_r") 20435 . 20447) . ((semantic-list "{  \\
+    (_o).phi   = ((_i).phi   << (_r));     \\
+    (_o).theta = ((_i).theta << (_r));     \\
+    (_o).psi   = ((_i).psi   << (_r));     \\
+  }" 20448 . 20591)))
+          ("INT32_RAD_OF_DEG" (spp-arg-list ("_deg") 2652 . 2658) . ((semantic-list "(int32_t)" 2659 . 2668) (semantic-list "(((int64_t)(_deg) * 14964008)/857374503)" 2668 . 2708)))
+          ("SPEED_BFP_OF_REAL" (spp-arg-list ("_af") 5335 . 5340) . ((symbol "BFP_OF_REAL" 5342 . 5353) (semantic-list "((_af), INT32_SPEED_FRAC)" 5353 . 5378)))
+          ("ACCEL_BFP_OF_REAL" (spp-arg-list ("_af") 5474 . 5479) . ((symbol "BFP_OF_REAL" 5481 . 5492) (semantic-list "((_af), INT32_ACCEL_FRAC)" 5492 . 5517)))
+          ("MAG_FLOAT_OF_BFP" (spp-arg-list ("_ai") 5679 . 5684) . ((symbol "FLOAT_OF_BFP" 5687 . 5699) (semantic-list "((_ai), INT32_MAG_FRAC)" 5699 . 5722)))
+          ("INT32_VECT2_LSHIFT" (spp-arg-list ("_o" "_i" "_l") 7131 . 7143) . ((semantic-list "{ \\
+    (_o).x = ((_i).x << (_l)); \\
+    (_o).y = ((_i).y << (_l)); \\
+  }" 7144 . 7217)))
+          ("INT32_QUAT_VMULT" (spp-arg-list ("v_out" "q" "v_in") 19150 . 19166) . 
+              ((symbol "WARNING" 19167 . 19174) (semantic-list "(\"INT32_QUAT_VMULT macro is deprecated, use the lower case function instead\")" 19174 . 19251) (symbol "int32_quat_vmult" 19252 . 19268) (semantic-list "(&(v_out), &(q), &(v_in))" 19268 . 19293)))
+          ("INT32_EULERS_OF_QUAT" (spp-arg-list ("_e" "_q") 20274 . 20282) . 
+              ((symbol "WARNING" 20283 . 20290) (semantic-list "(\"INT32_EULERS_OF_QUAT macro is deprecated, use the lower case function instead\")" 20290 . 20371) (symbol "int32_eulers_of_quat" 20372 . 20392) (semantic-list "(&(_e), &(_q))" 20392 . 20406)))
+          ("INT_RATES_RSHIFT" (spp-arg-list ("_o" "_i" "_r") 20886 . 20898) . ((semantic-list "{   \\
+    (_o).p = ((_i).p >> (_r));       \\
+    (_o).q = ((_i).q >> (_r));       \\
+    (_o).r = ((_i).r >> (_r));       \\
+  }" 20899 . 21025)))
+          ("INT32_ACCEL_FRAC" . ((number "10" 1644 . 1646)))
+          ("TRIG_BFP_OF_REAL" (spp-arg-list ("_tf") 5063 . 5068) . ((symbol "BFP_OF_REAL" 5071 . 5082) (semantic-list "((_tf), INT32_TRIG_FRAC)" 5082 . 5106)))
+          ("MAG_BFP_OF_REAL" (spp-arg-list ("_af") 5611 . 5616) . ((symbol "BFP_OF_REAL" 5620 . 5631) (semantic-list "((_af), INT32_MAG_FRAC)" 5631 . 5654)))
+          ("INT32_RMAT_TRANSP_RATEMULT" (spp-arg-list ("_rb" "_m_b2a" "_ra") 12790 . 12808) . 
+              ((symbol "WARNING" 12809 . 12816) (semantic-list "(\"INT32_RMAT_TRANSP_RATEMULT macro is deprecated, use the lower case function instead\")" 12816 . 12903) (symbol "int32_rmat_ratemult" 12904 . 12923) (semantic-list "(&(_rb), &(_m_b2a), &(_ra))" 12923 . 12950)))
+          ("INT32_RMAT_OF_EULERS_312" (spp-arg-list ("_rm" "_e") 13483 . 13492) . 
+              ((symbol "WARNING" 13493 . 13500) (semantic-list "(\"INT32_RMAT_OF_EULERS_312 macro is deprecated, use the lower case function instead\")" 13500 . 13585) (symbol "int32_rmat_of_eulers_312" 13586 . 13610) (semantic-list "(&(_rm), &(_e))" 13610 . 13625)))
+          ("INT32_QUAT_INTEGRATE_FI" (spp-arg-list ("_q" "_hr" "_omega" "_f") 18958 . 18979) . 
+              ((symbol "WARNING" 18980 . 18987) (semantic-list "(\"INT32_QUAT_INTEGRATE_FI macro is deprecated, use the lower case function instead\")" 18987 . 19071) (symbol "int32_quat_integrate_fi" 19072 . 19095) (semantic-list "(&(_q), &(_hr), &(_omega), _f)" 19095 . 19125)))
+          ("INT32_EULERS_RSHIFT" (spp-arg-list ("_o" "_i" "_r") 20620 . 20632) . ((semantic-list "{  \\
+    (_o).phi   = ((_i).phi   >> (_r));     \\
+    (_o).theta = ((_i).theta >> (_r));     \\
+    (_o).psi   = ((_i).psi   >> (_r));     \\
+  }" 20633 . 20776)))
+          ("INT32_EULERS_DOT_321_OF_RATES" (spp-arg-list ("_ed" "_e" "_r") 21960 . 21973) . 
+              ((symbol "WARNING" 21974 . 21981) (semantic-list "(\"INT32_EULERS_DOT_321_OF_RATES macro is deprecated, use the lower case function instead\")" 21981 . 22071) (symbol "int32_eulers_dot_321_of_rates" 22072 . 22101) (semantic-list "(&(_ed), &(_e), &(_r))" 22101 . 22123)))
+          ("INT32_POS_OF_CM_DEN" . ((number "25" 1478 . 1480)))
+          ("INT32_SPEED_OF_CM_S_DEN" . ((number "8" 1616 . 1617)))
+          ("FLOAT_OF_BFP" (spp-arg-list ("_vbfp" "_frac") 4514 . 4528) . ((semantic-list "((float)(_vbfp)/(1<<(_frac)))" 4529 . 4558)))
+          ("INT32_VECT2_NORMALIZE" (spp-arg-list ("_v" "_frac") 6852 . 6862) . 
+              ((symbol "WARNING" 6863 . 6870) (semantic-list "(\"INT32_VECT2_NORMALIZE macro is deprecated, use the lower case function instead\")" 6870 . 6952) (symbol "int32_vect2_normalize" 6953 . 6974) (semantic-list "(&(_v), _frac)" 6974 . 6988)))
+          ("INT32_VECT2_RSHIFT" (spp-arg-list ("_o" "_i" "_r") 7017 . 7029) . ((semantic-list "{ \\
+    (_o).x = ((_i).x >> (_r)); \\
+    (_o).y = ((_i).y >> (_r)); \\
+  }" 7030 . 7103)))
+          ("INT32_VECT3_NORM" (spp-arg-list ("_v") 7751 . 7755) . ((symbol "int32_sqrt" 7756 . 7766) (semantic-list "(VECT3_NORM2(_v))" 7766 . 7783)))
+          ("INT32_RATES_OF_EULERS_DOT" (spp-arg-list ("_r" "_e" "_ed") 21759 . 21772) . 
+              ((symbol "WARNING" 21777 . 21784) (semantic-list "(\"INT32_RATES_OF_EULERS_DOT macro is deprecated, use the lower case function instead\")" 21784 . 21870) (symbol "int32_rates_of_eulers_dot_321" 21871 . 21900) (semantic-list "(&(_r), &(_e), &(_ed))" 21900 . 21922)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "pprz_trig_int.h"
+      :fsize 3586
+      :lastmodtime '(23735 21819 248224 528000))
+    (semanticdb-table "semanticdb-table"
+      :file "pprz_algebra.h"
+      :fsize 27223
+      :lastmodtime '(23735 21819 248224 528000)))
+  :file "!home!angel!src!paparazzi!sw!airborne!math!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

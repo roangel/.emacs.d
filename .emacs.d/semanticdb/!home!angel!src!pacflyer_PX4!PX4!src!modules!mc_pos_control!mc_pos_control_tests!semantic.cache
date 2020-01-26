@@ -1,0 +1,133 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("systemlib/err.h" include (:system-flag t) nil [1907 1933])
+            ("unit_test.h" include (:system-flag t) nil [1934 1956])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1957 1985])
+            ("mc_pos_control_tests_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2037 2046])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2047 2060]))                  
+                :type "int")
+                nil [2007 2061])
+            ("mcPosControlTests" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2063 2088])
+            ("MulticopterPositionControl" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2165 2172])
+                    ("cross_sphere_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sphere_c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2231])
+                            ("sphere_r" variable
+                               (:constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2232 2253])
+                            ("line_a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2261 2292])
+                            ("line_b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2293 2324])
+                            ("res" variable
+                               (:reference 1
+                                :type ("matrix::Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2325 2347]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2174 2348]))                  
+                :type "class")
+                nil [2130 2351])
+            ("McPosControlTests" type
+               (:superclasses 
+                  ( ("UnitTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2397 2404])
+                    ("McPosControlTests" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("McPosControlTests" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2406 2426])
+                    ("McPosControlTests" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2428 2457])
+                    ("run_tests" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2460 2485])
+                    ("private" label nil (reparse-symbol classsubparts) [2487 2495])
+                    ("cross_sphere_line_test" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2497 2527]))                  
+                :type "class")
+                nil [2353 2530])
+            ("McPosControlTests" function
+               (:constructor-flag t
+                :parent "McPosControlTests"
+                :type ("McPosControlTests" type (:type "class") nil nil))
+                nil [2532 2574])
+            ("McPosControlTests" function
+               (:destructor-flag t
+                :parent "McPosControlTests"
+                :type "void")
+                nil [2576 2619])
+            ("cross_sphere_line_test" function
+               (:parent "McPosControlTests"
+                :type "bool")
+                nil [2621 7060])
+            ("run_tests" function
+               (:parent "McPosControlTests"
+                :type "bool")
+                nil [7062 7170])
+            ("ut_declare_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mcPosControlTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7188 7206])
+                    ("" variable (:type ("McPosControlTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7207 7225]))                  
+                :type "int")
+                nil [7172 7226])
+            ("mc_pos_control_tests_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7258 7267])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7268 7281]))                  
+                :type "int")
+                nil [7228 7323]))          
+      :file "mc_pos_control_tests.cpp"
+      :pointmax 7324
+      :fsize 7323
+      :lastmodtime '(23798 26597 891347 145000)
+      :unmatched-syntax '((symbol 1998 . 2006))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!mc_pos_control!mc_pos_control_tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

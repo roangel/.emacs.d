@@ -1,0 +1,1055 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [138 155])
+            ("cstring" include (:system-flag t) nil [156 174])
+            ("math.hpp" include nil nil [288 307])
+            ("matrix" type
+               (:members 
+                  ( ("Vector" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [329 377])
+                    ("Matrix" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [439 446])
+                            ("_data" variable
+                               (:dereference 2
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [452 472])
+                            ("Matrix" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("data_" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [530 552]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [523 609])
+                            ("Matrix" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("data_" variable
+                                       (:dereference 2
+                                        :constant-flag t
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [622 645]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [615 702])
+                            ("Matrix" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [715 735]))                                  
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [708 798])
+                            ("data" function
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [855 904])
+                            ("data" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [910 971])
+                            ("()" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1000 1009])
+                                    ("j" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1010 1019]))                                  
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [977 1065])
+                            ("()" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1095 1104])
+                                    ("j" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1105 1114]))                                  
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1071 1154])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1191 1223]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1160 1354])
+                            ("copyTo" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1372 1383]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1360 1448])
+                            ("copyToColumnMajor" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1477 1488]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1454 1714])
+                            ("" function
+                               (:template 
+                                  ( ("size_t" type (:typevar "P") nil nil))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1990 2022]))                                  
+                                :function-pointer t
+                                :operator-flag t
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [1938 2401])
+                            ("emult" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2432 2464]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2407 2746])
+                            ("edivide" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2779 2811]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2752 3093])
+                            ("+" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3128 3160]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3099 3444])
+                            ("-" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3479 3511]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3450 3795])
+                            ("-" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3820 4121])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4143 4175]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4127 4258])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4280 4312]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4264 4395])
+                            ("=" function
+                               (:template 
+                                  ( ("size_t" type (:typevar "P") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("P" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4440 4472]))                                  
+                                :function-pointer t
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4401 4555])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4632 4644]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4603 4923])
+                            ("/" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4965 4977]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4929 5030])
+                            ("+" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5065 5077]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5036 5356])
+                            ("-" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5398 5410]))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5362 5466])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5488 5500]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5472 5715])
+                            ("/=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5737 5749]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5721 5842])
+                            ("+=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5871 5883]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5848 5929])
+                            ("-=" function
+                               (:operator-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5958 5970]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5935 6016])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6038 6070]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6022 6466])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6488 6520]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6472 6619])
+                            ("write_string" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6683 6694])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6695 6704]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6665 7176])
+                            ("print" function
+                               (:methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7182 7435])
+                            ("transpose" function
+                               (:methodconst-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7441 7741])
+                            ("T" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("N" type nil nil nil)
+                                          ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7769 7844])
+                            ("slice" function
+                               (:template 
+                                  ( ("size_t" type (:typevar "P") nil nil)
+                                    ("size_t" type (:typevar "Q") nil nil))                                  
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("P" type nil nil nil)
+                                          ("Q" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("x0" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7908 7918])
+                                    ("y0" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7919 7929]))                                  
+                                :methodconst-flag t)
+                                (reparse-symbol classsubparts) [7850 8229])
+                            ("set" function
+                               (:template 
+                                  ( ("size_t" type (:typevar "P") nil nil)
+                                    ("size_t" type (:typevar "Q") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("m" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("P" type nil nil nil)
+                                                  ("Q" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8277 8305])
+                                    ("x0" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8306 8316])
+                                    ("y0" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8317 8327]))                                  )
+                                (reparse-symbol classsubparts) [8235 8539])
+                            ("setRow" function
+                               (:arguments 
+                                  ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8557 8566])
+                                    ("row" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("N" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8567 8597]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8545 8738])
+                            ("setCol" function
+                               (:arguments 
+                                  ( ("j" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8756 8765])
+                                    ("col" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("M" type nil nil nil)
+                                                  ("1"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8766 8796]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8744 8937])
+                            ("setZero" function (:type "void") (reparse-symbol classsubparts) [8943 9010])
+                            ("zero" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9016 9065])
+                            ("setAll" function
+                               (:arguments 
+                                  ( ("val" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9083 9092]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9071 9291])
+                            ("setOne" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9297 9348])
+                            ("setNaN" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9354 9407])
+                            ("setIdentity" function (:type "void") (reparse-symbol classsubparts) [9413 9593])
+                            ("identity" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [9599 9656])
+                            ("swapRows" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9683 9692])
+                                    ("b" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9693 9702]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9662 9963])
+                            ("swapCols" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9990 9999])
+                                    ("b" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10000 10009]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9969 10270])
+                            ("abs" function
+                               (:methodconst-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [10276 10519])
+                            ("max" function
+                               (:methodconst-flag t
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10525 10847])
+                            ("min" function
+                               (:methodconst-flag t
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10853 11175]))                          )
+                        (reparse-symbol namespacesubparts) [379 11179])
+                    ("zeros" function
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("Type" type nil nil nil)
+                                  ("M" type nil nil nil)
+                                  ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11181 11312])
+                    ("ones" function
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("Type" type nil nil nil)
+                                  ("M" type nil nil nil)
+                                  ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11314 11443])
+                    ("nans" function
+                       (:template 
+                          ( ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("M" type nil nil nil)
+                                  ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11445 11561])
+                    ("" function
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("Type" type nil nil nil)
+                                  ("M" type nil nil nil)
+                                  ("N" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11637 11649])
+                            ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11650 11682]))                          
+                        :function-pointer t
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [11563 11713])
+                    ("isEqual" function
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil)
+                            ("size_t" type (:typevar "M") nil nil)
+                            ("size_t" type (:typevar "N") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11773 11801])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("M" type nil nil nil)
+                                          ("N" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11815 11843])
+                            ("eps" variable
+                               (:constant-flag t
+                                :default-value "1e-4f"
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11844 11864]))                          )
+                        (reparse-symbol namespacesubparts) [11715 12421])
+                    ("isEqualF" function
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12462 12469])
+                            ("y" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12484 12491])
+                            ("eps" variable
+                               (:default-value "1e-4f"
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12492 12506]))                          )
+                        (reparse-symbol namespacesubparts) [12424 12706]))                  
+                :type "namespace")
+                nil [309 13195]))          
+      :file "Matrix.hpp"
+      :pointmax 13272
+      :fsize 13271
+      :lastmodtime '(23801 12053 44128 245000)
+      :unmatched-syntax '((semantic-list 1488 . 1493) (semantic-list 1482 . 1488) (semantic-list 1383 . 1388) (semantic-list 1377 . 1383) (punctuation 516 . 517) (DEFAULT 509 . 516) (punctuation 507 . 508) (semantic-list 504 . 506) (symbol 498 . 504) (symbol 132 . 136) (symbol 125 . 131) (punctuation 124 . 125)))
+    (semanticdb-table "semanticdb-table"
+      :file "math.hpp"
+      :fsize 358
+      :lastmodtime '(23801 12053 44128 245000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("math.hpp" include nil nil [1000 1019])
+            ("helper_functions.hpp" include nil nil [1020 1051])
+            ("matrix" type
+               (:members 
+                  ( ("Dcm" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1073 1108])
+                    ("Euler" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1110 1147])
+                    ("AxisAngle" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1149 1190])
+                    ("Quaternion" type
+                       (:template 
+                          ( ("Type" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1369 1376])
+                            ("Matrix41" type
+                               (:typedef ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("4")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1381 1417])
+                            ("Matrix31" type
+                               (:typedef ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("3")
+                                          ("1"))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1422 1458])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("data_" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1554 1574]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1543 1619])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1669 1796])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix41" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1906 1928]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1895 1973])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("R" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Dcm" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2204 2223]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2193 3416])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("euler" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Euler" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3771 3796]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3760 4603])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("aa" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AxisAngle" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4711 4737]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4700 5188])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5527 5552])
+                                    ("dst" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5553 5578])
+                                    ("eps" variable
+                                       (:constant-flag t
+                                        :default-value "Type(1e-5)"
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5579 5606]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5516 6730])
+                            ("Quaternion" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("a" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7164 7171])
+                                    ("b" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7172 7179])
+                                    ("c" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7180 7187])
+                                    ("d" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7188 7195]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7153 7310])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7469 7489]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7448 7864])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Quaternion" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7993 8017]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7977 8092])
+                            ("" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8248 8260]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8227 8342])
+                            ("=" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("scalar" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8475 8487]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8459 8554])
+                            ("derivative1" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("w" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix31" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8843 8861]))                                  
+                                :type ("Matrix41" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8822 9009])
+                            ("derivative2" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("w" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix31" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9303 9321]))                                  
+                                :type ("Matrix41" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9282 9469])
+                            ("invert" function (:type "void") (reparse-symbol classsubparts) [9525 9584])
+                            ("inversed" function
+                               (:methodconst-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9673 9940])
+                            ("rotate" function
+                               (:arguments 
+                                  ( ("vec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AxisAngle" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10061 10088]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10049 10162])
+                            ("conjugate" function
+                               (:arguments 
+                                  ( ("vec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10535 10555]))                                  
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10516 10734])
+                            ("conjugate_inversed" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("vec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector3f" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11116 11136]))                                  
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11088 11325])
+                            ("from_axis_angle" function
+                               (:arguments 
+                                  ( ("vec" variable (:type ("Vector" type
+                                         (:template-specifier 
+                                            ( ("Type" type nil nil nil)
+                                              ("3"))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [11607 11627]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11586 11895])
+                            ("from_axis_angle" function
+                               (:arguments 
+                                  ( ("axis" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vector" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12179 12207])
+                                    ("theta" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12208 12219]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12158 12562])
+                            ("to_axis_angle" function
+                               (:methodconst-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [12869 13327])
+                            ("imag" function
+                               (:methodconst-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [13391 13514])
+                            ("dcm_z" function
+                               (:methodconst-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("Type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [13763 14126])
+                            ("from_dcm" function
+                               (:arguments 
+                                  ( ("dcm" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type
+                                             (:template-specifier 
+                                                ( ("Type" type nil nil nil)
+                                                  ("3")
+                                                  ("3"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14218 14248]))                                  
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14198 14294])
+                            ("to_dcm" function (:type ("Dcm" type
+                                 (:template-specifier 
+                                    ( ("Type" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14366 14425]))                          
+                        :superclasses 
+                          ( ("Vector" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1301 14429])
+                    ("Quatf" type
+                       (:typedef ("Quaternion" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [14431 14463])
+                    ("Quaternionf" type
+                       (:typedef ("Quaternion" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [14464 14502]))                  
+                :type "namespace")
+                nil [1053 14505]))          
+      :file "Quaternion.hpp"
+      :pointmax 14582
+      :fsize 14581
+      :lastmodtime '(23801 12053 44128 245000)
+      :unmatched-syntax '((symbol 994 . 998) (symbol 987 . 993) (punctuation 986 . 987)))
+    (semanticdb-table "semanticdb-table"
+      :file "helper_functions.hpp"
+      :fsize 1158
+      :lastmodtime '(23622 60772 158195 662000)))
+  :file "!home!angel!src!Firmware!src!lib!matrix!matrix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

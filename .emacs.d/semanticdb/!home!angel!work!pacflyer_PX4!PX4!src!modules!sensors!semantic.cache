@@ -1,0 +1,1679 @@
+;; Object sensors/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sensors/"
+  :tables
+  (list
+    (semanticdb-table "rc_update.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("rc_update.h" include nil nil [1812 1834])
+            ("string.h" include (:system-flag t) nil [1836 1855])
+            ("float.h" include (:system-flag t) nil [1856 1874])
+            ("errno.h" include (:system-flag t) nil [1875 1893])
+            ("uORB/uORB.h" include (:system-flag t) nil [1895 1917])
+            ("uORB/topics/actuator_controls.h" include (:system-flag t) nil [1918 1960])
+            ("sensors" using (:type ("sensors" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2048 2072])
+            ("RC_SPIKE_THR" variable (:constant-flag t) nil [2116 2128])
+            ("MIN_STICK_CHANGE" variable (:constant-flag t) nil [2142 2158])
+            ("NUMBER_KILL_BUTTON_NEED_BE_PRESSED" variable (:constant-flag t) nil [2218 2252])
+            ("TIME_KILL_BUTTON_HAS_TO_BE_PRESSED" variable (:constant-flag t) nil [2282 2316])
+            ("TIMEOUT_KILL_BUTTON_LOGIC" variable (:constant-flag t) nil [2346 2371])
+            ("RCUpdate" function
+               (:constructor-flag t
+                :parent "RCUpdate"
+                :arguments 
+                  ( ("parameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2413 2442]))                  
+                :type ("RCUpdate" type (:type "class") nil nil))
+                nil [2394 3200])
+            ("init" function
+               (:parent "RCUpdate"
+                :type "int")
+                nil [3202 3445])
+            ("deinit" function
+               (:parent "RCUpdate"
+                :type "void")
+                nil [3447 3542])
+            ("update_rc_functions" function
+               (:parent "RCUpdate"
+                :type "void")
+                nil [3544 6423])
+            ("rc_parameter_map_poll" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("parameter_handles" variable
+                       (:reference 1
+                        :type ("ParameterHandles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6462 6498])
+                    ("forced" variable (:type "bool") (reparse-symbol arg-sub-list) [6499 6511])
+                    ("user_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [6526 6541]))                  
+                :type "void")
+                nil [6425 8611])
+            ("get_rc_value" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("func" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8642 8655])
+                    ("min_value" variable (:type "float") (reparse-symbol arg-sub-list) [8656 8672])
+                    ("max_value" variable (:type "float") (reparse-symbol arg-sub-list) [8673 8689]))                  
+                :type "float")
+                nil [8613 8859])
+            ("get_rc_sw3pos_position" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("func" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8907 8920])
+                    ("on_th" variable (:type "float") (reparse-symbol arg-sub-list) [8921 8933])
+                    ("on_inv" variable (:type "bool") (reparse-symbol arg-sub-list) [8934 8946])
+                    ("mid_th" variable (:type "float") (reparse-symbol arg-sub-list) [8947 8960])
+                    ("mid_inv" variable (:type "bool") (reparse-symbol arg-sub-list) [8961 8974]))                  
+                :type ("switch_pos_t" type (:type "class") nil nil))
+                nil [8861 10165])
+            ("get_rc_sw2pos_position" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("func" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10213 10226])
+                    ("on_th" variable (:type "float") (reparse-symbol arg-sub-list) [10227 10239])
+                    ("on_inv" variable (:type "bool") (reparse-symbol arg-sub-list) [10240 10252]))                  
+                :type ("switch_pos_t" type (:type "class") nil nil))
+                nil [10167 11893])
+            ("set_params_from_rc" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("parameter_handles" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ParameterHandles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11929 11971]))                  
+                :type "void")
+                nil [11895 12915])
+            ("rc_poll" function
+               (:parent "RCUpdate"
+                :arguments 
+                  ( ("parameter_handles" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ParameterHandles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12940 12982]))                  
+                :type "void")
+                nil [12917 28928])
+            ("KillButtonLogic" function
+               (:constructor-flag t
+                :parent "KillButtonLogic"
+                :arguments 
+                  ( ("number_press_button" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [29006 29036])
+                    ("delta_time_button_pressed" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [29042 29078])
+                    ("timeout" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [29084 29102]))                  
+                :type ("KillButtonLogic" type (:type "class") nil nil))
+                nil [28973 29522])
+            ("KillButtonLogic" function
+               (:destructor-flag t
+                :parent "KillButtonLogic"
+                :type "void")
+                nil [29524 29590])
+            ("reset_button_pressed" function
+               (:parent "KillButtonLogic"
+                :type "void")
+                nil [29592 29714])
+            ("get_index" function
+               (:parent "KillButtonLogic"
+                :type "int")
+                nil [29716 30094])
+            ("update" function
+               (:parent "KillButtonLogic"
+                :arguments 
+                  ( ("pressed" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [30125 30144]))                  
+                :type "bool")
+                nil [30096 31295]))          
+      :file "rc_update.cpp"
+      :pointmax 31315
+      :fsize 31314
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MIN_STICK_CHANGE" . ((number "0.4f" 2161 . 2165)))
+          ("NUMBER_KILL_BUTTON_NEED_BE_PRESSED" . ((number "3" 2253 . 2254)))
+          ("RC_SPIKE_THR" . ((number "2" 2132 . 2133)))
+          ("TIMEOUT_KILL_BUTTON_LOGIC" . ((number "2e6" 2372 . 2375)))
+          ("TIME_KILL_BUTTON_HAS_TO_BE_PRESSED" . ((number "5e4" 2317 . 2320)))
+          )
+)
+    (semanticdb-table "rc_update.h"
+      :file "rc_update.h"
+      :fsize 5867
+      :lastmodtime '(23437 18825 496963 990000))
+    (semanticdb-table "sensors.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("board_config.h" include (:system-flag t) nil [1975 2000])
+            ("px4_config.h" include (:system-flag t) nil [2002 2025])
+            ("px4_module.h" include (:system-flag t) nil [2026 2049])
+            ("px4_getopt.h" include (:system-flag t) nil [2050 2073])
+            ("px4_posix.h" include (:system-flag t) nil [2074 2096])
+            ("px4_tasks.h" include (:system-flag t) nil [2097 2119])
+            ("px4_time.h" include (:system-flag t) nil [2120 2141])
+            ("fcntl.h" include (:system-flag t) nil [2143 2161])
+            ("poll.h" include (:system-flag t) nil [2162 2179])
+            ("unistd.h" include (:system-flag t) nil [2180 2199])
+            ("stdlib.h" include (:system-flag t) nil [2200 2219])
+            ("string.h" include (:system-flag t) nil [2220 2239])
+            ("stdbool.h" include (:system-flag t) nil [2240 2260])
+            ("stdio.h" include (:system-flag t) nil [2261 2279])
+            ("errno.h" include (:system-flag t) nil [2280 2298])
+            ("math.h" include (:system-flag t) nil [2299 2316])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2317 2345])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2347 2375])
+            ("drivers/drv_rc_input.h" include (:system-flag t) nil [2376 2409])
+            ("drivers/drv_adc.h" include (:system-flag t) nil [2410 2438])
+            ("drivers/drv_airspeed.h" include (:system-flag t) nil [2439 2472])
+            ("drivers/drv_px4flow.h" include (:system-flag t) nil [2473 2505])
+            ("systemlib/airspeed.h" include (:system-flag t) nil [2507 2538])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [2539 2571])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2572 2606])
+            ("systemlib/err.h" include (:system-flag t) nil [2607 2633])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2634 2669])
+            ("systemlib/battery.h" include (:system-flag t) nil [2670 2700])
+            ("conversion/rotation.h" include (:system-flag t) nil [2702 2734])
+            ("uORB/uORB.h" include (:system-flag t) nil [2736 2758])
+            ("uORB/topics/actuator_controls.h" include (:system-flag t) nil [2759 2801])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [2802 2847])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2848 2889])
+            ("uORB/topics/battery_status.h" include (:system-flag t) nil [2890 2929])
+            ("uORB/topics/differential_pressure.h" include (:system-flag t) nil [2930 2976])
+            ("uORB/topics/airspeed.h" include (:system-flag t) nil [2977 3010])
+            ("uORB/topics/sensor_preflight.h" include (:system-flag t) nil [3011 3052])
+            ("DevMgr.hpp" include (:system-flag t) nil [3054 3075])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [3077 3116])
+            ("lib/helpfuncs/helpfuncs.h" include (:system-flag t) nil [3129 3165])
+            ("parameters.h" include nil nil [3179 3202])
+            ("rc_update.h" include nil nil [3203 3225])
+            ("voted_sensors_update.h" include nil nil [3226 3259])
+            ("DriverFramework" using (:type ("DriverFramework" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3261 3293])
+            ("sensors" using (:type ("sensors" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3294 3318])
+            ("PCB_TEMP_ESTIMATE_DEG" variable (:constant-flag t) nil [4151 4172])
+            ("STICK_ON_OFF_LIMIT" variable (:constant-flag t) nil [4187 4205])
+            ("sensors_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4324 4333])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4334 4347]))                  
+                :type "int")
+                nil [4307 4348])
+            ("Sensors" type
+               (:superclasses 
+                  ( ("ModuleBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4395 4402])
+                    ("Sensors" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("hil_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [4412 4429]))                          
+                        :type ("Sensors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4404 4430])
+                    ("Sensors" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4433 4446])
+                    ("task_spawn" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4495 4504])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4505 4518]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4473 4519])
+                    ("instantiate" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4574 4583])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4584 4597]))                          
+                        :type ("Sensors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4546 4598])
+                    ("custom_command" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4651 4660])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4661 4674]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4625 4675])
+                    ("print_usage" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("reason" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4725 4753]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4702 4755])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [4800 4809])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [4871 4880])
+                    ("private" label nil (reparse-symbol classsubparts) [4882 4890])
+                    ("_h_adc" variable (:type ("DevHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4892 4910])
+                    ("_last_adc" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4942 4967])
+                    ("_hil_enabled" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5017 5041])
+                    ("_armed" variable (:type "bool") (reparse-symbol classsubparts) [5076 5096])
+                    ("_actuator_ctrl_0_sub" variable (:type "int") (reparse-symbol classsubparts) [5139 5169])
+                    ("_diff_pres_sub" variable (:type "int") (reparse-symbol classsubparts) [5202 5226])
+                    ("_vcontrol_mode_sub" variable (:type "int") (reparse-symbol classsubparts) [5277 5305])
+                    ("_vstatus_sub" variable (:type "int") (reparse-symbol classsubparts) [5350 5373])
+                    ("_params_sub" variable (:type "int") (reparse-symbol classsubparts) [5422 5444])
+                    ("_sensor_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5491 5525])
+                    ("_battery_pub" variable
+                       (:dereference 1
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5564 5614])
+                    ("_airspeed_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5754 5790])
+                    ("_diff_pres_pub" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5811 5848])
+                    ("_sensor_preflight" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5882 5922])
+                    ("_loop_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5957 5983])
+                    ("_airspeed_validator" variable (:type ("DataValidator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6021 6055])
+                    ("_battery" variable
+                       (:dereference 1
+                        :type ("Battery" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6102 6141])
+                    ("_parameters" variable (:type ("Parameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6198 6224])
+                    ("_parameter_handles" variable (:type ("ParameterHandles" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6275 6313])
+                    ("_rc_update" variable (:type ("RCUpdate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6360 6381])
+                    ("_voted_sensors_update" variable (:type ("VotedSensorsUpdate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6383 6424])
+                    ("_init_time" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6427 6454])
+                    ("_user_mode" variable (:type "bool") (reparse-symbol classsubparts) [6501 6526])
+                    ("_battery_status" variable (:type ("battery_status_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6540 6580])
+                    ("last_mag_sample_sane_us" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6610 6649])
+                    ("mag_norm_lpf" variable (:type "float") (reparse-symbol classsubparts) [6706 6725])
+                    ("parameters_update" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6830 6855])
+                    ("adc_init" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6903 6919])
+                    ("diff_pres_poll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("raw" variable
+                               (:reference 1
+                                :type ("sensor_combined_s" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7108 7138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7087 7139])
+                    ("vehicle_control_mode_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7199 7233])
+                    ("vehicle_status_poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7296 7324])
+                    ("parameter_update_poll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("forced" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7403 7422]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7374 7424])
+                    ("adc_poll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("raw" variable
+                               (:reference 1
+                                :type ("sensor_combined_s" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7593 7623]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7578 7624]))                  
+                :type "class")
+                nil [4350 7627])
+            ("Sensors" function
+               (:constructor-flag t
+                :parent "Sensors"
+                :arguments 
+                  ( ("hil_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [7646 7663]))                  
+                :type ("Sensors" type (:type "class") nil nil))
+                nil [7629 7967])
+            ("parameters_update" function
+               (:parent "Sensors"
+                :type "int")
+                nil [7969 8940])
+            ("adc_init" function
+               (:parent "Sensors"
+                :type "int")
+                nil [8943 9152])
+            ("diff_pres_poll" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9183 9213]))                  
+                :type "void")
+                nil [9154 12149])
+            ("vehicle_control_mode_poll" function
+               (:parent "Sensors"
+                :type "void")
+                nil [12151 12478])
+            ("vehicle_status_poll" function
+               (:parent "Sensors"
+                :type "void")
+                nil [12515 12778])
+            ("parameter_update_poll" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("forced" variable (:type "bool") (reparse-symbol arg-sub-list) [12816 12828]))                  
+                :type "void")
+                nil [12780 13653])
+            ("adc_poll" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13678 13708]))                  
+                :type "void")
+                nil [13655 21329])
+            ("run" function
+               (:parent "Sensors"
+                :type "void")
+                nil [21331 26533])
+            ("task_spawn" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26559 26568])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26569 26582]))                  
+                :type "int")
+                nil [26535 26870])
+            ("print_status" function
+               (:parent "Sensors"
+                :type "int")
+                nil [26872 27016])
+            ("custom_command" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [27046 27055])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27056 27069]))                  
+                :type "int")
+                nil [27018 27113])
+            ("print_usage" function
+               (:parent "Sensors"
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27140 27159]))                  
+                :type "int")
+                nil [27115 28821])
+            ("instantiate" function
+               (:pointer 1
+                :parent "Sensors"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28853 28862])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28863 28876]))                  
+                :type ("Sensors" type (:type "class") nil nil))
+                nil [28823 29339])
+            ("sensors_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [29358 29367])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29368 29381]))                  
+                :type "int")
+                nil [29341 29420]))          
+      :file "sensors.cpp"
+      :pointmax 29421
+      :fsize 29421
+      :lastmodtime '(23529 43867 670589 140000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PCB_TEMP_ESTIMATE_DEG" . ((number "5.0f" 4174 . 4178)))
+          ("STICK_ON_OFF_LIMIT" . ((number "0.75f" 4207 . 4212)))
+          )
+)
+    (semanticdb-table "parameters.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1901 1924])
+            ("drivers/drv_rc_input.h" include (:system-flag t) nil [1925 1958])
+            ("systemlib/param/param.h" include (:system-flag t) nil [1960 1994])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1995 2023])
+            ("uORB/topics/rc_parameter_map.h" include (:system-flag t) nil [2025 2066])
+            ("sensors" type
+               (:members 
+                  ( ("input_rc_s::RC_INPUT_MAX_CHANNELS" variable (:type "int") (reparse-symbol namespacesubparts) [2133 2167])
+                    ("Parameters" type
+                       (:members 
+                          ( ("min" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2239 2268])
+                            ("trim" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2270 2300])
+                            ("max" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2302 2331])
+                            ("rev" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2333 2362])
+                            ("dz" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2364 2392])
+                            ("scaling_factor" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2394 2434])
+                            ("diff_pres_offset_pa" variable (:type "float") (reparse-symbol classsubparts) [2437 2463])
+                            ("board_rotation" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2575 2598])
+                            ("board_offset" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [2601 2623])
+                            ("rc_map_roll" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2626 2646])
+                            ("rc_map_pitch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2648 2669])
+                            ("rc_map_yaw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2671 2690])
+                            ("rc_map_throttle" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2692 2716])
+                            ("rc_map_failsafe" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2718 2742])
+                            ("rc_map_mode_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2745 2768])
+                            ("rc_map_return_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2770 2795])
+                            ("rc_map_rattitude_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2797 2825])
+                            ("rc_map_posctl_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2827 2852])
+                            ("rc_map_loiter_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2854 2879])
+                            ("rc_map_acro_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2881 2904])
+                            ("rc_map_offboard_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2906 2933])
+                            ("rc_map_kill_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2935 2958])
+                            ("rc_map_arm_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2960 2982])
+                            ("rc_map_trans_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2984 3008])
+                            ("rc_map_gear_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3010 3033])
+                            ("rc_map_stab_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3035 3058])
+                            ("rc_map_man_sw" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3060 3082])
+                            ("rc_map_flaps" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3084 3105])
+                            ("rc_map_aux1" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3108 3128])
+                            ("rc_map_aux2" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3130 3150])
+                            ("rc_map_aux3" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3152 3172])
+                            ("rc_map_aux4" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3174 3194])
+                            ("rc_map_aux5" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3196 3216])
+                            ("rc_map_param" variable
+                               (:dereference 1
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3219 3280])
+                            ("rc_map_flightmode" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3283 3309])
+                            ("rc_fails_thr" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3312 3333])
+                            ("rc_assist_th" variable (:type "float") (reparse-symbol classsubparts) [3335 3354])
+                            ("rc_auto_th" variable (:type "float") (reparse-symbol classsubparts) [3356 3373])
+                            ("rc_rattitude_th" variable (:type "float") (reparse-symbol classsubparts) [3375 3397])
+                            ("rc_posctl_th" variable (:type "float") (reparse-symbol classsubparts) [3399 3418])
+                            ("rc_return_th" variable (:type "float") (reparse-symbol classsubparts) [3420 3439])
+                            ("rc_loiter_th" variable (:type "float") (reparse-symbol classsubparts) [3441 3460])
+                            ("rc_acro_th" variable (:type "float") (reparse-symbol classsubparts) [3462 3479])
+                            ("rc_offboard_th" variable (:type "float") (reparse-symbol classsubparts) [3481 3502])
+                            ("rc_killswitch_th" variable (:type "float") (reparse-symbol classsubparts) [3504 3527])
+                            ("rc_armswitch_th" variable (:type "float") (reparse-symbol classsubparts) [3529 3551])
+                            ("rc_trans_th" variable (:type "float") (reparse-symbol classsubparts) [3553 3571])
+                            ("rc_gear_th" variable (:type "float") (reparse-symbol classsubparts) [3573 3590])
+                            ("rc_stab_th" variable (:type "float") (reparse-symbol classsubparts) [3592 3609])
+                            ("rc_man_th" variable (:type "float") (reparse-symbol classsubparts) [3611 3627])
+                            ("rc_assist_inv" variable (:type "bool") (reparse-symbol classsubparts) [3630 3649])
+                            ("rc_auto_inv" variable (:type "bool") (reparse-symbol classsubparts) [3651 3668])
+                            ("rc_rattitude_inv" variable (:type "bool") (reparse-symbol classsubparts) [3670 3692])
+                            ("rc_posctl_inv" variable (:type "bool") (reparse-symbol classsubparts) [3694 3713])
+                            ("rc_return_inv" variable (:type "bool") (reparse-symbol classsubparts) [3715 3734])
+                            ("rc_loiter_inv" variable (:type "bool") (reparse-symbol classsubparts) [3736 3755])
+                            ("rc_acro_inv" variable (:type "bool") (reparse-symbol classsubparts) [3757 3774])
+                            ("rc_offboard_inv" variable (:type "bool") (reparse-symbol classsubparts) [3776 3797])
+                            ("rc_killswitch_inv" variable (:type "bool") (reparse-symbol classsubparts) [3799 3822])
+                            ("rc_armswitch_inv" variable (:type "bool") (reparse-symbol classsubparts) [3824 3846])
+                            ("rc_trans_inv" variable (:type "bool") (reparse-symbol classsubparts) [3848 3866])
+                            ("rc_gear_inv" variable (:type "bool") (reparse-symbol classsubparts) [3868 3885])
+                            ("rc_stab_inv" variable (:type "bool") (reparse-symbol classsubparts) [3887 3904])
+                            ("rc_man_inv" variable (:type "bool") (reparse-symbol classsubparts) [3906 3922])
+                            ("rc_param3_th" variable (:type "float") (reparse-symbol classsubparts) [3959 3978])
+                            ("rc_param3_inv" variable (:type "bool") (reparse-symbol classsubparts) [3980 3999])
+                            ("rc_flt_smp_rate" variable (:type "float") (reparse-symbol classsubparts) [4022 4044])
+                            ("rc_flt_cutoff" variable (:type "float") (reparse-symbol classsubparts) [4046 4066])
+                            ("battery_voltage_scaling" variable (:type "float") (reparse-symbol classsubparts) [4069 4099])
+                            ("battery_current_scaling" variable (:type "float") (reparse-symbol classsubparts) [4101 4131])
+                            ("battery_current_offset" variable (:type "float") (reparse-symbol classsubparts) [4133 4162])
+                            ("battery_source" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4240 4263])
+                            ("battery_v_div_hov" variable (:type "float") (reparse-symbol classsubparts) [4305 4329])
+                            ("battery_v_div_cru" variable (:type "float") (reparse-symbol classsubparts) [4331 4355])
+                            ("battery_a_per_v_hov" variable (:type "float") (reparse-symbol classsubparts) [4357 4383])
+                            ("battery_a_per_v_cru" variable (:type "float") (reparse-symbol classsubparts) [4385 4411])
+                            ("battery_voltage_offset" variable (:type "float") (reparse-symbol classsubparts) [4413 4442])
+                            ("battery_p_cons_cru" variable (:type "float") (reparse-symbol classsubparts) [4494 4519])
+                            ("battery_p_cons_hov" variable (:type "float") (reparse-symbol classsubparts) [4521 4546])
+                            ("wingtra_hw_ver" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4582 4605])
+                            ("baro_qnh" variable (:type "float") (reparse-symbol classsubparts) [4628 4643])
+                            ("air_cmodel" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4646 4665])
+                            ("air_tube_length" variable (:type "float") (reparse-symbol classsubparts) [4667 4689])
+                            ("air_tube_diameter_mm" variable (:type "float") (reparse-symbol classsubparts) [4691 4718]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2218 4721])
+                    ("ParameterHandles" type
+                       (:members 
+                          ( ("min" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4750 4781])
+                            ("trim" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4783 4815])
+                            ("max" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4817 4848])
+                            ("rev" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4850 4881])
+                            ("dz" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4883 4913])
+                            ("diff_pres_offset_pa" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4916 4944])
+                            ("rc_map_roll" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5058 5078])
+                            ("rc_map_pitch" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5080 5101])
+                            ("rc_map_yaw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5103 5122])
+                            ("rc_map_throttle" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5124 5148])
+                            ("rc_map_failsafe" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5150 5174])
+                            ("rc_map_mode_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5177 5200])
+                            ("rc_map_return_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5202 5227])
+                            ("rc_map_rattitude_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5229 5257])
+                            ("rc_map_posctl_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5259 5284])
+                            ("rc_map_loiter_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5286 5311])
+                            ("rc_map_acro_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5313 5336])
+                            ("rc_map_offboard_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5338 5365])
+                            ("rc_map_kill_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5367 5390])
+                            ("rc_map_arm_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5392 5414])
+                            ("rc_map_trans_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5416 5440])
+                            ("rc_map_gear_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5442 5465])
+                            ("rc_map_flaps" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5467 5488])
+                            ("rc_map_stab_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5490 5513])
+                            ("rc_map_man_sw" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5515 5537])
+                            ("rc_map_aux1" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5540 5560])
+                            ("rc_map_aux2" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5562 5582])
+                            ("rc_map_aux3" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5584 5604])
+                            ("rc_map_aux4" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5606 5626])
+                            ("rc_map_aux5" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5628 5648])
+                            ("rc_map_param" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5651 5712])
+                            ("rc_param" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5714 5771])
+                            ("rc_map_flightmode" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5983 6009])
+                            ("rc_fails_thr" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6012 6033])
+                            ("rc_assist_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6035 6056])
+                            ("rc_auto_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6058 6077])
+                            ("rc_rattitude_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6079 6103])
+                            ("rc_posctl_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6105 6126])
+                            ("rc_return_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6128 6149])
+                            ("rc_loiter_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6151 6172])
+                            ("rc_acro_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6174 6193])
+                            ("rc_offboard_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6195 6218])
+                            ("rc_killswitch_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6220 6245])
+                            ("rc_armswitch_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6247 6271])
+                            ("rc_trans_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6273 6293])
+                            ("rc_gear_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6295 6314])
+                            ("rc_stab_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6316 6335])
+                            ("rc_man_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6337 6355])
+                            ("rc_param3_th" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6392 6413])
+                            ("rc_flt_smp_rate" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6436 6460])
+                            ("rc_flt_cutoff" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6462 6484])
+                            ("battery_voltage_scaling" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6487 6519])
+                            ("battery_current_scaling" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6521 6553])
+                            ("battery_current_offset" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6555 6586])
+                            ("battery_source" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6668 6691])
+                            ("battery_v_div_hov" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6733 6759])
+                            ("battery_v_div_cru" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6761 6787])
+                            ("battery_a_per_v_hov" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6789 6817])
+                            ("battery_a_per_v_cru" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6819 6847])
+                            ("battery_voltage_offset" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6849 6880])
+                            ("battery_p_cons_cru" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6932 6959])
+                            ("battery_p_cons_hov" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6961 6988])
+                            ("wingtra_hw_ver" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7024 7047])
+                            ("board_rotation" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7070 7093])
+                            ("board_offset" variable
+                               (:dereference 1
+                                :type ("param_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7096 7120])
+                            ("baro_qnh" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7123 7140])
+                            ("air_cmodel" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7143 7162])
+                            ("air_tube_length" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7164 7188])
+                            ("air_tube_diameter_mm" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7190 7219]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4723 7223])
+                    ("initialize_parameter_handles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter_handles" variable
+                               (:reference 1
+                                :type ("ParameterHandles" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7305 7341]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7271 7342])
+                    ("update_parameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter_handles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParameterHandles" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7485 7527])
+                            ("parameters" variable
+                               (:reference 1
+                                :type ("Parameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7528 7551]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7463 7552]))                  
+                :type "namespace")
+                nil [2069 7555]))          
+      :file "parameters.h"
+      :pointmax 7580
+      :fsize 7579
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax '((punctuation 2130 . 2131) (symbol 2112 . 2129) (UNSIGNED 2103 . 2111) (CONST 2097 . 2102) (STATIC 2090 . 2096) (symbol 1742 . 1746) (symbol 1735 . 1741) (punctuation 1734 . 1735)))
+    (semanticdb-table "voted_sensors_update.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("parameters.h" include nil nil [1835 1858])
+            ("drivers/drv_accel.h" include (:system-flag t) nil [1860 1890])
+            ("drivers/drv_gyro.h" include (:system-flag t) nil [1891 1920])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [1921 1949])
+            ("drivers/drv_baro.h" include (:system-flag t) nil [1950 1979])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1980 2008])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [2010 2038])
+            ("lib/ecl/validation/data_validator.h" include (:system-flag t) nil [2040 2086])
+            ("lib/ecl/validation/data_validator_group.h" include (:system-flag t) nil [2087 2139])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2141 2181])
+            ("uORB/topics/sensor_preflight.h" include (:system-flag t) nil [2182 2223])
+            ("uORB/topics/sensor_correction.h" include (:system-flag t) nil [2224 2266])
+            ("uORB/topics/sensor_selection.h" include (:system-flag t) nil [2267 2308])
+            ("DevMgr.hpp" include (:system-flag t) nil [2310 2331])
+            ("temperature_compensation.h" include nil nil [2333 2370])
+            ("common.h" include nil nil [2371 2390])
+            ("sensors" type
+               (:members 
+                  ( ("VotedSensorsUpdate" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2522 2529])
+                            ("VotedSensorsUpdate" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("parameters" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Parameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2726 2755])
+                                    ("hil_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [2756 2773]))                                  
+                                :type ("VotedSensorsUpdate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2707 2774])
+                            ("init" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2869 2892]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2860 2893])
+                            ("initialize_sensors" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3015 3041])
+                            ("deinit" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3154 3168])
+                            ("print_status" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3171 3191])
+                            ("baro_pressure" function (:type "float") (reparse-symbol classsubparts) [3231 3295])
+                            ("parameters_update" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3440 3465])
+                            ("sensors_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3521 3544]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3503 3545])
+                            ("set_relative_timestamps" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3716 3739]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3687 3740])
+                            ("check_failover" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [3810 3832])
+                            ("num_gyros" function (:type "int") (reparse-symbol classsubparts) [3835 3893])
+                            ("gyro_fd" function
+                               (:arguments 
+                                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [3907 3915]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3895 3957])
+                            ("best_gyro_fd" function (:type "int") (reparse-symbol classsubparts) [3960 4037])
+                            ("calc_accel_inconsistency" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("preflt" variable
+                                       (:reference 1
+                                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4191 4218]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4161 4219])
+                            ("calc_gyro_inconsistency" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("preflt" variable
+                                       (:reference 1
+                                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4371 4398]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4342 4399])
+                            ("calc_mag_inconsistency" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("preflt" variable
+                                       (:reference 1
+                                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4552 4579]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4524 4580])
+                            ("private" label nil (reparse-symbol classsubparts) [4582 4590])
+                            ("SensorData" type
+                               (:members 
+                                  ( ("SensorData" function
+                                       (:constructor-flag t
+                                        :type ("SensorData" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [4615 4858])
+                                    ("enabled" variable
+                                       (:dereference 1
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4862 4893])
+                                    ("subscription" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4897 4932])
+                                    ("priority" variable
+                                       (:dereference 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4972 5007])
+                                    ("last_best_vote" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5034 5057])
+                                    ("subscription_count" variable (:type "int") (reparse-symbol classsubparts) [5098 5121])
+                                    ("voter" variable (:type ("DataValidatorGroup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5124 5149])
+                                    ("last_failover_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [5152 5185]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [4593 5189])
+                            ("init_sensor_class" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("meta" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("orb_metadata" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5215 5247])
+                                    ("sensor_data" variable
+                                       (:reference 1
+                                        :type ("SensorData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5248 5272])
+                                    ("sensor_count_max" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5273 5298]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5192 5299])
+                            ("accel_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5469 5499]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5452 5500])
+                            ("gyro_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5660 5690]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5644 5691])
+                            ("mag_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5858 5888]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5843 5889])
+                            ("baro_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("raw" variable
+                                       (:reference 1
+                                        :type ("sensor_combined_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6054 6084]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6038 6085])
+                            ("check_failover" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sensor" variable
+                                       (:reference 1
+                                        :type ("SensorData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6232 6251])
+                                    ("sensor_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6252 6276]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6212 6277])
+                            ("apply_gyro_calibration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("h" variable
+                                       (:reference 1
+                                        :type ("DriverFramework::DevHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6523 6553])
+                                    ("gcal" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("gyro_calibration_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6554 6592])
+                                    ("device_id" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6593 6613]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6495 6614])
+                            ("apply_accel_calibration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("h" variable
+                                       (:reference 1
+                                        :type ("DriverFramework::DevHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6862 6892])
+                                    ("acal" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("accel_calibration_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6893 6932])
+                                    ("device_id" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6942 6962]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6833 6963])
+                            ("apply_mag_calibration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("h" variable
+                                       (:reference 1
+                                        :type ("DriverFramework::DevHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7207 7237])
+                                    ("mcal" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("mag_calibration_s" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7238 7275])
+                                    ("device_id" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7276 7296]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7180 7297])
+                            ("_gyro" variable (:type ("SensorData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7300 7317])
+                            ("_accel" variable (:type ("SensorData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7319 7337])
+                            ("_mag" variable (:type ("SensorData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7339 7355])
+                            ("_baro" variable (:type ("SensorData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7357 7374])
+                            ("_mavlink_log_pub" variable
+                               (:default-value "nullptr"
+                                :type ("orb_advert_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7377 7417])
+                            ("_last_baro_pressure" variable
+                               (:dereference 1
+                                :type "float")
+                                (reparse-symbol classsubparts) [7420 7462])
+                            ("_last_best_baro_pressure" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol classsubparts) [7504 7542])
+                            ("_last_sensor_data" variable
+                               (:dereference 1
+                                :type ("sensor_combined_s" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7581 7635])
+                            ("_last_accel_timestamp" variable
+                               (:dereference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7691 7739])
+                            ("_last_mag_timestamp" variable
+                               (:dereference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7771 7815])
+                            ("_last_baro_timestamp" variable
+                               (:dereference 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7847 7893])
+                            ("_board_rotation" variable
+                               (:default-value "{}"
+                                :type ("math::Matrix" type
+                                     (:template-specifier (("3") ("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7926 7966])
+                            ("_mag_rotation" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("math::Matrix" type
+                                     (:template-specifier (("3") ("3"))
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [8038 8091])
+                            ("_parameters" variable
+                               (:constant-flag t
+                                :type ("Parameters" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8172 8202])
+                            ("_hil_enabled" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8204 8228])
+                            ("_accel_diff" variable
+                               (:dereference 2
+                                :type "float")
+                                (reparse-symbol classsubparts) [8277 8301])
+                            ("_gyro_diff" variable
+                               (:dereference 2
+                                :type "float")
+                                (reparse-symbol classsubparts) [8364 8387])
+                            ("_mag_diff" variable
+                               (:dereference 2
+                                :type "float")
+                                (reparse-symbol classsubparts) [8451 8473])
+                            ("_temperature_compensation" variable (:type ("TemperatureCompensation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8575 8625])
+                            ("_corrections" variable (:type ("sensor_correction_s" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [8627 8667])
+                            ("_sensor_correction_pub" variable
+                               (:default-value "nullptr"
+                                :type ("orb_advert_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8745 8791])
+                            ("_corrections_changed" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8844 8878])
+                            ("_selection" variable
+                               (:default-value "{}"
+                                :type ("sensor_selection_s" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [8917 8959])
+                            ("_sensor_selection_pub" variable
+                               (:default-value "nullptr"
+                                :type ("orb_advert_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9035 9080])
+                            ("_selection_changed" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9132 9164])
+                            ("_accel_device_id" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9238 9287])
+                            ("_baro_device_id" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9343 9391])
+                            ("_gyro_device_id" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9393 9441])
+                            ("_mag_device_id" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9443 9490])
+                            ("_msl_pressure" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [9493 9527]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2495 9571]))                  
+                :type "namespace")
+                nil [2392 9576]))          
+      :file "voted_sensors_update.h"
+      :pointmax 9601
+      :fsize 9600
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax '((symbol 1742 . 1746) (symbol 1735 . 1741) (punctuation 1734 . 1735)))
+    (semanticdb-table "voted_sensors_update.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("voted_sensors_update.h" include nil nil [1823 1856])
+            ("systemlib/mavlink_log.h" include (:system-flag t) nil [1858 1892])
+            ("conversion/rotation.h" include (:system-flag t) nil [1894 1926])
+            ("MAG_ROT_VAL_INTERNAL" variable (:constant-flag t) nil [1936 1956])
+            ("CAL_ERROR_APPLY_CAL_MSG" variable (:constant-flag t) nil [1969 1992])
+            ("sensors" using (:type ("sensors" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2024 2048])
+            ("DriverFramework" using (:type ("DriverFramework" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2049 2081])
+            ("VotedSensorsUpdate::_msl_pressure" variable
+               (:constant-flag t
+                :default-value "101.325"
+                :type "double")
+                nil [2084 2141])
+            ("VotedSensorsUpdate" function
+               (:constructor-flag t
+                :parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("parameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2182 2211])
+                    ("hil_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [2212 2229]))                  
+                :type ("VotedSensorsUpdate" type (:type "class") nil nil))
+                nil [2143 3412])
+            ("init" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3443 3466]))                  
+                :type "int")
+                nil [3414 3891])
+            ("initialize_sensors" function
+               (:parent "VotedSensorsUpdate"
+                :type "void")
+                nil [3893 4198])
+            ("deinit" function
+               (:parent "VotedSensorsUpdate"
+                :type "void")
+                nil [4200 4656])
+            ("parameters_update" function
+               (:parent "VotedSensorsUpdate"
+                :type "void")
+                nil [4658 19005])
+            ("accel_poll" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19043 19073]))                  
+                :type "void")
+                nil [19007 23208])
+            ("gyro_poll" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23245 23275]))                  
+                :type "void")
+                nil [23210 27332])
+            ("mag_poll" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27368 27398]))                  
+                :type "void")
+                nil [27334 29211])
+            ("baro_poll" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29248 29278]))                  
+                :type "void")
+                nil [29213 33116])
+            ("check_failover" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("sensor" variable
+                       (:reference 1
+                        :type ("SensorData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33158 33177])
+                    ("sensor_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33178 33202]))                  
+                :type "bool")
+                nil [33118 34598])
+            ("init_sensor_class" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("meta" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("orb_metadata" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34643 34675])
+                    ("sensor_data" variable
+                       (:reference 1
+                        :type ("SensorData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34676 34700])
+                    ("sensor_count_max" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34703 34728]))                  
+                :type "void")
+                nil [34600 35404])
+            ("print_status" function
+               (:parent "VotedSensorsUpdate"
+                :type "void")
+                nil [35406 35689])
+            ("apply_gyro_calibration" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("h" variable
+                       (:reference 1
+                        :type ("DevHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35739 35752])
+                    ("gcal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gyro_calibration_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35753 35791])
+                    ("device_id" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35792 35812]))                  
+                :type "bool")
+                nil [35691 36147])
+            ("apply_accel_calibration" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("h" variable
+                       (:reference 1
+                        :type ("DevHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36198 36211])
+                    ("acal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("accel_calibration_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36212 36251])
+                    ("device_id" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36252 36272]))                  
+                :type "bool")
+                nil [36149 36608])
+            ("apply_mag_calibration" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("h" variable
+                       (:reference 1
+                        :type ("DevHandle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36657 36670])
+                    ("mcal" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mag_calibration_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36671 36708])
+                    ("device_id" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36709 36729]))                  
+                :type "bool")
+                nil [36610 37077])
+            ("sensors_poll" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37117 37140]))                  
+                :type "void")
+                nil [37079 37980])
+            ("check_failover" function
+               (:parent "VotedSensorsUpdate"
+                :type "void")
+                nil [37982 38155])
+            ("set_relative_timestamps" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("raw" variable
+                       (:reference 1
+                        :type ("sensor_combined_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38206 38229]))                  
+                :type "void")
+                nil [38157 38802])
+            ("calc_accel_inconsistency" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("preflt" variable
+                       (:reference 1
+                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38854 38881]))                  
+                :type "void")
+                nil [38804 40595])
+            ("calc_gyro_inconsistency" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("preflt" variable
+                       (:reference 1
+                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40646 40673]))                  
+                :type "void")
+                nil [40597 42354])
+            ("calc_mag_inconsistency" function
+               (:parent "VotedSensorsUpdate"
+                :arguments 
+                  ( ("preflt" variable
+                       (:reference 1
+                        :type ("sensor_preflight_s" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42404 42431]))                  
+                :type "void")
+                nil [42356 44099]))          
+      :file "voted_sensors_update.cpp"
+      :pointmax 44100
+      :fsize 44099
+      :lastmodtime '(23461 3477 800623 536000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CAL_ERROR_APPLY_CAL_MSG" . ((string "\"FAILED APPLYING %s CAL #%u\"" 1993 . 2021)))
+          ("MAG_ROT_VAL_INTERNAL" . ((punctuation "-" 1958 . 1959) (number "1" 1959 . 1960)))
+          )
+)
+    (semanticdb-table "temperature_compensation.h"
+      :file "temperature_compensation.h"
+      :fsize 9475
+      :lastmodtime '(23437 18825 496963 990000))
+    (semanticdb-table "common.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("sensors" type
+               (:members 
+                  ( ("MAG_COUNT_MAX" variable
+                       (:default-value "4"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1897 1923])
+                    ("GYRO_COUNT_MAX" variable
+                       (:default-value "3"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1934 1961])
+                    ("ACCEL_COUNT_MAX" variable
+                       (:default-value "3"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1972 2000])
+                    ("BARO_COUNT_MAX" variable
+                       (:default-value "3"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2011 2038])
+                    ("SENSOR_COUNT_MAX" variable
+                       (:default-value "math::max(MAG_COUNT_MAX,
+				     math::max(GYRO_COUNT_MAX,
+						     math::max(ACCEL_COUNT_MAX,
+								     BARO_COUNT_MAX)))"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2050 2206]))                  
+                :type "namespace")
+                nil [1866 2209]))          
+      :file "common.h"
+      :pointmax 2234
+      :fsize 2233
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax '((symbol 2040 . 2049) (symbol 2001 . 2010) (symbol 1962 . 1971) (symbol 1924 . 1933) (symbol 1887 . 1896) (symbol 1742 . 1746) (symbol 1735 . 1741) (punctuation 1734 . 1735)))
+    (semanticdb-table "parameters.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("parameters.h" include nil nil [1813 1836])
+            ("sensors" type
+               (:members 
+                  ( ("initialize_parameter_handles" function
+                       (:arguments 
+                          ( ("parameter_handles" variable
+                               (:reference 1
+                                :type ("ParameterHandles" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1893 1929]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1859 10858])
+                    ("update_parameters" function
+                       (:arguments 
+                          ( ("parameter_handles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParameterHandles" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10882 10924])
+                            ("parameters" variable
+                               (:reference 1
+                                :type ("Parameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10925 10948]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [10860 23782]))                  
+                :type "namespace")
+                nil [1838 23785]))          
+      :file "parameters.cpp"
+      :pointmax 23810
+      :fsize 23809
+      :lastmodtime '(23484 55657 917165 641000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sensor_params.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CAL_BARO_PRIME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1817 1832]))                  
+                :type "int")
+                nil [1798 1836])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CAL_AIR_CMODEL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2624 2639]))                  
+                :type "int")
+                nil [2605 2643])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CAL_AIR_TUBELEN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2858 2874]))                  
+                :type "int")
+                nil [2839 2881])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CAL_AIR_TUBED_MM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3074 3091]))                  
+                :type "int")
+                nil [3055 3098])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_DPRES_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3240 3255]))                  
+                :type "int")
+                nil [3221 3262])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_DPRES_ANSC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3633 3649]))                  
+                :type "int")
+                nil [3614 3653])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_BARO_QNH" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3762 3776]))                  
+                :type "int")
+                nil [3743 3787])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_BOARD_ROT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4664 4679]))                  
+                :type "int")
+                nil [4645 4684])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_FLOW_ROT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5261 5275]))                  
+                :type "int")
+                nil [5242 5279])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_BOARD_Y_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5546 5563]))                  
+                :type "int")
+                nil [5527 5570])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_BOARD_X_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5834 5851]))                  
+                :type "int")
+                nil [5815 5858])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_BOARD_Z_OFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6121 6138]))                  
+                :type "int")
+                nil [6102 6145])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_LL40LS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6316 6331]))                  
+                :type "int")
+                nil [6297 6335])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_SF0X" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6596 6609]))                  
+                :type "int")
+                nil [6577 6613])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_MB12XX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6730 6745]))                  
+                :type "int")
+                nil [6711 6749])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_TRANGER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6956 6972]))                  
+                :type "int")
+                nil [6937 6976])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_SF1XX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7241 7255]))                  
+                :type "int")
+                nil [7222 7259])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_THERMAL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7423 7439]))                  
+                :type "int")
+                nil [7404 7444])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("IMU_GYRO_CUTOFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7830 7846]))                  
+                :type "int")
+                nil [7811 7854])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("IMU_ACCEL_CUTOFF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8242 8259]))                  
+                :type "int")
+                nil [8223 8267])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SENS_EN_TFMINI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8394 8409]))                  
+                :type "int")
+                nil [8375 8413]))          
+      :file "sensor_params.c"
+      :pointmax 8414
+      :fsize 8457
+      :lastmodtime '(23437 18825 496963 990000)
+      :unmatched-syntax '((number 8410 . 8411) (number 8260 . 8265) (number 7847 . 7852) (number 7441 . 7442) (punctuation 7440 . 7441) (number 7256 . 7257) (number 6973 . 6974) (number 6746 . 6747) (number 6610 . 6611) (number 6332 . 6333) (number 6139 . 6143) (number 5852 . 5856) (number 5564 . 5568) (number 5276 . 5277) (number 4680 . 4682) (number 3777 . 3785) (number 3650 . 3651) (number 3256 . 3260) (number 3092 . 3096) (number 2875 . 2879) (number 2640 . 2641) (number 1833 . 1834)))
+    (semanticdb-table "sensor_params_battery.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_CNT_V_VOLT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2049 2064]))                  
+                :type "int")
+                nil [2030 2072])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_CNT_V_CURR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2384 2399]))                  
+                :type "int")
+                nil [2365 2406])
+            ("PARAM_DEFINE_FLOAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_V_OFFS_CURR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2649 2665]))                  
+                :type "int")
+                nil [2630 2671])
+            ("PARAM_DEFINE_INT32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("BAT_SOURCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3830 3841]))                  
+                :type "int")
+                nil [3811 3845]))          
+      :file "sensor_params_battery.c"
+      :pointmax 5880
+      :fsize 5879
+      :lastmodtime '(23541 27237 46068 825000)
+      :unmatched-syntax nil))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!sensors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

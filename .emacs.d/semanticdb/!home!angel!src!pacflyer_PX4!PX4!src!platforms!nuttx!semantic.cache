@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_defines.h" include (:system-flag t) nil [1821 1845])
+            ("px4_middleware.h" include (:system-flag t) nil [1846 1873])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [1874 1902])
+            ("px4" type
+               (:members 
+                  ( ("init" function
+                       (:arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1932 1941])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1942 1955])
+                            ("process_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1956 1981]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1922 2025])
+                    ("get_time_micros" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2027 2086]))                  
+                :type "namespace")
+                nil [1905 2089]))          
+      :file "px4_nuttx_impl.cpp"
+      :pointmax 2090
+      :fsize 2089
+      :lastmodtime '(23770 52090 859808 157000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!platforms!nuttx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

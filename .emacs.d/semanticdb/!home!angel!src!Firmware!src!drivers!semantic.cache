@@ -1,0 +1,265 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/ioctl.h" include (:system-flag t) nil [1840 1862])
+            ("sys/types.h" include (:system-flag t) nil [1863 1885])
+            ("stdbool.h" include (:system-flag t) nil [1886 1906])
+            ("inttypes.h" include (:system-flag t) nil [1907 1928])
+            ("px4_time.h" include (:system-flag t) nil [1930 1951])
+            ("queue.h" include (:system-flag t) nil [1952 1970])
+            ("hrt_init" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5688 5693]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5667 5694])
+            ("hrt_call_delay" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5583 5606])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5607 5625]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5556 5626])
+            ("hrt_call_init" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5218 5241]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5192 5242])
+            ("hrt_cancel" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5114 5137]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5091 5138])
+            ("hrt_called" function
+               (:type "bool"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5005 5028]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4982 5029])
+            ("hrt_call_every" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4684 4707])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4708 4726])
+                    ("interval" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4727 4748])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4760 4780])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4781 4791]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4657 4792])
+            ("hrt_call_at" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4361 4384])
+                    ("calltime" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4385 4406])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4407 4427])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4428 4438]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4337 4439])
+            ("hrt_call_after" function
+               (:type "void"
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("hrt_call" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4195 4218])
+                    ("delay" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4219 4237])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4238 4258])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4259 4269]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4168 4270])
+            ("hrt_store_absolute_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("now" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3663 3689]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3620 3690])
+            ("hrt_elapsed_time_atomic" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("then" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3410 3443]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3367 3444])
+            ("hrt_elapsed_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("then" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3107 3131]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [3064 3172])
+            ("abstime_to_ts" function
+               (:type "void"
+                :arguments 
+                  ( ("ts" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2898 2918])
+                    ("abstime" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2919 2939]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2872 2940])
+            ("ts_to_abstime" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ts" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2786 2812]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2753 2813])
+            ("hrt_absolute_time" function
+               (:type ("hrt_abstime" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2688 2693]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2651 2694])
+            ("hrt_call_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("hrt_call" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [2437 2586])
+            ("hrt_call" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("link" variable (:type ("sq_entry_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2464 2487])
+                    ("deadline" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2490 2512])
+                    ("period" variable (:type ("hrt_abstime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2514 2534])
+                    ("callout" variable (:type ("hrt_callout" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2536 2557])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2559 2571]))                  )
+                (reparse-symbol extern-c-contents) [2437 2586])
+            ("hrt_callout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2397 2407]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2376 2408])
+            ("hrt_abstime" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("uint64_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2165 2194])
+            ("time_literals" type
+               (:members 
+                  ( ("_s" function
+                       (:arguments 
+                          ( ("seconds" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [6038 6065]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6035 6112])
+                    ("_ms" function
+                       (:arguments 
+                          ( ("seconds" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [6152 6179]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6148 6223])
+                    ("_us" function
+                       (:arguments 
+                          ( ("seconds" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [6263 6290]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [6259 6324]))                  
+                :type "namespace")
+                nil [5866 6327]))          
+      :file "drv_hrt.h"
+      :pointmax 6385
+      :fsize 6384
+      :lastmodtime '(23801 12013 496191 989000)
+      :unmatched-syntax '((string 6256 . 6258) (OPERATOR 6247 . 6255) (symbol 6235 . 6246) (symbol 6225 . 6234) (string 6145 . 6147) (OPERATOR 6136 . 6144) (symbol 6124 . 6135) (symbol 6114 . 6123) (string 6032 . 6034) (OPERATOR 6023 . 6031) (symbol 6011 . 6022) (symbol 6001 . 6010) (symbol 5658 . 5666) (symbol 5547 . 5555) (symbol 5183 . 5191) (symbol 5082 . 5090) (symbol 4973 . 4981) (symbol 4648 . 4656) (symbol 4328 . 4336) (symbol 4159 . 4167) (symbol 3611 . 3619) (symbol 3358 . 3366) (symbol 2863 . 2871) (symbol 2744 . 2752) (symbol 2642 . 2650) (TYPEDEF 2368 . 2375) (symbol 1834 . 1838) (symbol 1827 . 1833) (punctuation 1826 . 1827))))
+  :file "!home!angel!src!Firmware!src!drivers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

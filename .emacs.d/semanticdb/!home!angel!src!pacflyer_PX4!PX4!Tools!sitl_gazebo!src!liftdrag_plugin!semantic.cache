@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [628 648])
+            ("string" include (:system-flag t) nil [649 666])
+            ("common.h" include nil nil [668 687])
+            ("gazebo/common/Assert.hh" include nil nil [688 722])
+            ("gazebo/physics/physics.hh" include nil nil [723 759])
+            ("gazebo/sensors/SensorManager.hh" include nil nil [760 802])
+            ("gazebo/transport/transport.hh" include nil nil [803 843])
+            ("gazebo/msgs/msgs.hh" include nil nil [844 874])
+            ("liftdrag_plugin/liftdrag_plugin.h" include nil nil [875 919])
+            ("gazebo" using (:type ("gazebo" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [921 944])
+            ("LiftDragPlugin" function
+               (:constructor-flag t
+                :parent "LiftDragPlugin"
+                :type ("LiftDragPlugin" type (:type "class") nil nil))
+                nil [1038 1687])
+            ("LiftDragPlugin" function
+               (:destructor-flag t
+                :parent "LiftDragPlugin"
+                :type "void")
+                nil [1739 1776])
+            ("Load" function
+               (:parent "LiftDragPlugin"
+                :arguments 
+                  ( ("_model" variable (:type ("physics::ModelPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1854 1879])
+                    ("_sdf" variable (:type ("sdf::ElementPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1901 1922]))                  
+                :type "void")
+                nil [1828 4930])
+            ("OnUpdate" function
+               (:parent "LiftDragPlugin"
+                :type "void")
+                nil [4982 13238]))          
+      :file "liftdrag_plugin.cpp"
+      :pointmax 13239
+      :fsize 13238
+      :lastmodtime '(23798 26604 767393 689000)
+      :unmatched-syntax '((semantic-list 970 . 986) (symbol 946 . 970))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!Tools!sitl_gazebo!src!liftdrag_plugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1829 1852])
+            ("sys/types.h" include (:system-flag t) nil [1854 1876])
+            ("stdint.h" include (:system-flag t) nil [1877 1896])
+            ("stdbool.h" include (:system-flag t) nil [1897 1917])
+            ("string.h" include (:system-flag t) nil [1918 1937])
+            ("assert.h" include (:system-flag t) nil [1938 1957])
+            ("debug.h" include (:system-flag t) nil [1958 1976])
+            ("errno.h" include (:system-flag t) nil [1977 1995])
+            ("unistd.h" include (:system-flag t) nil [1996 2015])
+            ("arch/board/board.h" include (:system-flag t) nil [2017 2046])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [2048 2079])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2080 2108])
+            ("drivers/drv_device.h" include (:system-flag t) nil [2109 2140])
+            ("lis3mdl.h" include nil nil [2142 2162])
+            ("board_config.h" include nil nil [2163 2188]))          
+      :file "lis3mdl_i2c.cpp"
+      :pointmax 3993
+      :fsize 3992
+      :lastmodtime '(23807 35764 915221 562000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "lis3mdl.h"
+      :fsize 2067
+      :lastmodtime '(23549 3302 35906 41000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!lis3mdl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

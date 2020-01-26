@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UAVCAN_PROTOCOL_LOGGER_HPP_INCLUDED" variable (:constant-flag t) nil [125 160])
+            ("uavcan/time.hpp" include (:system-flag t) nil [162 188])
+            ("uavcan/build_config.hpp" include (:system-flag t) nil [189 223])
+            ("uavcan/protocol/debug/LogMessage.hpp" include (:system-flag t) nil [224 271])
+            ("uavcan/marshal/char_array_formatter.hpp" include (:system-flag t) nil [272 322])
+            ("uavcan/node/publisher.hpp" include (:system-flag t) nil [323 359])
+            ("cstdlib" include (:system-flag t) nil [360 378])
+            ("uavcan" type
+               (:members 
+                  ( ("ILogSink" variable (:type ("UAVCAN_EXPORT" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [714 1339])
+                    ("Logger" variable (:type ("UAVCAN_EXPORT" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1757 8145]))                  
+                :type "namespace")
+                nil [474 8875]))          
+      :file "logger.hpp"
+      :pointmax 8923
+      :fsize 8922
+      :lastmodtime '(23549 3466 465090 896000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UAVCAN_PROTOCOL_LOGGER_HPP_INCLUDED")
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!uavcan!libuavcan!libuavcan!include!uavcan!protocol!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

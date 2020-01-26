@@ -1,0 +1,190 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DRIVERS_MS5525_AIRSPEED_HPP_" variable (:constant-flag t) nil [1779 1807])
+            ("drivers/airspeed/airspeed.h" include (:system-flag t) nil [1809 1847])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [1848 1879])
+            ("drivers/drv_airspeed.h" include (:system-flag t) nil [1880 1913])
+            ("math.h" include (:system-flag t) nil [1914 1931])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [1932 1982])
+            ("px4_config.h" include (:system-flag t) nil [1983 2006])
+            ("sys/types.h" include (:system-flag t) nil [2007 2029])
+            ("systemlib/airspeed.h" include (:system-flag t) nil [2030 2061])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2062 2097])
+            ("uORB/topics/differential_pressure.h" include (:system-flag t) nil [2098 2144])
+            ("uORB/uORB.h" include (:system-flag t) nil [2145 2167])
+            ("I2C_ADDRESS_1_MS5525DSO" variable
+               (:default-value "0x76"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2277 2316])
+            ("PATH_MS5525" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"/dev/ms5525\""
+                :type "char")
+                nil [2335 2376])
+            ("MEAS_RATE" variable
+               (:default-value "100"
+                :type "unsigned int")
+                nil [2427 2452])
+            ("MEAS_DRIVER_FILTER_FREQ" variable
+               (:default-value "1.2f"
+                :type "float")
+                nil [2470 2507])
+            ("CONVERSION_INTERVAL" variable
+               (:default-value "(1000000 / MEAS_RATE)"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [2525 2578])
+            ("MS5525" type
+               (:superclasses 
+                  ( ("Airspeed" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2632 2639])
+                    ("MS5525" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bus" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2660])
+                            ("address" variable
+                               (:default-value "I2C_ADDRESS_1_MS5525DSO"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2661 2702])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "PATH_MS5525"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2704 2734]))                          
+                        :type ("MS5525" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2641 2795])
+                    ("private" label nil (reparse-symbol classsubparts) [2829 2837])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2949 2958])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2975 2984])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3000 3009])
+                    ("_filter" variable (:type ("math::LowPassFilter2p" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3057 3129])
+                    ("CMD_RESET" variable
+                       (:default-value "0x1E"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3149 3174])
+                    ("CMD_ADC_READ" variable
+                       (:default-value "0x00"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3214 3242])
+                    ("CMD_PROM_START" variable
+                       (:default-value "0xA0"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3282 3312])
+                    ("CMD_CONVERT_PRES" variable
+                       (:default-value "0x44"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3551 3583])
+                    ("CMD_CONVERT_TEMP" variable
+                       (:default-value "0x54"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3796 3828])
+                    ("_current_cmd" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3831 3870])
+                    ("_pressure_count" variable (:type "unsigned int") (reparse-symbol classsubparts) [3873 3901])
+                    ("Q1" variable
+                       (:default-value "15"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4009 4025])
+                    ("Q2" variable
+                       (:default-value "17"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4044 4060])
+                    ("Q3" variable
+                       (:default-value "7"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4079 4094])
+                    ("Q4" variable
+                       (:default-value "5"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4113 4128])
+                    ("Q5" variable
+                       (:default-value "7"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4147 4162])
+                    ("Q6" variable
+                       (:default-value "21"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4181 4197])
+                    ("C1" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4239 4254])
+                    ("C2" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4256 4271])
+                    ("C3" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4273 4288])
+                    ("C4" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4290 4305])
+                    ("C5" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4307 4322])
+                    ("C6" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4324 4339])
+                    ("Tref" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4342 4358])
+                    ("D1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4446 4461])
+                    ("D2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4463 4478])
+                    ("init_ms5525" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4481 4500])
+                    ("_inited" variable (:type "bool") (reparse-symbol classsubparts) [4502 4522])
+                    ("prom_crc4" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("n_prom" variable
+                               (:dereference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4543 4561]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4525 4568]))                  
+                :type "class")
+                nil [2599 4572]))          
+      :file "MS5525.hpp"
+      :pointmax 4616
+      :fsize 4615
+      :lastmodtime '(23770 52090 767807 616000)
+      :unmatched-syntax '((symbol 4171 . 4180) (STATIC 4164 . 4170) (symbol 4137 . 4146) (STATIC 4130 . 4136) (symbol 4103 . 4112) (STATIC 4096 . 4102) (symbol 4069 . 4078) (STATIC 4062 . 4068) (symbol 4034 . 4043) (STATIC 4027 . 4033) (symbol 3999 . 4008) (STATIC 3992 . 3998) (symbol 3786 . 3795) (STATIC 3779 . 3785) (symbol 3541 . 3550) (STATIC 3534 . 3540) (symbol 3272 . 3281) (STATIC 3265 . 3271) (symbol 3204 . 3213) (STATIC 3197 . 3203) (symbol 3139 . 3148) (STATIC 3132 . 3138) (semantic-list 2997 . 2999) (symbol 2990 . 2997) (INT 2986 . 2989) (semantic-list 2972 . 2974) (symbol 2965 . 2972) (INT 2961 . 2964) (semantic-list 2946 . 2948) (symbol 2941 . 2946) (VOID 2936 . 2940) (punctuation 2826 . 2827) (DEFAULT 2819 . 2826) (punctuation 2817 . 2818) (symbol 2808 . 2816) (semantic-list 2805 . 2807) (symbol 2799 . 2805) (punctuation 2798 . 2799) (symbol 2515 . 2524) (STATIC 2508 . 2514) (symbol 2460 . 2469) (STATIC 2453 . 2459) (symbol 2417 . 2426) (STATIC 2410 . 2416) (symbol 2325 . 2334) (STATIC 2318 . 2324) (symbol 2267 . 2276) (STATIC 2260 . 2266))
+      :lexical-table 
+        '(("DRIVERS_MS5525_AIRSPEED_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MS5525.hpp" include nil nil [1734 1755])
+            ("measure" function
+               (:parent "MS5525"
+                :type "int")
+                nil [1757 2087])
+            ("init_ms5525" function
+               (:parent "MS5525"
+                :type "bool")
+                nil [2089 3337])
+            ("prom_crc4" function
+               (:methodconst-flag t
+                :parent "MS5525"
+                :arguments 
+                  ( ("n_prom" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3365 3383]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3339 4204])
+            ("collect" function
+               (:parent "MS5525"
+                :type "int")
+                nil [4206 7138])
+            ("cycle" function
+               (:parent "MS5525"
+                :type "void")
+                nil [7140 8115]))          
+      :file "MS5525.cpp"
+      :pointmax 8116
+      :fsize 8116
+      :lastmodtime '(23798 26597 863346 955000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!ms5525_airspeed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

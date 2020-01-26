@@ -1,0 +1,832 @@
+;; Object ist8310/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ist8310/"
+  :tables
+  (list
+    (semanticdb-table "ist8310.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1881 1904])
+            ("px4_defines.h" include (:system-flag t) nil [1905 1929])
+            ("px4_getopt.h" include (:system-flag t) nil [1930 1953])
+            ("sys/types.h" include (:system-flag t) nil [1955 1977])
+            ("stdint.h" include (:system-flag t) nil [1978 1997])
+            ("stdlib.h" include (:system-flag t) nil [1998 2017])
+            ("stdbool.h" include (:system-flag t) nil [2018 2038])
+            ("semaphore.h" include (:system-flag t) nil [2039 2061])
+            ("string.h" include (:system-flag t) nil [2062 2081])
+            ("fcntl.h" include (:system-flag t) nil [2082 2100])
+            ("poll.h" include (:system-flag t) nil [2101 2118])
+            ("errno.h" include (:system-flag t) nil [2119 2137])
+            ("stdio.h" include (:system-flag t) nil [2138 2156])
+            ("math.h" include (:system-flag t) nil [2157 2174])
+            ("unistd.h" include (:system-flag t) nil [2175 2194])
+            ("nuttx/arch.h" include (:system-flag t) nil [2196 2219])
+            ("nuttx/wqueue.h" include (:system-flag t) nil [2220 2245])
+            ("nuttx/clock.h" include (:system-flag t) nil [2246 2270])
+            ("board_config.h" include (:system-flag t) nil [2272 2297])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2299 2334])
+            ("systemlib/err.h" include (:system-flag t) nil [2335 2361])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [2363 2394])
+            ("drivers/drv_mag.h" include (:system-flag t) nil [2395 2423])
+            ("drivers/drv_hrt.h" include (:system-flag t) nil [2424 2452])
+            ("drivers/device/ringbuffer.h" include (:system-flag t) nil [2453 2491])
+            ("drivers/drv_device.h" include (:system-flag t) nil [2492 2523])
+            ("uORB/uORB.h" include (:system-flag t) nil [2525 2547])
+            ("float.h" include (:system-flag t) nil [2549 2567])
+            ("getopt.h" include (:system-flag t) nil [2568 2587])
+            ("lib/conversion/rotation.h" include (:system-flag t) nil [2588 2624])
+            ("IST8310_CONVERSION_INTERVAL" variable (:constant-flag t) nil [2915 2942])
+            ("IST8310_BUS_I2C_ADDR" variable (:constant-flag t) nil [2987 3007])
+            ("IST8310_DEFAULT_BUS_SPEED" variable (:constant-flag t) nil [3021 3046])
+            ("IST8310_RESOLUTION" variable (:constant-flag t) nil [3175 3193])
+            ("IST8310_MAX_VAL_XY" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "(1600 / IST8310_RESOLUTION) + 1"
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [3199 3273])
+            ("IST8310_MIN_VAL_XY" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "-IST8310_MAX_VAL_XY"
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [3274 3336])
+            ("IST8310_MAX_VAL_Z" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "(2500 / IST8310_RESOLUTION) + 1"
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [3337 3411])
+            ("IST8310_MIN_VAL_Z" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "-IST8310_MAX_VAL_Z"
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [3412 3473])
+            ("ADDR_WAI" variable (:constant-flag t) nil [3511 3519])
+            ("WAI_EXPECTED_VALUE" variable (:constant-flag t) nil [3573 3591])
+            ("ADDR_STAT1" variable (:constant-flag t) nil [3610 3620])
+            ("STAT1_DRDY_SHFITS" variable (:constant-flag t) nil [3648 3665])
+            ("STAT1_DRDY" variable (:constant-flag t) nil [3684 3694])
+            ("STAT1_DRO_SHFITS" variable (:constant-flag t) nil [3741 3757])
+            ("STAT1_DRO" variable (:constant-flag t) nil [3777 3786])
+            ("ADDR_DATA_OUT_X_LSB" variable (:constant-flag t) nil [3833 3852])
+            ("ADDR_DATA_OUT_X_MSB" variable (:constant-flag t) nil [3870 3889])
+            ("ADDR_DATA_OUT_Y_LSB" variable (:constant-flag t) nil [3907 3926])
+            ("ADDR_DATA_OUT_Y_MSB" variable (:constant-flag t) nil [3944 3963])
+            ("ADDR_DATA_OUT_Z_LSB" variable (:constant-flag t) nil [3981 4000])
+            ("ADDR_DATA_OUT_Z_MSB" variable (:constant-flag t) nil [4018 4037])
+            ("ADDR_STAT2" variable (:constant-flag t) nil [4056 4066])
+            ("STAT2_INT_SHFITS" variable (:constant-flag t) nil [4094 4110])
+            ("STAT2_INT" variable (:constant-flag t) nil [4128 4137])
+            ("ADDR_CTRL1" variable (:constant-flag t) nil [4184 4194])
+            ("CTRL1_MODE_SHFITS" variable (:constant-flag t) nil [4222 4239])
+            ("CTRL1_MODE_STDBY" variable (:constant-flag t) nil [4256 4272])
+            ("CTRL1_MODE_SINGLE" variable (:constant-flag t) nil [4313 4330])
+            ("ADDR_CTRL2" variable (:constant-flag t) nil [4370 4380])
+            ("CTRL2_SRST_SHFITS" variable (:constant-flag t) nil [4408 4425])
+            ("CTRL2_SRST" variable (:constant-flag t) nil [4475 4485])
+            ("CTRL2_DRP_SHIFTS" variable (:constant-flag t) nil [4532 4548])
+            ("CTRL2_DRP" variable (:constant-flag t) nil [4566 4575])
+            ("CTRL2_DREN_SHIFTS" variable (:constant-flag t) nil [4622 4639])
+            ("CTRL2_DREN" variable (:constant-flag t) nil [4656 4666])
+            ("ADDR_CTRL3" variable (:constant-flag t) nil [4713 4723])
+            ("CTRL3_SAMPLEAVG_16" variable (:constant-flag t) nil [4741 4759])
+            ("CTRL3_SAMPLEAVG_8" variable (:constant-flag t) nil [4801 4818])
+            ("CTRL3_SAMPLEAVG_4" variable (:constant-flag t) nil [4859 4876])
+            ("CTRL3_SAMPLEAVG_2" variable (:constant-flag t) nil [4917 4934])
+            ("ADDR_CTRL4" variable (:constant-flag t) nil [4975 4985])
+            ("CTRL4_SRPD" variable (:constant-flag t) nil [5003 5013])
+            ("ADDR_STR" variable (:constant-flag t) nil [5062 5070])
+            ("STR_SELF_TEST_SHFITS" variable (:constant-flag t) nil [5100 5120])
+            ("STR_SELF_TEST_ON" variable (:constant-flag t) nil [5134 5150])
+            ("STR_SELF_TEST_OFF" variable (:constant-flag t) nil [5194 5211])
+            ("ADDR_Y11_Low" variable (:constant-flag t) nil [5254 5266])
+            ("ADDR_Y11_High" variable (:constant-flag t) nil [5282 5295])
+            ("ADDR_Y12_Low" variable (:constant-flag t) nil [5311 5323])
+            ("ADDR_Y12_High" variable (:constant-flag t) nil [5339 5352])
+            ("ADDR_Y13_Low" variable (:constant-flag t) nil [5368 5380])
+            ("ADDR_Y13_High" variable (:constant-flag t) nil [5396 5409])
+            ("ADDR_Y21_Low" variable (:constant-flag t) nil [5425 5437])
+            ("ADDR_Y21_High" variable (:constant-flag t) nil [5453 5466])
+            ("ADDR_Y22_Low" variable (:constant-flag t) nil [5482 5494])
+            ("ADDR_Y22_High" variable (:constant-flag t) nil [5510 5523])
+            ("ADDR_Y23_Low" variable (:constant-flag t) nil [5539 5551])
+            ("ADDR_Y23_High" variable (:constant-flag t) nil [5567 5580])
+            ("ADDR_Y31_Low" variable (:constant-flag t) nil [5596 5608])
+            ("ADDR_Y31_High" variable (:constant-flag t) nil [5624 5637])
+            ("ADDR_Y32_Low" variable (:constant-flag t) nil [5653 5665])
+            ("ADDR_Y32_High" variable (:constant-flag t) nil [5681 5694])
+            ("ADDR_Y33_Low" variable (:constant-flag t) nil [5710 5722])
+            ("ADDR_Y33_High" variable (:constant-flag t) nil [5738 5751])
+            ("ADDR_TEMPL" variable (:constant-flag t) nil [5768 5778])
+            ("ADDR_TEMPH" variable (:constant-flag t) nil [5805 5815])
+            ("IST8310_BUS" type
+               (:members 
+                  ( ("IST8310_BUS_ALL" variable
+                       (:constant-flag t
+                        :default-value (5883 5884)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5855 5884])
+                    ("IST8310_BUS_I2C_EXTERNAL" variable
+                       (:constant-flag t
+                        :default-value (5915 5916)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5887 5916])
+                    ("IST8310_BUS_I2C_EXTERNAL1" variable
+                       (:constant-flag t
+                        :default-value (5947 5948)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5919 5948])
+                    ("IST8310_BUS_I2C_EXTERNAL2" variable
+                       (:constant-flag t
+                        :default-value (5979 5980)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5951 5980])
+                    ("IST8310_BUS_I2C_EXTERNAL3" variable
+                       (:constant-flag t
+                        :default-value (6011 6012)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5983 6012])
+                    ("IST8310_BUS_I2C_INTERNAL" variable
+                       (:constant-flag t
+                        :default-value (6043 6044)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6015 6044]))                  
+                :type "enum")
+                nil [5835 6048])
+            ("IST8310" type
+               (:superclasses 
+                  ( ("device::I2C" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6172 6179])
+                    ("IST8310" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bus_number" variable (:type "int") (reparse-symbol arg-sub-list) [6189 6204])
+                            ("address" variable (:type "int") (reparse-symbol arg-sub-list) [6205 6217])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6218 6235])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [6236 6259]))                          
+                        :type ("IST8310" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6181 6260])
+                    ("IST8310" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6262 6281])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [6284 6307])
+                    ("read" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6335 6353])
+                            ("buffer" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6354 6367])
+                            ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6368 6382]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6310 6383])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6411 6429])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [6430 6438])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6439 6457]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6385 6458])
+                    ("print_info" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6536 6565])
+                    ("protected" label nil (reparse-symbol classsubparts) [6567 6577])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [6579 6599])
+                    ("private" label nil (reparse-symbol classsubparts) [6601 6609])
+                    ("_work" variable (:type ("work_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6611 6633])
+                    ("_measure_ticks" variable (:type "unsigned int") (reparse-symbol classsubparts) [6635 6666])
+                    ("_reports" variable
+                       (:pointer 1
+                        :type ("ringbuffer::RingBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6669 6703])
+                    ("_scale" variable (:type ("mag_calibration_s" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6705 6740])
+                    ("_range_scale" variable (:type "float") (reparse-symbol classsubparts) [6742 6771])
+                    ("_collect_phase" variable (:type "bool") (reparse-symbol classsubparts) [6773 6800])
+                    ("_class_instance" variable (:type "int") (reparse-symbol classsubparts) [6802 6830])
+                    ("_orb_class_instance" variable (:type "int") (reparse-symbol classsubparts) [6832 6864])
+                    ("_mag_topic" variable (:type ("orb_advert_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6867 6898])
+                    ("_sample_perf" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6901 6934])
+                    ("_comms_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6936 6970])
+                    ("_range_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6972 7006])
+                    ("_conf_errors" variable (:type ("perf_counter_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7008 7041])
+                    ("_sensor_ok" variable (:type "bool") (reparse-symbol classsubparts) [7068 7095])
+                    ("_calibrated" variable (:type "bool") (reparse-symbol classsubparts) [7145 7173])
+                    ("_ctl_reg_mismatch" variable (:type "bool") (reparse-symbol classsubparts) [7215 7240])
+                    ("_rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [7298 7328])
+                    ("_last_report" variable (:type ("mag_report" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7331 7364])
+                    ("_ctl3_reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7401 7421])
+                    ("_ctl4_reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7423 7443])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7688 7702])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7765 7784])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [7818 7838])
+                    ("calibrate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8180 8198])
+                            ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8199 8215]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8158 8216])
+                    ("check_conf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8433 8438]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8406 8439])
+                    ("cycle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8942 8966])
+                    ("cycle_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9187 9197]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9154 9198])
+                    ("write_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9382 9394])
+                            ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9395 9407]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9360 9408])
+                    ("write" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9661 9678])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [9679 9690])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9691 9706]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9647 9707])
+                    ("read_reg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9883 9895])
+                            ("val" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9896 9909]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [9862 9910])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10151 10168])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [10169 10180])
+                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10181 10196]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10142 10197])
+                    ("measure" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10310 10332])
+                    ("collect" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10400 10422])
+                    ("meas_to_float" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("in" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10642 10656]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [10616 10657])
+                    ("check_calibration" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10776 10808])
+                    ("check_scale" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [10910 10936])
+                    ("check_offset" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [11040 11067])
+                    ("set_selftest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11181 11197]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11156 11198])
+                    ("IST8310" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IST8310" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11277 11293]))                          
+                        :type ("IST8310" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11269 11294])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IST8310" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11314 11330]))                          
+                        :type ("IST8310" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11296 11331]))                  
+                :type "class")
+                nil [6135 11334])
+            ("ist8310_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [11406 11415])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11416 11429]))                  
+                :type "int")
+                nil [11389 11430])
+            ("IST8310" function
+               (:constructor-flag t
+                :parent "IST8310"
+                :arguments 
+                  ( ("bus_number" variable (:type "int") (reparse-symbol arg-sub-list) [11450 11465])
+                    ("address" variable (:type "int") (reparse-symbol arg-sub-list) [11466 11478])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11479 11496])
+                    ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [11497 11520]))                  
+                :type ("IST8310" type (:type "class") nil nil))
+                nil [11433 12549])
+            ("IST8310" function
+               (:destructor-flag t
+                :parent "IST8310"
+                :type "void")
+                nil [12551 12904])
+            ("init" function
+               (:parent "IST8310"
+                :type "int")
+                nil [12906 13392])
+            ("write" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13413 13430])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13431 13442])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13443 13458]))                  
+                :type "int")
+                nil [13394 13635])
+            ("read" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("address" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13655 13672])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13673 13684])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13685 13700]))                  
+                :type "int")
+                nil [13637 13779])
+            ("check_conf" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13988 13993]))                  
+                :type "void")
+                nil [13963 14650])
+            ("read" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14674 14692])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14693 14706])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14707 14721]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [14652 15911])
+            ("ioctl" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15932 15950])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [15951 15959])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15960 15978]))                  
+                :type "int")
+                nil [15913 18965])
+            ("start" function
+               (:parent "IST8310"
+                :type "void")
+                nil [18967 19201])
+            ("stop" function
+               (:parent "IST8310"
+                :type "void")
+                nil [19203 19257])
+            ("reset" function
+               (:parent "IST8310"
+                :type "int")
+                nil [19259 19556])
+            ("cycle_trampoline" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19589 19599]))                  
+                :type "void")
+                nil [19558 19651])
+            ("probe" function
+               (:parent "IST8310"
+                :type "int")
+                nil [19653 19980])
+            ("cycle" function
+               (:parent "IST8310"
+                :type "void")
+                nil [19982 20988])
+            ("measure" function
+               (:parent "IST8310"
+                :type "int")
+                nil [20990 21195])
+            ("collect" function
+               (:parent "IST8310"
+                :type "int")
+                nil [21197 24857])
+            ("calibrate" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24882 24900])
+                    ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24901 24917]))                  
+                :type "int")
+                nil [24859 27471])
+            ("check_scale" function
+               (:parent "IST8310"
+                :type "int")
+                nil [27473 27515])
+            ("check_offset" function
+               (:parent "IST8310"
+                :type "int")
+                nil [27517 27979])
+            ("check_calibration" function
+               (:parent "IST8310"
+                :type "int")
+                nil [27981 28446])
+            ("set_selftest" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("enable" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28474 28490]))                  
+                :type "int")
+                nil [28448 28913])
+            ("write_reg" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28938 28950])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28951 28963]))                  
+                :type "int")
+                nil [28915 29016])
+            ("read_reg" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("reg" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29040 29052])
+                    ("val" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29053 29066]))                  
+                :type "int")
+                nil [29018 29146])
+            ("meas_to_float" function
+               (:parent "IST8310"
+                :arguments 
+                  ( ("in" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29177 29191]))                  
+                :type "float")
+                nil [29148 29296])
+            ("print_info" function
+               (:parent "IST8310"
+                :type "void")
+                nil [29298 29960])
+            ("ist8310" type
+               (:members 
+                  ( ("bus_options" variable
+                       (:dereference 1
+                        :default-value "{
+	{ IST8310_BUS_I2C_EXTERNAL, \"/dev/ist8310_ext\", PX4_I2C_BUS_EXPANSION, NULL },
+#ifdef PX4_I2C_BUS_EXPANSION1
+	{ IST8310_BUS_I2C_EXTERNAL1, \"/dev/ist8311_int\", PX4_I2C_BUS_EXPANSION1, NULL },
+#endif
+#ifdef PX4_I2C_BUS_EXPANSION2
+	{ IST8310_BUS_I2C_EXTERNAL2, \"/dev/ist8312_int\", PX4_I2C_BUS_EXPANSION2, NULL },
+#endif
+#ifdef PX4_I2C_BUS_EXPANSION3
+	{ IST8310_BUS_I2C_EXTERNAL3, \"/dev/ist8313_int\", PX4_I2C_BUS_EXPANSION3, NULL },
+#endif
+#ifdef PX4_I2C_BUS_ONBOARD
+	{ IST8310_BUS_I2C_INTERNAL, \"/dev/ist8310_int\", PX4_I2C_BUS_ONBOARD, NULL },
+#endif
+}"
+                        :type ("ist8310_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30089 30767])
+                    ("ist8310_bus_option" type
+                       (:members 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [30118 30141])
+                            ("devpath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [30143 30163])
+                            ("busnum" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30165 30180])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("IST8310" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30182 30195]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [30089 30767])
+                    ("NUM_BUS_OPTIONS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [30776 30791])
+                    ("start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [30852 30875])
+                            ("address" variable (:type "int") (reparse-symbol arg-sub-list) [30876 30888])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [30889 30912]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30838 30913])
+                    ("start_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("ist8310_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [30932 30963])
+                            ("address" variable (:type "int") (reparse-symbol arg-sub-list) [30964 30976])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [30977 31000]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [30914 31001])
+                    ("find_bus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31038 31061]))                          
+                        :type ("ist8310_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [31002 31062])
+                    ("test" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31076 31099]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31063 31100])
+                    ("reset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31115 31138]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31101 31139])
+                    ("info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31149 31172]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [31140 31173])
+                    ("calibrate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31188 31211]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [31174 31212])
+                    ("usage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31213 31229])
+                    ("start_bus" function
+                       (:arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("ist8310_bus_option" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [31296 31327])
+                            ("address" variable (:type "int") (reparse-symbol arg-sub-list) [31328 31340])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [31341 31364]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [31281 31898])
+                    ("start" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32056 32079])
+                            ("address" variable (:type "int") (reparse-symbol arg-sub-list) [32080 32092])
+                            ("rotation" variable (:type ("Rotation" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32093 32116]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32045 32528])
+                    ("find_bus" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [32610 32633]))                          
+                        :type ("ist8310_bus_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [32574 32876])
+                    ("test" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [33034 33057]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33024 34729])
+                    ("calibrate" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [35593 35616]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [35579 35990])
+                    ("reset" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [36032 36055]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36021 36454])
+                    ("info" function
+                       (:arguments 
+                          ( ("busid" variable (:type ("IST8310_BUS" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [36516 36539]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [36507 36703])
+                    ("usage" function (:type "void") (reparse-symbol namespacesubparts) [36705 37048]))                  
+                :type "namespace")
+                nil [30022 37051])
+            ("ist8310_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [37083 37092])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37093 37106]))                  
+                :type "int")
+                nil [37066 38785]))          
+      :file "ist8310.cpp"
+      :pointmax 38786
+      :fsize 38788
+      :lastmodtime '(23437 18825 436962 470000)
+      :unmatched-syntax '((symbol 11380 . 11388) (punctuation 6125 . 6126) (symbol 6103 . 6125) (symbol 6094 . 6102) (symbol 6089 . 6093) (symbol 6083 . 6088) (punctuation 6081 . 6082))
+      :lexical-table 
+        '(("ADDR_CTRL3" . ((number "0x41" 4727 . 4731)))
+          ("ADDR_Y11_High" . ((number "0x9d" 5298 . 5302)))
+          ("ADDR_Y32_Low" . ((number "0xaa" 5668 . 5672)))
+          ("NUM_BUS_OPTIONS" . ((semantic-list "(sizeof(bus_options)/sizeof(bus_options[0]))" 30792 . 30836)))
+          ("IST8310_BUS_I2C_ADDR" . ((number "0xE" 3009 . 3012)))
+          ("ADDR_DATA_OUT_X_MSB" . ((number "0x04" 3894 . 3898)))
+          ("CTRL3_SAMPLEAVG_4" . ((number "0x12" 4878 . 4882)))
+          ("ADDR_CTRL4" . ((number "0x42" 4989 . 4993)))
+          ("ADDR_Y21_Low" . ((number "0xa2" 5440 . 5444)))
+          ("ADDR_Y21_High" . ((number "0xa3" 5469 . 5473)))
+          ("IST8310_RESOLUTION" . ((number "0.3" 3194 . 3197)))
+          ("CTRL1_MODE_SINGLE" . ((semantic-list "(1 << CTRL1_MODE_SHFITS)" 4336 . 4360)))
+          ("CTRL2_SRST_SHFITS" . ((number "0" 4431 . 4432)))
+          ("ADDR_Y31_High" . ((number "0xa9" 5640 . 5644)))
+          ("ADDR_TEMPL" . ((number "0x1c" 5792 . 5796)))
+          ("IST8310_CONVERSION_INTERVAL" . ((semantic-list "(1000000 / 100)" 2943 . 2958)))
+          ("ADDR_Y33_Low" . ((number "0xac" 5725 . 5729)))
+          ("ADDR_DATA_OUT_Y_MSB" . ((number "0x06" 3968 . 3972)))
+          ("CTRL3_SAMPLEAVG_16" . ((number "0x24" 4761 . 4765)))
+          ("ADDR_Y22_Low" . ((number "0xa4" 5497 . 5501)))
+          ("ADDR_WAI" . ((number "0" 3535 . 3536)))
+          ("STAT1_DRDY" . ((semantic-list "(1 << STAT1_DRDY_SHFITS)" 3707 . 3731)))
+          ("STAT1_DRO_SHFITS" . ((number "0x1" 3764 . 3767)))
+          ("ADDR_DATA_OUT_X_LSB" . ((number "0x03" 3857 . 3861)))
+          ("CTRL2_SRST" . ((semantic-list "(1 << CTRL2_SRST_SHFITS)" 4498 . 4522)))
+          ("CTRL3_SAMPLEAVG_8" . ((number "0x1b" 4820 . 4824)))
+          ("ADDR_Y11_Low" . ((number "0x9c" 5269 . 5273)))
+          ("ADDR_Y13_High" . ((number "0xa1" 5412 . 5416)))
+          ("WAI_EXPECTED_VALUE" . ((number "0x10" 3596 . 3600)))
+          ("CTRL1_MODE_STDBY" . ((semantic-list "(0 << CTRL1_MODE_SHFITS)" 4279 . 4303)))
+          ("STR_SELF_TEST_SHFITS" . ((number "6" 5123 . 5124)))
+          ("STR_SELF_TEST_ON" . ((semantic-list "(1 << STR_SELF_TEST_SHFITS)" 5157 . 5184)))
+          ("ADDR_Y23_High" . ((number "0xa7" 5583 . 5587)))
+          ("IST8310_DEFAULT_BUS_SPEED" . ((number "400000" 3047 . 3053)))
+          ("ADDR_DATA_OUT_Z_MSB" . ((number "0x08" 4042 . 4046)))
+          ("CTRL2_DREN" . ((semantic-list "(1 << CTRL2_DREN_SHIFTS)" 4679 . 4703)))
+          ("ADDR_Y23_Low" . ((number "0xa6" 5554 . 5558)))
+          ("ADDR_Y33_High" . ((number "0xad" 5754 . 5758)))
+          ("ADDR_STAT1" . ((number "0x02" 3634 . 3638)))
+          ("ADDR_DATA_OUT_Y_LSB" . ((number "0x05" 3931 . 3935)))
+          ("CTRL1_MODE_SHFITS" . ((number "0" 4245 . 4246)))
+          ("ADDR_Y12_Low" . ((number "0x9e" 5326 . 5330)))
+          ("STAT1_DRDY_SHFITS" . ((number "0x0" 3671 . 3674)))
+          ("STAT1_DRO" . ((semantic-list "(1 << STAT1_DRO_SHFITS)" 3800 . 3823)))
+          ("ADDR_STAT2" . ((number "0x09" 4080 . 4084)))
+          ("CTRL2_DRP_SHIFTS" . ((number "2" 4555 . 4556)))
+          ("CTRL2_DRP" . ((semantic-list "(1 << CTRL2_DRP_SHIFTS)" 4589 . 4612)))
+          ("ADDR_STR" . ((number "0x0c" 5086 . 5090)))
+          ("STR_SELF_TEST_OFF" . ((semantic-list "(0 << STR_SELF_TEST_SHFITS)" 5217 . 5244)))
+          ("ADDR_Y12_High" . ((number "0x9f" 5355 . 5359)))
+          ("CTRL2_DREN_SHIFTS" . ((number "3" 4645 . 4646)))
+          ("ADDR_Y22_High" . ((number "0xa5" 5526 . 5530)))
+          ("ADDR_Y31_Low" . ((number "0xa8" 5611 . 5615)))
+          ("ADDR_DATA_OUT_Z_LSB" . ((number "0x07" 4005 . 4009)))
+          ("STAT2_INT_SHFITS" . ((number "3" 4117 . 4118)))
+          ("STAT2_INT" . ((semantic-list "(1 << STAT2_INT_SHFITS)" 4151 . 4174)))
+          ("ADDR_CTRL1" . ((number "0x0a" 4208 . 4212)))
+          ("CTRL4_SRPD" . ((number "0xC0" 5017 . 5021)))
+          ("ADDR_Y13_Low" . ((number "0xa0" 5383 . 5387)))
+          ("ADDR_Y32_High" . ((number "0xab" 5697 . 5701)))
+          ("ADDR_TEMPH" . ((number "0x1d" 5829 . 5833)))
+          ("ADDR_CTRL2" . ((number "0x0b" 4394 . 4398)))
+          ("CTRL3_SAMPLEAVG_2" . ((number "0x09" 4936 . 4940)))
+          )
+))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!drivers!ist8310!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

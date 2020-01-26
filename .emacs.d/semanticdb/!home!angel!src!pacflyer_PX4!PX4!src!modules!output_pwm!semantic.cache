@@ -1,0 +1,117 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("./output_pwm.h" include nil nil [1802 1827])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1828 1856])
+            ("g_thread_should_exit" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [1859 1900])
+            ("g_thread_running" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [1930 1967])
+            ("g_deamon_task" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1999 2024])
+            ("output_pwm_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2156 2165])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2166 2179]))                  
+                :type "int")
+                nil [2136 2180])
+            ("output_pwm_thread_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2240 2249])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2250 2263]))                  
+                :type "int")
+                nil [2213 2264])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2316 2335]))                  
+                :type "void")
+                nil [2298 2336])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2356 2375]))                  
+                :type "void")
+                nil [2338 2507])
+            ("OutputPWM" function
+               (:constructor-flag t
+                :parent "OutputPWM"
+                :type ("OutputPWM" type (:type "class") nil nil))
+                nil [2747 5796])
+            ("OutputPWM" function
+               (:destructor-flag t
+                :parent "OutputPWM"
+                :type "void")
+                nil [5798 5825])
+            ("main" function
+               (:parent "OutputPWM"
+                :type "void")
+                nil [5828 6336])
+            ("write_pwm" function
+               (:parent "OutputPWM"
+                :type "int")
+                nil [6338 12671])
+            ("output_pwm_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12695 12704])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12705 12718]))                  
+                :type "int")
+                nil [12675 13448])
+            ("output_pwm_thread_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [13477 13486])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13487 13500]))                  
+                :type "int")
+                nil [13450 13876]))          
+      :file "output_pwm.cpp"
+      :pointmax 13879
+      :fsize 13913
+      :lastmodtime '(23713 51833 389582 980000)
+      :unmatched-syntax '((symbol 2127 . 2135)))
+    (semanticdb-table "semanticdb-table"
+      :file "output_pwm.h"
+      :fsize 3135
+      :lastmodtime '(23549 3302 83906 382000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!output_pwm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

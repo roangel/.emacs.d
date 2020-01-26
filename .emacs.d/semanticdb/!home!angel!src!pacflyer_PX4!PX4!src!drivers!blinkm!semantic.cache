@@ -1,0 +1,669 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("strings.h" include (:system-flag t) nil [3467 3487])
+            ("px4_config.h" include (:system-flag t) nil [3489 3512])
+            ("sys/types.h" include (:system-flag t) nil [3514 3536])
+            ("stdint.h" include (:system-flag t) nil [3537 3556])
+            ("string.h" include (:system-flag t) nil [3557 3576])
+            ("stdlib.h" include (:system-flag t) nil [3577 3596])
+            ("stdbool.h" include (:system-flag t) nil [3597 3617])
+            ("fcntl.h" include (:system-flag t) nil [3618 3636])
+            ("unistd.h" include (:system-flag t) nil [3637 3656])
+            ("stdio.h" include (:system-flag t) nil [3657 3675])
+            ("ctype.h" include (:system-flag t) nil [3676 3694])
+            ("poll.h" include (:system-flag t) nil [3695 3712])
+            ("px4_workqueue.h" include (:system-flag t) nil [3714 3740])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [3742 3777])
+            ("systemlib/err.h" include (:system-flag t) nil [3778 3804])
+            ("systemlib/systemlib.h" include (:system-flag t) nil [3805 3837])
+            ("board_config.h" include (:system-flag t) nil [3839 3864])
+            ("drivers/device/i2c.h" include (:system-flag t) nil [3866 3897])
+            ("drivers/drv_blinkm.h" include (:system-flag t) nil [3898 3929])
+            ("uORB/uORB.h" include (:system-flag t) nil [3931 3953])
+            ("uORB/topics/vehicle_status.h" include (:system-flag t) nil [3954 3993])
+            ("uORB/topics/battery_status.h" include (:system-flag t) nil [3994 4033])
+            ("uORB/topics/vehicle_control_mode.h" include (:system-flag t) nil [4034 4079])
+            ("uORB/topics/actuator_armed.h" include (:system-flag t) nil [4080 4119])
+            ("uORB/topics/vehicle_gps_position.h" include (:system-flag t) nil [4120 4165])
+            ("uORB/topics/safety.h" include (:system-flag t) nil [4166 4197])
+            ("LED_ONTIME" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "120"
+                :type "int")
+                nil [4199 4233])
+            ("LED_OFFTIME" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "120"
+                :type "int")
+                nil [4234 4269])
+            ("LED_BLINK" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [4270 4301])
+            ("LED_NOBLINK" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0"
+                :type "int")
+                nil [4302 4335])
+            ("BlinkM" type
+               (:superclasses 
+                  ( ("device::I2C" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4373 4380])
+                    ("BlinkM" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [4389 4397])
+                            ("blinkm" variable (:type "int") (reparse-symbol arg-sub-list) [4398 4409]))                          
+                        :type ("BlinkM" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4382 4410])
+                    ("BlinkM" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4412 4430])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4434 4454])
+                    ("probe" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4456 4477])
+                    ("setMode" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [4500 4509]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4479 4510])
+                    ("ioctl" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("filp" variable
+                               (:pointer 1
+                                :type ("device::file_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4531 4552])
+                            ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [4553 4561])
+                            ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4562 4580]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4512 4581])
+                    ("script_names" variable
+                       (:pointer 1
+                        :dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4584 4624])
+                    ("private" label nil (reparse-symbol classsubparts) [4626 4634])
+                    ("ScriptID" type
+                       (:members 
+                          ( ("USER" variable
+                               (:constant-flag t
+                                :default-value (4662 4663)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4654 4663])
+                            ("RGB" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4667 4671])
+                            ("WHITE_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4674 4686])
+                            ("RED_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4689 4699])
+                            ("GREEN_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4702 4714])
+                            ("BLUE_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4717 4728])
+                            ("CYAN_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4731 4742])
+                            ("MAGENTA_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4745 4759])
+                            ("YELLOW_FLASH" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4762 4775])
+                            ("BLACK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4778 4784])
+                            ("HUE_CYCLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4787 4797])
+                            ("MOOD_LIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4800 4811])
+                            ("VIRTUAL_CANDLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4814 4829])
+                            ("WATER_REFLECTIONS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4832 4850])
+                            ("OLD_NEON" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4853 4862])
+                            ("THE_SEASONS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4865 4877])
+                            ("THUNDERSTORM" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4880 4893])
+                            ("STOP_LIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4896 4907])
+                            ("MORSE_CODE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4910 4923]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4636 4924])
+                    ("ledColors" type
+                       (:members 
+                          ( ("LED_OFF" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4946 4954])
+                            ("LED_RED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4957 4965])
+                            ("LED_ORANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4968 4979])
+                            ("LED_YELLOW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4982 4993])
+                            ("LED_PURPLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4996 5007])
+                            ("LED_GREEN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5010 5020])
+                            ("LED_BLUE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5023 5032])
+                            ("LED_CYAN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5035 5044])
+                            ("LED_WHITE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5047 5057])
+                            ("LED_AMBER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5060 5072]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4927 5073])
+                    ("_work" variable (:type ("work_s" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5076 5091])
+                    ("led_color_1" variable (:type "int") (reparse-symbol classsubparts) [5094 5110])
+                    ("led_color_2" variable (:type "int") (reparse-symbol classsubparts) [5112 5128])
+                    ("led_color_3" variable (:type "int") (reparse-symbol classsubparts) [5130 5146])
+                    ("led_color_4" variable (:type "int") (reparse-symbol classsubparts) [5148 5164])
+                    ("led_color_5" variable (:type "int") (reparse-symbol classsubparts) [5166 5182])
+                    ("led_color_6" variable (:type "int") (reparse-symbol classsubparts) [5184 5200])
+                    ("led_color_7" variable (:type "int") (reparse-symbol classsubparts) [5202 5218])
+                    ("led_color_8" variable (:type "int") (reparse-symbol classsubparts) [5220 5236])
+                    ("led_blink" variable (:type "int") (reparse-symbol classsubparts) [5238 5252])
+                    ("systemstate_run" variable (:type "bool") (reparse-symbol classsubparts) [5255 5276])
+                    ("vehicle_status_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5279 5305])
+                    ("battery_status_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5307 5333])
+                    ("vehicle_control_mode_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5335 5367])
+                    ("vehicle_gps_position_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5369 5401])
+                    ("actuator_armed_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5403 5429])
+                    ("safety_sub_fd" variable (:type "int") (reparse-symbol classsubparts) [5431 5449])
+                    ("num_of_cells" variable (:type "int") (reparse-symbol classsubparts) [5452 5469])
+                    ("detected_cells_runcount" variable (:type "int") (reparse-symbol classsubparts) [5471 5499])
+                    ("t_led_color" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [5501 5520])
+                    ("t_led_blink" variable (:type "int") (reparse-symbol classsubparts) [5522 5538])
+                    ("led_thread_runcount" variable (:type "int") (reparse-symbol classsubparts) [5540 5564])
+                    ("led_interval" variable (:type "int") (reparse-symbol classsubparts) [5566 5583])
+                    ("topic_initialized" variable (:type "bool") (reparse-symbol classsubparts) [5586 5609])
+                    ("detected_cells_blinked" variable (:type "bool") (reparse-symbol classsubparts) [5611 5639])
+                    ("led_thread_ready" variable (:type "bool") (reparse-symbol classsubparts) [5641 5663])
+                    ("num_of_used_sats" variable (:type "int") (reparse-symbol classsubparts) [5666 5687])
+                    ("setLEDColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ledcolor" variable (:type "int") (reparse-symbol arg-sub-list) [5710 5723]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5690 5724])
+                    ("led_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5754 5764]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5726 5765])
+                    ("led" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5767 5780])
+                    ("set_rgb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5797 5807])
+                            ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5808 5818])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5819 5829]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5783 5830])
+                    ("fade_rgb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5848 5858])
+                            ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5859 5869])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5870 5880]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5833 5881])
+                    ("fade_hsb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("h" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5898 5908])
+                            ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5909 5919])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5920 5930]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5883 5931])
+                    ("fade_rgb_random" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5956 5966])
+                            ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5967 5977])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5978 5988]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5934 5989])
+                    ("fade_hsb_random" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("h" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6013 6023])
+                            ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6024 6034])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6035 6045]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5991 6046])
+                    ("set_fade_speed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6070 6080]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6049 6081])
+                    ("play_script" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("script_id" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6102 6120]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6084 6121])
+                    ("play_script" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("script_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6141 6165]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6123 6166])
+                    ("stop_script" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6168 6188])
+                    ("write_script_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("line" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6215 6228])
+                            ("ticks" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6229 6243])
+                            ("cmd" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6244 6256])
+                            ("arg1" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6257 6270])
+                            ("arg2" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6271 6284])
+                            ("arg3" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6285 6298]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6191 6299])
+                    ("read_script_line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("line" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6324 6337])
+                            ("ticks" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6338 6353])
+                            ("cmd" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6354 6369]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6301 6370])
+                    ("set_script" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("length" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6389 6404])
+                            ("repeats" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6405 6421]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6372 6422])
+                    ("get_rgb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6439 6450])
+                            ("g" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6451 6462])
+                            ("b" variable
+                               (:reference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6463 6474]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6425 6475])
+                    ("get_firmware_version" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("version" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6505 6524]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6478 6525]))                  
+                :type "class")
+                nil [4337 6528])
+            ("unnamed" type
+               (:members 
+                  ( ("g_blinkm" variable
+                       (:pointer 1
+                        :type ("BlinkM" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6584 6601]))                  
+                :type "namespace")
+                nil [6572 6603])
+            ("BlinkM::script_names" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :default-value "{
+	\"USER\",
+	\"RGB\",
+	\"WHITE_FLASH\",
+	\"RED_FLASH\",
+	\"GREEN_FLASH\",
+	\"BLUE_FLASH\",
+	\"CYAN_FLASH\",
+	\"MAGENTA_FLASH\",
+	\"YELLOW_FLASH\",
+	\"BLACK\",
+	\"HUE_CYCLE\",
+	\"MOOD_LIGHT\",
+	\"VIRTUAL_CANDLE\",
+	\"WATER_REFLECTIONS\",
+	\"OLD_NEON\",
+	\"THE_SEASONS\",
+	\"THUNDERSTORM\",
+	\"STOP_LIGHT\",
+	\"MORSE_CODE\",
+	nullptr
+}"
+                :type "char")
+                nil [6662 7002])
+            ("blinkm_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7041 7050])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7051 7064]))                  
+                :type "int")
+                nil [7025 7065])
+            ("BlinkM" function
+               (:constructor-flag t
+                :parent "BlinkM"
+                :arguments 
+                  ( ("bus" variable (:type "int") (reparse-symbol arg-sub-list) [7082 7090])
+                    ("blinkm" variable (:type "int") (reparse-symbol arg-sub-list) [7091 7102]))                  
+                :type ("BlinkM" type (:type "class") nil nil))
+                nil [7067 7876])
+            ("BlinkM" function
+               (:destructor-flag t
+                :parent "BlinkM"
+                :type "void")
+                nil [7878 7899])
+            ("init" function
+               (:parent "BlinkM"
+                :type "int")
+                nil [7901 8066])
+            ("setMode" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [8088 8097]))                  
+                :type "int")
+                nil [8068 8352])
+            ("probe" function
+               (:parent "BlinkM"
+                :type "int")
+                nil [8354 8561])
+            ("ioctl" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("device::file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8581 8602])
+                    ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [8603 8611])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8612 8630]))                  
+                :type "int")
+                nil [8563 9333])
+            ("led_trampoline" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9364 9374]))                  
+                :type "void")
+                nil [9336 9420])
+            ("led" function
+               (:parent "BlinkM"
+                :type "void")
+                nil [9424 19172])
+            ("setLEDColor" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("ledcolor" variable (:type "int") (reparse-symbol arg-sub-list) [19199 19212]))                  
+                :type "void")
+                nil [19174 19824])
+            ("set_rgb" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19846 19856])
+                    ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19857 19867])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19868 19878]))                  
+                :type "int")
+                nil [19826 19973])
+            ("fade_rgb" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19996 20006])
+                    ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20007 20017])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20018 20028]))                  
+                :type "int")
+                nil [19975 20123])
+            ("fade_hsb" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("h" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20146 20156])
+                    ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20157 20167])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20168 20178]))                  
+                :type "int")
+                nil [20125 20273])
+            ("fade_rgb_random" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20303 20313])
+                    ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20314 20324])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20325 20335]))                  
+                :type "int")
+                nil [20275 20430])
+            ("fade_hsb_random" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("h" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20460 20470])
+                    ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20471 20481])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20482 20492]))                  
+                :type "int")
+                nil [20432 20587])
+            ("set_fade_speed" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("s" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20616 20626]))                  
+                :type "int")
+                nil [20589 20715])
+            ("play_script" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("script_id" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20741 20759]))                  
+                :type "int")
+                nil [20717 20862])
+            ("play_script" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("script_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20888 20912]))                  
+                :type "int")
+                nil [20864 21516])
+            ("stop_script" function
+               (:parent "BlinkM"
+                :type "int")
+                nil [21518 21629])
+            ("write_script_line" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("line" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21661 21674])
+                    ("ticks" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21675 21689])
+                    ("cmd" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21690 21702])
+                    ("arg1" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21703 21716])
+                    ("arg2" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21717 21730])
+                    ("arg3" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21731 21744]))                  
+                :type "int")
+                nil [21631 21869])
+            ("read_script_line" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("line" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21900 21913])
+                    ("ticks" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21914 21929])
+                    ("cmd" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21930 21945]))                  
+                :type "int")
+                nil [21871 22220])
+            ("set_script" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22245 22257])
+                    ("repeats" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22258 22274]))                  
+                :type "int")
+                nil [22222 22377])
+            ("get_rgb" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("r" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22399 22410])
+                    ("g" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22411 22422])
+                    ("b" variable
+                       (:reference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22423 22434]))                  
+                :type "int")
+                nil [22379 22636])
+            ("get_firmware_version" function
+               (:parent "BlinkM"
+                :arguments 
+                  ( ("version" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22671 22690]))                  
+                :type "int")
+                nil [22638 22770])
+            ("blinkm_usage" function
+               (:prototype-flag t
+                :type "void")
+                nil [22772 22792])
+            ("blinkm_usage" function (:type "void") nil [22794 23014])
+            ("blinkm_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [23032 23041])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23042 23055]))                  
+                :type "int")
+                nil [23016 24662]))          
+      :file "blinkm.cpp"
+      :pointmax 24663
+      :fsize 24662
+      :lastmodtime '(23770 52090 739807 452000)
+      :unmatched-syntax '((symbol 7016 . 7024))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!drivers!blinkm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

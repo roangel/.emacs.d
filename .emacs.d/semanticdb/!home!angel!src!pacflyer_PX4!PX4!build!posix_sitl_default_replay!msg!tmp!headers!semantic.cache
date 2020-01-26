@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "vehicle_status.h"
+      :pointmax 6090
+      :fsize 6089
+      :lastmodtime '(23658 33023 990087 962000)
+      :unmatched-syntax nil))
+  :file "!home!angel!src!pacflyer_PX4!PX4!build!posix_sitl_default_replay!msg!tmp!headers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

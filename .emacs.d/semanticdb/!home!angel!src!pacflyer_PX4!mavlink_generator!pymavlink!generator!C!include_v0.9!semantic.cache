@@ -1,0 +1,949 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MAVLINK_TYPES_H_" variable (:constant-flag t) nil [34 50])
+            ("inttypes.h" include nil nil [52 73])
+            ("MAV_CLASS" type
+               (:members 
+                  ( ("MAV_CLASS_GENERIC" variable
+                       (:constant-flag t
+                        :default-value (116 117)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [96 117])
+                    ("MAV_CLASS_PIXHAWK" variable
+                       (:constant-flag t
+                        :default-value (202 203)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [182 203])
+                    ("MAV_CLASS_SLUGS" variable
+                       (:constant-flag t
+                        :default-value (281 282)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [263 282])
+                    ("MAV_CLASS_ARDUPILOTMEGA" variable
+                       (:constant-flag t
+                        :default-value (374 375)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [348 375])
+                    ("MAV_CLASS_OPENPILOT" variable
+                       (:constant-flag t
+                        :default-value (458 459)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [436 459])
+                    ("MAV_CLASS_GENERIC_MISSION_WAYPOINTS_ONLY" variable
+                       (:constant-flag t
+                        :default-value (550 551)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [507 551])
+                    ("MAV_CLASS_GENERIC_MISSION_NAVIGATION_ONLY" variable
+                       (:constant-flag t
+                        :default-value (658 659)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [614 659])
+                    ("MAV_CLASS_GENERIC_MISSION_FULL" variable
+                       (:constant-flag t
+                        :default-value (779 780)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [746 780])
+                    ("MAV_CLASS_NONE" variable
+                       (:constant-flag t
+                        :default-value (877 878)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [860 878])
+                    ("MAV_CLASS_NB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [918 982]))                  
+                :type "enum")
+                nil [75 983])
+            ("MAV_ACTION" type
+               (:members 
+                  ( ("MAV_ACTION_HOLD" variable
+                       (:constant-flag t
+                        :default-value (1025 1026)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1007 1026])
+                    ("MAV_ACTION_MOTORS_START" variable
+                       (:constant-flag t
+                        :default-value (1058 1059)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1032 1059])
+                    ("MAV_ACTION_LAUNCH" variable
+                       (:constant-flag t
+                        :default-value (1085 1086)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1065 1086])
+                    ("MAV_ACTION_RETURN" variable
+                       (:constant-flag t
+                        :default-value (1112 1113)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1092 1113])
+                    ("MAV_ACTION_EMCY_LAND" variable
+                       (:constant-flag t
+                        :default-value (1142 1143)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1119 1143])
+                    ("MAV_ACTION_EMCY_KILL" variable
+                       (:constant-flag t
+                        :default-value (1172 1173)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1149 1173])
+                    ("MAV_ACTION_CONFIRM_KILL" variable
+                       (:constant-flag t
+                        :default-value (1205 1206)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1179 1206])
+                    ("MAV_ACTION_CONTINUE" variable
+                       (:constant-flag t
+                        :default-value (1234 1235)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1212 1235])
+                    ("MAV_ACTION_MOTORS_STOP" variable
+                       (:constant-flag t
+                        :default-value (1266 1267)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1241 1267])
+                    ("MAV_ACTION_HALT" variable
+                       (:constant-flag t
+                        :default-value (1291 1292)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1273 1292])
+                    ("MAV_ACTION_SHUTDOWN" variable
+                       (:constant-flag t
+                        :default-value (1320 1322)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1298 1322])
+                    ("MAV_ACTION_REBOOT" variable
+                       (:constant-flag t
+                        :default-value (1348 1350)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1328 1350])
+                    ("MAV_ACTION_SET_MANUAL" variable
+                       (:constant-flag t
+                        :default-value (1380 1382)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1356 1382])
+                    ("MAV_ACTION_SET_AUTO" variable
+                       (:constant-flag t
+                        :default-value (1410 1412)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1388 1412])
+                    ("MAV_ACTION_STORAGE_READ" variable
+                       (:constant-flag t
+                        :default-value (1444 1446)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1418 1446])
+                    ("MAV_ACTION_STORAGE_WRITE" variable
+                       (:constant-flag t
+                        :default-value (1479 1481)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1452 1481])
+                    ("MAV_ACTION_CALIBRATE_RC" variable
+                       (:constant-flag t
+                        :default-value (1513 1515)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1487 1515])
+                    ("MAV_ACTION_CALIBRATE_GYRO" variable
+                       (:constant-flag t
+                        :default-value (1549 1551)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1521 1551])
+                    ("MAV_ACTION_CALIBRATE_MAG" variable
+                       (:constant-flag t
+                        :default-value (1584 1586)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1557 1586])
+                    ("MAV_ACTION_CALIBRATE_ACC" variable
+                       (:constant-flag t
+                        :default-value (1619 1621)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1592 1621])
+                    ("MAV_ACTION_CALIBRATE_PRESSURE" variable
+                       (:constant-flag t
+                        :default-value (1659 1661)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1627 1661])
+                    ("MAV_ACTION_REC_START" variable
+                       (:constant-flag t
+                        :default-value (1690 1692)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1667 1692])
+                    ("MAV_ACTION_REC_PAUSE" variable
+                       (:constant-flag t
+                        :default-value (1721 1723)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1698 1723])
+                    ("MAV_ACTION_REC_STOP" variable
+                       (:constant-flag t
+                        :default-value (1751 1753)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1729 1753])
+                    ("MAV_ACTION_TAKEOFF" variable
+                       (:constant-flag t
+                        :default-value (1780 1782)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1759 1782])
+                    ("MAV_ACTION_NAVIGATE" variable
+                       (:constant-flag t
+                        :default-value (1810 1812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1788 1812])
+                    ("MAV_ACTION_LAND" variable
+                       (:constant-flag t
+                        :default-value (1836 1838)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1818 1838])
+                    ("MAV_ACTION_LOITER" variable
+                       (:constant-flag t
+                        :default-value (1864 1866)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1844 1866])
+                    ("MAV_ACTION_SET_ORIGIN" variable
+                       (:constant-flag t
+                        :default-value (1896 1898)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1872 1898])
+                    ("MAV_ACTION_RELAY_ON" variable
+                       (:constant-flag t
+                        :default-value (1926 1928)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1904 1928])
+                    ("MAV_ACTION_RELAY_OFF" variable
+                       (:constant-flag t
+                        :default-value (1957 1959)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1934 1959])
+                    ("MAV_ACTION_GET_IMAGE" variable
+                       (:constant-flag t
+                        :default-value (1988 1990)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1965 1990])
+                    ("MAV_ACTION_VIDEO_START" variable
+                       (:constant-flag t
+                        :default-value (2021 2023)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1996 2023])
+                    ("MAV_ACTION_VIDEO_STOP" variable
+                       (:constant-flag t
+                        :default-value (2053 2055)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2029 2055])
+                    ("MAV_ACTION_RESET_MAP" variable
+                       (:constant-flag t
+                        :default-value (2084 2086)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2061 2086])
+                    ("MAV_ACTION_RESET_PLAN" variable
+                       (:constant-flag t
+                        :default-value (2116 2118)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2092 2118])
+                    ("MAV_ACTION_DELAY_BEFORE_COMMAND" variable
+                       (:constant-flag t
+                        :default-value (2158 2160)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2124 2160])
+                    ("MAV_ACTION_ASCEND_AT_RATE" variable
+                       (:constant-flag t
+                        :default-value (2194 2196)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2166 2196])
+                    ("MAV_ACTION_CHANGE_MODE" variable
+                       (:constant-flag t
+                        :default-value (2227 2229)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2202 2229])
+                    ("MAV_ACTION_LOITER_MAX_TURNS" variable
+                       (:constant-flag t
+                        :default-value (2265 2267)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2235 2267])
+                    ("MAV_ACTION_LOITER_MAX_TIME" variable
+                       (:constant-flag t
+                        :default-value (2302 2304)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2273 2304])
+                    ("MAV_ACTION_START_HILSIM" variable
+                       (:constant-flag t
+                        :default-value (2336 2338)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2310 2338])
+                    ("MAV_ACTION_STOP_HILSIM" variable
+                       (:constant-flag t
+                        :default-value (2369 2371)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2344 2371])
+                    ("MAV_ACTION_NB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2381 2430]))                  
+                :type "enum")
+                nil [985 2431])
+            ("MAV_MODE" type
+               (:members 
+                  ( ("MAV_MODE_UNINIT" variable
+                       (:constant-flag t
+                        :default-value (2471 2472)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2453 2472])
+                    ("MAV_MODE_LOCKED" variable
+                       (:constant-flag t
+                        :default-value (2534 2535)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2516 2535])
+                    ("MAV_MODE_MANUAL" variable
+                       (:constant-flag t
+                        :default-value (2603 2604)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2585 2604])
+                    ("MAV_MODE_GUIDED" variable
+                       (:constant-flag t
+                        :default-value (2695 2696)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2677 2696])
+                    ("MAV_MODE_AUTO" variable
+                       (:constant-flag t
+                        :default-value (2803 2804)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2785 2804])
+                    ("MAV_MODE_TEST1" variable
+                       (:constant-flag t
+                        :default-value (2909 2910)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2891 2910])
+                    ("MAV_MODE_TEST2" variable
+                       (:constant-flag t
+                        :default-value (2977 2978)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2959 2978])
+                    ("MAV_MODE_TEST3" variable
+                       (:constant-flag t
+                        :default-value (3045 3046)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3027 3046])
+                    ("MAV_MODE_READY" variable
+                       (:constant-flag t
+                        :default-value (3113 3114)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3095 3114])
+                    ("MAV_MODE_RC_TRAINING" variable
+                       (:constant-flag t
+                        :default-value (3220 3221)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3197 3221]))                  
+                :type "enum")
+                nil [2433 3290])
+            ("MAV_STATE" type
+               (:members 
+                  ( ("MAV_STATE_UNINIT" variable
+                       (:constant-flag t
+                        :default-value (3332 3333)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3313 3333])
+                    ("MAV_STATE_BOOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3339 3354])
+                    ("MAV_STATE_CALIBRATING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3359 3381])
+                    ("MAV_STATE_STANDBY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3386 3404])
+                    ("MAV_STATE_ACTIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3409 3426])
+                    ("MAV_STATE_CRITICAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3431 3450])
+                    ("MAV_STATE_EMERGENCY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3455 3475])
+                    ("MAV_STATE_HILSIM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3480 3497])
+                    ("MAV_STATE_POWEROFF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3502 3522]))                  
+                :type "enum")
+                nil [3292 3523])
+            ("MAV_NAV" type
+               (:members 
+                  ( ("MAV_NAV_GROUNDED" variable
+                       (:constant-flag t
+                        :default-value (3563 3564)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3544 3564])
+                    ("MAV_NAV_LIFTOFF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3570 3586])
+                    ("MAV_NAV_HOLD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3591 3604])
+                    ("MAV_NAV_WAYPOINT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3609 3626])
+                    ("MAV_NAV_VECTOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3631 3646])
+                    ("MAV_NAV_RETURNING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3651 3669])
+                    ("MAV_NAV_LANDING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3674 3690])
+                    ("MAV_NAV_LOST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3695 3708])
+                    ("MAV_NAV_LOITER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3713 3728])
+                    ("MAV_NAV_FREE_DRIFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3733 3753]))                  
+                :type "enum")
+                nil [3525 3754])
+            ("MAV_TYPE" type
+               (:members 
+                  ( ("MAV_GENERIC" variable
+                       (:constant-flag t
+                        :default-value (3790 3791)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3776 3791])
+                    ("MAV_FIXED_WING" variable
+                       (:constant-flag t
+                        :default-value (3814 3815)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3797 3815])
+                    ("MAV_QUADROTOR" variable
+                       (:constant-flag t
+                        :default-value (3837 3838)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3821 3838])
+                    ("MAV_COAXIAL" variable
+                       (:constant-flag t
+                        :default-value (3858 3859)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3844 3859])
+                    ("MAV_HELICOPTER" variable
+                       (:constant-flag t
+                        :default-value (3882 3883)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3865 3883])
+                    ("MAV_GROUND" variable
+                       (:constant-flag t
+                        :default-value (3902 3903)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3889 3903])
+                    ("OCU" variable
+                       (:constant-flag t
+                        :default-value (3915 3916)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3909 3916])
+                    ("MAV_AIRSHIP" variable
+                       (:constant-flag t
+                        :default-value (3936 3937)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3922 3937])
+                    ("MAV_FREE_BALLOON" variable
+                       (:constant-flag t
+                        :default-value (3962 3963)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3943 3963])
+                    ("MAV_ROCKET" variable
+                       (:constant-flag t
+                        :default-value (3982 3983)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3969 3983])
+                    ("UGV_GROUND_ROVER" variable
+                       (:constant-flag t
+                        :default-value (4008 4010)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3989 4010])
+                    ("UGV_SURFACE_SHIP" variable
+                       (:constant-flag t
+                        :default-value (4035 4037)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4016 4037]))                  
+                :type "enum")
+                nil [3756 4040])
+            ("MAV_AUTOPILOT_TYPE" type
+               (:members 
+                  ( ("MAV_AUTOPILOT_GENERIC" variable
+                       (:constant-flag t
+                        :default-value (4096 4097)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4072 4097])
+                    ("MAV_AUTOPILOT_PIXHAWK" variable
+                       (:constant-flag t
+                        :default-value (4127 4128)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4103 4128])
+                    ("MAV_AUTOPILOT_SLUGS" variable
+                       (:constant-flag t
+                        :default-value (4156 4157)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4134 4157])
+                    ("MAV_AUTOPILOT_ARDUPILOTMEGA" variable
+                       (:constant-flag t
+                        :default-value (4193 4194)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4163 4194])
+                    ("MAV_AUTOPILOT_NONE" variable
+                       (:constant-flag t
+                        :default-value (4221 4222)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4200 4222]))                  
+                :type "enum")
+                nil [4042 4225])
+            ("MAV_COMPONENT" type
+               (:members 
+                  ( ("MAV_COMP_ID_GPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4252 4268])
+                    ("MAV_COMP_ID_WAYPOINTPLANNER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4273 4301])
+                    ("MAV_COMP_ID_BLOBTRACKER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4306 4330])
+                    ("MAV_COMP_ID_PATHPLANNER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4335 4359])
+                    ("MAV_COMP_ID_AIRSLAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4364 4384])
+                    ("MAV_COMP_ID_MAPPER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4389 4408])
+                    ("MAV_COMP_ID_CAMERA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4413 4432])
+                    ("MAV_COMP_ID_RADIO" variable
+                       (:constant-flag t
+                        :default-value (4457 4459)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4437 4459])
+                    ("MAV_COMP_ID_IMU" variable
+                       (:constant-flag t
+                        :default-value (4483 4486)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4465 4486])
+                    ("MAV_COMP_ID_IMU_2" variable
+                       (:constant-flag t
+                        :default-value (4512 4515)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4492 4515])
+                    ("MAV_COMP_ID_IMU_3" variable
+                       (:constant-flag t
+                        :default-value (4541 4544)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4521 4544])
+                    ("MAV_COMP_ID_UDP_BRIDGE" variable
+                       (:constant-flag t
+                        :default-value (4575 4578)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4550 4578])
+                    ("MAV_COMP_ID_UART_BRIDGE" variable
+                       (:constant-flag t
+                        :default-value (4610 4613)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4584 4613])
+                    ("MAV_COMP_ID_SYSTEM_CONTROL" variable
+                       (:constant-flag t
+                        :default-value (4648 4651)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4619 4651]))                  
+                :type "enum")
+                nil [4227 4654])
+            ("MAV_FRAME" type
+               (:members 
+                  ( ("MAV_FRAME_GLOBAL" variable
+                       (:constant-flag t
+                        :default-value (4696 4697)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4677 4697])
+                    ("MAV_FRAME_LOCAL" variable
+                       (:constant-flag t
+                        :default-value (4721 4722)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4703 4722])
+                    ("MAV_FRAME_MISSION" variable
+                       (:constant-flag t
+                        :default-value (4748 4749)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4728 4749])
+                    ("MAV_FRAME_GLOBAL_RELATIVE_ALT" variable
+                       (:constant-flag t
+                        :default-value (4787 4788)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4755 4788])
+                    ("MAV_FRAME_LOCAL_ENU" variable
+                       (:constant-flag t
+                        :default-value (4816 4817)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4794 4817]))                  
+                :type "enum")
+                nil [4656 4820])
+            ("MAVLINK_DATA_STREAM_TYPE" type
+               (:members 
+                  ( ("MAVLINK_DATA_STREAM_IMG_JPEG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4858 4887])
+                    ("MAVLINK_DATA_STREAM_IMG_BMP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4892 4920])
+                    ("MAVLINK_DATA_STREAM_IMG_RAW8U" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4925 4955])
+                    ("MAVLINK_DATA_STREAM_IMG_RAW32U" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4960 4991])
+                    ("MAVLINK_DATA_STREAM_IMG_PGM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4996 5024])
+                    ("MAVLINK_DATA_STREAM_IMG_PNG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5029 5058]))                  
+                :type "enum")
+                nil [4822 5059])
+            ("MAVLINK_MAX_PAYLOAD_LEN" variable (:constant-flag t) nil [5153 5176])
+            ("MAVLINK_CORE_HEADER_LEN" variable (:constant-flag t) nil [5225 5248])
+            ("MAVLINK_NUM_HEADER_BYTES" variable (:constant-flag t) nil [5448 5472])
+            ("MAVLINK_NUM_CHECKSUM_BYTES" variable (:constant-flag t) nil [5572 5598])
+            ("MAVLINK_NUM_NON_PAYLOAD_BYTES" variable (:constant-flag t) nil [5609 5638])
+            ("MAVLINK_MAX_PACKET_LEN" variable (:constant-flag t) nil [5704 5726])
+            ("MAVLINK_MSG_ID_EXTENDED_MESSAGE" variable (:constant-flag t) nil [5821 5852])
+            ("MAVLINK_EXTENDED_HEADER_LEN" variable (:constant-flag t) nil [5865 5892])
+            ("MAVLINK_MAX_EXTENDED_PACKET_LEN" variable (:constant-flag t) nil [6029 6060])
+            ("MAVLINK_MAX_EXTENDED_PAYLOAD_LEN" variable (:constant-flag t) nil [6167 6199])
+            ("param_union" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("param_float" variable (:type "float") (reparse-symbol classsubparts) [6339 6357])
+                            ("param_int32" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6362 6382])
+                            ("param_uint32" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6387 6409])
+                            ("param_uint8" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6412 6432])
+                            ("bytes" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6435 6452]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [6327 6456])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6458 6471]))                  
+                :type "struct")
+                nil [6297 6496])
+            ("mavlink_param_union_t" type
+               (:typedef ("param_union" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [6297 6496])
+            ("__mavlink_system" type
+               (:members 
+                  ( ("sysid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6536 6550])
+                    ("compid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6621 6636])
+                    ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6706 6719])
+                    ("state" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6787 6801])
+                    ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6869 6882])
+                    ("nav_mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6950 6967]))                  
+                :type "struct")
+                nil [6498 7061])
+            ("mavlink_system_t" type
+               (:typedef ("__mavlink_system" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [6498 7061])
+            ("__mavlink_message" type
+               (:members 
+                  ( ("checksum" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7099 7117])
+                    ("magic" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7145 7159])
+                    ("len" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7190 7202])
+                    ("seq" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7231 7243])
+                    ("sysid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7273 7287])
+                    ("compid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7333 7348])
+                    ("msgid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7391 7405])
+                    ("payload64" variable
+                       (:dereference 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7439 7516]))                  
+                :type "struct")
+                nil [7063 7537])
+            ("mavlink_message_t" type
+               (:typedef ("__mavlink_message" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7063 7537])
+            ("__mavlink_extended_message" type
+               (:members 
+                  ( ("base_msg" variable (:type ("mavlink_message_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7591 7618])
+                    ("extended_payload_len" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7626 7655])
+                    ("extended_payload" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7704 7763]))                  
+                :type "struct")
+                nil [7540 7793])
+            ("mavlink_extended_message_t" type
+               (:typedef ("__mavlink_extended_message" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7540 7793])
+            ("mavlink_message_type_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MAVLINK_TYPE_CHAR" variable
+                             (:constant-flag t
+                              :default-value (7836 7837)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7812 7837])
+                          ("MAVLINK_TYPE_UINT8_T" variable
+                             (:constant-flag t
+                              :default-value (7864 7865)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7840 7865])
+                          ("MAVLINK_TYPE_INT8_T" variable
+                             (:constant-flag t
+                              :default-value (7892 7893)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7868 7893])
+                          ("MAVLINK_TYPE_UINT16_T" variable
+                             (:constant-flag t
+                              :default-value (7920 7921)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7896 7921])
+                          ("MAVLINK_TYPE_INT16_T" variable
+                             (:constant-flag t
+                              :default-value (7948 7949)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7924 7949])
+                          ("MAVLINK_TYPE_UINT32_T" variable
+                             (:constant-flag t
+                              :default-value (7976 7977)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7952 7977])
+                          ("MAVLINK_TYPE_INT32_T" variable
+                             (:constant-flag t
+                              :default-value (8004 8005)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [7980 8005])
+                          ("MAVLINK_TYPE_UINT64_T" variable
+                             (:constant-flag t
+                              :default-value (8032 8033)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8008 8033])
+                          ("MAVLINK_TYPE_INT64_T" variable
+                             (:constant-flag t
+                              :default-value (8060 8061)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8036 8061])
+                          ("MAVLINK_TYPE_FLOAT" variable
+                             (:constant-flag t
+                              :default-value (8088 8089)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8064 8089])
+                          ("MAVLINK_TYPE_DOUBLE" variable
+                             (:constant-flag t
+                              :default-value (8116 8118)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [8092 8118]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [7796 8144])
+            ("MAVLINK_MAX_FIELDS" variable (:constant-flag t) nil [8154 8172])
+            ("__mavlink_field_info" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [8216 8233])
+                    ("print_format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [8269 8294])
+                    ("type" variable (:type ("mavlink_message_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8333 8361])
+                    ("array_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [8393 8419])
+                    ("wire_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [8469 8494])
+                    ("structure_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [8550 8580]))                  
+                :type "struct")
+                nil [8177 8634])
+            ("mavlink_field_info_t" type
+               (:typedef ("__mavlink_field_info" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [8177 8634])
+            ("__mavlink_message_info" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [8790 8807])
+                    ("num_fields" variable (:type "unsigned int") (reparse-symbol classsubparts) [8869 8889])
+                    ("fields" variable
+                       (:dereference 1
+                        :type ("mavlink_field_info_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8960 9008]))                  
+                :type "struct")
+                nil [8749 9061])
+            ("mavlink_message_info_t" type
+               (:typedef ("__mavlink_message_info" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [8749 9061])
+            ("_MAV_PAYLOAD" variable (:constant-flag t) nil [9071 9083])
+            ("_MAV_PAYLOAD_NON_CONST" variable (:constant-flag t) nil [9138 9160])
+            ("mavlink_ck_a" variable (:constant-flag t) nil [9261 9273])
+            ("mavlink_ck_b" variable (:constant-flag t) nil [9342 9354])
+            ("mavlink_channel_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MAVLINK_COMM_0" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9449 9464])
+                          ("MAVLINK_COMM_1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9469 9484])
+                          ("MAVLINK_COMM_2" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9489 9504])
+                          ("MAVLINK_COMM_3" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9509 9525]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [9430 9544])
+            ("MAVLINK_COMM_NUM_BUFFERS" variable (:constant-flag t) nil [9837 9861])
+            ("mavlink_parse_state_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MAVLINK_PARSE_STATE_UNINIT" variable
+                             (:constant-flag t
+                              :default-value (9968 9969)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9941 9969])
+                          ("MAVLINK_PARSE_STATE_IDLE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [9975 10000])
+                          ("MAVLINK_PARSE_STATE_GOT_STX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10005 10033])
+                          ("MAVLINK_PARSE_STATE_GOT_SEQ" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10038 10066])
+                          ("MAVLINK_PARSE_STATE_GOT_LENGTH" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10071 10102])
+                          ("MAVLINK_PARSE_STATE_GOT_SYSID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10107 10137])
+                          ("MAVLINK_PARSE_STATE_GOT_COMPID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10142 10173])
+                          ("MAVLINK_PARSE_STATE_GOT_MSGID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10178 10208])
+                          ("MAVLINK_PARSE_STATE_GOT_PAYLOAD" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10213 10245])
+                          ("MAVLINK_PARSE_STATE_GOT_CRC1" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [10250 10280]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [9922 10303])
+            ("__mavlink_status" type
+               (:members 
+                  ( ("msg_received" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10386 10407])
+                    ("buffer_overrun" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10459 10482])
+                    ("parse_error" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10530 10550])
+                    ("parse_state" variable (:type ("mavlink_parse_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10598 10632])
+                    ("packet_idx" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10665 10684])
+                    ("current_rx_seq" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10734 10757])
+                    ("current_tx_seq" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10819 10842])
+                    ("packet_rx_success_count" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10900 10933])
+                    ("packet_rx_drop_count" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10962 10992]))                  
+                :type "struct")
+                nil [10348 11045])
+            ("mavlink_status_t" type
+               (:typedef ("__mavlink_status" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [10348 11045])
+            ("MAVLINK_BIG_ENDIAN" variable (:constant-flag t) nil [11055 11073])
+            ("MAVLINK_LITTLE_ENDIAN" variable (:constant-flag t) nil [11084 11105]))          
+      :file "mavlink_types.h"
+      :pointmax 11139
+      :fsize 11138
+      :lastmodtime '(23798 26616 687474 292000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAVLINK_CORE_HEADER_LEN" . ((number "5" 5249 . 5250)))
+          ("MAVLINK_MSG_ID_EXTENDED_MESSAGE" . ((number "255" 5853 . 5856)))
+          ("MAVLINK_COMM_NUM_BUFFERS" . ((number "16" 9862 . 9864)))
+          ("MAVLINK_MAX_PACKET_LEN" . ((semantic-list "(MAVLINK_MAX_PAYLOAD_LEN + MAVLINK_NUM_NON_PAYLOAD_BYTES)" 5727 . 5784)))
+          ("MAVLINK_LITTLE_ENDIAN" . ((number "1" 11106 . 11107)))
+          ("MAVLINK_MAX_PAYLOAD_LEN" . ((number "255" 5177 . 5180)))
+          ("MAVLINK_EXTENDED_HEADER_LEN" . ((number "14" 5893 . 5895)))
+          ("MAVLINK_MAX_EXTENDED_PACKET_LEN" . ((number "65507" 6061 . 6066)))
+          ("MAVLINK_NUM_CHECKSUM_BYTES" . ((number "2" 5599 . 5600)))
+          ("MAVLINK_NUM_NON_PAYLOAD_BYTES" . ((semantic-list "(MAVLINK_NUM_HEADER_BYTES + MAVLINK_NUM_CHECKSUM_BYTES)" 5639 . 5694)))
+          ("_MAV_PAYLOAD" (spp-arg-list ("msg") 9083 . 9088) . ((semantic-list "((const char *)(&((msg)->payload64[0])))" 9089 . 9129)))
+          ("mavlink_ck_a" (spp-arg-list ("msg") 9273 . 9278) . ((punctuation "*" 9279 . 9280) (semantic-list "((msg)->len + (uint8_t *)_MAV_PAYLOAD_NON_CONST(msg))" 9280 . 9333)))
+          ("MAVLINK_TYPES_H_")
+          ("mavlink_ck_b" (spp-arg-list ("msg") 9354 . 9359) . ((punctuation "*" 9360 . 9361) (semantic-list "(((msg)->len+(uint16_t)1) + (uint8_t *)_MAV_PAYLOAD_NON_CONST(msg))" 9361 . 9428)))
+          ("MAVLINK_NUM_HEADER_BYTES" . ((semantic-list "(MAVLINK_CORE_HEADER_LEN + 1)" 5473 . 5502)))
+          ("MAVLINK_MAX_FIELDS" . ((number "64" 8173 . 8175)))
+          ("MAVLINK_BIG_ENDIAN" . ((number "0" 11074 . 11075)))
+          ("MAVLINK_MAX_EXTENDED_PAYLOAD_LEN" . ((semantic-list "(MAVLINK_MAX_EXTENDED_PACKET_LEN - MAVLINK_EXTENDED_HEADER_LEN - MAVLINK_NUM_NON_PAYLOAD_BYTES)" 6200 . 6295)))
+          ("_MAV_PAYLOAD_NON_CONST" (spp-arg-list ("msg") 9160 . 9165) . ((semantic-list "((char *)(&((msg)->payload64[0])))" 9166 . 9200)))
+          )
+))
+  :file "!home!angel!src!pacflyer_PX4!mavlink_generator!pymavlink!generator!C!include_v0.9!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

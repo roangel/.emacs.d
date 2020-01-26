@@ -1,0 +1,333 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("drivers/drv_hrt.h" include (:system-flag t) nil [1880 1908])
+            ("lib/geo/geo.h" include (:system-flag t) nil [1909 1933])
+            ("mathlib/math/filter/LowPassFilter2p.hpp" include (:system-flag t) nil [1934 1984])
+            ("mathlib/mathlib.h" include (:system-flag t) nil [1985 2013])
+            ("px4_config.h" include (:system-flag t) nil [2014 2037])
+            ("px4_posix.h" include (:system-flag t) nil [2038 2060])
+            ("px4_tasks.h" include (:system-flag t) nil [2061 2083])
+            ("systemlib/err.h" include (:system-flag t) nil [2084 2110])
+            ("systemlib/param/param.h" include (:system-flag t) nil [2111 2145])
+            ("systemlib/perf_counter.h" include (:system-flag t) nil [2146 2181])
+            ("uORB/topics/att_pos_mocap.h" include (:system-flag t) nil [2182 2220])
+            ("uORB/topics/parameter_update.h" include (:system-flag t) nil [2221 2262])
+            ("uORB/topics/sensor_combined.h" include (:system-flag t) nil [2263 2303])
+            ("uORB/topics/vehicle_attitude.h" include (:system-flag t) nil [2304 2345])
+            ("uORB/topics/vehicle_global_position.h" include (:system-flag t) nil [2346 2394])
+            ("attitude_estimator_q_main" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2446 2455])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2456 2469]))                  
+                :type "int")
+                nil [2416 2470])
+            ("math::Vector" using (:type ("math::Vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2472 2491])
+            ("math::Matrix" using (:type ("math::Matrix" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2492 2511])
+            ("math::Quaternion" using (:type ("math::Quaternion" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2512 2535])
+            ("AttitudeEstimatorQ" type
+               (:prototype t
+                :type "class")
+                nil [2537 2562])
+            ("attitude_estimator_q" type
+               (:members 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("AttitudeEstimatorQ" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2597 2626]))                  
+                :type "namespace")
+                nil [2564 2628])
+            ("AttitudeEstimatorQ" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2692 2699])
+                    ("AttitudeEstimatorQ" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("AttitudeEstimatorQ" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2727 2748])
+                    ("AttitudeEstimatorQ" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2794 2816])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2877 2890])
+                    ("task_main_trampoline" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2926 2935])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2936 2949]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2893 2950])
+                    ("task_main" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2953 2971])
+                    ("private" label nil (reparse-symbol classsubparts) [2973 2981])
+                    ("_dt_min" variable
+                       (:constant-flag t
+                        :default-value "0.00001f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [2983 3014])
+                    ("_dt_max" variable
+                       (:constant-flag t
+                        :default-value "0.02f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3016 3044])
+                    ("_task_should_exit" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3047 3079])
+                    ("_control_task" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3116 3140])
+                    ("_params_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3174 3196])
+                    ("_sensors_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3198 3221])
+                    ("_global_pos_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3223 3249])
+                    ("_vision_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3251 3273])
+                    ("_mocap_sub" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3275 3296])
+                    ("_att_pub" variable
+                       (:default-value "nullptr"
+                        :type ("orb_advert_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3299 3331])
+                    ("_params_handles" variable (:type ("" type
+                         (:members 
+                            ( ("w_acc" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3345 3359])
+                              ("w_mag" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3362 3376])
+                              ("w_ext_hdg" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3379 3397])
+                              ("w_gyro_bias" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3400 3420])
+                              ("mag_decl" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3423 3440])
+                              ("mag_decl_auto" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3443 3465])
+                              ("acc_comp" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3468 3485])
+                              ("bias_max" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3488 3505])
+                              ("ext_hdg_mode" variable (:type ("param_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3508 3529]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3334 3551])
+                    ("_w_accel" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3598 3621])
+                    ("_w_mag" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3623 3644])
+                    ("_w_ext_hdg" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3646 3671])
+                    ("_w_gyro_bias" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3673 3700])
+                    ("_mag_decl" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3702 3726])
+                    ("_mag_decl_auto" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3728 3757])
+                    ("_acc_comp" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3759 3783])
+                    ("_bias_max" variable
+                       (:default-value "0.0f"
+                        :type "float")
+                        (reparse-symbol classsubparts) [3785 3809])
+                    ("_ext_hdg_mode" variable
+                       (:default-value "0"
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3811 3838])
+                    ("_gyro" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3841 3857])
+                    ("_accel" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3859 3876])
+                    ("_mag" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3878 3893])
+                    ("_vision_hdg" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3896 3918])
+                    ("_mocap_hdg" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3920 3941])
+                    ("_q" variable (:type ("Quaternion" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3944 3958])
+                    ("_rates" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3960 3977])
+                    ("_gyro_bias" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3979 4000])
+                    ("_vel_prev" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4003 4023])
+                    ("_vel_prev_t" variable
+                       (:default-value "0"
+                        :type ("hrt_abstime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4025 4053])
+                    ("_pos_acc" variable (:type ("Vector" type
+                         (:template-specifier (("3"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4056 4075])
+                    ("_inited" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4078 4100])
+                    ("_data_good" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4102 4127])
+                    ("_ext_hdg_good" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4129 4157])
+                    ("update_parameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [4183 4194]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4160 4195])
+                    ("update_subscriptions" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4198 4225])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4228 4240])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [4255 4264]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4243 4265])
+                    ("update_mag_declination" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("new_declination" variable (:type "float") (reparse-symbol arg-sub-list) [4372 4394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4344 4395]))                  
+                :type "class")
+                nil [2665 4398])
+            ("AttitudeEstimatorQ" function
+               (:constructor-flag t
+                :parent "AttitudeEstimatorQ"
+                :type ("AttitudeEstimatorQ" type (:type "class") nil nil))
+                nil [4401 5172])
+            ("AttitudeEstimatorQ" function
+               (:destructor-flag t
+                :parent "AttitudeEstimatorQ"
+                :type "void")
+                nil [5214 5686])
+            ("start" function
+               (:parent "AttitudeEstimatorQ"
+                :type "int")
+                nil [5688 6077])
+            ("task_main_trampoline" function
+               (:parent "AttitudeEstimatorQ"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6125 6134])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6135 6148]))                  
+                :type "void")
+                nil [6079 6198])
+            ("task_main" function
+               (:parent "AttitudeEstimatorQ"
+                :type "void")
+                nil [6200 11882])
+            ("update_parameters" function
+               (:parent "AttitudeEstimatorQ"
+                :arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [11927 11938]))                  
+                :type "void")
+                nil [11884 12849])
+            ("init" function
+               (:parent "AttitudeEstimatorQ"
+                :type "bool")
+                nil [12851 13826])
+            ("update" function
+               (:parent "AttitudeEstimatorQ"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [13860 13869]))                  
+                :type "bool")
+                nil [13828 16526])
+            ("update_mag_declination" function
+               (:parent "AttitudeEstimatorQ"
+                :arguments 
+                  ( ("new_declination" variable (:type "float") (reparse-symbol arg-sub-list) [16576 16598]))                  
+                :type "void")
+                nil [16528 17001])
+            ("attitude_estimator_q_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17033 17042])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17043 17056]))                  
+                :type "int")
+                nil [17003 18081]))          
+      :file "attitude_estimator_q_main.cpp"
+      :pointmax 18082
+      :fsize 18081
+      :lastmodtime '(23798 26597 875347 36000)
+      :unmatched-syntax '((symbol 2407 . 2415))))
+  :file "!home!angel!src!pacflyer_PX4!PX4!src!modules!attitude_estimator_q!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

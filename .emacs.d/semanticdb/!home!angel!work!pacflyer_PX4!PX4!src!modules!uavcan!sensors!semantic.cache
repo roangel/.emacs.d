@@ -1,0 +1,204 @@
+;; Object sensors/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sensors/"
+  :tables
+  (list
+    (semanticdb-table "sensor_bridge.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("containers/List.hpp" include (:system-flag t) nil [1816 1846])
+            ("uavcan/uavcan.hpp" include (:system-flag t) nil [1847 1875])
+            ("drivers/device/device.h" include (:system-flag t) nil [1876 1910])
+            ("drivers/drv_orb_dev.h" include (:system-flag t) nil [1911 1943])
+            ("IUavcanSensorBridge" type
+               (:superclasses 
+                  ( ("uavcan::Noncopyable" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("ListNode" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2099 2106])
+                    ("MAX_NAME_LEN" variable
+                       (:default-value "20"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2125 2152])
+                    ("IUavcanSensorBridge" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2155 2189])
+                    ("get_name" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2240 2281])
+                    ("init" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2379 2402])
+                    ("get_num_redundant_channels" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2465 2521])
+                    ("print_status" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2598 2636])
+                    ("make_all" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :type ("uavcan::INode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2768 2788])
+                            ("list" variable
+                               (:reference 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("IUavcanSensorBridge" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2789 2823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2747 2824]))                  
+                :type "class")
+                nil [2009 2827])
+            ("UavcanCDevSensorBridgeBase" type
+               (:superclasses 
+                  ( ("IUavcanSensorBridge" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("device::CDev" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Channel" type
+                       (:members 
+                          ( ("node_id" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3096 3126])
+                            ("orb_advert" variable
+                               (:default-value "nullptr"
+                                :type ("orb_advert_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3129 3164])
+                            ("class_instance" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3167 3197])
+                            ("orb_instance" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3200 3223]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3077 3227])
+                    ("_max_channels" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3230 3259])
+                    ("_class_devname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3261 3294])
+                    ("_orb_topic" variable
+                       (:constant-flag t
+                        :type ("orb_id_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3296 3322])
+                    ("_channels" variable
+                       (:pointer 1
+                        :type ("Channel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3324 3349])
+                    ("_out_of_channels" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3351 3381])
+                    ("protected" label nil (reparse-symbol classsubparts) [3383 3393])
+                    ("DEFAULT_MAX_CHANNELS" variable
+                       (:default-value "5"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3412 3446])
+                    ("UavcanCDevSensorBridgeBase" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3517 3534])
+                            ("devname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3535 3555])
+                            ("class_devname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3556 3582])
+                            ("orb_topic_sensor" variable
+                               (:constant-flag t
+                                :type ("orb_id_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3590 3622])
+                            ("max_channels" variable
+                               (:constant-flag t
+                                :default-value "DEFAULT_MAX_CHANNELS"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3630 3680]))                          
+                        :type ("UavcanCDevSensorBridgeBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3490 3939])
+                    ("publish" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node_id" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4166 4184])
+                            ("report" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4185 4204]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4153 4205])
+                    ("public" label nil (reparse-symbol classsubparts) [4207 4214])
+                    ("UavcanCDevSensorBridgeBase" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4216 4254])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4295 4310])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4333 4348]))                  
+                :type "class")
+                nil [2991 4351]))          
+      :file "sensor_bridge.hpp"
+      :pointmax 4352
+      :fsize 4351
+      :lastmodtime '(23400 32097 920833 29000)
+      :unmatched-syntax '((semantic-list 4330 . 4332) (symbol 4318 . 4330) (VOID 4313 . 4317) (semantic-list 4292 . 4294) (symbol 4266 . 4292) (UNSIGNED 4257 . 4265) (symbol 3402 . 3411) (STATIC 3395 . 3401) (symbol 2115 . 2124) (STATIC 2108 . 2114) (symbol 1810 . 1814) (symbol 1803 . 1809) (punctuation 1802 . 1803))))
+  :file "!home!angel!work!pacflyer_PX4!PX4!src!modules!uavcan!sensors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

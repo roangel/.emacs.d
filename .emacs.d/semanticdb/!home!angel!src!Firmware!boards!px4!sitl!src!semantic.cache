@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BOARD_OVERRIDE_UUID" variable (:constant-flag t) nil [1821 1840])
+            ("PX4_SOC_ARCH_ID" variable (:constant-flag t) nil [1892 1907])
+            ("BOARD_BATTERY1_V_DIV" variable (:constant-flag t) nil [1942 1962])
+            ("BOARD_BATTERY1_A_PER_V" variable (:constant-flag t) nil [1989 2011])
+            ("BOARD_HAS_NO_RESET" variable (:constant-flag t) nil [2036 2054])
+            ("BOARD_HAS_NO_BOOTLOADER" variable (:constant-flag t) nil [2063 2086])
+            ("PX4_I2C_BUS_EXPANSION" variable (:constant-flag t) nil [2096 2117])
+            ("PX4_I2C_BUS_ONBOARD" variable (:constant-flag t) nil [2128 2147])
+            ("PX4_NUMBER_I2C_BUSES" variable (:constant-flag t) nil [2159 2179])
+            ("BOARD_NUMBER_BRICKS" variable (:constant-flag t) nil [2191 2210])
+            ("BOARD_HAS_CONTROL_STATUS_LEDS" variable (:constant-flag t) nil [2225 2254])
+            ("BOARD_OVERLOAD_LED" variable (:constant-flag t) nil [2265 2283])
+            ("BOARD_ARMED_LED" variable (:constant-flag t) nil [2304 2319])
+            ("BOARD_ARMED_STATE_LED" variable (:constant-flag t) nil [2344 2365])
+            ("system_config.h" include (:system-flag t) nil [2378 2404])
+            ("drivers/boards/common/board_common.h" include (:system-flag t) nil [2405 2452]))          
+      :file "board_config.h"
+      :pointmax 2453
+      :fsize 2452
+      :lastmodtime '(23901 16170 834346 644000)
+      :unmatched-syntax '((symbol 1807 . 1811) (symbol 1800 . 1806) (punctuation 1799 . 1800))
+      :lexical-table 
+        '(("BOARD_BATTERY1_V_DIV" . ((semantic-list "(10.177939394f)" 1965 . 1980)))
+          ("BOARD_ARMED_LED" . ((symbol "LED_BLUE" 2327 . 2335)))
+          ("BOARD_BATTERY1_A_PER_V" . ((semantic-list "(15.391030303f)" 2012 . 2027)))
+          ("PX4_I2C_BUS_EXPANSION" . ((number "1" 2118 . 2119)))
+          ("BOARD_OVERRIDE_UUID" . ((string "\"SIMULATIONID0000\"" 1841 . 1859)))
+          ("BOARD_HAS_NO_RESET")
+          ("BOARD_NUMBER_BRICKS" . ((number "0" 2215 . 2216)))
+          ("BOARD_OVERLOAD_LED" . ((symbol "LED_RED" 2288 . 2295)))
+          ("BOARD_ARMED_STATE_LED" . ((symbol "LED_GREEN" 2367 . 2376)))
+          ("PX4_SOC_ARCH_ID" . ((symbol "PX4_SOC_ARCH_ID_SITL" 1912 . 1932)))
+          ("BOARD_HAS_NO_BOOTLOADER")
+          ("BOARD_HAS_CONTROL_STATUS_LEDS" . ((number "1" 2255 . 2256)))
+          ("PX4_I2C_BUS_ONBOARD" . ((number "2" 2149 . 2150)))
+          ("PX4_NUMBER_I2C_BUSES" . ((number "1" 2180 . 2181)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_config.h" include (:system-flag t) nil [1787 1810])
+            ("px4_log.h" include (:system-flag t) nil [1811 1831])
+            ("stdbool.h" include (:system-flag t) nil [1832 1852])
+            ("led_toggle" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1978 1986]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1955 1987])
+            ("led_off" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1945 1953]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1925 1954])
+            ("led_on" function
+               (:type "void"
+                :arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [1915 1923]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1896 1924])
+            ("led_init" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1889 1894]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1868 1895])
+            ("_led_state" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ false, false }"
+                :type "bool")
+                nil [2001 2046])
+            ("led_init" function (:type "void") nil [2057 2100])
+            ("led_on" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2123 2131]))                  
+                :type "void")
+                nil [2111 2223])
+            ("led_off" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2247 2255]))                  
+                :type "void")
+                nil [2234 2349])
+            ("led_toggle" function
+               (:arguments 
+                  ( ("led" variable (:type "int") (reparse-symbol arg-sub-list) [2376 2384]))                  
+                :type "void")
+                nil [2360 2529]))          
+      :file "sitl_led.c"
+      :pointmax 2530
+      :fsize 2529
+      :lastmodtime '(23900 2470 996519 972000)
+      :unmatched-syntax '((symbol 2351 . 2359) (symbol 2225 . 2233) (symbol 2102 . 2110) (symbol 2048 . 2056)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("px4_tasks.h" include (:system-flag t) nil [1809 1831])
+            ("board_config.h" include (:system-flag t) nil [1832 1857])
+            ("board_register_power_state_notification_cb" function
+               (:arguments 
+                  ( ("cb" variable (:type ("power_button_state_notification_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1906 1943]))                  
+                :type "int")
+                nil [1859 1958])
+            ("board_shutdown" function (:type "int") nil [1960 2020]))          
+      :file "sitl_board_shutdown.c"
+      :pointmax 2021
+      :unmatched-syntax nil))
+  :file "!home!angel!src!Firmware!boards!px4!sitl!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

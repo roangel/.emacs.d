@@ -1,0 +1,269 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("nuttx/config.h" include (:system-flag t) nil [4588 4613])
+            ("board.h" include nil nil [4615 4633])
+            ("stdio.h" include (:system-flag t) nil [4634 4652])
+            ("string.h" include (:system-flag t) nil [4653 4672])
+            ("syslog.h" include (:system-flag t) nil [4673 4692])
+            ("stdint.h" include (:system-flag t) nil [4693 4712])
+            ("stdlib.h" include (:system-flag t) nil [4713 4732])
+            ("stdbool.h" include (:system-flag t) nil [4733 4753])
+            ("sys/time.h" include (:system-flag t) nil [4754 4775])
+            ("arpa/inet.h" include (:system-flag t) nil [4776 4798])
+            ("nuttx/arch.h" include (:system-flag t) nil [4800 4823])
+            ("nuttx/wireless/cc3000/nvmem.h" include (:system-flag t) nil [4824 4864])
+            ("nuttx/wireless/cc3000/include/sys/socket.h" include (:system-flag t) nil [4865 4918])
+            ("nuttx/wireless/cc3000/wlan.h" include (:system-flag t) nil [4919 4958])
+            ("nuttx/wireless/cc3000/hci.h" include (:system-flag t) nil [4959 4997])
+            ("nuttx/wireless/cc3000/netapp.h" include (:system-flag t) nil [4998 5039])
+            ("shell.h" include nil nil [5041 5059])
+            ("Initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5265 5270]))                  
+                :type "void")
+                nil [5249 5271])
+            ("helpme" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5284 5289]))                  
+                :type "void")
+                nil [5272 5290])
+            ("execute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [5303 5311]))                  
+                :type "int")
+                nil [5291 5312])
+            ("ShowBufferSize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5333 5338]))                  
+                :type "void")
+                nil [5313 5339])
+            ("StartSmartConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5362 5367]))                  
+                :type "void")
+                nil [5340 5368])
+            ("ManualConnect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5388 5393]))                  
+                :type "void")
+                nil [5369 5394])
+            ("ManualAddProfile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5417 5422]))                  
+                :type "void")
+                nil [5395 5423])
+            ("ListAccessPoints" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5446 5451]))                  
+                :type "void")
+                nil [5424 5452])
+            ("PrintIPBytes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ipBytes" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5471 5488]))                  
+                :type "void")
+                nil [5453 5489])
+            ("ShowInformation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5511 5516]))                  
+                :type "void")
+                nil [5490 5517])
+            ("MS_PER_SEC" variable (:constant-flag t) nil [5714 5724])
+            ("US_PER_MS" variable (:constant-flag t) nil [5738 5747])
+            ("US_PER_SEC" variable (:constant-flag t) nil [5762 5772])
+            ("isInitialized" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5956 5993])
+            ("wait" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timeoutMs" variable (:type "long") (reparse-symbol arg-sub-list) [7577 7592])
+                    ("what" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [7593 7622])
+                    ("is" variable
+                       (:typemodifiers ("volatile")
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [7640 7666]))                  
+                :type "bool")
+                nil [7560 8028])
+            ("wait_on" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timeoutMs" variable (:type "long") (reparse-symbol arg-sub-list) [8050 8065])
+                    ("what" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [8066 8095])
+                    ("is" variable
+                       (:typemodifiers ("volatile")
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [8116 8142])
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8143 8154]))                  
+                :type "bool")
+                nil [8030 8386])
+            ("stkmon_disp" variable (:constant-flag t) nil [8619 8630])
+            ("AsyncEventPrint" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8919 8924]))                  
+                :type "void")
+                nil [8898 10074])
+            ("helpme" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10088 10093]))                  
+                :type "void")
+                nil [10076 10696])
+            ("execute" function
+               (:arguments 
+                  ( ("cmd" variable (:type "int") (reparse-symbol arg-sub-list) [10710 10718]))                  
+                :type "int")
+                nil [10698 11774])
+            ("Initialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11792 11797]))                  
+                :type "void")
+                nil [11776 13204])
+            ("ShowBufferSize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13301 13306]))                  
+                :type "void")
+                nil [13281 13437])
+            ("simpleConfigPrefix" variable
+               (:dereference 1
+                :default-value "{'T', 'T', 'T'}"
+                :type "char")
+                nil [14335 14379])
+            ("device_name" variable
+               (:dereference 1
+                :default-value "\"CC3000\""
+                :type "char")
+                nil [14618 14649])
+            ("StartSmartConfig" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14673 14678]))                  
+                :type "void")
+                nil [14651 17786])
+            ("ManualConnect" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18081 18086]))                  
+                :type "void")
+                nil [18062 19247])
+            ("ManualAddProfile" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20116 20121]))                  
+                :type "void")
+                nil [20094 21963])
+            ("scanResults" type
+               (:members 
+                  ( ("numNetworksFound" variable (:type "unsigned long") (reparse-symbol classsubparts) [23869 23900])
+                    ("results" variable (:type "unsigned long") (reparse-symbol classsubparts) [23903 23925])
+                    ("isValid" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [23928 23947])
+                    ("rssi" variable
+                       (:suffix ":7"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [23950 23966])
+                    ("securityMode" variable
+                       (:suffix ":2"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [23969 23993])
+                    ("ssidLength" variable
+                       (:suffix ":6"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [23996 24018])
+                    ("frameTime" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24021 24040])
+                    ("ssid_name" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24043 24065])
+                    ("bssid" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24068 24085]))                  
+                :type "struct")
+                nil [23838 24100])
+            ("scanResults" type
+               (:typedef ("scanResults" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [23838 24100])
+            ("NUM_CHANNELS" variable (:constant-flag t) nil [24110 24122])
+            ("ListAccessPoints" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24150 24155]))                  
+                :type "void")
+                nil [24128 26907])
+            ("PrintIPBytes" function
+               (:arguments 
+                  ( ("ipBytes" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26927 26944]))                  
+                :type "void")
+                nil [26909 27023])
+            ("ShowInformation" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27375 27380]))                  
+                :type "void")
+                nil [27354 28277])
+            ("c3b_main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28362 28371])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28372 28385]))                  
+                :type "int")
+                nil [28349 28531]))          
+      :file "cc3000basic.c"
+      :pointmax 28532
+      :fsize 28531
+      :lastmodtime '(23770 54121 43236 926000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MS_PER_SEC" . ((number "1000" 5725 . 5729)))
+          ("NUM_CHANNELS" . ((number "16" 24124 . 24126)))
+          ("US_PER_SEC" . ((number "1000000" 5773 . 5780)))
+          ("US_PER_MS" . ((number "1000" 5749 . 5753)))
+          ("stkmon_disp" (spp-arg-list nil 8630 . 8632))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "board.h"
+      :fsize 6442
+      :lastmodtime '(23770 54121 43236 926000))
+    (semanticdb-table "semanticdb-table"
+      :file "shell.h"
+      :fsize 3728
+      :lastmodtime '(23770 54121 43236 926000)))
+  :file "!home!angel!src!pacflyer_PX4!PX4!platforms!nuttx!NuttX!apps!examples!cc3000!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

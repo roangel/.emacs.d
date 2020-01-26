@@ -1,0 +1,1023 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("STABILIZATION_INDI" variable (:constant-flag t) nil [887 905])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_common_int.h" include nil nil [907 988])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_ref_quat_int.h" include nil nil [989 1072])
+            ("INDI_NUM_ACT" variable (:constant-flag t) nil [1119 1131])
+            ("INDI_OUTPUTS" variable (:constant-flag t) nil [1179 1191])
+            ("INDI_G_SCALING" variable (:constant-flag t) nil [1263 1277])
+            ("stab_att_sp_quat" variable
+               (:typemodifiers ("extern")
+                :type ("Int32Quat" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1286 1329])
+            ("stab_att_sp_euler" variable
+               (:typemodifiers ("extern")
+                :type ("Int32Eulers" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1358 1402])
+            ("g1g2" variable
+               (:dereference 2
+                :typemodifiers ("extern")
+                :type "float")
+                nil [1431 1477])
+            ("indi_use_adaptive" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1479 1509])
+            ("ReferenceSystem" type
+               (:members 
+                  ( ("err_p" variable (:type "float") (reparse-symbol classsubparts) [1538 1550])
+                    ("err_q" variable (:type "float") (reparse-symbol classsubparts) [1553 1565])
+                    ("err_r" variable (:type "float") (reparse-symbol classsubparts) [1568 1580])
+                    ("rate_p" variable (:type "float") (reparse-symbol classsubparts) [1583 1596])
+                    ("rate_q" variable (:type "float") (reparse-symbol classsubparts) [1599 1612])
+                    ("rate_r" variable (:type "float") (reparse-symbol classsubparts) [1615 1628]))                  
+                :type "struct")
+                nil [1511 1631])
+            ("reference_acceleration" variable
+               (:typemodifiers ("extern")
+                :type ("ReferenceSystem" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1633 1686])
+            ("stabilization_indi_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1724 1729]))                  
+                :type "void")
+                nil [1688 1730])
+            ("stabilization_indi_enter" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1768 1773]))                  
+                :type "void")
+                nil [1731 1774])
+            ("stabilization_indi_set_failsafe_setpoint" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1828 1833]))                  
+                :type "void")
+                nil [1775 1834])
+            ("stabilization_indi_set_rpy_setpoint_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("rpy" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1885 1909]))                  
+                :type "void")
+                nil [1835 1910])
+            ("stabilization_indi_set_earth_cmd_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1958 1981])
+                    ("heading" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1982 1998]))                  
+                :type "void")
+                nil [1911 1999])
+            ("stabilization_indi_run" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [2035 2050])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [2051 2069]))                  
+                :type "void")
+                nil [2000 2070])
+            ("stabilization_indi_read_rc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [2110 2125])
+                    ("in_carefree" variable (:type "bool") (reparse-symbol arg-sub-list) [2126 2143])
+                    ("coordinated_turn" variable (:type "bool") (reparse-symbol arg-sub-list) [2144 2166]))                  
+                :type "void")
+                nil [2071 2167]))          
+      :file "stabilization_indi.h"
+      :pointmax 2202
+      :fsize 2201
+      :lastmodtime '(23735 21819 244224 492000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INDI_NUM_ACT" . ((number "4" 1132 . 1133)))
+          ("INDI_OUTPUTS" . ((number "4" 1192 . 1193)))
+          ("STABILIZATION_INDI")
+          ("INDI_G_SCALING" . ((number "1000.0" 1278 . 1284)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "stabilization_attitude_common_int.h"
+      :fsize 1482
+      :lastmodtime '(23735 21819 244224 492000))
+    (semanticdb-table "semanticdb-table"
+      :file "stabilization_attitude_ref_quat_int.h"
+      :fsize 3427
+      :lastmodtime '(23735 21819 244224 492000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("firmwares/rotorcraft/stabilization/stabilization_indi.h" include nil nil [1276 1342])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude.h" include nil nil [1343 1413])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_rc_setpoint.h" include nil nil [1414 1496])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_quat_transformations.h" include nil nil [1497 1588])
+            ("math/pprz_algebra_float.h" include nil nil [1590 1626])
+            ("state.h" include nil nil [1627 1645])
+            ("generated/airframe.h" include nil nil [1646 1677])
+            ("subsystems/radio_control.h" include nil nil [1678 1715])
+            ("subsystems/actuators.h" include nil nil [1716 1749])
+            ("subsystems/abi.h" include nil nil [1750 1777])
+            ("filters/low_pass_filter.h" include nil nil [1778 1814])
+            ("wls/wls_alloc.h" include nil nil [1815 1841])
+            ("stdio.h" include (:system-flag t) nil [1842 1860])
+            ("INDI_ALLOWED_G_FACTOR" variable (:constant-flag t) nil [1947 1968])
+            ("du_min" variable
+               (:dereference 1
+                :type "float")
+                nil [1974 2001])
+            ("du_max" variable
+               (:dereference 1
+                :type "float")
+                nil [2002 2029])
+            ("du_pref" variable
+               (:dereference 1
+                :type "float")
+                nil [2030 2058])
+            ("indi_v" variable
+               (:dereference 1
+                :type "float")
+                nil [2059 2086])
+            ("Bwls" variable
+               (:pointer 1
+                :dereference 1
+                :type "float")
+                nil [2087 2113])
+            ("num_iter" variable
+               (:default-value "0"
+                :type "int")
+                nil [2114 2131])
+            ("lms_estimation" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2160 2165]))                  
+                :type "void")
+                nil [2133 2166])
+            ("get_actuator_state" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2198 2203]))                  
+                :type "void")
+                nil [2167 2204])
+            ("calc_g1_element" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dx_error" variable (:type "float") (reparse-symbol arg-sub-list) [2233 2248])
+                    ("i" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2249 2258])
+                    ("j" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2259 2268])
+                    ("mu_extra" variable (:type "float") (reparse-symbol arg-sub-list) [2269 2284]))                  
+                :type "void")
+                nil [2205 2285])
+            ("calc_g2_element" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dx_error" variable (:type "float") (reparse-symbol arg-sub-list) [2314 2329])
+                    ("j" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2330 2339])
+                    ("mu_extra" variable (:type "float") (reparse-symbol arg-sub-list) [2340 2355]))                  
+                :type "void")
+                nil [2286 2356])
+            ("calc_g1g2_pseudo_inv" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2390 2395]))                  
+                :type "void")
+                nil [2357 2396])
+            ("bound_g_mat" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2421 2426]))                  
+                :type "void")
+                nil [2397 2427])
+            ("stabilization_att_indi_cmd" variable
+               (:dereference 1
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2429 2477])
+            ("reference_acceleration" variable
+               (:default-value "{
+  STABILIZATION_INDI_REF_ERR_P,
+  STABILIZATION_INDI_REF_ERR_Q,
+  STABILIZATION_INDI_REF_ERR_R,
+  STABILIZATION_INDI_REF_RATE_P,
+  STABILIZATION_INDI_REF_RATE_Q,
+  STABILIZATION_INDI_REF_RATE_R,
+}"
+                :type ("ReferenceSystem" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2478 2725])
+            ("indi_use_adaptive" variable
+               (:default-value "false"
+                :type "bool")
+                nil [2800 2831])
+            ("act_is_servo" variable
+               (:dereference 1
+                :default-value "{0}"
+                :type "bool")
+                nil [3073 3111])
+            ("act_pref" variable
+               (:dereference 1
+                :default-value "{0.0}"
+                :type "float")
+                nil [3296 3333])
+            ("act_dyn" variable
+               (:dereference 1
+                :default-value "STABILIZATION_INDI_ACT_DYN"
+                :type "float")
+                nil [3342 3399])
+            ("STABILIZATION_INDI_MAX_RATE" variable (:constant-flag t) nil [3504 3531])
+            ("Wv" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{1000, 1000, 1, 100}"
+                :type "float")
+                nil [3720 3773])
+            ("actuator_state_filt_vect" variable
+               (:dereference 1
+                :type "float")
+                nil [3814 3859])
+            ("angular_accel_ref" variable
+               (:default-value "{0., 0., 0.}"
+                :type ("FloatRates" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3860 3911])
+            ("angular_acceleration" variable
+               (:dereference 1
+                :default-value "{0., 0., 0.}"
+                :type "float")
+                nil [3912 3957])
+            ("actuator_state" variable
+               (:dereference 1
+                :type "float")
+                nil [3958 3993])
+            ("indi_u" variable
+               (:dereference 1
+                :type "float")
+                nil [3994 4021])
+            ("indi_du" variable
+               (:dereference 1
+                :type "float")
+                nil [4022 4050])
+            ("g2_times_du" variable (:type "float") nil [4051 4069])
+            ("g1g2_trans_mult" variable
+               (:dereference 2
+                :type "float")
+                nil [4106 4156])
+            ("g1g2inv" variable
+               (:dereference 2
+                :type "float")
+                nil [4157 4199])
+            ("actuator_state_filt_vectd" variable
+               (:dereference 1
+                :type "float")
+                nil [4200 4246])
+            ("actuator_state_filt_vectdd" variable
+               (:dereference 1
+                :type "float")
+                nil [4247 4294])
+            ("estimation_rate_d" variable
+               (:dereference 1
+                :type "float")
+                nil [4295 4333])
+            ("estimation_rate_dd" variable
+               (:dereference 1
+                :type "float")
+                nil [4334 4373])
+            ("du_estimation" variable
+               (:dereference 1
+                :type "float")
+                nil [4374 4408])
+            ("ddu_estimation" variable
+               (:dereference 1
+                :type "float")
+                nil [4409 4444])
+            ("mu1" variable
+               (:dereference 1
+                :default-value "{0.00001, 0.00001, 0.000003, 0.000002}"
+                :type "float")
+                nil [4503 4568])
+            ("mu2" variable
+               (:default-value "0.002"
+                :type "float")
+                nil [4640 4658])
+            ("act_obs" variable
+               (:dereference 1
+                :type "float")
+                nil [4679 4707])
+            ("num_thrusters" variable (:type ("int32_t" type (:type "class") nil nil)) nil [4755 4777])
+            ("stab_att_sp_euler" variable (:type ("Int32Eulers" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [4779 4816])
+            ("stab_att_sp_quat" variable (:type ("Int32Quat" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [4817 4853])
+            ("rpm_ev" variable (:type ("abi_event" type (:type "class") nil nil)) nil [4855 4872])
+            ("rpm_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sender_id" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4892 4910])
+                    ("rpm" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4911 4925])
+                    ("num_act" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4926 4942]))                  
+                :type "void")
+                nil [4873 4943])
+            ("thrust_ev" variable (:type ("abi_event" type (:type "class") nil nil)) nil [4945 4965])
+            ("thrust_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sender_id" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4988 5006])
+                    ("thrust_increment" variable (:type "float") (reparse-symbol arg-sub-list) [5007 5030]))                  
+                :type "void")
+                nil [4966 5031])
+            ("indi_thrust_increment" variable (:type "float") nil [5032 5060])
+            ("indi_thrust_increment_set" variable
+               (:default-value "false"
+                :type "bool")
+                nil [5061 5100])
+            ("g1g2_pseudo_inv" variable
+               (:dereference 2
+                :type "float")
+                nil [5102 5152])
+            ("g2" variable
+               (:dereference 1
+                :default-value "STABILIZATION_INDI_G2"
+                :type "float")
+                nil [5153 5200])
+            ("g1" variable
+               (:dereference 2
+                :default-value "{STABILIZATION_INDI_G1_ROLL,
+                                        STABILIZATION_INDI_G1_PITCH, STABILIZATION_INDI_G1_YAW, STABILIZATION_INDI_G1_THRUST
+                                       }"
+                :type "float")
+                nil [5228 5462])
+            ("g1g2" variable
+               (:dereference 2
+                :type "float")
+                nil [5463 5502])
+            ("g1_est" variable
+               (:dereference 2
+                :type "float")
+                nil [5503 5544])
+            ("g2_est" variable
+               (:dereference 1
+                :type "float")
+                nil [5545 5572])
+            ("g1_init" variable
+               (:dereference 2
+                :type "float")
+                nil [5573 5615])
+            ("g2_init" variable
+               (:dereference 1
+                :type "float")
+                nil [5616 5644])
+            ("actuator_lowpass_filters" variable
+               (:dereference 1
+                :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                nil [5646 5705])
+            ("estimation_input_lowpass_filters" variable
+               (:dereference 1
+                :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                nil [5706 5773])
+            ("measurement_lowpass_filters" variable
+               (:dereference 1
+                :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                nil [5774 5825])
+            ("estimation_output_lowpass_filters" variable
+               (:dereference 1
+                :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                nil [5826 5883])
+            ("acceleration_lowpass_filter" variable (:type ("Butterworth2LowPass" type (:type "class") nil nil)) nil [5884 5932])
+            ("body_accel_f" variable (:type ("FloatVect3" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [5934 5965])
+            ("init_filters" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5985 5990]))                  
+                :type "void")
+                nil [5967 5991])
+            ("stabilization_indi_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7080 7085]))                  
+                :type "void")
+                nil [7051 8399])
+            ("stabilization_indi_enter" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8806 8811]))                  
+                :type "void")
+                nil [8776 9027])
+            ("init_filters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9100 9105]))                  
+                :type "void")
+                nil [9082 9977])
+            ("stabilization_indi_set_failsafe_setpoint" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10083 10088]))                  
+                :type "void")
+                nil [10037 10369])
+            ("stabilization_indi_set_rpy_setpoint_i" function
+               (:arguments 
+                  ( ("rpy" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10548 10572]))                  
+                :type "void")
+                nil [10505 10715])
+            ("stabilization_indi_set_earth_cmd_i" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10935 10958])
+                    ("heading" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10959 10975]))                  
+                :type "void")
+                nil [10895 11531])
+            ("stabilization_indi_calc_cmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("att_err" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11823 11849])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [11850 11868])
+                    ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [11869 11884]))                  
+                :type "void")
+                nil [11783 16629])
+            ("stabilization_indi_run" function
+               (:arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [16852 16867])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [16868 16886]))                  
+                :type "void")
+                nil [16824 18511])
+            ("stabilization_indi_read_rc" function
+               (:arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [18580 18595])
+                    ("in_carefree" variable (:type "bool") (reparse-symbol arg-sub-list) [18596 18613])
+                    ("coordinated_turn" variable (:type "bool") (reparse-symbol arg-sub-list) [18614 18636]))                  
+                :type "void")
+                nil [18548 18965])
+            ("get_actuator_state" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19215 19220]))                  
+                :type "void")
+                nil [19191 19934])
+            ("calc_g1_element" function
+               (:arguments 
+                  ( ("ddx_error" variable (:type "float") (reparse-symbol arg-sub-list) [20291 20307])
+                    ("i" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20308 20317])
+                    ("j" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20318 20327])
+                    ("mu" variable (:type "float") (reparse-symbol arg-sub-list) [20328 20337]))                  
+                :type "void")
+                nil [20270 20408])
+            ("calc_g2_element" function
+               (:arguments 
+                  ( ("ddx_error" variable (:type "float") (reparse-symbol arg-sub-list) [20727 20743])
+                    ("j" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20744 20753])
+                    ("mu" variable (:type "float") (reparse-symbol arg-sub-list) [20754 20763]))                  
+                :type "void")
+                nil [20706 20829])
+            ("lms_estimation" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21058 21063]))                  
+                :type "void")
+                nil [21038 23461])
+            ("calc_g1g2_pseudo_inv" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23556 23561]))                  
+                :type "void")
+                nil [23530 24978])
+            ("rpm_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sender_id" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24999 25041])
+                    ("UNUSED" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25042 25059])
+                    ("" variable (:type ("rpm" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25059 25063])
+                    ("UNUSED" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25064 25086])
+                    ("" variable (:type ("num_act" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25079 25087]))                  
+                :type "void")
+                nil [24980 25329])
+            ("thrust_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("UNUSED" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25430 25454])
+                    ("" variable (:type ("sender_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25445 25455])
+                    ("thrust_increment" variable (:type "float") (reparse-symbol arg-sub-list) [25456 25479]))                  
+                :type "void")
+                nil [25408 25563])
+            ("bound_g_mat" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25589 25594]))                  
+                :type "void")
+                nil [25565 26697]))          
+      :file "stabilization_indi.c"
+      :pointmax 26698
+      :fsize 26697
+      :lastmodtime '(23735 21819 244224 492000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STABILIZATION_INDI_MAX_RATE" . ((number "6.0" 3532 . 3535)))
+          ("INDI_ALLOWED_G_FACTOR" . ((number "2.0" 1969 . 1972)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "stabilization_attitude.h"
+      :fsize 1801
+      :lastmodtime '(23735 21819 244224 492000))
+    (semanticdb-table "semanticdb-table"
+      :file "stabilization_attitude_rc_setpoint.h"
+      :fsize 2195
+      :lastmodtime '(23735 21819 244224 492000))
+    (semanticdb-table "semanticdb-table"
+      :file "stabilization_attitude_quat_transformations.h"
+      :fsize 1472
+      :lastmodtime '(23735 21819 244224 492000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("STABILIZATION_INDI_SIMPLE_H" variable (:constant-flag t) nil [1351 1378])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_ref_quat_int.h" include nil nil [1380 1463])
+            ("filters/low_pass_filter.h" include nil nil [1464 1500])
+            ("stab_att_sp_quat" variable
+               (:typemodifiers ("extern")
+                :type ("Int32Quat" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1502 1545])
+            ("stab_att_sp_euler" variable
+               (:typemodifiers ("extern")
+                :type ("Int32Eulers" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1574 1618])
+            ("ReferenceSystem" type
+               (:members 
+                  ( ("err_p" variable (:type "float") (reparse-symbol classsubparts) [1675 1687])
+                    ("err_q" variable (:type "float") (reparse-symbol classsubparts) [1690 1702])
+                    ("err_r" variable (:type "float") (reparse-symbol classsubparts) [1705 1717])
+                    ("rate_p" variable (:type "float") (reparse-symbol classsubparts) [1720 1733])
+                    ("rate_q" variable (:type "float") (reparse-symbol classsubparts) [1736 1749])
+                    ("rate_r" variable (:type "float") (reparse-symbol classsubparts) [1752 1765]))                  
+                :type "struct")
+                nil [1648 1768])
+            ("IndiEstimation" type
+               (:members 
+                  ( ("u" variable
+                       (:dereference 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1796 1821])
+                    ("rate" variable
+                       (:dereference 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1824 1852])
+                    ("rate_d" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1855 1871])
+                    ("rate_dd" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1874 1891])
+                    ("u_d" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1894 1907])
+                    ("u_dd" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1910 1924])
+                    ("g1" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1927 1948])
+                    ("g2" variable (:type "float") (reparse-symbol classsubparts) [1951 1960])
+                    ("mu" variable (:type "float") (reparse-symbol classsubparts) [1963 1972]))                  
+                :type "struct")
+                nil [1770 1975])
+            ("IndiVariables" type
+               (:members 
+                  ( ("angular_accel_ref" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2002 2038])
+                    ("du" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2041 2062])
+                    ("u_in" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2065 2088])
+                    ("u_act_dyn" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2091 2119])
+                    ("rate_d" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2122 2138])
+                    ("u" variable
+                       (:dereference 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2142 2167])
+                    ("rate" variable
+                       (:dereference 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2170 2198])
+                    ("g1" variable (:type ("FloatRates" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2201 2222])
+                    ("g2" variable (:type "float") (reparse-symbol classsubparts) [2225 2234])
+                    ("reference_acceleration" variable (:type ("ReferenceSystem" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2238 2284])
+                    ("adaptive" variable (:type "bool") (reparse-symbol classsubparts) [2288 2302])
+                    ("max_rate" variable (:type "float") (reparse-symbol classsubparts) [2351 2366])
+                    ("attitude_max_yaw_rate" variable (:type "float") (reparse-symbol classsubparts) [2423 2451])
+                    ("est" variable (:type ("IndiEstimation" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2505 2531]))                  
+                :type "struct")
+                nil [1977 2579])
+            ("indi" variable
+               (:typemodifiers ("extern")
+                :type ("IndiVariables" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2582 2615])
+            ("stabilization_indi_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2652 2657]))                  
+                :type "void")
+                nil [2616 2658])
+            ("stabilization_indi_enter" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2696 2701]))                  
+                :type "void")
+                nil [2659 2702])
+            ("stabilization_indi_set_failsafe_setpoint" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2756 2761]))                  
+                :type "void")
+                nil [2703 2762])
+            ("stabilization_indi_set_rpy_setpoint_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("rpy" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2813 2837]))                  
+                :type "void")
+                nil [2763 2838])
+            ("stabilization_indi_set_earth_cmd_i" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2886 2909])
+                    ("heading" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2910 2926]))                  
+                :type "void")
+                nil [2839 2927])
+            ("stabilization_indi_run" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("enable_integrator" variable (:type "bool") (reparse-symbol arg-sub-list) [2963 2986])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [2987 3005]))                  
+                :type "void")
+                nil [2928 3006])
+            ("stabilization_indi_read_rc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [3046 3061])
+                    ("in_carefree" variable (:type "bool") (reparse-symbol arg-sub-list) [3062 3079])
+                    ("coordinated_turn" variable (:type "bool") (reparse-symbol arg-sub-list) [3080 3102]))                  
+                :type "void")
+                nil [3007 3103]))          
+      :file "stabilization_indi_simple.h"
+      :pointmax 3147
+      :fsize 3146
+      :lastmodtime '(23735 21819 244224 492000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STABILIZATION_INDI_SIMPLE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("firmwares/rotorcraft/stabilization/stabilization_indi_simple.h" include nil nil [1293 1366])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude.h" include nil nil [1367 1437])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_rc_setpoint.h" include nil nil [1438 1520])
+            ("firmwares/rotorcraft/stabilization/stabilization_attitude_quat_transformations.h" include nil nil [1521 1612])
+            ("state.h" include nil nil [1614 1632])
+            ("generated/airframe.h" include nil nil [1633 1664])
+            ("paparazzi.h" include nil nil [1665 1687])
+            ("subsystems/radio_control.h" include nil nil [1688 1725])
+            ("STABILIZATION_INDI_FILT_CUTOFF" variable (:constant-flag t) nil [2134 2164])
+            ("STABILIZATION_INDI_FILT_CUTOFF_R" variable (:constant-flag t) nil [2271 2303])
+            ("STABILIZATION_INDI_MAX_RATE" variable (:constant-flag t) nil [2387 2414])
+            ("STABILIZATION_INDI_MAX_R" variable (:constant-flag t) nil [2582 2606])
+            ("STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF" variable (:constant-flag t) nil [2705 2746])
+            ("stab_att_sp_euler" variable (:type ("Int32Eulers" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2759 2796])
+            ("stab_att_sp_quat" variable (:type ("Int32Quat" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2797 2833])
+            ("stabilization_att_indi_cmd" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2835 2890])
+            ("stabilization_indi_calc_cmd" function
+               (:prototype-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("indi_commands" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2938 2962])
+                    ("att_err" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2963 2989])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [2990 3008]))                  
+                :type "void")
+                nil [2891 3009])
+            ("lms_estimation" function
+               (:prototype-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3044 3049]))                  
+                :type "void")
+                nil [3010 3050])
+            ("indi_init_filters" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3081 3086]))                  
+                :type "void")
+                nil [3051 3087])
+            ("INDI_EST_SCALE" variable (:constant-flag t) nil [3173 3187])
+            ("indi" variable
+               (:default-value "{
+  .max_rate = STABILIZATION_INDI_MAX_RATE,
+  .attitude_max_yaw_rate = STABILIZATION_INDI_MAX_R,
+
+  .g1 = {STABILIZATION_INDI_G1_P, STABILIZATION_INDI_G1_Q, STABILIZATION_INDI_G1_R},
+  .g2 = STABILIZATION_INDI_G2_R,
+  .reference_acceleration = {
+    STABILIZATION_INDI_REF_ERR_P,
+    STABILIZATION_INDI_REF_ERR_Q,
+    STABILIZATION_INDI_REF_ERR_R,
+    STABILIZATION_INDI_REF_RATE_P,
+    STABILIZATION_INDI_REF_RATE_Q,
+    STABILIZATION_INDI_REF_RATE_R
+  },
+
+  /* Estimation parameters for adaptive INDI */
+  .est = {
+    .g1 = {
+      STABILIZATION_INDI_G1_P / INDI_EST_SCALE,
+      STABILIZATION_INDI_G1_Q / INDI_EST_SCALE,
+      STABILIZATION_INDI_G1_R / INDI_EST_SCALE
+    },
+    .g2 = STABILIZATION_INDI_G2_R / INDI_EST_SCALE,
+    .mu = STABILIZATION_INDI_ADAPTIVE_MU,
+  },
+
+#if STABILIZATION_INDI_USE_ADAPTIVE
+  .adaptive = TRUE,
+#else
+  .adaptive = FALSE,
+#endif
+}"
+                :type ("IndiVariables" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3195 4095])
+            ("stabilization_indi_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5643 5648]))                  
+                :type "void")
+                nil [5614 5920])
+            ("indi_init_filters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5945 5950]))                  
+                :type "void")
+                nil [5922 6677])
+            ("stabilization_indi_enter" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6709 6714]))                  
+                :type "void")
+                nil [6679 6995])
+            ("stabilization_indi_set_failsafe_setpoint" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7043 7048]))                  
+                :type "void")
+                nil [6997 7329])
+            ("stabilization_indi_set_rpy_setpoint_i" function
+               (:arguments 
+                  ( ("rpy" variable
+                       (:pointer 1
+                        :type ("Int32Eulers" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7472 7496]))                  
+                :type "void")
+                nil [7429 7639])
+            ("stabilization_indi_set_earth_cmd_i" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("Int32Vect2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7842 7865])
+                    ("heading" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7866 7882]))                  
+                :type "void")
+                nil [7802 8438])
+            ("filter_pqr" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("filter" variable
+                       (:pointer 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8632 8660])
+                    ("new_values" variable
+                       (:pointer 1
+                        :type ("FloatRates" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8661 8691]))                  
+                :type "void")
+                nil [8602 8875])
+            ("finite_difference_from_filter" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [9120 9134])
+                    ("filter" variable
+                       (:pointer 1
+                        :type ("Butterworth2LowPass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9135 9163]))                  
+                :type "void")
+                nil [9071 9278])
+            ("finite_difference" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("output" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [9518 9534])
+                    ("" variable (:type "float") (reparse-symbol arg-sub-list) [9535 9544])
+                    ("old" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [9549 9562]))                  
+                :type "void")
+                nil [9481 9659])
+            ("stabilization_indi_calc_cmd" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("indi_commands" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9948 9972])
+                    ("att_err" variable
+                       (:pointer 1
+                        :type ("Int32Quat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9973 9999])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [10000 10018]))                  
+                :type "void")
+                nil [9901 14419])
+            ("stabilization_indi_run" function
+               (:arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [14595 14634])
+                    ("rate_control" variable (:type "bool") (reparse-symbol arg-sub-list) [14635 14653]))                  
+                :type "void")
+                nil [14567 15546])
+            ("stabilization_indi_read_rc" function
+               (:arguments 
+                  ( ("in_flight" variable (:type "bool") (reparse-symbol arg-sub-list) [15697 15712])
+                    ("in_carefree" variable (:type "bool") (reparse-symbol arg-sub-list) [15713 15730])
+                    ("coordinated_turn" variable (:type "bool") (reparse-symbol arg-sub-list) [15731 15753]))                  
+                :type "void")
+                nil [15665 16081])
+            ("lms_estimation" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16336 16341]))                  
+                :type "void")
+                nil [16302 18183]))          
+      :file "stabilization_indi_simple.c"
+      :pointmax 18184
+      :fsize 18183
+      :lastmodtime '(23735 21819 244224 492000)
+      :unmatched-syntax '((semantic-list 9544 . 9547) (NEW 9541 . 9544) (punctuation 1934 . 1935) (symbol 1926 . 1934) (symbol 1917 . 1925) (symbol 1913 . 1916) (symbol 1910 . 1912) (symbol 1901 . 1909) (symbol 1896 . 1900) (symbol 1890 . 1895) (symbol 1884 . 1889) (symbol 1880 . 1883) (symbol 1873 . 1879) (symbol 1870 . 1872) (symbol 1865 . 1869) (symbol 1861 . 1864) (symbol 1855 . 1860) (punctuation 1854 . 1855))
+      :lexical-table 
+        '(("STABILIZATION_INDI_MAX_RATE" . ((number "6.0" 2415 . 2418)))
+          ("STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF" . ((number "4.0" 2747 . 2750)))
+          ("INDI_EST_SCALE" . ((number "0.001" 3188 . 3193)))
+          ("STABILIZATION_INDI_FILT_CUTOFF" . ((number "8.0" 2165 . 2168)))
+          ("STABILIZATION_INDI_FILT_CUTOFF_R" . ((symbol "STABILIZATION_INDI_FILT_CUTOFF" 2304 . 2334)))
+          ("STABILIZATION_INDI_MAX_R" . ((symbol "STABILIZATION_ATTITUDE_SP_MAX_R" 2607 . 2638)))
+          )
+))
+  :file "!home!angel!src!paparazzi!sw!airborne!firmwares!rotorcraft!stabilization!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
