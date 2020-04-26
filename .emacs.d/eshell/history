@@ -3,3 +3,17 @@ git status
 echo $shell
 sitl
 cd ../
+cd ~
+ls
+sitl
+sitl
+ls
+ls
+sitl
+dired
+cd ..
+make posix_sitl_default
+make posix_sitl_default gazebo_wingtra_tailsitter
+make px4_sitl_default gazebo_wingtra_tailsitter
+which ls
+nano

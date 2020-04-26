@@ -1,0 +1,16 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".leetcode.com"
+  [url-cookie "__cfduid" "d9265858407386e96ef5fb68ce0b4270a1585492373" "Tue, 28-Apr-20 14:32:53 GMT" "/" ".leetcode.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("leetcode.com"
+  [url-cookie "csrftoken" "TGPVBd1NTn6nazIMn1FtmSFmvuDRL8Ko0NgMl8SBT2MgSIIeukYR3LAQoEdo4YJH" "Do Apr 22 19:28:42 2021 GMT" "/" "leetcode.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
