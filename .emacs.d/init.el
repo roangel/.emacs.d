@@ -26,6 +26,6 @@
 (require 'my_keybindings)
 (require 'my_autocompletion)
 (require 'my_multiterm)
-
+(require 'my_projectile)
 
 (provide 'init)

@@ -2,19 +2,19 @@
 ;; ----- smex-history -----
 (
  multi-term
+ compilation-shell-minor-mode
+ compilation-minor-mode
+ make-frame-command
+ make-frame-on-display
  list-packages
- recover-session
- c++-mode
- python-mode
- rgrep
- leetcode
+ projectile-recentf
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 67)
+ (list-packages . 72)
  (customize-themes . 7)
- (rgrep . 1911)
+ (rgrep . 1913)
  (help-quit . 1)
  (eww . 2)
  (load-file . 31)
@@ -142,7 +142,7 @@
  (magit-cherry . 2)
  (magit-version . 3)
  (magit-merge-abort . 1)
- (magit-abort-dwim . 12)
+ (magit-abort-dwim . 13)
  (cmake-mode . 4)
  (leetcode-refresh . 8)
  (leetcode--problems-mode . 6)
@@ -151,7 +151,7 @@
  (upcase-region . 1)
  (upcase-dwim . 7)
  (forge-browse-topic . 1)
- (multi-term . 40)
+ (multi-term . 59)
  (python-mode . 2)
  (org-mode . 1)
  (multi-term-dedicated-open . 2)
@@ -159,4 +159,16 @@
  (recover-session . 1)
  (esup . 7)
  (esup-display-results . 3)
+ (projectile-find-file-dwim . 1)
+ (make-frame-on-display . 9)
+ (menu-bar-mode . 9)
+ (tool-bar-mode . 6)
+ (toggle-scroll-bar . 4)
+ (projectile-mode . 1)
+ (make-frame-command . 4)
+ (projectile-commander . 1)
+ (projectile-mode-menu . 1)
+ (projectile-recentf . 1)
+ (compilation-minor-mode . 2)
+ (compilation-shell-minor-mode . 1)
 )

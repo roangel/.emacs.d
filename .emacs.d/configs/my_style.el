@@ -1,7 +1,7 @@
 ;; Style configuration
 
 ;; Remove emacs startup message (nil/t)
-(setq inhibit-startup-screen nil)
+(setq inhibit-startup-screen t)
 
 ;; Auto revert mode, load file automatically again if changed
 (global-auto-revert-mode 1)
@@ -28,6 +28,10 @@
 ;; No blink limit for cursor:
 (setq blink-cursor-blinks 0)
 
+;; Disable bars
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
 
 ;; Not sure what this is, comment it out
 ;; stop the silly emacs default scrolling
@@ -42,13 +46,6 @@
 ;; Theme:
 ;; molokai theme linum style
 (setq molokai-theme-kit t)
-
-;; Not sure what this is for, test it
-;; ;; disable menu/tool/scroll bars
-;; ;;(when (fboundp 'menu-bar-mode)   (menu-bar-mode -1))
-;; (when (fboundp 'tool-bar-mode)   (tool-bar-mode -1))
-;; ;;(when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-;; (set-scroll-bar-mode 'right)
 
 ;; Never used it
 ;; hide-show ifdef blocks
@@ -230,7 +227,7 @@
 (add-hook 'cperl-mode-hook (lambda () (highlight-parentheses-mode)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (highlight-parentheses-mode)))
 
-;; ;; highlight columns beyond the magic boundary
+;; highlight columns beyond the magic boundary
 ;; (require 'highlight-80+)
 ;; (add-hook 'c-mode-hook '(lambda () (highlight-80+-mode) (setq fill-column 100)))
 ;; (add-hook 'perl-mode-hook '(lambda () (highlight-80+-mode) (setq fill-column 100)))
@@ -305,17 +302,21 @@
 (setq recentf-max-menu-items 25)
 (setq recentf-save-file (concat user-emacs-directory "recentf"))
 
+(require 'psession)
+(psession-mode 1)
+
 ;; save desktop (open files) and load again on start, use only one desktop, save on file open, save more stuff with it
-(require 'desktop)
-(setq desktop-save-mode t)
-(setq desktop-restore-eager 10)
-(setq desktop-save t)
-(setq desktop-load-locked-desktop t)
+;; (require 'desktop)
+;; (setq desktop-restore-eager 10)
+;; (setq desktop-save t)
+;; (setq desktop-load-locked-desktop t)
+;; (setq desktop-save-mode t)
+
 ;; (add-to-list 'desktop-modes-not-to-save 'dired-mode)
 ;; (add-to-list 'desktop-modes-not-to-save 'Info-mode)
 ;; (add-to-list 'desktop-modes-not-to-save 'Apropos-mode)
 ;; (add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
-;;                                         ;(add-to-list 'desktop-modes-not-to-save 'fundamental-mode) ; nope!
+;; (add-to-list 'desktop-modes-not-to-save 'fundamental-mode) ; nope!
 ;; (setq desktop-path '("~/.emacs.d/"))
 ;; (setq desktop-dirname "~/.emacs.d/")
 ;;                                         ;(setq desktop-dirname user-emacs-directory)
@@ -329,6 +330,8 @@
 ;;                                         (regexp-history . 60) (regexp-search-ring . 20) (search-ring . 20) (shell-command-history . 50)
 ;;                                         (evil-ex .100) tags-file-name register-alist)))
 ;;                                         ;(add-hook 'kill-emacs-hook (lambda () (setq desktop-file-modtime (nth 5 (file-attributes (desktop-full-file-name))))))
+
+
 
 ;; make mouse avoid the cursor
 ;; (cond (window-system (require 'avoid) (mouse-avoidance-mode 'animate)))
@@ -380,11 +383,6 @@
 ;; (standard-display-european t)
 (set-keyboard-coding-system 'utf-8)
 
-;; Disable bars
-(menu-bar-mode -1)
-(toggle-scroll-bar -1)
-(tool-bar-mode -1)
-
 ;; Python comment offsets
 (add-hook 'python-mode-hook
           (lambda () (set (make-local-variable 'comment-inline-offset) 2)))
@@ -410,7 +408,7 @@
 
 (setq org-hide-leading-stars t)
 
-;; (setq org-src-fontify-natively t)
+(setq org-src-fontify-natively t)
 
 ;; make scripts executable on save
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
@@ -456,10 +454,10 @@
   (interactive "*p")
   (delete-region (point) (save-excursion (forward-word arg) (point))))
 
-;; Zoom mode
-(defun size-callback ()
-  (cond ((> (frame-pixel-width) 1280) '(90 . 0.6))
-        (t                            '(0.5 . 0.5))))
+;; ;; Zoom mode
+;; (defun size-callback ()
+;;   (cond ((> (frame-pixel-width) 1280) '(90 . 0.6))
+;;         (t                            '(0.5 . 0.5))))
 
 ;; Ace window
 (global-set-key (kbd "C-x o") 'ace-window)
@@ -542,6 +540,11 @@ open and unsaved."
 (add-hook 'eshell-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 (add-hook 'term-mode-hook (lambda () (setq show-trailing-whitespace nil)))
 (add-hook 'shell-mode-hook (lambda () (setq show-trailing-whitespace nil)))
+
+;; Projectile
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 
 (provide 'my_style)

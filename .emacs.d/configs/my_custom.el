@@ -40,7 +40,7 @@
  '(org-startup-truncated t)
  '(package-selected-packages
    (quote
-    (multi-term cmake-mode mode-line-bell leetcode forge arduino-mode multiple-cursors company-irony symon transient github-review magit company-tabnine py-autopep8 elpy irony-eldoc ggtags irony use-package zoom zenburn-theme yasnippet xcscope sublime-themes spacemacs-theme smex smart-tabs-mode org2issue org-bullets org-babel-eval-in-repl noctilux-theme monokai-alt-theme molokai-theme material-theme iedit highlight-symbol highlight-parentheses epc dired+ darkokai-theme cyberpunk-theme bm autopair)))
+    (psession projectile multi-term cmake-mode mode-line-bell leetcode forge arduino-mode multiple-cursors company-irony symon transient github-review magit company-tabnine py-autopep8 elpy irony-eldoc ggtags irony use-package zenburn-theme yasnippet xcscope sublime-themes spacemacs-theme smex smart-tabs-mode org2issue org-bullets org-babel-eval-in-repl noctilux-theme monokai-alt-theme molokai-theme material-theme iedit highlight-symbol highlight-parentheses epc dired+ darkokai-theme cyberpunk-theme bm autopair)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
@@ -68,9 +68,7 @@
      (360 . "#66D9EF"))))
  '(vc-annotate-very-old-color nil)
  '(weechat-color-list
-   (unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
- '(zoom-mode t nil (zoom))
- '(zoom-size (quote size-callback)))
+   (unspecified "#272822" "#3C3D37" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
