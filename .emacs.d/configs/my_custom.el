@@ -40,7 +40,7 @@
  '(org-startup-truncated t)
  '(package-selected-packages
    (quote
-    (psession projectile multi-term cmake-mode mode-line-bell leetcode forge arduino-mode multiple-cursors company-irony symon transient github-review magit company-tabnine py-autopep8 elpy irony-eldoc ggtags irony use-package zenburn-theme yasnippet xcscope sublime-themes spacemacs-theme smex smart-tabs-mode org2issue org-bullets org-babel-eval-in-repl noctilux-theme monokai-alt-theme molokai-theme material-theme iedit highlight-symbol highlight-parentheses epc dired+ darkokai-theme cyberpunk-theme bm autopair)))
+    (anaconda-mode swiper ivy psession projectile multi-term cmake-mode mode-line-bell leetcode arduino-mode multiple-cursors company-irony symon transient github-review magit company-tabnine py-autopep8 elpy irony-eldoc ggtags irony use-package zenburn-theme yasnippet xcscope sublime-themes spacemacs-theme smex smart-tabs-mode org2issue org-bullets org-babel-eval-in-repl noctilux-theme monokai-alt-theme molokai-theme material-theme iedit highlight-symbol highlight-parentheses epc dired+ darkokai-theme cyberpunk-theme bm autopair)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")

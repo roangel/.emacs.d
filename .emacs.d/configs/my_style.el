@@ -28,6 +28,9 @@
 ;; No blink limit for cursor:
 (setq blink-cursor-blinks 0)
 
+;; Set default cursor to a bar of width 3
+(setq cursor-type '(bar . 3))
+
 ;; Disable bars
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

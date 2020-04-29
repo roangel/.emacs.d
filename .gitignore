@@ -1,9 +1,11 @@
 # -*- mode: gitignore; -*-
 *~
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
+.emacs.d/.emacs.desktop
+.emacs.d/.emacs.desktop.lock
 *.elc
+*.eld
+*.cache
 auto-save-list
 tramp
 .\#*
@@ -16,11 +18,11 @@ tramp
 *_flymake.*
 
 # eshell files
-/eshell/history
-/eshell/lastdir
+.emacs.d/eshell/history
+.emacs.d/eshell/lastdir
 
 # elpa packages
-/elpa/
+.emacs.d/elpa/
 
 # reftex files
 *.rel
@@ -46,3 +48,9 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+# recent files
+.emacs.d/recentf
+
+# temp files
+*~

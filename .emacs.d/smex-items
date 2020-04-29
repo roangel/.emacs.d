@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- multi-term
- compilation-shell-minor-mode
- compilation-minor-mode
- make-frame-command
- make-frame-on-display
+ projectile-regenerate-tags
  list-packages
- projectile-recentf
+ projectile-dired
+ package-autoremove
+ multi-term
+ customize-face
+ ansi-term
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 72)
+ (list-packages . 78)
  (customize-themes . 7)
- (rgrep . 1913)
+ (rgrep . 1917)
  (help-quit . 1)
  (eww . 2)
  (load-file . 31)
@@ -77,7 +77,7 @@
  (org-store-link . 14)
  (org-insert-link . 12)
  (magit-checkout . 4)
- (magit-blame . 92)
+ (magit-blame . 94)
  (magit-clean . 2)
  (customize-option . 1)
  (mkdir . 2)
@@ -97,11 +97,11 @@
  (ediff . 3)
  (blink-cursor-mode . 2)
  (py-autopep8 . 2)
- (c++-mode . 7)
+ (c++-mode . 8)
  (upcase-word . 3)
- (ansi-term . 16)
+ (ansi-term . 17)
  (serial-term . 1)
- (package-autoremove . 3)
+ (package-autoremove . 4)
  (forge-pull . 6)
  (forge-browse-dwim . 8)
  (describe-package . 1)
@@ -135,7 +135,7 @@
  (org-table-export . 1)
  (leetcode . 234)
  (leetcode-try . 1635)
- (customize-face . 1)
+ (customize-face . 2)
  (leetcode-submit . 313)
  (leetcode-quit . 127)
  (forge-reset-database . 1)
@@ -151,7 +151,7 @@
  (upcase-region . 1)
  (upcase-dwim . 7)
  (forge-browse-topic . 1)
- (multi-term . 59)
+ (multi-term . 93)
  (python-mode . 2)
  (org-mode . 1)
  (multi-term-dedicated-open . 2)
@@ -171,4 +171,13 @@
  (projectile-recentf . 1)
  (compilation-minor-mode . 2)
  (compilation-shell-minor-mode . 1)
+ (magit-gitignore . 1)
+ (make-frame . 2)
+ (delete-frame . 1)
+ (term-line-mode . 1)
+ (term-char-mode . 1)
+ (term-kill-subjob . 3)
+ (counsel-projectile . 2)
+ (projectile-dired . 1)
+ (projectile-regenerate-tags . 1)
 )
