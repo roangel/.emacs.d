@@ -27,5 +27,6 @@
 (require 'my_autocompletion)
 (require 'my_multiterm)
 (require 'my_projectile)
+(require 'my_helm)
 
 (provide 'init)

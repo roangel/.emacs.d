@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- projectile-regenerate-tags
  list-packages
- projectile-dired
- package-autoremove
+ rgrep
  multi-term
- customize-face
- ansi-term
+ leetcode
+ magit-status
+ magit-blame
+ revert-buffer
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 78)
+ (list-packages . 80)
  (customize-themes . 7)
- (rgrep . 1917)
+ (rgrep . 1919)
  (help-quit . 1)
  (eww . 2)
  (load-file . 31)
@@ -133,11 +133,11 @@
  (find-name-dired . 9)
  (magit-browse-thing . 1)
  (org-table-export . 1)
- (leetcode . 234)
- (leetcode-try . 1635)
+ (leetcode . 241)
+ (leetcode-try . 1655)
  (customize-face . 2)
- (leetcode-submit . 313)
- (leetcode-quit . 127)
+ (leetcode-submit . 315)
+ (leetcode-quit . 132)
  (forge-reset-database . 1)
  (magit-cherry . 2)
  (magit-version . 3)
@@ -151,7 +151,7 @@
  (upcase-region . 1)
  (upcase-dwim . 7)
  (forge-browse-topic . 1)
- (multi-term . 93)
+ (multi-term . 100)
  (python-mode . 2)
  (org-mode . 1)
  (multi-term-dedicated-open . 2)

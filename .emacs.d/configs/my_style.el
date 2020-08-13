@@ -305,8 +305,9 @@
 (setq recentf-max-menu-items 25)
 (setq recentf-save-file (concat user-emacs-directory "recentf"))
 
-(require 'psession)
-(psession-mode 1)
+;; Store buffers between emacs sessions
+;; (require 'psession)
+;; (psession-mode 1)
 
 ;; save desktop (open files) and load again on start, use only one desktop, save on file open, save more stuff with it
 ;; (require 'desktop)
@@ -483,19 +484,6 @@
           (lambda ()
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               (ggtags-mode 1))))
-
-;; SMEX -- autocomplete for M-x
-(require 'smex) ; Not needed if you use package.el
-(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
-                                        ; when Smex is auto-initialized on its first run.
-
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;; dired
-(require 'dired+)
 
 ;; hippie expand M-/
 (global-set-key (kbd "M-/") 'hippie-expand)
