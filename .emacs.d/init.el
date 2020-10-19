@@ -2,8 +2,10 @@
 (require 'package)
 
 ;; add MELPA to repository list
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 ;; initialize package.el
 (package-initialize)
 
@@ -28,5 +30,6 @@
 (require 'my_multiterm)
 (require 'my_projectile)
 (require 'my_helm)
+(require 'my_dap_mode)
 
 (provide 'init)

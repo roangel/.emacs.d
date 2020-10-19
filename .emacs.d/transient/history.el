@@ -11,6 +11,7 @@
  (magit-diff
   ("--no-ext-diff" "--stat"))
  (magit-dispatch nil)
+ (magit-ediff nil)
  (magit-fetch nil
 	      ("--tags"))
  (magit-log

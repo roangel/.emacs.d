@@ -292,7 +292,7 @@
 (setq kill-whole-line t)
 
 ;; fringes (proper one at the right, small one left just for some padding)
-(set-fringe-style (quote (2 . 8)))
+(set-fringe-style (quote (12 . 8)))
 
 ;; remember where the cursor was in a file, store in ~/.emacs.d/places
 (require 'saveplace)
