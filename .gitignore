@@ -54,3 +54,9 @@ flycheck_*.el
 
 # temp files
 *~
+
+# session files
+session*
+
+# semantic db
+semanticdb/
