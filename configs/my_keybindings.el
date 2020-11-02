@@ -20,25 +20,25 @@
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
 ;; switch header/source
-(global-set-key (kbd "C-x C-o") 'ff-find-other-file)
+(global-set-key (kbd "C-x C-o") 'projectile-find-other-file)
 
 ;; ;; jump between matching parenthesis
 ;; ;; (global-set-key "%" 'match-paren)
-(defvar my-cpp-other-file-alist
-  '(("\\.cpp\\'" (".h" ".hpp" ".ipp"))
-    ("\\.ipp\\'" (".hpp" ".cpp"))
-    ("\\.hpp\\'" (".ipp" ".cpp"))
-    ("\\.cxx\\'" (".hxx" ".ixx"))
-    ("\\.ixx\\'" (".cxx" ".hxx"))
-    ("\\.hxx\\'" (".ixx" ".cxx"))
-    ("\\.c\\'" (".h"))
-    ("\\.h\\'" (".cpp" ".c"))
-    ))
+;; (defvar my-cpp-other-file-alist
+;;   '(("\\.cpp\\'" (".h" ".hpp" ".ipp"))
+;;     ("\\.ipp\\'" (".hpp" ".cpp"))
+;;     ("\\.hpp\\'" (".ipp" ".cpp"))
+;;     ("\\.cxx\\'" (".hxx" ".ixx"))
+;;     ("\\.ixx\\'" (".cxx" ".hxx"))
+;;     ("\\.hxx\\'" (".ixx" ".cxx"))
+;;     ("\\.c\\'" (".h"))
+;;     ("\\.h\\'" (".cpp" ".c"))
+;;     ))
 
-(setq-default ff-other-file-alist 'my-cpp-other-file-alist)
+;; (setq-default ff-other-file-alist 'my-cpp-other-file-alist)
 
-(setq ff-search-directories
-      '("." "../src" "../include" "../../src" "../../include" ))
+;; (setq ff-search-directories
+;;       '("." "../src" "../include" "../../src" "../../include" ))
 
 ;; C-o switches to other window (if more than one window)
 (global-set-key (kbd "C-o") 'other-window)
