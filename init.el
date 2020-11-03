@@ -1,4 +1,4 @@
-;; start package.el with emacs
+; start package.el with emacs
 (require 'package)
 
 ;; add MELPA to repository list

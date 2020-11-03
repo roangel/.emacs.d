@@ -59,4 +59,8 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; helm gtags
+(global-set-key (kbd "M-.") 'helm-gtags-dwim)
+(global-set-key (kbd "M-,") 'helm-gtags-pop-stack)
+
 (provide 'my_keybindings)

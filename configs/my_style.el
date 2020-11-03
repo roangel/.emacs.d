@@ -398,10 +398,10 @@
 (autopair-global-mode 1)
 
 ;; C and C++
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
+;; (add-hook 'c-mode-common-hook
+;;           (lambda ()
+;;             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+;;               (ggtags-mode 1))))
 
 ;; hippie expand M-/
 (global-set-key (kbd "M-/") 'hippie-expand)
