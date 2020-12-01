@@ -1,6 +1,6 @@
 ;; line wrap, line numbering
 (global-set-key (kbd "<f10>") 'toggle-truncate-lines)
-(global-set-key (kbd "<S-f10>") 'linum-mode)
+;; (global-set-key (kbd "<S-f10>") 'linum-mode)
 
 ;; delete word forward and backwards
 (global-set-key (kbd "<M-delete>") 'delete-word)

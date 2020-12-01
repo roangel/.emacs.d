@@ -440,7 +440,7 @@ open and unsaved."
 (set-face-attribute 'default nil :height 110)
 
 ;; Display line numbers
-;; (global-linum-mode t)
+(global-display-line-numbers-mode t)
 
 ;; show (ugly) trailing whitespace
 (setq-default show-trailing-whitespace t)

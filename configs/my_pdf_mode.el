@@ -10,7 +10,7 @@
  ;; use normal isearch
  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward))
 
-(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+;; (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
 ;; setup files ending in “.pdf” to open in pdf-view-mode
 (add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))

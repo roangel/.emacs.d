@@ -9,4 +9,11 @@
 
 (setq calendar-week-start-day 1)
 
+(setq org-todo-keywords
+      '((sequence "TODO" "LOW-PRIO" "VERIFY" "|" "DONE" "DELEGATED" "CANCELLED")))
+
+(with-eval-after-load 'org
+  (setq org-startup-indented t) ; Enable `org-indent-mode' by default
+  (add-hook 'org-mode-hook #'visual-line-mode))
+
 (provide 'my_org_mode)
