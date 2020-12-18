@@ -3,9 +3,10 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-	c-electric-delete-forward
-	))
+        c-electric-delete-forward
+        ))
 
 (setq mc/cmds-to-run-once
       '(
-	))
+        c-electric-lt-gt
+        ))

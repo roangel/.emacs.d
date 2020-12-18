@@ -10,7 +10,26 @@
 (setq calendar-week-start-day 1)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "LOW-PRIO" "VERIFY" "|" "DONE" "DELEGATED" "CANCELLED")))
+  '((sequence
+     "TODO(t!)" ; Initial creation
+     "IN PROGRESS(i@)"; Work in progress
+     "WAIT(w@)" ; My choice to pause task
+     "BLOCKED(b@)" ; Not my choice to pause task
+     "REVIEW(r!)" ; Inspect or Share Time
+     "|" ; Remaining close task
+     "DONE(d@)" ; Normal completion
+     "CANCELED(c@)" ; Not going to od it
+     "DUPLICATE(p@)" ; Already did it
+     )))
+
+(setq org-todo-keyword-faces (quote (
+                                     ("TODO" :foreground "tomato")
+                                     ("IN PROGRESS" :foreground "light slate gray")
+                                     ("WAIT" :foreground "salmon1")
+                                     ("BLOCKED" :foreground "orange")
+                                     ("REVIEW" :foreground "turquoise")
+                                     ("CANCELED" :foreground "gold")
+                                     ("DUPLICATE" :foreground "orchid"))))
 
 (with-eval-after-load 'org
   (setq org-startup-indented t) ; Enable `org-indent-mode' by default
