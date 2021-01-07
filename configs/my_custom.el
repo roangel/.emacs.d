@@ -73,4 +73,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:background nil))))
- '(org-level-7 ((t (:inherit default :foreground "goldenrod")))))
+ '(org-level-7 ((t (:inherit default :foreground "dodger blue"))))
+ '(org-level-8 ((t (:inherit default :foreground "medium spring green")))))
