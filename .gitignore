@@ -64,5 +64,9 @@ recentf
 url/
 smex-items
 transient/
+
 elpa/*
+eshell/*
+
+.dap-breakpoints
 
