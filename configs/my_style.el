@@ -206,12 +206,6 @@
 (setq-default display-time-day-and-date t)
 (setq display-time-24hr-format t)
 
-;; clang format on save
-(add-hook 'c-mode-common-hook
-          (function (lambda ()
-                      (add-hook 'before-save-hook
-                                'clang-format-buffer))))
-
 ;; make C-k kill whole line instead of just to end of line (when at beginning of line)
 (setq kill-whole-line t)
 
