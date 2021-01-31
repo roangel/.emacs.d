@@ -65,8 +65,8 @@ url/
 smex-items
 transient/
 
-elpa/*
-eshell/*
+elpa/**
+eshell/**
 
 .dap-breakpoints
 anaconda-mode/*
