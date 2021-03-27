@@ -19,7 +19,7 @@
 (setq dap-lldb-debug-program '("/home/angel/src/llvm-project/build/bin/lldb-vscode"))
 (require 'dap-lldb)
 
-;; (require 'dap-gdb-lldb)
+(require 'dap-gdb-lldb)
 
 (setq dap-print-io 1)
 
