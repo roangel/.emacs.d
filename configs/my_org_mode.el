@@ -35,4 +35,12 @@
   (setq org-startup-indented t) ; Enable `org-indent-mode' by default
   (add-hook 'org-mode-hook #'visual-line-mode))
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (python . t)
+   (C . t)))
+(setq org-babel-python-command "python3")
+
+
 (provide 'my_org_mode)
