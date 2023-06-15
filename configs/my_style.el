@@ -15,11 +15,11 @@
 (setq-default
  tab-width 2)
 
-;; No sound, visible
-(setq visible-bell nil
-      ring-bell-function 'flash-mode-line)
-(defun flash-mode-line ()
-  (invert-face 'mode-line))
+;; ;; No sound, visible
+;; (setq visible-bell nil
+;;       ring-bell-function 'flash-mode-line)
+;; (defun flash-mode-line ()
+;;   (invert-face 'mode-line))
 
 ;; UTF-8 everywhere (is probably the default already)
 (set-default buffer-file-coding-system 'utf-8-unix)
@@ -37,31 +37,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-
-;; Not sure what this is, comment it out
-;; stop the silly emacs default scrolling
-;; (setq scroll-step 1)
-;; (setq hscroll-step 1)
-;; (setq scroll-conservatively 50)
-;; ;; start scrolling when 3 lines from top/bottom
-;; (setq scroll-margin 3)
-;; ;; move cursor, not buffer (?)
-;; (setq scroll-preserve-screen-position 't)
-
-;; Theme:
-;; molokai theme linum style
-(setq molokai-theme-kit t)
-
-;; Never used it
-;; hide-show ifdef blocks
-;; (global-set-key (kbd "<f3>") 'hide-ifdef-block)
-;; (global-set-key (kbd "<S-f3>") 'show-ifdef-block)
-
-;; Cool but I don't use it
-;; highlight symbol
-;; (global-set-key (kbd "<C-f4>") 'highlight-symbol-at-point)
-;; (global-set-key (kbd "<f4>") 'highlight-symbol-next)
-;; (global-set-key (kbd "<S-f4>") 'highlight-symbol-prev)
 
 ;; highlight FIXME, TODO, XXX, !!!
 (defun my-highlight-fixme ()
@@ -97,19 +72,6 @@
 ;; ;;; funky functions ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; scroll text one line up/down while keeping the cursor
-(defun scroll-up-keep-cursor () (interactive) (scroll-up 1))
-(defun scroll-down-keep-cursor () (interactive) (scroll-down 1))
-
-;; move one word forward / backward, leave cursor at start of word
-;; instead of emacs default end of word, treat _ as part of word
-(defun geosoft-forward-word () (interactive)
-  (forward-char 1) (backward-word 1) (forward-word 2) (backward-word 1) (backward-char 1)
-  (cond ((looking-at "_") (forward-char 1) (geosoft-forward-word)) (t (forward-char 1))))
-(defun geosoft-backward-word () (interactive)
-  (backward-word 1) (backward-char 1)
-  (cond ((looking-at "_") (geosoft-backward-word)) (t (forward-char 1))))
-
 ;; functions to change line ending characters, like flip(1)
 (defun flip-unix ()
   "Change the current buffer to Latin 1 with Unix line-ends."
@@ -135,24 +97,12 @@
   (interactive "*p")
   (delete-word (- arg)))
 
-;; different cursor based on mode
-;; (add-hook 'post-command-hook '(lambda ()
-;;                                 (cond (buffer-read-only (set-cursor-color "grey") (setq cursor-type 'box))
-;;                                       (overwrite-mode (set-cursor-color "red") (setq cursor-type 'hollow))
-;;                                       (t (set-cursor-color "red") (setq cursor-type 'box)))))
-
 ;; highlight surrounding parentheses
 (require 'highlight-parentheses)
 (add-hook 'c-mode-hook (lambda () (highlight-parentheses-mode)))
 (add-hook 'perl-mode-hook (lambda () (highlight-parentheses-mode)))
 (add-hook 'cperl-mode-hook (lambda () (highlight-parentheses-mode)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (highlight-parentheses-mode)))
-
-;; highlight columns beyond the magic boundary
-;; (require 'highlight-80+)
-;; (add-hook 'c-mode-hook '(lambda () (highlight-80+-mode) (setq fill-column 100)))
-;; (add-hook 'perl-mode-hook '(lambda () (highlight-80+-mode) (setq fill-column 100)))
-;; (add-hook 'cperl-mode-hook '(lambda () (highlight-80+-mode) (setq fill-column 100)))
 
 ;; always turn on hi-fi font-lock
 (require 'font-lock)
@@ -178,17 +128,6 @@
           (tab-mark 9 [8594 9] [92 9]) ; tab
           )))
 
-;; tab width
-;; (setq-default tab-width 8)
-;; (setq tab-stop-list (number-sequence 4 120 4)
-
-;; ;; spaces, not tabs
-;; (setq-default indent-tabs-mode t)
-;; (setq indent-tabs-mode nil)
-
-;; ;; even for xml
-;; (setq-default nxml-child-indent 4)
-;; (setq-default nxml-attribute-indent 4)
 ;; allow S-cursor to mark a region (not really, rather: highlight marked region)
 (setq transient-mark-mode t)
 
@@ -223,37 +162,6 @@
 (setq recentf-max-menu-items 25)
 (setq recentf-save-file (concat user-emacs-directory "recentf"))
 
-;; Store buffers between emacs sessions
-;; (require 'psession)
-;; (psession-mode 1)
-
-;; save desktop (open files) and load again on start, use only one desktop, save on file open, save more stuff with it
-;; (require 'desktop)
-;; (setq desktop-restore-eager 10)
-;; (setq desktop-save t)
-;; (setq desktop-load-locked-desktop t)
-;; (setq desktop-save-mode t)
-
-;; (add-to-list 'desktop-modes-not-to-save 'dired-mode)
-;; (add-to-list 'desktop-modes-not-to-save 'Info-mode)
-;; (add-to-list 'desktop-modes-not-to-save 'Apropos-mode)
-;; (add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
-;; (add-to-list 'desktop-modes-not-to-save 'fundamental-mode) ; nope!
-;; (setq desktop-path '("~/.emacs.d/"))
-;; (setq desktop-dirname "~/.emacs.d/")
-;;                                         ;(setq desktop-dirname user-emacs-directory)
-;; (setq desktop-base-file-name "desktop")
-;; (setq desktop-base-lock-name "desktop.lock")
-;;                                         ;(add-hook 'find-file-hook (lambda () (run-with-timer 5 nil (lambda () (setq desktop-file-modtime (nth 5
-;;                                         ;    (file-attributes (desktop-full-file-name)))) (desktop-save user-emacs-directory)))))
-;; (setq desktop-globals-to-save (append '(
-;;                                         (extended-command-history . 30) (file-name-history . 100) (grep-history . 30) (compile-history . 30)
-;;                                         (minibuffer-history . 50) (query-replace-history . 60) (read-expression-history . 60)
-;;                                         (regexp-history . 60) (regexp-search-ring . 20) (search-ring . 20) (shell-command-history . 50)
-;;                                         (evil-ex .100) tags-file-name register-alist)))
-;;                                         ;(add-hook 'kill-emacs-hook (lambda () (setq desktop-file-modtime (nth 5 (file-attributes (desktop-full-file-name))))))
-
-
 
 ;; make mouse avoid the cursor
 ;; (cond (window-system (require 'avoid) (mouse-avoidance-mode 'animate)))
@@ -273,9 +181,6 @@
 
 ;; set default fill-colum
 (setq-default fill-column 80)
-
-;; auto-fill-mode by default
-;; (setq text-mode-hook 'turn-on-auto-fill)
 
 ;; highlight matching parenthese on cursor over
 (show-paren-mode 1)
@@ -454,6 +359,34 @@ open and unsaved."
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+;; Configure the Modus Themes' appearance
+(setq modus-themes-mode-line '(accented borderless)
+      modus-themes-bold-constructs t
+      modus-themes-italic-constructs t
+      modus-themes-fringes 'subtle
+      modus-themes-tabs-accented t
+      modus-themes-paren-match '(bold intense)
+      modus-themes-prompts '(bold intense)
+      modus-themes-completions 'opinionated
+      modus-themes-org-blocks 'tinted-background
+      modus-themes-scale-headings t
+      modus-themes-region '(bg-only)
+      modus-themes-headings
+      '((1 . (rainbow overline background 1.4))
+        (2 . (rainbow background 1.3))
+        (3 . (rainbow bold 1.2))
+        (t . (semilight 1.1))))
+
+;; Load the dark theme by default
+(load-theme 'modus-vivendi t)
+
+;; Modeline doom
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+;; No sound
+(setq visible-bell t)
 
 
 (provide 'my_style)
