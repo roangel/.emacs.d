@@ -17,6 +17,7 @@
 ;; you can utilize :map :hook and :config to customize copilot
 
 (add-hook 'prog-mode-hook 'copilot-mode)
+(add-hook 'text-mode-hook 'copilot-mode)
 
 (with-eval-after-load 'company
   ;; disable inline previews

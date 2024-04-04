@@ -21,14 +21,15 @@
 
 
 (require 'my_style)
+(require 'my_ghosttext)
 (require 'my_leetcode)
 (require 'my_git)
 (require 'my_keybindings)
 (require 'my_autocompletion)
-(require 'my_multiterm)
+;; (require 'my_multiterm)
 (require 'my_projectile)
 (require 'my_helm)
-(require 'my_dap_mode)
+;; (require 'my_dap_mode)
 (require 'my_org_mode)
 (require 'my_pdf_mode)
 (require 'my_clang_format)
@@ -41,7 +42,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi use-package))
  '(package-selected-packages
-   '(doom-modeline modus-themes zenburn-theme yaml-mode tramp-term tramp spacemacs-theme solo-jazz-theme solarized-theme quelpa-use-package pdf-tools ox-latex-subfigure org-noter multiple-cursors multi-term material-theme magit leuven-theme highlight-parentheses helm-w3m helm-tramp helm-projectile helm-gtags helm-bibtex helm-ag ggtags ein dockerfile-mode docker-tramp dap-mode cuda-mode copilot company-tabnine company-irony-c-headers company-irony company-anaconda color-theme-sanityinc-tomorrow cmake-mode clang-format+ autopair auctex apropospriate-theme anti-zenburn-theme ag)))
+   '(atomic-chrome doom-modeline modus-themes zenburn-theme yaml-mode tramp-term tramp spacemacs-theme solo-jazz-theme solarized-theme quelpa-use-package pdf-tools ox-latex-subfigure org-noter multiple-cursors multi-term material-theme magit leuven-theme highlight-parentheses helm-w3m helm-tramp helm-projectile helm-gtags helm-bibtex helm-ag ggtags ein dockerfile-mode docker-tramp dap-mode cuda-mode copilot company-tabnine company-irony-c-headers company-irony company-anaconda color-theme-sanityinc-tomorrow cmake-mode clang-format+ autopair auctex apropospriate-theme anti-zenburn-theme ag)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
